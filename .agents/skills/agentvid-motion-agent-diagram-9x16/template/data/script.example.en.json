@@ -1,0 +1,92 @@
+{
+ "title": "Sub agents explained",
+ "source": "Written from general knowledge of AI agents (sub agents, context window). No measured figures.",
+ "voice": {
+  "style": "Warm, clear explainer narrator. Unhurried and friendly, like showing a colleague a neat trick.",
+  "outroStyle": "Calm and warm, a short takeaway."
+ },
+ "align": "auto",
+ "scenes": [
+  {
+   "id": "s01-swarm",
+   "lines": [
+    {
+     "text": "Give one AI every single job, and sooner or later it drowns."
+    },
+    {
+     "text": "The fix: hand some of it to sub agents."
+    }
+   ]
+  },
+  {
+   "id": "s02-gauge",
+   "lines": [
+    {
+     "text": "Every file it reads and every command it runs takes space in its working memory."
+    },
+    {
+     "text": "Near full, it gets slow, costly, and starts forgetting older details."
+    }
+   ]
+  },
+  {
+   "id": "s03-handoff",
+   "lines": [
+    {
+     "text": "A sub agent is a helper AI with exactly one task."
+    },
+    {
+     "text": "It works in its own memory, reads dozens of files, and reports back only the answer."
+    }
+   ]
+  },
+  {
+   "id": "s04-fanout",
+   "lines": [
+    {
+     "text": "Bigger job? Call several helpers at once."
+    },
+    {
+     "text": "One scans the code, one writes tests, one reviews."
+    },
+    {
+     "text": "An hour one by one becomes a few minutes in parallel."
+    }
+   ]
+  },
+  {
+   "id": "s05-split",
+   "lines": [
+    {
+     "text": "But don't hand off everything."
+    },
+    {
+     "text": "Lots of reading, only a conclusion needed? Delegate it."
+    },
+    {
+     "text": "Needs every detail in mind? The main AI keeps it."
+    }
+   ]
+  },
+  {
+   "id": "s06-recap",
+   "lines": [
+    {
+     "text": "So the main AI stays clear-headed for the hardest part: making the call."
+    }
+   ]
+  },
+  {
+   "id": "s07-outro",
+   "outro": true,
+   "lines": [
+    {
+     "text": "Sub agents: split the work, keep a clear head."
+    },
+    {
+     "text": "Save this for your next project."
+    }
+   ]
+  }
+ ]
+}

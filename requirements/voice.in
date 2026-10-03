@@ -1,0 +1,8 @@
+vieneu
+kokoro-onnx
+soundfile
+faster-whisper
+# Required by the bundled motion skill; newer runtimes broke voice loading.
+onnxruntime<1.23
+# faster-whisper 1.2.1 passes metadata_errors to av.open; PyAV 19 removed it.
+av>=11,<17

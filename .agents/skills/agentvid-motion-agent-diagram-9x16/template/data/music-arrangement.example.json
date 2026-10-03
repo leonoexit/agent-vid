@@ -1,0 +1,12 @@
+{
+  "source": "assets/audio/music/bgm-raw.mp3",
+  "output": "assets/audio/music/bgm.flac",
+  "bpm": 120,
+  "beat0": 0.0,
+  "crossfade": 0.025,
+  "fadeOut": { "beat": 24, "seconds": 2.5 },
+  "segments": [
+    { "to": [0, 8], "from": 0, "role": "build (fill bpm/beat0/from after fit-beat-grid)" },
+    { "to": [8, 28], "from": 16, "role": "drop" }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+ {
+  "sfx": "pop",
+  "scene": "s01-swarm",
+  "at": 0.2,
+  "vol": 0.3
+ },
+ {
+  "sfx": "swish",
+  "scene": "s02-gauge",
+  "at": 0,
+  "vol": 0.3
+ },
+ {
+  "sfx": "swish",
+  "scene": "s03-handoff",
+  "at": 0,
+  "vol": 0.3
+ },
+ {
+  "sfx": "chime",
+  "scene": "s04-fanout",
+  "at": 0.1,
+  "vol": 0.3
+ },
+ {
+  "sfx": "pencil",
+  "scene": "s05-split",
+  "at": 0.3,
+  "vol": 0.45
+ },
+ {
+  "sfx": "swish",
+  "scene": "s06-recap",
+  "at": 0,
+  "vol": 0.3
+ },
+ {
+  "sfx": "chime",
+  "scene": "s07-outro",
+  "at": 0.9,
+  "vol": 0.3
+ }
+]

@@ -1,0 +1,5 @@
+brew "python@3.12"
+brew "node"
+brew "ffmpeg"
+brew "imagemagick"
+brew "espeak-ng"

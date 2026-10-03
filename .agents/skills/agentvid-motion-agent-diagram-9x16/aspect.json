@@ -1,0 +1,9 @@
+{
+  "name": "portrait-9x16",
+  "width": 1080,
+  "height": 1920,
+  "safe": { "top": 220, "right": 130, "bottom": 420, "left": 60 },
+  "captions": { "maxWords": 5, "maxChars": 30, "bottom": 440, "width": 900, "fontSize": 52 },
+  "signature": { "right": 150, "bottom": 360 },
+  "notes": "Safe zone for Reels/TikTok/Shorts UI: top 220 px (status + tabs), bottom 420 px (caption, buttons), right 130 px (like/share rail). Captions sit just above the bottom UI; key content stays inside the safe box."
+}

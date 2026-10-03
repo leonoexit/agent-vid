@@ -1,0 +1,104 @@
+/* Agent diagram look on ink paper: paper tiles with ink outlines and a soft halo in their tone, dashed pencil links,
+   paper panels, pill warnings, a red rubber stamp. Tones stay in the ink-paper palette (rust accent, muted green,
+   blue ink, ochre, plum). Boxes are placed by layout.css; tile centres by scenes/diagram-dom.js. */
+:root { --t-main: var(--accent); --t-green: #3f7d3a; --t-blue: #2f6690; --t-gold: #a8741a; --t-plum: #7a4a8c; --t-ink: var(--ink); }
+.tone-main { --tone: var(--t-main); } .tone-green { --tone: var(--t-green); } .tone-blue { --tone: var(--t-blue); }
+.tone-gold { --tone: var(--t-gold); } .tone-plum { --tone: var(--t-plum); }
+
+/* ---------- HUD ---------- */
+#hud { position: absolute; display: flex; align-items: center; justify-content: space-between; }
+.hud-topic { display: flex; align-items: center; gap: 12px; font: 700 30px/1 var(--display); color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.hud-topic svg { width: 30px; height: 30px; color: var(--accent); }
+.hud-segs { display: flex; gap: 8px; }
+.hud-segs i { display: block; width: 40px; height: 9px; border-radius: 5px; background: rgba(42, 37, 32, 0.16); overflow: hidden; }
+.hud-segs b { display: block; height: 100%; background: var(--accent); transform-origin: 0 50%; }
+
+/* ---------- tiles + links ---------- */
+.dnode { position: absolute; }
+.dn-box { width: 100%; height: var(--s); display: grid; place-items: center; border: 4px solid var(--ink); border-radius: 28%;
+  background: color-mix(in srgb, var(--tone) 17%, #fffaf0); color: var(--tone);
+  box-shadow: 0 0 0 12px color-mix(in srgb, var(--tone) 13%, transparent), 6px 6px 0 12px var(--shadow); }
+.dn-box svg { width: 54%; height: 54%; }
+.dn-glyph { font: 700 calc(var(--s) * 0.34)/1 var(--body); letter-spacing: -0.04em; }
+.dn-label { position: absolute; left: 50%; top: calc(var(--s) + 18px); transform: translateX(-50%); white-space: nowrap;
+  font: 700 calc(max(24px, var(--s) * 0.19))/1.1 var(--display); color: var(--ink); text-transform: uppercase; letter-spacing: 0.04em; }
+.dnode.main .dn-label { color: var(--accent); }
+.dlink { position: absolute; }
+.dlink svg { display: block; overflow: visible; }
+.dbadge { position: absolute; right: -16px; top: -16px; width: 52px; height: 52px; border-radius: 50%; background: var(--t-green); border: 3px solid var(--ink); display: grid; place-items: center; }
+.dbadge svg { width: 70%; height: 70%; }
+
+/* ---------- chips, meters, bars ---------- */
+.dchip { position: absolute; padding: 12px 22px; border: 3px solid var(--ink); border-radius: 14px; background: #fffaf0; white-space: nowrap;
+  font: 600 30px/1.1 var(--body); box-shadow: 4px 4px 0 var(--shadow); }
+.dbar { position: relative; height: 26px; border: 3px solid var(--ink); border-radius: 999px; background: #fffaf0; overflow: hidden; }
+.dbar-fill { height: 100%; width: 100%; transform-origin: 0 50%; transform: scaleX(0); }
+.dmeter { position: absolute; display: grid; grid-template-columns: auto 1fr 120px; gap: 20px; align-items: center; font: 700 36px/1 var(--display); }
+.dm-val { text-align: right; color: var(--ink); }
+.df-bar { position: absolute; height: 22px; }
+
+/* ---------- panels: context window (gauge), own context (handoff) ---------- */
+.dpanel { position: absolute; display: flex; flex-direction: column; gap: 10px; padding: 18px; border: 3px solid var(--ink); border-radius: 18px;
+  background: var(--surface); box-shadow: 7px 7px 0 var(--shadow); overflow: hidden; }
+.dh-panel { border-color: var(--tone); }
+.dp-title { font: 700 32px/1.2 var(--display); color: var(--muted); text-align: center; padding-bottom: 6px; }
+.dh-panel .dp-title { color: var(--tone); }
+.dp-rows { display: flex; flex-direction: column; gap: 6px; }
+.drow { display: flex; align-items: center; gap: 12px; padding: 8px 6px; border-bottom: 2px dashed rgba(42, 37, 32, 0.22); font: 600 27px/1.15 var(--body); }
+.dr-text { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; }
+.dr-cost { color: var(--muted); font-weight: 700; }
+.dtool { flex: none; padding: 5px 12px; border-radius: 8px; background: var(--tone); color: #fff; font: 700 22px/1 var(--body); }
+.dgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.dcell { padding: 6px 8px; border: 2px solid var(--tone); border-radius: 7px; background: #fff; font: 600 21px/1.15 var(--body); white-space: nowrap; overflow: hidden; }
+.dh-tools { position: absolute; display: flex; justify-content: center; gap: 12px; }
+.dh-tools .dtool { font-size: 26px; padding: 8px 18px; }
+
+/* ---------- counters, warnings, gauges ---------- */
+.dcount { position: absolute; display: flex; flex-direction: column; gap: 10px; }
+.dh-count { align-items: center; text-align: center; }
+.dc-num { font: 700 124px/1 var(--display); color: var(--ink); }
+.dh-count .dc-num { color: var(--t-green); }
+.dc-sub { font: 600 30px/1.2 var(--body); color: var(--muted); }
+.dwarns { position: absolute; display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+.dwarn { padding: 12px 28px; border: 3px solid var(--bad); border-radius: 999px; background: #fff3ea; color: var(--bad); font: 700 36px/1.1 var(--display); }
+.dvgauge { position: absolute; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.dv-label { font: 700 26px/1.15 var(--display); color: var(--muted); }
+.dv-track { position: relative; width: 90px; height: 470px; border: 3px solid var(--ink); border-radius: 18px; background: #fffaf0; overflow: hidden; }
+.dv-fill { position: absolute; left: 0; right: 0; bottom: 0; height: 100%; background: var(--accent); transform-origin: 50% 100%; transform: scaleY(0); }
+.dv-val { font: 700 40px/1 var(--display); color: var(--accent); }
+
+/* ---------- ticket, race ---------- */
+.dticket { position: absolute; display: flex; flex-direction: column; gap: 6px; padding: 16px 22px; border: 3px solid var(--ink); border-radius: 12px;
+  background: #fffaf0; box-shadow: 5px 5px 0 var(--shadow); transform-origin: 50% 50%; }
+.dticket b { font: 700 22px/1 var(--body); color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; }
+.dticket span { font: 600 32px/1.25 var(--display); }
+.drace { position: absolute; display: flex; flex-direction: column; gap: 26px; padding: 28px 30px; border: 3px solid var(--ink); border-radius: 18px;
+  background: var(--surface); box-shadow: 7px 7px 0 var(--shadow); }
+.dr-row { display: flex; flex-direction: column; gap: 12px; }
+.dr-head { display: flex; justify-content: space-between; font: 700 34px/1.1 var(--display); }
+.dr-head b { color: var(--accent); }
+.dr-bar { height: 34px; }
+.dr-serial { background: var(--muted); }
+.dr-par { display: flex; }
+.dr-par i { flex: 1; }
+
+/* ---------- stamp + split cards ---------- */
+.dstamp { position: absolute; padding: 14px 20px; border: 6px solid var(--bad); border-radius: 14px; color: var(--bad); background: rgba(255, 243, 234, 0.9);
+  text-align: center; white-space: nowrap; font: 700 60px/1.1 var(--display); letter-spacing: 0.02em; }
+.dsplit { position: absolute; display: flex; flex-direction: column; gap: 18px; padding: 26px 24px; border: 4px solid var(--tone); border-radius: 20px;
+  background: var(--surface); box-shadow: 7px 7px 0 var(--shadow); }
+.ds-head { display: flex; align-items: center; gap: 16px; }
+.ds-icon { flex: none; width: 84px; height: 84px; display: grid; place-items: center; border: 3px solid var(--ink); border-radius: 26%;
+  background: color-mix(in srgb, var(--tone) 17%, #fffaf0); color: var(--tone); --s: 84px; }
+.ds-icon svg { width: 56%; height: 56%; }
+.ds-title { font: 700 42px/1.1 var(--display); color: var(--tone); }
+.ds-sub { font: 600 30px/1.3 var(--body); color: var(--muted); padding-bottom: 8px; border-bottom: 3px dashed rgba(42, 37, 32, 0.25); }
+.ds-item { padding: 16px 18px; border: 3px solid var(--tone); border-radius: 12px; background: #fff; font: 700 34px/1.2 var(--body); }
+
+/* ---------- recap ---------- */
+.dorbit { position: absolute; width: 520px; height: 520px; }
+.drgauge { position: absolute; display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: center; font: 700 30px/1 var(--display); color: var(--muted); }
+.drgauge b { color: var(--t-green); }
+.drtext { position: absolute; display: flex; flex-direction: column; align-items: center; text-align: center; font: 700 92px/1.12 var(--display); }
+.drt-line { width: 70%; height: 34px; }
+.drt-line svg { width: 100%; height: 100%; overflow: visible; }

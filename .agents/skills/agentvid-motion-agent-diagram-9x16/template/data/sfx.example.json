@@ -1,0 +1,7 @@
+[
+  { "id": "page", "prompt": "soft paper page turn, gentle, close mic", "duration": 0.7 },
+  { "id": "pencil", "prompt": "quick pencil scribble on paper, short tick mark", "duration": 0.5 },
+  { "id": "pop", "prompt": "soft wooden pop, gentle and warm", "duration": 0.5 },
+  { "id": "chime", "prompt": "warm soft glockenspiel chime, two notes, friendly", "duration": 1.0 },
+  { "id": "swish", "prompt": "light paper swish, airy, gentle transition", "duration": 0.6 }
+]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  agentvid-motion-agent-diagram composition: ink-paper look (parchment, pencil, Mali) + a living node diagram that
+  changes state scene by scene (swarm, gauge, handoff, fan-out, split, recap). Positions come from layout.css.
+  Do not write scenes here: describe them in data/storyboard.json. build-timeline.mjs injects TIMING, BRAND and STORYBOARD.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={{WIDTH}}, height={{HEIGHT}}">
+    <title>Agent diagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="scenes.css">
+    <link rel="stylesheet" href="diagram.css">
+    <link rel="stylesheet" href="layout.css">
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="60" data-width="{{WIDTH}}" data-height="{{HEIGHT}}" style="width: {{WIDTH}}px; height: {{HEIGHT}}px">
+      <div id="paper" class="layer"></div>
+      <div id="shake" class="layer"><div id="pulse" class="layer"><div id="stage" class="layer"></div></div></div>
+      <!-- topic tag + one progress segment per scene; stays above the scene sheets -->
+      <div id="hud"><div class="hud-topic"></div><div class="hud-segs"></div></div>
+      <div id="mascot"></div>
+      <div id="captions" class="layer"></div>
+      <div id="sig">
+        <svg viewBox="0 0 280 80" width="280" height="80"><path class="sig-line draw" pathLength="1" d="M10,70 C80,60 170,76 272,56" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/></svg>
+        <div class="sig-txt"></div>
+      </div>
+      <div id="flash" class="layer"></div>
+      <div id="fade" class="layer"></div>
+      <audio id="mix" src="assets/audio/mix.m4a" data-start="0" data-duration="60" data-track-index="10" data-volume="1"></audio>
+    </div>
+
+    <script>/*TIMING:BEGIN*/window.TIMING=null;/*TIMING:END*/</script>
+    <script>/*BRAND:BEGIN*/window.BRAND=null;/*BRAND:END*/</script>
+    <script>/*STORYBOARD:BEGIN*/window.STORYBOARD=null;/*STORYBOARD:END*/</script>
+    <script src="runtime/motion-runtime.js"></script>
+    <script src="runtime/karaoke-captions.js"></script>
+    <script src="runtime/brand-signature.js"></script>
+    <script src="runtime/scene-registry.js"></script>
+    <script src="scenes/ink-dom.js"></script>
+    <script src="scenes/ink-scenes.js"></script>
+    <script src="scenes/ink-cards.js"></script>
+    <script src="scenes/ink-main.js"></script>
+    <script src="scenes/diagram-dom.js"></script>
+    <script src="scenes/diagram-scenes-load.js"></script>
+    <script src="scenes/diagram-scenes-delegate.js"></script>
+    <script src="scenes/diagram-main.js"></script>
+    <script>
+      (() => {
+        document.documentElement.lang = window.TIMING.language || "en";
+        const kit = MotionKit.create(window.TIMING);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = kit.tl; // explicit registration: hyperframes lint checks this file
+        DiagramTheme.build(kit);
+      })();
+    </script>
+  </body>
+</html>

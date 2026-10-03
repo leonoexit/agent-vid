@@ -1,0 +1,89 @@
+{
+ "title": "Sub agent dễ hiểu",
+ "source": "Tự viết từ kiến thức chung về AI agent (sub agent, cửa sổ ngữ cảnh). Không có số liệu đo.",
+ "voice": {},
+ "align": "auto",
+ "scenes": [
+  {
+   "id": "s01-swarm",
+   "lines": [
+    {
+     "text": "Bắt một AI ôm hết mọi việc, sớm muộn nó cũng ngộp."
+    },
+    {
+     "text": "Cách gỡ: chia bớt cho các sub agent."
+    }
+   ]
+  },
+  {
+   "id": "s02-gauge",
+   "lines": [
+    {
+     "text": "Mỗi file AI đọc, mỗi lệnh nó chạy, đều chiếm chỗ trong bộ nhớ làm việc."
+    },
+    {
+     "text": "Bộ nhớ gần đầy thì AI chạy chậm, tốn tiền, và bắt đầu quên chi tiết cũ."
+    }
+   ]
+  },
+  {
+   "id": "s03-handoff",
+   "lines": [
+    {
+     "text": "Sub agent là trợ lý phụ, được giao đúng một nhiệm vụ."
+    },
+    {
+     "text": "Nó làm trong bộ nhớ riêng, đọc cả chục file, rồi chỉ báo lại kết quả gọn."
+    }
+   ]
+  },
+  {
+   "id": "s04-fanout",
+   "lines": [
+    {
+     "text": "Việc lớn thì gọi nhiều trợ lý cùng lúc."
+    },
+    {
+     "text": "Một người dò code, một người viết test, một người soát lỗi."
+    },
+    {
+     "text": "Làm lần lượt mất cả tiếng, chạy song song chỉ vài phút."
+    }
+   ]
+  },
+  {
+   "id": "s05-split",
+   "lines": [
+    {
+     "text": "Nhưng không phải việc gì cũng nên giao."
+    },
+    {
+     "text": "Việc phải đọc nhiều mà chỉ cần đáp án, giao cho trợ lý."
+    },
+    {
+     "text": "Việc cần hiểu sâu từng chi tiết, AI chính tự làm."
+    }
+   ]
+  },
+  {
+   "id": "s06-recap",
+   "lines": [
+    {
+     "text": "Nhờ vậy AI chính luôn nhẹ đầu, dành sức cho việc khó nhất: ra quyết định."
+    }
+   ]
+  },
+  {
+   "id": "s07-outro",
+   "outro": true,
+   "lines": [
+    {
+     "text": "Sub agent: chia việc đúng chỗ, giữ đầu óc sáng suốt."
+    },
+    {
+     "text": "Lưu lại, lần tới thử ngay nhé."
+    }
+   ]
+  }
+ ]
+}

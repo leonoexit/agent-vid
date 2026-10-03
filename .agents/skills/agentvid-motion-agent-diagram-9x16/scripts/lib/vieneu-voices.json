@@ -1,0 +1,30 @@
+{
+  "note": "VieNeu-TTS preset voices (vieneu 3.8, Vieneu().list_preset_voices()). region: bac = Northern, trung = Central, nam = Southern. starred = the model's recommended presets.",
+  "voices": [
+    { "name": "Thanh Bình", "gender": "male", "region": "bac", "style": "storytelling" },
+    { "name": "Hải Đăng", "gender": "male", "region": "bac", "style": "natural", "starred": true },
+    { "name": "Thiện Minh", "gender": "male", "region": "bac", "style": "storytelling", "starred": true },
+    { "name": "Thiền Tâm Đức", "gender": "male", "region": "bac", "style": "storytelling", "starred": true },
+    { "name": "Adam bựa", "gender": "male", "region": "bac", "style": "natural", "starred": true },
+    { "name": "Minh Đức", "gender": "male", "region": "bac", "style": "news" },
+    { "name": "Phạm Tuyên", "gender": "male", "region": "bac", "style": "natural" },
+    { "name": "Xuân Vĩnh", "gender": "male", "region": "bac", "style": "natural" },
+    { "name": "Quốc Tuấn", "gender": "male", "region": "bac", "style": "natural" },
+    { "name": "Ngọc Huyền", "gender": "female", "region": "bac", "style": "natural", "starred": true },
+    { "name": "Trúc Ly", "gender": "female", "region": "bac", "style": "natural", "starred": true },
+    { "name": "Mai Anh", "gender": "female", "region": "bac", "style": "news", "starred": true },
+    { "name": "Ngọc Linh", "gender": "female", "region": "bac", "style": "storytelling" },
+    { "name": "Đoan Trang", "gender": "female", "region": "bac", "style": "natural" },
+    { "name": "Quỳnh Anh", "gender": "female", "region": "bac", "style": "audiobook" },
+    { "name": "Quang Sơn", "gender": "male", "region": "trung", "style": "natural", "starred": true },
+    { "name": "Ngọc Trân", "gender": "female", "region": "trung", "style": "natural", "starred": true },
+    { "name": "Thái Sơn", "gender": "male", "region": "nam", "style": "storytelling" },
+    { "name": "Minh Triết", "gender": "male", "region": "nam", "style": "news" },
+    { "name": "Đức Trí", "gender": "male", "region": "nam", "style": "audiobook" },
+    { "name": "Adam", "gender": "male", "region": "nam", "style": "natural" },
+    { "name": "Thùy Dung", "gender": "female", "region": "nam", "style": "news", "starred": true },
+    { "name": "Thục Đoan", "gender": "female", "region": "nam", "style": "storytelling" },
+    { "name": "Mỹ Duyên", "gender": "female", "region": "nam", "style": "audiobook" },
+    { "name": "Kim Thanh", "gender": "female", "region": "nam", "style": "audiobook" }
+  ]
+}

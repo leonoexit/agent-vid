@@ -1,0 +1,21 @@
+{
+  "name": "agent-vid",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgentVid workspace for Vietnamese and English vertical video skills",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "doctor": "bash scripts/doctor.sh",
+    "test": "node --test .agents/skills/agentvid-motion-agent-diagram-9x16/scripts/tests/*.test.mjs && .venv/bin/python -m unittest discover -s .agents/skills/agentvid-motion-agent-diagram-9x16/scripts/tests",
+    "hyperframes": "hyperframes"
+  },
+  "dependencies": {
+    "hyperframes": "0.8.75"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

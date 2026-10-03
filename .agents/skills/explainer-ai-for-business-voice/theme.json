@@ -1,0 +1,148 @@
+{
+  "slug": "explainer-ai-for-business",
+  "skill_name": "explainer-ai-for-business-voice",
+  "variants": {
+    "music": "$1",
+    "voice": "$2"
+  },
+  "title": "AI cho doanh nghiệp — robot phác chì, giải thích cho chủ doanh nghiệp không rành kỹ thuật",
+  "lang": "vi",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "voice": {
+    "engine": "vieneu",
+    "vi": "Hải Đăng",
+    "en": {
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "wps": 2.5
+    }
+  },
+  "widgets": [
+    "day-timeline",
+    "before-after",
+    "flow-3step",
+    "chat",
+    "stat",
+    "analogy",
+    "checklist",
+    "load-meter",
+    "fan-out",
+    "delegate-split"
+  ],
+  "extra_scripts": [],
+  "fonts": [
+    {
+      "family": "Mali",
+      "weights": [
+        600,
+        700
+      ]
+    },
+    {
+      "family": "Be Vietnam Pro",
+      "weights": [
+        400,
+        600,
+        700
+      ]
+    }
+  ],
+  "runtime": {
+    "titleImage": "assets/plank-sign.png",
+    "poses": {
+      "intro": "map",
+      "outro": "cheer"
+    },
+    "captionHighlight": "#a24d15",
+    "intro": "notify",
+    "transition": "sweep",
+    "caption": "underline",
+    "outro": "start",
+    "sfx": {
+      "file": "assets/audio/sfx-intro.m4a",
+      "at": 0.2,
+      "volume": 0.5
+    },
+    "layout": "speaker"
+  },
+  "art": {
+    "prompt_style": "Graphite pencil sketch illustration with light cross-hatching and soft grey shading, subtle warm beige tint, on a plain pure white background, no paper texture, clean isolated drawings, vintage engineering notebook style.",
+    "mascot": "a small original round-dome robot with one big camera-lens eye, a short antenna, a canvas satchel bag, stubby legs",
+    "poses": {
+      "map": "walking while reading a folded paper map",
+      "magnifier": "leaning forward holding a big magnifying glass",
+      "confused": "scratching its head, confused, a small question mark above",
+      "cheer": "cheerful, one arm raised waving"
+    },
+    "props": {
+      "workflow": "three blank paper cards pinned on a board, connected left to right by hand-drawn arrows",
+      "invoices": "a tall wobbly stack of blank paper invoices and receipts on a small desk",
+      "clock": "a round wall clock next to an hourglass",
+      "counter": "a small shop counter with an old cash register and a paper bag",
+      "inbox": "an overflowing office letter tray full of blank envelopes",
+      "phone": "a smartphone showing blank chat bubbles on its screen"
+    },
+    "header": {
+      "file": "plank-sign.png",
+      "prompt": "A single long empty horizontal weathered wooden signboard plank, rough cut ends, a few nails, wood grain, drawn in pencil with light warm wash, centered, wide aspect, completely blank surface."
+    }
+  },
+  "sales": {
+    "title": "AI cho doanh nghiệp",
+    "tagline": "Giải thích cho chủ doanh nghiệp không rành kỹ thuật: một việc làm tay → AI agent làm thay, tiết kiệm bao nhiêu.",
+    "bullets": [
+      "Robot phác chì, không một từ kỹ thuật trên màn hình",
+      "Một ngày bị ăn giờ, trước/sau, agent làm 3 bước, chat mẫu, tiết kiệm, ví von đời thường, bắt đầu từ đâu",
+      "Hợp cho người bán giải pháp AI, tư vấn chuyển đổi số"
+    ],
+    "example": "Làm video: AI agent nhắc công nợ và đối soát hoá đơn cho công ty phân phối nhỏ"
+  },
+  "limits": {
+    "title": 22,
+    "subtitle": 30,
+    "intro.prompt": 32,
+    "intro.line2a": 16,
+    "intro.line2b": 20,
+    "outro.line2": 20,
+    "outro.line3": 28,
+    "outro.credit": 55,
+    "scene.title": 24,
+    "scene.before": 40,
+    "w.day-timeline.heading": 36,
+    "w.day-timeline.label": 18,
+    "w.day-timeline.summary": 26,
+    "w.before-after.items": 22,
+    "w.before-after.total": 10,
+    "w.flow-3step.heading": 36,
+    "w.flow-3step.title": 12,
+    "w.flow-3step.text": 34,
+    "w.chat.heading": 36,
+    "w.chat.text": 60,
+    "w.analogy.left": 14,
+    "w.analogy.right": 24,
+    "w.analogy.text": 34,
+    "w.checklist.heading": 36,
+    "w.checklist.items": 34,
+    "w.stat.heading": 36,
+    "w.load-meter.heading": 36,
+    "w.load-meter.items": 20,
+    "w.load-meter.label": 14,
+    "w.fan-out.label": 14,
+    "w.fan-out.value": 10,
+    "w.fan-out.agent": 4,
+    "w.delegate-split.stamp": 20,
+    "w.delegate-split.title": 16,
+    "w.delegate-split.items": 22
+  },
+  "doc": {
+    "target": [
+      70,
+      85
+    ],
+    "scenes": 7,
+    "step2": "write <project>/script.json (schema below) — start from the sample already in the copy"
+  }
+}

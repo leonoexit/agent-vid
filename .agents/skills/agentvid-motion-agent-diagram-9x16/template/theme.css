@@ -1,0 +1,60 @@
+/* Ink paper: graphite-pencil explainer look. Parchment gradient, a pencil-sketch robot mascot with four poses, a wooden
+   plank sign for titles, paper cards with ink outlines, hand-drawn strokes, handwritten display font (Mali) with a clean
+   body font (Be Vietnam Pro). The accent follows the brand but is mixed toward rust so any brand colour sits on paper.
+   Positions live in layout.css (one per aspect); this file only holds the look. */
+:root {
+  --ink: #2a2520; --paper: #efe2c6; --muted: #6b5a44; --ok: #3f7d3a; --bad: #b8412f; --hl: #f3c56a;
+  --brand-primary: #ff7a1a; --brand-secondary: #ffc21a; --brand-accent: #ff4d2e;
+  --accent: color-mix(in srgb, var(--brand-primary) 58%, #6e3510);
+  --surface: rgba(255, 252, 240, 0.9); --shadow: rgba(60, 45, 25, 0.16);
+  --display: "Mali", "Be Vietnam Pro", sans-serif;
+  --body: "Be Vietnam Pro", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); }
+#root { position: relative; overflow: hidden; color: var(--ink); font-family: var(--body); }
+.layer { position: absolute; inset: 0; }
+.rv { visibility: hidden; opacity: 0; }
+.draw { stroke-dasharray: 1; stroke-dashoffset: 1; }
+
+/* ---------- paper ---------- */
+#paper, .scene { background:
+  radial-gradient(ellipse at 20% 15%, rgba(255, 248, 228, 0.9), rgba(255, 248, 228, 0) 55%),
+  radial-gradient(ellipse at 80% 85%, rgba(190, 160, 110, 0.35), rgba(190, 160, 110, 0) 60%),
+  radial-gradient(ellipse at 50% 50%, #f1e5ca 40%, #e2cfa6 100%); }
+#paper::after { content: ""; position: absolute; inset: 0; background-image: url("assets/images/grain.png"); background-size: 256px; opacity: 0.35; mix-blend-mode: multiply; }
+#fade { background: #1c1712; opacity: 1; }
+#flash { background: #fff8e8; opacity: 0; }
+
+/* the page edge of an incoming sheet */
+.scene { box-shadow: -18px 0 30px rgba(60, 45, 25, 0.18); }
+
+/* ---------- plank title + counter ---------- */
+.plank { position: absolute; display: flex; align-items: center; justify-content: center; padding: 0 90px 10px;
+  background: url("assets/images/plank-sign.png") center / 100% 100% no-repeat; transform-origin: 50% 0; }
+.plank span { font: 700 var(--plank-size, 60px)/1.15 var(--display); color: var(--ink); text-align: center; letter-spacing: 0.01em; }
+.counter { position: absolute; display: grid; place-items: center; border-radius: 50%; border: 4px solid var(--accent); background: var(--surface);
+  font: 700 30px/1 var(--display); color: var(--accent); }
+
+/* ---------- mascot + signature ---------- */
+#mascot { position: absolute; transform-origin: 50% 100%; }
+#mascot img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; mix-blend-mode: multiply; visibility: hidden; }
+#mascot img.on { visibility: visible; }
+#sig { position: absolute; width: 280px; height: 80px; }
+#sig .sig-txt { position: absolute; left: 8px; top: 2px; font: 700 50px/1 var(--display); color: var(--ink); white-space: nowrap; }
+#sig svg { position: absolute; left: 0; top: 0; }
+
+/* ---------- cards and pieces ---------- */
+.card { background: var(--surface); border: 3px solid var(--ink); border-radius: 16px; box-shadow: 7px 7px 0 var(--shadow); }
+.label { font: 700 30px/1.2 var(--display); color: var(--muted); }
+.pill { display: inline-flex; align-items: center; gap: 14px; padding: 12px 30px; border-radius: 999px; background: var(--accent); color: #fff;
+  font: 700 34px/1 var(--display); box-shadow: 5px 5px 0 var(--ink); }
+.num { display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--accent); color: #fff; font: 700 34px/1 var(--display); flex: none; }
+em { font-style: normal; color: var(--accent); }
+
+/* ---------- captions: handwritten words, the spoken one underlined ---------- */
+.cap { position: absolute; left: 50%; width: var(--cap-width, 1660px); transform: translateX(-50%); bottom: var(--cap-bottom, 44px); display: flex; justify-content: center; }
+.cap-box { max-width: 100%; padding: 6px 18px; font: 700 var(--cap-size, 46px)/1.3 var(--display); text-align: center; }
+.cw { color: rgba(42, 37, 32, 0.62); border-bottom: 4px solid transparent; }
+.cw[data-s="on"] { color: var(--accent); border-bottom-color: var(--accent); }
+.cw[data-s="done"] { color: var(--ink); }

@@ -1,0 +1,84 @@
+{
+  "title": "Agent diagram (ink paper, 9:16)",
+  "defaultLanguage": "en",
+  "voices": {
+    "en": {
+      "engine": "gemini",
+      "voice": "Puck",
+      "model": "gemini-3.8-flash-tts",
+      "tempo": 1.04
+    },
+    "vi": {
+      "engine": "vieneu",
+      "voice": "Thanh Bình",
+      "tempo": 1.0
+    }
+  },
+  "sceneTypes": [
+    "swarm",
+    "gauge",
+    "handoff",
+    "fan-out",
+    "split",
+    "recap",
+    "cover",
+    "stats",
+    "feature",
+    "statement",
+    "outro"
+  ],
+  "cardKinds": [
+    "checklist",
+    "steps",
+    "compare",
+    "chat",
+    "prop"
+  ],
+  "mascotPoses": [
+    "map",
+    "magnifier",
+    "confused",
+    "cheer"
+  ],
+  "props": [
+    "clock",
+    "counter",
+    "inbox",
+    "invoices",
+    "phone",
+    "workflow"
+  ],
+  "fonts": [
+    {
+      "family": "Mali",
+      "weights": [
+        600,
+        700
+      ]
+    },
+    {
+      "family": "Be Vietnam Pro",
+      "weights": [
+        400,
+        600,
+        700
+      ]
+    }
+  ],
+  "base": "_ink-paper-shared",
+  "skill_name": "agentvid-motion-agent-diagram-9x16",
+  "aspect": "portrait-9x16",
+  "styleTokens": {
+    "--paper": "palette.bg",
+    "--ink": "palette.ink",
+    "--accent": "palette.accent",
+    "--hl": "palette.accent2",
+    "--surface": "palette.surface",
+    "--muted": "palette.mute",
+    "--ok": "palette.ok",
+    "--bad": "palette.bad",
+    "--display": "fonts.display",
+    "--body": "fonts.body"
+  },
+  "defaultStyle": "pencil-notebook"
+}

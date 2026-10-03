@@ -1,0 +1,308 @@
+{
+ "topic": "Sub agent",
+ "scenes": [
+  {
+   "id": "s01-swarm",
+   "type": "swarm",
+   "main": {
+    "label": "AI chính"
+   },
+   "chips": [
+    {
+     "text": "Sửa lỗi đăng nhập",
+     "at": 0.2
+    },
+    {
+     "text": "Đọc 40 file",
+     "at": 0.6
+    },
+    {
+     "text": "Viết test",
+     "at": 1.0
+    },
+    {
+     "text": "Cập nhật tài liệu",
+     "at": 1.4
+    },
+    {
+     "text": "Review PR",
+     "at": 1.8
+    },
+    {
+     "text": "Dò log lỗi",
+     "at": 2.2
+    },
+    {
+     "text": "Tối ưu truy vấn",
+     "at": 2.6
+    }
+   ],
+   "meter": {
+    "label": "Áp lực",
+    "from": 35,
+    "to": 97,
+    "at": 0.3
+   },
+   "helpers": [
+    {
+     "label": "Sub agent",
+     "at": "sub"
+    },
+    {
+     "label": "Sub agent",
+     "tone": "blue",
+     "at": {
+      "word": "sub",
+      "plus": 0.35
+     }
+    }
+   ]
+  },
+  {
+   "id": "s02-gauge",
+   "type": "gauge",
+   "main": {
+    "label": "AI chính"
+   },
+   "panel": {
+    "title": "Bộ nhớ làm việc",
+    "at": "file",
+    "rows": [
+     {
+      "tool": "Read",
+      "text": "src/auth.ts",
+      "cost": "+6k"
+     },
+     {
+      "tool": "Bash",
+      "text": "npm test",
+      "cost": "+9k"
+     },
+     {
+      "tool": "Grep",
+      "text": "\"login\"",
+      "cost": "+3k"
+     },
+     {
+      "tool": "Read",
+      "text": "lib/date.ts",
+      "cost": "+4k"
+     },
+     {
+      "tool": "Read",
+      "text": "api/pay.ts",
+      "cost": "+7k"
+     },
+     {
+      "tool": "Bash",
+      "text": "git log",
+      "cost": "+5k"
+     },
+     {
+      "tool": "Read",
+      "text": "ui/form.tsx",
+      "cost": "+6k"
+     },
+     {
+      "tool": "Grep",
+      "text": "\"fetch(\"",
+      "cost": "+4k"
+     },
+     {
+      "tool": "Read",
+      "text": "db/user.ts",
+      "cost": "+5k"
+     },
+     {
+      "tool": "Bash",
+      "text": "npm run lint",
+      "cost": "+8k"
+     },
+     {
+      "tool": "Read",
+      "text": "README.md",
+      "cost": "+3k"
+     }
+    ]
+   },
+   "counter": {
+    "from": 40,
+    "to": 190,
+    "max": 200,
+    "alarm": 170,
+    "suffix": "k",
+    "sub": "/ 200k token"
+   },
+   "warnings": [
+    {
+     "text": "Chậm",
+     "at": "chậm"
+    },
+    {
+     "text": "Tốn",
+     "at": "tốn"
+    },
+    {
+     "text": "Dễ quên",
+     "at": "quên"
+    }
+   ],
+   "forget": {
+    "at": {
+     "word": "quên",
+     "plus": 0.3
+    },
+    "rows": 4
+   }
+  },
+  {
+   "id": "s03-handoff",
+   "type": "handoff",
+   "main": {
+    "label": "AI chính"
+   },
+   "helper": {
+    "label": "Sub agent",
+    "at": "sub"
+   },
+   "mainGauge": {
+    "label": "bộ nhớ chính",
+    "value": 18
+   },
+   "ticket": {
+    "label": "Nhiệm vụ",
+    "text": "Tìm mọi chỗ gọi API thanh toán",
+    "at": "nhiệm"
+   },
+   "panel": {
+    "title": "Bộ nhớ riêng",
+    "at": "riêng",
+    "fill": 3,
+    "items": [
+     "api/pay.ts",
+     "api/order.ts",
+     "lib/retry.ts",
+     "svc/cart.ts",
+     "ui/checkout.tsx",
+     "db/charge.ts",
+     "api/refund.ts",
+     "svc/store.ts",
+     "lib/http.ts",
+     "ui/cart.tsx",
+     "db/order.ts",
+     "pay/client.ts",
+     "pay/hook.ts",
+     "svc/price.ts",
+     "api/types.ts",
+     "web/util.ts",
+     "app/pay.ts",
+     "lib/log.ts"
+    ]
+   },
+   "counter": {
+    "to": 38,
+    "label": "file đã đọc"
+   },
+   "tools": [
+    "Read",
+    "Grep",
+    "Bash"
+   ],
+   "done": {
+    "at": "gọn"
+   }
+  },
+  {
+   "id": "s04-fanout",
+   "type": "fan-out",
+   "main": {
+    "label": "AI chính"
+   },
+   "helpers": [
+    {
+     "label": "Dò code",
+     "at": "dò"
+    },
+    {
+     "label": "Viết test",
+     "at": "viết"
+    },
+    {
+     "label": "Soát lỗi",
+     "at": "soát"
+    }
+   ],
+   "race": {
+    "at": "lượt",
+    "serial": {
+     "label": "Lần lượt",
+     "value": "~1 tiếng"
+    },
+    "parallel": {
+     "label": "Song song",
+     "value": "vài phút",
+     "ratio": 0.18
+    }
+   }
+  },
+  {
+   "id": "s05-split",
+   "type": "split",
+   "stamp": {
+    "text": "Giao có chọn lọc",
+    "at": "không"
+   },
+   "left": {
+    "title": "Giao trợ lý",
+    "sub": "Đọc nhiều, cần đáp án",
+    "at": "đọc",
+    "items": [
+     "Dò cả codebase",
+     "Tìm log lỗi",
+     "Soát tài liệu"
+    ]
+   },
+   "right": {
+    "title": "AI chính làm",
+    "sub": "Cần hiểu sâu chi tiết",
+    "at": "hiểu",
+    "items": [
+     "Thiết kế kiến trúc",
+     "Quyết định cuối"
+    ]
+   }
+  },
+  {
+   "id": "s06-recap",
+   "type": "recap",
+   "main": {
+    "label": "AI chính"
+   },
+   "helpers": [
+    {},
+    {
+     "tone": "blue"
+    },
+    {
+     "tone": "gold"
+    }
+   ],
+   "gauge": {
+    "label": "bộ nhớ",
+    "value": 12
+   },
+   "text": "*Ra quyết định*",
+   "at": "quyết"
+  },
+  {
+   "id": "s07-outro",
+   "type": "outro",
+   "line": "*Sub agent* = chia việc đúng chỗ",
+   "cta": "Lưu lại để thử",
+   "at": {
+    "line": "sub",
+    "cta": "lưu"
+   }
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "topic": "Sub agents",
+ "scenes": [
+  {
+   "id": "s01-swarm",
+   "type": "swarm",
+   "main": {
+    "label": "Main AI"
+   },
+   "chips": [
+    {
+     "text": "Fix login bug",
+     "at": 0.2
+    },
+    {
+     "text": "Read 40 files",
+     "at": 0.6
+    },
+    {
+     "text": "Write tests",
+     "at": 1.0
+    },
+    {
+     "text": "Update docs",
+     "at": 1.4
+    },
+    {
+     "text": "Review PR",
+     "at": 1.8
+    },
+    {
+     "text": "Dig through logs",
+     "at": 2.2
+    },
+    {
+     "text": "Speed up queries",
+     "at": 2.6
+    }
+   ],
+   "meter": {
+    "label": "Load",
+    "from": 35,
+    "to": 97,
+    "at": 0.3
+   },
+   "helpers": [
+    {
+     "label": "Sub agent",
+     "at": "sub"
+    },
+    {
+     "label": "Sub agent",
+     "tone": "blue",
+     "at": {
+      "word": "sub",
+      "plus": 0.35
+     }
+    }
+   ]
+  },
+  {
+   "id": "s02-gauge",
+   "type": "gauge",
+   "main": {
+    "label": "Main AI"
+   },
+   "panel": {
+    "title": "Working memory",
+    "at": "file",
+    "rows": [
+     {
+      "tool": "Read",
+      "text": "src/auth.ts",
+      "cost": "+6k"
+     },
+     {
+      "tool": "Bash",
+      "text": "npm test",
+      "cost": "+9k"
+     },
+     {
+      "tool": "Grep",
+      "text": "\"login\"",
+      "cost": "+3k"
+     },
+     {
+      "tool": "Read",
+      "text": "lib/date.ts",
+      "cost": "+4k"
+     },
+     {
+      "tool": "Read",
+      "text": "api/pay.ts",
+      "cost": "+7k"
+     },
+     {
+      "tool": "Bash",
+      "text": "git log",
+      "cost": "+5k"
+     },
+     {
+      "tool": "Read",
+      "text": "ui/form.tsx",
+      "cost": "+6k"
+     },
+     {
+      "tool": "Grep",
+      "text": "\"fetch(\"",
+      "cost": "+4k"
+     },
+     {
+      "tool": "Read",
+      "text": "db/user.ts",
+      "cost": "+5k"
+     },
+     {
+      "tool": "Bash",
+      "text": "npm run lint",
+      "cost": "+8k"
+     },
+     {
+      "tool": "Read",
+      "text": "README.md",
+      "cost": "+3k"
+     }
+    ]
+   },
+   "counter": {
+    "from": 40,
+    "to": 190,
+    "max": 200,
+    "alarm": 170,
+    "suffix": "k",
+    "sub": "/ 200k tokens"
+   },
+   "warnings": [
+    {
+     "text": "Slow",
+     "at": "slow"
+    },
+    {
+     "text": "Costly",
+     "at": "costly"
+    },
+    {
+     "text": "Forgetful",
+     "at": "forgetting"
+    }
+   ],
+   "forget": {
+    "at": {
+     "word": "forgetting",
+     "plus": 0.3
+    },
+    "rows": 4
+   }
+  },
+  {
+   "id": "s03-handoff",
+   "type": "handoff",
+   "main": {
+    "label": "Main AI"
+   },
+   "helper": {
+    "label": "Sub agent",
+    "at": "sub"
+   },
+   "mainGauge": {
+    "label": "main memory",
+    "value": 18
+   },
+   "ticket": {
+    "label": "Task",
+    "text": "Find every call to the payment API",
+    "at": "task"
+   },
+   "panel": {
+    "title": "Own memory",
+    "at": "own",
+    "fill": 3,
+    "items": [
+     "api/pay.ts",
+     "api/order.ts",
+     "lib/retry.ts",
+     "svc/cart.ts",
+     "ui/checkout.tsx",
+     "db/charge.ts",
+     "api/refund.ts",
+     "svc/store.ts",
+     "lib/http.ts",
+     "ui/cart.tsx",
+     "db/order.ts",
+     "pay/client.ts",
+     "pay/hook.ts",
+     "svc/price.ts",
+     "api/types.ts",
+     "web/util.ts",
+     "app/pay.ts",
+     "lib/log.ts"
+    ]
+   },
+   "counter": {
+    "to": 38,
+    "label": "files read"
+   },
+   "tools": [
+    "Read",
+    "Grep",
+    "Bash"
+   ],
+   "done": {
+    "at": "answer"
+   }
+  },
+  {
+   "id": "s04-fanout",
+   "type": "fan-out",
+   "main": {
+    "label": "Main AI"
+   },
+   "helpers": [
+    {
+     "label": "Scan code",
+     "at": "scans"
+    },
+    {
+     "label": "Write tests",
+     "at": "writes"
+    },
+    {
+     "label": "Review",
+     "at": "reviews"
+    }
+   ],
+   "race": {
+    "at": "hour",
+    "serial": {
+     "label": "One by one",
+     "value": "~1 hour"
+    },
+    "parallel": {
+     "label": "In parallel",
+     "value": "minutes",
+     "ratio": 0.18
+    }
+   }
+  },
+  {
+   "id": "s05-split",
+   "type": "split",
+   "stamp": {
+    "text": "Delegate with care",
+    "at": "don't"
+   },
+   "left": {
+    "title": "Hand off",
+    "sub": "Lots of reading, one answer",
+    "at": "reading",
+    "items": [
+     "Scan the codebase",
+     "Find error logs",
+     "Check the docs"
+    ]
+   },
+   "right": {
+    "title": "Main AI keeps",
+    "sub": "Needs every detail",
+    "at": "every",
+    "items": [
+     "System design",
+     "The final call"
+    ]
+   }
+  },
+  {
+   "id": "s06-recap",
+   "type": "recap",
+   "main": {
+    "label": "Main AI"
+   },
+   "helpers": [
+    {},
+    {
+     "tone": "blue"
+    },
+    {
+     "tone": "gold"
+    }
+   ],
+   "gauge": {
+    "label": "memory",
+    "value": 12
+   },
+   "text": "*Making the call*",
+   "at": "making"
+  },
+  {
+   "id": "s07-outro",
+   "type": "outro",
+   "line": "*Sub agents* = split the work",
+   "cta": "Save for later",
+   "at": {
+    "line": "sub",
+    "cta": "save"
+   }
+  }
+ ]
+}
