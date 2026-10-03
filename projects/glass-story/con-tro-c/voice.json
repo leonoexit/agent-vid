@@ -1,0 +1,10 @@
+{
+  "engine": "vieneu",
+  "vi": "Thái Sơn",
+  "speed": 0.88,
+  "paragraph_gap": 0.9,
+  "en": {
+    "engine": "kokoro",
+    "voice": "am_michael"
+  }
+}

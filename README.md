@@ -4,6 +4,8 @@ Workspace tạo video dọc 1080×1920 bằng các skill trong `.agents/skills`:
 
 - `agentvid-motion-agent-diagram-9x16`: video 45–75 giây giải thích một khái niệm AI bằng sơ đồ động.
 - `explainer-ai-for-business-voice`: video 60–90 giây giải thích AI/tự động hóa cho doanh nghiệp, giọng Việt hoặc Anh.
+- `explainer-editorial-voice`: video giải thích đa chủ đề, nền trắng ngà/đen đơn sắc, chữ monospace, SVG nét và bố cục editorial. Hỗ trợ sơ đồ giữ nguyên qua nhiều cảnh, thay đổi trạng thái theo lời đọc và ảnh minh họa (có thể tạo bằng AI). Giọng Việt/Anh; nội dung và cấu trúc theo yêu cầu người dùng.
+- `explainer-glass-story-voice`: chuyên giải thích một khái niệm lập trình qua một ví dụ chạy từng bước, phong cách Dream State glass-card rose/amber. Mặc định Hải Đăng nam miền Bắc, nhịp đọc tự nhiên và thao tác nối tiếp.
 
 ## Môi trường
 
@@ -72,8 +74,41 @@ python .agents/skills/agentvid-motion-agent-diagram-9x16/scripts/setup-vieneu.py
 
 Setup tạo file thử giọng Việt/Anh và kết quả căn thời gian trong `.runtime/agentvid/`.
 VieNeu/Kokoro và faster-whisper chạy local, không cần API key. Các chức năng dùng nhà cung cấp ngoài
-(Gemini, ElevenLabs, Soniox, tạo hình/nhạc) cần key tương ứng theo hướng dẫn từng skill.
+(Gemini, ElevenLabs, Soniox, tạo hình/nhạc qua API) cần key tương ứng theo hướng dẫn từng skill.
+Asset editorial cũng có thể tạo bằng công cụ imagegen tích hợp nếu phiên làm việc cung cấp công cụ đó.
 Đặt key qua biến môi trường hoặc file key cá nhân mà skill hỗ trợ; không commit key.
 
 Git chỉ lưu mã nguồn, template, tài sản đi kèm, tài liệu và lockfile. Môi trường ảo, model, cache và render
 không được đưa lên GitHub. Khi clone trên máy khác, chạy lại setup để dựng môi trường.
+
+## Phiên bản editorial
+
+Ví dụ yêu cầu tự nhiên: “Dùng skill explainer-editorial-voice, làm video 60 giây giải thích con trỏ trong C
+cho người mới, theo pyramid principle, giọng nữ miền Nam.”
+
+Tạo dự án mới:
+
+```bash
+source scripts/activate.sh
+python .agents/skills/explainer-editorial-voice/scripts/new-project.py projects/editorial/my-topic --language vi --voice "Thùy Dung"
+```
+
+Sửa nội dung trong script.json, rồi thực hiện pipeline trong SKILL.md của skill. Skill mới dùng các môi trường đã cài;
+không cần thêm phụ thuộc hệ thống. Thiết kế gốc được lưu trong design-style.json để tiếp tục tối ưu.
+
+## Phiên bản glass story
+
+Ví dụ: “Dùng skill explainer-glass-story-voice, giải thích phép gán trong C cho người học code vì sở thích;
+cho thấy giá trị thay đổi theo từng dòng lệnh.” Mặc định giọng Hải Đăng nam miền Bắc; có thể yêu cầu giọng khác.
+
+```bash
+source scripts/activate.sh
+python .agents/skills/explainer-glass-story-voice/scripts/new-project.py projects/glass-story/my-topic --language vi
+```
+
+Kịch bản mới dùng đối tượng và các thao tác show/open/morph/transfer/write theo lời đọc. Mặc định speed=1.0,
+paragraph_gap=0.2 và hold=0; kết quả được giữ trên hình trong lúc lời giải thích tiếp tục. Chỉ thêm khoảng nghỉ có
+mục đích cụ thể. Nguồn 5 HTML/80 slide và bảng tra cứu nằm trong references/ của skill; một style Dream State
+được triển khai, các style khác chỉ là tham chiếu. Các skill mới sẽ chuyên một style và một dạng nội dung.
+Bản demo con trỏ trước ở projects/glass-story/con-tro-c giữ cấu hình Thái Sơn của lần test đó; video render nằm
+trong renders/ và không đưa vào Git.

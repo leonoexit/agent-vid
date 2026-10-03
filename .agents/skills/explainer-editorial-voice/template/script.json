@@ -1,0 +1,152 @@
+{
+  "language": "vi",
+  "title": "Con trỏ giữ địa chỉ",
+  "subtitle": "Một ví dụ C cho người mới",
+  "brand": "AGENTVID",
+  "series": "GHI CHÚ",
+  "tag": "C / CON TRỎ",
+  "edition": "TẬP 001",
+  "intro": {
+    "line1": "Lưu địa chỉ.",
+    "line2a": "Đọc và sửa dữ liệu.",
+    "icon": "pin",
+    "vo": "Con trỏ là một biến lưu địa chỉ của biến khác. Nhờ địa chỉ đó, mình đọc hoặc sửa dữ liệu ở đúng chỗ. Bạn chỉ cần nhớ ba ý: địa chỉ, đọc, và sửa."
+  },
+  "scenes": [
+    {
+      "title": "Hộp và địa chỉ",
+      "subtitle": "Hai thứ khác nhau",
+      "widget": {
+        "kind": "diagram",
+        "continuity": "pointer-example",
+        "nodes": [
+          {
+            "id": "p",
+            "label": "Con trỏ p",
+            "value": "&x",
+            "detail": "Giữ địa chỉ"
+          },
+          {
+            "id": "x",
+            "label": "Biến x",
+            "value": "10",
+            "detail": "Dữ liệu"
+          }
+        ],
+        "edges": [
+          {
+            "from": "p",
+            "to": "x"
+          }
+        ],
+        "note": "int x = 10;  int *p = &x;",
+        "events": [
+          {
+            "on": "chiếc hộp",
+            "focus": [
+              "x"
+            ]
+          },
+          {
+            "on": "ghi địa chỉ hộp",
+            "focus": [
+              "p"
+            ],
+            "edge": {
+              "from": "p",
+              "to": "x"
+            }
+          }
+        ]
+      },
+      "after": "Con trỏ không tạo bản sao dữ liệu.",
+      "vo": "Tưởng tượng biến ích là chiếc hộp chứa số mười. Con trỏ pê giống tờ giấy ghi địa chỉ hộp. Tờ giấy giúp tìm đến hộp, chứ không chép số mười sang hộp mới."
+    },
+    {
+      "title": "Địa chỉ ≠ giá trị",
+      "widget": {
+        "kind": "diagram",
+        "continuity": "pointer-example",
+        "events": [
+          {
+            "on": "Dấu và",
+            "focus": [
+              "p"
+            ],
+            "note": "&x  →  địa chỉ của x"
+          },
+          {
+            "on": "Pê giữ",
+            "edge": {
+              "from": "p",
+              "to": "x"
+            }
+          },
+          {
+            "on": "Còn dấu sao",
+            "focus": [
+              "x"
+            ],
+            "note": "*p  →  dữ liệu của x: 10"
+          }
+        ]
+      },
+      "after": "Dấu & lấy địa chỉ; dấu * truy cập dữ liệu.",
+      "vo": "Đọc ba ký hiệu như vầy. Dấu và trước ích lấy địa chỉ. Pê giữ địa chỉ ấy. Còn dấu sao trước pê, khi dùng trong biểu thức, truy cập dữ liệu ở địa chỉ đó."
+    },
+    {
+      "title": "Sửa qua con trỏ",
+      "widget": {
+        "kind": "diagram",
+        "continuity": "pointer-example",
+        "events": [
+          {
+            "on": "Giờ gán",
+            "note": "*p = 20;"
+          },
+          {
+            "on": "đi theo địa chỉ",
+            "edge": {
+              "from": "p",
+              "to": "x"
+            },
+            "focus": [
+              "x"
+            ]
+          },
+          {
+            "on": "thành hai mươi",
+            "set": {
+              "x": "20"
+            },
+            "note": "x = 20;  *p = 20;"
+          }
+        ]
+      },
+      "after": "Hai cách truy cập cùng một biến.",
+      "vo": "Giờ gán hai mươi vào sao pê. Bạn đang đi theo địa chỉ rồi sửa bên trong chiếc hộp. Vì pê trỏ tới ích, nên ích đổi từ mười thành hai mươi.",
+      "afterOn": "thành hai mươi"
+    },
+    {
+      "title": "Tự thử một lần",
+      "widget": {
+        "kind": "checklist",
+        "items": [
+          "Cho p trỏ tới biến x.",
+          "Đổi *p = 20 thành *p = 30.",
+          "Đoán giá trị x trước khi chạy."
+        ]
+      },
+      "after": "Địa chỉ hợp lệ rồi mới đọc hoặc ghi.",
+      "vo": "Bạn thử đổi hai mươi thành ba mươi trong ví dụ vừa rồi. Trước khi chạy, đoán xem ích bằng bao nhiêu. Đáp án là ba mươi, vì dòng cuối sửa biến mà con trỏ đang trỏ tới."
+    }
+  ],
+  "outro": {
+    "line1": "Địa chỉ → dữ liệu",
+    "line2": "Đọc và sửa đúng chỗ.",
+    "line3": "Thử đổi 20 thành 30 nhé!",
+    "credit": "Ví dụ minh họa / Con trỏ trong C",
+    "icon": "check",
+    "vo": "Nhớ ba ý: lưu địa chỉ, đọc dữ liệu, sửa dữ liệu. Thử đổi hai mươi thành ba mươi, rồi đoán kết quả nhé!"
+  }
+}

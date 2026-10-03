@@ -1,0 +1,60 @@
+{
+  "language": "en",
+  "title": "An idea, made clear",
+  "subtitle": "A visual note for curious learners",
+  "brand": "AGENTVID",
+  "series": "FIELD NOTES",
+  "tag": "EXPLANATION / METHOD",
+  "edition": "ED. 001",
+  "intro": {
+    "line1": "Start with one idea.",
+    "line2a": "Then show how it works.",
+    "icon": "lightbulb",
+    "vo": "Start with one clear idea. Give your viewer a familiar example, show the relationship, then leave them with a small thing to try."
+  },
+  "scenes": [
+    {
+      "title": "From idea to example",
+      "widget": {
+        "kind": "sequence",
+        "steps": [
+          {
+            "title": "Idea",
+            "text": "State the point in plain words.",
+            "icon": "lightbulb"
+          },
+          {
+            "title": "Example",
+            "text": "Make it visible and concrete.",
+            "icon": "box"
+          },
+          {
+            "title": "Practice",
+            "text": "Give the viewer one thing to try.",
+            "icon": "check"
+          }
+        ]
+      },
+      "after": "One scene should carry one useful thought.",
+      "vo": "An explanation can move from the idea to an example and then to practice. Choose the sequence that fits the subject and the learner."
+    },
+    {
+      "title": "Leave room to think",
+      "widget": {
+        "kind": "callout",
+        "text": "A short message can still explain a real idea.",
+        "detail": "Use the picture to support the words.",
+        "icon": "document"
+      },
+      "vo": "Keep the screen calm. Use simple outlines, readable type and empty space around the main point. Let the example do some of the explaining."
+    }
+  ],
+  "outro": {
+    "line1": "One idea at a time",
+    "line2": "Choose your next subject.",
+    "line3": "Replace this sample with your brief.",
+    "icon": "check",
+    "credit": "Editorial template / Example",
+    "vo": "Choose your next subject, decide who it is for, and replace this sample with an explanation of your own."
+  }
+}

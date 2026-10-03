@@ -1,0 +1,33 @@
+{
+  "design_style": {
+    "overall_theme": "Minimalist, Editorial, Experimental",
+    "color_palette": {
+      "background": "Off-white / Light gray",
+      "text_and_graphics": "Black",
+      "type": "Monochromatic"
+    },
+    "typography": {
+      "primary": "Monospace / Typewriter font (creates a raw, scientific, or journal-like aesthetic)",
+      "branding": "Clean Geometric Sans-serif (used for the 'Hydro-Roast Coffee' logo area)"
+    },
+    "illustrations": {
+      "type": "Line art",
+      "characteristics": [
+        "Simple vector outlines",
+        "Hand-drawn feel",
+        "No shading, flat",
+        "Minimalist and descriptive"
+      ]
+    },
+    "layout_and_composition": {
+      "spacing": "High use of negative space (whitespace) for a clean, breathable look",
+      "structure": "Balanced, centered alignment for the main text, with a horizontal sequential flow for the illustrations",
+      "elements": [
+        "Numbered steps (1, 2) in solid black circles",
+        "Minimalist directional arrows",
+        "Journal-style header and footer tags"
+      ]
+    },
+    "mood_and_vibe": "Artisanal, informative, scientific yet approachable, modern."
+  }
+}

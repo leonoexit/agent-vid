@@ -1,0 +1,180 @@
+{
+  "skill": "explainer-glass-story-voice",
+  "version": "0.1.0",
+  "duration_seconds": 187.766667,
+  "canvas": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "size_bytes": 12907105,
+  "full_decode": "passed",
+  "loudness_lufs": -17.4,
+  "true_peak_dbfs": -1.8,
+  "voice": "Thái Sơn — male/Southern/storytelling preset",
+  "speed": 0.88,
+  "paragraph_gap_seconds": 0.9,
+  "script_validation": "passed",
+  "schema_tests_passed": 7,
+  "browser_checks": {
+    "runtime": 0,
+    "layout": 0,
+    "contrast": 0
+  },
+  "known_lint_warning": "nested_structure_needs_subcomposition",
+  "motion_checks": {
+    "ok": true,
+    "times": {
+      "copy": 52.762,
+      "read": 116.941,
+      "write": 132.774,
+      "practice": 154.103,
+      "outro": 169.62
+    },
+    "states": {
+      "copyBefore": {
+        "t": 52.662,
+        "x": "10",
+        "p": "—",
+        "read": "—",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "copyMiddle": {
+        "t": 53.262,
+        "x": "10",
+        "p": "—",
+        "read": "—",
+        "readVisible": false,
+        "token": {
+          "value": "Ô A",
+          "x": 438.36859130859375,
+          "y": 881.96240234375
+        },
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "copyAfter": {
+        "t": 54.162,
+        "x": "10",
+        "p": "Ô A",
+        "read": "—",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "readAfter": {
+        "t": 118.34100000000001,
+        "x": "10",
+        "p": "&x",
+        "read": "10",
+        "readVisible": true,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "writeBefore": {
+        "t": 132.674,
+        "x": "10",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "writeMiddle": {
+        "t": 133.274,
+        "x": "10",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": {
+          "value": "20",
+          "x": 364.6639099121094,
+          "y": 1008.64453125
+        },
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "writeAfter": {
+        "t": 134.174,
+        "x": "20",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "practiceAfter": {
+        "t": 155.50300000000001,
+        "x": "30",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "outro": {
+        "t": 172.62,
+        "x": "30",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "none",
+        "worldDisplay": "none"
+      },
+      "reverseWrite": {
+        "t": 132.674,
+        "x": "10",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "reverseCopy": {
+        "t": 52.662,
+        "x": "10",
+        "p": "—",
+        "read": "—",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      },
+      "writeAgain": {
+        "t": 134.174,
+        "x": "20",
+        "p": "&x",
+        "read": "10",
+        "readVisible": false,
+        "token": null,
+        "codeDisplay": "block",
+        "worldDisplay": "block"
+      }
+    }
+  },
+  "code_example": "compiled and ran with -Wall -Wextra -Werror",
+  "visual_review": "scene contact sheets and rendered operation midpoint frames inspected",
+  "voice_timing": "Estimated karaoke alignment; not forced alignment.",
+  "english_sample": {
+    "topic": "A reading and a display",
+    "duration_seconds": 51.59,
+    "voice": "Kokoro am_michael",
+    "browser_errors": {
+      "runtime": 0,
+      "layout": 0,
+      "contrast": 0
+    }
+  }
+}

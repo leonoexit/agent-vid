@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactoring UI - Batch 05 (Aurora Borealis)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Be Vietnam Pro', 'sans-serif'],
+                        display: ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f1f5f9; margin: 0; padding: 40px; font-family: 'Be Vietnam Pro', sans-serif; color: #0f172a; }
+        .slide-container { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+        .slide { width: 1200px; height: 1200px; position: relative; overflow: hidden; display: flex; flex-direction: column; flex-shrink: 0; background: white; }
+
+        /* AURORA BOREALIS THEME UTILS - NO ANIMATION */
+        :root {
+            --bg-base: #f0f9ff; /* Sky-50 */
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-main: #0d9488; /* Teal-600 */
+        }
+
+        .mesh-bg { position: absolute; inset: 0; background: var(--bg-base); z-index: 0; overflow: hidden; }
+        .mesh-blob { position: absolute; border-radius: 50%; filter: blur(150px); opacity: 0.45; mix-blend-mode: multiply; }
+        
+        /* PALETTE: AURORA BOREALIS - DEEP SEA, EMERALD, ARCTIC BLUE */
+        .blob-1 { top: -15%; left: -10%; width: 1100px; height: 1100px; background: #2dd4bf; /* Teal-400 */ }
+        .blob-2 { bottom: -10%; right: -15%; width: 1000px; height: 1000px; background: #10b981; /* Emerald-500 */ }
+        .blob-3 { top: 40%; left: 50%; width: 800px; height: 800px; background: #38bdf8; /* Sky-400 */ }
+        .blob-4 { bottom: 20%; left: -5%; width: 700px; height: 700px; background: #0ea5e9; /* Sky-500 */ }
+
+        .glass-card {
+            position: relative; z-index: 10; margin: 60px; width: calc(100% - 120px); height: calc(100% - 120px);
+            background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(60px); -webkit-backdrop-filter: blur(60px);
+            border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 64px;
+            box-shadow: 0 50px 100px -20px rgba(13, 148, 136, 0.15), inset 0 0 0 1px rgba(255,255,255,0.5);
+            overflow: hidden; display: flex; flex-direction: column;
+        }
+
+        .noise-overlay {
+            position: absolute; inset: 0; opacity: 0.3; pointer-events: none; z-index: 1;
+            background-image: url("https://grainy-gradients.vercel.app/noise.svg"); mix-blend-mode: overlay;
+        }
+
+        .content-layer { position: relative; z-index: 20; width: 100%; height: 100%; display: flex; flex-direction: column; padding: 75px; }
+        
+        /* Branding */
+        .watermark { position: absolute; top: 40px; left: 0; width: 100%; text-align: center; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: 1.25rem; color: rgba(15, 23, 42, 0.2); letter-spacing: 0.15em; }
+        .page-badge { position: absolute; bottom: 40px; right: 40px; width: 80px; height: 80px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.75rem; color: #0f172a; box-shadow: 0 12px 24px -5px rgba(0,0,0,0.1); }
+
+        /* Utility */
+        h1, h2, h3, .text-slate-900 { color: #0f172a !important; }
+        p, .text-slate-600 { color: #334155 !important; }
+        .glass-panel { background: rgba(255, 255, 255, 0.6); border: 1px solid rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-radius: 32px; box-shadow: 0 15px 30px -5px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+<div class="slide-container">
+
+    <!-- SLIDE 61: BATCH 5 TITLE -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+            <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-emerald-100 border border-emerald-200 mb-8 shadow-sm">
+                    <span class="text-emerald-700 font-bold uppercase tracking-widest text-lg">CHƯƠNG V</span>
+                </div>
+                <h1 class="font-display font-black text-[130px] leading-[0.9] text-slate-900 mb-10 tracking-tight">
+                    Strategy<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-sky-500">& Final Polish</span>
+                </h1>
+                <p class="text-4xl text-slate-600 font-light max-w-3xl leading-relaxed">
+                    Hoàn thiện tư duy thiết kế và bước vào thế giới của <span class="text-emerald-700 font-semibold italic text-5xl">những bậc thầy UI</span>.
+                </p>
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">61</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 62: CONSTRAINTS -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-3"></div>
+            <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">62</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-16">Giới hạn là <span class="text-emerald-600">Sức mạnh</span>.</h2>
+                <div class="flex gap-12 items-center">
+                     <div class="flex-1 glass-panel p-12 bg-white/40">
+                          <p class="text-3xl text-slate-600 leading-relaxed font-light">
+                              Đừng sợ thiếu lựa chọn. Việc giới hạn bảng màu, font chữ và spacing giúp bạn thiết kế <span class="text-slate-900 font-bold">nhanh hơn</span> và <span class="text-slate-900 font-bold">nhất quán hơn</span>.
+                          </p>
+                     </div>
+                     <div class="w-80 h-80 glass-panel flex p-6 relative">
+                          <div class="absolute inset-8 border-4 border-emerald-500/20 rounded-2xl flex items-center justify-center">
+                               <div class="w-32 h-32 bg-emerald-500 rounded-xl shadow-xl flex items-center justify-center text-white text-5xl"><i class="fa-solid fa-expand"></i></div>
+                          </div>
+                     </div>
+                </div>
+                <p class="mt-12 text-2xl text-slate-500 italic">"Sáng tạo bùng nổ tốt nhất trong những chiếc hộp chật hẹp."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 63: SUBTRACTION -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">63</div>
+                <h2 class="text-7xl font-display font-bold text-slate-900 mb-16 px-12 leading-tight">Phép Trừ trong Thiết kế</h2>
+                <div class="flex items-center gap-12 mb-16">
+                     <div class="glass-panel p-8 opacity-40">
+                          <div class="flex gap-4">
+                               <div class="w-12 h-12 bg-slate-200 rounded"></div>
+                               <div class="w-12 h-12 bg-slate-200 rounded"></div>
+                               <div class="w-12 h-12 bg-slate-200 rounded"></div>
+                               <div class="w-12 h-12 bg-slate-200 rounded"></div>
+                          </div>
+                     </div>
+                     <i class="fa-solid fa-arrow-right text-4xl text-slate-300"></i>
+                     <div class="glass-panel p-8 border-emerald-400">
+                        <div class="flex gap-4">
+                             <div class="w-12 h-12 bg-emerald-500 rounded shadow-lg"></div>
+                             <div class="w-12 h-12 bg-slate-100 rounded"></div>
+                        </div>
+                   </div>
+                </div>
+                <p class="text-3xl text-slate-500 max-w-2xl font-light">Không phải mọi tính năng đều cần một nút bấm hay một menu riêng. Hãy đặt câu hỏi: <span class="text-slate-900 font-bold">"Tôi có thể bỏ đi thứ gì mà vẫn giữ được giá trị không?"</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 64: OVERLAP -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center">
+                <div class="watermark text-sky-200">@lenguyen.codeai</div>
+                <div class="page-badge">64</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-20 text-center">Tạo hứng thú bằng Overlap</h2>
+                <div class="relative w-full max-w-3xl h-[400px]">
+                     <!-- Base Card -->
+                     <div class="absolute inset-0 bg-white rounded-[40px] shadow-sm border border-slate-100 p-12">
+                          <div class="h-8 bg-slate-100 w-1/3 rounded-full mb-6"></div>
+                          <div class="h-4 bg-slate-50 w-full rounded-full mb-3"></div>
+                          <div class="h-4 bg-slate-50 w-2/3 rounded-full"></div>
+                     </div>
+                     <!-- Overlapping Element -->
+                     <div class="absolute top-[-40px] right-[-40px] w-64 h-64 bg-emerald-500 rounded-3xl shadow-2xl flex items-center justify-center rotate-12 border-4 border-white">
+                          <i class="fa-solid fa-star text-white text-7xl"></i>
+                     </div>
+                     <!-- Smaller Overlap -->
+                     <div class="absolute bottom-[-20px] left-[-20px] px-8 py-4 bg-sky-400 text-white font-bold rounded-2xl shadow-xl -rotate-6">
+                          PRO TIP
+                     </div>
+                </div>
+                <p class="mt-16 text-2xl text-slate-500">Sự chồng chéo có chủ đích đánh lừa thị giác, tạo cảm giác về một không gian 3D hiện đại.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 65: BALANCE VS SYMMETRY -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-3"></div>
+            <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">65</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-16 text-center">Cân bằng & Bất đối xứng</h2>
+                <div class="grid grid-cols-2 gap-12 w-full max-w-4xl">
+                     <div class="glass-panel p-10 flex flex-col items-center border-slate-200 opacity-50">
+                          <div class="w-full flex justify-between gap-4">
+                               <div class="w-1/2 h-40 bg-slate-300 rounded-xl"></div>
+                               <div class="w-1/2 h-40 bg-slate-300 rounded-xl"></div>
+                          </div>
+                          <p class="mt-6 text-slate-400">Đối xứng (Nhàm chán)</p>
+                     </div>
+                     <div class="glass-panel p-10 flex flex-col items-center border-emerald-300">
+                        <div class="w-full flex justify-between gap-4">
+                             <div class="w-2/3 h-40 bg-emerald-500 rounded-xl shadow-lg"></div>
+                             <div class="w-1/3 h-40 bg-emerald-100 rounded-xl"></div>
+                        </div>
+                        <p class="mt-6 text-emerald-700 font-bold">Cân bằng động (Năng động)</p>
+                   </div>
+                </div>
+                <p class="mt-12 text-2xl text-slate-500 text-center max-w-2xl">Cân bằng không phải là chia đôi. Đó là việc phối hợp <span class="text-slate-900 font-bold">khối lượng thị giác</span> của các thành phần khác nhau.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 66: THE 80/20 RULE -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">66</div>
+                <h2 class="text-7xl font-display font-black text-slate-900 mb-12 italic">Nguyên lý 80/20</h2>
+                <div class="w-full max-w-2xl h-16 bg-slate-100 rounded-full overflow-hidden border border-slate-200 mb-12 shadow-inner">
+                     <div class="h-full bg-emerald-500 w-[20%] relative">
+                          <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+                     </div>
+                </div>
+                <p class="text-4xl text-slate-600 font-light leading-relaxed max-w-3xl">
+                    <span class="text-emerald-600 font-bold">20% tính năng</span> quan trọng nhất xứng đáng nhận được <span class="text-slate-900 font-bold">80% sự chăm chút</span> về visual. Những thứ còn lại? Hãy để chúng thật đơn giản.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 67: TINY DETAILS -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">67</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-16 text-center">Chi tiết tạo nên Khác biệt</h2>
+                <div class="flex gap-12 items-center">
+                     <div class="relative group">
+                          <div class="w-64 h-32 bg-slate-100 rounded-lg border-2 border-slate-200"></div>
+                          <div class="absolute -top-4 -left-4 w-12 h-12 bg-rose-500 text-white rounded-full flex items-center justify-center text-xl font-bold">!</div>
+                          <p class="mt-4 text-center text-slate-400 font-mono">Radius: 4px</p>
+                     </div>
+                     <i class="fa-solid fa-chevron-right text-4xl text-slate-200"></i>
+                     <div class="relative">
+                        <div class="w-64 h-32 bg-emerald-500 rounded-[32px] shadow-xl border-t border-white/30"></div>
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-emerald-200 text-emerald-800 rounded-full flex items-center justify-center text-xl font-bold shadow-sm"><i class="fa-solid fa-check"></i></div>
+                        <p class="mt-4 text-center text-emerald-600 font-bold font-mono">Radius: 32px</p>
+                   </div>
+                </div>
+                <p class="mt-16 text-2xl text-slate-500 max-w-2xl text-center leading-relaxed">Độ bo góc phù hợp, độ mượt của gradient ảnh hưởng tới <span class="text-slate-900 font-bold italic">"cảm giác đắt tiền"</span> của ứng dụng.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 68: CONSISTENCY VS RIGIDITY -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">68</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-12">Đồng nhất nhưng đừng... <span class="bg-slate-900 text-white px-4 rounded">Cứng nhắc</span></h2>
+                <div class="flex flex-col gap-6 max-w-3xl">
+                     <p class="text-3xl text-slate-600 leading-relaxed font-light">
+                          Hệ thống design system sinh ra để hỗ trợ người dùng, không phải để làm khó designer.
+                          <br><br>
+                          Nếu một trường hợp đặc biệt cần phá vỡ quy tắc để trở nên <span class="text-emerald-600 font-bold italic underline decoration-sky-400 decoration-4">tiện dụng hơn</span>, hãy làm điều đó.
+                     </p>
+                </div>
+                <div class="mt-12 flex gap-4">
+                     <div class="w-12 h-12 rounded bg-slate-200"></div>
+                     <div class="w-12 h-12 rounded bg-slate-200"></div>
+                     <div class="w-12 h-12 rounded bg-emerald-500 shadow-lg shadow-emerald-500/30"></div>
+                     <div class="w-12 h-12 rounded bg-slate-200"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 69: DESIGN IN CONTEXT -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+            <div class="mesh-blob blob-3"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">69</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-16 leading-tight">Thiết kế trong <span class="text-sky-500">Bối cảnh</span>.</h2>
+                <div class="w-full max-w-4xl flex justify-center scale-90">
+                     <!-- Mobile Mockup -->
+                     <div class="w-[300px] h-[600px] bg-slate-900 rounded-[50px] border-8 border-slate-800 shadow-2xl relative p-4 flex flex-col items-center">
+                          <div class="w-24 h-6 bg-slate-800 rounded-full mb-8"></div>
+                          <div class="w-full h-full bg-white rounded-3xl p-6 flex flex-col gap-4">
+                               <div class="h-10 bg-sky-500 rounded-xl"></div>
+                               <div class="h-4 bg-slate-100 rounded-full w-2/3"></div>
+                               <div class="h-4 bg-slate-100 rounded-full w-full"></div>
+                               <div class="h-32 bg-emerald-50 rounded-2xl mt-auto"></div>
+                          </div>
+                          <div class="absolute -top-10 -right-20 bg-emerald-500 p-6 rounded-3xl text-white font-bold text-xl rotate-12 shadow-2xl">TEST ON DEVICE!</div>
+                     </div>
+                </div>
+                <p class="mt-8 text-2xl text-slate-500">Màn hình desktop luôn nói dối. Hãy xem thiết kế trên chính thiết bị của người dùng.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 70: THE GUT FEELING -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">70</div>
+                <h2 class="text-[120px] font-display font-black text-slate-900 leading-none mb-4 italic opacity-10">SATISFYING</h2>
+                <h3 class="text-7xl font-display font-bold text-slate-900 mb-12 relative z-10">Tin vào "Cảm giác"</h3>
+                <div class="w-64 h-64 bg-emerald-500 rounded-full flex items-center justify-center shadow-[0_0_80px_rgba(16,185,129,0.4)]">
+                     <i class="fa-solid fa-heart text-white text-[120px]"></i>
+                </div>
+                <p class="mt-16 text-3xl text-slate-500 max-w-2xl font-light">Nếu bạn thấy cái gì đó "cấn cấn" dù nó đúng quy tắc, hãy tin vào mắt mình. Mắt người nhạy bén hơn bất kỳ tool đo đạc nào.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 71: UI VS UX -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center items-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">71</div>
+                <h2 class="text-6xl font-display font-bold text-slate-900 mb-20 text-center">UI là gương mặt, <br>UX là <span class="text-emerald-600 uppercase italic">Linh hồn</span>.</h2>
+                <div class="grid grid-cols-2 gap-px bg-slate-200 rounded-3xl overflow-hidden shadow-glass w-full max-w-4xl border border-slate-200">
+                     <div class="bg-white p-12 text-center">
+                          <i class="fa-solid fa-brush text-5xl text-sky-400 mb-6"></i>
+                          <h4 class="text-4xl font-bold text-slate-900 mb-4">UI (User Interface)</h4>
+                          <p class="text-slate-500">Nhìn như thế nào? (Hierarchy, Color, Fonts).</p>
+                     </div>
+                     <div class="bg-slate-50 p-12 text-center">
+                        <i class="fa-solid fa-brain text-5xl text-emerald-500 mb-6"></i>
+                        <h4 class="text-4xl font-bold text-slate-900 mb-4">UX (User Experience)</h4>
+                        <p class="text-slate-500">Sử dụng như thế nào? (Flow, Speed, Ease).</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 72: DARK MODE TRANSITION -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+            <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card p-0 overflow-hidden">
+             <div class="flex h-full">
+                  <div class="w-1/2 bg-white flex flex-col justify-center items-center p-12">
+                       <h4 class="text-4xl font-black text-slate-900 mb-8">Light</h4>
+                       <div class="w-full h-40 bg-slate-50 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-center">
+                            <i class="fa-solid fa-sun text-yellow-500 text-6xl"></i>
+                       </div>
+                  </div>
+                  <div class="w-1/2 bg-slate-900 flex flex-col justify-center items-center p-12">
+                        <h4 class="text-4xl font-black text-white mb-8">Dark</h4>
+                        <div class="w-full h-40 bg-slate-800 rounded-2xl border border-white/10 shadow-2xl flex items-center justify-center">
+                             <i class="fa-solid fa-moon text-sky-400 text-6xl"></i>
+                        </div>
+                   </div>
+             </div>
+             <div class="watermark absolute top-10 w-full text-center text-slate-300">@lenguyen.codeai</div>
+             <div class="page-badge absolute bottom-10 right-10">72</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 73: FINAL POLISH CHECKLIST -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-3"></div>
+        </div>
+        <div class="glass-card">
+            <div class="noise-overlay"></div>
+            <div class="content-layer justify-center">
+                <div class="watermark">@lenguyen.codeai</div>
+                <div class="page-badge">73</div>
+                <h2 class="text-6xl font-display font-black text-slate-900 mb-12 pl-6 border-l-8 border-emerald-500">Master Polish Checklist</h2>
+                <div class="grid grid-cols-2 gap-6">
+                     <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                          <i class="fa-solid fa-check text-emerald-500"></i> No unnecessary borders
+                     </div>
+                     <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Logical alignments
+                    </div>
+                    <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Consistent font weights
+                    </div>
+                    <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Proper contrast (AA+)
+                    </div>
+                    <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                        <i class="fa-solid fa-check text-emerald-500"></i> High-quality imagery
+                    </div>
+                    <div class="flex items-center gap-4 text-2xl text-slate-700 bg-white/40 p-6 rounded-2xl">
+                        <i class="fa-solid fa-check text-emerald-500"></i> Helpful empty states
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 74: BRAND CALL -->
+    <div class="slide">
+        <div class="mesh-bg">
+            <div class="mesh-blob blob-1"></div>
+            <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card bg-emerald-600 border-white/30 text-white">
+            <div class="noise-overlay opacity-30"></div>
+            <div class="content-layer justify-center items-center text-center">
+                <div class="watermark text-white/40">@lenguyen.codeai</div>
+                <div class="page-badge text-emerald-600 bg-white">74</div>
+                
+                <p class="text-3xl font-light mb-8 italic">Bạn đã sẵn sàng để...</p>
+                <h3 class="text-[100px] font-display font-black leading-none mb-12 tracking-tighter">PHÁ ĐẢO THIẾT KẾ?</h3>
+                
+                <div class="glass-panel p-12 bg-white/10 rounded-[50px] border-white/20">
+                     <p class="text-4xl font-bold mb-4">@lenguyen.codeai</p>
+                     <p class="text-xl text-emerald-100 font-light">Cùng xây dựng cộng đồng Dev-Designer đỉnh nhất Việt Nam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 75: FINAL SPEEDRUN 1 -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-1"></div>
+        </div>
+        <div class="glass-card">
+            <div class="content-layer justify-center items-center text-center">
+                 <h2 class="text-8xl font-display font-black text-slate-900 mb-8 tracking-tighter">SPEEDRUN #1</h2>
+                 <p class="text-5xl text-emerald-600 font-black uppercase mb-12">Visual Hierarchy</p>
+                 <div class="grid grid-cols-2 gap-4 w-full max-w-2xl text-3xl font-bold text-slate-400">
+                      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 italic">Size</div>
+                      <div class="bg-emerald-500 text-white p-8 rounded-2xl shadow-xl">WEIGHT</div>
+                      <div class="bg-sky-400 text-white p-8 rounded-2xl shadow-xl">COLOR</div>
+                      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 italic">Position</div>
+                 </div>
+                 <div class="page-badge">75</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 76: FINAL SPEEDRUN 2 -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card">
+            <div class="content-layer justify-center items-center text-center">
+                 <h2 class="text-8xl font-display font-black text-slate-900 mb-8 tracking-tighter">SPEEDRUN #2</h2>
+                 <p class="text-5xl text-rose-500 font-black uppercase mb-12">Layout & Space</p>
+                 <div class="glass-panel p-16 w-full max-w-2xl bg-white/40">
+                      <p class="text-4xl text-slate-700 leading-relaxed font-bold">"Margin nhân đôi, Padding nhân đôi.<br>Thiết kế sang trọng gấp mười."</p>
+                 </div>
+                 <div class="page-badge">76</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 77: FINAL SPEEDRUN 3 -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-3"></div>
+        </div>
+        <div class="glass-card">
+            <div class="content-layer justify-center items-center text-center">
+                 <h2 class="text-8xl font-display font-black text-slate-900 mb-8 tracking-tighter">SPEEDRUN #3</h2>
+                 <p class="text-5xl text-sky-600 font-black uppercase mb-12">Color Logic</p>
+                 <div class="flex gap-4 mb-12">
+                      <div class="w-24 h-24 bg-slate-900 rounded-2xl"></div>
+                      <div class="w-24 h-24 bg-sky-500 rounded-2xl shadow-lg shadow-sky-500/20"></div>
+                      <div class="w-24 h-24 bg-emerald-500 rounded-2xl shadow-lg shadow-emerald-500/20"></div>
+                 </div>
+                 <p class="text-3xl text-slate-500 font-medium tracking-widest uppercase">Grays • Primary • Accents</p>
+                 <div class="page-badge">77</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 78: FINAL SPEEDRUN 4 -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card">
+            <div class="content-layer justify-center items-center text-center">
+                 <h2 class="text-8xl font-display font-black text-slate-900 mb-8 tracking-tighter">SPEEDRUN #4</h2>
+                 <p class="text-5xl text-amber-500 font-black uppercase mb-12">Typography</p>
+                 <div class="space-y-4">
+                      <p class="text-4xl font-black text-slate-900 tracking-[0.2em] uppercase">HEADINGS: SANS-SERIF</p>
+                      <p class="text-3xl text-slate-500 font-light leading-relaxed">Body: Line-height 1.6 • Max 60ch</p>
+                 </div>
+                 <div class="page-badge">78</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 79: THE END IS NEAR -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-1"></div>
+             <div class="mesh-blob blob-2"></div>
+        </div>
+        <div class="glass-card justify-center items-center text-center">
+             <h2 class="text-[180px] font-display font-black text-slate-900 leading-none opacity-10">THE END</h2>
+             <div class="absolute inset-0 flex flex-col justify-center items-center p-20">
+                  <p class="text-6xl font-display font-bold text-slate-900 mb-8">Bạn đã làm được!</p>
+                  <p class="text-3xl text-slate-500 font-light max-w-xl">Hành trình 80 trang cẩm nang này chỉ là bắt đầu. Thế giới của UI/UX còn rất nhiều điều thú vị đang chờ bạn.</p>
+             </div>
+             <div class="page-badge">79</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 80: FINAL GRAND OUTRO -->
+    <div class="slide">
+        <div class="mesh-bg">
+             <div class="mesh-blob blob-1"></div>
+             <div class="mesh-blob blob-2"></div>
+             <div class="mesh-blob blob-3"></div>
+             <div class="mesh-blob blob-4"></div>
+        </div>
+        <div class="glass-card bg-slate-950 text-white">
+            <div class="content-layer justify-center items-center text-center">
+                <div class="w-40 h-40 bg-gradient-to-tr from-emerald-500 via-sky-500 to-emerald-400 rounded-full mb-12 flex items-center justify-center shadow-[0_0_100px_rgba(16,185,129,0.5)]">
+                     <i class="fa-solid fa-crown text-8xl text-white drop-shadow-lg"></i>
+                </div>
+                <h2 class="text-8xl font-display font-black mb-8 tracking-tighter !text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-sky-400">DESIGNER MASTER</h2>
+                <p class="text-4xl !text-slate-300 font-light mb-16 max-w-3xl leading-relaxed">
+                   Chúc mừng bạn đã hoàn thành bộ sưu tập 80 trang kiến thức tinh túy từ Refactoring UI.
+                </p>
+                
+                <div class="flex flex-col items-center gap-6">
+                    <div class="px-12 py-6 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
+                         <span class="text-4xl font-black text-white">@lenguyen.codeai</span>
+                    </div>
+                    <p class="text-xl !text-emerald-400 font-bold tracking-widest uppercase">Save this album • Share the knowledge</p>
+                </div>
+                <div class="page-badge bg-emerald-500 border-none text-white shadow-emerald-500/30">80</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

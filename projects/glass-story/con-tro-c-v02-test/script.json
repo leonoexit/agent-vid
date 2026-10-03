@@ -1,0 +1,361 @@
+{
+  "language": "vi",
+  "title": "Con trỏ trong C",
+  "brand": "AGENTVID",
+  "series": "C CHO NGƯỜI MỚI",
+  "kicker": "MỘT VÍ DỤ, TỪNG BƯỚC",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "box",
+      "label": "Chiếc hộp",
+      "value": "10",
+      "detail": "Số ở bên trong",
+      "address": "",
+      "x": 30,
+      "y": 75,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "p",
+      "kind": "ticket",
+      "label": "Tờ giấy",
+      "value": "—",
+      "detail": "Chưa ghi địa chỉ",
+      "x": 490,
+      "y": 75,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "read",
+      "kind": "reader",
+      "label": "Đọc *p",
+      "value": "—",
+      "detail": "Kết quả đọc",
+      "x": 455,
+      "y": 390,
+      "width": 355,
+      "height": 170
+    }
+  ],
+  "intro": {
+    "title": "Sửa qua p,\nx lại đổi?",
+    "subtitle": "Con trỏ trong C, qua một ví dụ.",
+    "tiles": [
+      {
+        "value": "A",
+        "label": "Địa chỉ"
+      },
+      {
+        "value": "10",
+        "label": "Dữ liệu"
+      }
+    ],
+    "note": "Một biến giữ số.\nMột con trỏ giữ địa chỉ của biến đó.",
+    "vo": "Vì sao sửa qua con trỏ lại làm một biến khác đổi giá trị? Mình bắt đầu bằng chiếc hộp, rồi làm thử với mã C.",
+    "hold": 0
+  },
+  "scenes": [
+    {
+      "title": "Bên trong hộp\ncó số 10",
+      "subtitle": "Hộp giống một biến: giữ một giá trị.",
+      "vo": "Tưởng tượng có một chiếc hộp. Mở nắp ra, bên trong là số mười. Chiếc hộp giống một biến: giữ dữ liệu để mình dùng trong chương trình.",
+      "events": [
+        {
+          "on": "một chiếc hộp",
+          "type": "show",
+          "target": "x"
+        },
+        {
+          "on": "Mở nắp",
+          "type": "open",
+          "target": "x"
+        }
+      ],
+      "after": "Hộp → nơi chứa dữ liệu",
+      "hold": 0
+    },
+    {
+      "title": "Địa chỉ khác\nsố bên trong",
+      "subtitle": "Ô A là địa chỉ tượng trưng trong hình.",
+      "vo": "Mình dán nhãn ô A cho chỗ đặt hộp. Ô A là địa chỉ; số mười là dữ liệu bên trong. Biết địa chỉ giúp mình tìm đúng hộp, giống như tìm nhà bằng địa chỉ.",
+      "events": [
+        {
+          "on": "dán nhãn ô A",
+          "type": "set",
+          "target": "x",
+          "address": "Ô A"
+        },
+        {
+          "on": "số mười là dữ liệu",
+          "type": "focus",
+          "targets": [
+            "x"
+          ]
+        }
+      ],
+      "after": "Địa chỉ giúp tìm đúng nơi.",
+      "hold": 0
+    },
+    {
+      "title": "Con trỏ giữ\nđịa chỉ ấy",
+      "subtitle": "Tờ giấy giữ “Ô A”, không giữ số 10.",
+      "vo": "Lấy một tờ giấy, rồi chép địa chỉ ô A lên đó. Tờ giấy này giống con trỏ: giúp mình tìm tới hộp. Nó giữ địa chỉ, không giữ số mười. Dữ liệu vẫn nằm trong hộp cũ.",
+      "events": [
+        {
+          "on": "một tờ giấy",
+          "type": "show",
+          "target": "p"
+        },
+        {
+          "on": "chép địa chỉ",
+          "type": "transfer",
+          "from": "x",
+          "to": "p",
+          "field": "address",
+          "value": "Ô A"
+        },
+        {
+          "on": "Tờ giấy này",
+          "type": "set",
+          "target": "p",
+          "detail": "Giữ địa chỉ của hộp"
+        },
+        {
+          "on": "tìm tới hộp",
+          "type": "connect",
+          "from": "p",
+          "to": "x"
+        }
+      ],
+      "after": "Giữ địa chỉ ≠ sao chép dữ liệu",
+      "hold": 0
+    },
+    {
+      "title": "Đổi hình dung\nthành tên trong C",
+      "subtitle": "Hộp là x. Tờ giấy là con trỏ p.",
+      "vo": "Giờ chuyển sang tên trong C. Chiếc hộp là biến ích, viết bằng chữ x. Tờ giấy là con trỏ pê, viết bằng chữ p. Địa chỉ của ích được viết là dấu và trước x. Pê đang giữ địa chỉ này.",
+      "events": [
+        {
+          "on": "Chiếc hộp là biến",
+          "type": "morph",
+          "target": "x",
+          "label": "Biến x",
+          "detail": "Giá trị của x"
+        },
+        {
+          "on": "Tờ giấy là con trỏ",
+          "type": "morph",
+          "target": "p",
+          "label": "Con trỏ p",
+          "detail": "Giữ địa chỉ của x"
+        },
+        {
+          "on": "dấu và trước x",
+          "type": "set",
+          "target": "x",
+          "address": "&x"
+        },
+        {
+          "on": "dấu và trước x",
+          "type": "set",
+          "target": "p",
+          "value": "&x"
+        },
+        {
+          "on": "Pê đang giữ",
+          "type": "focus",
+          "targets": [
+            "p"
+          ]
+        }
+      ],
+      "after": "&x → địa chỉ của biến x",
+      "hold": 0
+    },
+    {
+      "title": "Hai dòng tạo\nví dụ này",
+      "subtitle": "Đọc từng dòng, chưa cần học thuộc cú pháp.",
+      "vo": "Dòng đầu tạo biến ích có giá trị mười. Dòng thứ hai tạo con trỏ pê, rồi cho nó giữ địa chỉ của ích. Dấu sao ở dòng khai báo cho biết pê là con trỏ. Hai dòng này tạo đúng mô hình mình vừa thấy.",
+      "events": [
+        {
+          "on": "Dòng đầu",
+          "type": "code",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "on": "Dòng đầu",
+          "type": "focus",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "on": "Dòng thứ hai",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int *p = &x;"
+          ],
+          "active": 1
+        },
+        {
+          "on": "Dòng thứ hai",
+          "type": "focus",
+          "targets": [
+            "p"
+          ]
+        }
+      ],
+      "after": "Dấu * ở dòng khai báo đánh dấu kiểu con trỏ.",
+      "hold": 0
+    },
+    {
+      "title": "Đọc qua con trỏ:\n*p",
+      "subtitle": "Trong biểu thức: *p truy cập dữ liệu ở nơi p trỏ tới.",
+      "vo": "Muốn đọc qua con trỏ, mình dùng dấu sao trước pê. Trong biểu thức này, dấu sao nghĩa là theo địa chỉ pê giữ, rồi xem dữ liệu tại đó. Kết quả là mười. Đây chỉ là đọc, nên ích vẫn giữ số mười.",
+      "events": [
+        {
+          "on": "dấu sao trước pê",
+          "type": "show",
+          "target": "read"
+        },
+        {
+          "on": "Trong biểu thức này",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int *p = &x;",
+            "int value = *p;"
+          ],
+          "active": 2
+        },
+        {
+          "on": "theo địa chỉ",
+          "type": "connect",
+          "from": "p",
+          "to": "x",
+          "persist": false
+        },
+        {
+          "on": "xem dữ liệu",
+          "type": "transfer",
+          "from": "x",
+          "to": "read",
+          "field": "value",
+          "value": "10"
+        },
+        {
+          "on": "Đây chỉ là đọc",
+          "type": "focus",
+          "targets": [
+            "read"
+          ]
+        }
+      ],
+      "after": "Đọc *p → nhận giá trị của x",
+      "hold": 0
+    },
+    {
+      "title": "Sửa qua con trỏ:\n*p = 20",
+      "subtitle": "Địa chỉ giữ nguyên. Dữ liệu tại đó thay đổi.",
+      "vo": "Giờ thử câu lệnh sao pê bằng hai mươi. Mình đi theo địa chỉ mà pê giữ, rồi ghi hai mươi vào đó. Ích đổi thành hai mươi, còn pê vẫn giữ cùng địa chỉ. Vì mình sửa dữ liệu tại nơi pê trỏ tới.",
+      "events": [
+        {
+          "on": "Giờ thử",
+          "type": "hide",
+          "target": "read"
+        },
+        {
+          "on": "câu lệnh",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int *p = &x;",
+            "*p = 20;"
+          ],
+          "active": 2
+        },
+        {
+          "on": "đi theo địa chỉ",
+          "type": "connect",
+          "from": "p",
+          "to": "x",
+          "persist": false
+        },
+        {
+          "on": "ghi hai mươi",
+          "type": "write",
+          "to": "x",
+          "value": "20"
+        },
+        {
+          "on": "Ích đổi",
+          "type": "focus",
+          "targets": [
+            "x"
+          ]
+        }
+      ],
+      "after": "x = 20; p vẫn trỏ tới x.",
+      "afterOn": "Ích đổi",
+      "hold": 0
+    },
+    {
+      "title": "Cùng quy tắc,\nsố mới",
+      "subtitle": "Thay 20 bằng 30 trong dòng cuối.",
+      "vo": "Thử đổi số ở dòng cuối thành ba mươi. Lệnh vẫn theo địa chỉ cũ, rồi ghi ba mươi vào đó. Ích đổi thành ba mươi. Cùng một quy tắc: theo địa chỉ, tìm đúng biến, rồi sửa dữ liệu.",
+      "events": [
+        {
+          "on": "Thử đổi",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int *p = &x;",
+            "*p = 30;"
+          ],
+          "active": 2
+        },
+        {
+          "on": "ghi ba mươi",
+          "type": "write",
+          "to": "x",
+          "value": "30"
+        },
+        {
+          "on": "Ích đổi",
+          "type": "focus",
+          "targets": [
+            "p",
+            "x"
+          ]
+        }
+      ],
+      "after": "Địa chỉ giữ nguyên; giá trị của x đổi.",
+      "afterOn": "Ích đổi",
+      "hold": 0
+    }
+  ],
+  "outro": {
+    "title": "Địa chỉ\nvà dữ liệu",
+    "subtitle": "p giữ địa chỉ.\n*p truy cập dữ liệu tại đó.",
+    "tiles": [
+      {
+        "value": "p",
+        "label": "Giữ địa chỉ"
+      },
+      {
+        "value": "*p",
+        "label": "Truy cập dữ liệu"
+      }
+    ],
+    "note": "Thử chạy ví dụ và đổi số.\nChỉ đọc hoặc ghi qua địa chỉ hợp lệ.",
+    "vo": "Vậy pê giữ địa chỉ, còn sao pê giúp đọc hoặc sửa dữ liệu tại địa chỉ đó. Trong ví dụ này, địa chỉ hợp lệ nên mình có thể truy cập biến ích. Bạn thử chạy và đổi số nhé.",
+    "hold": 0
+  }
+}

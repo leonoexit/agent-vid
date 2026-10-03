@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, height=1920">
+  <title>Editorial Explainer</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <div id="root" data-composition-id="editorial-explainer" data-width="1080" data-height="1920" data-duration="60">
+    <section id="explainer" class="clip" data-start="0" data-duration="60" data-track-index="1">
+      <header class="journal-header"><span class="brand" id="brand"></span><span id="series"></span></header>
+      <main id="stage"></main>
+      <footer class="journal-footer"><span id="topic-tag"></span><span id="edition"></span></footer>
+      <div id="captions"></div>
+    </section>
+    <!-- AUDIO:BEGIN -->
+    <!-- AUDIO:END -->
+  </div>
+  <script src="theme.js"></script>
+  <script src="project-data.js"></script>
+  <script src="editorial-engine.js"></script>
+  <script>window.__timelines = {"editorial-explainer": window.EditorialTimeline};</script>
+</body>
+</html>

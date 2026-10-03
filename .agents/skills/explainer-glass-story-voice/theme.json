@@ -1,0 +1,29 @@
+{
+  "slug": "glass-story",
+  "skill_name": "explainer-glass-story-voice",
+  "voice": {
+    "engine": "vieneu",
+    "vi": "Hải Đăng",
+    "speed": 1.0,
+    "en": {
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "wps": 2.2
+    },
+    "paragraph_gap": 0.2
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "style": "Dream State / Fresh Daylight glass cards",
+  "palette": {
+    "background": "#fffcfc",
+    "text": "#0f172a",
+    "secondary": "#334155",
+    "accent": "#be123c",
+    "rose": "#fb7185",
+    "amber": "#fbbf24"
+  }
+}

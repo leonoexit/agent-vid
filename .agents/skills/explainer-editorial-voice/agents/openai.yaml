@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editorial Explainer"
+  short_description: "Minimal monochrome videos for any subject"
+  default_prompt: "Use $explainer-editorial-voice to make a narrated video about my topic with a monochrome editorial design."

@@ -1,0 +1,165 @@
+{
+  "language": "en",
+  "title": "Assignment copies a value",
+  "brand": "AGENTVID",
+  "series": "ONE CODE EXAMPLE",
+  "kicker": "FOLLOW THE VALUE",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "card",
+      "label": "Variable x",
+      "value": "10",
+      "detail": "Original value",
+      "x": 30,
+      "y": 75,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "y",
+      "kind": "card",
+      "label": "Variable y",
+      "value": "—",
+      "detail": "Independent variable",
+      "x": 485,
+      "y": 75,
+      "width": 320,
+      "height": 270
+    }
+  ],
+  "intro": {
+    "title": "Copy a value,\nthen change it",
+    "subtitle": "Does the copy change too?",
+    "note": "One small C example. Two integer variables.",
+    "tiles": [
+      {
+        "value": "x",
+        "label": "Original"
+      },
+      {
+        "value": "y",
+        "label": "Copy"
+      }
+    ],
+    "vo": "If we copy a number into another variable, will both change together? Let us trace one small example in C.",
+    "hold": 0
+  },
+  "scenes": [
+    {
+      "title": "Start with x equal to ten",
+      "subtitle": "Read one instruction at a time.",
+      "vo": "First, we create an integer variable named x. Its value is ten. Keep this value in view as we add a second variable.",
+      "events": [
+        {
+          "on": "create",
+          "type": "show",
+          "target": "x"
+        },
+        {
+          "on": "integer variable",
+          "type": "code",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "on": "value is ten",
+          "type": "focus",
+          "targets": [
+            "x"
+          ]
+        }
+      ],
+      "hold": 0
+    },
+    {
+      "title": "Copy the current value",
+      "subtitle": "Assignment reads x and stores that value in y.",
+      "vo": "Next, we create y. We copy the value from x into y. Both now contain ten. This assignment copies a number; it does not link the two variables together.",
+      "events": [
+        {
+          "on": "create y",
+          "type": "show",
+          "target": "y"
+        },
+        {
+          "on": "create y",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int y = x;"
+          ],
+          "active": 1
+        },
+        {
+          "on": "copy the value",
+          "type": "transfer",
+          "from": "x",
+          "to": "y",
+          "value": "10"
+        },
+        {
+          "on": "Both now contain ten",
+          "type": "focus",
+          "targets": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "hold": 0
+    },
+    {
+      "title": "Change x and check y",
+      "subtitle": "Two variables retain their own values.",
+      "vo": "Now we change x to twenty. Watch the new number arrive in x. The value in y remains ten, because y received a copy earlier. Changing x does not repeat that assignment.",
+      "events": [
+        {
+          "on": "change x",
+          "type": "code",
+          "lines": [
+            "int x = 10;",
+            "int y = x;",
+            "x = 20;"
+          ],
+          "active": 2
+        },
+        {
+          "on": "change x",
+          "type": "write",
+          "to": "x",
+          "value": "20"
+        },
+        {
+          "on": "y remains ten",
+          "type": "focus",
+          "targets": [
+            "y"
+          ]
+        }
+      ],
+      "after": "x = 20; y = 10",
+      "afterOn": "y remains ten",
+      "hold": 0
+    }
+  ],
+  "outro": {
+    "title": "Two variables,\ntwo values",
+    "subtitle": "Assignment copies the value at that moment.",
+    "note": "This example uses ordinary integers, not pointers or shared objects.",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x now"
+      },
+      {
+        "value": "10",
+        "label": "y still"
+      }
+    ],
+    "vo": "An integer assignment copies the current value. Afterwards, these two variables hold their own numbers. To change y, we need another assignment to y.",
+    "hold": 0
+  }
+}
