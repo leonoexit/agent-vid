@@ -1,7 +1,7 @@
 """Validate story identities, motion cues, geometry and renderable content."""
 import argparse,json,math,pathlib,re,sys,unicodedata
 KINDS={'box','ticket','card','reader'}
-ACTIONS={'show','hide','open','focus','set','morph','move','transfer','write','connect','code'}
+ACTIONS={'show','hide','open','focus','spotlight','pulse','set','morph','move','transfer','write','connect','code'}
 FIELDS={'label':25,'value':14,'detail':40,'address':20}
 def tokens(s):return re.findall(r'[^\W_]+',unicodedata.normalize('NFC',str(s)).lower())
 def validate(s):
@@ -32,9 +32,28 @@ def validate(s):
   if all(isinstance(n.get(k),(int,float)) for k in ('x','y','width','height')):
    if n['x']+n['width']>860 or n['y']+n['height']>570:fail(path,'outside the 860×570 visual area')
    positions[n['id']]={'x':n['x'],'y':n['y'],'width':n['width'],'height':n['height']}
-  if 'image' in n:
-   string(n['image'],path+'.image',180)
-   if isinstance(n['image'],str) and (not n['image'].startswith('assets/illustrations/') or '..' in pathlib.PurePosixPath(n['image']).parts or '\\' in n['image']):fail(path,'use a local assets/illustrations/ path')
+   if 'image' in n:
+    string(n['image'],path+'.image',180)
+    if isinstance(n['image'],str) and (not n['image'].startswith('assets/illustrations/') or '..' in pathlib.PurePosixPath(n['image']).parts or '\\' in n['image']):fail(path,'use a local assets/illustrations/ path')
+ stickers=s.get('stickers',[])
+ if not isinstance(stickers,list):
+  fail('stickers','expected a list');stickers=[]
+ elif len(stickers)>12:
+  fail('stickers','expected 0–12 items')
+ for i,st in enumerate(stickers):
+  path=f'sticker {i+1}'
+  if not isinstance(st,dict):fail(path,'expected object');continue
+  string(st.get('id'),path+'.id',30)
+  string(st.get('image'),path+'.image',180)
+  string(st.get('alt'),path+'.alt',120)
+  if isinstance(st.get('image'),str) and (not st['image'].startswith('assets/illustrations/') or '..' in pathlib.PurePosixPath(st['image']).parts or '\\' in st['image']):fail(path,'use a local assets/illustrations/ path')
+  for field,limit in {'x':860,'y':570,'width':300,'height':300}.items():number(st.get(field),path+'.'+field,0 if field in ('x','y') else 24,limit)
+  if all(isinstance(st.get(k),(int,float)) for k in ('x','y','width','height')) and (st['x']+st['width']>860 or st['y']+st['height']>570):fail(path,'outside the 860×570 visual area')
+  if 'rotation' in st:number(st['rotation'],path+'.rotation',-30,30)
+  if 'scenes' in st:
+   scenes=st['scenes']
+   if not isinstance(scenes,list) or not 1<=len(scenes)<=12 or any(not isinstance(n,int) or isinstance(n,bool) or not 1<=n<=12 for n in scenes):fail(path+'.scenes','use unique 1-based scene numbers')
+   elif len(set(scenes))!=len(scenes):fail(path+'.scenes','use unique 1-based scene numbers')
  for key in ('intro','outro'):
   content=s.get(key)
   if not isinstance(content,dict):fail(key,'expected object');continue
@@ -63,13 +82,20 @@ def validate(s):
    if not isinstance(e,dict):fail(ep,'expected object');continue
    anchor(e,ep);kind=e.get('type')
    if not isinstance(kind,str) or kind not in ACTIONS:fail(ep,'unknown action');continue
-   keys=['target'] if kind in {'show','hide','open','set','morph','move'} else ['from','to'] if kind in {'transfer','connect'} else ['to'] if kind=='write' else []
+   keys=['target'] if kind in {'show','hide','open','set','morph','move','pulse'} else ['from','to'] if kind in {'transfer','connect'} else ['to'] if kind=='write' else []
    for key in keys:
     if not isinstance(e.get(key),str) or e[key] not in nodes:fail(ep,'unknown '+key+' entity')
    if kind=='open' and isinstance(e.get('target'),str) and nodes.get(e['target'],{}).get('kind')!='box':fail(ep,'open requires a box')
    if kind=='focus':
     for target in listing(e.get('targets'),ep+'.targets',0,6):
      if not isinstance(target,str) or target not in nodes:fail(ep,'unknown focus entity')
+   if kind=='spotlight':
+    for target in listing(e.get('targets'),ep+'.targets',1,6):
+     if not isinstance(target,str) or target not in nodes:fail(ep,'unknown spotlight entity')
+    if 'dim' in e:number(e['dim'],ep+'.dim',.1,.8)
+   if kind=='pulse':
+    if 'scale' in e:number(e['scale'],ep+'.scale',1.01,1.2)
+    if 'duration' in e:number(e['duration'],ep+'.duration',.2,1.2)
    if kind in {'set','morph'}:
     for field,limit in FIELDS.items():
      if field in e:string(e[field],ep+'.'+field,limit,field in ('detail','address'))
@@ -98,6 +124,8 @@ def main():
  errors=validate(s)
  for n in s.get('entities',[]) if isinstance(s.get('entities'),list) else []:
   if isinstance(n,dict) and isinstance(n.get('image'),str) and not (a.project/n['image']).is_file():errors.append('Missing illustration: '+n['image'])
+ for st in s.get('stickers',[]) if isinstance(s.get('stickers'),list) else []:
+  if isinstance(st,dict) and isinstance(st.get('image'),str) and not (a.project/st['image']).is_file():errors.append('Missing sticker: '+st['image'])
  for e in errors:print('x',e)
  print('OK' if not errors else f'{len(errors)} problem(s)');sys.exit(bool(errors))
 if __name__=='__main__':main()

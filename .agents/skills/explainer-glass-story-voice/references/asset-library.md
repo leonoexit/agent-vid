@@ -23,7 +23,7 @@ Use `--importance support` for secondary cutouts. Optional: `--subject <exact-su
 `--project <dir>` (exclude this video's own prior use), `--limit 5`.
 
 Example: `select --role locator --state blank --query 'địa chỉ con trỏ' --action fade --importance support --project <dir>`.
-Roles are descriptive IDs, e.g. container, locator, ordered-collection or decision-point. States describe visible
+Roles are descriptive IDs, e.g. container, locator, ordered-collection, decision-point or sticker. States describe visible
 conditions, e.g. open, blank, stacked or waiting. These describe the pictured subject, not its authority in the
 explanation: existing container/locator assets are still secondary art. Register roles/states as actual art needs arise.
 
@@ -51,6 +51,10 @@ and visual identities across videos. Support props may repeat. Cosmetic variants
 
 For a variant, use `--variant-of <existing-id> --change '<specific change>'` instead of inventing a new family.
 A new visual identity gets a new family; a new color, pose or state of the same prop retains its family.
+
+For a decorative sticker, set `--role sticker`. The helper uses `references/asset-style.json`'s sticker prompt:
+transparent, text-free and quiet enough for a corner ornament. A sticker is not an explanatory entity and cannot
+represent a buffer, value, relationship or result.
 
 The command saves asset-requests/<id>.json with the full prompt and metadata. Use its prompt with the built-in image
 creation tool and `transparent_background: true`. For variants, reference the parent image using the tool's supported
@@ -80,9 +84,22 @@ Use card/ticket for a static prop. A box with an `open` cue uses native lid geom
 pretend its photographed lid moves. A large hero illustration still needs a distinct native zone for exact state;
 use it only as a contextual figure and keep it separate from labels, slots and transfer destinations. The starter box is visibly open, and cannot represent a closed state.
 
+Install a sticker separately so its provenance is recorded without attaching it to a data entity:
+
+```bash
+python <skill>/scripts/asset-library.py install-sticker \
+  --asset <sticker-id> --project <dir> --sticker-id <scene-sticker-id> \
+  --reason 'quiet corner ornament for the buffer scene' --x 18 --y 18 \
+  --width 112 --height 112 --rotation -6 --scenes 1,3
+```
+
+The command copies the immutable PNG into `assets/illustrations/`, adds a `stickers[]` entry to `script.json`, and
+records the file hash/family/reason in `asset-manifest.json`. Review the generated coordinates against the code,
+caption and takeaway zones; keep zero to two stickers per scene. Edit `scenes` out for a persistent ornament.
+
 ## Backgrounds and contextual figures
 
-The helper currently manages transparent PNG cutouts attached to entities; it is not a background-layer installer.
+The helper manages transparent PNG cutouts attached to entities and the separate sticker layer; it is not a background-layer installer.
 For a full background or contextual scene image, use the corresponding prompt in asset-style.json, generate with
 `transparent_background: false`, and save the local result under the video's assets/illustrations. Record the exact
 prompt, file and secondary role in that project's asset request/storyboard. Extend the project's renderer for the
@@ -96,9 +113,10 @@ it remains contextual, while native diagrams show every operation and result.
 ## Recording actual use
 
 After successful rendering, run `python <skill>/scripts/asset-library.py record --project <dir>`.
-It records only library images still attached to scripted entities with a show cue. It counts each asset/family once
-per video, irrespective of scene count. Re-recording an edit updates the same video; it does not inflate counts or move
-an old video to the newest position. Failed/canceled drafts are not recorded. No external publishing is performed.
+It records library images still attached to scripted entities with a show cue and installed stickers present in
+`stickers[]`. It counts each asset/family once per video, irrespective of scene count. Re-recording an edit updates the
+same video; it does not inflate counts or move an old video to the newest position. Failed/canceled drafts are not
+recorded. No external publishing is performed.
 These are authored video uses, not measured impressions or retention analytics. Manually changed illustration layers
 need their manifest/show linkage updated before recording; the helper does not inspect pixels or OCR a rendered file.
 The history file is created on first real use; starter assets are not falsely marked as already used by older demos.

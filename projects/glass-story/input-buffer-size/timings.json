@@ -1,0 +1,2343 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=1.0:gap=0.2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 11.76,
+   "words": [
+    {
+     "w": "Trong",
+     "start": 0.067,
+     "end": 0.347
+    },
+    {
+     "w": "Python,",
+     "start": 0.371,
+     "end": 0.731
+    },
+    {
+     "w": "input",
+     "start": 0.762,
+     "end": 0.985
+    },
+    {
+     "w": "trả",
+     "start": 1.005,
+     "end": 1.164
+    },
+    {
+     "w": "về",
+     "start": 1.178,
+     "end": 1.305
+    },
+    {
+     "w": "một",
+     "start": 1.316,
+     "end": 1.475
+    },
+    {
+     "w": "chuỗi",
+     "start": 1.489,
+     "end": 1.712
+    },
+    {
+     "w": "đã",
+     "start": 1.731,
+     "end": 1.859
+    },
+    {
+     "w": "sẵn",
+     "start": 1.87,
+     "end": 2.029
+    },
+    {
+     "w": "sàng",
+     "start": 2.043,
+     "end": 2.234
+    },
+    {
+     "w": "để",
+     "start": 2.25,
+     "end": 2.378
+    },
+    {
+     "w": "dùng.",
+     "start": 2.389,
+     "end": 2.611
+    },
+    {
+     "w": "C",
+     "start": 3.19,
+     "end": 3.278
+    },
+    {
+     "w": "thì",
+     "start": 3.286,
+     "end": 3.433
+    },
+    {
+     "w": "mình",
+     "start": 3.446,
+     "end": 3.622
+    },
+    {
+     "w": "phải",
+     "start": 3.638,
+     "end": 3.814
+    },
+    {
+     "w": "dành",
+     "start": 3.829,
+     "end": 4.006
+    },
+    {
+     "w": "trước",
+     "start": 4.021,
+     "end": 4.227
+    },
+    {
+     "w": "một",
+     "start": 4.245,
+     "end": 4.392
+    },
+    {
+     "w": "vùng",
+     "start": 4.405,
+     "end": 4.581
+    },
+    {
+     "w": "nhớ",
+     "start": 4.596,
+     "end": 4.743
+    },
+    {
+     "w": "để",
+     "start": 4.756,
+     "end": 4.874
+    },
+    {
+     "w": "nhận",
+     "start": 4.884,
+     "end": 5.06
+    },
+    {
+     "w": "dữ",
+     "start": 5.076,
+     "end": 5.193
+    },
+    {
+     "w": "liệu.",
+     "start": 5.203,
+     "end": 5.409
+    },
+    {
+     "w": "Vậy",
+     "start": 5.92,
+     "end": 6.123
+    },
+    {
+     "w": "input",
+     "start": 6.14,
+     "end": 6.424
+    },
+    {
+     "w": "buffer",
+     "start": 6.449,
+     "end": 6.773
+    },
+    {
+     "w": "size",
+     "start": 6.801,
+     "end": 7.044
+    },
+    {
+     "w": "là",
+     "start": 7.065,
+     "end": 7.227
+    },
+    {
+     "w": "gì,",
+     "start": 7.242,
+     "end": 7.444
+    },
+    {
+     "w": "và",
+     "start": 7.767,
+     "end": 7.91
+    },
+    {
+     "w": "vì",
+     "start": 7.923,
+     "end": 8.067
+    },
+    {
+     "w": "sao",
+     "start": 8.079,
+     "end": 8.259
+    },
+    {
+     "w": "dòng",
+     "start": 8.275,
+     "end": 8.49
+    },
+    {
+     "w": "nhập",
+     "start": 8.509,
+     "end": 8.725
+    },
+    {
+     "w": "dài",
+     "start": 8.743,
+     "end": 8.923
+    },
+    {
+     "w": "có",
+     "start": 8.939,
+     "end": 9.083
+    },
+    {
+     "w": "thể",
+     "start": 9.095,
+     "end": 9.275
+    },
+    {
+     "w": "bị",
+     "start": 9.29,
+     "end": 9.434
+    },
+    {
+     "w": "chia",
+     "start": 9.447,
+     "end": 9.662
+    },
+    {
+     "w": "ra?",
+     "start": 9.681,
+     "end": 9.861
+    },
+    {
+     "w": "Mình",
+     "start": 10.427,
+     "end": 10.604
+    },
+    {
+     "w": "xem",
+     "start": 10.62,
+     "end": 10.768
+    },
+    {
+     "w": "một",
+     "start": 10.781,
+     "end": 10.929
+    },
+    {
+     "w": "ví",
+     "start": 10.942,
+     "end": 11.06
+    },
+    {
+     "w": "dụ",
+     "start": 11.07,
+     "end": 11.189
+    },
+    {
+     "w": "thật",
+     "start": 11.199,
+     "end": 11.376
+    },
+    {
+     "w": "nhỏ.",
+     "start": 11.392,
+     "end": 11.569
+    }
+   ],
+   "text": "Trong Python, input trả về một chuỗi đã sẵn sàng để dùng. C thì mình phải dành trước một vùng nhớ để nhận dữ liệu. Vậy input buffer size là gì, và vì sao dòng nhập dài có thể bị chia ra? Mình xem một ví dụ thật nhỏ."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 10.48,
+   "words": [
+    {
+     "w": "Bắt",
+     "start": 0.108,
+     "end": 0.249
+    },
+    {
+     "w": "đầu",
+     "start": 0.262,
+     "end": 0.403
+    },
+    {
+     "w": "với",
+     "start": 0.415,
+     "end": 0.556
+    },
+    {
+     "w": "dòng",
+     "start": 0.569,
+     "end": 0.738
+    },
+    {
+     "w": "char",
+     "start": 0.753,
+     "end": 0.923
+    },
+    {
+     "w": "name",
+     "start": 0.937,
+     "end": 1.107
+    },
+    {
+     "w": "mở",
+     "start": 1.122,
+     "end": 1.235
+    },
+    {
+     "w": "ngoặc",
+     "start": 1.245,
+     "end": 1.442
+    },
+    {
+     "w": "vuông",
+     "start": 1.46,
+     "end": 1.658
+    },
+    {
+     "w": "tám",
+     "start": 1.675,
+     "end": 1.816
+    },
+    {
+     "w": "đóng",
+     "start": 1.828,
+     "end": 1.998
+    },
+    {
+     "w": "ngoặc",
+     "start": 2.013,
+     "end": 2.211
+    },
+    {
+     "w": "vuông.",
+     "start": 2.228,
+     "end": 2.454
+    },
+    {
+     "w": "Nó",
+     "start": 2.833,
+     "end": 2.966
+    },
+    {
+     "w": "tạo",
+     "start": 2.978,
+     "end": 3.145
+    },
+    {
+     "w": "một",
+     "start": 3.16,
+     "end": 3.327
+    },
+    {
+     "w": "mảng",
+     "start": 3.341,
+     "end": 3.541
+    },
+    {
+     "w": "gồm",
+     "start": 3.559,
+     "end": 3.726
+    },
+    {
+     "w": "tám",
+     "start": 3.74,
+     "end": 3.907
+    },
+    {
+     "w": "ô",
+     "start": 3.922,
+     "end": 4.022
+    },
+    {
+     "w": "char",
+     "start": 4.031,
+     "end": 4.231
+    },
+    {
+     "w": "liên",
+     "start": 4.249,
+     "end": 4.449
+    },
+    {
+     "w": "tiếp.",
+     "start": 4.466,
+     "end": 4.7
+    },
+    {
+     "w": "Hãy",
+     "start": 5.236,
+     "end": 5.445
+    },
+    {
+     "w": "xem",
+     "start": 5.463,
+     "end": 5.672
+    },
+    {
+     "w": "đây",
+     "start": 5.69,
+     "end": 5.899
+    },
+    {
+     "w": "là",
+     "start": 5.917,
+     "end": 6.084
+    },
+    {
+     "w": "một",
+     "start": 6.098,
+     "end": 6.307
+    },
+    {
+     "w": "input",
+     "start": 6.325,
+     "end": 6.617
+    },
+    {
+     "w": "buffer,",
+     "start": 6.643,
+     "end": 7.019
+    },
+    {
+     "w": "tức",
+     "start": 7.051,
+     "end": 7.186
+    },
+    {
+     "w": "vùng",
+     "start": 7.198,
+     "end": 7.359
+    },
+    {
+     "w": "nhớ",
+     "start": 7.373,
+     "end": 7.508
+    },
+    {
+     "w": "tạm",
+     "start": 7.52,
+     "end": 7.655
+    },
+    {
+     "w": "để",
+     "start": 7.666,
+     "end": 7.774
+    },
+    {
+     "w": "đón",
+     "start": 7.783,
+     "end": 7.918
+    },
+    {
+     "w": "dữ",
+     "start": 7.93,
+     "end": 8.038
+    },
+    {
+     "w": "liệu.",
+     "start": 8.047,
+     "end": 8.236
+    },
+    {
+     "w": "Lúc",
+     "start": 8.733,
+     "end": 8.892
+    },
+    {
+     "w": "này,",
+     "start": 8.905,
+     "end": 9.095
+    },
+    {
+     "w": "tám",
+     "start": 9.419,
+     "end": 9.569
+    },
+    {
+     "w": "ô",
+     "start": 9.582,
+     "end": 9.671
+    },
+    {
+     "w": "vẫn",
+     "start": 9.679,
+     "end": 9.829
+    },
+    {
+     "w": "đang",
+     "start": 9.842,
+     "end": 10.021
+    },
+    {
+     "w": "trống.",
+     "start": 10.037,
+     "end": 10.276
+    }
+   ],
+   "text": "Bắt đầu với dòng char name mở ngoặc vuông tám đóng ngoặc vuông. Nó tạo một mảng gồm tám ô char liên tiếp. Hãy xem đây là một input buffer, tức vùng nhớ tạm để đón dữ liệu. Lúc này, tám ô vẫn đang trống."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 13.04,
+   "words": [
+    {
+     "w": "Điểm",
+     "start": 0.1,
+     "end": 0.331
+    },
+    {
+     "w": "dễ",
+     "start": 0.351,
+     "end": 0.505
+    },
+    {
+     "w": "nhầm",
+     "start": 0.518,
+     "end": 0.749
+    },
+    {
+     "w": "là:",
+     "start": 0.769,
+     "end": 0.962
+    },
+    {
+     "w": "tám",
+     "start": 1.393,
+     "end": 1.546
+    },
+    {
+     "w": "ô",
+     "start": 1.559,
+     "end": 1.65
+    },
+    {
+     "w": "không",
+     "start": 1.658,
+     "end": 1.872
+    },
+    {
+     "w": "có",
+     "start": 1.891,
+     "end": 2.013
+    },
+    {
+     "w": "nghĩa",
+     "start": 2.023,
+     "end": 2.237
+    },
+    {
+     "w": "tám",
+     "start": 2.255,
+     "end": 2.408
+    },
+    {
+     "w": "ký",
+     "start": 2.421,
+     "end": 2.543
+    },
+    {
+     "w": "tự",
+     "start": 2.554,
+     "end": 2.676
+    },
+    {
+     "w": "nhìn",
+     "start": 2.686,
+     "end": 2.87
+    },
+    {
+     "w": "thấy.",
+     "start": 2.885,
+     "end": 3.099
+    },
+    {
+     "w": "Một",
+     "start": 3.597,
+     "end": 3.744
+    },
+    {
+     "w": "chuỗi",
+     "start": 3.757,
+     "end": 3.963
+    },
+    {
+     "w": "C",
+     "start": 3.981,
+     "end": 4.07
+    },
+    {
+     "w": "cần",
+     "start": 4.078,
+     "end": 4.225
+    },
+    {
+     "w": "một",
+     "start": 4.238,
+     "end": 4.385
+    },
+    {
+     "w": "ký",
+     "start": 4.398,
+     "end": 4.516
+    },
+    {
+     "w": "tự",
+     "start": 4.526,
+     "end": 4.644
+    },
+    {
+     "w": "kết",
+     "start": 4.654,
+     "end": 4.802
+    },
+    {
+     "w": "thúc,",
+     "start": 4.814,
+     "end": 5.021
+    },
+    {
+     "w": "viết",
+     "start": 5.266,
+     "end": 5.462
+    },
+    {
+     "w": "là",
+     "start": 5.479,
+     "end": 5.609
+    },
+    {
+     "w": "gạch",
+     "start": 5.62,
+     "end": 5.815
+    },
+    {
+     "w": "chéo",
+     "start": 5.832,
+     "end": 6.027
+    },
+    {
+     "w": "không,",
+     "start": 6.044,
+     "end": 6.305
+    },
+    {
+     "w": "ký",
+     "start": 6.528,
+     "end": 6.643
+    },
+    {
+     "w": "hiệu",
+     "start": 6.653,
+     "end": 6.826
+    },
+    {
+     "w": "không",
+     "start": 6.841,
+     "end": 7.042
+    },
+    {
+     "w": "trong",
+     "start": 7.06,
+     "end": 7.261
+    },
+    {
+     "w": "nháy",
+     "start": 7.279,
+     "end": 7.451
+    },
+    {
+     "w": "đơn.",
+     "start": 7.466,
+     "end": 7.639
+    },
+    {
+     "w": "Vì",
+     "start": 8.139,
+     "end": 8.158
+    },
+    {
+     "w": "vậy,",
+     "start": 8.16,
+     "end": 8.189
+    },
+    {
+     "w": "buffer",
+     "start": 8.191,
+     "end": 8.502
+    },
+    {
+     "w": "size",
+     "start": 8.529,
+     "end": 8.761
+    },
+    {
+     "w": "bằng",
+     "start": 8.782,
+     "end": 9.014
+    },
+    {
+     "w": "tám",
+     "start": 9.035,
+     "end": 9.228
+    },
+    {
+     "w": "chỉ",
+     "start": 9.245,
+     "end": 9.439
+    },
+    {
+     "w": "để",
+     "start": 9.456,
+     "end": 9.611
+    },
+    {
+     "w": "lại",
+     "start": 9.625,
+     "end": 9.819
+    },
+    {
+     "w": "bảy",
+     "start": 9.835,
+     "end": 10.029
+    },
+    {
+     "w": "ô",
+     "start": 10.046,
+     "end": 10.163
+    },
+    {
+     "w": "cho",
+     "start": 10.173,
+     "end": 10.367
+    },
+    {
+     "w": "ký",
+     "start": 10.383,
+     "end": 10.539
+    },
+    {
+     "w": "tự",
+     "start": 10.552,
+     "end": 10.707
+    },
+    {
+     "w": "nhập,",
+     "start": 10.721,
+     "end": 10.992
+    },
+    {
+     "w": "còn",
+     "start": 11.355,
+     "end": 11.509
+    },
+    {
+     "w": "ô",
+     "start": 11.523,
+     "end": 11.615
+    },
+    {
+     "w": "cuối",
+     "start": 11.623,
+     "end": 11.808
+    },
+    {
+     "w": "dành",
+     "start": 11.824,
+     "end": 12.009
+    },
+    {
+     "w": "cho",
+     "start": 12.025,
+     "end": 12.179
+    },
+    {
+     "w": "ký",
+     "start": 12.193,
+     "end": 12.316
+    },
+    {
+     "w": "tự",
+     "start": 12.327,
+     "end": 12.45
+    },
+    {
+     "w": "kết",
+     "start": 12.461,
+     "end": 12.615
+    },
+    {
+     "w": "thúc.",
+     "start": 12.628,
+     "end": 12.844
+    }
+   ],
+   "text": "Điểm dễ nhầm là: tám ô không có nghĩa tám ký tự nhìn thấy. Một chuỗi C cần một ký tự kết thúc, viết là gạch chéo không, ký hiệu không trong nháy đơn. Vì vậy, buffer size bằng tám chỉ để lại bảy ô cho ký tự nhập, còn ô cuối dành cho ký tự kết thúc."
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 12.24,
+   "words": [
+    {
+     "w": "Bây",
+     "start": 0.097,
+     "end": 0.284
+    },
+    {
+     "w": "giờ",
+     "start": 0.3,
+     "end": 0.487
+    },
+    {
+     "w": "thêm",
+     "start": 0.504,
+     "end": 0.728
+    },
+    {
+     "w": "dòng",
+     "start": 0.748,
+     "end": 0.972
+    },
+    {
+     "w": "fgets.",
+     "start": 0.992,
+     "end": 1.291
+    },
+    {
+     "w": "Tham",
+     "start": 1.56,
+     "end": 1.764
+    },
+    {
+     "w": "số",
+     "start": 1.782,
+     "end": 1.918
+    },
+    {
+     "w": "đầu",
+     "start": 1.929,
+     "end": 2.099
+    },
+    {
+     "w": "tiên",
+     "start": 2.114,
+     "end": 2.318
+    },
+    {
+     "w": "là",
+     "start": 2.335,
+     "end": 2.471
+    },
+    {
+     "w": "nơi",
+     "start": 2.483,
+     "end": 2.653
+    },
+    {
+     "w": "nhận",
+     "start": 2.667,
+     "end": 2.871
+    },
+    {
+     "w": "dữ",
+     "start": 2.889,
+     "end": 3.024
+    },
+    {
+     "w": "liệu:",
+     "start": 3.036,
+     "end": 3.274
+    },
+    {
+     "w": "name.",
+     "start": 3.777,
+     "end": 3.85
+    },
+    {
+     "w": "Tham",
+     "start": 3.857,
+     "end": 4.033
+    },
+    {
+     "w": "số",
+     "start": 4.049,
+     "end": 4.166
+    },
+    {
+     "w": "thứ",
+     "start": 4.176,
+     "end": 4.323
+    },
+    {
+     "w": "hai",
+     "start": 4.336,
+     "end": 4.483
+    },
+    {
+     "w": "là",
+     "start": 4.496,
+     "end": 4.614
+    },
+    {
+     "w": "sức",
+     "start": 4.624,
+     "end": 4.771
+    },
+    {
+     "w": "chứa:",
+     "start": 4.784,
+     "end": 4.989
+    },
+    {
+     "w": "sizeof",
+     "start": 5.33,
+     "end": 5.659
+    },
+    {
+     "w": "name,",
+     "start": 5.687,
+     "end": 5.975
+    },
+    {
+     "w": "kết",
+     "start": 6.251,
+     "end": 6.41
+    },
+    {
+     "w": "quả",
+     "start": 6.424,
+     "end": 6.583
+    },
+    {
+     "w": "bằng",
+     "start": 6.597,
+     "end": 6.788
+    },
+    {
+     "w": "tám.",
+     "start": 6.804,
+     "end": 6.995
+    },
+    {
+     "w": "Tham",
+     "start": 7.363,
+     "end": 7.613
+    },
+    {
+     "w": "số",
+     "start": 7.635,
+     "end": 7.802
+    },
+    {
+     "w": "cuối",
+     "start": 7.817,
+     "end": 8.068
+    },
+    {
+     "w": "là",
+     "start": 8.089,
+     "end": 8.257
+    },
+    {
+     "w": "stdin,",
+     "start": 8.271,
+     "end": 8.605
+    },
+    {
+     "w": "luồng",
+     "start": 9.009,
+     "end": 9.202
+    },
+    {
+     "w": "input",
+     "start": 9.219,
+     "end": 9.412
+    },
+    {
+     "w": "chuẩn.",
+     "start": 9.428,
+     "end": 9.649
+    },
+    {
+     "w": "Hàm",
+     "start": 10.138,
+     "end": 10.286
+    },
+    {
+     "w": "biết",
+     "start": 10.299,
+     "end": 10.475
+    },
+    {
+     "w": "không",
+     "start": 10.491,
+     "end": 10.697
+    },
+    {
+     "w": "được",
+     "start": 10.715,
+     "end": 10.892
+    },
+    {
+     "w": "ghi",
+     "start": 10.907,
+     "end": 11.055
+    },
+    {
+     "w": "quá",
+     "start": 11.068,
+     "end": 11.215
+    },
+    {
+     "w": "tám",
+     "start": 11.228,
+     "end": 11.375
+    },
+    {
+     "w": "ô",
+     "start": 11.388,
+     "end": 11.476
+    },
+    {
+     "w": "của",
+     "start": 11.484,
+     "end": 11.632
+    },
+    {
+     "w": "buffer",
+     "start": 11.644,
+     "end": 11.88
+    },
+    {
+     "w": "này.",
+     "start": 11.901,
+     "end": 12.078
+    }
+   ],
+   "text": "Bây giờ thêm dòng fgets. Tham số đầu tiên là nơi nhận dữ liệu: name. Tham số thứ hai là sức chứa: sizeof name, kết quả bằng tám. Tham số cuối là stdin, luồng input chuẩn. Hàm biết không được ghi quá tám ô của buffer này."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 10.8,
+   "words": [
+    {
+     "w": "Giờ",
+     "start": 0.064,
+     "end": 0.247
+    },
+    {
+     "w": "người",
+     "start": 0.263,
+     "end": 0.518
+    },
+    {
+     "w": "dùng",
+     "start": 0.541,
+     "end": 0.76
+    },
+    {
+     "w": "gõ",
+     "start": 0.779,
+     "end": 0.925
+    },
+    {
+     "w": "HoChiMinh",
+     "start": 0.938,
+     "end": 1.34
+    },
+    {
+     "w": "rồi",
+     "start": 1.375,
+     "end": 1.558
+    },
+    {
+     "w": "nhấn",
+     "start": 1.574,
+     "end": 1.793
+    },
+    {
+     "w": "Enter.",
+     "start": 1.812,
+     "end": 2.104
+    },
+    {
+     "w": "Tên",
+     "start": 2.602,
+     "end": 2.77
+    },
+    {
+     "w": "này",
+     "start": 2.785,
+     "end": 2.953
+    },
+    {
+     "w": "có",
+     "start": 2.968,
+     "end": 3.102
+    },
+    {
+     "w": "chín",
+     "start": 3.114,
+     "end": 3.316
+    },
+    {
+     "w": "chữ",
+     "start": 3.333,
+     "end": 3.502
+    },
+    {
+     "w": "cái;",
+     "start": 3.516,
+     "end": 3.718
+    },
+    {
+     "w": "phím",
+     "start": 3.994,
+     "end": 4.199
+    },
+    {
+     "w": "Enter",
+     "start": 4.217,
+     "end": 4.456
+    },
+    {
+     "w": "thêm",
+     "start": 4.477,
+     "end": 4.682
+    },
+    {
+     "w": "ký",
+     "start": 4.7,
+     "end": 4.836
+    },
+    {
+     "w": "tự",
+     "start": 4.848,
+     "end": 4.985
+    },
+    {
+     "w": "xuống",
+     "start": 4.997,
+     "end": 5.236
+    },
+    {
+     "w": "dòng,",
+     "start": 5.257,
+     "end": 5.496
+    },
+    {
+     "w": "ký",
+     "start": 5.773,
+     "end": 5.902
+    },
+    {
+     "w": "hiệu",
+     "start": 5.913,
+     "end": 6.108
+    },
+    {
+     "w": "gạch",
+     "start": 6.125,
+     "end": 6.319
+    },
+    {
+     "w": "chéo",
+     "start": 6.336,
+     "end": 6.53
+    },
+    {
+     "w": "n.",
+     "start": 6.547,
+     "end": 6.677
+    },
+    {
+     "w": "Input",
+     "start": 7.237,
+     "end": 7.469
+    },
+    {
+     "w": "đang",
+     "start": 7.489,
+     "end": 7.687
+    },
+    {
+     "w": "chờ",
+     "start": 7.704,
+     "end": 7.87
+    },
+    {
+     "w": "mười",
+     "start": 7.884,
+     "end": 8.083
+    },
+    {
+     "w": "ký",
+     "start": 8.1,
+     "end": 8.232
+    },
+    {
+     "w": "tự,",
+     "start": 8.244,
+     "end": 8.409
+    },
+    {
+     "w": "nhiều",
+     "start": 8.705,
+     "end": 8.924
+    },
+    {
+     "w": "hơn",
+     "start": 8.943,
+     "end": 9.1
+    },
+    {
+     "w": "sức",
+     "start": 9.114,
+     "end": 9.27
+    },
+    {
+     "w": "chứa",
+     "start": 9.284,
+     "end": 9.472
+    },
+    {
+     "w": "bảy",
+     "start": 9.488,
+     "end": 9.645
+    },
+    {
+     "w": "ký",
+     "start": 9.659,
+     "end": 9.784
+    },
+    {
+     "w": "tự",
+     "start": 9.795,
+     "end": 9.92
+    },
+    {
+     "w": "của",
+     "start": 9.931,
+     "end": 10.088
+    },
+    {
+     "w": "lần",
+     "start": 10.101,
+     "end": 10.258
+    },
+    {
+     "w": "đọc",
+     "start": 10.272,
+     "end": 10.428
+    },
+    {
+     "w": "đầu.",
+     "start": 10.442,
+     "end": 10.63
+    }
+   ],
+   "text": "Giờ người dùng gõ HoChiMinh rồi nhấn Enter. Tên này có chín chữ cái; phím Enter thêm ký tự xuống dòng, ký hiệu gạch chéo n. Input đang chờ mười ký tự, nhiều hơn sức chứa bảy ký tự của lần đọc đầu."
+  },
+  {
+   "id": "scene-5",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 10.8,
+   "words": [
+    {
+     "w": "Khi",
+     "start": 0.081,
+     "end": 0.293
+    },
+    {
+     "w": "fgets",
+     "start": 0.312,
+     "end": 0.609
+    },
+    {
+     "w": "chạy,",
+     "start": 0.634,
+     "end": 0.931
+    },
+    {
+     "w": "nó",
+     "start": 0.957,
+     "end": 1.165
+    },
+    {
+     "w": "chép",
+     "start": 1.183,
+     "end": 1.495
+    },
+    {
+     "w": "bảy",
+     "start": 1.522,
+     "end": 1.782
+    },
+    {
+     "w": "ký",
+     "start": 1.805,
+     "end": 2.013
+    },
+    {
+     "w": "tự",
+     "start": 2.031,
+     "end": 2.239
+    },
+    {
+     "w": "đầu",
+     "start": 2.257,
+     "end": 2.517
+    },
+    {
+     "w": "vào",
+     "start": 2.54,
+     "end": 2.8
+    },
+    {
+     "w": "buffer:",
+     "start": 2.822,
+     "end": 3.29
+    },
+    {
+     "w": "HoChiMi.",
+     "start": 3.959,
+     "end": 3.401
+    },
+    {
+     "w": "Ô",
+     "start": 3.353,
+     "end": 3.491
+    },
+    {
+     "w": "thứ",
+     "start": 3.503,
+     "end": 3.732
+    },
+    {
+     "w": "tám",
+     "start": 3.752,
+     "end": 3.982
+    },
+    {
+     "w": "nhận",
+     "start": 4.002,
+     "end": 4.278
+    },
+    {
+     "w": "ký",
+     "start": 4.302,
+     "end": 4.486
+    },
+    {
+     "w": "tự",
+     "start": 4.502,
+     "end": 4.686
+    },
+    {
+     "w": "kết",
+     "start": 4.702,
+     "end": 4.932
+    },
+    {
+     "w": "thúc,",
+     "start": 4.952,
+     "end": 5.273
+    },
+    {
+     "w": "gạch",
+     "start": 5.552,
+     "end": 5.696
+    },
+    {
+     "w": "chéo",
+     "start": 5.709,
+     "end": 5.854
+    },
+    {
+     "w": "không.",
+     "start": 5.866,
+     "end": 6.059
+    },
+    {
+     "w": "Còn",
+     "start": 6.643,
+     "end": 6.787
+    },
+    {
+     "w": "nh",
+     "start": 6.8,
+     "end": 6.915
+    },
+    {
+     "w": "và",
+     "start": 6.925,
+     "end": 7.041
+    },
+    {
+     "w": "Enter",
+     "start": 7.051,
+     "end": 7.253
+    },
+    {
+     "w": "chưa",
+     "start": 7.271,
+     "end": 7.444
+    },
+    {
+     "w": "được",
+     "start": 7.459,
+     "end": 7.633
+    },
+    {
+     "w": "nhận;",
+     "start": 7.648,
+     "end": 7.85
+    },
+    {
+     "w": "chúng",
+     "start": 7.868,
+     "end": 8.15
+    },
+    {
+     "w": "vẫn",
+     "start": 8.174,
+     "end": 8.376
+    },
+    {
+     "w": "nằm",
+     "start": 8.393,
+     "end": 8.595
+    },
+    {
+     "w": "trong",
+     "start": 8.612,
+     "end": 8.894
+    },
+    {
+     "w": "stdin,",
+     "start": 8.918,
+     "end": 9.241
+    },
+    {
+     "w": "chờ",
+     "start": 9.641,
+     "end": 9.804
+    },
+    {
+     "w": "lần",
+     "start": 9.818,
+     "end": 9.981
+    },
+    {
+     "w": "đọc",
+     "start": 9.995,
+     "end": 10.158
+    },
+    {
+     "w": "tiếp",
+     "start": 10.172,
+     "end": 10.367
+    },
+    {
+     "w": "theo.",
+     "start": 10.384,
+     "end": 10.612
+    }
+   ],
+   "text": "Khi fgets chạy, nó chép bảy ký tự đầu vào buffer: HoChiMi. Ô thứ tám nhận ký tự kết thúc, gạch chéo không. Còn nh và Enter chưa được nhận; chúng vẫn nằm trong stdin, chờ lần đọc tiếp theo."
+  },
+  {
+   "id": "scene-6",
+   "file": "assets/audio/vo-06.mp3",
+   "duration": 13.68,
+   "words": [
+    {
+     "w": "Nếu",
+     "start": 0.101,
+     "end": 0.302
+    },
+    {
+     "w": "gọi",
+     "start": 0.319,
+     "end": 0.521
+    },
+    {
+     "w": "fgets",
+     "start": 0.538,
+     "end": 0.82
+    },
+    {
+     "w": "lần",
+     "start": 0.844,
+     "end": 1.045
+    },
+    {
+     "w": "nữa",
+     "start": 1.063,
+     "end": 1.264
+    },
+    {
+     "w": "với",
+     "start": 1.282,
+     "end": 1.483
+    },
+    {
+     "w": "cùng",
+     "start": 1.5,
+     "end": 1.742
+    },
+    {
+     "w": "buffer,",
+     "start": 1.763,
+     "end": 2.125
+    },
+    {
+     "w": "nó",
+     "start": 2.459,
+     "end": 2.581
+    },
+    {
+     "w": "không",
+     "start": 2.592,
+     "end": 2.806
+    },
+    {
+     "w": "đọc",
+     "start": 2.824,
+     "end": 2.977
+    },
+    {
+     "w": "lại",
+     "start": 2.99,
+     "end": 3.143
+    },
+    {
+     "w": "từ",
+     "start": 3.156,
+     "end": 3.279
+    },
+    {
+     "w": "đầu.",
+     "start": 3.289,
+     "end": 3.473
+    },
+    {
+     "w": "stdin",
+     "start": 4.08,
+     "end": 4.371
+    },
+    {
+     "w": "lúc",
+     "start": 4.397,
+     "end": 4.605
+    },
+    {
+     "w": "này",
+     "start": 4.623,
+     "end": 4.831
+    },
+    {
+     "w": "còn",
+     "start": 4.85,
+     "end": 5.058
+    },
+    {
+     "w": "nh",
+     "start": 5.076,
+     "end": 5.243
+    },
+    {
+     "w": "và",
+     "start": 5.257,
+     "end": 5.424
+    },
+    {
+     "w": "Enter.",
+     "start": 5.438,
+     "end": 5.771
+    },
+    {
+     "w": "Lần",
+     "start": 6.237,
+     "end": 6.396
+    },
+    {
+     "w": "đọc",
+     "start": 6.41,
+     "end": 6.569
+    },
+    {
+     "w": "sau",
+     "start": 6.583,
+     "end": 6.741
+    },
+    {
+     "w": "sẽ",
+     "start": 6.755,
+     "end": 6.882
+    },
+    {
+     "w": "lấy",
+     "start": 6.894,
+     "end": 7.052
+    },
+    {
+     "w": "đúng",
+     "start": 7.066,
+     "end": 7.257
+    },
+    {
+     "w": "phần",
+     "start": 7.274,
+     "end": 7.464
+    },
+    {
+     "w": "còn",
+     "start": 7.481,
+     "end": 7.64
+    },
+    {
+     "w": "lại",
+     "start": 7.654,
+     "end": 7.813
+    },
+    {
+     "w": "đó,",
+     "start": 7.826,
+     "end": 7.985
+    },
+    {
+     "w": "rồi",
+     "start": 8.322,
+     "end": 8.463
+    },
+    {
+     "w": "kết",
+     "start": 8.476,
+     "end": 8.617
+    },
+    {
+     "w": "thúc",
+     "start": 8.629,
+     "end": 8.798
+    },
+    {
+     "w": "chuỗi",
+     "start": 8.813,
+     "end": 9.01
+    },
+    {
+     "w": "bằng",
+     "start": 9.027,
+     "end": 9.197
+    },
+    {
+     "w": "gạch",
+     "start": 9.211,
+     "end": 9.38
+    },
+    {
+     "w": "chéo",
+     "start": 9.395,
+     "end": 9.564
+    },
+    {
+     "w": "không.",
+     "start": 9.579,
+     "end": 9.805
+    },
+    {
+     "w": "Đây",
+     "start": 10.358,
+     "end": 10.516
+    },
+    {
+     "w": "là",
+     "start": 10.529,
+     "end": 10.655
+    },
+    {
+     "w": "lý",
+     "start": 10.666,
+     "end": 10.792
+    },
+    {
+     "w": "do",
+     "start": 10.803,
+     "end": 10.93
+    },
+    {
+     "w": "một",
+     "start": 10.94,
+     "end": 11.098
+    },
+    {
+     "w": "lệnh",
+     "start": 11.112,
+     "end": 11.301
+    },
+    {
+     "w": "đọc",
+     "start": 11.317,
+     "end": 11.475
+    },
+    {
+     "w": "tiếp",
+     "start": 11.489,
+     "end": 11.678
+    },
+    {
+     "w": "theo",
+     "start": 11.694,
+     "end": 11.883
+    },
+    {
+     "w": "đôi",
+     "start": 11.9,
+     "end": 12.057
+    },
+    {
+     "w": "khi",
+     "start": 12.071,
+     "end": 12.228
+    },
+    {
+     "w": "nhận",
+     "start": 12.242,
+     "end": 12.431
+    },
+    {
+     "w": "mảnh",
+     "start": 12.448,
+     "end": 12.637
+    },
+    {
+     "w": "dữ",
+     "start": 12.653,
+     "end": 12.779
+    },
+    {
+     "w": "liệu",
+     "start": 12.79,
+     "end": 12.979
+    },
+    {
+     "w": "còn",
+     "start": 12.996,
+     "end": 13.153
+    },
+    {
+     "w": "sót.",
+     "start": 13.167,
+     "end": 13.356
+    }
+   ],
+   "text": "Nếu gọi fgets lần nữa với cùng buffer, nó không đọc lại từ đầu. stdin lúc này còn nh và Enter. Lần đọc sau sẽ lấy đúng phần còn lại đó, rồi kết thúc chuỗi bằng gạch chéo không. Đây là lý do một lệnh đọc tiếp theo đôi khi nhận mảnh dữ liệu còn sót."
+  },
+  {
+   "id": "scene-7",
+   "file": "assets/audio/vo-07.mp3",
+   "duration": 15.8,
+   "words": [
+    {
+     "w": "Vậy",
+     "start": 0.099,
+     "end": 0.299
+    },
+    {
+     "w": "input",
+     "start": 0.317,
+     "end": 0.597
+    },
+    {
+     "w": "buffer",
+     "start": 0.621,
+     "end": 0.941
+    },
+    {
+     "w": "size",
+     "start": 0.968,
+     "end": 1.208
+    },
+    {
+     "w": "là",
+     "start": 1.229,
+     "end": 1.389
+    },
+    {
+     "w": "sức",
+     "start": 1.403,
+     "end": 1.603
+    },
+    {
+     "w": "chứa",
+     "start": 1.62,
+     "end": 1.86
+    },
+    {
+     "w": "của",
+     "start": 1.881,
+     "end": 2.081
+    },
+    {
+     "w": "vùng",
+     "start": 2.098,
+     "end": 2.338
+    },
+    {
+     "w": "nhớ",
+     "start": 2.359,
+     "end": 2.559
+    },
+    {
+     "w": "đích",
+     "start": 2.576,
+     "end": 2.816
+    },
+    {
+     "w": "trong",
+     "start": 2.837,
+     "end": 3.117
+    },
+    {
+     "w": "lần",
+     "start": 3.141,
+     "end": 3.341
+    },
+    {
+     "w": "đọc.",
+     "start": 3.358,
+     "end": 3.598
+    },
+    {
+     "w": "Với",
+     "start": 4.177,
+     "end": 4.494
+    },
+    {
+     "w": "name[8],",
+     "start": 4.522,
+     "end": 5.156
+    },
+    {
+     "w": "fgets",
+     "start": 5.409,
+     "end": 5.636
+    },
+    {
+     "w": "nhận",
+     "start": 5.656,
+     "end": 5.85
+    },
+    {
+     "w": "tối",
+     "start": 5.867,
+     "end": 6.028
+    },
+    {
+     "w": "đa",
+     "start": 6.043,
+     "end": 6.172
+    },
+    {
+     "w": "bảy",
+     "start": 6.183,
+     "end": 6.345
+    },
+    {
+     "w": "ký",
+     "start": 6.359,
+     "end": 6.488
+    },
+    {
+     "w": "tự",
+     "start": 6.5,
+     "end": 6.629
+    },
+    {
+     "w": "để",
+     "start": 6.64,
+     "end": 6.77
+    },
+    {
+     "w": "còn",
+     "start": 6.781,
+     "end": 6.943
+    },
+    {
+     "w": "một",
+     "start": 6.957,
+     "end": 7.119
+    },
+    {
+     "w": "ô",
+     "start": 7.133,
+     "end": 7.23
+    },
+    {
+     "w": "cho",
+     "start": 7.238,
+     "end": 7.4
+    },
+    {
+     "w": "gạch",
+     "start": 7.414,
+     "end": 7.608
+    },
+    {
+     "w": "chéo",
+     "start": 7.625,
+     "end": 7.819
+    },
+    {
+     "w": "không.",
+     "start": 7.836,
+     "end": 8.095
+    },
+    {
+     "w": "Input",
+     "start": 8.649,
+     "end": 8.879
+    },
+    {
+     "w": "dài",
+     "start": 8.899,
+     "end": 9.064
+    },
+    {
+     "w": "hơn",
+     "start": 9.079,
+     "end": 9.243
+    },
+    {
+     "w": "không",
+     "start": 9.258,
+     "end": 9.488
+    },
+    {
+     "w": "biến",
+     "start": 9.509,
+     "end": 9.706
+    },
+    {
+     "w": "mất;",
+     "start": 9.724,
+     "end": 9.921
+    },
+    {
+     "w": "phần",
+     "start": 10.228,
+     "end": 10.465
+    },
+    {
+     "w": "dư",
+     "start": 10.485,
+     "end": 10.643
+    },
+    {
+     "w": "chờ",
+     "start": 10.657,
+     "end": 10.854
+    },
+    {
+     "w": "trong",
+     "start": 10.871,
+     "end": 11.147
+    },
+    {
+     "w": "stdin.",
+     "start": 11.171,
+     "end": 11.487
+    },
+    {
+     "w": "Từ",
+     "start": 12.02,
+     "end": 12.175
+    },
+    {
+     "w": "Python",
+     "start": 12.189,
+     "end": 12.499
+    },
+    {
+     "w": "sang",
+     "start": 12.526,
+     "end": 12.759
+    },
+    {
+     "w": "C,",
+     "start": 12.78,
+     "end": 12.935
+    },
+    {
+     "w": "khác",
+     "start": 13.15,
+     "end": 13.348
+    },
+    {
+     "w": "biệt",
+     "start": 13.366,
+     "end": 13.564
+    },
+    {
+     "w": "lớn",
+     "start": 13.581,
+     "end": 13.747
+    },
+    {
+     "w": "là",
+     "start": 13.761,
+     "end": 13.894
+    },
+    {
+     "w": "bạn",
+     "start": 13.905,
+     "end": 14.071
+    },
+    {
+     "w": "phải",
+     "start": 14.085,
+     "end": 14.284
+    },
+    {
+     "w": "nhìn",
+     "start": 14.301,
+     "end": 14.499
+    },
+    {
+     "w": "thấy",
+     "start": 14.517,
+     "end": 14.715
+    },
+    {
+     "w": "và",
+     "start": 14.733,
+     "end": 14.865
+    },
+    {
+     "w": "quản",
+     "start": 14.876,
+     "end": 15.075
+    },
+    {
+     "w": "lý",
+     "start": 15.092,
+     "end": 15.225
+    },
+    {
+     "w": "vùng",
+     "start": 15.236,
+     "end": 15.435
+    },
+    {
+     "w": "nhớ.",
+     "start": 15.452,
+     "end": 15.651
+    }
+   ],
+   "text": "Vậy input buffer size là sức chứa của vùng nhớ đích trong lần đọc. Với name[8], fgets nhận tối đa bảy ký tự để còn một ô cho gạch chéo không. Input dài hơn không biến mất; phần dư chờ trong stdin. Từ Python sang C, khác biệt lớn là bạn phải nhìn thấy và quản lý vùng nhớ."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-08.mp3",
+   "duration": 14.24,
+   "words": [
+    {
+     "w": "Bạn",
+     "start": 0.093,
+     "end": 0.254
+    },
+    {
+     "w": "chỉ",
+     "start": 0.268,
+     "end": 0.429
+    },
+    {
+     "w": "cần",
+     "start": 0.442,
+     "end": 0.603
+    },
+    {
+     "w": "nhớ",
+     "start": 0.617,
+     "end": 0.778
+    },
+    {
+     "w": "ba",
+     "start": 0.792,
+     "end": 0.921
+    },
+    {
+     "w": "điều.",
+     "start": 0.932,
+     "end": 1.157
+    },
+    {
+     "w": "Một,",
+     "start": 1.589,
+     "end": 1.802
+    },
+    {
+     "w": "buffer",
+     "start": 1.821,
+     "end": 2.081
+    },
+    {
+     "w": "size",
+     "start": 2.103,
+     "end": 2.298
+    },
+    {
+     "w": "là",
+     "start": 2.315,
+     "end": 2.445
+    },
+    {
+     "w": "số",
+     "start": 2.456,
+     "end": 2.586
+    },
+    {
+     "w": "ô",
+     "start": 2.597,
+     "end": 2.695
+    },
+    {
+     "w": "của",
+     "start": 2.703,
+     "end": 2.866
+    },
+    {
+     "w": "vùng",
+     "start": 2.88,
+     "end": 3.075
+    },
+    {
+     "w": "nhớ",
+     "start": 3.091,
+     "end": 3.254
+    },
+    {
+     "w": "đích.",
+     "start": 3.268,
+     "end": 3.495
+    },
+    {
+     "w": "Hai,",
+     "start": 4.028,
+     "end": 4.318
+    },
+    {
+     "w": "fgets",
+     "start": 4.343,
+     "end": 4.613
+    },
+    {
+     "w": "nhận",
+     "start": 4.637,
+     "end": 4.869
+    },
+    {
+     "w": "tối",
+     "start": 4.889,
+     "end": 5.082
+    },
+    {
+     "w": "đa",
+     "start": 5.099,
+     "end": 5.254
+    },
+    {
+     "w": "size",
+     "start": 5.267,
+     "end": 5.499
+    },
+    {
+     "w": "trừ",
+     "start": 5.519,
+     "end": 5.713
+    },
+    {
+     "w": "một",
+     "start": 5.729,
+     "end": 5.923
+    },
+    {
+     "w": "ký",
+     "start": 5.939,
+     "end": 6.094
+    },
+    {
+     "w": "tự.",
+     "start": 6.108,
+     "end": 6.301
+    },
+    {
+     "w": "Ba,",
+     "start": 7.08,
+     "end": 6.796
+    },
+    {
+     "w": "ô",
+     "start": 6.771,
+     "end": 6.916
+    },
+    {
+     "w": "cuối",
+     "start": 6.929,
+     "end": 7.219
+    },
+    {
+     "w": "dành",
+     "start": 7.244,
+     "end": 7.534
+    },
+    {
+     "w": "cho",
+     "start": 7.559,
+     "end": 7.801
+    },
+    {
+     "w": "gạch",
+     "start": 7.822,
+     "end": 8.112
+    },
+    {
+     "w": "chéo",
+     "start": 8.137,
+     "end": 8.427
+    },
+    {
+     "w": "không,",
+     "start": 8.452,
+     "end": 8.839
+    },
+    {
+     "w": "còn",
+     "start": 9.137,
+     "end": 9.359
+    },
+    {
+     "w": "input",
+     "start": 9.378,
+     "end": 9.688
+    },
+    {
+     "w": "dư",
+     "start": 9.715,
+     "end": 9.892
+    },
+    {
+     "w": "vẫn",
+     "start": 9.908,
+     "end": 10.129
+    },
+    {
+     "w": "ở",
+     "start": 10.148,
+     "end": 10.281
+    },
+    {
+     "w": "stdin.",
+     "start": 10.293,
+     "end": 10.647
+    },
+    {
+     "w": "Hãy",
+     "start": 11.223,
+     "end": 11.378
+    },
+    {
+     "w": "đổi",
+     "start": 11.391,
+     "end": 11.546
+    },
+    {
+     "w": "name",
+     "start": 11.56,
+     "end": 11.746
+    },
+    {
+     "w": "thành",
+     "start": 11.762,
+     "end": 11.98
+    },
+    {
+     "w": "name",
+     "start": 11.999,
+     "end": 12.185
+    },
+    {
+     "w": "mười",
+     "start": 12.201,
+     "end": 12.387
+    },
+    {
+     "w": "hai",
+     "start": 12.403,
+     "end": 12.559
+    },
+    {
+     "w": "và",
+     "start": 12.572,
+     "end": 12.696
+    },
+    {
+     "w": "tự",
+     "start": 12.707,
+     "end": 12.831
+    },
+    {
+     "w": "dự",
+     "start": 12.842,
+     "end": 12.966
+    },
+    {
+     "w": "đoán",
+     "start": 12.977,
+     "end": 13.163
+    },
+    {
+     "w": "phần",
+     "start": 13.18,
+     "end": 13.366
+    },
+    {
+     "w": "nào",
+     "start": 13.382,
+     "end": 13.537
+    },
+    {
+     "w": "sẽ",
+     "start": 13.551,
+     "end": 13.675
+    },
+    {
+     "w": "còn",
+     "start": 13.686,
+     "end": 13.841
+    },
+    {
+     "w": "lại.",
+     "start": 13.854,
+     "end": 14.041
+    }
+   ],
+   "text": "Bạn chỉ cần nhớ ba điều. Một, buffer size là số ô của vùng nhớ đích. Hai, fgets nhận tối đa size trừ một ký tự. Ba, ô cuối dành cho gạch chéo không, còn input dư vẫn ở stdin. Hãy đổi name thành name mười hai và tự dự đoán phần nào sẽ còn lại."
+  }
+ ]
+}

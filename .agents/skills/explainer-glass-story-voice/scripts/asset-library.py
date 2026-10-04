@@ -179,7 +179,8 @@ def request(args):
     if args.variant_of and not parent:
         raise ValueError('Unknown variant_of asset.')
     subject, role, state = args.subject, slug(args.role), args.state
-    prompt = (STYLE['prompt'] + '\nSubject: ' + subject + '.\nVisible state: ' + state +
+    base_prompt = STYLE.get('sticker_prompt') if role == 'sticker' else STYLE['prompt']
+    prompt = (base_prompt + '\nSubject: ' + subject + '.\nVisible state: ' + state +
               '.\nExplanatory role: ' + role + '.\nStoryboard operation: ' + args.operation + '.')
     if parent:
         prompt += '\nVariant of ' + parent['id'] + ': ' + args.change + '. Preserve its visual identity except for this change.'
@@ -241,18 +242,62 @@ def install(args):
           'usage': 'Not recorded yet. Record after this video renders successfully.'})
 
 
+def install_sticker(args):
+    asset = next((a for a in catalogue()['assets'] if a['id'] == args.asset), None)
+    if not asset:
+        raise ValueError('Unknown asset.')
+    if asset.get('role') != 'sticker':
+        raise ValueError('install-sticker requires an asset registered with role sticker.')
+    if not args.project.is_dir():
+        raise ValueError('Project directory does not exist.')
+    script_path = args.project / 'script.json'
+    script = read_json(script_path)
+    if not isinstance(script, dict):
+        raise ValueError('Project must contain script.json.')
+    if 'S.stickers' not in (args.project / 'story-engine.js').read_text(encoding='utf8'):
+        raise ValueError('Project needs the v0.4 sticker-capable template. Create a fresh project or migrate its renderer first.')
+    stickers = script.setdefault('stickers', [])
+    if any(isinstance(st, dict) and st.get('id') == args.sticker_id for st in stickers):
+        raise ValueError('Sticker ID already exists in this project.')
+    source = LIBRARY / asset['file']
+    if hashlib.sha256(source.read_bytes()).hexdigest() != asset['sha256']:
+        raise ValueError('Asset bytes changed; register a new version before using them.')
+    relative = 'assets/illustrations/' + asset['id'] + '-' + asset['sha256'][:8] + '.png'
+    target = args.project / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, target)
+    sticker = {'id': args.sticker_id, 'image': relative, 'alt': asset['description'],
+               'x': args.x, 'y': args.y, 'width': args.width, 'height': args.height,
+               'rotation': args.rotation}
+    if args.scenes:
+        sticker['scenes'] = [int(value) for value in args.scenes.split(',') if value.strip()]
+    stickers.append(sticker)
+    manifest_path = args.project / 'asset-manifest.json'
+    manifest = read_json(manifest_path, {'schema': 1, 'skill': 'explainer-glass-story-voice',
+                                        'video_id': str(uuid.uuid4()), 'assets': []})
+    manifest['assets'].append({'id': asset['id'], 'family': asset['family'], 'sha256': asset['sha256'],
+                               'file': relative, 'sticker': args.sticker_id, 'reason': args.reason})
+    write_json(manifest_path, manifest)
+    write_json(script_path, script)
+    emit({'installed': asset['id'], 'sticker': args.sticker_id, 'image': relative,
+          'usage': 'Not recorded yet. Record after this video renders successfully.'})
+
+
 def record(args):
     manifest = read_json(args.project / 'asset-manifest.json')
     script = read_json(args.project / 'script.json')
     if not manifest or not script:
         raise ValueError('Project needs script.json and asset-manifest.json.')
     nodes = {n['id']: n for n in script['entities']}
-    used = [a for a in manifest['assets'] if nodes.get(a['entity'], {}).get('image') == a['file']]
+    stickers = {st['id']: st for st in script.get('stickers', [])}
+    used = [a for a in manifest['assets'] if
+            (a.get('entity') and nodes.get(a['entity'], {}).get('image') == a['file']) or
+            (a.get('sticker') and stickers.get(a['sticker'], {}).get('image') == a['file'])]
     if not used:
         raise ValueError('No installed library assets remain in the script.')
     # Count only entities with a show cue, not unused/copied files.
     shown = {e.get('target') for sc in script.get('scenes', []) for e in sc.get('events', []) if e.get('type') == 'show'}
-    used = [a for a in used if a['entity'] in shown]
+    used = [a for a in used if (a.get('entity') and a['entity'] in shown) or a.get('sticker')]
     if not used:
         raise ValueError('No installed library entities have a show cue.')
     video = {'video_id': manifest['video_id'], 'title': script.get('title', ''),
@@ -307,6 +352,18 @@ def main():
     p.add_argument('--entity', required=True)
     p.add_argument('--reason', required=True)
     p.set_defaults(run=install)
+    p = commands.add_parser('install-sticker', help='Copy one sticker selection and attach it to the project decoration layer.')
+    p.add_argument('--asset', required=True)
+    p.add_argument('--project', type=Path, required=True)
+    p.add_argument('--sticker-id', required=True)
+    p.add_argument('--reason', required=True)
+    p.add_argument('--x', type=int, default=16)
+    p.add_argument('--y', type=int, default=16)
+    p.add_argument('--width', type=int, default=112)
+    p.add_argument('--height', type=int, default=112)
+    p.add_argument('--rotation', type=float, default=0)
+    p.add_argument('--scenes', help='Comma-separated 1-based scene numbers; omit for a persistent ornament.')
+    p.set_defaults(run=install_sticker)
     p = commands.add_parser('record', help='Record actual scripted use after successful rendering.')
     p.add_argument('--project', type=Path, required=True)
     p.set_defaults(run=record)

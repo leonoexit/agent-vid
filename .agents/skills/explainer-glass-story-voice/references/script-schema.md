@@ -1,6 +1,6 @@
 # Script and action schema
 
-Top level: language (`vi`, `en`, `mixed`), title, brand?, series?, kicker?, entities, intro, scenes, outro.
+Top level: language (`vi`, `en`, `mixed`), title, brand?, series?, kicker?, entities, stickers?, intro, scenes, outro.
 Intro/outro each contain title, subtitle, note, vo, tiles (exactly two `{value,label}`), hold?. Scenes contain title,
 subtitle?, vo, events (0–12), after?, afterOn?, hold?. Values are plain display strings, not executable HTML.
 
@@ -13,6 +13,14 @@ scripts/asset-library.py install to attach a selected cutout and retain provenan
 variants and actual-use history. The image is secondary decoration or a contextual figure; it is never the main
 explanatory model, a program state, a capacity grid or a transfer destination. Background layers need a project-specific
 renderer extension; the entity image field is not a background API. A flat prop cannot animate its own lid; use native geometry or project-specific parts.
+
+`stickers` are an optional separate decorative layer. Each sticker has `id`, `image` (a local
+`assets/illustrations/` PNG), `alt`, `x`, `y`, `width`, `height`, optional `rotation`, and optional `scenes` (a list
+of 1-based scene numbers; omit it for a persistent ornament). Coordinates are local to the 860×570 visual stage.
+Keep stickers in safe corner zones, use zero to two per scene, and keep them out of code, captions, takeaways,
+moving-token paths and native explanatory geometry. The renderer fades them in/out gently; they are not entities and
+cannot be a `focus`, `connect`, `transfer` or `write` target. Install them with `asset-library.py install-sticker` so
+the project manifest retains the immutable image hash, family and reason.
 
 Text limits: scene title 52, subtitle 100, vo 1500, after 100; entity label 25, value 14, detail 40, address 20.
 Hero title 45 (choose a phrase that fits two display lines), subtitle 90, note 120; tile value 8 and label 24.
@@ -27,6 +35,8 @@ Every action has `type` and exactly one trigger: `on` (phrase in that scene's vo
 | show / hide | target | Introduce/remove one entity, keeping its state. |
 | open | target of kind box | Lift the lid and expose the existing value. |
 | focus | targets: IDs ([] clears) | Outline emphasis without moving/resizing the objects. |
+| spotlight | targets: IDs, dim? (0.1–0.8) | Keep one primary entity readable while dimming unrelated entities. |
+| pulse | target, scale? (1.01–1.2), duration? (0.2–1.2) | Mark the committed result with a short native emphasis. |
 | set | target, any label/value/detail/address | Discrete display change; unrelated fields stay unchanged. |
 | morph | target, optional label/value/detail/address | Settle a metaphor into a regular card while preserving identity. |
 | move | target, x, y, rotation? | Reposition the same entity; keep it within the visual stage. |
