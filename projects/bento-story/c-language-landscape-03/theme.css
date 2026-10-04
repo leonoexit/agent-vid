@@ -1,0 +1,17 @@
+@import url('emphasis.css');
+@font-face{font-family:'Bento Story Sans';src:url(assets/fonts/bento-story-sans.woff2);font-weight:100 900}
+@font-face{font-family:'Bento Story Serif';src:url(assets/fonts/bento-story-serif.woff2);font-weight:100 900}
+@font-face{font-family:'Bento Story Mono';src:url(assets/fonts/bento-story-mono.woff2);font-weight:100 800}
+:root{--ink:#2d3436;--blue:#8ce4ff;--yellow:#feee91;--orange:#ffa239;--purple:#a594f9;--red:#ff5656;--green:#10b981}
+*{box-sizing:border-box}body{margin:0;background:#e5e5e5;color:var(--ink)}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Bento Story Sans',sans-serif}
+#explainer,.board,#stage,.shot{position:absolute;inset:0}.board{border:20px solid var(--ink)}
+.brand{position:absolute;left:64px;top:53px;font:800 25px 'Bento Story Mono';letter-spacing:1px}.edition{position:absolute;right:72px;top:42px;border:3px solid var(--ink);border-radius:50px;background:white;padding:12px 20px;font:700 24px 'Bento Story Mono'}
+#language-rail{position:absolute;top:114px;left:64px;display:flex;gap:14px}.rail-item{border:3px solid var(--ink);padding:7px 20px;border-radius:12px;font:700 24px 'Bento Story Mono'}
+.shot{visibility:hidden;display:none}.panel{position:absolute;border:4px solid var(--ink);border-radius:32px;box-shadow:12px 12px 0 var(--ink);color:var(--ink)}
+.copy{position:absolute;margin:0;line-height:1.25;white-space:pre-line}.serif{font-family:'Bento Story Serif';font-weight:900;letter-spacing:-1.5px}.mono{font-family:'Bento Story Mono';font-weight:700}.label{font-weight:800;letter-spacing:.8px}.title{position:absolute;left:64px;top:196px;width:948px;font:900 63px/1.14 'Bento Story Serif';letter-spacing:-1.5px;white-space:pre-line}
+.bento-icon{position:absolute}.chip{position:absolute;border:3px solid var(--ink);border-radius:14px;padding:12px 20px;background:#fff;font:700 33px/1.2 'Bento Story Mono';white-space:nowrap}.memory-cell{position:absolute;border:3px solid var(--ink);border-radius:13px;background:white;text-align:center;padding-top:26px;font:700 40px 'Bento Story Mono'}
+.line{position:absolute;inset:0;width:1080px;height:1920px;pointer-events:none}.line path{fill:none;stroke:var(--ink);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+#captions{position:absolute;left:60px;right:72px;top:1660px;height:145px;background:#fff;border:4px solid var(--ink);border-radius:24px;box-shadow:8px 8px 0 var(--ink);padding:20px 25px;display:flex;align-items:center;justify-content:center;font-size:39px;font-weight:650;line-height:1.3;text-align:center}
+.caption-line{position:absolute;left:22px;right:22px;opacity:0}.caption-word{border-radius:7px;padding:1px 2px}
+#footer{position:absolute;left:64px;right:72px;top:1840px;display:flex;justify-content:space-between;font:700 22px 'Bento Story Mono'}#progress{position:absolute;bottom:20px;left:20px;height:10px;background:var(--ink);width:0}

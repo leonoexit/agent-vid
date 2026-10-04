@@ -62,7 +62,7 @@ For the same subject, a useful short study would be:
 5. Route the call to that method; then change that receiver's field. The method invocation and state update are separate visible steps.
 6. Recompose as a large aligned comparison: one changed state, one unchanged. Collapse the evidence into the rule.
 
-These are proposed design beats, not an implemented renderer or an approved replacement video. Use an available
+These beats are now demonstrated in the project-specific OOP v2 renderer (projects/bento-story/oop-lamps-v2), accepted by the user as the current best visual baseline. They are not additional built-in renderer APIs. Use an available
 licensed icon family or simple native SVG; do not generate a lamp/desk raster image for this role.
 
 ## HTML Slides handoff

@@ -1,0 +1,4994 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=1.0:gap=0.2:timing=monotonic-v2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 9.12,
+   "words": [
+    {
+     "w": "Bạn",
+     "start": 0.0,
+     "end": 0.266
+    },
+    {
+     "w": "muốn",
+     "start": 0.28,
+     "end": 0.432
+    },
+    {
+     "w": "làm",
+     "start": 0.44,
+     "end": 0.649
+    },
+    {
+     "w": "một",
+     "start": 0.66,
+     "end": 0.812
+    },
+    {
+     "w": "chiếc",
+     "start": 0.82,
+     "end": 0.972
+    },
+    {
+     "w": "máy",
+     "start": 0.98,
+     "end": 1.132
+    },
+    {
+     "w": "đo",
+     "start": 1.14,
+     "end": 1.216
+    },
+    {
+     "w": "nhiệt",
+     "start": 1.22,
+     "end": 1.372
+    },
+    {
+     "w": "độ.",
+     "start": 1.38,
+     "end": 1.855
+    },
+    {
+     "w": "Có",
+     "start": 1.88,
+     "end": 1.975
+    },
+    {
+     "w": "người",
+     "start": 1.98,
+     "end": 2.132
+    },
+    {
+     "w": "chọn",
+     "start": 2.14,
+     "end": 2.349
+    },
+    {
+     "w": "C,",
+     "start": 2.36,
+     "end": 2.531
+    },
+    {
+     "w": "người",
+     "start": 2.54,
+     "end": 2.749
+    },
+    {
+     "w": "khác",
+     "start": 2.76,
+     "end": 2.95
+    },
+    {
+     "w": "chọn",
+     "start": 2.96,
+     "end": 3.188
+    },
+    {
+     "w": "Python,",
+     "start": 3.2,
+     "end": 3.789
+    },
+    {
+     "w": "JavaScript,",
+     "start": 3.82,
+     "end": 4.238
+    },
+    {
+     "w": "hoặc",
+     "start": 4.26,
+     "end": 4.925
+    },
+    {
+     "w": "C",
+     "start": 4.96,
+     "end": 5.131
+    },
+    {
+     "w": "cộng",
+     "start": 5.14,
+     "end": 5.33
+    },
+    {
+     "w": "cộng.",
+     "start": 5.34,
+     "end": 5.948
+    },
+    {
+     "w": "Vì",
+     "start": 5.98,
+     "end": 6.246
+    },
+    {
+     "w": "sao",
+     "start": 6.26,
+     "end": 6.412
+    },
+    {
+     "w": "có",
+     "start": 6.42,
+     "end": 6.572
+    },
+    {
+     "w": "nhiều",
+     "start": 6.58,
+     "end": 6.694
+    },
+    {
+     "w": "lựa",
+     "start": 6.7,
+     "end": 6.909
+    },
+    {
+     "w": "chọn?",
+     "start": 6.92,
+     "end": 7.49
+    },
+    {
+     "w": "Hãy",
+     "start": 7.52,
+     "end": 7.634
+    },
+    {
+     "w": "đi",
+     "start": 7.64,
+     "end": 7.754
+    },
+    {
+     "w": "theo",
+     "start": 7.76,
+     "end": 7.912
+    },
+    {
+     "w": "một",
+     "start": 7.92,
+     "end": 8.072
+    },
+    {
+     "w": "số",
+     "start": 8.08,
+     "end": 8.213
+    },
+    {
+     "w": "đo",
+     "start": 8.22,
+     "end": 8.429
+    },
+    {
+     "w": "để",
+     "start": 8.44,
+     "end": 8.535
+    },
+    {
+     "w": "tìm",
+     "start": 8.54,
+     "end": 8.711
+    },
+    {
+     "w": "hiểu.",
+     "start": 8.72,
+     "end": 9.0905
+    }
+   ],
+   "text": "Bạn muốn làm một chiếc máy đo nhiệt độ. Có người chọn C, người khác chọn Python, JavaScript, hoặc C cộng cộng. Vì sao có nhiều lựa chọn? Hãy đi theo một số đo để tìm hiểu."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 8.48,
+   "words": [
+    {
+     "w": "Cảm",
+     "start": 0.0,
+     "end": 0.228
+    },
+    {
+     "w": "biến",
+     "start": 0.24,
+     "end": 0.43
+    },
+    {
+     "w": "là",
+     "start": 0.44,
+     "end": 0.592
+    },
+    {
+     "w": "bộ",
+     "start": 0.6,
+     "end": 0.733
+    },
+    {
+     "w": "phận",
+     "start": 0.74,
+     "end": 0.93
+    },
+    {
+     "w": "đo",
+     "start": 0.94,
+     "end": 1.092
+    },
+    {
+     "w": "đại",
+     "start": 1.1,
+     "end": 1.252
+    },
+    {
+     "w": "lượng",
+     "start": 1.26,
+     "end": 1.412
+    },
+    {
+     "w": "ngoài",
+     "start": 1.42,
+     "end": 1.629
+    },
+    {
+     "w": "đời.",
+     "start": 1.64,
+     "end": 2.229
+    },
+    {
+     "w": "Giả",
+     "start": 2.26,
+     "end": 2.469
+    },
+    {
+     "w": "sử",
+     "start": 2.48,
+     "end": 2.632
+    },
+    {
+     "w": "nó",
+     "start": 2.64,
+     "end": 2.773
+    },
+    {
+     "w": "ghi",
+     "start": 2.78,
+     "end": 2.932
+    },
+    {
+     "w": "nhận",
+     "start": 2.94,
+     "end": 3.13
+    },
+    {
+     "w": "hai",
+     "start": 3.14,
+     "end": 3.254
+    },
+    {
+     "w": "mươi",
+     "start": 3.26,
+     "end": 3.374
+    },
+    {
+     "w": "sáu",
+     "start": 3.38,
+     "end": 3.494
+    },
+    {
+     "w": "độ.",
+     "start": 3.5,
+     "end": 4.317
+    },
+    {
+     "w": "Hệ",
+     "start": 4.36,
+     "end": 4.455
+    },
+    {
+     "w": "thống",
+     "start": 4.46,
+     "end": 4.631
+    },
+    {
+     "w": "cần",
+     "start": 4.64,
+     "end": 4.811
+    },
+    {
+     "w": "đọc",
+     "start": 4.82,
+     "end": 5.01
+    },
+    {
+     "w": "số",
+     "start": 5.02,
+     "end": 5.115
+    },
+    {
+     "w": "đo,",
+     "start": 5.12,
+     "end": 5.728
+    },
+    {
+     "w": "xử",
+     "start": 5.76,
+     "end": 5.874
+    },
+    {
+     "w": "lý",
+     "start": 5.88,
+     "end": 5.975
+    },
+    {
+     "w": "các",
+     "start": 5.98,
+     "end": 6.113
+    },
+    {
+     "w": "số",
+     "start": 6.12,
+     "end": 6.291
+    },
+    {
+     "w": "đã",
+     "start": 6.3,
+     "end": 6.547
+    },
+    {
+     "w": "lưu,",
+     "start": 6.56,
+     "end": 6.807
+    },
+    {
+     "w": "rồi",
+     "start": 6.82,
+     "end": 7.086
+    },
+    {
+     "w": "hiển",
+     "start": 7.1,
+     "end": 7.29
+    },
+    {
+     "w": "thị",
+     "start": 7.3,
+     "end": 7.509
+    },
+    {
+     "w": "cho",
+     "start": 7.52,
+     "end": 7.653
+    },
+    {
+     "w": "chúng",
+     "start": 7.66,
+     "end": 7.793
+    },
+    {
+     "w": "ta",
+     "start": 7.8,
+     "end": 7.933
+    },
+    {
+     "w": "xem.",
+     "start": 7.94,
+     "end": 8.4435
+    }
+   ],
+   "text": "Cảm biến là bộ phận đo đại lượng ngoài đời. Giả sử nó ghi nhận hai mươi sáu độ. Hệ thống cần đọc số đo, xử lý các số đã lưu, rồi hiển thị cho chúng ta xem."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 8.72,
+   "words": [
+    {
+     "w": "Ngay",
+     "start": 0.13,
+     "end": 0.2535
+    },
+    {
+     "w": "cạnh",
+     "start": 0.26,
+     "end": 0.393
+    },
+    {
+     "w": "cảm",
+     "start": 0.4,
+     "end": 0.552
+    },
+    {
+     "w": "biến",
+     "start": 0.56,
+     "end": 0.788
+    },
+    {
+     "w": "là",
+     "start": 0.8,
+     "end": 0.952
+    },
+    {
+     "w": "một",
+     "start": 0.96,
+     "end": 1.112
+    },
+    {
+     "w": "con",
+     "start": 1.12,
+     "end": 1.272
+    },
+    {
+     "w": "chip",
+     "start": 1.28,
+     "end": 1.451
+    },
+    {
+     "w": "nhỏ",
+     "start": 1.46,
+     "end": 1.783
+    },
+    {
+     "w": "điều",
+     "start": 1.8,
+     "end": 1.971
+    },
+    {
+     "w": "khiển",
+     "start": 1.98,
+     "end": 2.208
+    },
+    {
+     "w": "thiết",
+     "start": 2.22,
+     "end": 2.315
+    },
+    {
+     "w": "bị.",
+     "start": 2.32,
+     "end": 2.871
+    },
+    {
+     "w": "Nó",
+     "start": 2.9,
+     "end": 3.109
+    },
+    {
+     "w": "có",
+     "start": 3.12,
+     "end": 3.234
+    },
+    {
+     "w": "bộ",
+     "start": 3.24,
+     "end": 3.392
+    },
+    {
+     "w": "nhớ",
+     "start": 3.4,
+     "end": 3.628
+    },
+    {
+     "w": "giữ",
+     "start": 3.64,
+     "end": 3.83
+    },
+    {
+     "w": "dữ",
+     "start": 3.84,
+     "end": 4.03
+    },
+    {
+     "w": "liệu,",
+     "start": 4.04,
+     "end": 4.249
+    },
+    {
+     "w": "nhưng",
+     "start": 4.26,
+     "end": 4.64
+    },
+    {
+     "w": "dung",
+     "start": 4.66,
+     "end": 4.869
+    },
+    {
+     "w": "lượng",
+     "start": 4.88,
+     "end": 5.032
+    },
+    {
+     "w": "có",
+     "start": 5.04,
+     "end": 5.211
+    },
+    {
+     "w": "giới",
+     "start": 5.22,
+     "end": 5.391
+    },
+    {
+     "w": "hạn.",
+     "start": 5.4,
+     "end": 6.008
+    },
+    {
+     "w": "Ta",
+     "start": 6.04,
+     "end": 6.135
+    },
+    {
+     "w": "cần",
+     "start": 6.14,
+     "end": 6.254
+    },
+    {
+     "w": "biết",
+     "start": 6.26,
+     "end": 6.431
+    },
+    {
+     "w": "chương",
+     "start": 6.44,
+     "end": 6.611
+    },
+    {
+     "w": "trình",
+     "start": 6.62,
+     "end": 6.81
+    },
+    {
+     "w": "dùng",
+     "start": 6.82,
+     "end": 7.048
+    },
+    {
+     "w": "bao",
+     "start": 7.06,
+     "end": 7.212
+    },
+    {
+     "w": "nhiêu",
+     "start": 7.22,
+     "end": 7.429
+    },
+    {
+     "w": "chỗ",
+     "start": 7.44,
+     "end": 7.668
+    },
+    {
+     "w": "và",
+     "start": 7.68,
+     "end": 7.889
+    },
+    {
+     "w": "làm",
+     "start": 7.9,
+     "end": 8.071
+    },
+    {
+     "w": "những",
+     "start": 8.08,
+     "end": 8.232
+    },
+    {
+     "w": "gì.",
+     "start": 8.24,
+     "end": 8.6865
+    }
+   ],
+   "text": "Ngay cạnh cảm biến là một con chip nhỏ điều khiển thiết bị. Nó có bộ nhớ giữ dữ liệu, nhưng dung lượng có giới hạn. Ta cần biết chương trình dùng bao nhiêu chỗ và làm những gì."
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 8.8,
+   "words": [
+    {
+     "w": "C",
+     "start": 0.0,
+     "end": 0.2375
+    },
+    {
+     "w": "cho",
+     "start": 0.25,
+     "end": 0.4875
+    },
+    {
+     "w": "người",
+     "start": 0.5,
+     "end": 0.595
+    },
+    {
+     "w": "viết",
+     "start": 0.6,
+     "end": 0.752
+    },
+    {
+     "w": "quyền",
+     "start": 0.76,
+     "end": 0.95
+    },
+    {
+     "w": "kiểm",
+     "start": 0.96,
+     "end": 1.15
+    },
+    {
+     "w": "soát",
+     "start": 1.16,
+     "end": 1.388
+    },
+    {
+     "w": "cách",
+     "start": 1.4,
+     "end": 1.533
+    },
+    {
+     "w": "dùng",
+     "start": 1.54,
+     "end": 1.768
+    },
+    {
+     "w": "dữ",
+     "start": 1.78,
+     "end": 1.932
+    },
+    {
+     "w": "liệu",
+     "start": 1.94,
+     "end": 2.149
+    },
+    {
+     "w": "và",
+     "start": 2.16,
+     "end": 2.331
+    },
+    {
+     "w": "bộ",
+     "start": 2.34,
+     "end": 2.492
+    },
+    {
+     "w": "nhớ.",
+     "start": 2.5,
+     "end": 2.8705
+    },
+    {
+     "w": "Ta",
+     "start": 2.89,
+     "end": 3.2605
+    },
+    {
+     "w": "có",
+     "start": 3.28,
+     "end": 3.394
+    },
+    {
+     "w": "thể",
+     "start": 3.4,
+     "end": 3.514
+    },
+    {
+     "w": "dành",
+     "start": 3.52,
+     "end": 3.729
+    },
+    {
+     "w": "vùng",
+     "start": 3.74,
+     "end": 3.93
+    },
+    {
+     "w": "chứa",
+     "start": 3.94,
+     "end": 4.187
+    },
+    {
+     "w": "một",
+     "start": 4.2,
+     "end": 4.3045
+    },
+    {
+     "w": "trăm",
+     "start": 4.31,
+     "end": 4.4145
+    },
+    {
+     "w": "số",
+     "start": 4.42,
+     "end": 4.705
+    },
+    {
+     "w": "đo,",
+     "start": 4.72,
+     "end": 5.347
+    },
+    {
+     "w": "theo",
+     "start": 5.38,
+     "end": 5.494
+    },
+    {
+     "w": "dõi",
+     "start": 5.5,
+     "end": 5.747
+    },
+    {
+     "w": "đã",
+     "start": 5.76,
+     "end": 5.836
+    },
+    {
+     "w": "lưu",
+     "start": 5.84,
+     "end": 6.049
+    },
+    {
+     "w": "bao",
+     "start": 6.06,
+     "end": 6.174
+    },
+    {
+     "w": "nhiêu,",
+     "start": 6.18,
+     "end": 6.674
+    },
+    {
+     "w": "rồi",
+     "start": 6.7,
+     "end": 6.852
+    },
+    {
+     "w": "quyết",
+     "start": 6.86,
+     "end": 7.05
+    },
+    {
+     "w": "định",
+     "start": 7.06,
+     "end": 7.25
+    },
+    {
+     "w": "cách",
+     "start": 7.26,
+     "end": 7.355
+    },
+    {
+     "w": "xử",
+     "start": 7.36,
+     "end": 7.626
+    },
+    {
+     "w": "lý",
+     "start": 7.64,
+     "end": 7.849
+    },
+    {
+     "w": "khi",
+     "start": 7.86,
+     "end": 8.012
+    },
+    {
+     "w": "vùng",
+     "start": 8.02,
+     "end": 8.21
+    },
+    {
+     "w": "đó",
+     "start": 8.22,
+     "end": 8.334
+    },
+    {
+     "w": "đầy.",
+     "start": 8.34,
+     "end": 8.7675
+    }
+   ],
+   "text": "C cho người viết quyền kiểm soát cách dùng dữ liệu và bộ nhớ. Ta có thể dành vùng chứa một trăm số đo, theo dõi đã lưu bao nhiêu, rồi quyết định cách xử lý khi vùng đó đầy."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 9.2,
+   "words": [
+    {
+     "w": "Khi",
+     "start": 0.0,
+     "end": 0.19
+    },
+    {
+     "w": "số",
+     "start": 0.2,
+     "end": 0.314
+    },
+    {
+     "w": "đo",
+     "start": 0.32,
+     "end": 0.472
+    },
+    {
+     "w": "mới",
+     "start": 0.48,
+     "end": 0.594
+    },
+    {
+     "w": "tới,",
+     "start": 0.6,
+     "end": 1.132
+    },
+    {
+     "w": "một",
+     "start": 1.16,
+     "end": 1.236
+    },
+    {
+     "w": "lựa",
+     "start": 1.24,
+     "end": 1.449
+    },
+    {
+     "w": "chọn",
+     "start": 1.46,
+     "end": 1.631
+    },
+    {
+     "w": "là",
+     "start": 1.64,
+     "end": 1.811
+    },
+    {
+     "w": "ghi",
+     "start": 1.82,
+     "end": 2.086
+    },
+    {
+     "w": "đè",
+     "start": 2.1,
+     "end": 2.309
+    },
+    {
+     "w": "số",
+     "start": 2.32,
+     "end": 2.491
+    },
+    {
+     "w": "cũ",
+     "start": 2.5,
+     "end": 2.728
+    },
+    {
+     "w": "nhất.",
+     "start": 2.74,
+     "end": 3.367
+    },
+    {
+     "w": "Người",
+     "start": 3.4,
+     "end": 3.476
+    },
+    {
+     "w": "viết",
+     "start": 3.48,
+     "end": 3.689
+    },
+    {
+     "w": "phải",
+     "start": 3.7,
+     "end": 3.833
+    },
+    {
+     "w": "kiểm",
+     "start": 3.84,
+     "end": 3.992
+    },
+    {
+     "w": "tra",
+     "start": 4.0,
+     "end": 4.1995
+    },
+    {
+     "w": "giới",
+     "start": 4.21,
+     "end": 4.4095
+    },
+    {
+     "w": "hạn",
+     "start": 4.42,
+     "end": 4.591
+    },
+    {
+     "w": "trước",
+     "start": 4.6,
+     "end": 4.752
+    },
+    {
+     "w": "khi",
+     "start": 4.76,
+     "end": 4.931
+    },
+    {
+     "w": "ghi.",
+     "start": 4.94,
+     "end": 5.662
+    },
+    {
+     "w": "Ghi",
+     "start": 5.7,
+     "end": 6.023
+    },
+    {
+     "w": "ngoài",
+     "start": 6.04,
+     "end": 6.23
+    },
+    {
+     "w": "vùng",
+     "start": 6.24,
+     "end": 6.43
+    },
+    {
+     "w": "đã",
+     "start": 6.44,
+     "end": 6.592
+    },
+    {
+     "w": "dành",
+     "start": 6.6,
+     "end": 6.809
+    },
+    {
+     "w": "có",
+     "start": 6.82,
+     "end": 6.953
+    },
+    {
+     "w": "thể",
+     "start": 6.96,
+     "end": 7.055
+    },
+    {
+     "w": "gây",
+     "start": 7.06,
+     "end": 7.212
+    },
+    {
+     "w": "lỗi.",
+     "start": 7.22,
+     "end": 7.79
+    },
+    {
+     "w": "Quyền",
+     "start": 7.82,
+     "end": 7.972
+    },
+    {
+     "w": "kiểm",
+     "start": 7.98,
+     "end": 8.113
+    },
+    {
+     "w": "soát",
+     "start": 8.12,
+     "end": 8.348
+    },
+    {
+     "w": "đi",
+     "start": 8.36,
+     "end": 8.474
+    },
+    {
+     "w": "cùng",
+     "start": 8.48,
+     "end": 8.6605
+    },
+    {
+     "w": "trách",
+     "start": 8.67,
+     "end": 8.8505
+    },
+    {
+     "w": "nhiệm.",
+     "start": 8.86,
+     "end": 9.1735
+    }
+   ],
+   "text": "Khi số đo mới tới, một lựa chọn là ghi đè số cũ nhất. Người viết phải kiểm tra giới hạn trước khi ghi. Ghi ngoài vùng đã dành có thể gây lỗi. Quyền kiểm soát đi cùng trách nhiệm."
+  },
+  {
+   "id": "scene-5",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 9.12,
+   "words": [
+    {
+     "w": "Đem",
+     "start": 0.0,
+     "end": 0.209
+    },
+    {
+     "w": "dữ",
+     "start": 0.22,
+     "end": 0.41
+    },
+    {
+     "w": "liệu",
+     "start": 0.42,
+     "end": 0.591
+    },
+    {
+     "w": "sang",
+     "start": 0.6,
+     "end": 0.733
+    },
+    {
+     "w": "máy",
+     "start": 0.74,
+     "end": 0.93
+    },
+    {
+     "w": "tính",
+     "start": 0.94,
+     "end": 1.035
+    },
+    {
+     "w": "để",
+     "start": 1.04,
+     "end": 1.192
+    },
+    {
+     "w": "tính",
+     "start": 1.2,
+     "end": 1.371
+    },
+    {
+     "w": "nhiệt",
+     "start": 1.38,
+     "end": 1.513
+    },
+    {
+     "w": "độ",
+     "start": 1.52,
+     "end": 1.6815
+    },
+    {
+     "w": "trung",
+     "start": 1.69,
+     "end": 1.8515
+    },
+    {
+     "w": "bình.",
+     "start": 1.86,
+     "end": 2.316
+    },
+    {
+     "w": "Python",
+     "start": 2.34,
+     "end": 2.796
+    },
+    {
+     "w": "có",
+     "start": 2.82,
+     "end": 2.972
+    },
+    {
+     "w": "danh",
+     "start": 2.98,
+     "end": 3.189
+    },
+    {
+     "w": "sách",
+     "start": 3.2,
+     "end": 3.314
+    },
+    {
+     "w": "có",
+     "start": 3.32,
+     "end": 3.453
+    },
+    {
+     "w": "thể",
+     "start": 3.46,
+     "end": 3.574
+    },
+    {
+     "w": "lớn",
+     "start": 3.58,
+     "end": 3.827
+    },
+    {
+     "w": "thêm",
+     "start": 3.84,
+     "end": 4.049
+    },
+    {
+     "w": "khi",
+     "start": 4.06,
+     "end": 4.212
+    },
+    {
+     "w": "nhận",
+     "start": 4.22,
+     "end": 4.391
+    },
+    {
+     "w": "số",
+     "start": 4.4,
+     "end": 4.552
+    },
+    {
+     "w": "mới.",
+     "start": 4.56,
+     "end": 5.301
+    },
+    {
+     "w": "Nhiều",
+     "start": 5.34,
+     "end": 5.473
+    },
+    {
+     "w": "chi",
+     "start": 5.48,
+     "end": 5.575
+    },
+    {
+     "w": "tiết",
+     "start": 5.58,
+     "end": 5.732
+    },
+    {
+     "w": "bộ",
+     "start": 5.74,
+     "end": 5.873
+    },
+    {
+     "w": "nhớ",
+     "start": 5.88,
+     "end": 6.127
+    },
+    {
+     "w": "được",
+     "start": 6.14,
+     "end": 6.273
+    },
+    {
+     "w": "môi",
+     "start": 6.28,
+     "end": 6.432
+    },
+    {
+     "w": "trường",
+     "start": 6.44,
+     "end": 6.649
+    },
+    {
+     "w": "chạy",
+     "start": 6.66,
+     "end": 6.926
+    },
+    {
+     "w": "lo",
+     "start": 6.94,
+     "end": 7.092
+    },
+    {
+     "w": "giúp,",
+     "start": 7.1,
+     "end": 7.423
+    },
+    {
+     "w": "để",
+     "start": 7.44,
+     "end": 7.82
+    },
+    {
+     "w": "bạn",
+     "start": 7.84,
+     "end": 7.992
+    },
+    {
+     "w": "tập",
+     "start": 8.0,
+     "end": 8.133
+    },
+    {
+     "w": "trung",
+     "start": 8.14,
+     "end": 8.368
+    },
+    {
+     "w": "vào",
+     "start": 8.38,
+     "end": 8.494
+    },
+    {
+     "w": "bài",
+     "start": 8.5,
+     "end": 8.633
+    },
+    {
+     "w": "toán.",
+     "start": 8.64,
+     "end": 9.0865
+    }
+   ],
+   "text": "Đem dữ liệu sang máy tính để tính nhiệt độ trung bình. Python có danh sách có thể lớn thêm khi nhận số mới. Nhiều chi tiết bộ nhớ được môi trường chạy lo giúp, để bạn tập trung vào bài toán."
+  },
+  {
+   "id": "scene-6",
+   "file": "assets/audio/vo-06.mp3",
+   "duration": 8.72,
+   "words": [
+    {
+     "w": "Che",
+     "start": 0.08667,
+     "end": 0.169
+    },
+    {
+     "w": "bớt",
+     "start": 0.17333,
+     "end": 0.25567
+    },
+    {
+     "w": "chi",
+     "start": 0.26,
+     "end": 0.45
+    },
+    {
+     "w": "tiết",
+     "start": 0.46,
+     "end": 0.688
+    },
+    {
+     "w": "bằng",
+     "start": 0.7,
+     "end": 0.871
+    },
+    {
+     "w": "cách",
+     "start": 0.88,
+     "end": 1.013
+    },
+    {
+     "w": "dùng",
+     "start": 1.02,
+     "end": 1.267
+    },
+    {
+     "w": "đơn",
+     "start": 1.28,
+     "end": 1.451
+    },
+    {
+     "w": "giản",
+     "start": 1.46,
+     "end": 1.764
+    },
+    {
+     "w": "hơn",
+     "start": 1.78,
+     "end": 2.027
+    },
+    {
+     "w": "gọi",
+     "start": 2.04,
+     "end": 2.287
+    },
+    {
+     "w": "là",
+     "start": 2.3,
+     "end": 2.471
+    },
+    {
+     "w": "trừu",
+     "start": 2.48,
+     "end": 2.651
+    },
+    {
+     "w": "tượng.",
+     "start": 2.66,
+     "end": 3.382
+    },
+    {
+     "w": "Bạn",
+     "start": 3.42,
+     "end": 3.591
+    },
+    {
+     "w": "yêu",
+     "start": 3.6,
+     "end": 3.714
+    },
+    {
+     "w": "cầu",
+     "start": 3.72,
+     "end": 3.948
+    },
+    {
+     "w": "thêm",
+     "start": 3.96,
+     "end": 4.131
+    },
+    {
+     "w": "số",
+     "start": 4.14,
+     "end": 4.292
+    },
+    {
+     "w": "đo",
+     "start": 4.3,
+     "end": 4.547
+    },
+    {
+     "w": "vào",
+     "start": 4.56,
+     "end": 4.674
+    },
+    {
+     "w": "danh",
+     "start": 4.68,
+     "end": 4.889
+    },
+    {
+     "w": "sách,",
+     "start": 4.9,
+     "end": 5.394
+    },
+    {
+     "w": "thay",
+     "start": 5.42,
+     "end": 5.61
+    },
+    {
+     "w": "vì",
+     "start": 5.62,
+     "end": 5.753
+    },
+    {
+     "w": "tự",
+     "start": 5.76,
+     "end": 5.95
+    },
+    {
+     "w": "sắp",
+     "start": 5.96,
+     "end": 6.188
+    },
+    {
+     "w": "xếp",
+     "start": 6.2,
+     "end": 6.352
+    },
+    {
+     "w": "vùng",
+     "start": 6.36,
+     "end": 6.512
+    },
+    {
+     "w": "nhớ.",
+     "start": 6.52,
+     "end": 7.014
+    },
+    {
+     "w": "Chi",
+     "start": 7.04,
+     "end": 7.249
+    },
+    {
+     "w": "tiết",
+     "start": 7.26,
+     "end": 7.469
+    },
+    {
+     "w": "vẫn",
+     "start": 7.48,
+     "end": 7.575
+    },
+    {
+     "w": "tồn",
+     "start": 7.58,
+     "end": 7.808
+    },
+    {
+     "w": "tại",
+     "start": 7.82,
+     "end": 7.972
+    },
+    {
+     "w": "ở",
+     "start": 7.98,
+     "end": 8.113
+    },
+    {
+     "w": "bên",
+     "start": 8.12,
+     "end": 8.215
+    },
+    {
+     "w": "dưới.",
+     "start": 8.22,
+     "end": 8.6855
+    }
+   ],
+   "text": "Che bớt chi tiết bằng cách dùng đơn giản hơn gọi là trừu tượng. Bạn yêu cầu thêm số đo vào danh sách, thay vì tự sắp xếp vùng nhớ. Chi tiết vẫn tồn tại ở bên dưới."
+  },
+  {
+   "id": "scene-7",
+   "file": "assets/audio/vo-07.mp3",
+   "duration": 9.36,
+   "words": [
+    {
+     "w": "Python",
+     "start": 0.0,
+     "end": 0.247
+    },
+    {
+     "w": "có",
+     "start": 0.26,
+     "end": 0.564
+    },
+    {
+     "w": "nhiều",
+     "start": 0.58,
+     "end": 0.713
+    },
+    {
+     "w": "thư",
+     "start": 0.72,
+     "end": 0.872
+    },
+    {
+     "w": "viện,",
+     "start": 0.88,
+     "end": 1.355
+    },
+    {
+     "w": "tức",
+     "start": 1.38,
+     "end": 1.494
+    },
+    {
+     "w": "phần",
+     "start": 1.5,
+     "end": 1.69
+    },
+    {
+     "w": "mã",
+     "start": 1.7,
+     "end": 1.871
+    },
+    {
+     "w": "làm",
+     "start": 1.88,
+     "end": 2.108
+    },
+    {
+     "w": "sẵn",
+     "start": 2.12,
+     "end": 2.386
+    },
+    {
+     "w": "để",
+     "start": 2.4,
+     "end": 2.533
+    },
+    {
+     "w": "tái",
+     "start": 2.54,
+     "end": 2.749
+    },
+    {
+     "w": "sử",
+     "start": 2.76,
+     "end": 2.855
+    },
+    {
+     "w": "dụng.",
+     "start": 2.86,
+     "end": 3.582
+    },
+    {
+     "w": "Đọc",
+     "start": 3.62,
+     "end": 3.772
+    },
+    {
+     "w": "dữ",
+     "start": 3.78,
+     "end": 3.875
+    },
+    {
+     "w": "liệu",
+     "start": 3.88,
+     "end": 4.089
+    },
+    {
+     "w": "hay",
+     "start": 4.1,
+     "end": 4.233
+    },
+    {
+     "w": "vẽ",
+     "start": 4.24,
+     "end": 4.43
+    },
+    {
+     "w": "biểu",
+     "start": 4.44,
+     "end": 4.573
+    },
+    {
+     "w": "đồ",
+     "start": 4.58,
+     "end": 4.808
+    },
+    {
+     "w": "nhờ",
+     "start": 4.82,
+     "end": 5.048
+    },
+    {
+     "w": "đó",
+     "start": 5.06,
+     "end": 5.231
+    },
+    {
+     "w": "thường",
+     "start": 5.24,
+     "end": 5.411
+    },
+    {
+     "w": "thuận",
+     "start": 5.42,
+     "end": 5.553
+    },
+    {
+     "w": "tiện.",
+     "start": 5.56,
+     "end": 5.94
+    },
+    {
+     "w": "C",
+     "start": 5.96,
+     "end": 6.34
+    },
+    {
+     "w": "cũng",
+     "start": 6.36,
+     "end": 6.512
+    },
+    {
+     "w": "có",
+     "start": 6.52,
+     "end": 6.596
+    },
+    {
+     "w": "thư",
+     "start": 6.6,
+     "end": 6.752
+    },
+    {
+     "w": "viện;",
+     "start": 6.76,
+     "end": 6.969
+    },
+    {
+     "w": "lựa",
+     "start": 6.98,
+     "end": 7.208
+    },
+    {
+     "w": "chọn",
+     "start": 7.22,
+     "end": 7.353
+    },
+    {
+     "w": "tùy",
+     "start": 7.36,
+     "end": 7.512
+    },
+    {
+     "w": "mức",
+     "start": 7.52,
+     "end": 7.634
+    },
+    {
+     "w": "tiện",
+     "start": 7.64,
+     "end": 7.83
+    },
+    {
+     "w": "lợi",
+     "start": 7.84,
+     "end": 8.163
+    },
+    {
+     "w": "và",
+     "start": 8.18,
+     "end": 8.256
+    },
+    {
+     "w": "mức",
+     "start": 8.26,
+     "end": 8.431
+    },
+    {
+     "w": "kiểm",
+     "start": 8.44,
+     "end": 8.554
+    },
+    {
+     "w": "soát",
+     "start": 8.56,
+     "end": 8.769
+    },
+    {
+     "w": "cần",
+     "start": 8.78,
+     "end": 8.894
+    },
+    {
+     "w": "thiết.",
+     "start": 8.9,
+     "end": 9.3275
+    }
+   ],
+   "text": "Python có nhiều thư viện, tức phần mã làm sẵn để tái sử dụng. Đọc dữ liệu hay vẽ biểu đồ nhờ đó thường thuận tiện. C cũng có thư viện; lựa chọn tùy mức tiện lợi và mức kiểm soát cần thiết."
+  },
+  {
+   "id": "scene-8",
+   "file": "assets/audio/vo-08.mp3",
+   "duration": 9.68,
+   "words": [
+    {
+     "w": "Điều",
+     "start": 0.0,
+     "end": 0.228
+    },
+    {
+     "w": "này",
+     "start": 0.24,
+     "end": 0.373
+    },
+    {
+     "w": "không",
+     "start": 0.38,
+     "end": 0.589
+    },
+    {
+     "w": "có",
+     "start": 0.6,
+     "end": 0.752
+    },
+    {
+     "w": "nghĩa",
+     "start": 0.76,
+     "end": 0.969
+    },
+    {
+     "w": "C",
+     "start": 0.98,
+     "end": 1.151
+    },
+    {
+     "w": "luôn",
+     "start": 1.16,
+     "end": 1.369
+    },
+    {
+     "w": "nhanh",
+     "start": 1.38,
+     "end": 1.627
+    },
+    {
+     "w": "hơn",
+     "start": 1.64,
+     "end": 1.754
+    },
+    {
+     "w": "Python.",
+     "start": 1.76,
+     "end": 2.672
+    },
+    {
+     "w": "Tốc",
+     "start": 2.72,
+     "end": 2.853
+    },
+    {
+     "w": "độ",
+     "start": 2.86,
+     "end": 3.012
+    },
+    {
+     "w": "còn",
+     "start": 3.02,
+     "end": 3.172
+    },
+    {
+     "w": "tùy",
+     "start": 3.18,
+     "end": 3.427
+    },
+    {
+     "w": "cách",
+     "start": 3.44,
+     "end": 3.611
+    },
+    {
+     "w": "giải",
+     "start": 3.62,
+     "end": 3.924
+    },
+    {
+     "w": "bài",
+     "start": 3.94,
+     "end": 4.092
+    },
+    {
+     "w": "toán",
+     "start": 4.1,
+     "end": 4.347
+    },
+    {
+     "w": "và",
+     "start": 4.36,
+     "end": 4.493
+    },
+    {
+     "w": "thư",
+     "start": 4.5,
+     "end": 4.614
+    },
+    {
+     "w": "viện.",
+     "start": 4.62,
+     "end": 5.228
+    },
+    {
+     "w": "Python",
+     "start": 5.26,
+     "end": 5.45
+    },
+    {
+     "w": "thậm",
+     "start": 5.46,
+     "end": 5.745
+    },
+    {
+     "w": "chí",
+     "start": 5.76,
+     "end": 5.988
+    },
+    {
+     "w": "có",
+     "start": 6.0,
+     "end": 6.19
+    },
+    {
+     "w": "thể",
+     "start": 6.2,
+     "end": 6.333
+    },
+    {
+     "w": "gọi",
+     "start": 6.34,
+     "end": 6.549
+    },
+    {
+     "w": "mã",
+     "start": 6.56,
+     "end": 6.693
+    },
+    {
+     "w": "viết",
+     "start": 6.7,
+     "end": 6.947
+    },
+    {
+     "w": "bằng",
+     "start": 6.96,
+     "end": 7.112
+    },
+    {
+     "w": "C",
+     "start": 7.12,
+     "end": 7.405
+    },
+    {
+     "w": "để",
+     "start": 7.42,
+     "end": 7.895
+    },
+    {
+     "w": "xử",
+     "start": 7.92,
+     "end": 8.129
+    },
+    {
+     "w": "lý",
+     "start": 8.14,
+     "end": 8.273
+    },
+    {
+     "w": "công",
+     "start": 8.28,
+     "end": 8.413
+    },
+    {
+     "w": "việc",
+     "start": 8.42,
+     "end": 8.553
+    },
+    {
+     "w": "nặng",
+     "start": 8.56,
+     "end": 8.883
+    },
+    {
+     "w": "ở",
+     "start": 8.9,
+     "end": 9.014
+    },
+    {
+     "w": "bên",
+     "start": 9.02,
+     "end": 9.153
+    },
+    {
+     "w": "dưới.",
+     "start": 9.16,
+     "end": 9.6445
+    }
+   ],
+   "text": "Điều này không có nghĩa C luôn nhanh hơn Python. Tốc độ còn tùy cách giải bài toán và thư viện. Python thậm chí có thể gọi mã viết bằng C để xử lý công việc nặng ở bên dưới."
+  },
+  {
+   "id": "scene-9",
+   "file": "assets/audio/vo-09.mp3",
+   "duration": 8.16,
+   "words": [
+    {
+     "w": "Bây",
+     "start": 0.0,
+     "end": 0.209
+    },
+    {
+     "w": "giờ,",
+     "start": 0.22,
+     "end": 0.391
+    },
+    {
+     "w": "đưa",
+     "start": 0.4,
+     "end": 0.647
+    },
+    {
+     "w": "nhiệt",
+     "start": 0.66,
+     "end": 0.793
+    },
+    {
+     "w": "độ",
+     "start": 0.8,
+     "end": 0.933
+    },
+    {
+     "w": "lên",
+     "start": 0.94,
+     "end": 1.111
+    },
+    {
+     "w": "một",
+     "start": 1.12,
+     "end": 1.2435
+    },
+    {
+     "w": "trang",
+     "start": 1.25,
+     "end": 1.3735
+    },
+    {
+     "w": "web.",
+     "start": 1.38,
+     "end": 1.95
+    },
+    {
+     "w": "Giao",
+     "start": 1.98,
+     "end": 2.075
+    },
+    {
+     "w": "diện",
+     "start": 2.08,
+     "end": 2.289
+    },
+    {
+     "w": "là",
+     "start": 2.3,
+     "end": 2.414
+    },
+    {
+     "w": "phần",
+     "start": 2.42,
+     "end": 2.572
+    },
+    {
+     "w": "người",
+     "start": 2.58,
+     "end": 2.713
+    },
+    {
+     "w": "dùng",
+     "start": 2.72,
+     "end": 2.929
+    },
+    {
+     "w": "nhìn",
+     "start": 2.94,
+     "end": 3.092
+    },
+    {
+     "w": "thấy",
+     "start": 3.1,
+     "end": 3.214
+    },
+    {
+     "w": "và",
+     "start": 3.22,
+     "end": 3.372
+    },
+    {
+     "w": "tương",
+     "start": 3.38,
+     "end": 3.57
+    },
+    {
+     "w": "tác:",
+     "start": 3.58,
+     "end": 3.903
+    },
+    {
+     "w": "con",
+     "start": 3.92,
+     "end": 4.091
+    },
+    {
+     "w": "số,",
+     "start": 4.1,
+     "end": 4.347
+    },
+    {
+     "w": "biểu",
+     "start": 4.36,
+     "end": 4.683
+    },
+    {
+     "w": "đồ,",
+     "start": 4.7,
+     "end": 4.966
+    },
+    {
+     "w": "nút",
+     "start": 4.98,
+     "end": 5.227
+    },
+    {
+     "w": "bấm.",
+     "start": 5.24,
+     "end": 5.715
+    },
+    {
+     "w": "Khi",
+     "start": 5.74,
+     "end": 6.006
+    },
+    {
+     "w": "số",
+     "start": 6.02,
+     "end": 6.134
+    },
+    {
+     "w": "đo",
+     "start": 6.14,
+     "end": 6.254
+    },
+    {
+     "w": "đổi,",
+     "start": 6.26,
+     "end": 6.716
+    },
+    {
+     "w": "giao",
+     "start": 6.74,
+     "end": 6.873
+    },
+    {
+     "w": "diện",
+     "start": 6.88,
+     "end": 7.108
+    },
+    {
+     "w": "cũng",
+     "start": 7.12,
+     "end": 7.234
+    },
+    {
+     "w": "cần",
+     "start": 7.24,
+     "end": 7.411
+    },
+    {
+     "w": "cập",
+     "start": 7.42,
+     "end": 7.553
+    },
+    {
+     "w": "nhật",
+     "start": 7.56,
+     "end": 7.731
+    },
+    {
+     "w": "theo.",
+     "start": 7.74,
+     "end": 8.1295
+    }
+   ],
+   "text": "Bây giờ, đưa nhiệt độ lên một trang web. Giao diện là phần người dùng nhìn thấy và tương tác: con số, biểu đồ, nút bấm. Khi số đo đổi, giao diện cũng cần cập nhật theo."
+  },
+  {
+   "id": "scene-10",
+   "file": "assets/audio/vo-10.mp3",
+   "duration": 8.56,
+   "words": [
+    {
+     "w": "JavaScript",
+     "start": 0.27333,
+     "end": 0.533
+    },
+    {
+     "w": "thường",
+     "start": 0.54667,
+     "end": 0.80633
+    },
+    {
+     "w": "xử",
+     "start": 0.82,
+     "end": 0.972
+    },
+    {
+     "w": "lý",
+     "start": 0.98,
+     "end": 1.132
+    },
+    {
+     "w": "tương",
+     "start": 1.14,
+     "end": 1.311
+    },
+    {
+     "w": "tác",
+     "start": 1.32,
+     "end": 1.567
+    },
+    {
+     "w": "trong",
+     "start": 1.58,
+     "end": 1.694
+    },
+    {
+     "w": "trình",
+     "start": 1.7,
+     "end": 1.833
+    },
+    {
+     "w": "duyệt.",
+     "start": 1.84,
+     "end": 2.638
+    },
+    {
+     "w": "Bạn",
+     "start": 2.68,
+     "end": 2.832
+    },
+    {
+     "w": "bấm",
+     "start": 2.84,
+     "end": 3.011
+    },
+    {
+     "w": "nút",
+     "start": 3.02,
+     "end": 3.191
+    },
+    {
+     "w": "làm",
+     "start": 3.2,
+     "end": 3.314
+    },
+    {
+     "w": "mới;",
+     "start": 3.32,
+     "end": 3.776
+    },
+    {
+     "w": "số",
+     "start": 3.8,
+     "end": 3.952
+    },
+    {
+     "w": "đo",
+     "start": 3.96,
+     "end": 4.131
+    },
+    {
+     "w": "vừa",
+     "start": 4.14,
+     "end": 4.311
+    },
+    {
+     "w": "nhận",
+     "start": 4.32,
+     "end": 4.491
+    },
+    {
+     "w": "thay",
+     "start": 4.5,
+     "end": 4.671
+    },
+    {
+     "w": "cho",
+     "start": 4.68,
+     "end": 4.813
+    },
+    {
+     "w": "số",
+     "start": 4.82,
+     "end": 4.934
+    },
+    {
+     "w": "cũ",
+     "start": 4.94,
+     "end": 5.206
+    },
+    {
+     "w": "trên",
+     "start": 5.22,
+     "end": 5.315
+    },
+    {
+     "w": "màn",
+     "start": 5.32,
+     "end": 5.491
+    },
+    {
+     "w": "hình.",
+     "start": 5.5,
+     "end": 5.88
+    },
+    {
+     "w": "Trình",
+     "start": 5.9,
+     "end": 6.052
+    },
+    {
+     "w": "duyệt",
+     "start": 6.06,
+     "end": 6.25
+    },
+    {
+     "w": "chính",
+     "start": 6.26,
+     "end": 6.393
+    },
+    {
+     "w": "là",
+     "start": 6.4,
+     "end": 6.514
+    },
+    {
+     "w": "ứng",
+     "start": 6.52,
+     "end": 6.672
+    },
+    {
+     "w": "dụng",
+     "start": 6.68,
+     "end": 6.889
+    },
+    {
+     "w": "bạn",
+     "start": 6.9,
+     "end": 7.033
+    },
+    {
+     "w": "dùng",
+     "start": 7.04,
+     "end": 7.344
+    },
+    {
+     "w": "để",
+     "start": 7.36,
+     "end": 7.626
+    },
+    {
+     "w": "mở",
+     "start": 7.64,
+     "end": 7.868
+    },
+    {
+     "w": "trang",
+     "start": 7.88,
+     "end": 8.18875
+    },
+    {
+     "w": "web.",
+     "start": 8.205,
+     "end": 8.53275
+    }
+   ],
+   "text": "JavaScript thường xử lý tương tác trong trình duyệt. Bạn bấm nút làm mới; số đo vừa nhận thay cho số cũ trên màn hình. Trình duyệt chính là ứng dụng bạn dùng để mở trang web."
+  },
+  {
+   "id": "scene-11",
+   "file": "assets/audio/vo-11.mp3",
+   "duration": 9.68,
+   "words": [
+    {
+     "w": "JavaScript",
+     "start": 0.37,
+     "end": 0.7215
+    },
+    {
+     "w": "không",
+     "start": 0.74,
+     "end": 1.31
+    },
+    {
+     "w": "chỉ",
+     "start": 1.34,
+     "end": 1.511
+    },
+    {
+     "w": "chạy",
+     "start": 1.52,
+     "end": 1.71
+    },
+    {
+     "w": "trong",
+     "start": 1.72,
+     "end": 1.815
+    },
+    {
+     "w": "trình",
+     "start": 1.82,
+     "end": 2.01
+    },
+    {
+     "w": "duyệt.",
+     "start": 2.02,
+     "end": 2.571
+    },
+    {
+     "w": "Với",
+     "start": 2.6,
+     "end": 2.752
+    },
+    {
+     "w": "môi",
+     "start": 2.76,
+     "end": 2.912
+    },
+    {
+     "w": "trường",
+     "start": 2.92,
+     "end": 3.11
+    },
+    {
+     "w": "như",
+     "start": 3.12,
+     "end": 3.253
+    },
+    {
+     "w": "Node,",
+     "start": 3.26,
+     "end": 3.792
+    },
+    {
+     "w": "nó",
+     "start": 3.82,
+     "end": 3.896
+    },
+    {
+     "w": "chạy",
+     "start": 3.9,
+     "end": 4.128
+    },
+    {
+     "w": "được",
+     "start": 4.14,
+     "end": 4.197
+    },
+    {
+     "w": "ở",
+     "start": 4.2,
+     "end": 4.352
+    },
+    {
+     "w": "máy",
+     "start": 4.36,
+     "end": 4.531
+    },
+    {
+     "w": "chủ,",
+     "start": 4.54,
+     "end": 5.053
+    },
+    {
+     "w": "là",
+     "start": 5.08,
+     "end": 5.156
+    },
+    {
+     "w": "máy",
+     "start": 5.16,
+     "end": 5.3025
+    },
+    {
+     "w": "nhận",
+     "start": 5.31,
+     "end": 5.4525
+    },
+    {
+     "w": "yêu",
+     "start": 5.46,
+     "end": 5.612
+    },
+    {
+     "w": "cầu",
+     "start": 5.62,
+     "end": 5.867
+    },
+    {
+     "w": "rồi",
+     "start": 5.88,
+     "end": 6.051
+    },
+    {
+     "w": "gửi",
+     "start": 6.06,
+     "end": 6.288
+    },
+    {
+     "w": "dữ",
+     "start": 6.3,
+     "end": 6.433
+    },
+    {
+     "w": "liệu",
+     "start": 6.44,
+     "end": 6.63
+    },
+    {
+     "w": "cho",
+     "start": 6.64,
+     "end": 6.754
+    },
+    {
+     "w": "ứng",
+     "start": 6.76,
+     "end": 6.874
+    },
+    {
+     "w": "dụng.",
+     "start": 6.88,
+     "end": 7.526
+    },
+    {
+     "w": "Đừng",
+     "start": 7.56,
+     "end": 7.674
+    },
+    {
+     "w": "gắn",
+     "start": 7.68,
+     "end": 7.832
+    },
+    {
+     "w": "một",
+     "start": 7.84,
+     "end": 7.973
+    },
+    {
+     "w": "ngôn",
+     "start": 7.98,
+     "end": 8.1985
+    },
+    {
+     "w": "ngữ",
+     "start": 8.21,
+     "end": 8.4285
+    },
+    {
+     "w": "với",
+     "start": 8.44,
+     "end": 8.611
+    },
+    {
+     "w": "duy",
+     "start": 8.62,
+     "end": 8.734
+    },
+    {
+     "w": "nhất",
+     "start": 8.74,
+     "end": 8.873
+    },
+    {
+     "w": "một",
+     "start": 8.88,
+     "end": 9.032
+    },
+    {
+     "w": "vị",
+     "start": 9.04,
+     "end": 9.192
+    },
+    {
+     "w": "trí.",
+     "start": 9.2,
+     "end": 9.6465
+    }
+   ],
+   "text": "JavaScript không chỉ chạy trong trình duyệt. Với môi trường như Node, nó chạy được ở máy chủ, là máy nhận yêu cầu rồi gửi dữ liệu cho ứng dụng. Đừng gắn một ngôn ngữ với duy nhất một vị trí."
+  },
+  {
+   "id": "scene-12",
+   "file": "assets/audio/vo-12.mp3",
+   "duration": 9.36,
+   "words": [
+    {
+     "w": "Ta",
+     "start": 0.0,
+     "end": 0.152
+    },
+    {
+     "w": "có",
+     "start": 0.16,
+     "end": 0.255
+    },
+    {
+     "w": "thể",
+     "start": 0.26,
+     "end": 0.412
+    },
+    {
+     "w": "dùng",
+     "start": 0.42,
+     "end": 0.61
+    },
+    {
+     "w": "C",
+     "start": 0.62,
+     "end": 0.753
+    },
+    {
+     "w": "trong",
+     "start": 0.76,
+     "end": 0.912
+    },
+    {
+     "w": "thiết",
+     "start": 0.92,
+     "end": 1.053
+    },
+    {
+     "w": "bị,",
+     "start": 1.06,
+     "end": 1.516
+    },
+    {
+     "w": "Python",
+     "start": 1.54,
+     "end": 1.806
+    },
+    {
+     "w": "để",
+     "start": 1.82,
+     "end": 2.048
+    },
+    {
+     "w": "phân",
+     "start": 2.06,
+     "end": 2.212
+    },
+    {
+     "w": "tích,",
+     "start": 2.22,
+     "end": 2.429
+    },
+    {
+     "w": "và",
+     "start": 2.44,
+     "end": 3.0575
+    },
+    {
+     "w": "JavaScript",
+     "start": 3.09,
+     "end": 3.7075
+    },
+    {
+     "w": "cho",
+     "start": 3.74,
+     "end": 3.949
+    },
+    {
+     "w": "giao",
+     "start": 3.96,
+     "end": 4.112
+    },
+    {
+     "w": "diện.",
+     "start": 4.12,
+     "end": 4.747
+    },
+    {
+     "w": "Đây",
+     "start": 4.78,
+     "end": 4.932
+    },
+    {
+     "w": "không",
+     "start": 4.94,
+     "end": 5.111
+    },
+    {
+     "w": "phải",
+     "start": 5.12,
+     "end": 5.272
+    },
+    {
+     "w": "luật",
+     "start": 5.28,
+     "end": 5.451
+    },
+    {
+     "w": "bắt",
+     "start": 5.46,
+     "end": 5.631
+    },
+    {
+     "w": "buộc.",
+     "start": 5.64,
+     "end": 6.267
+    },
+    {
+     "w": "Các",
+     "start": 6.3,
+     "end": 6.452
+    },
+    {
+     "w": "phần",
+     "start": 6.46,
+     "end": 6.593
+    },
+    {
+     "w": "trao",
+     "start": 6.6,
+     "end": 6.828
+    },
+    {
+     "w": "đổi",
+     "start": 6.84,
+     "end": 6.954
+    },
+    {
+     "w": "số",
+     "start": 6.96,
+     "end": 7.112
+    },
+    {
+     "w": "đo",
+     "start": 7.12,
+     "end": 7.291
+    },
+    {
+     "w": "với",
+     "start": 7.3,
+     "end": 7.433
+    },
+    {
+     "w": "nhau,",
+     "start": 7.44,
+     "end": 7.706
+    },
+    {
+     "w": "tạo",
+     "start": 7.72,
+     "end": 8.138
+    },
+    {
+     "w": "thành",
+     "start": 8.16,
+     "end": 8.293
+    },
+    {
+     "w": "một",
+     "start": 8.3,
+     "end": 8.452
+    },
+    {
+     "w": "hệ",
+     "start": 8.46,
+     "end": 8.612
+    },
+    {
+     "w": "thống",
+     "start": 8.62,
+     "end": 8.81
+    },
+    {
+     "w": "liền",
+     "start": 8.82,
+     "end": 9.029
+    },
+    {
+     "w": "mạch.",
+     "start": 9.04,
+     "end": 9.3345
+    }
+   ],
+   "text": "Ta có thể dùng C trong thiết bị, Python để phân tích, và JavaScript cho giao diện. Đây không phải luật bắt buộc. Các phần trao đổi số đo với nhau, tạo thành một hệ thống liền mạch."
+  },
+  {
+   "id": "scene-13",
+   "file": "assets/audio/vo-13.mp3",
+   "duration": 9.36,
+   "words": [
+    {
+     "w": "C",
+     "start": 0.0,
+     "end": 0.266
+    },
+    {
+     "w": "cộng",
+     "start": 0.28,
+     "end": 0.413
+    },
+    {
+     "w": "cộng",
+     "start": 0.42,
+     "end": 0.572
+    },
+    {
+     "w": "phát",
+     "start": 0.58,
+     "end": 0.732
+    },
+    {
+     "w": "triển",
+     "start": 0.74,
+     "end": 0.949
+    },
+    {
+     "w": "từ",
+     "start": 0.96,
+     "end": 1.093
+    },
+    {
+     "w": "C,",
+     "start": 1.1,
+     "end": 1.594
+    },
+    {
+     "w": "bổ",
+     "start": 1.62,
+     "end": 1.8765
+    },
+    {
+     "w": "sung",
+     "start": 1.89,
+     "end": 2.1465
+    },
+    {
+     "w": "nhiều",
+     "start": 2.16,
+     "end": 2.312
+    },
+    {
+     "w": "cơ",
+     "start": 2.32,
+     "end": 2.51
+    },
+    {
+     "w": "chế",
+     "start": 2.52,
+     "end": 2.691
+    },
+    {
+     "w": "tổ",
+     "start": 2.7,
+     "end": 2.871
+    },
+    {
+     "w": "chức",
+     "start": 2.88,
+     "end": 3.07
+    },
+    {
+     "w": "và",
+     "start": 3.08,
+     "end": 3.251
+    },
+    {
+     "w": "tái",
+     "start": 3.26,
+     "end": 3.488
+    },
+    {
+     "w": "sử",
+     "start": 3.5,
+     "end": 3.671
+    },
+    {
+     "w": "dụng",
+     "start": 3.68,
+     "end": 3.851
+    },
+    {
+     "w": "chương",
+     "start": 3.86,
+     "end": 3.955
+    },
+    {
+     "w": "trình.",
+     "start": 3.96,
+     "end": 4.511
+    },
+    {
+     "w": "Đây",
+     "start": 4.54,
+     "end": 4.692
+    },
+    {
+     "w": "là",
+     "start": 4.7,
+     "end": 4.852
+    },
+    {
+     "w": "hai",
+     "start": 4.86,
+     "end": 5.069
+    },
+    {
+     "w": "ngôn",
+     "start": 5.08,
+     "end": 5.251
+    },
+    {
+     "w": "ngữ",
+     "start": 5.26,
+     "end": 5.431
+    },
+    {
+     "w": "riêng,",
+     "start": 5.44,
+     "end": 6.01
+    },
+    {
+     "w": "có",
+     "start": 6.04,
+     "end": 6.154
+    },
+    {
+     "w": "quy",
+     "start": 6.16,
+     "end": 6.274
+    },
+    {
+     "w": "tắc",
+     "start": 6.28,
+     "end": 6.47
+    },
+    {
+     "w": "khác",
+     "start": 6.48,
+     "end": 6.594
+    },
+    {
+     "w": "nhau,",
+     "start": 6.6,
+     "end": 7.018
+    },
+    {
+     "w": "chứ",
+     "start": 7.04,
+     "end": 7.268
+    },
+    {
+     "w": "không",
+     "start": 7.28,
+     "end": 7.413
+    },
+    {
+     "w": "đơn",
+     "start": 7.42,
+     "end": 7.61
+    },
+    {
+     "w": "giản",
+     "start": 7.62,
+     "end": 7.867
+    },
+    {
+     "w": "là",
+     "start": 7.88,
+     "end": 7.994
+    },
+    {
+     "w": "C",
+     "start": 8.0,
+     "end": 8.304
+    },
+    {
+     "w": "đính",
+     "start": 8.32,
+     "end": 8.434
+    },
+    {
+     "w": "thêm",
+     "start": 8.44,
+     "end": 8.649
+    },
+    {
+     "w": "vài",
+     "start": 8.66,
+     "end": 8.85
+    },
+    {
+     "w": "chức",
+     "start": 8.86,
+     "end": 8.974
+    },
+    {
+     "w": "năng.",
+     "start": 8.98,
+     "end": 9.3315
+    }
+   ],
+   "text": "C cộng cộng phát triển từ C, bổ sung nhiều cơ chế tổ chức và tái sử dụng chương trình. Đây là hai ngôn ngữ riêng, có quy tắc khác nhau, chứ không đơn giản là C đính thêm vài chức năng."
+  },
+  {
+   "id": "scene-14",
+   "file": "assets/audio/vo-14.mp3",
+   "duration": 9.04,
+   "words": [
+    {
+     "w": "Nếu",
+     "start": 0.0,
+     "end": 0.247
+    },
+    {
+     "w": "có",
+     "start": 0.26,
+     "end": 0.374
+    },
+    {
+     "w": "nhiều",
+     "start": 0.38,
+     "end": 0.532
+    },
+    {
+     "w": "loại",
+     "start": 0.54,
+     "end": 0.749
+    },
+    {
+     "w": "cảm",
+     "start": 0.76,
+     "end": 0.912
+    },
+    {
+     "w": "biến,",
+     "start": 0.92,
+     "end": 1.528
+    },
+    {
+     "w": "C",
+     "start": 1.56,
+     "end": 1.655
+    },
+    {
+     "w": "cộng",
+     "start": 1.66,
+     "end": 1.831
+    },
+    {
+     "w": "cộng",
+     "start": 1.84,
+     "end": 2.03
+    },
+    {
+     "w": "có",
+     "start": 2.04,
+     "end": 2.135
+    },
+    {
+     "w": "lớp:",
+     "start": 2.14,
+     "end": 2.52
+    },
+    {
+     "w": "cách",
+     "start": 2.54,
+     "end": 2.768
+    },
+    {
+     "w": "mô",
+     "start": 2.78,
+     "end": 2.951
+    },
+    {
+     "w": "tả",
+     "start": 2.96,
+     "end": 3.131
+    },
+    {
+     "w": "dữ",
+     "start": 3.14,
+     "end": 3.311
+    },
+    {
+     "w": "liệu",
+     "start": 3.32,
+     "end": 3.491
+    },
+    {
+     "w": "và",
+     "start": 3.5,
+     "end": 3.595
+    },
+    {
+     "w": "thao",
+     "start": 3.6,
+     "end": 3.733
+    },
+    {
+     "w": "tác",
+     "start": 3.74,
+     "end": 3.93
+    },
+    {
+     "w": "liên",
+     "start": 3.94,
+     "end": 4.035
+    },
+    {
+     "w": "quan.",
+     "start": 4.04,
+     "end": 4.876
+    },
+    {
+     "w": "Ta",
+     "start": 4.92,
+     "end": 5.053
+    },
+    {
+     "w": "gom",
+     "start": 5.06,
+     "end": 5.25
+    },
+    {
+     "w": "số",
+     "start": 5.26,
+     "end": 5.469
+    },
+    {
+     "w": "đo",
+     "start": 5.48,
+     "end": 5.746
+    },
+    {
+     "w": "với",
+     "start": 5.76,
+     "end": 5.874
+    },
+    {
+     "w": "thao",
+     "start": 5.88,
+     "end": 6.032
+    },
+    {
+     "w": "tác",
+     "start": 6.04,
+     "end": 6.249
+    },
+    {
+     "w": "đọc",
+     "start": 6.26,
+     "end": 6.507
+    },
+    {
+     "w": "trong",
+     "start": 6.52,
+     "end": 6.634
+    },
+    {
+     "w": "một",
+     "start": 6.64,
+     "end": 6.754
+    },
+    {
+     "w": "thiết",
+     "start": 6.76,
+     "end": 6.874
+    },
+    {
+     "w": "kế,",
+     "start": 6.88,
+     "end": 7.2695
+    },
+    {
+     "w": "rồi",
+     "start": 7.29,
+     "end": 7.6795
+    },
+    {
+     "w": "tạo",
+     "start": 7.7,
+     "end": 7.928
+    },
+    {
+     "w": "nhiều",
+     "start": 7.94,
+     "end": 8.054
+    },
+    {
+     "w": "đối",
+     "start": 8.06,
+     "end": 8.212
+    },
+    {
+     "w": "tượng",
+     "start": 8.22,
+     "end": 8.429
+    },
+    {
+     "w": "từ",
+     "start": 8.44,
+     "end": 8.573
+    },
+    {
+     "w": "đó.",
+     "start": 8.58,
+     "end": 9.0075
+    }
+   ],
+   "text": "Nếu có nhiều loại cảm biến, C cộng cộng có lớp: cách mô tả dữ liệu và thao tác liên quan. Ta gom số đo với thao tác đọc trong một thiết kế, rồi tạo nhiều đối tượng từ đó."
+  },
+  {
+   "id": "scene-15",
+   "file": "assets/audio/vo-15.mp3",
+   "duration": 9.2,
+   "words": [
+    {
+     "w": "C",
+     "start": 0.0,
+     "end": 0.247
+    },
+    {
+     "w": "vẫn",
+     "start": 0.26,
+     "end": 0.355
+    },
+    {
+     "w": "tổ",
+     "start": 0.36,
+     "end": 0.512
+    },
+    {
+     "w": "chức",
+     "start": 0.52,
+     "end": 0.653
+    },
+    {
+     "w": "được",
+     "start": 0.66,
+     "end": 0.774
+    },
+    {
+     "w": "chương",
+     "start": 0.78,
+     "end": 0.913
+    },
+    {
+     "w": "trình",
+     "start": 0.92,
+     "end": 1.091
+    },
+    {
+     "w": "lớn",
+     "start": 1.1,
+     "end": 1.385
+    },
+    {
+     "w": "bằng",
+     "start": 1.4,
+     "end": 1.533
+    },
+    {
+     "w": "cách",
+     "start": 1.54,
+     "end": 1.673
+    },
+    {
+     "w": "chia",
+     "start": 1.68,
+     "end": 1.889
+    },
+    {
+     "w": "dữ",
+     "start": 1.9,
+     "end": 2.109
+    },
+    {
+     "w": "liệu",
+     "start": 2.12,
+     "end": 2.329
+    },
+    {
+     "w": "và",
+     "start": 2.34,
+     "end": 2.454
+    },
+    {
+     "w": "công",
+     "start": 2.46,
+     "end": 2.593
+    },
+    {
+     "w": "việc",
+     "start": 2.6,
+     "end": 2.752
+    },
+    {
+     "w": "thành",
+     "start": 2.76,
+     "end": 2.95
+    },
+    {
+     "w": "các",
+     "start": 2.96,
+     "end": 3.15
+    },
+    {
+     "w": "phần.",
+     "start": 3.16,
+     "end": 3.825
+    },
+    {
+     "w": "C",
+     "start": 3.86,
+     "end": 4.145
+    },
+    {
+     "w": "cộng",
+     "start": 4.16,
+     "end": 4.331
+    },
+    {
+     "w": "cộng",
+     "start": 4.34,
+     "end": 4.587
+    },
+    {
+     "w": "có",
+     "start": 4.6,
+     "end": 4.885
+    },
+    {
+     "w": "thêm",
+     "start": 4.9,
+     "end": 5.109
+    },
+    {
+     "w": "cơ",
+     "start": 5.12,
+     "end": 5.291
+    },
+    {
+     "w": "chế",
+     "start": 5.3,
+     "end": 5.49
+    },
+    {
+     "w": "ngôn",
+     "start": 5.5,
+     "end": 5.69
+    },
+    {
+     "w": "ngữ",
+     "start": 5.7,
+     "end": 5.89
+    },
+    {
+     "w": "diễn",
+     "start": 5.9,
+     "end": 6.128
+    },
+    {
+     "w": "đạt",
+     "start": 6.14,
+     "end": 6.254
+    },
+    {
+     "w": "quan",
+     "start": 6.26,
+     "end": 6.374
+    },
+    {
+     "w": "hệ",
+     "start": 6.38,
+     "end": 6.532
+    },
+    {
+     "w": "ấy.",
+     "start": 6.54,
+     "end": 7.262
+    },
+    {
+     "w": "Dùng",
+     "start": 7.3,
+     "end": 7.566
+    },
+    {
+     "w": "lớp",
+     "start": 7.58,
+     "end": 7.827
+    },
+    {
+     "w": "hay",
+     "start": 7.84,
+     "end": 7.916
+    },
+    {
+     "w": "không",
+     "start": 7.92,
+     "end": 8.129
+    },
+    {
+     "w": "còn",
+     "start": 8.14,
+     "end": 8.33
+    },
+    {
+     "w": "tùy",
+     "start": 8.34,
+     "end": 8.53
+    },
+    {
+     "w": "bài",
+     "start": 8.54,
+     "end": 8.673
+    },
+    {
+     "w": "toán.",
+     "start": 8.68,
+     "end": 9.1645
+    }
+   ],
+   "text": "C vẫn tổ chức được chương trình lớn bằng cách chia dữ liệu và công việc thành các phần. C cộng cộng có thêm cơ chế ngôn ngữ diễn đạt quan hệ ấy. Dùng lớp hay không còn tùy bài toán."
+  },
+  {
+   "id": "scene-16",
+   "file": "assets/audio/vo-16.mp3",
+   "duration": 8.24,
+   "words": [
+    {
+     "w": "Trở",
+     "start": 0.0,
+     "end": 0.228
+    },
+    {
+     "w": "lại",
+     "start": 0.24,
+     "end": 0.373
+    },
+    {
+     "w": "con",
+     "start": 0.38,
+     "end": 0.494
+    },
+    {
+     "w": "chip",
+     "start": 0.5,
+     "end": 0.652
+    },
+    {
+     "w": "nhỏ:",
+     "start": 0.66,
+     "end": 1.23
+    },
+    {
+     "w": "C",
+     "start": 1.26,
+     "end": 1.412
+    },
+    {
+     "w": "giúp",
+     "start": 1.42,
+     "end": 1.572
+    },
+    {
+     "w": "kiểm",
+     "start": 1.58,
+     "end": 1.732
+    },
+    {
+     "w": "soát",
+     "start": 1.74,
+     "end": 1.911
+    },
+    {
+     "w": "tài",
+     "start": 1.92,
+     "end": 2.091
+    },
+    {
+     "w": "nguyên,",
+     "start": 2.1,
+     "end": 2.689
+    },
+    {
+     "w": "gồm",
+     "start": 2.72,
+     "end": 2.872
+    },
+    {
+     "w": "bộ",
+     "start": 2.88,
+     "end": 3.032
+    },
+    {
+     "w": "nhớ",
+     "start": 3.04,
+     "end": 3.306
+    },
+    {
+     "w": "và",
+     "start": 3.32,
+     "end": 3.434
+    },
+    {
+     "w": "năng",
+     "start": 3.44,
+     "end": 3.592
+    },
+    {
+     "w": "lực",
+     "start": 3.6,
+     "end": 3.771
+    },
+    {
+     "w": "xử",
+     "start": 3.78,
+     "end": 3.951
+    },
+    {
+     "w": "lý.",
+     "start": 3.96,
+     "end": 4.416
+    },
+    {
+     "w": "Khi",
+     "start": 4.44,
+     "end": 4.744
+    },
+    {
+     "w": "chúng",
+     "start": 4.76,
+     "end": 4.855
+    },
+    {
+     "w": "có",
+     "start": 4.86,
+     "end": 5.012
+    },
+    {
+     "w": "giới",
+     "start": 5.02,
+     "end": 5.153
+    },
+    {
+     "w": "hạn,",
+     "start": 5.16,
+     "end": 5.654
+    },
+    {
+     "w": "hiểu",
+     "start": 5.68,
+     "end": 5.794
+    },
+    {
+     "w": "chương",
+     "start": 5.8,
+     "end": 5.952
+    },
+    {
+     "w": "trình",
+     "start": 5.96,
+     "end": 6.169
+    },
+    {
+     "w": "dùng",
+     "start": 6.18,
+     "end": 6.389
+    },
+    {
+     "w": "chúng",
+     "start": 6.4,
+     "end": 6.571
+    },
+    {
+     "w": "ra",
+     "start": 6.58,
+     "end": 6.732
+    },
+    {
+     "w": "sao",
+     "start": 6.74,
+     "end": 6.968
+    },
+    {
+     "w": "là",
+     "start": 6.98,
+     "end": 7.132
+    },
+    {
+     "w": "một",
+     "start": 7.14,
+     "end": 7.235
+    },
+    {
+     "w": "yêu",
+     "start": 7.24,
+     "end": 7.411
+    },
+    {
+     "w": "cầu",
+     "start": 7.42,
+     "end": 7.61
+    },
+    {
+     "w": "thực",
+     "start": 7.62,
+     "end": 7.715
+    },
+    {
+     "w": "tế.",
+     "start": 7.72,
+     "end": 8.2045
+    }
+   ],
+   "text": "Trở lại con chip nhỏ: C giúp kiểm soát tài nguyên, gồm bộ nhớ và năng lực xử lý. Khi chúng có giới hạn, hiểu chương trình dùng chúng ra sao là một yêu cầu thực tế."
+  },
+  {
+   "id": "scene-17",
+   "file": "assets/audio/vo-17.mp3",
+   "duration": 10.0,
+   "words": [
+    {
+     "w": "C",
+     "start": 0.0,
+     "end": 0.228
+    },
+    {
+     "w": "hiện",
+     "start": 0.24,
+     "end": 0.468
+    },
+    {
+     "w": "diện",
+     "start": 0.48,
+     "end": 0.689
+    },
+    {
+     "w": "trong",
+     "start": 0.7,
+     "end": 0.833
+    },
+    {
+     "w": "phần",
+     "start": 0.84,
+     "end": 1.03
+    },
+    {
+     "w": "mềm",
+     "start": 1.04,
+     "end": 1.306
+    },
+    {
+     "w": "hệ",
+     "start": 1.32,
+     "end": 1.434
+    },
+    {
+     "w": "thống,",
+     "start": 1.44,
+     "end": 2.181
+    },
+    {
+     "w": "giúp",
+     "start": 2.22,
+     "end": 2.41
+    },
+    {
+     "w": "máy",
+     "start": 2.42,
+     "end": 2.686
+    },
+    {
+     "w": "và",
+     "start": 2.7,
+     "end": 2.833
+    },
+    {
+     "w": "chương",
+     "start": 2.84,
+     "end": 3.011
+    },
+    {
+     "w": "trình",
+     "start": 3.02,
+     "end": 3.19733
+    },
+    {
+     "w": "khác",
+     "start": 3.20667,
+     "end": 3.384
+    },
+    {
+     "w": "hoạt",
+     "start": 3.39333,
+     "end": 3.57067
+    },
+    {
+     "w": "động.",
+     "start": 3.58,
+     "end": 4.302
+    },
+    {
+     "w": "Phần",
+     "start": 4.34,
+     "end": 4.454
+    },
+    {
+     "w": "lớn",
+     "start": 4.46,
+     "end": 4.612
+    },
+    {
+     "w": "nhân",
+     "start": 4.62,
+     "end": 4.772
+    },
+    {
+     "w": "Linux",
+     "start": 4.78,
+     "end": 5.065
+    },
+    {
+     "w": "viết",
+     "start": 5.08,
+     "end": 5.365
+    },
+    {
+     "w": "bằng",
+     "start": 5.38,
+     "end": 5.551
+    },
+    {
+     "w": "C.",
+     "start": 5.56,
+     "end": 6.358
+    },
+    {
+     "w": "Nhân",
+     "start": 6.4,
+     "end": 6.476
+    },
+    {
+     "w": "là",
+     "start": 6.48,
+     "end": 6.67
+    },
+    {
+     "w": "phần",
+     "start": 6.68,
+     "end": 6.927
+    },
+    {
+     "w": "lõi",
+     "start": 6.94,
+     "end": 7.187
+    },
+    {
+     "w": "hệ",
+     "start": 7.2,
+     "end": 7.314
+    },
+    {
+     "w": "điều",
+     "start": 7.32,
+     "end": 7.453
+    },
+    {
+     "w": "hành,",
+     "start": 7.46,
+     "end": 8.106
+    },
+    {
+     "w": "quản",
+     "start": 8.14,
+     "end": 8.235
+    },
+    {
+     "w": "lý",
+     "start": 8.24,
+     "end": 8.392
+    },
+    {
+     "w": "bộ",
+     "start": 8.4,
+     "end": 8.571
+    },
+    {
+     "w": "nhớ",
+     "start": 8.58,
+     "end": 8.865
+    },
+    {
+     "w": "và",
+     "start": 8.88,
+     "end": 9.013
+    },
+    {
+     "w": "giao",
+     "start": 9.02,
+     "end": 9.172
+    },
+    {
+     "w": "tiếp",
+     "start": 9.18,
+     "end": 9.313
+    },
+    {
+     "w": "với",
+     "start": 9.32,
+     "end": 9.472
+    },
+    {
+     "w": "thiết",
+     "start": 9.48,
+     "end": 9.613
+    },
+    {
+     "w": "bị.",
+     "start": 9.62,
+     "end": 9.9715
+    }
+   ],
+   "text": "C hiện diện trong phần mềm hệ thống, giúp máy và chương trình khác hoạt động. Phần lớn nhân Linux viết bằng C. Nhân là phần lõi hệ điều hành, quản lý bộ nhớ và giao tiếp với thiết bị."
+  },
+  {
+   "id": "scene-18",
+   "file": "assets/audio/vo-18.mp3",
+   "duration": 8.96,
+   "words": [
+    {
+     "w": "C",
+     "start": 0.0,
+     "end": 0.266
+    },
+    {
+     "w": "còn",
+     "start": 0.28,
+     "end": 0.394
+    },
+    {
+     "w": "có",
+     "start": 0.4,
+     "end": 0.533
+    },
+    {
+     "w": "lượng",
+     "start": 0.54,
+     "end": 0.939
+    },
+    {
+     "w": "mã,",
+     "start": 0.96,
+     "end": 1.359
+    },
+    {
+     "w": "thư",
+     "start": 1.38,
+     "end": 1.532
+    },
+    {
+     "w": "viện",
+     "start": 1.54,
+     "end": 1.768
+    },
+    {
+     "w": "và",
+     "start": 1.78,
+     "end": 1.932
+    },
+    {
+     "w": "công",
+     "start": 1.94,
+     "end": 2.111
+    },
+    {
+     "w": "cụ",
+     "start": 2.12,
+     "end": 2.291
+    },
+    {
+     "w": "tích",
+     "start": 2.3,
+     "end": 2.509
+    },
+    {
+     "w": "lũy",
+     "start": 2.52,
+     "end": 2.729
+    },
+    {
+     "w": "qua",
+     "start": 2.74,
+     "end": 2.873
+    },
+    {
+     "w": "nhiều",
+     "start": 2.88,
+     "end": 3.032
+    },
+    {
+     "w": "năm.",
+     "start": 3.04,
+     "end": 3.952
+    },
+    {
+     "w": "Thành",
+     "start": 4.0,
+     "end": 4.095
+    },
+    {
+     "w": "phần",
+     "start": 4.1,
+     "end": 4.271
+    },
+    {
+     "w": "đang",
+     "start": 4.28,
+     "end": 4.432
+    },
+    {
+     "w": "đáp",
+     "start": 4.44,
+     "end": 4.592
+    },
+    {
+     "w": "ứng",
+     "start": 4.6,
+     "end": 4.695
+    },
+    {
+     "w": "tốt",
+     "start": 4.7,
+     "end": 4.852
+    },
+    {
+     "w": "yêu",
+     "start": 4.86,
+     "end": 4.993
+    },
+    {
+     "w": "cầu",
+     "start": 5.0,
+     "end": 5.228
+    },
+    {
+     "w": "thì",
+     "start": 5.24,
+     "end": 5.392
+    },
+    {
+     "w": "thay",
+     "start": 5.4,
+     "end": 5.571
+    },
+    {
+     "w": "hết",
+     "start": 5.58,
+     "end": 5.732
+    },
+    {
+     "w": "chưa",
+     "start": 5.74,
+     "end": 5.911
+    },
+    {
+     "w": "chắc",
+     "start": 5.92,
+     "end": 6.148
+    },
+    {
+     "w": "có",
+     "start": 6.16,
+     "end": 6.274
+    },
+    {
+     "w": "lợi.",
+     "start": 6.28,
+     "end": 6.57133
+    },
+    {
+     "w": "Ngôn",
+     "start": 6.58667,
+     "end": 6.878
+    },
+    {
+     "w": "ngữ",
+     "start": 6.89333,
+     "end": 7.18467
+    },
+    {
+     "w": "khác",
+     "start": 7.2,
+     "end": 7.39
+    },
+    {
+     "w": "có",
+     "start": 7.4,
+     "end": 7.571
+    },
+    {
+     "w": "thể",
+     "start": 7.58,
+     "end": 7.694
+    },
+    {
+     "w": "kết",
+     "start": 7.7,
+     "end": 7.852
+    },
+    {
+     "w": "hợp",
+     "start": 7.86,
+     "end": 8.088
+    },
+    {
+     "w": "với",
+     "start": 8.1,
+     "end": 8.176
+    },
+    {
+     "w": "nền",
+     "start": 8.18,
+     "end": 8.351
+    },
+    {
+     "w": "tảng",
+     "start": 8.36,
+     "end": 8.569
+    },
+    {
+     "w": "ấy.",
+     "start": 8.58,
+     "end": 8.9315
+    }
+   ],
+   "text": "C còn có lượng mã, thư viện và công cụ tích lũy qua nhiều năm. Thành phần đang đáp ứng tốt yêu cầu thì thay hết chưa chắc có lợi. Ngôn ngữ khác có thể kết hợp với nền tảng ấy."
+  },
+  {
+   "id": "scene-19",
+   "file": "assets/audio/vo-19.mp3",
+   "duration": 9.6,
+   "words": [
+    {
+     "w": "Quyền",
+     "start": 0.0,
+     "end": 0.228
+    },
+    {
+     "w": "kiểm",
+     "start": 0.24,
+     "end": 0.373
+    },
+    {
+     "w": "soát",
+     "start": 0.38,
+     "end": 0.646
+    },
+    {
+     "w": "đòi",
+     "start": 0.66,
+     "end": 0.907
+    },
+    {
+     "w": "hỏi",
+     "start": 0.92,
+     "end": 1.091
+    },
+    {
+     "w": "cẩn",
+     "start": 1.1,
+     "end": 1.309
+    },
+    {
+     "w": "thận",
+     "start": 1.32,
+     "end": 1.453
+    },
+    {
+     "w": "hơn.",
+     "start": 1.46,
+     "end": 2.182
+    },
+    {
+     "w": "Đọc",
+     "start": 2.22,
+     "end": 2.372
+    },
+    {
+     "w": "hoặc",
+     "start": 2.38,
+     "end": 2.5225
+    },
+    {
+     "w": "ghi",
+     "start": 2.53,
+     "end": 2.6725
+    },
+    {
+     "w": "sai",
+     "start": 2.68,
+     "end": 2.889
+    },
+    {
+     "w": "vùng",
+     "start": 2.9,
+     "end": 3.109
+    },
+    {
+     "w": "nhớ",
+     "start": 3.12,
+     "end": 3.348
+    },
+    {
+     "w": "có",
+     "start": 3.36,
+     "end": 3.512
+    },
+    {
+     "w": "thể",
+     "start": 3.52,
+     "end": 3.615
+    },
+    {
+     "w": "gây",
+     "start": 3.62,
+     "end": 3.772
+    },
+    {
+     "w": "lỗi",
+     "start": 3.78,
+     "end": 3.932
+    },
+    {
+     "w": "nghiêm",
+     "start": 3.94,
+     "end": 4.092
+    },
+    {
+     "w": "trọng.",
+     "start": 4.1,
+     "end": 4.765
+    },
+    {
+     "w": "Học",
+     "start": 4.8,
+     "end": 5.047
+    },
+    {
+     "w": "C",
+     "start": 5.06,
+     "end": 5.193
+    },
+    {
+     "w": "cần",
+     "start": 5.2,
+     "end": 5.352
+    },
+    {
+     "w": "hiểu",
+     "start": 5.36,
+     "end": 5.531
+    },
+    {
+     "w": "giới",
+     "start": 5.54,
+     "end": 5.711
+    },
+    {
+     "w": "hạn,",
+     "start": 5.72,
+     "end": 6.29
+    },
+    {
+     "w": "kiểm",
+     "start": 6.32,
+     "end": 6.396
+    },
+    {
+     "w": "tra",
+     "start": 6.4,
+     "end": 6.59
+    },
+    {
+     "w": "dữ",
+     "start": 6.6,
+     "end": 6.771
+    },
+    {
+     "w": "liệu",
+     "start": 6.78,
+     "end": 6.97
+    },
+    {
+     "w": "và",
+     "start": 6.98,
+     "end": 7.094
+    },
+    {
+     "w": "dùng",
+     "start": 7.1,
+     "end": 7.252
+    },
+    {
+     "w": "công",
+     "start": 7.26,
+     "end": 7.374
+    },
+    {
+     "w": "cụ",
+     "start": 7.38,
+     "end": 7.57
+    },
+    {
+     "w": "tìm",
+     "start": 7.58,
+     "end": 7.789
+    },
+    {
+     "w": "lỗi,",
+     "start": 7.8,
+     "end": 8.313
+    },
+    {
+     "w": "không",
+     "start": 8.34,
+     "end": 8.511
+    },
+    {
+     "w": "chỉ",
+     "start": 8.52,
+     "end": 8.691
+    },
+    {
+     "w": "chạy",
+     "start": 8.7,
+     "end": 8.89
+    },
+    {
+     "w": "được",
+     "start": 8.9,
+     "end": 9.014
+    },
+    {
+     "w": "chương",
+     "start": 9.02,
+     "end": 9.153
+    },
+    {
+     "w": "trình.",
+     "start": 9.16,
+     "end": 9.5685
+    }
+   ],
+   "text": "Quyền kiểm soát đòi hỏi cẩn thận hơn. Đọc hoặc ghi sai vùng nhớ có thể gây lỗi nghiêm trọng. Học C cần hiểu giới hạn, kiểm tra dữ liệu và dùng công cụ tìm lỗi, không chỉ chạy được chương trình."
+  },
+  {
+   "id": "scene-20",
+   "file": "assets/audio/vo-20.mp3",
+   "duration": 9.44,
+   "words": [
+    {
+     "w": "Với",
+     "start": 0.0,
+     "end": 0.247
+    },
+    {
+     "w": "xử",
+     "start": 0.26,
+     "end": 0.412
+    },
+    {
+     "w": "lý",
+     "start": 0.42,
+     "end": 0.572
+    },
+    {
+     "w": "dữ",
+     "start": 0.58,
+     "end": 0.694
+    },
+    {
+     "w": "liệu,",
+     "start": 0.7,
+     "end": 1.46
+    },
+    {
+     "w": "hãy",
+     "start": 1.5,
+     "end": 1.576
+    },
+    {
+     "w": "xét",
+     "start": 1.58,
+     "end": 1.751
+    },
+    {
+     "w": "thư",
+     "start": 1.76,
+     "end": 1.874
+    },
+    {
+     "w": "viện",
+     "start": 1.88,
+     "end": 2.051
+    },
+    {
+     "w": "sẵn",
+     "start": 2.06,
+     "end": 2.269
+    },
+    {
+     "w": "có.",
+     "start": 2.28,
+     "end": 2.907
+    },
+    {
+     "w": "Với",
+     "start": 2.94,
+     "end": 3.13
+    },
+    {
+     "w": "giao",
+     "start": 3.14,
+     "end": 3.311
+    },
+    {
+     "w": "diện",
+     "start": 3.32,
+     "end": 3.491
+    },
+    {
+     "w": "web,",
+     "start": 3.5,
+     "end": 4.07
+    },
+    {
+     "w": "hãy",
+     "start": 4.1,
+     "end": 4.176
+    },
+    {
+     "w": "xét",
+     "start": 4.18,
+     "end": 4.275
+    },
+    {
+     "w": "môi",
+     "start": 4.28,
+     "end": 4.508
+    },
+    {
+     "w": "trường",
+     "start": 4.52,
+     "end": 4.71
+    },
+    {
+     "w": "trình",
+     "start": 4.72,
+     "end": 4.891
+    },
+    {
+     "w": "duyệt.",
+     "start": 4.9,
+     "end": 5.508
+    },
+    {
+     "w": "Khi",
+     "start": 5.54,
+     "end": 5.749
+    },
+    {
+     "w": "làm",
+     "start": 5.76,
+     "end": 5.9215
+    },
+    {
+     "w": "sát",
+     "start": 5.93,
+     "end": 6.0915
+    },
+    {
+     "w": "thiết",
+     "start": 6.1,
+     "end": 6.233
+    },
+    {
+     "w": "bị,",
+     "start": 6.24,
+     "end": 6.43
+    },
+    {
+     "w": "mức",
+     "start": 6.44,
+     "end": 6.706
+    },
+    {
+     "w": "kiểm",
+     "start": 6.72,
+     "end": 6.834
+    },
+    {
+     "w": "soát",
+     "start": 6.84,
+     "end": 7.087
+    },
+    {
+     "w": "thường",
+     "start": 7.1,
+     "end": 7.195
+    },
+    {
+     "w": "quan",
+     "start": 7.2,
+     "end": 7.333
+    },
+    {
+     "w": "trọng.",
+     "start": 7.34,
+     "end": 7.967
+    },
+    {
+     "w": "Hãy",
+     "start": 8.0,
+     "end": 8.095
+    },
+    {
+     "w": "bắt",
+     "start": 8.1,
+     "end": 8.252
+    },
+    {
+     "w": "đầu",
+     "start": 8.26,
+     "end": 8.393
+    },
+    {
+     "w": "từ",
+     "start": 8.4,
+     "end": 8.514
+    },
+    {
+     "w": "yêu",
+     "start": 8.52,
+     "end": 8.653
+    },
+    {
+     "w": "cầu",
+     "start": 8.66,
+     "end": 8.831
+    },
+    {
+     "w": "công",
+     "start": 8.84,
+     "end": 8.973
+    },
+    {
+     "w": "việc.",
+     "start": 8.98,
+     "end": 9.4075
+    }
+   ],
+   "text": "Với xử lý dữ liệu, hãy xét thư viện sẵn có. Với giao diện web, hãy xét môi trường trình duyệt. Khi làm sát thiết bị, mức kiểm soát thường quan trọng. Hãy bắt đầu từ yêu cầu công việc."
+  },
+  {
+   "id": "scene-21",
+   "file": "assets/audio/vo-21.mp3",
+   "duration": 9.52,
+   "words": [
+    {
+     "w": "Các",
+     "start": 0.07,
+     "end": 0.1365
+    },
+    {
+     "w": "vùng",
+     "start": 0.14,
+     "end": 0.349
+    },
+    {
+     "w": "này",
+     "start": 0.36,
+     "end": 0.512
+    },
+    {
+     "w": "có",
+     "start": 0.52,
+     "end": 0.672
+    },
+    {
+     "w": "phần",
+     "start": 0.68,
+     "end": 0.851
+    },
+    {
+     "w": "giao",
+     "start": 0.86,
+     "end": 1.031
+    },
+    {
+     "w": "nhau.",
+     "start": 1.04,
+     "end": 1.5625
+    },
+    {
+     "w": "Python",
+     "start": 1.59,
+     "end": 2.1125
+    },
+    {
+     "w": "chạy",
+     "start": 2.14,
+     "end": 2.349
+    },
+    {
+     "w": "được",
+     "start": 2.36,
+     "end": 2.474
+    },
+    {
+     "w": "trên",
+     "start": 2.48,
+     "end": 2.689
+    },
+    {
+     "w": "một",
+     "start": 2.7,
+     "end": 2.833
+    },
+    {
+     "w": "số",
+     "start": 2.84,
+     "end": 3.011
+    },
+    {
+     "w": "thiết",
+     "start": 3.02,
+     "end": 3.153
+    },
+    {
+     "w": "bị;",
+     "start": 3.16,
+     "end": 3.521
+    },
+    {
+     "w": "C",
+     "start": 3.54,
+     "end": 3.654
+    },
+    {
+     "w": "cộng",
+     "start": 3.66,
+     "end": 3.869
+    },
+    {
+     "w": "cộng",
+     "start": 3.88,
+     "end": 4.127
+    },
+    {
+     "w": "cũng",
+     "start": 4.14,
+     "end": 4.254
+    },
+    {
+     "w": "làm",
+     "start": 4.26,
+     "end": 4.488
+    },
+    {
+     "w": "phần",
+     "start": 4.5,
+     "end": 4.766
+    },
+    {
+     "w": "mềm",
+     "start": 4.78,
+     "end": 5.027
+    },
+    {
+     "w": "hệ",
+     "start": 5.04,
+     "end": 5.154
+    },
+    {
+     "w": "thống.",
+     "start": 5.16,
+     "end": 5.806
+    },
+    {
+     "w": "Ví",
+     "start": 5.84,
+     "end": 5.954
+    },
+    {
+     "w": "dụ",
+     "start": 5.96,
+     "end": 6.074
+    },
+    {
+     "w": "này",
+     "start": 6.08,
+     "end": 6.251
+    },
+    {
+     "w": "không",
+     "start": 6.26,
+     "end": 6.469
+    },
+    {
+     "w": "chia",
+     "start": 6.48,
+     "end": 6.651
+    },
+    {
+     "w": "thành",
+     "start": 6.66,
+     "end": 6.793
+    },
+    {
+     "w": "bốn",
+     "start": 6.8,
+     "end": 6.99
+    },
+    {
+     "w": "ngăn",
+     "start": 7.0,
+     "end": 7.171
+    },
+    {
+     "w": "kín.",
+     "start": 7.18,
+     "end": 7.693
+    },
+    {
+     "w": "Không",
+     "start": 7.72,
+     "end": 7.872
+    },
+    {
+     "w": "ngôn",
+     "start": 7.88,
+     "end": 8.051
+    },
+    {
+     "w": "ngữ",
+     "start": 8.06,
+     "end": 8.212
+    },
+    {
+     "w": "nào",
+     "start": 8.22,
+     "end": 8.372
+    },
+    {
+     "w": "thắng",
+     "start": 8.38,
+     "end": 8.627
+    },
+    {
+     "w": "mọi",
+     "start": 8.64,
+     "end": 8.868
+    },
+    {
+     "w": "bài",
+     "start": 8.88,
+     "end": 9.013
+    },
+    {
+     "w": "toán.",
+     "start": 9.02,
+     "end": 9.4855
+    }
+   ],
+   "text": "Các vùng này có phần giao nhau. Python chạy được trên một số thiết bị; C cộng cộng cũng làm phần mềm hệ thống. Ví dụ này không chia thành bốn ngăn kín. Không ngôn ngữ nào thắng mọi bài toán."
+  },
+  {
+   "id": "scene-22",
+   "file": "assets/audio/vo-22.mp3",
+   "duration": 9.76,
+   "words": [
+    {
+     "w": "Học",
+     "start": 0.0,
+     "end": 0.247
+    },
+    {
+     "w": "C",
+     "start": 0.26,
+     "end": 0.412
+    },
+    {
+     "w": "cho",
+     "start": 0.42,
+     "end": 0.553
+    },
+    {
+     "w": "bạn",
+     "start": 0.56,
+     "end": 0.712
+    },
+    {
+     "w": "điều",
+     "start": 0.72,
+     "end": 0.872
+    },
+    {
+     "w": "gì?",
+     "start": 0.88,
+     "end": 1.526
+    },
+    {
+     "w": "Hiểu",
+     "start": 1.56,
+     "end": 1.674
+    },
+    {
+     "w": "dữ",
+     "start": 1.68,
+     "end": 1.832
+    },
+    {
+     "w": "liệu",
+     "start": 1.84,
+     "end": 2.011
+    },
+    {
+     "w": "được",
+     "start": 2.02,
+     "end": 2.134
+    },
+    {
+     "w": "biểu",
+     "start": 2.14,
+     "end": 2.368
+    },
+    {
+     "w": "diễn,",
+     "start": 2.38,
+     "end": 3.026
+    },
+    {
+     "w": "lưu",
+     "start": 3.06,
+     "end": 3.193
+    },
+    {
+     "w": "giữ",
+     "start": 3.2,
+     "end": 3.333
+    },
+    {
+     "w": "và",
+     "start": 3.34,
+     "end": 3.473
+    },
+    {
+     "w": "xử",
+     "start": 3.48,
+     "end": 3.613
+    },
+    {
+     "w": "lý",
+     "start": 3.62,
+     "end": 3.753
+    },
+    {
+     "w": "ra",
+     "start": 3.76,
+     "end": 3.893
+    },
+    {
+     "w": "sao,",
+     "start": 3.9,
+     "end": 4.489
+    },
+    {
+     "w": "cùng",
+     "start": 4.52,
+     "end": 4.634
+    },
+    {
+     "w": "trách",
+     "start": 4.64,
+     "end": 4.792
+    },
+    {
+     "w": "nhiệm",
+     "start": 4.8,
+     "end": 4.971
+    },
+    {
+     "w": "người",
+     "start": 4.98,
+     "end": 5.113
+    },
+    {
+     "w": "viết.",
+     "start": 5.12,
+     "end": 5.785
+    },
+    {
+     "w": "Bạn",
+     "start": 5.82,
+     "end": 5.972
+    },
+    {
+     "w": "đang",
+     "start": 5.98,
+     "end": 6.075
+    },
+    {
+     "w": "học",
+     "start": 6.08,
+     "end": 6.27
+    },
+    {
+     "w": "một",
+     "start": 6.28,
+     "end": 6.432
+    },
+    {
+     "w": "công",
+     "start": 6.44,
+     "end": 6.573
+    },
+    {
+     "w": "cụ",
+     "start": 6.58,
+     "end": 6.827
+    },
+    {
+     "w": "với",
+     "start": 6.84,
+     "end": 7.011
+    },
+    {
+     "w": "những",
+     "start": 7.02,
+     "end": 7.134
+    },
+    {
+     "w": "đánh",
+     "start": 7.14,
+     "end": 7.33
+    },
+    {
+     "w": "đổi",
+     "start": 7.34,
+     "end": 7.492
+    },
+    {
+     "w": "cụ",
+     "start": 7.5,
+     "end": 7.69
+    },
+    {
+     "w": "thể,",
+     "start": 7.7,
+     "end": 8.27
+    },
+    {
+     "w": "không",
+     "start": 8.3,
+     "end": 8.414
+    },
+    {
+     "w": "cần",
+     "start": 8.42,
+     "end": 8.572
+    },
+    {
+     "w": "giỏi",
+     "start": 8.58,
+     "end": 8.808
+    },
+    {
+     "w": "mọi",
+     "start": 8.82,
+     "end": 9.0005
+    },
+    {
+     "w": "ngôn",
+     "start": 9.01,
+     "end": 9.1905
+    },
+    {
+     "w": "ngữ",
+     "start": 9.2,
+     "end": 9.314
+    },
+    {
+     "w": "trước.",
+     "start": 9.32,
+     "end": 9.7285
+    }
+   ],
+   "text": "Học C cho bạn điều gì? Hiểu dữ liệu được biểu diễn, lưu giữ và xử lý ra sao, cùng trách nhiệm người viết. Bạn đang học một công cụ với những đánh đổi cụ thể, không cần giỏi mọi ngôn ngữ trước."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-23.mp3",
+   "duration": 8.4,
+   "words": [
+    {
+     "w": "Cùng",
+     "start": 0.0,
+     "end": 0.171
+    },
+    {
+     "w": "một",
+     "start": 0.18,
+     "end": 0.294
+    },
+    {
+     "w": "số",
+     "start": 0.3,
+     "end": 0.414
+    },
+    {
+     "w": "đo",
+     "start": 0.42,
+     "end": 0.591
+    },
+    {
+     "w": "có",
+     "start": 0.6,
+     "end": 0.752
+    },
+    {
+     "w": "thể",
+     "start": 0.76,
+     "end": 0.874
+    },
+    {
+     "w": "đi",
+     "start": 0.88,
+     "end": 1.032
+    },
+    {
+     "w": "qua",
+     "start": 1.04,
+     "end": 1.249
+    },
+    {
+     "w": "nhiều",
+     "start": 1.26,
+     "end": 1.469
+    },
+    {
+     "w": "ngôn",
+     "start": 1.48,
+     "end": 1.689
+    },
+    {
+     "w": "ngữ.",
+     "start": 1.7,
+     "end": 2.251
+    },
+    {
+     "w": "C",
+     "start": 2.28,
+     "end": 2.508
+    },
+    {
+     "w": "có",
+     "start": 2.52,
+     "end": 2.691
+    },
+    {
+     "w": "chỗ",
+     "start": 2.7,
+     "end": 2.89
+    },
+    {
+     "w": "đứng",
+     "start": 2.9,
+     "end": 3.052
+    },
+    {
+     "w": "khi",
+     "start": 3.06,
+     "end": 3.212
+    },
+    {
+     "w": "khả",
+     "start": 3.22,
+     "end": 3.41
+    },
+    {
+     "w": "năng",
+     "start": 3.42,
+     "end": 3.553
+    },
+    {
+     "w": "kiểm",
+     "start": 3.56,
+     "end": 3.712
+    },
+    {
+     "w": "soát",
+     "start": 3.72,
+     "end": 3.948
+    },
+    {
+     "w": "và",
+     "start": 3.96,
+     "end": 4.055
+    },
+    {
+     "w": "nền",
+     "start": 4.06,
+     "end": 4.25
+    },
+    {
+     "w": "tảng",
+     "start": 4.26,
+     "end": 4.431
+    },
+    {
+     "w": "sẵn",
+     "start": 4.44,
+     "end": 4.687
+    },
+    {
+     "w": "có",
+     "start": 4.7,
+     "end": 4.776
+    },
+    {
+     "w": "phù",
+     "start": 4.78,
+     "end": 4.951
+    },
+    {
+     "w": "hợp",
+     "start": 4.96,
+     "end": 5.112
+    },
+    {
+     "w": "yêu",
+     "start": 5.12,
+     "end": 5.196
+    },
+    {
+     "w": "cầu.",
+     "start": 5.2,
+     "end": 5.599
+    },
+    {
+     "w": "Hãy",
+     "start": 5.62,
+     "end": 6.019
+    },
+    {
+     "w": "học",
+     "start": 6.04,
+     "end": 6.192
+    },
+    {
+     "w": "cách",
+     "start": 6.2,
+     "end": 6.333
+    },
+    {
+     "w": "làm",
+     "start": 6.34,
+     "end": 6.492
+    },
+    {
+     "w": "việc",
+     "start": 6.5,
+     "end": 6.671
+    },
+    {
+     "w": "với",
+     "start": 6.68,
+     "end": 6.87
+    },
+    {
+     "w": "các",
+     "start": 6.88,
+     "end": 7.051
+    },
+    {
+     "w": "lựa",
+     "start": 7.06,
+     "end": 7.231
+    },
+    {
+     "w": "chọn",
+     "start": 7.24,
+     "end": 7.373
+    },
+    {
+     "w": "ấy,",
+     "start": 7.38,
+     "end": 7.551
+    },
+    {
+     "w": "từng",
+     "start": 7.56,
+     "end": 7.826
+    },
+    {
+     "w": "bước",
+     "start": 7.84,
+     "end": 7.992
+    },
+    {
+     "w": "một.",
+     "start": 8.0,
+     "end": 8.3705
+    }
+   ],
+   "text": "Cùng một số đo có thể đi qua nhiều ngôn ngữ. C có chỗ đứng khi khả năng kiểm soát và nền tảng sẵn có phù hợp yêu cầu. Hãy học cách làm việc với các lựa chọn ấy, từng bước một."
+  }
+ ],
+ "timing_refinement": "Local faster-whisper word-start anchors, monotonic interpolation for unmatched words; display script retained. Automated ASR review, not human listening certification."
+}

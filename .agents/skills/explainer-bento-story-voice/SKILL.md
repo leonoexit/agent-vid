@@ -3,7 +3,7 @@ name: explainer-bento-story-voice
 description: >
   Create narrated vertical programming explainers in the Think Fast & Slow reference's colorful bento style: flat Maple palette, charcoal outlines, hard offset shadows, Merriweather headings, Inter body and JetBrains Mono code. Use for one programming concept traced through one small worked example for hobbyist beginners when this bento style is requested. Uses a fixed question → setup → decode → execute → verify → rule narrative, composition-led native diagrams, icon-first visuals, Vietnamese/English voice and HyperFrames MP4 rendering.
 metadata:
-  version: "0.4.0"
+  version: "0.5.0"
 ---
 
 # Bento story explainer
@@ -18,7 +18,7 @@ carousel or a collection of unrelated facts. Use actual state changes in code, v
 
 Read [references/art-direction.md](references/art-direction.md) and [references/story-motion.md](references/story-motion.md)
 before planning. Also read [references/composition-grammar.md](references/composition-grammar.md) for the spatial patterns
-and their temporal adaptations; palette and border matching alone do not capture the reference. [references/ref-index.md](references/ref-index.md) covers **all 67 slides across six files**, including
+and their temporal adaptations. Read [references/text-color-icon-grammar.md](references/text-color-icon-grammar.md) before styling text, highlights and icons; palette and border matching alone do not capture the reference. [references/ref-index.md](references/ref-index.md) covers **all 67 slides across six files**, including
 comparison pairs, nested callouts, chart examples and recap structures. Each pattern has a concrete adaptation and
 implementation status. Original HTML is bundled unchanged in references/source; read the relevant file for details,
 not all six for every production. [references/source-manifest.json](references/source-manifest.json) records hashes
@@ -27,8 +27,7 @@ or verified programming facts.
 
 Implement one coherent art style: a light gray board with a 20px charcoal frame; opaque flat-color bento panels,
 4px charcoal borders, 32px corners and 12px hard offset shadows. Colors are sky blue #8ce4ff, yellow #feee91,
-orange #ffa239, red #ff5656, green #10b981, purple #a594f9, white and charcoal #2d3436. Pair one primary color
-with one support color per scene; keep an object's tone stable across operations. Use dark text on colored surfaces,
+orange #ffa239, red #ff5656, green #10b981, purple #a594f9, white and charcoal #2d3436. Use one dominant color mass and one supporting mass per scene; additional stable identity colors are valid in comparisons. Keep an object's tone stable across operations; highlight the relevant word or part without recoloring its whole identity. Use dark text on colored surfaces,
 white/yellow on charcoal. Local fonts: Merriweather heavy serif headings, Inter body, JetBrains Mono code/data/tags.
 No blurred mesh, translucent glass, gradients or soft glow in this style.
 
@@ -88,7 +87,7 @@ owns exact code, labels, data, connections, containers and changing state. Gener
 
 Use native HTML/CSS/SVG for exact data, code, containment, state and relationships. For ordinary recognizable
 objects (lamp, person, file, clock, keyboard), prefer an available coherent icon family or simple native SVG.
-Keep icons local and preserve their license/attribution; do not mix unrelated outline, solid, emoji and 3D families.
+The bundled default is Font Awesome Free Solid 6.4.0: local SVGs in template/assets/icons with its upstream license. Use names as text, not a second logo family. Keep icons local and preserve their license/attribution; do not mix unrelated outline, solid, emoji and 3D families.
 A large well-placed icon can be the visual anchor. Zero generated images is a complete production choice.
 
 Use ImageGen only when a specific contextual scene, distinctive illustration or texture materially benefits from
@@ -168,7 +167,7 @@ local-voice runtime; `scripts/setup-voice.py --check` reports readiness. Keep on
    Review each warning against the model and composition; subtitle changes cannot clear a model-stillness concern.
    Recompose or show the actual causal action, or document a specific reading task. These are review cues,
    not scores to game with pulses. Incorrect word timing is rejected during sync; estimates still need listening.
-   Run `hyperframes lint <dir>` and `hyperframes check <dir>`. Fix runtime/layout/contrast errors. The inherited
+   Use a 4.5:1 text/background contrast target on settled readable states, including nested surfaces and highlights. Inspect actual composited colors rather than assuming the panel color. Run `hyperframes lint <dir>` and `hyperframes check <dir>`. Fix runtime/layout/contrast errors. The inherited
    `nested_structure_needs_subcomposition` warning may occur for the root clip and does not block rendering.
 7. Inspect before/after each deferred reveal so future answers are genuinely hidden. Snapshot each shot and the midpoint of each important transfer/open/morph action. Also inspect frames before
    and after writes, scene boundaries, and reverse seeks. Open the contact sheets: the primary focus is obvious within
@@ -184,7 +183,7 @@ local-voice runtime; `scripts/setup-voice.py --check` reports readiness. Keep on
 
 ## Maintained resources
 
-Styling: template/theme.css. Seekable renderer: template/story-engine.js. Voice defaults: theme.json.
+Styling: template/theme.css and opt-in template/emphasis.css. The latter supplies native span/tag/icon styling, not new JSON rich-text or timeline APIs. Project code owns the stable span selectors and spoken-cue animations. Seekable renderer: template/story-engine.js. Voice defaults: theme.json.
 Schema checks: scripts/validate-script.py. Motion review: scripts/motion_audit.py. Cutout/sticker workflow: scripts/asset-library.py and assets/library.
 Keep these aligned when updating the skill. Preserve bundled licenses and library metadata/history.
 The motion vocabulary is intentionally small; extend an individual video's copy when the explanation needs a more

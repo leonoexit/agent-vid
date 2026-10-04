@@ -1,0 +1,30 @@
+{
+  "media": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "230.500000",
+      "size": "18139918"
+    }
+  },
+  "videoSha256": "092f0a9b866cf4af0eb2347d35e7f1303eb1f4f4f60489b0f576f7bfab88f988",
+  "sampledFrameMAERange": [
+    3.448652102623457,
+    3.93250675154321
+  ],
+  "fullDecode": "pass"
+}

@@ -25,10 +25,10 @@ directories. WOFF2 releases implement the source families (Merriweather width fi
 Serif titles wrap earlier than the parent skill's geometric sans: shorten wording, insert deliberate line breaks and
 inspect Vietnamese diacritics. Character limits do not guarantee fit. Do not shrink to recreate dense source slides.
 
-Color encodes a stable entity role, never a random new identity per scene. Suggested mapping: yellow source/data,
+Read [text-color-icon-grammar.md](text-color-icon-grammar.md) for inline accents, emphasis precedence, icon roles and source examples. Color encodes a stable entity role, never a random new identity per scene. Suggested mapping: yellow source/data,
 blue destination/read, orange operation token, purple optional secondary result, red explicit error only when labeled.
 White text on the source's red/green and pastel text on white have weak contrast. This adaptation uses charcoal text
-on all color fills, and white/yellow text on charcoal. Keep labels and values legible during focus/dimming.
+on bright fills, and white/yellow text on charcoal. For red warning surfaces use a white inset or white tag with a red border: charcoal on palette red is only about 4.06:1. Keep labels and values legible during focus/dimming.
 
 ## Legacy scaffold coordinates (not mandatory production staging)
 

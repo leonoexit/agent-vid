@@ -1,0 +1,1474 @@
+{
+  "duration": 230.48,
+  "narrationSections": 24,
+  "renderer": "project-specific native DOM/SVG + GSAP",
+  "stockAuditLimitation": "script scenes have no stock events; stock motion-audit.json cannot assess custom renderer",
+  "operationCount": 80,
+  "emphasisCount": 11,
+  "emphasis": [
+    {
+      "id": "v-56",
+      "start": 6.73,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-88",
+      "start": 23.41,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-92",
+      "start": 28.73,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-118",
+      "start": 41.11,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-131",
+      "start": 53.91,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-142",
+      "start": 64.07,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-180",
+      "start": 99.01,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-262",
+      "start": 159.95,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-290",
+      "start": 186.77,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-326",
+      "start": 218.61,
+      "end": null,
+      "tone": "yellow"
+    },
+    {
+      "id": "v-330",
+      "start": 224.01,
+      "end": null,
+      "tone": "yellow"
+    }
+  ],
+  "sections": [
+    {
+      "section": "intro",
+      "start": 0,
+      "end": 9.62,
+      "nativeOperations": [
+        {
+          "id": "v-57",
+          "start": 8.07,
+          "end": 8.870000000000001,
+          "job": "measurement becomes continuity anchor"
+        },
+        {
+          "id": "v-61",
+          "start": 6.73,
+          "end": 7.380000000000001,
+          "job": "languages gather around task"
+        },
+        {
+          "id": "v-62",
+          "start": 6.880000000000001,
+          "end": 7.530000000000001,
+          "job": "languages gather around task"
+        },
+        {
+          "id": "v-63",
+          "start": 7.03,
+          "end": 7.680000000000001,
+          "job": "languages gather around task"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-55",
+          "t": 6.73,
+          "reason": "content"
+        },
+        {
+          "id": "v-57",
+          "t": 0.81,
+          "reason": "content"
+        },
+        {
+          "id": "v-61",
+          "t": 1.9100000000000001,
+          "reason": "content"
+        },
+        {
+          "id": "v-62",
+          "t": 2.5100000000000002,
+          "reason": "content"
+        },
+        {
+          "id": "v-63",
+          "t": 3.1100000000000003,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 3.11,
+          "end": 6.73,
+          "duration": 3.62
+        }
+      ],
+      "readingReason": "Read the four language names while narrator poses the shared question."
+    },
+    {
+      "section": "scene-1",
+      "start": 9.62,
+      "end": 18.6,
+      "nativeOperations": [
+        {
+          "id": "shot-1",
+          "start": 15.53,
+          "end": 16.43,
+          "job": "route"
+        },
+        {
+          "id": "shot-1",
+          "start": 16.87,
+          "end": 17.77,
+          "job": "route"
+        },
+        {
+          "id": "v-76",
+          "start": 15.53,
+          "end": 16.43,
+          "job": "transfer 26°C"
+        },
+        {
+          "id": "v-77",
+          "start": 16.87,
+          "end": 17.77,
+          "job": "transfer 26°C"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-64",
+          "t": 12.91,
+          "reason": "content"
+        },
+        {
+          "id": "v-65",
+          "t": 15.53,
+          "reason": "content"
+        },
+        {
+          "id": "v-66",
+          "t": 16.87,
+          "reason": "content"
+        },
+        {
+          "id": "v-76",
+          "t": 15.53,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-77",
+          "t": 16.87,
+          "reason": "moving data"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 9.62,
+          "end": 12.91,
+          "duration": 3.29
+        }
+      ],
+      "readingReason": "Narration first defines what a sensor does before the three jobs open."
+    },
+    {
+      "section": "scene-2",
+      "start": 18.6,
+      "end": 27.82,
+      "nativeOperations": [
+        {
+          "id": "v-78",
+          "start": 21.99,
+          "end": 22.79,
+          "job": "open device to inspect memory"
+        },
+        {
+          "id": "v-84",
+          "start": 25.81,
+          "end": 26.259999999999998,
+          "job": "inspect stored slot"
+        },
+        {
+          "id": "v-85",
+          "start": 25.93,
+          "end": 26.38,
+          "job": "inspect stored slot"
+        },
+        {
+          "id": "v-86",
+          "start": 26.049999999999997,
+          "end": 26.499999999999996,
+          "job": "inspect stored slot"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-78",
+          "t": 19.71,
+          "reason": "content"
+        },
+        {
+          "id": "v-81",
+          "t": 21.99,
+          "reason": "content"
+        },
+        {
+          "id": "v-87",
+          "t": 23.41,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-3",
+      "start": 27.82,
+      "end": 37.12,
+      "nativeOperations": [
+        {
+          "id": "v-101",
+          "start": 33.73,
+          "end": 34.379999999999995,
+          "job": "transfer 26"
+        },
+        {
+          "id": "v-97",
+          "start": 34.379999999999995,
+          "end": 34.48,
+          "job": "commit 26"
+        },
+        {
+          "id": "v-102",
+          "start": 34.129999999999995,
+          "end": 34.779999999999994,
+          "job": "transfer 27"
+        },
+        {
+          "id": "v-98",
+          "start": 34.779999999999994,
+          "end": 34.879999999999995,
+          "job": "commit 27"
+        },
+        {
+          "id": "v-103",
+          "start": 34.529999999999994,
+          "end": 35.17999999999999,
+          "job": "transfer 25"
+        },
+        {
+          "id": "v-99",
+          "start": 35.17999999999999,
+          "end": 35.279999999999994,
+          "job": "commit 25"
+        },
+        {
+          "id": "v-104",
+          "start": 34.379999999999995,
+          "end": 34.48,
+          "job": "commit Đã dùng: 1 / 100"
+        },
+        {
+          "id": "v-104",
+          "start": 34.779999999999994,
+          "end": 34.879999999999995,
+          "job": "commit Đã dùng: 2 / 100"
+        },
+        {
+          "id": "v-104",
+          "start": 35.17999999999999,
+          "end": 35.279999999999994,
+          "job": "commit Đã dùng: 3 / 100"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-93",
+          "t": 29.37,
+          "reason": "content"
+        },
+        {
+          "id": "v-94",
+          "t": 30.31,
+          "reason": "content"
+        },
+        {
+          "id": "v-95",
+          "t": 32.17,
+          "reason": "content"
+        },
+        {
+          "id": "v-101",
+          "t": 33.73,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-102",
+          "t": 34.129999999999995,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-103",
+          "t": 34.529999999999994,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-105",
+          "t": 35.99,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-4",
+      "start": 37.12,
+      "end": 46.82,
+      "nativeOperations": [
+        {
+          "id": "v-114",
+          "start": 39.09,
+          "end": 40.09,
+          "job": "transfer 28"
+        },
+        {
+          "id": "v-110",
+          "start": 40.09,
+          "end": 40.190000000000005,
+          "job": "commit 28"
+        },
+        {
+          "id": "shot-4",
+          "start": 41.11,
+          "end": 42.01,
+          "job": "inspect capacity boundary"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-107",
+          "t": 37.47,
+          "reason": "content"
+        },
+        {
+          "id": "v-114",
+          "t": 39.09,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-115",
+          "t": 40.09,
+          "reason": "content"
+        },
+        {
+          "id": "v-116",
+          "t": 41.11,
+          "reason": "content"
+        },
+        {
+          "id": "v-119",
+          "t": 45.63,
+          "reason": "content"
+        },
+        {
+          "id": "v-120",
+          "t": 42.97,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-5",
+      "start": 46.82,
+      "end": 56.44,
+      "nativeOperations": [
+        {
+          "id": "v-123",
+          "start": 50.55,
+          "end": 51.25,
+          "job": "list expands for new measurement"
+        },
+        {
+          "id": "v-129",
+          "start": 50.55,
+          "end": 51.15,
+          "job": "append new element"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-123",
+          "t": 49.95,
+          "reason": "content"
+        },
+        {
+          "id": "v-128",
+          "t": 48.17,
+          "reason": "content"
+        },
+        {
+          "id": "v-129",
+          "t": 50.55,
+          "reason": "content"
+        },
+        {
+          "id": "v-130",
+          "t": 53.91,
+          "reason": "content"
+        },
+        {
+          "id": "v-132",
+          "t": 48.17,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-6",
+      "start": 56.44,
+      "end": 65.66,
+      "nativeOperations": [
+        {
+          "id": "v-138",
+          "start": 60.55,
+          "end": 61.25,
+          "job": "simple interface covers internal detail"
+        },
+        {
+          "id": "v-140",
+          "start": 60.55,
+          "end": 61.349999999999994,
+          "job": "transfer 28"
+        },
+        {
+          "id": "v-136",
+          "start": 64.07,
+          "end": 64.77,
+          "job": "internal detail remains underneath"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-136",
+          "t": 56.677,
+          "reason": "content"
+        },
+        {
+          "id": "v-138",
+          "t": 59.07,
+          "reason": "content"
+        },
+        {
+          "id": "v-140",
+          "t": 60.55,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-141",
+          "t": 64.07,
+          "reason": "content"
+        },
+        {
+          "id": "v-143",
+          "t": 59.07,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-7",
+      "start": 65.66,
+      "end": 75.52,
+      "nativeOperations": [
+        {
+          "id": "v-147",
+          "start": 67.31,
+          "end": 68.01,
+          "job": "package reusable tools"
+        },
+        {
+          "id": "shot-7",
+          "start": 70.05,
+          "end": 70.95,
+          "job": "reuse library for chart"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-147",
+          "t": 66.53,
+          "reason": "content"
+        },
+        {
+          "id": "v-151",
+          "t": 70.05,
+          "reason": "content"
+        },
+        {
+          "id": "v-154",
+          "t": 74.07,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 70.95,
+          "end": 74.07,
+          "duration": 3.12
+        }
+      ],
+      "readingReason": "Compare library and result before the tradeoff conclusion."
+    },
+    {
+      "section": "scene-8",
+      "start": 75.52,
+      "end": 85.7,
+      "nativeOperations": [
+        {
+          "id": "shot-8",
+          "start": 82.23,
+          "end": 83.13000000000001,
+          "job": "call native C implementation"
+        },
+        {
+          "id": "v-162",
+          "start": 82.23,
+          "end": 83.23,
+          "job": "transfer dữ liệu"
+        },
+        {
+          "id": "shot-8",
+          "start": 84.69,
+          "end": 85.59,
+          "job": "return computation result"
+        },
+        {
+          "id": "v-163",
+          "start": 84.69,
+          "end": 85.59,
+          "job": "transfer kết quả"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-158",
+          "t": 82.23,
+          "reason": "content"
+        },
+        {
+          "id": "v-162",
+          "t": 82.23,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-163",
+          "t": 84.69,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-164",
+          "t": 79.11,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 75.52,
+          "end": 79.11,
+          "duration": 3.59
+        },
+        {
+          "start": 79.11,
+          "end": 82.23,
+          "duration": 3.12
+        }
+      ],
+      "readingReason": "Distinguish speed claim from actual cross-language call; never draw fake benchmark bars."
+    },
+    {
+      "section": "scene-9",
+      "start": 85.7,
+      "end": 94.36,
+      "nativeOperations": [
+        {
+          "id": "shot-9",
+          "start": 93.27,
+          "end": 94.17,
+          "job": "data changes chart"
+        },
+        {
+          "id": "v-170",
+          "start": 93.27,
+          "end": 93.36999999999999,
+          "job": "commit 27°C"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-166",
+          "t": 86.97,
+          "reason": "content"
+        },
+        {
+          "id": "v-171",
+          "t": 87.83,
+          "reason": "content"
+        },
+        {
+          "id": "v-172",
+          "t": 90.83,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-10",
+      "start": 94.36,
+      "end": 103.42,
+      "nativeOperations": [
+        {
+          "id": "v-177",
+          "start": 97.35,
+          "end": 97.5,
+          "job": "button press sends request"
+        },
+        {
+          "id": "v-177",
+          "start": 97.5,
+          "end": 97.68,
+          "job": "button releases"
+        },
+        {
+          "id": "v-178",
+          "start": 98.31,
+          "end": 99.01,
+          "job": "transfer 28°C"
+        },
+        {
+          "id": "v-176",
+          "start": 99.01,
+          "end": 99.11,
+          "job": "commit 28°C"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-178",
+          "t": 98.31,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-179",
+          "t": 99.01,
+          "reason": "content"
+        },
+        {
+          "id": "v-181",
+          "t": 96.21,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 99.11,
+          "end": 103.42,
+          "duration": 4.31
+        }
+      ],
+      "readingReason": "Read definition of browser during its explicit explanation."
+    },
+    {
+      "section": "scene-11",
+      "start": 103.42,
+      "end": 113.6,
+      "nativeOperations": [
+        {
+          "id": "shot-11",
+          "start": 104.31,
+          "end": 105.21000000000001,
+          "job": "one language spans environments"
+        },
+        {
+          "id": "v-191",
+          "start": 108.53,
+          "end": 109.33,
+          "job": "transfer yêu cầu"
+        },
+        {
+          "id": "v-192",
+          "start": 109.63,
+          "end": 110.53,
+          "job": "transfer 28°C"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-184",
+          "t": 107.93,
+          "reason": "content"
+        },
+        {
+          "id": "v-190",
+          "t": 104.31,
+          "reason": "content"
+        },
+        {
+          "id": "v-191",
+          "t": 108.53,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-192",
+          "t": 109.63,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-193",
+          "t": 112.19,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-12",
+      "start": 113.6,
+      "end": 123.46,
+      "nativeOperations": [
+        {
+          "id": "shot-12",
+          "start": 115.29,
+          "end": 116.19000000000001,
+          "job": "route"
+        },
+        {
+          "id": "shot-12",
+          "start": 116.84,
+          "end": 117.74000000000001,
+          "job": "route"
+        },
+        {
+          "id": "v-204",
+          "start": 115.29,
+          "end": 116.19000000000001,
+          "job": "transfer 26"
+        },
+        {
+          "id": "v-205",
+          "start": 116.84,
+          "end": 117.74000000000001,
+          "job": "transfer 26"
+        },
+        {
+          "id": "v-206",
+          "start": 120.05,
+          "end": 120.85,
+          "job": "transfer số đo"
+        },
+        {
+          "id": "v-207",
+          "start": 120.89999999999999,
+          "end": 121.69999999999999,
+          "job": "transfer số đo"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-195",
+          "t": 114.37,
+          "reason": "content"
+        },
+        {
+          "id": "v-197",
+          "t": 115.29,
+          "reason": "content"
+        },
+        {
+          "id": "v-199",
+          "t": 116.84,
+          "reason": "content"
+        },
+        {
+          "id": "v-204",
+          "t": 115.29,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-205",
+          "t": 116.84,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-206",
+          "t": 120.05,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-207",
+          "t": 120.89999999999999,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-208",
+          "t": 118.69,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-13",
+      "start": 123.46,
+      "end": 133.32,
+      "nativeOperations": [
+        {
+          "id": "shot-13",
+          "start": 124.19,
+          "end": 125.09,
+          "job": "historical relationship"
+        },
+        {
+          "id": "v-209",
+          "start": 128.47,
+          "end": 129.22,
+          "job": "separate current C identity"
+        },
+        {
+          "id": "v-211",
+          "start": 128.47,
+          "end": 129.22,
+          "job": "separate current C++ identity"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-211",
+          "t": 124.19,
+          "reason": "content"
+        },
+        {
+          "id": "v-215",
+          "t": 124.19,
+          "reason": "content"
+        },
+        {
+          "id": "v-216",
+          "t": 128.47,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 125.09,
+          "end": 128.47,
+          "duration": 3.38
+        },
+        {
+          "start": 129.22,
+          "end": 133.32,
+          "duration": 4.1
+        }
+      ],
+      "readingReason": "Compare the two labeled languages and historical relation; no false type-inheritance diagram."
+    },
+    {
+      "section": "scene-14",
+      "start": 133.32,
+      "end": 142.86,
+      "nativeOperations": [
+        {
+          "id": "v-221",
+          "start": 135.51,
+          "end": 136.16,
+          "job": "collect sensors into class description"
+        },
+        {
+          "id": "v-222",
+          "start": 135.51,
+          "end": 136.16,
+          "job": "collect sensors into class description"
+        },
+        {
+          "id": "v-223",
+          "start": 135.51,
+          "end": 136.16,
+          "job": "collect sensors into class description"
+        },
+        {
+          "id": "v-218",
+          "start": 138.53,
+          "end": 139.23,
+          "job": "enclose data and behavior in class"
+        },
+        {
+          "id": "v-230",
+          "start": 141.41,
+          "end": 142.10999999999999,
+          "job": "instantiate distinct sensor"
+        },
+        {
+          "id": "v-234",
+          "start": 141.60999999999999,
+          "end": 142.30999999999997,
+          "job": "instantiate distinct sensor"
+        },
+        {
+          "id": "v-238",
+          "start": 141.81,
+          "end": 142.51,
+          "job": "instantiate distinct sensor"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-218",
+          "t": 135.51,
+          "reason": "content"
+        },
+        {
+          "id": "v-221",
+          "t": 133.85,
+          "reason": "content"
+        },
+        {
+          "id": "v-222",
+          "t": 134,
+          "reason": "content"
+        },
+        {
+          "id": "v-223",
+          "t": 134.15,
+          "reason": "content"
+        },
+        {
+          "id": "v-224",
+          "t": 138.53,
+          "reason": "content"
+        },
+        {
+          "id": "v-225",
+          "t": 138.93,
+          "reason": "content"
+        },
+        {
+          "id": "v-230",
+          "t": 141.41,
+          "reason": "content"
+        },
+        {
+          "id": "v-234",
+          "t": 141.60999999999999,
+          "reason": "content"
+        },
+        {
+          "id": "v-238",
+          "t": 141.81,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-15",
+      "start": 142.86,
+      "end": 152.56,
+      "nativeOperations": [
+        {
+          "id": "shot-15",
+          "start": 144.69,
+          "end": 145.59,
+          "job": "function operates on data"
+        },
+        {
+          "id": "v-248",
+          "start": 148.13,
+          "end": 148.82999999999998,
+          "job": "organize relationship with language mechanisms"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-242",
+          "t": 143.01,
+          "reason": "content"
+        },
+        {
+          "id": "v-244",
+          "t": 148.13,
+          "reason": "content"
+        },
+        {
+          "id": "v-250",
+          "t": 151.35,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-16",
+      "start": 152.56,
+      "end": 161.3,
+      "nativeOperations": [
+        {
+          "id": "shot-16",
+          "start": 155.59,
+          "end": 156.49,
+          "job": "inspect resource constraints"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-255",
+          "t": 155.59,
+          "reason": "content"
+        },
+        {
+          "id": "v-256",
+          "t": 156.09,
+          "reason": "content"
+        },
+        {
+          "id": "v-261",
+          "t": 159.95,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 152.56,
+          "end": 155.59,
+          "duration": 3.03
+        },
+        {
+          "start": 156.49,
+          "end": 159.95,
+          "duration": 3.46
+        }
+      ],
+      "readingReason": "Read the two named resource constraints; no invented resource usage gauge."
+    },
+    {
+      "section": "scene-17",
+      "start": 161.3,
+      "end": 171.8,
+      "nativeOperations": [
+        {
+          "id": "v-265",
+          "start": 168.13,
+          "end": 168.93,
+          "job": "open kernel inside operating system"
+        },
+        {
+          "id": "shot-17",
+          "start": 170.47,
+          "end": 171.37,
+          "job": "kernel communicates with hardware"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-267",
+          "t": 166.53,
+          "reason": "content"
+        },
+        {
+          "id": "v-265",
+          "t": 166.07,
+          "reason": "content"
+        },
+        {
+          "id": "v-268",
+          "t": 168.13,
+          "reason": "content"
+        },
+        {
+          "id": "v-269",
+          "t": 170.47,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 161.3,
+          "end": 166.07,
+          "duration": 4.77
+        }
+      ],
+      "readingReason": "Read kernel containment and its two responsibilities."
+    },
+    {
+      "section": "scene-18",
+      "start": 171.8,
+      "end": 181.26,
+      "nativeOperations": [
+        {
+          "id": "v-275",
+          "start": 177.69,
+          "end": 178.49,
+          "job": "retain working component"
+        },
+        {
+          "id": "shot-18",
+          "start": 179.65,
+          "end": 180.55,
+          "job": "connect to existing foundation"
+        },
+        {
+          "id": "v-278",
+          "start": 179.65,
+          "end": 180.65,
+          "job": "transfer yêu cầu"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-272",
+          "t": 172.49,
+          "reason": "content"
+        },
+        {
+          "id": "v-275",
+          "t": 176.39,
+          "reason": "content"
+        },
+        {
+          "id": "v-277",
+          "t": 179.65,
+          "reason": "content"
+        },
+        {
+          "id": "v-278",
+          "t": 179.65,
+          "reason": "moving data"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 172.49,
+          "end": 176.39,
+          "duration": 3.9
+        }
+      ],
+      "readingReason": "Inspect the existing foundation while narrator explains replacement tradeoff."
+    },
+    {
+      "section": "scene-19",
+      "start": 181.26,
+      "end": 191.36,
+      "nativeOperations": [
+        {
+          "id": "v-286",
+          "start": 184.09,
+          "end": 184.89000000000001,
+          "job": "transfer 28"
+        },
+        {
+          "id": "v-285",
+          "start": 186.77,
+          "end": 187.27,
+          "job": "reject invalid destination"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-285",
+          "t": 184.09,
+          "reason": "content"
+        },
+        {
+          "id": "v-286",
+          "t": 184.09,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-287",
+          "t": 186.77,
+          "reason": "content"
+        },
+        {
+          "id": "v-291",
+          "t": 188.67,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-20",
+      "start": 191.36,
+      "end": 201.3,
+      "nativeOperations": [
+        {
+          "id": "v-292",
+          "start": 191.77,
+          "end": 192.47,
+          "job": "match requirement to environment"
+        },
+        {
+          "id": "v-296",
+          "start": 194.65,
+          "end": 195.35,
+          "job": "match requirement to environment"
+        },
+        {
+          "id": "v-300",
+          "start": 197.44,
+          "end": 198.14,
+          "job": "match requirement to environment"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-292",
+          "t": 191.77,
+          "reason": "content"
+        },
+        {
+          "id": "v-296",
+          "t": 194.65,
+          "reason": "content"
+        },
+        {
+          "id": "v-300",
+          "t": 197.44,
+          "reason": "content"
+        },
+        {
+          "id": "v-304",
+          "t": 200.03,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "scene-21",
+      "start": 201.3,
+      "end": 211.32,
+      "nativeOperations": [
+        {
+          "id": "v-306",
+          "start": 202.31,
+          "end": 203.11,
+          "job": "domains overlap"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-307",
+          "t": 202.31,
+          "reason": "content"
+        },
+        {
+          "id": "v-310",
+          "t": 202.91,
+          "reason": "content"
+        },
+        {
+          "id": "v-312",
+          "t": 204.15,
+          "reason": "content"
+        },
+        {
+          "id": "v-313",
+          "t": 207.71,
+          "reason": "conclusion"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 204.15,
+          "end": 207.71,
+          "duration": 3.56
+        },
+        {
+          "start": 207.71,
+          "end": 211.32,
+          "duration": 3.61
+        }
+      ],
+      "readingReason": "Inspect domain overlap and the MicroPython qualification."
+    },
+    {
+      "section": "scene-22",
+      "start": 211.32,
+      "end": 221.58,
+      "nativeOperations": [
+        {
+          "id": "v-323",
+          "start": 214.53,
+          "end": 215.13,
+          "job": "transfer 26"
+        },
+        {
+          "id": "v-320",
+          "start": 215.13,
+          "end": 215.23,
+          "job": "commit 26"
+        },
+        {
+          "id": "v-324",
+          "start": 214.95,
+          "end": 215.54999999999998,
+          "job": "transfer 26"
+        },
+        {
+          "id": "v-321",
+          "start": 215.54999999999998,
+          "end": 215.64999999999998,
+          "job": "commit 26"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-318",
+          "t": 213.15,
+          "reason": "content"
+        },
+        {
+          "id": "v-323",
+          "t": 214.53,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-324",
+          "t": 214.95,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-325",
+          "t": 216.11,
+          "reason": "conclusion"
+        },
+        {
+          "id": "v-327",
+          "t": 218.61,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [],
+      "readingReason": null
+    },
+    {
+      "section": "outro",
+      "start": 221.58,
+      "end": 230.48,
+      "nativeOperations": [
+        {
+          "id": "v-339",
+          "start": 222.99,
+          "end": 224.79000000000002,
+          "job": "transfer 26°C"
+        },
+        {
+          "id": "v-328",
+          "start": 224.01,
+          "end": 224.76,
+          "job": "compress known roles into takeaway"
+        }
+      ],
+      "contentDisclosures": [
+        {
+          "id": "v-329",
+          "t": 221.73,
+          "reason": "content"
+        },
+        {
+          "id": "v-332",
+          "t": 224.01,
+          "reason": "content"
+        },
+        {
+          "id": "v-333",
+          "t": 222.99,
+          "reason": "content"
+        },
+        {
+          "id": "v-335",
+          "t": 223.19,
+          "reason": "content"
+        },
+        {
+          "id": "v-337",
+          "t": 223.39000000000001,
+          "reason": "content"
+        },
+        {
+          "id": "v-339",
+          "t": 222.99,
+          "reason": "moving data"
+        },
+        {
+          "id": "v-340",
+          "t": 229.29,
+          "reason": "content"
+        }
+      ],
+      "gapsOver3Seconds": [
+        {
+          "start": 224.79,
+          "end": 229.29,
+          "duration": 4.5
+        }
+      ],
+      "readingReason": "Keep final rule visible during final explanation."
+    }
+  ],
+  "settledFrameMinContrast": 4.953821128114847,
+  "overflowFindings": 0,
+  "contrastFindings": 0,
+  "revealFailures": [],
+  "reverseSeek": "pass",
+  "audioReview": "All clips transcribed locally using faster-whisper small; matching word starts refine timing. ASR does not certify pronunciation or replace human listening."
+}
