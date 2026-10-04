@@ -6,6 +6,7 @@ Workspace tạo video dọc 1080×1920 bằng các skill trong `.agents/skills`:
 - `explainer-ai-for-business-voice`: video 60–90 giây giải thích AI/tự động hóa cho doanh nghiệp, giọng Việt hoặc Anh.
 - `explainer-editorial-voice`: video giải thích đa chủ đề, nền trắng ngà/đen đơn sắc, chữ monospace, SVG nét và bố cục editorial. Hỗ trợ sơ đồ giữ nguyên qua nhiều cảnh, thay đổi trạng thái theo lời đọc và ảnh minh họa (có thể tạo bằng AI). Giọng Việt/Anh; nội dung và cấu trúc theo yêu cầu người dùng.
 - `explainer-glass-story-voice`: chuyên giải thích một khái niệm lập trình qua một ví dụ chạy từng bước, phong cách Dream State glass-card rose/amber. Mặc định Hải Đăng nam miền Bắc, nhịp đọc tự nhiên và thao tác nối tiếp.
+- `explainer-code-atlas-voice`: chuyên giải thích một khái niệm lập trình bằng một execution trace liên tục trên bảng Code Atlas. Một audio master điều khiển các mốc từ, code, ô nhớ và đường dữ liệu; mọi trạng thái được tính lại từ thời gian nên có thể tua chính xác.
 
 ## Môi trường
 
@@ -112,3 +113,20 @@ mục đích cụ thể. Nguồn 5 HTML/80 slide và bảng tra cứu nằm tron
 được triển khai, các style khác chỉ là tham chiếu. Các skill mới sẽ chuyên một style và một dạng nội dung.
 Bản demo con trỏ trước ở projects/glass-story/con-tro-c giữ cấu hình Thái Sơn của lần test đó; video render nằm
 trong renders/ và không đưa vào Git.
+
+## Phiên bản Code Atlas liên tục
+
+Ví dụ: “Dùng skill explainer-code-atlas-voice, giải thích input buffer size trong C cho người mới.” Skill dùng một
+bản đọc duy nhất thay vì tạo audio theo từng cảnh. Các `chapter` chỉ thay tiêu đề; code, ô nhớ và trạng thái tiếp tục
+tồn tại trên cùng một bảng.
+
+```bash
+source scripts/activate.sh
+python .agents/skills/explainer-code-atlas-voice/scripts/new-project.py projects/code-atlas/input-buffer --language vi
+python .agents/skills/explainer-code-atlas-voice/scripts/validate-script.py --project projects/code-atlas/input-buffer
+python .agents/skills/explainer-code-atlas-voice/scripts/tts-master.py --project projects/code-atlas/input-buffer
+python .agents/skills/explainer-code-atlas-voice/scripts/sync-master.py --project projects/code-atlas/input-buffer
+```
+
+Mặc định dùng Hải Đăng và căn từ bằng faster-whisper local. Mẫu kèm skill là một execution trace hoàn chỉnh về
+`char name[8]` và `fgets`, dùng để thay nội dung chứ không phải cấu trúc bắt buộc cho mọi chủ đề.
