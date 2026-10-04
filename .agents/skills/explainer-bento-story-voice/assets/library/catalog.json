@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "style": "think-fast-slow-bento-v1",
+  "assets": [
+    {
+      "family": "maple-reader",
+      "style": "think-fast-slow-bento-v1",
+      "role": "sticker",
+      "subjects": [
+        "robot reader",
+        "mascot",
+        "robot đọc dữ liệu"
+      ],
+      "capabilities": [
+        "move",
+        "scale",
+        "rotate",
+        "fade"
+      ],
+      "tags": [
+        "robot",
+        "reader",
+        "magnifying glass",
+        "lập trình",
+        "mascot"
+      ],
+      "description": "Contextual guide in its own safe zone; never a native data entity.",
+      "id": "maple-reader-curious",
+      "states": [
+        "curious"
+      ],
+      "file": "maple-reader-curious/image.png",
+      "sha256": "fc408f1872fdcfa2a1635299de2653178b9c12adb71b48c55a121743a59a911d",
+      "width": 1254,
+      "height": 1254,
+      "alpha_channel": true,
+      "added_at": "2026-10-04T08:26:03.464243+00:00",
+      "review": {
+        "status": "rejected",
+        "reason": "User rejected scanf v2 mascot as out of place and monotonous; narrative progression was accepted."
+      }
+    },
+    {
+      "family": "maple-reader",
+      "style": "think-fast-slow-bento-v1",
+      "role": "sticker",
+      "subjects": [
+        "robot reader",
+        "mascot",
+        "robot đọc dữ liệu"
+      ],
+      "capabilities": [
+        "move",
+        "scale",
+        "rotate",
+        "fade"
+      ],
+      "tags": [
+        "robot",
+        "reader",
+        "magnifying glass",
+        "lập trình",
+        "mascot"
+      ],
+      "description": "Contextual guide in its own safe zone; never a native data entity.",
+      "id": "maple-reader-pleased",
+      "states": [
+        "pleased"
+      ],
+      "variant_of": "maple-reader-curious",
+      "file": "maple-reader-pleased/image.png",
+      "sha256": "f1093678cdc4f96b78190a54793967e21a145a22d56c3144d2f789b8935b7586",
+      "width": 1254,
+      "height": 1254,
+      "alpha_channel": true,
+      "added_at": "2026-10-04T08:26:03.613244+00:00",
+      "review": {
+        "status": "rejected",
+        "reason": "User rejected scanf v2 mascot as out of place and monotonous; narrative progression was accepted."
+      }
+    }
+  ]
+}

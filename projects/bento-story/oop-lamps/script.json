@@ -1,0 +1,556 @@
+{
+  "language": "vi",
+  "title": "OOP qua hai chiếc đèn",
+  "brand": "AGENTVID",
+  "series": "OOP · 01",
+  "kicker": "MỘT VÍ DỤ XUYÊN SUỐT",
+  "storyFormat": "worked-trace-v1",
+  "story": {
+    "question": "Hai đèn cùng lớp: bật một chiếc thì chiếc kia có bật theo?",
+    "example": "class Lamp: mỗi instance có on=False; desk=Lamp(); bed=Lamp(); desk.turn_on()",
+    "takeaway": "OOP tổ chức dữ liệu và hành vi thành đối tượng; lớp mô tả cách tạo các đối tượng cùng loại."
+  },
+  "entities": [
+    {
+      "id": "data",
+      "kind": "card",
+      "tone": "yellow",
+      "label": "DỮ LIỆU",
+      "value": "Tắt",
+      "detail": "Trạng thái hiện tại",
+      "x": 245,
+      "y": 130,
+      "width": 350,
+      "height": 320
+    },
+    {
+      "id": "behavior",
+      "kind": "card",
+      "tone": "purple",
+      "label": "HÀNH VI",
+      "value": "Bật()",
+      "detail": "Thao tác có thể gọi",
+      "x": 470,
+      "y": 160,
+      "width": 350,
+      "height": 320
+    },
+    {
+      "id": "class",
+      "kind": "reader",
+      "tone": "blue",
+      "label": "LỚP · CLASS",
+      "value": "Lamp",
+      "detail": "Một mô tả dùng chung",
+      "x": 20,
+      "y": 0,
+      "width": 800,
+      "height": 160
+    },
+    {
+      "id": "desk",
+      "kind": "card",
+      "tone": "yellow",
+      "label": "desk · đèn bàn",
+      "value": "False",
+      "detail": "on · đang tắt",
+      "x": 20,
+      "y": 215,
+      "width": 350,
+      "height": 350
+    },
+    {
+      "id": "bed",
+      "kind": "card",
+      "tone": "purple",
+      "label": "bed · đèn ngủ",
+      "value": "False",
+      "detail": "on · đang tắt",
+      "x": 470,
+      "y": 215,
+      "width": 350,
+      "height": 350
+    }
+  ],
+  "intro": {
+    "title": "OOP qua\nhai chiếc đèn",
+    "subtitle": "Bật một chiếc. Chiếc kia thì sao?",
+    "subtitleOn": "đèn còn lại",
+    "note": "Lập trình hướng đối tượng",
+    "noteOn": "hướng đối tượng",
+    "tiles": [
+      {
+        "value": "01",
+        "label": "Bật đèn bàn",
+        "on": "bật đèn bàn"
+      },
+      {
+        "value": "?",
+        "label": "Còn đèn ngủ?",
+        "on": "đèn còn lại"
+      }
+    ],
+    "connector": "?",
+    "connectorOn": "đèn còn lại",
+    "vo": "Hai chiếc đèn cùng một mẫu. Khi bật đèn bàn, đèn còn lại có bật theo? Cùng hiểu lập trình hướng đối tượng."
+  },
+  "scenes": [
+    {
+      "phase": "setup",
+      "title": "Chiếc đèn biết gì?",
+      "vo": "Trước hết, chiếc đèn có trạng thái: đang bật hay tắt. Đây là dữ liệu mà chương trình cần nhớ.",
+      "events": [
+        {
+          "type": "show",
+          "on": "có trạng thái",
+          "target": "data"
+        },
+        {
+          "type": "text",
+          "on": "đang bật hay tắt",
+          "text": "Trạng thái: bật / tắt",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "cần nhớ",
+          "text": "Dữ liệu mô tả trạng thái",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "yellow"
+    },
+    {
+      "phase": "setup",
+      "title": "Chiếc đèn làm gì?",
+      "vo": "Đèn còn có hành vi, như bật lên. Trong chương trình, ta biểu diễn thao tác này bằng một phương thức.",
+      "events": [
+        {
+          "type": "move",
+          "on": "Đèn còn",
+          "target": "data",
+          "x": 20,
+          "y": 160
+        },
+        {
+          "type": "show",
+          "on": "có hành vi",
+          "target": "behavior"
+        },
+        {
+          "type": "text",
+          "on": "như bật lên",
+          "text": "Hành vi: bật đèn",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "một phương thức",
+          "text": "Phương thức = thao tác của đối tượng",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "purple"
+    },
+    {
+      "phase": "decode",
+      "title": "Gom lại thành đối tượng",
+      "vo": "Gom dữ liệu và hành vi liên quan thành một đối tượng: đó là ý tưởng nền tảng của lập trình hướng đối tượng.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "Gom dữ liệu",
+          "targets": [
+            "data",
+            "behavior"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "một đối tượng",
+          "text": "ĐỐI TƯỢNG = DỮ LIỆU + HÀNH VI",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "ý tưởng nền tảng",
+          "text": "Object: một đối tượng trong chương trình",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "blue"
+    },
+    {
+      "phase": "decode",
+      "title": "Tạo đèn từ đâu?",
+      "vo": "Để tạo nhiều đèn cùng loại, ta định nghĩa một lớp, giống như bản thiết kế. Ở đây, lớp có tên Lamp.",
+      "events": [
+        {
+          "type": "hide",
+          "on": "Để tạo",
+          "target": "data"
+        },
+        {
+          "type": "hide",
+          "on": "Để tạo",
+          "target": "behavior"
+        },
+        {
+          "type": "show",
+          "on": "một lớp",
+          "target": "class"
+        },
+        {
+          "type": "text",
+          "on": "bản thiết kế",
+          "text": "Class · bản mô tả dùng chung",
+          "slot": "subtitle"
+        },
+        {
+          "type": "code",
+          "on": "tên Lamp",
+          "lines": [
+            "class Lamp:"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN"
+        }
+      ],
+      "tone": "blue"
+    },
+    {
+      "phase": "decode",
+      "title": "Dữ liệu ban đầu",
+      "vo": "Trong lớp này, mỗi đèn mới có thuộc tính on, ban đầu là sai. Nghĩa là chiếc đèn đang tắt.",
+      "events": [
+        {
+          "type": "code",
+          "on": "mỗi đèn mới",
+          "lines": [
+            "def __init__(self):",
+            "    self.on = False"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN",
+          "lineCues": [
+            null,
+            "ban đầu là sai"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "thuộc tính on",
+          "text": "Thuộc tính · dữ liệu của đối tượng",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "đang tắt",
+          "text": "on = False → đèn tắt",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "yellow"
+    },
+    {
+      "phase": "decode",
+      "title": "Hành vi được viết thế nào?",
+      "vo": "Phương thức bật sẽ đổi trạng thái thành đúng. Từ self chỉ chính đối tượng đang nhận lời gọi phương thức.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Phương thức bật",
+          "lines": [
+            "def turn_on(self):",
+            "    self.on = True"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN",
+          "lineCues": [
+            null,
+            "đổi trạng thái"
+          ]
+        },
+        {
+          "type": "code-focus",
+          "on": "Từ self",
+          "active": 1
+        },
+        {
+          "type": "text",
+          "on": "chính đối tượng",
+          "text": "self → đối tượng nhận lời gọi",
+          "slot": "subtitle"
+        }
+      ],
+      "tone": "purple"
+    },
+    {
+      "phase": "execute",
+      "title": "Tạo chiếc đèn thứ nhất",
+      "vo": "Giờ tạo một đối tượng từ lớp này, đặt tên là đèn bàn. Nó có trạng thái ban đầu là tắt.",
+      "events": [
+        {
+          "type": "code",
+          "on": "tạo một đối tượng",
+          "lines": [
+            "desk = Lamp()"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN"
+        },
+        {
+          "type": "show",
+          "on": "đèn bàn",
+          "target": "desk"
+        },
+        {
+          "type": "text",
+          "on": "trạng thái ban đầu",
+          "text": "desk · một đối tượng của lớp Lamp",
+          "slot": "subtitle"
+        }
+      ],
+      "tone": "yellow"
+    },
+    {
+      "phase": "execute",
+      "title": "Thêm một chiếc đèn",
+      "vo": "Tạo tiếp đèn ngủ từ cùng lớp. Đây là một đối tượng khác, cũng bắt đầu ở trạng thái tắt.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Tạo tiếp",
+          "lines": [
+            "desk = Lamp()",
+            "bed = Lamp()"
+          ],
+          "active": 1,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN",
+          "lineCues": [
+            null,
+            "đèn ngủ"
+          ]
+        },
+        {
+          "type": "show",
+          "on": "đèn ngủ",
+          "target": "bed"
+        },
+        {
+          "type": "text",
+          "on": "một đối tượng khác",
+          "text": "Hai lần tạo → hai đối tượng riêng",
+          "slot": "subtitle"
+        }
+      ],
+      "tone": "purple"
+    },
+    {
+      "phase": "execute",
+      "title": "Gọi đúng chiếc đèn",
+      "vo": "Bây giờ, gọi phương thức bật của đèn bàn. Phần trước dấu chấm chọn đối tượng; phần sau chọn hành vi.",
+      "events": [
+        {
+          "type": "code",
+          "on": "gọi phương thức",
+          "lines": [
+            "desk.turn_on()"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN"
+        },
+        {
+          "type": "focus",
+          "on": "đèn bàn",
+          "targets": [
+            "desk"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "Phần trước",
+          "text": "desk → đối tượng nhận lời gọi",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "phần sau",
+          "text": "turn_on() → hành vi được gọi",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "orange"
+    },
+    {
+      "phase": "execute",
+      "title": "Trạng thái thay đổi",
+      "vo": "Vì đèn bàn nhận lời gọi, self ở đây chính là đèn bàn. Thuộc tính on của nó chuyển thành đúng: đèn bật.",
+      "events": [
+        {
+          "type": "code",
+          "on": "self ở đây",
+          "lines": [
+            "# self chính là desk",
+            "self.on = True"
+          ],
+          "active": 1,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN",
+          "lineCues": [
+            null,
+            "Thuộc tính on"
+          ]
+        },
+        {
+          "type": "set",
+          "on": "chuyển thành đúng",
+          "target": "desk",
+          "value": "True",
+          "detail": "on · đang bật"
+        },
+        {
+          "type": "text",
+          "on": "đèn bật",
+          "text": "desk.on = True",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "orange"
+    },
+    {
+      "phase": "verify",
+      "title": "Kiểm tra chiếc còn lại",
+      "vo": "Còn đèn ngủ vẫn tắt. Nó không nhận lời gọi bật, nên thuộc tính on của nó vẫn giữ giá trị sai.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "đèn ngủ",
+          "targets": [
+            "bed"
+          ],
+          "dim": 0.72
+        },
+        {
+          "type": "code",
+          "on": "vẫn tắt",
+          "lines": [
+            "desk.on  # True",
+            "bed.on   # False"
+          ],
+          "active": 1,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN"
+        },
+        {
+          "type": "text",
+          "on": "không nhận lời gọi",
+          "text": "Lời gọi chỉ tác động lên desk",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "vẫn giữ giá trị sai",
+          "slot": "takeaway",
+          "text": "bed.on = False → vẫn tắt"
+        }
+      ],
+      "tone": "purple"
+    },
+    {
+      "phase": "verify",
+      "title": "Cùng lớp, khác trạng thái",
+      "vo": "Hai đối tượng dùng chung cách bật được định nghĩa trong lớp, nhưng trong ví dụ này, mỗi chiếc giữ trạng thái riêng.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "Hai đối tượng",
+          "targets": [
+            "desk",
+            "bed"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "dùng chung cách bật",
+          "text": "Cùng lớp Lamp → cùng cách bật",
+          "slot": "subtitle"
+        },
+        {
+          "type": "text",
+          "on": "định nghĩa trong lớp",
+          "slot": "subtitle",
+          "text": "turn_on() được định nghĩa trong lớp"
+        },
+        {
+          "type": "text",
+          "on": "trạng thái riêng",
+          "text": "desk: bật   ·   bed: tắt",
+          "slot": "takeaway"
+        }
+      ],
+      "tone": "blue"
+    },
+    {
+      "phase": "verify",
+      "title": "Nhìn lại cách tổ chức",
+      "vo": "Ta không chỉ có một biến bật tắt. Ta có đối tượng chứa dữ liệu, và gọi hành vi để thay đổi dữ liệu ấy.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "đối tượng",
+          "targets": [
+            "desk"
+          ]
+        },
+        {
+          "type": "code",
+          "on": "chứa dữ liệu",
+          "lines": [
+            "desk.on",
+            "desk.turn_on()"
+          ],
+          "active": 0,
+          "label": "PYTHON · VÍ DỤ TỐI GIẢN",
+          "lineCues": [
+            null,
+            "gọi hành vi"
+          ]
+        },
+        {
+          "type": "code-focus",
+          "on": "gọi hành vi",
+          "active": 1
+        },
+        {
+          "type": "text",
+          "on": "thay đổi dữ liệu",
+          "text": "Dữ liệu và hành vi gắn với một đối tượng",
+          "slot": "subtitle"
+        }
+      ],
+      "tone": "yellow"
+    }
+  ],
+  "outro": {
+    "title": "Dữ liệu đi cùng\nhành vi",
+    "subtitle": "OOP · lập trình hướng đối tượng",
+    "subtitleOn": "hướng đối tượng",
+    "note": "Nền tảng qua ví dụ dùng lớp.\nChưa đi vào kế thừa hay đa hình.",
+    "noteOn": "ví dụ dùng lớp",
+    "tiles": [
+      {
+        "value": "class",
+        "label": "Mô tả dùng chung",
+        "on": "Lớp mô tả"
+      },
+      {
+        "value": "object",
+        "label": "Đối tượng cụ thể",
+        "on": "đối tượng cụ thể"
+      }
+    ],
+    "connector": "→",
+    "connectorOn": "đối tượng cụ thể",
+    "tone": "dark",
+    "vo": "Lập trình hướng đối tượng tổ chức dữ liệu cùng hành vi. Lớp mô tả cách tạo đối tượng cụ thể. Đây là nền tảng qua một ví dụ dùng lớp."
+  }
+}

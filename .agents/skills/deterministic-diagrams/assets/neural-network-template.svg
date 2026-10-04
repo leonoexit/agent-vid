@@ -1,0 +1,47 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Connections (Dense) -->
+  <g stroke="#cbd5e1" stroke-width="1">
+    <!-- Input to Hidden -->
+    <line x1="150" y1="100" x2="400" y2="100" />
+    <line x1="150" y1="100" x2="400" y2="200" />
+    <line x1="150" y1="100" x2="400" y2="300" />
+    <line x1="150" y1="200" x2="400" y2="100" />
+    <line x1="150" y1="200" x2="400" y2="200" />
+    <line x1="150" y1="200" x2="400" y2="300" />
+    <line x1="150" y1="300" x2="400" y2="100" />
+    <line x1="150" y1="300" x2="400" y2="200" />
+    <line x1="150" y1="300" x2="400" y2="300" />
+
+    <!-- Hidden to Output -->
+    <line x1="400" y1="100" x2="650" y2="150" />
+    <line x1="400" y1="100" x2="650" y2="250" />
+    <line x1="400" y1="200" x2="650" y2="150" />
+    <line x1="400" y1="200" x2="650" y2="250" />
+    <line x1="400" y1="300" x2="650" y2="150" />
+    <line x1="400" y1="300" x2="650" y2="250" />
+  </g>
+
+  <!-- Layers -->
+  <!-- Input Layer -->
+  <g fill="#3b82f6" stroke="white" stroke-width="2">
+    <circle cx="150" cy="100" r="20" />
+    <circle cx="150" cy="200" r="20" />
+    <circle cx="150" cy="300" r="20" />
+  </g>
+  <text x="150" y="50" text-anchor="middle" font-weight="bold" fill="#3b82f6">Input</text>
+
+  <!-- Hidden Layer -->
+  <g fill="#f59e0b" stroke="white" stroke-width="2">
+    <circle cx="400" cy="100" r="20" />
+    <circle cx="400" cy="200" r="20" />
+    <circle cx="400" cy="300" r="20" />
+  </g>
+  <text x="400" y="50" text-anchor="middle" font-weight="bold" fill="#f59e0b">Hidden</text>
+
+  <!-- Output Layer -->
+  <g fill="#10b981" stroke="white" stroke-width="2">
+    <circle cx="650" cy="150" r="20" />
+    <circle cx="650" cy="250" r="20" />
+  </g>
+  <text x="650" y="50" text-anchor="middle" font-weight="bold" fill="#10b981">Output</text>
+</svg>

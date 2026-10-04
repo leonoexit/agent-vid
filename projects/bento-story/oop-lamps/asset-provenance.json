@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "scope": "project-local contextual panels; opaque backgrounds require custom renderer; cutout-only library is not used",
+  "assets": [
+    {
+      "id": "reading-desk",
+      "image": "assets/illustrations/reading-desk.png",
+      "origin": {
+        "kind": "imagegen",
+        "tool": "built-in image_gen",
+        "prompt": "Create a flat vector editorial illustration sheet on a solid #feee91 yellow background. A cozy reading desk with an orange angled desk lamp, purple closed book, sky-blue desk and empty chair. Strong geometrical cut-paper shapes, bold uniform #2d3436 charcoal outlines, absolutely flat solid fills with no gradients or lighting. Contemporary Swiss editorial infographic illustration, playful but sophisticated, no mascot or character. Landscape composition, large generous empty yellow margins. No words, numbers or symbols. Only 5 inks: yellow #feee91, orange #ffa239, purple #a594f9, cyan #8ce4ff, charcoal #2d3436. This will be displayed inside a yellow bento card."
+      },
+      "role": "question/setup context",
+      "anchor": "Hai chiếc đèn",
+      "review": {
+        "status": "rejected",
+        "source": "user feedback after OOP video",
+        "reason": "Simple lamp example is better served by icons; generated desk/blueprint assets were judged unnecessary and unsuitable. Do not reuse this treatment as a style precedent."
+      },
+      "reviewHistory": [
+        {
+          "status": "editorially-selected",
+          "userApproved": false,
+          "notes": "Desk/book environment fits topic. Opaque illustrated panel; slight raster tonal variation. Not a changing program state."
+        }
+      ]
+    },
+    {
+      "id": "design-plan",
+      "image": "assets/illustrations/design-plan.png",
+      "origin": {
+        "kind": "imagegen",
+        "tool": "built-in image_gen",
+        "prompt": "Flat vector editorial illustration on solid pale cyan #8ce4ff background: overhead view of a large blank yellow design sheet, an orange pencil and a purple set square neatly arranged beside it. A small simple charcoal outline sketch of an angled desk lamp centered on the sheet, no labels, measurements, arrows or text. Screenprint geometric style, thick uniform charcoal outlines #2d3436, hard offset charcoal shadows, opaque flat fills only, no texture, no gradient, no lighting, no photorealism, no faces or mascots. Four inks cyan yellow orange purple plus charcoal. Wide landscape composition with generous margins. This image illustrates a reusable design plan analogy for programming classes; keep it sparse and readable."
+      },
+      "role": "class blueprint analogy",
+      "anchor": "bản thiết kế",
+      "review": {
+        "status": "rejected",
+        "source": "user feedback after OOP video",
+        "reason": "Simple lamp example is better served by icons; generated desk/blueprint assets were judged unnecessary and unsuitable. Do not reuse this treatment as a style precedent."
+      },
+      "reviewHistory": [
+        {
+          "status": "editorially-selected",
+          "userApproved": false
+        }
+      ]
+    }
+  ],
+  "rejectedExperiments": [
+    {
+      "file": "exec-479dc5ff-6c42-486e-98cc-b6972eaf0027.png",
+      "reason": "soft halo and shading"
+    },
+    {
+      "file": "exec-5dbf289e-d3e6-4364-b373-115883fb0b67.png",
+      "reason": "edit failed to remove halo"
+    }
+  ]
+}

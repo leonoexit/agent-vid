@@ -1,0 +1,377 @@
+{
+  "language": "en",
+  "title": "Assignment copies a value",
+  "brand": "AGENTVID",
+  "series": "ONE C EXAMPLE",
+  "kicker": "FOLLOW THE VALUE",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "card",
+      "tone": "yellow",
+      "label": "x",
+      "value": "10",
+      "detail": "Initial value",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 30,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "y",
+      "kind": "card",
+      "tone": "blue",
+      "label": "y",
+      "value": "—",
+      "detail": "A separate variable",
+      "hiddenFields": [
+        "detail"
+      ],
+      "x": 490,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    }
+  ],
+  "intro": {
+    "title": "Copy, then change",
+    "subtitle": "Will both variables change?",
+    "subtitleOn": "change too",
+    "note": "Trace one small C example.",
+    "noteOn": "Let us follow",
+    "tiles": [
+      {
+        "value": "x",
+        "label": "Original",
+        "on": "from x"
+      },
+      {
+        "value": "y",
+        "label": "Copy",
+        "on": "into y"
+      }
+    ],
+    "connectorOn": "into y",
+    "vo": "Copy from x into y, then change x: will y change too? Let us follow each step."
+  },
+  "scenes": [
+    {
+      "title": "Meet x",
+      "vo": "First, create a variable named x. The yellow card lets us follow this variable.",
+      "events": [
+        {
+          "type": "show",
+          "on": "create a variable",
+          "target": "x"
+        },
+        {
+          "type": "text",
+          "on": "yellow card",
+          "slot": "subtitle",
+          "text": "One variable: x"
+        }
+      ],
+      "phase": "setup"
+    },
+    {
+      "title": "What does x hold?",
+      "vo": "Start x at ten. This declaration puts the initial value into the variable.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Start x",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "type": "reveal",
+          "on": "at ten",
+          "target": "x",
+          "fields": [
+            "value"
+          ]
+        },
+        {
+          "type": "reveal",
+          "on": "initial value",
+          "target": "x",
+          "fields": [
+            "detail"
+          ]
+        }
+      ],
+      "phase": "setup"
+    },
+    {
+      "title": "Add a variable",
+      "vo": "Next, we need y. The blue card is a separate variable; no assigned value is shown yet.",
+      "events": [
+        {
+          "type": "show",
+          "on": "need y",
+          "target": "y"
+        },
+        {
+          "type": "reveal",
+          "on": "separate variable",
+          "target": "y",
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "no assigned",
+          "slot": "subtitle",
+          "text": "The dash is only an illustration"
+        }
+      ],
+      "phase": "setup"
+    },
+    {
+      "title": "Read the next line",
+      "vo": "Now, initialize y from x. The right side tells us where to read the value.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Now",
+          "lines": [
+            "int x = 10;",
+            "int y = x;"
+          ],
+          "lineCues": [
+            null,
+            "initialize y"
+          ],
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "right side",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "read the value",
+          "slot": "subtitle",
+          "text": "Read the current value of x"
+        }
+      ],
+      "phase": "decode"
+    },
+    {
+      "title": "What do we read?",
+      "vo": "Look at x: its current value is ten. This is the number that will be copied.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "Look at x",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "value is ten",
+          "slot": "subtitle",
+          "text": "x = 10"
+        },
+        {
+          "type": "text",
+          "on": "will be copied",
+          "slot": "takeaway",
+          "text": "Read the number, not the variable name"
+        }
+      ],
+      "phase": "decode"
+    },
+    {
+      "title": "The copy reaches y",
+      "vo": "Copy ten from x into y. Once the write finishes, y holds the value ten.",
+      "events": [
+        {
+          "type": "transfer",
+          "on": "Copy ten",
+          "from": "x",
+          "to": "y",
+          "value": "10",
+          "duration": 1.0
+        },
+        {
+          "type": "focus",
+          "on": "Once the write finishes",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "y holds",
+          "slot": "takeaway",
+          "text": "y = 10"
+        }
+      ],
+      "phase": "execute"
+    },
+    {
+      "title": "What about x?",
+      "vo": "Meanwhile, x still holds ten. That assignment copied the value; it did not remove it from x.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "x still holds",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "That assignment",
+          "slot": "subtitle",
+          "text": "x = 10, y = 10: two stored values"
+        },
+        {
+          "type": "focus",
+          "on": "did not remove",
+          "targets": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "phase": "execute"
+    },
+    {
+      "title": "Change x alone",
+      "vo": "Now assign twenty to x. The new number is written into x, replacing the previous ten.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Now assign",
+          "lines": [
+            "int x = 10;",
+            "int y = x;",
+            "x = 20;"
+          ],
+          "lineCues": [
+            null,
+            null,
+            "twenty"
+          ],
+          "active": 2
+        },
+        {
+          "type": "write",
+          "on": "The new number",
+          "to": "x",
+          "value": "20"
+        },
+        {
+          "type": "text",
+          "on": "replacing",
+          "slot": "subtitle",
+          "text": "x: 10 → 20"
+        },
+        {
+          "type": "set",
+          "on": "replacing",
+          "target": "x",
+          "detail": "Updated value"
+        }
+      ],
+      "phase": "execute"
+    },
+    {
+      "title": "Check y",
+      "vo": "Look over at y: it is still ten. The last instruction updated only x.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "Look over at y",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "still ten",
+          "slot": "subtitle",
+          "text": "y = 10"
+        },
+        {
+          "type": "code-focus",
+          "on": "last instruction",
+          "active": 2
+        },
+        {
+          "type": "text",
+          "on": "updated only",
+          "slot": "takeaway",
+          "text": "x changes; y keeps its earlier copy"
+        }
+      ],
+      "phase": "verify"
+    },
+    {
+      "title": "Why does y stay?",
+      "vo": "The assignment to y ran earlier. Changing x does not run it again; updating y needs another assignment.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "assignment to y",
+          "active": 1
+        },
+        {
+          "type": "text",
+          "on": "does not run it again",
+          "slot": "subtitle",
+          "text": "Assignment happens when the line runs"
+        },
+        {
+          "type": "text",
+          "on": "needs another assignment",
+          "slot": "takeaway",
+          "text": "To update y → assign to y again"
+        }
+      ],
+      "phase": "verify"
+    }
+  ],
+  "outro": {
+    "title": "Assignment copies",
+    "subtitle": "At the time the line runs",
+    "subtitleOn": "when it runs",
+    "note": "This example uses two ordinary integers.",
+    "noteOn": "ordinary integers",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x now",
+        "on": "twenty"
+      },
+      {
+        "value": "10",
+        "label": "y keeps",
+        "on": "ten"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "ten",
+    "tone": "dark",
+    "vo": "Assignment copies the value when it runs. The result: x is twenty, y is still ten. These are two independent ordinary integers."
+  },
+  "storyFormat": "worked-trace-v1",
+  "story": {
+    "question": "Does y change when x changes after y = x?",
+    "example": "int x = 10; int y = x; x = 20;",
+    "takeaway": "Integer assignment copies the value when the line runs."
+  }
+}

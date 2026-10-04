@@ -1,0 +1,404 @@
+{
+  "scope": "Actual custom-renderer transformation intervals registered by story-engine.js. Show/reveal and code details are also cued there; this list is not a complete quality metric.",
+  "stockAudit": "Script events are intentionally empty. Stock audit cannot evaluate this custom HTML/SVG renderer; its warnings are retained, not relabeled as passing.",
+  "operations": [
+    {
+      "job": "state-link",
+      "start": 8.95,
+      "end": 9.649999999999999
+    },
+    {
+      "job": "make room for method",
+      "start": 10.84,
+      "end": 11.54
+    },
+    {
+      "job": "behavior-link",
+      "start": 14.85,
+      "end": 15.549999999999999
+    },
+    {
+      "job": "object compartments assemble",
+      "start": 16.17,
+      "end": 16.970000000000002
+    },
+    {
+      "job": "recompose",
+      "start": 16.17,
+      "end": 17.07
+    },
+    {
+      "job": "recompose",
+      "start": 16.17,
+      "end": 17.07
+    },
+    {
+      "job": "enclose state and behavior",
+      "start": 17.77,
+      "end": 18.37
+    },
+    {
+      "job": "recompose",
+      "start": 26.42,
+      "end": 27.220000000000002
+    },
+    {
+      "job": "recompose",
+      "start": 26.42,
+      "end": 27.220000000000002
+    },
+    {
+      "job": "recompose",
+      "start": 26.42,
+      "end": 27.220000000000002
+    },
+    {
+      "job": "recompose",
+      "start": 31.4,
+      "end": 32.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 31.4,
+      "end": 32.199999999999996
+    },
+    {
+      "job": "self-definition-link",
+      "start": 34.39,
+      "end": 35.09
+    },
+    {
+      "job": "recompose",
+      "start": 36.62,
+      "end": 37.419999999999995
+    },
+    {
+      "job": "create-desk",
+      "start": 38.510000000000005,
+      "end": 39.21000000000001
+    },
+    {
+      "job": "instantiate desk",
+      "start": 38.81,
+      "end": 39.61
+    },
+    {
+      "job": "create-bed",
+      "start": 41.650000000000006,
+      "end": 42.35000000000001
+    },
+    {
+      "job": "instantiate bed",
+      "start": 41.95,
+      "end": 42.75
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "recompose",
+      "start": 46.1,
+      "end": 46.9
+    },
+    {
+      "job": "resolve-receiver",
+      "start": 48.39,
+      "end": 49.09
+    },
+    {
+      "job": "resolve-method",
+      "start": 49.75,
+      "end": 50.45
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "recompose",
+      "start": 51.4,
+      "end": 52.199999999999996
+    },
+    {
+      "job": "method-writes-field",
+      "start": 54.57,
+      "end": 55.27
+    },
+    {
+      "job": "token True",
+      "start": 54.61,
+      "end": 55.31
+    },
+    {
+      "job": "state commit desk only",
+      "start": 55.260000000000005,
+      "end": 55.660000000000004
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 56.86,
+      "end": 57.66
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "recompose",
+      "start": 62.48,
+      "end": 63.279999999999994
+    },
+    {
+      "job": "shared-left",
+      "start": 64.15,
+      "end": 64.85000000000001
+    },
+    {
+      "job": "shared-right",
+      "start": 64.15,
+      "end": 64.85000000000001
+    },
+    {
+      "job": "recompose",
+      "start": 68.26,
+      "end": 69.06
+    },
+    {
+      "job": "recompose",
+      "start": 68.26,
+      "end": 69.06
+    },
+    {
+      "job": "recompose",
+      "start": 70.95,
+      "end": 71.75
+    },
+    {
+      "job": "recompose",
+      "start": 71.83,
+      "end": 72.63
+    },
+    {
+      "job": "behavior-affects-owned-state",
+      "start": 72.59,
+      "end": 73.29
+    }
+  ],
+  "checkedScenes": [
+    {
+      "id": "intro",
+      "t": 4.86,
+      "overflow": []
+    },
+    {
+      "id": "scene-1",
+      "t": 10.24,
+      "overflow": []
+    },
+    {
+      "id": "scene-2",
+      "t": 15.299999999999999,
+      "overflow": []
+    },
+    {
+      "id": "scene-3",
+      "t": 20.68,
+      "overflow": []
+    },
+    {
+      "id": "scene-4",
+      "t": 25.82,
+      "overflow": []
+    },
+    {
+      "id": "scene-5",
+      "t": 30.8,
+      "overflow": []
+    },
+    {
+      "id": "scene-6",
+      "t": 36.019999999999996,
+      "overflow": []
+    },
+    {
+      "id": "scene-7",
+      "t": 40.839999999999996,
+      "overflow": []
+    },
+    {
+      "id": "scene-8",
+      "t": 45.49999999999999,
+      "overflow": []
+    },
+    {
+      "id": "scene-9",
+      "t": 50.8,
+      "overflow": []
+    },
+    {
+      "id": "scene-10",
+      "t": 56.26,
+      "overflow": []
+    },
+    {
+      "id": "scene-11",
+      "t": 61.879999999999995,
+      "overflow": []
+    },
+    {
+      "id": "scene-12",
+      "t": 67.66,
+      "overflow": []
+    },
+    {
+      "id": "scene-13",
+      "t": 73.44000000000001,
+      "overflow": []
+    },
+    {
+      "id": "outro",
+      "t": 80.66000000000001,
+      "overflow": []
+    }
+  ],
+  "voiceComparison": "15/15 original voice clips are byte-identical; timings retained."
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagram Flow Slide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f8fafc;
+      --color-surface: #ffffff;
+      --color-text: #1e293b;
+      --color-text-muted: #64748b;
+      --color-primary: #6366f1;
+      --color-primary-light: #a5b4fc;
+      --color-secondary: #10b981;
+      --color-tertiary: #f59e0b;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .slide-header {
+      margin-bottom: 50px;
+    }
+
+    .slide-header h2 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: -0.02em;
+    }
+
+    .slide-header p {
+      font-size: 18px;
+      color: var(--color-text-muted);
+      margin-top: 8px;
+    }
+
+    /* Flow Container */
+    .flow-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    /* Flow Step */
+    .flow-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .step-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-surface);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .step-circle::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid var(--color-primary-light);
+    }
+
+    .step-number {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: white;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-icon {
+      color: var(--color-primary);
+    }
+
+    .step-content {
+      text-align: center;
+      max-width: 160px;
+    }
+
+    .step-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 4px;
+    }
+
+    .step-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* Connector Arrow */
+    .connector {
+      display: flex;
+      align-items: center;
+      color: var(--color-primary-light);
+    }
+
+    .connector svg {
+      width: 60px;
+      height: 24px;
+    }
+
+    /* Variations */
+    .step-circle.secondary::before { border-color: rgba(16, 185, 129, 0.3); }
+    .step-circle.secondary .step-icon { color: var(--color-secondary); }
+    .step-circle.secondary .step-number { background: var(--color-secondary); }
+
+    .step-circle.tertiary::before { border-color: rgba(245, 158, 11, 0.3); }
+    .step-circle.tertiary .step-icon { color: var(--color-tertiary); }
+    .step-circle.tertiary .step-number { background: var(--color-tertiary); }
+
+    /* Print styles */
+    @media print {
+      .slide { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-header">
+      <h2>Our Process Flow</h2>
+      <p>A clear step-by-step journey from start to finish</p>
+    </div>
+    
+    <div class="flow-container">
+      <!-- Step 1 -->
+      <div class="flow-step">
+        <div class="step-circle">
+          <span class="step-number">1</span>
+          <svg class="step-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div class="step-content">
+          <h4 class="step-title">Discovery</h4>
+          <p class="step-desc">Understand requirements and goals</p>
+        </div>
+      </div>
+      
+      <div class="connector">
+        <svg viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M0 12h50M45 6l6 6-6 6"/>
+        </svg>
+      </div>
+      
+      <!-- Step 2 -->
+      <div class="flow-step">
+        <div class="step-circle secondary">
+          <span class="step-number">2</span>
+          <svg class="step-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+            <path d="M2 17L12 22L22 17"/>
+            <path d="M2 12L12 17L22 12"/>
+          </svg>
+        </div>
+        <div class="step-content">
+          <h4 class="step-title">Design</h4>
+          <p class="step-desc">Create solutions and prototypes</p>
+        </div>
+      </div>
+      
+      <div class="connector">
+        <svg viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M0 12h50M45 6l6 6-6 6"/>
+        </svg>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="flow-step">
+        <div class="step-circle tertiary">
+          <span class="step-number">3</span>
+          <svg class="step-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <div class="step-content">
+          <h4 class="step-title">Develop</h4>
+          <p class="step-desc">Build and implement features</p>
+        </div>
+      </div>
+      
+      <div class="connector">
+        <svg viewBox="0 0 60 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M0 12h50M45 6l6 6-6 6"/>
+        </svg>
+      </div>
+      
+      <!-- Step 4 -->
+      <div class="flow-step">
+        <div class="step-circle">
+          <span class="step-number">4</span>
+          <svg class="step-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <div class="step-content">
+          <h4 class="step-title">Deliver</h4>
+          <p class="step-desc">Launch and measure success</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

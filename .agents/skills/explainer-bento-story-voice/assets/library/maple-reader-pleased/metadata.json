@@ -1,0 +1,47 @@
+{
+  "family": "maple-reader",
+  "style": "think-fast-slow-bento-v1",
+  "role": "sticker",
+  "subjects": [
+    "robot reader",
+    "mascot",
+    "robot đọc dữ liệu"
+  ],
+  "capabilities": [
+    "move",
+    "scale",
+    "rotate",
+    "fade"
+  ],
+  "tags": [
+    "robot",
+    "reader",
+    "magnifying glass",
+    "lập trình",
+    "mascot"
+  ],
+  "description": "Contextual guide in its own safe zone; never a native data entity.",
+  "id": "maple-reader-pleased",
+  "states": [
+    "pleased"
+  ],
+  "variant_of": "maple-reader-curious",
+  "origin": {
+    "kind": "imagegen",
+    "tool": "built-in image_gen",
+    "prompt": "Create a second pose of this exact robot mascot, retaining its blue body, yellow face, orange hands/feet, purple antenna and circular chest accent, charcoal outline and simple proportions. The robot is pleased and gives a small thumbs-up with its right hand; the magnifying glass is lowered in its left hand. Friendly modest smile, eyes looking upper-left. Full body, entire antenna and feet visible, centered with empty padding, no additional symbols. Strict flat vector-like screenprint illustration: uniform solid fills #8ce4ff #feee91 #ffa239 #a594f9, thick charcoal #2d3436 outlines, minimal hard shadow; remove shading and gradients. Genuine transparent alpha background. No text, letters, numbers, code, arrows, UI, logo, panels or confetti. This is a secondary editorial mascot for the successful reveal in a programming video.",
+    "reference_asset_ids": [
+      "maple-reader-curious"
+    ]
+  },
+  "file": "maple-reader-pleased/image.png",
+  "sha256": "f1093678cdc4f96b78190a54793967e21a145a22d56c3144d2f789b8935b7586",
+  "width": 1254,
+  "height": 1254,
+  "alpha_channel": true,
+  "added_at": "2026-10-04T08:26:03.613244+00:00",
+  "review": {
+    "status": "rejected",
+    "reason": "User rejected scanf v2 mascot as out of place and monotonous; narrative progression was accepted."
+  }
+}

@@ -1,0 +1,22 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Connectors Layer -->
+  <g stroke="#2c3e50" stroke-width="6" fill="none" stroke-linecap="round">
+    <line x1="400" y1="100" x2="400" y2="200" />
+    <line x1="400" y1="200" x2="200" y2="350" />
+    <line x1="400" y1="200" x2="600" y2="350" />
+  </g>
+
+  <!-- Shapes Layer -->
+  <circle cx="400" cy="100" r="35" fill="#f1c40f" stroke="#2c3e50" stroke-width="4" />
+  <circle cx="400" cy="200" r="30" fill="white" stroke="#2c3e50" stroke-width="4" />
+  <circle cx="200" cy="350" r="30" fill="white" stroke="#2c3e50" stroke-width="4" />
+  <circle cx="600" cy="350" r="30" fill="white" stroke="#2c3e50" stroke-width="4" />
+
+  <!-- Labels Layer -->
+  <g font-family="sans-serif" font-size="36" font-weight="bold" text-anchor="middle" dominant-baseline="central">
+    <text x="400" y="100" fill="#2c3e50">Root</text>
+    <text x="400" y="200" fill="#e74c3c">C</text>
+    <text x="200" y="350" fill="#3498db">A</text>
+    <text x="600" y="350" fill="#2ecc71">D</text>
+  </g>
+</svg>

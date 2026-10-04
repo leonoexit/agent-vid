@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking Fast & Slow - Batch 2 (Heuristics)</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:ital,wght@0,700;0,900;1,400&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Export Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <style>
+        :root {
+            /* Maple Story Palette */
+            --c-blue: #8CE4FF;
+            --c-yellow: #FEEE91;
+            --c-orange: #FFA239;
+            --c-red: #FF5656;
+            --c-green: #10B981;
+            --c-purple: #A594F9;
+            --c-dark: #2D3436;
+            --c-light: #F4F4F4;
+            
+            --slide-size: 1200px;
+            --gap: 24px;
+            --border-radius: 32px;
+            --border-width: 4px;
+            --shadow-size: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #222;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        /* Slide Container */
+        .slide {
+            width: var(--slide-size);
+            height: var(--slide-size);
+            background-color: #E5E5E5;
+            color: var(--c-dark);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            gap: var(--gap);
+            padding: 40px;
+            border: 20px solid var(--c-dark);
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 100px; font-weight: 900; line-height: 1.1;
+            color: var(--c-dark);
+        }
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 64px; font-weight: 800;
+            margin-bottom: 16px;
+        }
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 42px; font-weight: 800; text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 38px; line-height: 1.5; font-weight: 500; color: #444;
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Bento Boxes */
+        .box {
+            background: white;
+            border: var(--border-width) solid var(--c-dark);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow-size) var(--shadow-size) 0 var(--c-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Color Variants */
+        .bg-yellow { background-color: var(--c-yellow); }
+        .bg-blue { background-color: var(--c-blue); }
+        .bg-red { background-color: var(--c-red); color: white; }
+        .bg-red p { color: white; }
+        .bg-orange { background-color: var(--c-orange); }
+        .bg-green { background-color: var(--c-green); }
+        .bg-purple { background-color: var(--c-purple); }
+        .bg-dark { background-color: var(--c-dark); color: white; }
+        .bg-dark p { color: #ccc; }
+        .bg-dark h3 { color: var(--c-yellow); }
+
+        /* Icons */
+        .icon-xl { font-size: 150px; margin-bottom: 20px; }
+        .icon-lg { font-size: 100px; margin-bottom: 20px; }
+        .icon-md { font-size: 64px; margin-bottom: 10px; }
+
+        .tag {
+            background: var(--c-dark); color: white;
+            padding: 8px 16px; border-radius: 12px;
+            font-family: 'JetBrains Mono'; font-size: 28px;
+            display: inline-block; margin-bottom: 10px;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'JetBrains Mono'; font-weight: bold;
+            font-size: 48px; color: var(--c-dark); opacity: 0.08;
+            z-index: 1;
+            white-space: nowrap;
+        }
+
+        .counter {
+            position: absolute;
+            top: 15px; left: 20px;
+            font-family: 'JetBrains Mono'; font-weight: bold;
+            font-size: 32px; color: var(--c-dark);
+            background: white; padding: 5px 15px; border: 3px solid black;
+            border-radius: 50px;
+            z-index: 99;
+        }
+
+        .export-btn {
+            position: fixed; bottom: 30px; right: 30px;
+            padding: 15px 30px; background: var(--c-red); color: white;
+            border: 4px solid white; border-radius: 50px;
+            font-size: 32px; font-weight: bold; cursor: pointer;
+            z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 12: COVER PART 2 -->
+    <div class="slide">
+        <div class="counter">12/23</div>
+        <div class="box bg-blue" style="grid-column: span 12; grid-row: span 8; align-items: center; text-align: center;">
+            <i class="fa-solid fa-magnifying-glass-chart icon-xl" style="color: var(--c-dark);"></i>
+            <h3>Part 2</h3>
+            <h1 style="font-size: 120px;">Heuristics<br>& Biases</h1>
+        </div>
+        <div class="box bg-dark" style="grid-column: span 12; grid-row: span 4; text-align: center;">
+            <p style="color: var(--c-yellow); font-size: 48px; font-weight: bold;">Đường tắt tư duy &<br>Những sai lầm hệ thống</p>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 13: LAW OF SMALL NUMBERS -->
+    <div class="slide">
+        <div class="counter">13/23</div>
+        <div class="box bg-yellow" style="grid-column: span 12; grid-row: span 4;">
+            <h2>Quy luật số nhỏ</h2>
+            <p>Thống kê: Các hạt <span style="font-size: 30px; opacity: 0.7;">(county - đơn vị hành chính ở Mỹ)</span> có tỷ lệ ung thư thận <strong>THẤP NHẤT</strong> là các hạt nông thôn thưa dân.</p>
+        </div>
+        
+        <div class="box bg-red" style="grid-column: span 6; grid-row: span 8;">
+            <h3>Suy diễn sai (Sys 1)</h3>
+            <p style="color: white;">"À! Nông thôn không khí trong lành, ít stress nên ít bệnh!"</p>
+            <i class="fa-solid fa-tree icon-lg" style="margin-top: 40px; color: white;"></i>
+        </div>
+
+        <div class="box bg-dark" style="grid-column: span 6; grid-row: span 8;">
+            <h3>Sự thật (Statistics)</h3>
+            <p style="color: #ccc;">Các hạt có tỷ lệ ung thư thận <strong>CAO NHẤT</strong> cũng là hạt nông thôn thưa dân.</p>
+            <div style="background: white; color: rgb(45, 52, 54); padding: 15px; border-radius: 10px; margin-top: 20px;">
+                <p style="font-size: 34px; color: rgb(45, 52, 54);">Mẫu nhỏ (Small Sample) = Biến động cực đoan (Extreme Results)</p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 14: PATTERN SEEKING -->
+    <div class="slide">
+        <div class="counter">14/23</div>
+        <div class="box" style="grid-column: span 12; grid-row: span 3; text-align: center;">
+            <h2>Não ghét sự ngẫu nhiên</h2>
+        </div>
+
+        <div class="box bg-purple" style="grid-column: span 12; grid-row: span 6; align-items: center; text-align: center;">
+            <i class="fa-solid fa-basketball icon-lg"></i>
+            <h1 style="font-size: 76px;">Hot Hand Fallacy</h1>
+            <p>Cầu thủ ném trúng 3 quả liên tiếp -> "Tay đang nóng" -> Chắc chắn quả sau sẽ vào.</p>
+        </div>
+
+        <div class="box bg-dark" style="grid-column: span 12; grid-row: span 3;">
+            <p style="color: white;">Thực tế: Chỉ là ngẫu nhiên. Không có bằng chứng thống kê nào về "tay nóng".</p>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 15: ANCHORING -->
+    <div class="slide">
+        <div class="counter">15/23</div>
+        <div class="box bg-blue" style="grid-column: span 8; grid-row: span 4;">
+            <h2>Hiệu ứng mỏ neo</h2>
+            <p>(Anchoring Effect)</p>
+        </div>
+        <div class="box bg-dark" style="grid-column: span 4; grid-row: span 4; align-items: center;">
+             <i class="fa-solid fa-anchor icon-lg" style="color: white;"></i>
+        </div>
+
+        <div class="box" style="grid-column: span 6; grid-row: span 8; text-align: center;">
+            <h3>Nhóm A</h3>
+            <p>Vòng quay số dừng ở <strong style="font-size: 76px; color: var(--c-red);">10</strong></p>
+            <p style="margin-top: 20px;">Dự đoán số nước châu Phi trong LHQ?</p>
+            <div class="tag" style="margin-top: 20px;">TB: 25%</div>
+        </div>
+
+        <div class="box" style="grid-column: span 6; grid-row: span 8; text-align: center;">
+            <h3>Nhóm B</h3>
+            <p>Vòng quay số dừng ở <strong style="font-size: 76px; color: var(--c-green);">65</strong></p>
+            <p style="margin-top: 20px;">Dự đoán số nước châu Phi trong LHQ?</p>
+            <div class="tag" style="margin-top: 20px;">TB: 45%</div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 16: ANCHORING REAL LIFE -->
+    <div class="slide">
+        <div class="counter">16/23</div>
+        <div class="box bg-orange" style="grid-column: span 12; grid-row: span 4;">
+            <h2>Mỏ neo ở khắp nơi</h2>
+        </div>
+
+        <div class="box bg-dark" style="grid-column: span 6; grid-row: span 8;">
+             <i class="fa-solid fa-tags icon-lg" style="color: var(--c-yellow);"></i>
+             <h3 style="color: white;">Giảm giá ảo</h3>
+             <p style="color: #ccc;">Giá gốc: <span style="text-decoration: line-through;">$100</span> (Neo)</p>
+             <p style="color: var(--c-green); font-weight: bold;">Giá bán: $50</p>
+             <p style="color: #ccc; margin-top: 20px;">Bạn thấy hời vì so với $100, không phải vì giá trị thực.</p>
+        </div>
+
+        <div class="box bg-yellow" style="grid-column: span 6; grid-row: span 8;">
+             <i class="fa-solid fa-gavel icon-lg"></i>
+             <h3>Đàm phán lương</h3>
+             <p>Người đưa ra con số đầu tiên sẽ thiết lập "mỏ neo" cho cả cuộc đàm phán.</p>
+             <div class="tag" style="background: black; margin-top: 20px;">Always Move First</div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 17: AVAILABILITY -->
+    <div class="slide">
+        <div class="counter">17/23</div>
+        <div class="box bg-green" style="grid-column: span 12; grid-row: span 4;">
+            <h2>Availability Heuristic</h2>
+            <p>(Tính sẵn có)</p>
+        </div>
+
+        <div class="box" style="grid-column: span 12; grid-row: span 4; text-align: center;">
+            <p>Trong tiếng Anh, từ bắt đầu bằng <strong>K</strong> nhiều hơn hay từ có <strong>K ở vị trí thứ 3</strong> nhiều hơn?</p>
+        </div>
+
+        <div class="box bg-blue" style="grid-column: span 6; grid-row: span 4; text-align: center;">
+            <p style="font-size: 52px; font-weight: bold;">K _ _ _</p>
+            <p>Dễ nhớ ra -> <strong>Nghĩ là nhiều</strong></p>
+        </div>
+        <div class="box bg-dark" style="grid-column: span 6; grid-row: span 4; text-align: center;">
+            <p style="font-size: 52px; font-weight: bold; color: white;">_ _ K _</p>
+            <p style="color: #ccc;">Khó nhớ ra -> <strong>Nghĩ là ít</strong></p>
+            <p style="color: var(--c-yellow); font-size: 28px; margin-top: 10px;">(Thực tế: Nhiều gấp 3 lần)</p>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 18: AVAILABILITY BIAS -->
+    <div class="slide">
+        <div class="counter">18/23</div>
+        <div class="box bg-red" style="grid-column: span 12; grid-row: span 4; text-align: center;">
+            <i class="fa-solid fa-newspaper icon-lg" style="color: white;"></i>
+            <h2 style="color: white;">Truyền thông bóp méo thực tế</h2>
+        </div>
+
+        <div class="box" style="grid-column: span 6; grid-row: span 8;">
+            <h3>Tai nạn máy bay</h3>
+            <p>Báo đài đưa tin rầm rộ.</p>
+            <p>Hình ảnh sống động.</p>
+            <div style="border-top: 2px solid black; margin-top: 20px; padding-top: 10px;">
+                <p>-> Cảm thấy <strong>RẤT NGUY HIỂM</strong></p>
+            </div>
+        </div>
+
+        <div class="box bg-dark" style="grid-column: span 6; grid-row: span 8;">
+            <h3 style="color: white;">Tiểu đường</h3>
+            <p style="color: #ccc;">Chết âm thầm.</p>
+            <p style="color: #ccc;">Không lên trang nhất.</p>
+            <div style="border-top: 2px solid #555; margin-top: 20px; padding-top: 10px;">
+                <p style="color: #ccc;">-> Cảm thấy <strong>BÌNH THƯỜNG</strong></p>
+            </div>
+            <p style="color: var(--c-red); margin-top: 20px;">(Dù chết nhiều gấp bội)</p>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 19: REPRESENTATIVENESS -->
+    <div class="slide">
+        <div class="counter">19/23</div>
+        <div class="box bg-purple" style="grid-column: span 12; grid-row: span 5;">
+            <h2>Tom W là ai?</h2>
+            <p>"Tom thông minh, ngăn nắp, nhưng thiếu sáng tạo và ít sự đồng cảm."</p>
+        </div>
+
+        <div class="box" style="grid-column: span 12; grid-row: span 7; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
+            <div style="text-align: center;">
+                <i class="fa-solid fa-book icon-lg" style="color: var(--c-blue);"></i>
+                <h3>Thủ thư (Librarian)</h3>
+                <p style="color: var(--c-blue); font-weight: bold;">Giống mô tả!</p>
+            </div>
+            <div style="text-align: center; opacity: 0.5;">
+                <i class="fa-solid fa-wheat-awn icon-lg"></i>
+                <h3>Nông dân (Farmer)</h3>
+                <p>Không giống mô tả.</p>
+            </div>
+            <div style="grid-column: span 2; text-align: center; margin-top: 20px;">
+                <p class="tag bg-red">Sai lầm!</p>
+                <p>Bạn đã quên mất <strong>Tỷ lệ cơ bản (Base Rate)</strong>.</p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 20: BASE RATE NEGLECT -->
+    <div class="slide">
+        <div class="counter">20/23</div>
+        <div class="box bg-dark" style="grid-column: span 12; grid-row: span 12; justify-content: flex-start;">
+            <h2 style="color: var(--c-yellow);">Base Rate Neglect</h2>
+            <p style="color: white;">Tỷ lệ dân số thực tế:</p>
+            
+            <div style="display: flex; align-items: center; margin-top: 40px; gap: 20px;">
+                <div style="flex: 1; text-align: center;">
+                    <i class="fa-solid fa-book" style="font-size: 52px; color: var(--c-blue);"></i>
+                    <p style="color: white; font-size: 28px;">Thủ thư</p>
+                </div>
+                <div style="flex: 6; display: flex; flex-wrap: wrap; gap: 5px;">
+                    <!-- Farmers icons -->
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                    <i class="fa-solid fa-wheat-awn" style="font-size: 40px; color: var(--c-green);"></i>
+                </div>
+            </div>
+
+            <div class="box bg-yellow" style="margin-top: 40px;">
+                <p style="font-size: 46px; color: rgb(45, 52, 54); font-weight: 600;">Xác suất Tom là một "nông dân thích ngăn nắp" cao hơn nhiều so với việc là một thủ thư.</p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 21: THE LINDA PROBLEM -->
+    <div class="slide">
+        <div class="counter">21/23</div>
+        <div class="box bg-red" style="grid-column: span 12; grid-row: span 4;">
+            <h2>The Linda Problem</h2>
+            <p>Linda (31t, độc thân, thông minh, quan tâm đến công bằng xã hội).</p>
+        </div>
+
+        <div class="box" style="grid-column: span 12; grid-row: span 8;">
+            <p style="margin-bottom: 20px;">Cái nào có khả năng cao hơn?</p>
+            
+            <div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <div style="border: 4px solid black; padding: 20px; border-radius: 20px; width: 45%;">
+                    <p>Linda là nhân viên ngân hàng.</p>
+                    <p style="font-size: 52px; font-weight: bold;">(A)</p>
+                </div>
+                <div style="border: 4px solid black; padding: 20px; border-radius: 20px; width: 45%; background: var(--c-light);">
+                    <p>Linda là nhân viên ngân hàng & tham gia nữ quyền.</p>
+                    <p style="font-size: 52px; font-weight: bold;">(A + B)</p>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 34px;">85% chọn (A + B) vì nó nghe "hợp lý" hơn.</p>
+            <p style="text-align: center; color: var(--c-red); font-weight: bold;">SAI VỀ LOGIC!</p>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 22: REGRESSION TO THE MEAN -->
+    <div class="slide">
+        <div class="counter">22/23</div>
+        <div class="box bg-blue" style="grid-column: span 12; grid-row: span 3;">
+            <h2>Hồi quy về mức trung bình</h2>
+        </div>
+
+        <div class="box" style="grid-column: span 12; grid-row: span 9; display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div style="text-align: center;">
+                <i class="fa-solid fa-plane-arrival icon-lg" style="color: var(--c-green);"></i>
+                <h3>Khen ngợi</h3>
+                <p>Học viên bay cực tốt -> Được khen -> Lần sau bay tệ hơn.</p>
+                <p style="color: var(--c-red); font-size: 28px; margin-top: 10px;">-> Khen làm giảm phong độ?</p>
+            </div>
+            <div style="text-align: center;">
+                <i class="fa-solid fa-plane-slash icon-lg" style="color: var(--c-red);"></i>
+                <h3>Trách mắng</h3>
+                <p>Học viên bay cực tệ -> Bị mắng -> Lần sau bay tốt hơn.</p>
+                <p style="color: var(--c-green); font-size: 28px; margin-top: 10px;">-> Mắng giúp tiến bộ?</p>
+            </div>
+            <div class="box bg-dark" style="grid-column: span 2; margin-top: 0; padding: 20px;">
+                <p style="color: white; text-align: center;">KHÔNG! Chỉ là may mắn hết hạn. Mọi thứ đều quay về mức trung bình.</p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 23: OUTRO BATCH 2 -->
+    <div class="slide">
+        <div class="counter">23/23</div>
+        <div class="box bg-dark" style="grid-column: span 12; grid-row: span 12; align-items: center; text-align: center;">
+            <h2 style="color: var(--c-yellow);">Tổng kết Part 2</h2>
+            <div style="text-align: left; width: 85%; margin: 40px 0;">
+                <div style="margin-bottom: 15px; border-bottom: 2px solid #555; padding-bottom: 10px;">
+                    <p style="color: white;">✅ Mỏ neo (Anchor): Con số vô nghĩa cũng ảnh hưởng đến bạn.</p>
+                </div>
+                <div style="margin-bottom: 15px; border-bottom: 2px solid #555; padding-bottom: 10px;">
+                    <p style="color: white;">✅ Sẵn có (Availability): Dễ nhớ = Tưởng là nhiều.</p>
+                </div>
+                <div style="margin-bottom: 15px; border-bottom: 2px solid #555; padding-bottom: 10px;">
+                    <p style="color: white;">✅ Linda: Trực giác đánh bại Logic.</p>
+                </div>
+            </div>
+
+            <p style="color: #999;">Đón xem Batch 3:</p>
+            <h1 style="color: var(--c-red); font-size: 76px; margin: 20px 0;">Overconfidence</h1>
+            <p style="color: white;">Tại sao chuyên gia luôn sai?</p>
+            
+            <div style="display: flex; gap: 20px; margin-top: 20px;">
+                <div class="tag" style="background: var(--c-blue); font-size: 38px;">Follow</div>
+                <div class="tag" style="background: white; color: black; font-size: 38px;">Share</div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SCRIPT CLONE NODE -->
+    <button class="export-btn" onclick="exportImages()">Download Batch 2</button>
+
+    <script>
+        async function exportImages() {
+            const slides = document.querySelectorAll('.slide');
+            const zip = new JSZip();
+            const folder = zip.folder("thinking-fast-slow-batch-2");
+            const btn = document.querySelector('.export-btn');
+            const originalText = btn.innerText;
+            
+            btn.innerText = "Processing...";
+
+            const options = {
+                scale: 2,
+                useCORS: true,
+                logging: false,
+                backgroundColor: null,
+                allowTaint: true,
+                scrollY: -window.scrollY 
+            };
+
+            for (let i = 0; i < slides.length; i++) {
+                const originalSlide = slides[i];
+                const clone = originalSlide.cloneNode(true);
+                
+                clone.style.position = 'fixed';
+                clone.style.top = '0';
+                clone.style.left = '0';
+                clone.style.zIndex = '-9999';
+                clone.style.margin = '0';
+                clone.style.transform = 'none';
+                clone.style.width = '1200px'; 
+                clone.style.height = '1200px'; 
+                
+                document.body.appendChild(clone);
+
+                try {
+                    const canvas = await html2canvas(clone, options);
+                    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+                    folder.file(`slide-${String(i + 12).padStart(2, '0')}.png`, blob); // Start numbering from 12
+                    btn.innerText = `Exporting (${i + 1}/${slides.length})...`;
+                } catch (err) {
+                    console.error("Export error:", err);
+                } finally {
+                    document.body.removeChild(clone);
+                }
+            }
+
+            const content = await zip.generateAsync({type:"blob"});
+            saveAs(content, "thinking-fast-slow-batch-2.zip");
+            btn.innerText = originalText;
+        }
+    </script>
+</body>
+</html>

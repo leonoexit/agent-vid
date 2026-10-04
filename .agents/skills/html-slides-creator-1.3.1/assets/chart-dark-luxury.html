@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart Slide - Dark OLED Luxury</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --color-bg: #000000;
+      --color-surface: #0a0a0a;
+      --color-text: #f8fafc;
+      --color-text-muted: rgba(248, 250, 252, 0.6);
+      --color-accent: #10b981;
+      --color-accent-2: #3b82f6;
+      --color-accent-3: #8b5cf6;
+      --color-glow: rgba(16, 185, 129, 0.3);
+      --font-main: 'Outfit', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Subtle glow effect */
+    .glow-effect {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--color-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Header */
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .slide-header h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--color-text);
+      letter-spacing: -0.02em;
+    }
+
+    .slide-header p {
+      font-size: 16px;
+      color: var(--color-text-muted);
+      margin-top: 8px;
+    }
+
+    /* Chart Container */
+    .chart-container {
+      flex: 1;
+      display: flex;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .chart-wrapper {
+      flex: 2;
+      background: var(--color-surface);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 60px var(--color-glow);
+    }
+
+    /* Stats Panel */
+    .stats-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .stat-card {
+      background: var(--color-surface);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .stat-value {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .stat-value.accent-1 { color: var(--color-accent); }
+    .stat-value.accent-2 { color: var(--color-accent-2); }
+    .stat-value.accent-3 { color: var(--color-accent-3); }
+
+    .stat-change {
+      font-size: 14px;
+      color: var(--color-accent);
+      margin-top: 4px;
+    }
+
+    /* Print styles */
+    @media print {
+      .slide { margin: 0; }
+      .glow-effect { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="glow-effect"></div>
+    
+    <div class="slide-header">
+      <div>
+        <h2>Revenue Growth Analysis</h2>
+        <p>Q1-Q4 Performance Metrics</p>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <div class="chart-wrapper">
+        <canvas id="mainChart"></canvas>
+      </div>
+      
+      <div class="stats-panel">
+        <div class="stat-card">
+          <span class="stat-label">Total Revenue</span>
+          <span class="stat-value accent-1">$2.4M</span>
+          <span class="stat-change">↑ 24% vs last year</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Avg. Growth</span>
+          <span class="stat-value accent-2">18%</span>
+          <span class="stat-change">↑ 5% vs target</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Customers</span>
+          <span class="stat-value accent-3">12.5K</span>
+          <span class="stat-change">↑ 890 new</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('mainChart').getContext('2d');
+    
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(16, 185, 129, 0.3)');
+    gradient.addColorStop(1, 'rgba(16, 185, 129, 0)');
+    
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+          label: 'Revenue',
+          data: [150, 180, 220, 280, 320, 350, 420, 480, 520, 580, 650, 720],
+          borderColor: '#10b981',
+          backgroundColor: gradient,
+          borderWidth: 3,
+          fill: true,
+          tension: 0.4,
+          pointRadius: 0,
+          pointHoverRadius: 8,
+          pointHoverBackgroundColor: '#10b981',
+          pointHoverBorderColor: '#000',
+          pointHoverBorderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: {
+            grid: {
+              color: 'rgba(255, 255, 255, 0.05)',
+              drawBorder: false
+            },
+            ticks: {
+              color: 'rgba(248, 250, 252, 0.6)',
+              font: { family: 'Outfit', size: 12 }
+            }
+          },
+          y: {
+            grid: {
+              color: 'rgba(255, 255, 255, 0.05)',
+              drawBorder: false
+            },
+            ticks: {
+              color: 'rgba(248, 250, 252, 0.6)',
+              font: { family: 'Outfit', size: 12 },
+              callback: value => '$' + value + 'K'
+            }
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index'
+        }
+      }
+    });
+  </script>
+</body>
+</html>

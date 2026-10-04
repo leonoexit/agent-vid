@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Slide - Minimalist Swiss</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #111111;
+      --color-accent: #0066ff;
+      --color-muted: #6b7280;
+      --font-main: 'Space Grotesk', sans-serif;
+      --grid-unit: 20px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--grid-unit);
+      padding: calc(var(--grid-unit) * 4);
+    }
+
+    /* Accent Line */
+    .accent-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 100%;
+      background: var(--color-accent);
+    }
+
+    /* Content */
+    .content {
+      grid-column: 2 / 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-accent);
+    }
+
+    h1 {
+      font-size: 72px;
+      font-weight: 500;
+      line-height: 1.1;
+      color: var(--color-text);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-muted);
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    /* Meta */
+    .meta {
+      position: absolute;
+      bottom: calc(var(--grid-unit) * 4);
+      left: calc(var(--grid-unit) * 4 + 8px);
+      display: flex;
+      gap: 40px;
+      font-size: 14px;
+      color: var(--color-muted);
+    }
+
+    .meta span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Decorative Number */
+    .deco-number {
+      position: absolute;
+      top: calc(var(--grid-unit) * 4);
+      right: calc(var(--grid-unit) * 4);
+      font-size: 200px;
+      font-weight: 700;
+      color: rgba(0, 102, 255, 0.05);
+      line-height: 1;
+    }
+
+    /* Print styles */
+    @media print {
+      .slide { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="accent-line"></div>
+    <div class="deco-number">01</div>
+    
+    <div class="content">
+      <p class="eyebrow">Category / Topic</p>
+      <h1>Clean, Focused<br>Presentation Title</h1>
+      <p class="subtitle">A thoughtful subtitle that provides context without overwhelming the viewer.</p>
+    </div>
+    
+    <div class="meta">
+      <span>Presenter Name</span>
+      <span>Date</span>
+      <span>Company</span>
+    </div>
+  </div>
+</body>
+</html>

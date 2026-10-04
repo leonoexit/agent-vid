@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bento Programming Explainer"
+  short_description: "Explain code through changing bento compositions and voice"
+  default_prompt: "Use $explainer-bento-story-voice to explain one programming concept with a small worked example in the Think Fast & Slow bento style, the fixed question/setup/decode/execute/verify/rule narrative, composition-led native transformations, coherent icons, optional justified illustration and Hải Đăng narration."

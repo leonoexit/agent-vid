@@ -1,0 +1,599 @@
+{
+  "language": "vi",
+  "title": "scanf trong C — theo dấu một số",
+  "brand": "AGENTVID",
+  "series": "C • ĐỌC DỮ LIỆU",
+  "kicker": "MỘT VÍ DỤ • TỪNG NHỊP",
+  "entities": [
+    {
+      "id": "input",
+      "kind": "card",
+      "tone": "blue",
+      "label": "Đã nhập",
+      "value": "\"18\"",
+      "detail": "các ký tự đầu vào",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 20,
+      "y": 45,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "age",
+      "kind": "card",
+      "tone": "yellow",
+      "label": "age · tuổi",
+      "value": "0",
+      "detail": "",
+      "address": "&age",
+      "hiddenFields": [
+        "value",
+        "address"
+      ],
+      "x": 500,
+      "y": 45,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "scan",
+      "kind": "reader",
+      "tone": "purple",
+      "label": "Hàm đọc",
+      "value": "scanf",
+      "detail": "đọc từ stdin",
+      "hiddenFields": [
+        "detail"
+      ],
+      "x": 200,
+      "y": 385,
+      "width": 420,
+      "height": 170
+    },
+    {
+      "id": "count",
+      "kind": "reader",
+      "tone": "green",
+      "label": "Kết quả trả về",
+      "value": "1",
+      "detail": "một mục đã được gán",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 200,
+      "y": 385,
+      "width": 420,
+      "height": 170
+    }
+  ],
+  "intro": {
+    "title": "scanf nhận số\nnhư thế nào?",
+    "subtitle": "Từ chữ gõ vào đến giá trị trong biến",
+    "subtitleOn": "vào biến",
+    "note": "Cùng theo dấu một lần nhập số trong C.",
+    "noteOn": "Cùng theo dấu",
+    "tiles": [
+      {
+        "value": "18",
+        "label": "Người dùng gõ",
+        "on": "mười tám"
+      },
+      {
+        "value": "age",
+        "label": "Biến trong C",
+        "on": "biến tuổi"
+      }
+    ],
+    "connectorOn": "vào biến",
+    "vo": "Bạn gõ mười tám. Làm sao số đó vào biến tuổi? Cùng theo dấu một lời gọi scan ép."
+  },
+  "scenes": [
+    {
+      "title": "Chuẩn bị một biến",
+      "vo": "Ta tạo biến nguyên lưu tuổi, ban đầu bằng không. Đây là nơi sẽ nhận số người dùng nhập.",
+      "events": [
+        {
+          "type": "show",
+          "on": "tạo biến",
+          "target": "age"
+        },
+        {
+          "type": "code",
+          "on": "biến nguyên",
+          "lines": [
+            "int age = 0;"
+          ],
+          "active": 0
+        },
+        {
+          "type": "reveal",
+          "on": "bằng không",
+          "target": "age",
+          "fields": [
+            "value"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "nơi sẽ nhận",
+          "slot": "subtitle",
+          "text": "age: biến sẽ nhận kết quả"
+        },
+        {
+          "type": "sticker",
+          "target": "reader-curious",
+          "action": "show",
+          "on": "nơi sẽ nhận"
+        }
+      ]
+    },
+    {
+      "title": "Người dùng nhập gì?",
+      "vo": "Bạn gõ mười tám rồi Enter. Dữ liệu nhập lúc này là các ký tự, chưa phải giá trị trong biến tuổi.",
+      "events": [
+        {
+          "type": "show",
+          "on": "Bạn gõ",
+          "target": "input"
+        },
+        {
+          "type": "reveal",
+          "on": "mười tám",
+          "target": "input",
+          "fields": [
+            "value"
+          ]
+        },
+        {
+          "type": "reveal",
+          "on": "các ký tự",
+          "target": "input",
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "type": "spotlight",
+          "on": "chưa phải",
+          "targets": [
+            "input"
+          ],
+          "dim": 0.7
+        },
+        {
+          "type": "text",
+          "on": "chưa phải",
+          "slot": "subtitle",
+          "text": "Chữ \"18\" ở đầu vào; age vẫn bằng 0"
+        }
+      ]
+    },
+    {
+      "title": "Gọi scanf",
+      "vo": "Ta dùng hàm scan ép để đọc đầu vào. Nhưng hàm cần biết đọc kiểu gì và ghi vào đâu.",
+      "events": [
+        {
+          "type": "show",
+          "on": "hàm scan ép",
+          "target": "scan"
+        },
+        {
+          "type": "reveal",
+          "on": "đọc đầu vào",
+          "target": "scan",
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "đọc kiểu gì",
+          "slot": "subtitle",
+          "text": "1. Đọc kiểu gì?"
+        },
+        {
+          "type": "text",
+          "on": "ghi vào đâu",
+          "slot": "takeaway",
+          "text": "2. Ghi vào đâu?"
+        }
+      ]
+    },
+    {
+      "title": "Đọc kiểu gì?",
+      "vo": "Phần trăm đê yêu cầu đọc một số nguyên thập phân. Nó hướng dẫn cách hiểu các ký tự vừa nhập.",
+      "events": [
+        {
+          "type": "set",
+          "on": "Phần trăm đê",
+          "target": "scan",
+          "value": "%d",
+          "detail": "số nguyên thập phân"
+        },
+        {
+          "type": "code",
+          "on": "Phần trăm đê",
+          "lines": [
+            "\"%d\""
+          ],
+          "active": 0,
+          "label": "CHUỖI ĐỊNH DẠNG"
+        },
+        {
+          "type": "focus",
+          "on": "số nguyên",
+          "targets": [
+            "scan"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "cách hiểu",
+          "slot": "subtitle",
+          "text": "%d → chuyển chữ số thành số nguyên"
+        },
+        {
+          "type": "sticker",
+          "target": "reader-curious",
+          "action": "react",
+          "on": "cách hiểu"
+        }
+      ]
+    },
+    {
+      "title": "Ghi vào đâu?",
+      "vo": "Còn dấu và trước tên biến lấy địa chỉ của biến. Địa chỉ chỉ ra nơi scan ép phải ghi kết quả.",
+      "events": [
+        {
+          "type": "reveal",
+          "on": "dấu và",
+          "target": "age",
+          "fields": [
+            "address"
+          ]
+        },
+        {
+          "type": "code",
+          "on": "dấu và",
+          "lines": [
+            "&age"
+          ],
+          "active": 0,
+          "label": "ĐỊA CHỈ BIẾN"
+        },
+        {
+          "type": "spotlight",
+          "on": "địa chỉ của biến",
+          "targets": [
+            "age"
+          ],
+          "dim": 0.7
+        },
+        {
+          "type": "text",
+          "on": "nơi scan ép",
+          "slot": "subtitle",
+          "text": "&age → địa chỉ để ghi kết quả"
+        }
+      ]
+    },
+    {
+      "title": "Ghép thành lời gọi",
+      "vo": "Ghép hai phần vào lời gọi này. Địa chỉ của biến tuổi được truyền cho hàm, cùng định dạng phần trăm đê.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Ghép hai phần",
+          "lines": [
+            "int age = 0;",
+            "scanf(\"%d\", &age);"
+          ],
+          "lineCues": [
+            null,
+            "lời gọi này"
+          ],
+          "active": 1
+        },
+        {
+          "type": "transfer",
+          "on": "Địa chỉ của biến tuổi",
+          "from": "age",
+          "to": "scan",
+          "value": "&age",
+          "field": "address",
+          "commitField": "detail",
+          "duration": 0.9
+        },
+        {
+          "type": "text",
+          "on": "cùng định dạng",
+          "slot": "subtitle",
+          "text": "Kiểu đọc + địa chỉ đích"
+        }
+      ]
+    },
+    {
+      "title": "Từ ký tự thành số",
+      "vo": "Hàm đọc các ký tự mười tám. Theo định dạng đã cho, chúng được chuyển thành số nguyên mười tám.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "đọc các ký tự",
+          "targets": [
+            "input",
+            "scan"
+          ],
+          "dim": 0.7
+        },
+        {
+          "type": "transfer",
+          "on": "Theo định dạng",
+          "from": "input",
+          "to": "scan",
+          "value": "18",
+          "duration": 0.9
+        },
+        {
+          "type": "set",
+          "on": "chuyển thành",
+          "target": "scan",
+          "label": "Đã chuyển đổi",
+          "detail": "số nguyên"
+        },
+        {
+          "type": "text",
+          "on": "số nguyên mười tám",
+          "slot": "subtitle",
+          "text": "\"18\" → số nguyên 18"
+        }
+      ]
+    },
+    {
+      "title": "Ghi vào biến age",
+      "vo": "Số vừa đọc được ghi vào địa chỉ đã truyền. Khi ghi xong, biến tuổi đổi từ không thành mười tám.",
+      "events": [
+        {
+          "type": "transfer",
+          "on": "Số vừa đọc",
+          "from": "scan",
+          "to": "age",
+          "value": "18",
+          "duration": 1.05
+        },
+        {
+          "type": "focus",
+          "on": "Khi ghi xong",
+          "targets": [
+            "age"
+          ]
+        },
+        {
+          "type": "set",
+          "on": "biến tuổi đổi",
+          "target": "age",
+          "detail": "đã nhận kết quả"
+        },
+        {
+          "type": "text",
+          "on": "thành mười tám",
+          "slot": "takeaway",
+          "text": "age = 18"
+        },
+        {
+          "type": "sticker",
+          "target": "reader-curious",
+          "action": "hide",
+          "on": "Khi ghi xong"
+        },
+        {
+          "type": "sticker",
+          "target": "reader-pleased",
+          "action": "show",
+          "on": "biến tuổi đổi"
+        }
+      ]
+    },
+    {
+      "title": "Giá trị và địa chỉ",
+      "vo": "Nhìn lại: biến tuổi đang giữ mười tám. Còn địa chỉ của biến tuổi vẫn là nơi hàm vừa ghi vào.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "biến tuổi đang giữ",
+          "targets": [
+            "age"
+          ],
+          "dim": 0.7
+        },
+        {
+          "type": "text",
+          "on": "giữ mười tám",
+          "slot": "subtitle",
+          "text": "age: giá trị 18"
+        },
+        {
+          "type": "text",
+          "on": "địa chỉ của biến tuổi",
+          "slot": "takeaway",
+          "text": "&age: địa chỉ của biến"
+        }
+      ]
+    },
+    {
+      "title": "scanf còn trả về gì?",
+      "vo": "Hàm còn trả về số mục đã gán thành công. Ở đây chỉ có một mục, nên kết quả trả về là một.",
+      "events": [
+        {
+          "type": "hide",
+          "on": "Hàm còn",
+          "target": "scan"
+        },
+        {
+          "type": "show",
+          "on": "số mục",
+          "target": "count"
+        },
+        {
+          "type": "code",
+          "on": "số mục",
+          "lines": [
+            "int age = 0;",
+            "int n = scanf(\"%d\", &age);"
+          ],
+          "active": 1
+        },
+        {
+          "type": "reveal",
+          "on": "một mục",
+          "target": "count",
+          "fields": [
+            "value"
+          ]
+        },
+        {
+          "type": "reveal",
+          "on": "trả về là một",
+          "target": "count",
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "trả về là một",
+          "slot": "subtitle",
+          "text": "n = 1: đã gán được một số"
+        },
+        {
+          "type": "sticker",
+          "target": "reader-pleased",
+          "action": "react",
+          "on": "trả về là một"
+        }
+      ]
+    },
+    {
+      "title": "Kiểm tra trước khi dùng",
+      "vo": "Ta kiểm tra nờ có bằng một không. Nếu không, đừng dùng biến tuổi như một lần nhập số thành công.",
+      "events": [
+        {
+          "type": "code",
+          "on": "kiểm tra nờ",
+          "lines": [
+            "int n = scanf(\"%d\", &age);",
+            "if (n != 1) return 1;"
+          ],
+          "lineCues": [
+            null,
+            "Nếu không"
+          ],
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "bằng một",
+          "targets": [
+            "count"
+          ],
+          "dim": 0.7
+        },
+        {
+          "type": "text",
+          "on": "đừng dùng biến tuổi",
+          "slot": "takeaway",
+          "text": "Chỉ dùng kết quả khi n == 1"
+        }
+      ]
+    },
+    {
+      "title": "Theo dõi trọn đường đi",
+      "vo": "Vậy dữ liệu đi từ chữ nhập vào, qua bước đọc số, rồi được ghi vào biến tuổi. Sau đó kiểm tra kết quả trả về.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "chữ nhập vào",
+          "targets": [
+            "input"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "bước đọc số",
+          "slot": "subtitle",
+          "text": "Đọc theo %d"
+        },
+        {
+          "type": "focus",
+          "on": "ghi vào biến tuổi",
+          "targets": [
+            "age"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "ghi vào biến tuổi",
+          "slot": "takeaway",
+          "text": "Ghi qua &age"
+        },
+        {
+          "type": "focus",
+          "on": "kết quả trả về",
+          "targets": [
+            "count"
+          ]
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "title": "Đọc đúng.\nGhi đúng chỗ.",
+    "subtitle": "Và kiểm tra kết quả trả về",
+    "subtitleOn": "kiểm tra",
+    "note": "Ví dụ: int n = scanf(\"%d\", &age);",
+    "noteOn": "lần nhập thành công",
+    "tiles": [
+      {
+        "value": "%d",
+        "label": "Cách đọc số",
+        "on": "Phần trăm đê"
+      },
+      {
+        "value": "&age",
+        "label": "Nơi ghi số",
+        "on": "địa chỉ biến tuổi"
+      }
+    ],
+    "connector": "+",
+    "connectorOn": "địa chỉ biến tuổi",
+    "tone": "dark",
+    "vo": "Phần trăm đê cho cách đọc, địa chỉ biến tuổi cho nơi ghi. Nhớ kiểm tra nờ bằng một để xác nhận lần nhập thành công."
+  },
+  "stickers": [
+    {
+      "id": "reader-curious",
+      "image": "assets/illustrations/maple-reader-curious-fc408f18.png",
+      "alt": "Contextual guide in its own safe zone; never a native data entity.",
+      "x": 652,
+      "y": 355,
+      "width": 198,
+      "height": 210,
+      "rotation": 0,
+      "manual": true
+    },
+    {
+      "id": "reader-pleased",
+      "image": "assets/illustrations/maple-reader-pleased-f1093678.png",
+      "alt": "Contextual guide in its own safe zone; never a native data entity.",
+      "x": 652,
+      "y": 355,
+      "width": 198,
+      "height": 210,
+      "rotation": 0,
+      "manual": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source_family": "Merriweather",
+    "bundled_family": "Bento Story Serif",
+    "file": "template/assets/fonts/bento-story-serif.woff2",
+    "source": "https://github.com/google/fonts/tree/main/ofl/merriweather",
+    "original_ttf_sha256": "d0ed0e359e396af7ad05e73dffd11a3a4c326ea0d0283c56bd9361cb2cc86a96",
+    "bundled_sha256": "3849091968b71c7561a5c32dd1371dbbd86afac8b8efaade8fca0d3854968468",
+    "modifications": "WOFF2 conversion and renamed family; fixed wdth=100, opsz=32, retained wght variation",
+    "license": "licenses/fonts/merriweather-OFL.txt"
+  },
+  {
+    "source_family": "Inter",
+    "bundled_family": "Bento Story Sans",
+    "file": "template/assets/fonts/bento-story-sans.woff2",
+    "source": "https://github.com/google/fonts/tree/main/ofl/inter",
+    "original_ttf_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "bundled_sha256": "ce8ffab787ef65bf6ecf5214ed68f1f3f3913865d133eebf802016a7b4c8da51",
+    "modifications": "WOFF2 conversion and renamed family; retained variable axes",
+    "license": "licenses/fonts/inter-OFL.txt"
+  },
+  {
+    "source_family": "JetBrains Mono",
+    "bundled_family": "Bento Story Mono",
+    "file": "template/assets/fonts/bento-story-mono.woff2",
+    "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono",
+    "original_ttf_sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda",
+    "bundled_sha256": "6eac73cb39cf173858c4418969c64179c97d68dfb0168b41517bb02783d06b2e",
+    "modifications": "WOFF2 conversion and renamed family; retained variable axes",
+    "license": "licenses/fonts/jetbrains-mono-OFL.txt"
+  }
+]
