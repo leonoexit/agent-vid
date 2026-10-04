@@ -1,0 +1,25 @@
+◆  Checking solid-s-invoice-v2
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Apple)" renderer="ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)")
+
+Lint
+  ⚠ nested_structure_needs_subcomposition: <section id="explainer"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    /Volumes/LeNguyen02SSD/Programming/agent-vid/projects/noir-story/solid-s-invoice-v2/index.html #explainer t=0s
+    Fix: Move <section id="explainer"> and its contents into a sub-composition file and mount it with data-composition-src.
+  0 error(s), 1 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ◇ 0 issues across 9 sample(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 122/122 text checks pass WCAG AA
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed

@@ -1,0 +1,388 @@
+{
+  "language": "vi",
+  "title": "Phép gán sao chép giá trị",
+  "brand": "AGENTVID",
+  "series": "MỘT VÍ DỤ C",
+  "kicker": "THEO DÕI GIÁ TRỊ",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "card",
+      "tone": "orange",
+      "label": "x",
+      "value": "10",
+      "detail": "Giá trị ban đầu",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 30,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "y",
+      "kind": "card",
+      "tone": "purple",
+      "label": "y",
+      "value": "—",
+      "detail": "Một biến riêng",
+      "hiddenFields": [
+        "detail"
+      ],
+      "x": 490,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    }
+  ],
+  "intro": {
+    "title": "Sao chép rồi đổi",
+    "subtitle": "Hai biến có đổi cùng nhau?",
+    "subtitleOn": "có đổi theo",
+    "note": "Theo dõi một ví dụ C, từng bước.",
+    "noteOn": "Cùng theo dõi",
+    "tiles": [
+      {
+        "value": "x",
+        "label": "Ban đầu",
+        "on": "từ x"
+      },
+      {
+        "value": "y",
+        "label": "Bản sao",
+        "on": "sang y"
+      }
+    ],
+    "connectorOn": "sang y",
+    "vo": "Sao chép từ x sang y, rồi đổi x: y có đổi theo không? Cùng theo dõi từng bước.",
+    "tone": "dark"
+  },
+  "scenes": [
+    {
+      "title": "Bắt đầu với x",
+      "vo": "Trước hết, tạo một biến tên x. Ô màu vàng giúp ta theo dõi biến này.",
+      "events": [
+        {
+          "type": "show",
+          "on": "tạo một biến",
+          "target": "x"
+        },
+        {
+          "type": "text",
+          "on": "Ô màu vàng",
+          "slot": "subtitle",
+          "text": "Một biến: x"
+        }
+      ],
+      "phase": "setup",
+      "tone": "dark"
+    },
+    {
+      "title": "x giữ số nào?",
+      "vo": "Cho x bắt đầu bằng mười. Dòng khai báo này đặt giá trị ban đầu vào biến.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Cho x",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "type": "reveal",
+          "on": "bằng mười",
+          "target": "x",
+          "fields": [
+            "value"
+          ]
+        },
+        {
+          "type": "reveal",
+          "on": "giá trị ban đầu",
+          "target": "x",
+          "fields": [
+            "detail"
+          ]
+        }
+      ],
+      "phase": "setup",
+      "tone": "dark"
+    },
+    {
+      "title": "Thêm một biến",
+      "vo": "Tiếp theo, ta cần biến y. Ô xanh là một biến riêng, chưa thể hiện giá trị được gán.",
+      "events": [
+        {
+          "type": "show",
+          "on": "biến y",
+          "target": "y"
+        },
+        {
+          "type": "reveal",
+          "on": "biến riêng",
+          "target": "y",
+          "fields": [
+            "detail"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "chưa thể hiện",
+          "slot": "subtitle",
+          "text": "Dấu — chỉ là ký hiệu minh hoạ"
+        }
+      ],
+      "phase": "setup",
+      "tone": "dark"
+    },
+    {
+      "title": "Đọc dòng lệnh mới",
+      "vo": "Bây giờ, khai báo y bằng x. Vế phải cho biết ta sẽ đọc giá trị từ đâu.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Bây giờ",
+          "lines": [
+            "int x = 10;",
+            "int y = x;"
+          ],
+          "lineCues": [
+            null,
+            "khai báo y"
+          ],
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "Vế phải",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "đọc giá trị",
+          "slot": "subtitle",
+          "text": "Đọc giá trị hiện tại của x"
+        }
+      ],
+      "phase": "decode",
+      "tone": "dark"
+    },
+    {
+      "title": "Đọc được gì?",
+      "vo": "Nhìn vào x: giá trị hiện tại là mười. Đây là con số sẽ được sao chép.",
+      "events": [
+        {
+          "type": "focus",
+          "on": "Nhìn vào x",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "hiện tại là mười",
+          "slot": "subtitle",
+          "text": "x = 10"
+        },
+        {
+          "type": "text",
+          "on": "sẽ được sao chép",
+          "slot": "takeaway",
+          "text": "Đọc số đang có, không lấy tên biến"
+        }
+      ],
+      "phase": "decode",
+      "tone": "dark"
+    },
+    {
+      "title": "Bản sao đi đến y",
+      "vo": "Sao chép số mười từ x sang y. Khi ghi xong, y giữ giá trị mười.",
+      "events": [
+        {
+          "type": "transfer",
+          "on": "Sao chép",
+          "from": "x",
+          "to": "y",
+          "value": "10",
+          "duration": 1.0
+        },
+        {
+          "type": "focus",
+          "on": "Khi ghi xong",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "y giữ",
+          "slot": "takeaway",
+          "text": "y = 10"
+        }
+      ],
+      "phase": "execute",
+      "tone": "dark"
+    },
+    {
+      "title": "Còn x thì sao?",
+      "vo": "Trong khi đó, x vẫn giữ mười. Phép gán vừa rồi sao chép, không lấy mất giá trị của x.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "x vẫn giữ",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "Phép gán vừa rồi",
+          "slot": "subtitle",
+          "text": "x = 10, y = 10: hai bản giá trị"
+        },
+        {
+          "type": "focus",
+          "on": "không lấy mất",
+          "targets": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "phase": "execute",
+      "tone": "dark"
+    },
+    {
+      "title": "Thay đổi riêng x",
+      "vo": "Giờ gán hai mươi cho x. Số mới được ghi vào x, thay cho số mười trước đó.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Giờ gán",
+          "lines": [
+            "int x = 10;",
+            "int y = x;",
+            "x = 20;"
+          ],
+          "lineCues": [
+            null,
+            null,
+            "hai mươi"
+          ],
+          "active": 2
+        },
+        {
+          "type": "write",
+          "on": "Số mới",
+          "to": "x",
+          "value": "20"
+        },
+        {
+          "type": "text",
+          "on": "thay cho",
+          "slot": "subtitle",
+          "text": "x: 10 → 20"
+        },
+        {
+          "type": "set",
+          "on": "thay cho",
+          "target": "x",
+          "detail": "Đã cập nhật"
+        }
+      ],
+      "phase": "execute",
+      "tone": "dark"
+    },
+    {
+      "title": "Kiểm tra y",
+      "vo": "Chuyển sang nhìn y: nó vẫn là mười. Lệnh vừa chạy chỉ cập nhật biến x.",
+      "events": [
+        {
+          "type": "spotlight",
+          "on": "nhìn y",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "vẫn là mười",
+          "slot": "subtitle",
+          "text": "y = 10"
+        },
+        {
+          "type": "code-focus",
+          "on": "Lệnh vừa chạy",
+          "active": 2
+        },
+        {
+          "type": "text",
+          "on": "chỉ cập nhật",
+          "slot": "takeaway",
+          "text": "x đổi, y giữ bản sao cũ"
+        }
+      ],
+      "phase": "verify",
+      "tone": "dark"
+    },
+    {
+      "title": "Vì sao y không đổi?",
+      "vo": "Dòng gán y đã chạy trước đó. Đổi x không tự chạy lại dòng này; muốn đổi y, cần một lệnh gán mới.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "Dòng gán y",
+          "active": 1
+        },
+        {
+          "type": "text",
+          "on": "không tự chạy lại",
+          "slot": "subtitle",
+          "text": "Phép gán xảy ra lúc dòng lệnh chạy"
+        },
+        {
+          "type": "text",
+          "on": "cần một lệnh gán mới",
+          "slot": "takeaway",
+          "text": "Muốn đổi y → gán lại cho y"
+        }
+      ],
+      "phase": "verify",
+      "tone": "dark"
+    }
+  ],
+  "outro": {
+    "title": "Gán là chép giá trị",
+    "subtitle": "Tại thời điểm dòng lệnh chạy",
+    "subtitleOn": "lúc chạy",
+    "note": "Ví dụ này dùng hai số nguyên thông thường.",
+    "noteOn": "số nguyên",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x hiện tại",
+        "on": "hai mươi"
+      },
+      {
+        "value": "10",
+        "label": "y giữ lại",
+        "on": "mười"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "mười",
+    "tone": "dark",
+    "vo": "Phép gán chép giá trị lúc chạy. Kết quả: x là hai mươi, y vẫn mười. Đây là hai biến số nguyên độc lập."
+  },
+  "storyFormat": "worked-trace-v1",
+  "story": {
+    "question": "Đổi x sau khi gán y = x thì y có đổi theo không?",
+    "example": "int x = 10; int y = x; x = 20;",
+    "takeaway": "Phép gán số nguyên chép giá trị lúc dòng lệnh chạy."
+  }
+}

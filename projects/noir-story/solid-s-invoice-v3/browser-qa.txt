@@ -1,0 +1,38 @@
+{
+  "errors": [],
+  "issues": [],
+  "issueSamples": 0,
+  "leaks": [],
+  "modelGaps": [
+    {
+      "section": 6,
+      "start": 42.28,
+      "end": 45.51,
+      "duration": 3.229999999999997
+    },
+    {
+      "section": 11,
+      "start": 79.24,
+      "end": 82.47999999999999,
+      "duration": 3.239999999999995
+    },
+    {
+      "section": 13,
+      "start": 89.14,
+      "end": 92.85,
+      "duration": 3.7099999999999937
+    },
+    {
+      "section": 14,
+      "start": 97.24,
+      "end": 100.83,
+      "duration": 3.5900000000000034
+    },
+    {
+      "section": 14,
+      "start": 103.33999999999999,
+      "end": 107.02,
+      "duration": 3.680000000000007
+    }
+  ]
+}

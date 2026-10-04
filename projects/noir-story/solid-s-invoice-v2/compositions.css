@@ -1,0 +1,19 @@
+/* Opt-in spatial primitives for project-authored DOM, not JSON layout/event APIs. */
+.noir-panel{position:relative;background:rgba(20,20,23,.88);border:1px solid #ffffff24;border-radius:32px;padding:36px;backdrop-filter:blur(20px);isolation:isolate;min-width:0}
+.noir-panel[data-tone="orange"]{background:#241813;border-color:#D9775750}
+.noir-panel[data-tone="purple"]{background:#1C162B;border-color:#7C3AED70}
+.noir-section-line{display:flex;gap:20px;align-items:center;border-bottom:1px solid #ffffff26;padding-bottom:24px;font:500 24px 'Bento Story Mono',monospace;letter-spacing:.08em}
+.noir-section-line span{color:#D97757}
+.noir-split{display:grid;grid-template-columns:7fr 5fr;gap:24px;align-items:stretch}.noir-split.reverse{grid-template-columns:5fr 7fr}
+.noir-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}.noir-stack{display:grid;gap:24px}
+.noir-terminal{position:relative;min-width:0;padding:30px;background:#161619;border:1px solid #ffffff30;border-radius:24px;box-shadow:0 30px 60px #0006}
+.noir-terminal-bar{display:flex;align-items:center;gap:10px;padding-bottom:20px;margin-bottom:24px;border-bottom:1px solid #ffffff26;color:#94A3B8;font:400 22px 'Bento Story Mono',monospace}
+.noir-terminal-bar::before{content:"";width:10px;height:10px;border-radius:50%;background:#FCA5A5;box-shadow:18px 0 #FACC15,36px 0 #86EFAC;margin-right:44px;flex-shrink:0}
+.noir-terminal code{display:block;white-space:pre-wrap;font:400 30px/1.6 'Bento Story Mono',monospace;color:#E2E8F0}
+.noir-rail{display:grid;gap:22px}.noir-rail-step{display:flex;align-items:center;gap:24px;border-left:3px solid #ffffff26;padding:22px 24px;color:#CBD5E1}
+.noir-rail-step[data-active="true"]{border-color:#D97757;background:#241813;border-radius:0 20px 20px 0;color:#fff;box-shadow:0 0 32px #D9775714}
+.noir-step-number{flex-shrink:0;width:52px;height:52px;display:grid;place-items:center;border-radius:50%;background:#25252A;color:#E2E8F0;font:500 24px 'Bento Story Mono',monospace}
+[data-active="true"]>.noir-step-number{background:#D97757;color:#050505}
+.noir-role-card{border-top:4px solid var(--role-color,#D97757)}
+.noir-question{overflow:visible;margin-top:28px}.noir-question::before{content:"?";position:absolute;top:-24px;left:24px;background:#D97757;color:#050505;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;font:700 26px 'Space Grotesk',sans-serif}
+.noir-evidence{border-left:3px solid #ffffff40;padding-left:26px;line-height:1.5}.noir-stat{font:700 100px/1.1 'Space Grotesk',sans-serif;letter-spacing:-.04em}

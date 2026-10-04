@@ -1,0 +1,153 @@
+{
+  "source": "User-supplied Boris Claude setup carousel; unchanged bytes",
+  "html_files": 6,
+  "slide_count": 19,
+  "main_slides": 18,
+  "alternative_covers": 1,
+  "scope": "Read all 1646 HTML lines and visually inspected all 19 rendered slides. Source product claims were not fact-checked.",
+  "files": [
+    {
+      "original": "references/boris-claude-setup-carousel/.DS_Store",
+      "bundled": "references/source/.DS_Store",
+      "sha256": "6363b2b0101b814449dbf03c1a5e4198b77406ea6c42a932dfaf219b92ae47be"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/abstract_automation_pipelines.png",
+      "bundled": "references/source/assets/abstract_automation_pipelines.png",
+      "sha256": "5d27a72381c0366ff8faf1452c3609306eb90be26591ec7c14a75a30fa3f4e20"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/abstract_central_brain_monolith.png",
+      "bundled": "references/source/assets/abstract_central_brain_monolith.png",
+      "sha256": "596575ed2702f8682ec575e9cd2a2f90a47901ef146ebc76bf68b06286c4560a"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/abstract_community_knowledge.png",
+      "bundled": "references/source/assets/abstract_community_knowledge.png",
+      "sha256": "bf4a0bcf78209520d38a0ffd2a21ef61e3bfc369efb1bae0b6a77dd53273c868"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/abstract_parallel_processing_void.png",
+      "bundled": "references/source/assets/abstract_parallel_processing_void.png",
+      "sha256": "6e30af209ebd80f9a1aeb21bf36796f188892cdc59cecf175f144388ab7f8140"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/abstract_verification_loop_shield.png",
+      "bundled": "references/source/assets/abstract_verification_loop_shield.png",
+      "sha256": "bf49fbe0648e11a70c43d7675b992f16dd4de75b1af4c6675986cae4f32eb77c"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-2a330xmid0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-2a330xmid0bg1.jpg",
+      "sha256": "337ff6fb6c2fa8cb74b0460cc64aeb427d1523fb3659bb2f147f3a493df5e418"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-6jv2r7vhd0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-6jv2r7vhd0bg1.jpg",
+      "sha256": "310ddc04b03befb646a66a0fe0da1dad9ccb4547eec77f938405be3c036f190f"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-8fer78zhd0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-8fer78zhd0bg1.jpg",
+      "sha256": "5fbe14789e8b7f0ea7f2a57832c5b7cd5ada81548e9efb093fe6e105dfbd0e8b"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-da8sm19id0bg1.png",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-da8sm19id0bg1.png",
+      "sha256": "278716f4ad1c2bd37ce6e480c3c72d8b6dc2102ed258812643b63e608ccd0b8e"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-fot1z4qid0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-fot1z4qid0bg1.jpg",
+      "sha256": "775e5eacb31602bcc9796a3ccbed828a88a833adf613bf5318286c9f6d287e61"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-fpugbltid0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-fpugbltid0bg1.jpg",
+      "sha256": "1619e9ee6281d7e23886f876ad1e26bb47ad2575b4ec9f0335e01451f55b9dcb"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-g7wip0hid0bg1.png",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-g7wip0hid0bg1.png",
+      "sha256": "3122685b264ae2c664e072e1f8bf6bdcf5095853c627a2e766688ca601d557a5"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-h84s7k5id0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-h84s7k5id0bg1.jpg",
+      "sha256": "9a3b2ad8bbd9c550d9c7a70f86817a216fac44d7f9875a6d87cbd772d7380948"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-j6b8w2kid0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-j6b8w2kid0bg1.jpg",
+      "sha256": "4df3abb577093d006775f3edf4c19a38d59efb6ecc7d8d7d14ab38792c20f8a4"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-t2cxkicid0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-t2cxkicid0bg1.jpg",
+      "sha256": "88df3eaf4dcd57913233681cfb96f3e95eaac0a5f6089dd008640c1db4e2c888"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-wzm9nmdhd0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-wzm9nmdhd0bg1.jpg",
+      "sha256": "da0ce0ebd65b5b12557cb824892e9b0c612918a83e04fcc9ddbc20d2beac4573"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-yk4jrbnhd0bg1.jpg",
+      "bundled": "references/source/assets/claude-code-creator-boris-shares-his-setup-with-13-detailed-v0-yk4jrbnhd0bg1.jpg",
+      "sha256": "79d82e9bf59575bd932ec853dad7119939c4aed2d7e98a236cacbe2a831535e4"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/batch_1_intro_steps_1_3.html",
+      "bundled": "references/source/batch_1_intro_steps_1_3.html",
+      "sha256": "c9f3124936c547f10f95e587d6e4400fcd44d5139b0f12228440dc953f5096db",
+      "slides": 5,
+      "inline_style_blocks": 1,
+      "icons": 5
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/batch_2_steps_4_6.html",
+      "bundled": "references/source/batch_2_steps_4_6.html",
+      "sha256": "28da4f4da2ef19deb3f26d1010f82209f52d789ac2f64798bd26664092db8599",
+      "slides": 3,
+      "inline_style_blocks": 1,
+      "icons": 1
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/batch_3_steps_7_9.html",
+      "bundled": "references/source/batch_3_steps_7_9.html",
+      "sha256": "5a34a27da91d7ed5231f99ebf0c72fa893eb26d690f29b93e6f9f2a7ec3f15cc",
+      "slides": 3,
+      "inline_style_blocks": 1,
+      "icons": 5
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/batch_4_steps_10_13.html",
+      "bundled": "references/source/batch_4_steps_10_13.html",
+      "sha256": "004b650afdfc2c50f7490207a8e569d1381366d22902b816fecacb668847daa7",
+      "slides": 4,
+      "inline_style_blocks": 1,
+      "icons": 8
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/batch_5_qa_outro.html",
+      "bundled": "references/source/batch_5_qa_outro.html",
+      "sha256": "88266df38ff58cf60782541c3fb4ee47bd37a318598713469755d04eb3d5d10a",
+      "slides": 3,
+      "inline_style_blocks": 1,
+      "icons": 3
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/caption.md",
+      "bundled": "references/source/caption.md",
+      "sha256": "3e17f912de4874b66df2f86a6d228552c3ff92cf5ff40c005dba24ef7579ef73"
+    },
+    {
+      "original": "references/boris-claude-setup-carousel/slide_1_alternative_hook.html",
+      "bundled": "references/source/slide_1_alternative_hook.html",
+      "sha256": "08c6c9cad2b2102589dda97312f15b0293335d865cfcc85d2666e2f8d3919912",
+      "slides": 1,
+      "inline_style_blocks": 1,
+      "icons": 2
+    }
+  ]
+}

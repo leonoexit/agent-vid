@@ -1,0 +1,15 @@
+{
+  "id": "boris-noir-v1",
+  "recent_video_window": 6,
+  "default_capabilities": [
+    "move",
+    "scale",
+    "rotate",
+    "fade"
+  ],
+  "prompt": "One isolated contextual prop. Dark editorial technology art on near-black, restrained terracotta #D97757 and violet #7C3AED edge light, quiet dimensional surfaces, generous negative space. No flat pastel panels, chunky outlines, hard offset shadows, cartoon mascot, bright rose mesh. Secondary context only; no code, text, numbers, labels, UI, logo, watermark or explanatory diagram. Whole object visible on genuine transparent background.",
+  "sticker_prompt": "One topic-specific contextual cutout. Dark editorial technology art on near-black, restrained terracotta #D97757 and violet #7C3AED edge light, quiet dimensional surfaces, generous negative space. No flat pastel panels, chunky outlines, hard offset shadows, cartoon mascot, bright rose mesh. Secondary context only; no code, text, numbers, labels, UI, logo, watermark or explanatory diagram. Genuine transparent background.",
+  "background_prompt": "Quiet vertical 1080x1920 near-black background, central content region clear, abstract dimensional forms confined to outer edges. Dark editorial technology art on near-black, restrained terracotta #D97757 and violet #7C3AED edge light, quiet dimensional surfaces, generous negative space. No flat pastel panels, chunky outlines, hard offset shadows, cartoon mascot, bright rose mesh. Secondary context only; no code, text, numbers, labels, UI, logo, watermark or explanatory diagram. ",
+  "figure_prompt": "One context-specific figure in a dedicated area. Dark editorial technology art on near-black, restrained terracotta #D97757 and violet #7C3AED edge light, quiet dimensional surfaces, generous negative space. No flat pastel panels, chunky outlines, hard offset shadows, cartoon mascot, bright rose mesh. Secondary context only; no code, text, numbers, labels, UI, logo, watermark or explanatory diagram. Transparent background when used as a cutout.",
+  "notes": "Reference art is evidence, not a reusable licensed generation library. Use native/icon first. Native CSS glow/noise is sufficient for atmosphere; never generate merely to fill space."
+}

@@ -1,0 +1,565 @@
+{
+  "scope": "Skill authoring QA, not a narrated production video",
+  "source_review": [
+    {
+      "name": "batch_1_intro_steps_1_3-1",
+      "headings": [
+        "khám phá quy trình\nCLAUDE CODE"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_parallel_processing_void.png",
+          "loaded": true
+        },
+        {
+          "src": "https://pbs.twimg.com/profile_images/1902044548936953856/J2jeik0t_400x400.jpg",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_1_intro_steps_1_3-2",
+      "headings": [
+        "Lầm tưởng\nvới Thực tế"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_1_intro_steps_1_3-3",
+      "headings": [
+        "Xử lý\nSong song"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_parallel_processing_void.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_1_intro_steps_1_3-4",
+      "headings": [
+        "Chiến thuật\nDịch chuyển"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_1_intro_steps_1_3-5",
+      "headings": [
+        "TƯ DUY LÀ GỐC RỄ",
+        "\"Thinking is\nKing.\""
+      ],
+      "font": "\"JetBrains Mono\", monospace",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_2_steps_4_6-1",
+      "headings": [
+        "Bộ nhớ\nDự án"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_central_brain_monolith.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_2_steps_4_6-2",
+      "headings": [
+        "AI Học từ\nSai lầm"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_2_steps_4_6-3",
+      "headings": [
+        "Kiến trúc sư & Thợ xây",
+        "Quy hoạch",
+        "Thi công"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_3_steps_7_9-1",
+      "headings": [
+        "Slash /Commands"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_automation_pipelines.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_3_steps_7_9-2",
+      "headings": [
+        "Sub-Agents",
+        "code-simplifier",
+        "verify-app"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_3_steps_7_9-3",
+      "headings": [
+        "PostToolUse Hooks"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_4_steps_10_13-1",
+      "headings": [
+        "An toàn là trên hết",
+        "\"The Boris Way\""
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_4_steps_10_13-2",
+      "headings": [
+        "Full Stack Tooling",
+        "Slack",
+        "BigQuery",
+        "Sentry"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_4_steps_10_13-3",
+      "headings": [
+        "Tác vụ\nDài hơi"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_4_steps_10_13-4",
+      "headings": [
+        "XÁC MINH",
+        "Cách Boris Audit Code:"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_verification_loop_shield.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_5_qa_outro-1",
+      "headings": [
+        "5 tab repo cùng lúc? Git không bị conflict à?",
+        "Skills với Slash Commands khác gì nhau?"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "assets/abstract_community_knowledge.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "batch_5_qa_outro-2",
+      "headings": [
+        "Năng suất thực tế của ông?",
+        "Làm sao để tạo Validation Loop tốt?"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "batch_5_qa_outro-3",
+      "headings": [
+        "CODE LIKE\nBORIS."
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": []
+    },
+    {
+      "name": "slide_1_alternative_hook-1",
+      "headings": [
+        "CLAUDE\nCODE",
+        "Tại sao phải nghe Boris?"
+      ],
+      "font": "\"Space Grotesk\", sans-serif",
+      "background": "rgb(5, 5, 5)",
+      "images": [
+        {
+          "src": "https://pbs.twimg.com/profile_images/1902044548936953856/J2jeik0t_400x400.jpg",
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "static_compositions": [
+    {
+      "id": "question",
+      "height": 1920,
+      "overflow": []
+    },
+    {
+      "id": "decode",
+      "height": 1920,
+      "overflow": []
+    },
+    {
+      "id": "execute",
+      "height": 1920,
+      "overflow": []
+    },
+    {
+      "id": "update",
+      "height": 1920,
+      "overflow": []
+    },
+    {
+      "id": "verify",
+      "height": 1920,
+      "overflow": []
+    },
+    {
+      "id": "rule",
+      "height": 1920,
+      "overflow": []
+    }
+  ],
+  "runtime": {
+    "study": [],
+    "projects": [
+      {
+        "lang": "vi",
+        "sections": [
+          {
+            "time": 6,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 13,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 20.5,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 28.4,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 38.1,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 47.2,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 54.5,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 63.6,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 74.5,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 83.6,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 94.1,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 103.1,
+            "active": 1,
+            "overflow": []
+          }
+        ],
+        "states": [
+          {
+            "time": 74.5,
+            "state": [
+              "20",
+              "10"
+            ]
+          },
+          {
+            "time": 54.5,
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 74.5,
+            "state": [
+              "20",
+              "10"
+            ]
+          },
+          {
+            "time": 28.4,
+            "state": [
+              "10",
+              "—"
+            ]
+          }
+        ],
+        "operationTriplets": [
+          {
+            "time": 48.800000000000004,
+            "type": "transfer",
+            "state": [
+              "10",
+              "—"
+            ]
+          },
+          {
+            "time": 49.35,
+            "type": "transfer",
+            "state": [
+              "10",
+              "—"
+            ]
+          },
+          {
+            "time": 50.07,
+            "type": "transfer",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 68.16666666666667,
+            "type": "write",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 68.74166666666667,
+            "type": "write",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 69.48666666666666,
+            "type": "write",
+            "state": [
+              "20",
+              "10"
+            ]
+          }
+        ]
+      },
+      {
+        "lang": "en",
+        "sections": [
+          {
+            "time": 6,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 13,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 20.1,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 27.4,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 36.5,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 45.2,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 52.5,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 60.8,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 70.9,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 79.6,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 89.3,
+            "active": 1,
+            "overflow": []
+          },
+          {
+            "time": 97.8,
+            "active": 1,
+            "overflow": []
+          }
+        ],
+        "states": [
+          {
+            "time": 70.89999999999999,
+            "state": [
+              "20",
+              "10"
+            ]
+          },
+          {
+            "time": 52.5,
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 70.89999999999999,
+            "state": [
+              "20",
+              "10"
+            ]
+          },
+          {
+            "time": 27.400000000000002,
+            "state": [
+              "10",
+              "—"
+            ]
+          }
+        ],
+        "operationTriplets": [
+          {
+            "time": 46.800000000000004,
+            "type": "transfer",
+            "state": [
+              "10",
+              "—"
+            ]
+          },
+          {
+            "time": 47.35,
+            "type": "transfer",
+            "state": [
+              "10",
+              "—"
+            ]
+          },
+          {
+            "time": 48.07,
+            "type": "transfer",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 64.93124999999999,
+            "type": "write",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 65.50625,
+            "type": "write",
+            "state": [
+              "10",
+              "10"
+            ]
+          },
+          {
+            "time": 66.25124999999998,
+            "type": "write",
+            "state": [
+              "20",
+              "10"
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "synthetic_caption_and_morph": {
+    "panel": "rgb(20, 20, 23)",
+    "label": "rgb(196, 181, 253)",
+    "text": "rgb(226, 232, 240)",
+    "connection": "#94A3B8",
+    "captionCount": 186,
+    "captionColor": "rgb(248, 250, 252)",
+    "reversePanel": "rgb(28, 22, 43)"
+  }
+}

@@ -1,0 +1,2926 @@
+[
+  {
+    "id": "intro",
+    "expected": "Đổi mẫu hóa đơn, vì sao phải mở cả lớp tính tiền? Theo dõi hai yêu cầu thay đổi để hiểu chữ S trong SOLID.",
+    "heard": "Đổi mẫu hóa đơn vì sao phải mở cả lớp tính tiền, theo dõi hai yêu cầu thay đổi để hiểu chữ s trong s o l e d.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.5,
+        "text": " Đổi mẫu hóa đơn vì sao phải mở cả lớp tính tiền, theo dõi hai yêu cầu thay đổi để hiểu chữ s trong s o l e d.",
+        "words": [
+          {
+            "word": " Đổi",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.7436111867427826
+          },
+          {
+            "word": " mẫu",
+            "start": 0.22,
+            "end": 0.38,
+            "probability": 0.6679158806800842
+          },
+          {
+            "word": " hóa",
+            "start": 0.38,
+            "end": 0.54,
+            "probability": 0.8511073986689249
+          },
+          {
+            "word": " đơn",
+            "start": 0.54,
+            "end": 0.68,
+            "probability": 0.9847659170627594
+          },
+          {
+            "word": " vì",
+            "start": 0.68,
+            "end": 1.1,
+            "probability": 0.3849900960922241
+          },
+          {
+            "word": " sao",
+            "start": 1.1,
+            "end": 1.26,
+            "probability": 0.8408518433570862
+          },
+          {
+            "word": " phải",
+            "start": 1.26,
+            "end": 1.4,
+            "probability": 0.987717866897583
+          },
+          {
+            "word": " mở",
+            "start": 1.4,
+            "end": 1.64,
+            "probability": 0.9756034016609192
+          },
+          {
+            "word": " cả",
+            "start": 1.64,
+            "end": 1.72,
+            "probability": 0.8599277138710022
+          },
+          {
+            "word": " lớp",
+            "start": 1.72,
+            "end": 1.9,
+            "probability": 0.9966294169425964
+          },
+          {
+            "word": " tính",
+            "start": 1.9,
+            "end": 2.0,
+            "probability": 0.9635929465293884
+          },
+          {
+            "word": " tiền,",
+            "start": 2.0,
+            "end": 2.26,
+            "probability": 0.9825741052627563
+          },
+          {
+            "word": " theo",
+            "start": 2.64,
+            "end": 2.84,
+            "probability": 0.9841305613517761
+          },
+          {
+            "word": " dõi",
+            "start": 2.84,
+            "end": 3.1,
+            "probability": 0.9287016193072001
+          },
+          {
+            "word": " hai",
+            "start": 3.1,
+            "end": 3.22,
+            "probability": 0.6069124341011047
+          },
+          {
+            "word": " yêu",
+            "start": 3.22,
+            "end": 3.36,
+            "probability": 0.7954635620117188
+          },
+          {
+            "word": " cầu",
+            "start": 3.36,
+            "end": 3.6,
+            "probability": 0.994444876909256
+          },
+          {
+            "word": " thay",
+            "start": 3.6,
+            "end": 3.76,
+            "probability": 0.9469607174396515
+          },
+          {
+            "word": " đổi",
+            "start": 3.76,
+            "end": 3.94,
+            "probability": 0.9958205223083496
+          },
+          {
+            "word": " để",
+            "start": 3.94,
+            "end": 4.04,
+            "probability": 0.9799588918685913
+          },
+          {
+            "word": " hiểu",
+            "start": 4.04,
+            "end": 4.2,
+            "probability": 0.9863819777965546
+          },
+          {
+            "word": " chữ",
+            "start": 4.2,
+            "end": 4.38,
+            "probability": 0.6259121000766754
+          },
+          {
+            "word": " s",
+            "start": 4.38,
+            "end": 4.58,
+            "probability": 0.14749018847942352
+          },
+          {
+            "word": " trong",
+            "start": 4.58,
+            "end": 4.74,
+            "probability": 0.17192699015140533
+          },
+          {
+            "word": " s",
+            "start": 4.74,
+            "end": 4.9,
+            "probability": 0.5735799670219421
+          },
+          {
+            "word": " o",
+            "start": 4.9,
+            "end": 5.08,
+            "probability": 0.34248197078704834
+          },
+          {
+            "word": " l",
+            "start": 5.08,
+            "end": 5.2,
+            "probability": 0.6035093069076538
+          },
+          {
+            "word": " e",
+            "start": 5.2,
+            "end": 5.42,
+            "probability": 0.0595841258764267
+          },
+          {
+            "word": " d.",
+            "start": 5.42,
+            "end": 5.5,
+            "probability": 0.43370264768600464
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-1",
+    "expected": "Ta có một lớp hóa đơn. Lớp là nơi gom dữ liệu và các hàm liên quan. Trong ví dụ này, nó đang ôm cả hai phần việc.",
+    "heard": "ta có một lớp hóa đơn, lớp là nơi gom dứ liệu và các hàm liên quan, trong ví dụ này nó đang ôm cả 2 phần việc.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.96,
+        "text": " ta có một lớp hóa đơn, lớp là nơi gom dứ liệu và các hàm liên quan, trong ví dụ này nó đang ôm cả 2 phần việc.",
+        "words": [
+          {
+            "word": " ta",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.7903818488121033
+          },
+          {
+            "word": " có",
+            "start": 0.2,
+            "end": 0.36,
+            "probability": 0.9880800843238831
+          },
+          {
+            "word": " một",
+            "start": 0.36,
+            "end": 0.46,
+            "probability": 0.7223523855209351
+          },
+          {
+            "word": " lớp",
+            "start": 0.46,
+            "end": 0.66,
+            "probability": 0.9662514925003052
+          },
+          {
+            "word": " hóa",
+            "start": 0.66,
+            "end": 0.8,
+            "probability": 0.8292965094248453
+          },
+          {
+            "word": " đơn,",
+            "start": 0.8,
+            "end": 0.94,
+            "probability": 0.9909056127071381
+          },
+          {
+            "word": " lớp",
+            "start": 1.28,
+            "end": 1.6,
+            "probability": 0.9853859543800354
+          },
+          {
+            "word": " là",
+            "start": 1.6,
+            "end": 1.7,
+            "probability": 0.9563438296318054
+          },
+          {
+            "word": " nơi",
+            "start": 1.7,
+            "end": 1.94,
+            "probability": 0.9900029599666595
+          },
+          {
+            "word": " gom",
+            "start": 1.94,
+            "end": 2.16,
+            "probability": 0.8519542813301086
+          },
+          {
+            "word": " dứ",
+            "start": 2.16,
+            "end": 2.36,
+            "probability": 0.5205046534538269
+          },
+          {
+            "word": " liệu",
+            "start": 2.36,
+            "end": 2.6,
+            "probability": 0.9646612107753754
+          },
+          {
+            "word": " và",
+            "start": 2.6,
+            "end": 2.76,
+            "probability": 0.907301664352417
+          },
+          {
+            "word": " các",
+            "start": 2.76,
+            "end": 2.9,
+            "probability": 0.9620323777198792
+          },
+          {
+            "word": " hàm",
+            "start": 2.9,
+            "end": 3.1,
+            "probability": 0.8222606579462687
+          },
+          {
+            "word": " liên",
+            "start": 3.1,
+            "end": 3.22,
+            "probability": 0.9549623727798462
+          },
+          {
+            "word": " quan,",
+            "start": 3.22,
+            "end": 3.4,
+            "probability": 0.9956783652305603
+          },
+          {
+            "word": " trong",
+            "start": 3.8,
+            "end": 3.96,
+            "probability": 0.992218017578125
+          },
+          {
+            "word": " ví",
+            "start": 3.96,
+            "end": 4.1,
+            "probability": 0.930208683013916
+          },
+          {
+            "word": " dụ",
+            "start": 4.1,
+            "end": 4.24,
+            "probability": 0.9945400357246399
+          },
+          {
+            "word": " này",
+            "start": 4.24,
+            "end": 4.42,
+            "probability": 0.9891263246536255
+          },
+          {
+            "word": " nó",
+            "start": 4.42,
+            "end": 4.88,
+            "probability": 0.7377380132675171
+          },
+          {
+            "word": " đang",
+            "start": 4.88,
+            "end": 5.02,
+            "probability": 0.969164252281189
+          },
+          {
+            "word": " ôm",
+            "start": 5.02,
+            "end": 5.32,
+            "probability": 0.9717640578746796
+          },
+          {
+            "word": " cả",
+            "start": 5.32,
+            "end": 5.44,
+            "probability": 0.9894920587539673
+          },
+          {
+            "word": " 2",
+            "start": 5.44,
+            "end": 5.64,
+            "probability": 0.6149321794509888
+          },
+          {
+            "word": " phần",
+            "start": 5.64,
+            "end": 5.82,
+            "probability": 0.9846620261669159
+          },
+          {
+            "word": " việc.",
+            "start": 5.82,
+            "end": 5.96,
+            "probability": 0.9833341240882874
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-2",
+    "expected": "Một hàm tính số tiền khách phải trả. Hàm kia trình bày hóa đơn thành bản in. Hai hàm cùng nằm trong một lớp, nhưng ai yêu cầu chúng thay đổi?",
+    "heard": "Một hàm tính số tiền khách phải trả, hàm kía trình bày hóa đơn thành bản in, hai hàm cùng nằm trong một lớp, nhưng ai yêu cầu chúng thay đổi.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.84,
+        "text": " Một hàm tính số tiền khách phải trả, hàm kía trình bày hóa đơn thành bản in, hai hàm cùng nằm trong một lớp, nhưng ai yêu cầu chúng thay đổi.",
+        "words": [
+          {
+            "word": " Một",
+            "start": 0.0,
+            "end": 0.24,
+            "probability": 0.6985537707805634
+          },
+          {
+            "word": " hàm",
+            "start": 0.24,
+            "end": 0.38,
+            "probability": 0.7452157537142435
+          },
+          {
+            "word": " tính",
+            "start": 0.38,
+            "end": 0.54,
+            "probability": 0.9594519436359406
+          },
+          {
+            "word": " số",
+            "start": 0.54,
+            "end": 0.68,
+            "probability": 0.9916303753852844
+          },
+          {
+            "word": " tiền",
+            "start": 0.68,
+            "end": 0.9,
+            "probability": 0.8061674237251282
+          },
+          {
+            "word": " khách",
+            "start": 0.9,
+            "end": 1.14,
+            "probability": 0.9929098188877106
+          },
+          {
+            "word": " phải",
+            "start": 1.14,
+            "end": 1.3,
+            "probability": 0.9721882343292236
+          },
+          {
+            "word": " trả,",
+            "start": 1.3,
+            "end": 1.66,
+            "probability": 0.8931132555007935
+          },
+          {
+            "word": " hàm",
+            "start": 2.02,
+            "end": 2.3,
+            "probability": 0.6948900024096171
+          },
+          {
+            "word": " kía",
+            "start": 2.3,
+            "end": 2.44,
+            "probability": 0.4709306061267853
+          },
+          {
+            "word": " trình",
+            "start": 2.44,
+            "end": 2.62,
+            "probability": 0.6870323121547699
+          },
+          {
+            "word": " bày",
+            "start": 2.62,
+            "end": 2.78,
+            "probability": 0.687897652387619
+          },
+          {
+            "word": " hóa",
+            "start": 2.78,
+            "end": 3.0,
+            "probability": 0.8456257979075114
+          },
+          {
+            "word": " đơn",
+            "start": 3.0,
+            "end": 3.14,
+            "probability": 0.9900460243225098
+          },
+          {
+            "word": " thành",
+            "start": 3.14,
+            "end": 3.32,
+            "probability": 0.9701882004737854
+          },
+          {
+            "word": " bản",
+            "start": 3.32,
+            "end": 3.5,
+            "probability": 0.9203064441680908
+          },
+          {
+            "word": " in,",
+            "start": 3.5,
+            "end": 3.66,
+            "probability": 0.3404780924320221
+          },
+          {
+            "word": " hai",
+            "start": 4.12,
+            "end": 4.26,
+            "probability": 0.7210391163825989
+          },
+          {
+            "word": " hàm",
+            "start": 4.26,
+            "end": 4.5,
+            "probability": 0.9510816931724548
+          },
+          {
+            "word": " cùng",
+            "start": 4.5,
+            "end": 4.62,
+            "probability": 0.47470253705978394
+          },
+          {
+            "word": " nằm",
+            "start": 4.62,
+            "end": 4.86,
+            "probability": 0.8738577961921692
+          },
+          {
+            "word": " trong",
+            "start": 4.86,
+            "end": 4.92,
+            "probability": 0.9893273115158081
+          },
+          {
+            "word": " một",
+            "start": 4.92,
+            "end": 5.08,
+            "probability": 0.9000676274299622
+          },
+          {
+            "word": " lớp,",
+            "start": 5.08,
+            "end": 5.66,
+            "probability": 0.9910587966442108
+          },
+          {
+            "word": " nhưng",
+            "start": 5.72,
+            "end": 5.8,
+            "probability": 0.9293465614318848
+          },
+          {
+            "word": " ai",
+            "start": 5.8,
+            "end": 5.98,
+            "probability": 0.9820278882980347
+          },
+          {
+            "word": " yêu",
+            "start": 5.98,
+            "end": 6.14,
+            "probability": 0.9303377270698547
+          },
+          {
+            "word": " cầu",
+            "start": 6.14,
+            "end": 6.34,
+            "probability": 0.9964141547679901
+          },
+          {
+            "word": " chúng",
+            "start": 6.34,
+            "end": 6.46,
+            "probability": 0.9970467686653137
+          },
+          {
+            "word": " thay",
+            "start": 6.46,
+            "end": 6.64,
+            "probability": 0.9566778540611267
+          },
+          {
+            "word": " đổi.",
+            "start": 6.64,
+            "end": 6.84,
+            "probability": 0.9943144917488098
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-3",
+    "expected": "Bộ phận kinh doanh muốn đổi mức giảm giá. Yêu cầu này tác động đến cách tính tiền, dù mẫu hóa đơn vẫn giữ nguyên.",
+    "heard": "Bộ phận kinh doanh muốn đổi mức giảm giá. Yêu cầu này tác động đến cách tính tiền, dù mẫu hóa đơn vẫn dự nguyên.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.9,
+        "text": " Bộ phận kinh doanh muốn đổi mức giảm giá.",
+        "words": [
+          {
+            "word": " Bộ",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.9149985611438751
+          },
+          {
+            "word": " phận",
+            "start": 0.22,
+            "end": 0.36,
+            "probability": 0.9503553211688995
+          },
+          {
+            "word": " kinh",
+            "start": 0.36,
+            "end": 0.54,
+            "probability": 0.9430338740348816
+          },
+          {
+            "word": " doanh",
+            "start": 0.54,
+            "end": 0.76,
+            "probability": 0.9895426034927368
+          },
+          {
+            "word": " muốn",
+            "start": 0.76,
+            "end": 0.88,
+            "probability": 0.9891685247421265
+          },
+          {
+            "word": " đổi",
+            "start": 0.88,
+            "end": 1.1,
+            "probability": 0.9346588850021362
+          },
+          {
+            "word": " mức",
+            "start": 1.1,
+            "end": 1.32,
+            "probability": 0.8324228227138519
+          },
+          {
+            "word": " giảm",
+            "start": 1.32,
+            "end": 1.6,
+            "probability": 0.9726469119389852
+          },
+          {
+            "word": " giá.",
+            "start": 1.6,
+            "end": 1.9,
+            "probability": 0.9952879250049591
+          }
+        ]
+      },
+      {
+        "start": 2.2,
+        "end": 5.72,
+        "text": " Yêu cầu này tác động đến cách tính tiền, dù mẫu hóa đơn vẫn dự nguyên.",
+        "words": [
+          {
+            "word": " Yêu",
+            "start": 2.2,
+            "end": 2.52,
+            "probability": 0.8385412395000458
+          },
+          {
+            "word": " cầu",
+            "start": 2.52,
+            "end": 2.68,
+            "probability": 0.9446200132369995
+          },
+          {
+            "word": " này",
+            "start": 2.68,
+            "end": 2.8,
+            "probability": 0.97788006067276
+          },
+          {
+            "word": " tác",
+            "start": 2.8,
+            "end": 3.06,
+            "probability": 0.9533208608627319
+          },
+          {
+            "word": " động",
+            "start": 3.06,
+            "end": 3.16,
+            "probability": 0.9932780861854553
+          },
+          {
+            "word": " đến",
+            "start": 3.16,
+            "end": 3.34,
+            "probability": 0.9608694911003113
+          },
+          {
+            "word": " cách",
+            "start": 3.34,
+            "end": 3.5,
+            "probability": 0.9899128675460815
+          },
+          {
+            "word": " tính",
+            "start": 3.5,
+            "end": 3.7,
+            "probability": 0.931656539440155
+          },
+          {
+            "word": " tiền,",
+            "start": 3.7,
+            "end": 3.96,
+            "probability": 0.9907828569412231
+          },
+          {
+            "word": " dù",
+            "start": 4.32,
+            "end": 4.6,
+            "probability": 0.9677929878234863
+          },
+          {
+            "word": " mẫu",
+            "start": 4.6,
+            "end": 4.82,
+            "probability": 0.9662360747655233
+          },
+          {
+            "word": " hóa",
+            "start": 4.82,
+            "end": 4.96,
+            "probability": 0.9879574378331503
+          },
+          {
+            "word": " đơn",
+            "start": 4.96,
+            "end": 5.14,
+            "probability": 0.9822346270084381
+          },
+          {
+            "word": " vẫn",
+            "start": 5.14,
+            "end": 5.28,
+            "probability": 0.949239194393158
+          },
+          {
+            "word": " dự",
+            "start": 5.28,
+            "end": 5.48,
+            "probability": 0.9651999473571777
+          },
+          {
+            "word": " nguyên.",
+            "start": 5.48,
+            "end": 5.72,
+            "probability": 0.7031037112077078
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-4",
+    "expected": "Bộ phận vận hành muốn đổi tiêu đề bản in. Cách tính tiền không đổi. Vậy một lớp đang phải đáp ứng hai nhóm yêu cầu độc lập.",
+    "heard": "Bộ phần vận hành muốn đổi tiêu đề bản in, cách tính tiền không đổi. Vậy một lớp đang phải đáp ứng hai nhóm yêu cầu độc lập.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.16,
+        "text": " Bộ phần vận hành muốn đổi tiêu đề bản in, cách tính tiền không đổi.",
+        "words": [
+          {
+            "word": " Bộ",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.9594833254814148
+          },
+          {
+            "word": " phần",
+            "start": 0.22,
+            "end": 0.4,
+            "probability": 0.840004175901413
+          },
+          {
+            "word": " vận",
+            "start": 0.4,
+            "end": 0.56,
+            "probability": 0.9148892760276794
+          },
+          {
+            "word": " hành",
+            "start": 0.56,
+            "end": 0.74,
+            "probability": 0.9922513961791992
+          },
+          {
+            "word": " muốn",
+            "start": 0.74,
+            "end": 0.9,
+            "probability": 0.9778203964233398
+          },
+          {
+            "word": " đổi",
+            "start": 0.9,
+            "end": 1.14,
+            "probability": 0.9749572575092316
+          },
+          {
+            "word": " tiêu",
+            "start": 1.14,
+            "end": 1.34,
+            "probability": 0.9527308642864227
+          },
+          {
+            "word": " đề",
+            "start": 1.34,
+            "end": 1.5,
+            "probability": 0.9332661926746368
+          },
+          {
+            "word": " bản",
+            "start": 1.5,
+            "end": 1.68,
+            "probability": 0.8286377787590027
+          },
+          {
+            "word": " in,",
+            "start": 1.68,
+            "end": 1.88,
+            "probability": 0.7689967751502991
+          },
+          {
+            "word": " cách",
+            "start": 2.24,
+            "end": 2.32,
+            "probability": 0.7201574444770813
+          },
+          {
+            "word": " tính",
+            "start": 2.32,
+            "end": 2.5,
+            "probability": 0.9823960065841675
+          },
+          {
+            "word": " tiền",
+            "start": 2.5,
+            "end": 2.74,
+            "probability": 0.9821159839630127
+          },
+          {
+            "word": " không",
+            "start": 2.74,
+            "end": 2.9,
+            "probability": 0.9850605130195618
+          },
+          {
+            "word": " đổi.",
+            "start": 2.9,
+            "end": 3.16,
+            "probability": 0.9945878386497498
+          }
+        ]
+      },
+      {
+        "start": 3.4,
+        "end": 5.76,
+        "text": " Vậy một lớp đang phải đáp ứng hai nhóm yêu cầu độc lập.",
+        "words": [
+          {
+            "word": " Vậy",
+            "start": 3.4,
+            "end": 3.66,
+            "probability": 0.98848095536232
+          },
+          {
+            "word": " một",
+            "start": 3.66,
+            "end": 3.76,
+            "probability": 0.7700400948524475
+          },
+          {
+            "word": " lớp",
+            "start": 3.76,
+            "end": 3.98,
+            "probability": 0.9923768937587738
+          },
+          {
+            "word": " đang",
+            "start": 3.98,
+            "end": 4.1,
+            "probability": 0.9402466416358948
+          },
+          {
+            "word": " phải",
+            "start": 4.1,
+            "end": 4.28,
+            "probability": 0.9433887600898743
+          },
+          {
+            "word": " đáp",
+            "start": 4.28,
+            "end": 4.42,
+            "probability": 0.9244095981121063
+          },
+          {
+            "word": " ứng",
+            "start": 4.42,
+            "end": 4.52,
+            "probability": 0.535541482269764
+          },
+          {
+            "word": " hai",
+            "start": 4.52,
+            "end": 4.74,
+            "probability": 0.4876885712146759
+          },
+          {
+            "word": " nhóm",
+            "start": 4.74,
+            "end": 5.04,
+            "probability": 0.9867150187492371
+          },
+          {
+            "word": " yêu",
+            "start": 5.04,
+            "end": 5.24,
+            "probability": 0.6636629700660706
+          },
+          {
+            "word": " cầu",
+            "start": 5.24,
+            "end": 5.44,
+            "probability": 0.9937496185302734
+          },
+          {
+            "word": " độc",
+            "start": 5.44,
+            "end": 5.6,
+            "probability": 0.9314039051532745
+          },
+          {
+            "word": " lập.",
+            "start": 5.6,
+            "end": 5.76,
+            "probability": 0.9906730353832245
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-5",
+    "expected": "S là nguyên tắc đơn trách nhiệm. Một mô đun nên có một lý do để thay đổi: phục vụ một nhóm nhu cầu gắn kết. Ở đây, hai nhóm đang đổi vì hai lý do khác nhau.",
+    "heard": "S là nguyên tác đơn trách nhiệm. Một modun nên có một lý do để thay đổi, phục vụ một nhóm nhu cầu gắn kết. Ở đây, hai nhóm đang đổi vì hai lý do khác nhau.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.28,
+        "text": " S là nguyên tác đơn trách nhiệm.",
+        "words": [
+          {
+            "word": " S",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.5292769074440002
+          },
+          {
+            "word": " là",
+            "start": 0.2,
+            "end": 0.32,
+            "probability": 0.9860205054283142
+          },
+          {
+            "word": " nguyên",
+            "start": 0.32,
+            "end": 0.54,
+            "probability": 0.9778892397880554
+          },
+          {
+            "word": " tác",
+            "start": 0.54,
+            "end": 0.74,
+            "probability": 0.6122929155826569
+          },
+          {
+            "word": " đơn",
+            "start": 0.74,
+            "end": 0.86,
+            "probability": 0.7343365550041199
+          },
+          {
+            "word": " trách",
+            "start": 0.86,
+            "end": 1.02,
+            "probability": 0.6538149863481522
+          },
+          {
+            "word": " nhiệm.",
+            "start": 1.02,
+            "end": 1.28,
+            "probability": 0.9861039519309998
+          }
+        ]
+      },
+      {
+        "start": 1.640000000000001,
+        "end": 5.48,
+        "text": " Một modun nên có một lý do để thay đổi, phục vụ một nhóm nhu cầu gắn kết.",
+        "words": [
+          {
+            "word": " Một",
+            "start": 1.640000000000001,
+            "end": 2.0000000000000004,
+            "probability": 0.9741536378860474
+          },
+          {
+            "word": " modun",
+            "start": 2.0000000000000004,
+            "end": 2.36,
+            "probability": 0.3510763943195343
+          },
+          {
+            "word": " nên",
+            "start": 2.36,
+            "end": 2.46,
+            "probability": 0.9726482629776001
+          },
+          {
+            "word": " có",
+            "start": 2.46,
+            "end": 2.62,
+            "probability": 0.9982489347457886
+          },
+          {
+            "word": " một",
+            "start": 2.62,
+            "end": 2.78,
+            "probability": 0.7581806182861328
+          },
+          {
+            "word": " lý",
+            "start": 2.78,
+            "end": 3.02,
+            "probability": 0.9141687154769897
+          },
+          {
+            "word": " do",
+            "start": 3.02,
+            "end": 3.24,
+            "probability": 0.9972972273826599
+          },
+          {
+            "word": " để",
+            "start": 3.24,
+            "end": 3.44,
+            "probability": 0.9595445394515991
+          },
+          {
+            "word": " thay",
+            "start": 3.44,
+            "end": 3.6,
+            "probability": 0.9894511699676514
+          },
+          {
+            "word": " đổi,",
+            "start": 3.6,
+            "end": 3.82,
+            "probability": 0.9929710030555725
+          },
+          {
+            "word": " phục",
+            "start": 4.04,
+            "end": 4.18,
+            "probability": 0.984885185956955
+          },
+          {
+            "word": " vụ",
+            "start": 4.18,
+            "end": 4.36,
+            "probability": 0.9981484115123749
+          },
+          {
+            "word": " một",
+            "start": 4.36,
+            "end": 4.52,
+            "probability": 0.8954346179962158
+          },
+          {
+            "word": " nhóm",
+            "start": 4.52,
+            "end": 4.74,
+            "probability": 0.9965226948261261
+          },
+          {
+            "word": " nhu",
+            "start": 4.74,
+            "end": 4.92,
+            "probability": 0.8142329752445221
+          },
+          {
+            "word": " cầu",
+            "start": 4.92,
+            "end": 5.1,
+            "probability": 0.9798603355884552
+          },
+          {
+            "word": " gắn",
+            "start": 5.1,
+            "end": 5.26,
+            "probability": 0.856796145439148
+          },
+          {
+            "word": " kết.",
+            "start": 5.26,
+            "end": 5.48,
+            "probability": 0.993910551071167
+          }
+        ]
+      },
+      {
+        "start": 5.9,
+        "end": 8.2,
+        "text": " Ở đây, hai nhóm đang đổi vì hai lý do khác nhau.",
+        "words": [
+          {
+            "word": " Ở",
+            "start": 5.9,
+            "end": 6.02,
+            "probability": 0.9784718155860901
+          },
+          {
+            "word": " đây,",
+            "start": 6.02,
+            "end": 6.16,
+            "probability": 0.9992883801460266
+          },
+          {
+            "word": " hai",
+            "start": 6.38,
+            "end": 6.52,
+            "probability": 0.7511702179908752
+          },
+          {
+            "word": " nhóm",
+            "start": 6.52,
+            "end": 6.8,
+            "probability": 0.9913482069969177
+          },
+          {
+            "word": " đang",
+            "start": 6.8,
+            "end": 6.92,
+            "probability": 0.9505540132522583
+          },
+          {
+            "word": " đổi",
+            "start": 6.92,
+            "end": 7.2,
+            "probability": 0.9859722256660461
+          },
+          {
+            "word": " vì",
+            "start": 7.2,
+            "end": 7.36,
+            "probability": 0.9890918731689453
+          },
+          {
+            "word": " hai",
+            "start": 7.36,
+            "end": 7.5,
+            "probability": 0.8311912417411804
+          },
+          {
+            "word": " lý",
+            "start": 7.5,
+            "end": 7.64,
+            "probability": 0.991983026266098
+          },
+          {
+            "word": " do",
+            "start": 7.64,
+            "end": 7.78,
+            "probability": 0.9931176900863647
+          },
+          {
+            "word": " khác",
+            "start": 7.78,
+            "end": 7.92,
+            "probability": 0.9959495067596436
+          },
+          {
+            "word": " nhau.",
+            "start": 7.92,
+            "end": 8.2,
+            "probability": 0.9864091873168945
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-6",
+    "expected": "Ta tách mã theo hai lý do ấy. Giữ nguyên dữ liệu hóa đơn, rồi chuyển phần tính toán sang lớp tính tiền.",
+    "heard": "Tạ tạch ma theo 2 lý dõi, giữ nguyên giữ liệu hòa đơn, dô chuyển phần tính toán sang lớp tính tiền.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.62,
+        "text": " Tạ tạch ma theo 2 lý dõi, giữ nguyên giữ liệu hòa đơn,",
+        "words": [
+          {
+            "word": " Tạ",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.7181514203548431
+          },
+          {
+            "word": " tạch",
+            "start": 0.18,
+            "end": 0.3,
+            "probability": 0.6424540678660074
+          },
+          {
+            "word": " ma",
+            "start": 0.3,
+            "end": 0.46,
+            "probability": 0.37145334482192993
+          },
+          {
+            "word": " theo",
+            "start": 0.46,
+            "end": 0.64,
+            "probability": 0.9851056337356567
+          },
+          {
+            "word": " 2",
+            "start": 0.64,
+            "end": 0.86,
+            "probability": 0.7833735942840576
+          },
+          {
+            "word": " lý",
+            "start": 0.86,
+            "end": 1.02,
+            "probability": 0.8485361635684967
+          },
+          {
+            "word": " dõi,",
+            "start": 1.02,
+            "end": 1.34,
+            "probability": 0.6735720982154211
+          },
+          {
+            "word": " giữ",
+            "start": 1.54,
+            "end": 1.76,
+            "probability": 0.8910521864891052
+          },
+          {
+            "word": " nguyên",
+            "start": 1.76,
+            "end": 1.92,
+            "probability": 0.9265994429588318
+          },
+          {
+            "word": " giữ",
+            "start": 1.92,
+            "end": 2.06,
+            "probability": 0.6539274603128433
+          },
+          {
+            "word": " liệu",
+            "start": 2.06,
+            "end": 2.22,
+            "probability": 0.986510843038559
+          },
+          {
+            "word": " hòa",
+            "start": 2.22,
+            "end": 2.44,
+            "probability": 0.7506293753782908
+          },
+          {
+            "word": " đơn,",
+            "start": 2.44,
+            "end": 2.62,
+            "probability": 0.9930453896522522
+          }
+        ]
+      },
+      {
+        "start": 2.86,
+        "end": 4.56,
+        "text": " dô chuyển phần tính toán sang lớp tính tiền.",
+        "words": [
+          {
+            "word": " dô",
+            "start": 2.86,
+            "end": 3.08,
+            "probability": 0.4394279718399048
+          },
+          {
+            "word": " chuyển",
+            "start": 3.08,
+            "end": 3.28,
+            "probability": 0.8373203575611115
+          },
+          {
+            "word": " phần",
+            "start": 3.28,
+            "end": 3.46,
+            "probability": 0.928366631269455
+          },
+          {
+            "word": " tính",
+            "start": 3.46,
+            "end": 3.68,
+            "probability": 0.6869204938411713
+          },
+          {
+            "word": " toán",
+            "start": 3.68,
+            "end": 3.9,
+            "probability": 0.9267065227031708
+          },
+          {
+            "word": " sang",
+            "start": 3.9,
+            "end": 4.06,
+            "probability": 0.8386636972427368
+          },
+          {
+            "word": " lớp",
+            "start": 4.06,
+            "end": 4.24,
+            "probability": 0.6231842488050461
+          },
+          {
+            "word": " tính",
+            "start": 4.24,
+            "end": 4.34,
+            "probability": 0.9838014543056488
+          },
+          {
+            "word": " tiền.",
+            "start": 4.34,
+            "end": 4.56,
+            "probability": 0.9521608650684357
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-7",
+    "expected": "Phần tạo bản in chuyển sang lớp trình bày. Vẫn hai phần việc cũ, nhưng mỗi lớp giờ có ranh giới trách nhiệm rõ hơn.",
+    "heard": "Phần tạ bản yên chuyển sang lớp trình bày. Vẫn 2 phần việc cũ, nhưng mỗi lớp giờ có danh giới trách nhiệm rõ hơn.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.36,
+        "text": " Phần tạ bản yên chuyển sang lớp trình bày. Vẫn 2 phần việc cũ, nhưng mỗi lớp giờ có danh giới trách nhiệm rõ hơn.",
+        "words": [
+          {
+            "word": " Phần",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.7261819094419479
+          },
+          {
+            "word": " tạ",
+            "start": 0.2,
+            "end": 0.32,
+            "probability": 0.7817355394363403
+          },
+          {
+            "word": " bản",
+            "start": 0.32,
+            "end": 0.5,
+            "probability": 0.7898200452327728
+          },
+          {
+            "word": " yên",
+            "start": 0.5,
+            "end": 0.66,
+            "probability": 0.8243862688541412
+          },
+          {
+            "word": " chuyển",
+            "start": 0.66,
+            "end": 0.9,
+            "probability": 0.9637662470340729
+          },
+          {
+            "word": " sang",
+            "start": 0.9,
+            "end": 1.06,
+            "probability": 0.9940544962882996
+          },
+          {
+            "word": " lớp",
+            "start": 1.06,
+            "end": 1.28,
+            "probability": 0.9855792820453644
+          },
+          {
+            "word": " trình",
+            "start": 1.28,
+            "end": 1.4,
+            "probability": 0.830674558877945
+          },
+          {
+            "word": " bày.",
+            "start": 1.4,
+            "end": 1.64,
+            "probability": 0.7613343894481659
+          },
+          {
+            "word": " Vẫn",
+            "start": 1.96,
+            "end": 2.26,
+            "probability": 0.9714160561561584
+          },
+          {
+            "word": " 2",
+            "start": 2.26,
+            "end": 2.42,
+            "probability": 0.782946765422821
+          },
+          {
+            "word": " phần",
+            "start": 2.42,
+            "end": 2.62,
+            "probability": 0.9898604452610016
+          },
+          {
+            "word": " việc",
+            "start": 2.62,
+            "end": 2.76,
+            "probability": 0.2809998095035553
+          },
+          {
+            "word": " cũ,",
+            "start": 2.76,
+            "end": 3.4,
+            "probability": 0.8438303768634796
+          },
+          {
+            "word": " nhưng",
+            "start": 3.4,
+            "end": 3.56,
+            "probability": 0.9732704162597656
+          },
+          {
+            "word": " mỗi",
+            "start": 3.56,
+            "end": 3.76,
+            "probability": 0.9908506274223328
+          },
+          {
+            "word": " lớp",
+            "start": 3.76,
+            "end": 3.96,
+            "probability": 0.9863770604133606
+          },
+          {
+            "word": " giờ",
+            "start": 3.96,
+            "end": 4.1,
+            "probability": 0.9810484647750854
+          },
+          {
+            "word": " có",
+            "start": 4.1,
+            "end": 4.26,
+            "probability": 0.9367546439170837
+          },
+          {
+            "word": " danh",
+            "start": 4.26,
+            "end": 4.46,
+            "probability": 0.7566820681095123
+          },
+          {
+            "word": " giới",
+            "start": 4.46,
+            "end": 4.62,
+            "probability": 0.78448086977005
+          },
+          {
+            "word": " trách",
+            "start": 4.62,
+            "end": 4.78,
+            "probability": 0.7464529275894165
+          },
+          {
+            "word": " nhiệm",
+            "start": 4.78,
+            "end": 5.0,
+            "probability": 0.9877905448277792
+          },
+          {
+            "word": " rõ",
+            "start": 5.0,
+            "end": 5.18,
+            "probability": 0.9578880667686462
+          },
+          {
+            "word": " hơn.",
+            "start": 5.18,
+            "end": 5.36,
+            "probability": 0.9967003464698792
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-8",
+    "expected": "Khi tạo hóa đơn, dữ liệu đi vào phần tính tiền. Kết quả được chuyển cho phần trình bày để tạo bản in. Tách trách nhiệm vẫn cho phép các phần phối hợp.",
+    "heard": "Khi tạo hòa đơn, dữ liệu đi vào phần tính tiền, kết quả được chuyển cho phần chính bày để tạo bản in. Cách trách nhiệm vẫn cho phép các phần phối hợp.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.04,
+        "text": " Khi tạo hòa đơn, dữ liệu đi vào phần tính tiền,",
+        "words": [
+          {
+            "word": " Khi",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.7114765644073486
+          },
+          {
+            "word": " tạo",
+            "start": 0.2,
+            "end": 0.38,
+            "probability": 0.9606916606426239
+          },
+          {
+            "word": " hòa",
+            "start": 0.38,
+            "end": 0.54,
+            "probability": 0.7669365406036377
+          },
+          {
+            "word": " đơn,",
+            "start": 0.54,
+            "end": 0.74,
+            "probability": 0.9802036881446838
+          },
+          {
+            "word": " dữ",
+            "start": 0.88,
+            "end": 0.98,
+            "probability": 0.9161933064460754
+          },
+          {
+            "word": " liệu",
+            "start": 0.98,
+            "end": 1.18,
+            "probability": 0.9692783057689667
+          },
+          {
+            "word": " đi",
+            "start": 1.18,
+            "end": 1.34,
+            "probability": 0.9799559116363525
+          },
+          {
+            "word": " vào",
+            "start": 1.34,
+            "end": 1.48,
+            "probability": 0.9923402070999146
+          },
+          {
+            "word": " phần",
+            "start": 1.48,
+            "end": 1.66,
+            "probability": 0.9876133501529694
+          },
+          {
+            "word": " tính",
+            "start": 1.66,
+            "end": 1.8,
+            "probability": 0.9318416714668274
+          },
+          {
+            "word": " tiền,",
+            "start": 1.8,
+            "end": 2.04,
+            "probability": 0.9675873219966888
+          }
+        ]
+      },
+      {
+        "start": 2.44,
+        "end": 4.68,
+        "text": " kết quả được chuyển cho phần chính bày để tạo bản in.",
+        "words": [
+          {
+            "word": " kết",
+            "start": 2.44,
+            "end": 2.7,
+            "probability": 0.614783987402916
+          },
+          {
+            "word": " quả",
+            "start": 2.7,
+            "end": 2.86,
+            "probability": 0.9956045150756836
+          },
+          {
+            "word": " được",
+            "start": 2.86,
+            "end": 2.96,
+            "probability": 0.9942118525505066
+          },
+          {
+            "word": " chuyển",
+            "start": 2.96,
+            "end": 3.22,
+            "probability": 0.9285280406475067
+          },
+          {
+            "word": " cho",
+            "start": 3.22,
+            "end": 3.34,
+            "probability": 0.9835361242294312
+          },
+          {
+            "word": " phần",
+            "start": 3.34,
+            "end": 3.56,
+            "probability": 0.9458111226558685
+          },
+          {
+            "word": " chính",
+            "start": 3.56,
+            "end": 3.68,
+            "probability": 0.3871871531009674
+          },
+          {
+            "word": " bày",
+            "start": 3.68,
+            "end": 3.92,
+            "probability": 0.7453560531139374
+          },
+          {
+            "word": " để",
+            "start": 3.92,
+            "end": 4.12,
+            "probability": 0.959080159664154
+          },
+          {
+            "word": " tạo",
+            "start": 4.12,
+            "end": 4.36,
+            "probability": 0.9938511848449707
+          },
+          {
+            "word": " bản",
+            "start": 4.36,
+            "end": 4.54,
+            "probability": 0.8181842863559723
+          },
+          {
+            "word": " in.",
+            "start": 4.54,
+            "end": 4.68,
+            "probability": 0.8936220407485962
+          }
+        ]
+      },
+      {
+        "start": 5.34,
+        "end": 7.06,
+        "text": " Cách trách nhiệm vẫn cho phép các phần phối hợp.",
+        "words": [
+          {
+            "word": " Cách",
+            "start": 5.34,
+            "end": 5.54,
+            "probability": 0.704875037074089
+          },
+          {
+            "word": " trách",
+            "start": 5.54,
+            "end": 5.68,
+            "probability": 0.6267006695270538
+          },
+          {
+            "word": " nhiệm",
+            "start": 5.68,
+            "end": 5.94,
+            "probability": 0.9932619531949362
+          },
+          {
+            "word": " vẫn",
+            "start": 5.94,
+            "end": 6.04,
+            "probability": 0.9550061821937561
+          },
+          {
+            "word": " cho",
+            "start": 6.04,
+            "end": 6.18,
+            "probability": 0.9949648976325989
+          },
+          {
+            "word": " phép",
+            "start": 6.18,
+            "end": 6.38,
+            "probability": 0.9960761666297913
+          },
+          {
+            "word": " các",
+            "start": 6.38,
+            "end": 6.48,
+            "probability": 0.9196852445602417
+          },
+          {
+            "word": " phần",
+            "start": 6.48,
+            "end": 6.64,
+            "probability": 0.9951952695846558
+          },
+          {
+            "word": " phối",
+            "start": 6.64,
+            "end": 6.82,
+            "probability": 0.8616624772548676
+          },
+          {
+            "word": " hợp.",
+            "start": 6.82,
+            "end": 7.06,
+            "probability": 0.9952017466227213
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-9",
+    "expected": "Thử yêu cầu đầu tiên: kinh doanh đổi giảm giá từ không lên mười phần trăm. Ta sửa quy tắc ở lớp tính tiền. Phần trình bày giữ nguyên.",
+    "heard": "Thứ yếu câu đầu tiên, kinh doanh đổi giảm giá từ không lên 10% ta sửa quý tắc ở lớp tính tiền, phần trình bày giữ nguyên.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.36,
+        "text": " Thứ yếu câu đầu tiên, kinh doanh đổi giảm giá từ không lên 10%",
+        "words": [
+          {
+            "word": " Thứ",
+            "start": 0.0,
+            "end": 0.16,
+            "probability": 0.8776143789291382
+          },
+          {
+            "word": " yếu",
+            "start": 0.16,
+            "end": 0.34,
+            "probability": 0.7497588396072388
+          },
+          {
+            "word": " câu",
+            "start": 0.34,
+            "end": 0.5,
+            "probability": 0.7586468160152435
+          },
+          {
+            "word": " đầu",
+            "start": 0.5,
+            "end": 0.58,
+            "probability": 0.9791309833526611
+          },
+          {
+            "word": " tiên,",
+            "start": 0.58,
+            "end": 0.86,
+            "probability": 0.9922191500663757
+          },
+          {
+            "word": " kinh",
+            "start": 1.26,
+            "end": 1.34,
+            "probability": 0.7812374830245972
+          },
+          {
+            "word": " doanh",
+            "start": 1.34,
+            "end": 1.6,
+            "probability": 0.9879257082939148
+          },
+          {
+            "word": " đổi",
+            "start": 1.6,
+            "end": 1.84,
+            "probability": 0.8368083536624908
+          },
+          {
+            "word": " giảm",
+            "start": 1.84,
+            "end": 2.1,
+            "probability": 0.9818068941434225
+          },
+          {
+            "word": " giá",
+            "start": 2.1,
+            "end": 2.38,
+            "probability": 0.9837962985038757
+          },
+          {
+            "word": " từ",
+            "start": 2.38,
+            "end": 2.48,
+            "probability": 0.9806203842163086
+          },
+          {
+            "word": " không",
+            "start": 2.48,
+            "end": 2.66,
+            "probability": 0.4591089189052582
+          },
+          {
+            "word": " lên",
+            "start": 2.66,
+            "end": 2.84,
+            "probability": 0.9840871691703796
+          },
+          {
+            "word": " 10",
+            "start": 2.84,
+            "end": 3.04,
+            "probability": 0.9789041876792908
+          },
+          {
+            "word": "%",
+            "start": 3.04,
+            "end": 3.36,
+            "probability": 0.48924747109413147
+          }
+        ]
+      },
+      {
+        "start": 3.7399999999999998,
+        "end": 6.5,
+        "text": " ta sửa quý tắc ở lớp tính tiền, phần trình bày giữ nguyên.",
+        "words": [
+          {
+            "word": " ta",
+            "start": 3.7399999999999998,
+            "end": 4.1,
+            "probability": 0.39318034052848816
+          },
+          {
+            "word": " sửa",
+            "start": 4.1,
+            "end": 4.36,
+            "probability": 0.8647261063257853
+          },
+          {
+            "word": " quý",
+            "start": 4.36,
+            "end": 4.5,
+            "probability": 0.7417846322059631
+          },
+          {
+            "word": " tắc",
+            "start": 4.5,
+            "end": 4.68,
+            "probability": 0.9522219598293304
+          },
+          {
+            "word": " ở",
+            "start": 4.68,
+            "end": 4.78,
+            "probability": 0.9382062554359436
+          },
+          {
+            "word": " lớp",
+            "start": 4.78,
+            "end": 4.98,
+            "probability": 0.988739013671875
+          },
+          {
+            "word": " tính",
+            "start": 4.98,
+            "end": 5.08,
+            "probability": 0.9187167882919312
+          },
+          {
+            "word": " tiền,",
+            "start": 5.08,
+            "end": 5.3,
+            "probability": 0.9857653379440308
+          },
+          {
+            "word": " phần",
+            "start": 5.74,
+            "end": 5.82,
+            "probability": 0.9550287425518036
+          },
+          {
+            "word": " trình",
+            "start": 5.82,
+            "end": 5.96,
+            "probability": 0.91889488697052
+          },
+          {
+            "word": " bày",
+            "start": 5.96,
+            "end": 6.12,
+            "probability": 0.8614529371261597
+          },
+          {
+            "word": " giữ",
+            "start": 6.12,
+            "end": 6.28,
+            "probability": 0.8379554152488708
+          },
+          {
+            "word": " nguyên.",
+            "start": 6.28,
+            "end": 6.5,
+            "probability": 0.9934232234954834
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-10",
+    "expected": "Với hóa đơn một trăm nghìn đồng, số phải trả còn chín mươi nghìn. Chạy lại, bản in nhận số tiền mới mà không cần sửa mã trình bày.",
+    "heard": "Với hoàn ơn 100.000 đồng, số phải trả còn 90.000, chạy lại, bán im nhận số tiền mới mà không cần sửa mã trình bay.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.22,
+        "text": " Với hoàn ơn 100.000 đồng, số phải trả còn 90.000, chạy lại, bán im nhận số tiền mới mà không cần sửa mã trình bay.",
+        "words": [
+          {
+            "word": " Với",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.6821303516626358
+          },
+          {
+            "word": " hoàn",
+            "start": 0.2,
+            "end": 0.4,
+            "probability": 0.5391774624586105
+          },
+          {
+            "word": " ơn",
+            "start": 0.4,
+            "end": 0.52,
+            "probability": 0.8884352743625641
+          },
+          {
+            "word": " 100",
+            "start": 0.52,
+            "end": 0.76,
+            "probability": 0.9626429080963135
+          },
+          {
+            "word": ".000",
+            "start": 0.76,
+            "end": 0.94,
+            "probability": 0.9178842008113861
+          },
+          {
+            "word": " đồng,",
+            "start": 0.94,
+            "end": 1.16,
+            "probability": 0.9159871339797974
+          },
+          {
+            "word": " số",
+            "start": 1.48,
+            "end": 1.58,
+            "probability": 0.9911167621612549
+          },
+          {
+            "word": " phải",
+            "start": 1.58,
+            "end": 1.74,
+            "probability": 0.9253526926040649
+          },
+          {
+            "word": " trả",
+            "start": 1.74,
+            "end": 1.98,
+            "probability": 0.9353402256965637
+          },
+          {
+            "word": " còn",
+            "start": 1.98,
+            "end": 2.12,
+            "probability": 0.6716892719268799
+          },
+          {
+            "word": " 90",
+            "start": 2.12,
+            "end": 2.42,
+            "probability": 0.9695711135864258
+          },
+          {
+            "word": ".000,",
+            "start": 2.42,
+            "end": 2.74,
+            "probability": 0.9964010417461395
+          },
+          {
+            "word": " chạy",
+            "start": 3.12,
+            "end": 3.32,
+            "probability": 0.9383142193158468
+          },
+          {
+            "word": " lại,",
+            "start": 3.32,
+            "end": 3.5,
+            "probability": 0.9989288449287415
+          },
+          {
+            "word": " bán",
+            "start": 3.96,
+            "end": 4.1,
+            "probability": 0.8786889612674713
+          },
+          {
+            "word": " im",
+            "start": 4.1,
+            "end": 4.18,
+            "probability": 0.14825789630413055
+          },
+          {
+            "word": " nhận",
+            "start": 4.18,
+            "end": 4.34,
+            "probability": 0.9521562159061432
+          },
+          {
+            "word": " số",
+            "start": 4.34,
+            "end": 4.48,
+            "probability": 0.9946115016937256
+          },
+          {
+            "word": " tiền",
+            "start": 4.48,
+            "end": 4.7,
+            "probability": 0.9906868636608124
+          },
+          {
+            "word": " mới",
+            "start": 4.7,
+            "end": 4.94,
+            "probability": 0.9973561763763428
+          },
+          {
+            "word": " mà",
+            "start": 4.94,
+            "end": 5.16,
+            "probability": 0.9312726855278015
+          },
+          {
+            "word": " không",
+            "start": 5.16,
+            "end": 5.32,
+            "probability": 0.9942240118980408
+          },
+          {
+            "word": " cần",
+            "start": 5.32,
+            "end": 5.5,
+            "probability": 0.980038046836853
+          },
+          {
+            "word": " sửa",
+            "start": 5.5,
+            "end": 5.76,
+            "probability": 0.8338083823521932
+          },
+          {
+            "word": " mã",
+            "start": 5.76,
+            "end": 5.86,
+            "probability": 0.5496714115142822
+          },
+          {
+            "word": " trình",
+            "start": 5.86,
+            "end": 6.06,
+            "probability": 0.6005463600158691
+          },
+          {
+            "word": " bay.",
+            "start": 6.06,
+            "end": 6.22,
+            "probability": 0.46647682785987854
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-11",
+    "expected": "Giờ vận hành muốn đổi tiêu đề thành phiếu thanh toán. Ta sửa lớp trình bày. Quy tắc giảm giá ở lớp tính tiền vẫn như cũ.",
+    "heard": "Giờ vẫn hành muốn đổi kêu đề thành phíu thanh toán. Ta sửa lớp trình bay, quy tắc giảm giá ở lớp tính tiền vẫn như cũ.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.22,
+        "text": " Giờ vẫn hành muốn đổi kêu đề thành phíu thanh toán.",
+        "words": [
+          {
+            "word": " Giờ",
+            "start": 0.0,
+            "end": 0.26,
+            "probability": 0.7174227237701416
+          },
+          {
+            "word": " vẫn",
+            "start": 0.26,
+            "end": 0.38,
+            "probability": 0.8209931254386902
+          },
+          {
+            "word": " hành",
+            "start": 0.38,
+            "end": 0.56,
+            "probability": 0.9673601388931274
+          },
+          {
+            "word": " muốn",
+            "start": 0.56,
+            "end": 0.7,
+            "probability": 0.7494040727615356
+          },
+          {
+            "word": " đổi",
+            "start": 0.7,
+            "end": 0.96,
+            "probability": 0.9821262061595917
+          },
+          {
+            "word": " kêu",
+            "start": 0.96,
+            "end": 1.16,
+            "probability": 0.7858462631702423
+          },
+          {
+            "word": " đề",
+            "start": 1.16,
+            "end": 1.34,
+            "probability": 0.8921026885509491
+          },
+          {
+            "word": " thành",
+            "start": 1.34,
+            "end": 1.48,
+            "probability": 0.991506040096283
+          },
+          {
+            "word": " phíu",
+            "start": 1.48,
+            "end": 1.78,
+            "probability": 0.5687852501869202
+          },
+          {
+            "word": " thanh",
+            "start": 1.78,
+            "end": 1.98,
+            "probability": 0.9611228704452515
+          },
+          {
+            "word": " toán.",
+            "start": 1.98,
+            "end": 2.22,
+            "probability": 0.926993191242218
+          }
+        ]
+      },
+      {
+        "start": 2.68,
+        "end": 6.08,
+        "text": " Ta sửa lớp trình bay, quy tắc giảm giá ở lớp tính tiền vẫn như cũ.",
+        "words": [
+          {
+            "word": " Ta",
+            "start": 2.68,
+            "end": 2.86,
+            "probability": 0.6870602965354919
+          },
+          {
+            "word": " sửa",
+            "start": 2.86,
+            "end": 3.08,
+            "probability": 0.802643338839213
+          },
+          {
+            "word": " lớp",
+            "start": 3.08,
+            "end": 3.24,
+            "probability": 0.9190095067024231
+          },
+          {
+            "word": " trình",
+            "start": 3.24,
+            "end": 3.36,
+            "probability": 0.666769728064537
+          },
+          {
+            "word": " bay,",
+            "start": 3.36,
+            "end": 3.52,
+            "probability": 0.5566695332527161
+          },
+          {
+            "word": " quy",
+            "start": 3.88,
+            "end": 3.98,
+            "probability": 0.2066759318113327
+          },
+          {
+            "word": " tắc",
+            "start": 3.98,
+            "end": 4.18,
+            "probability": 0.9003083407878876
+          },
+          {
+            "word": " giảm",
+            "start": 4.18,
+            "end": 4.44,
+            "probability": 0.9867253502209982
+          },
+          {
+            "word": " giá",
+            "start": 4.44,
+            "end": 4.7,
+            "probability": 0.9504870474338531
+          },
+          {
+            "word": " ở",
+            "start": 4.7,
+            "end": 4.8,
+            "probability": 0.9357630014419556
+          },
+          {
+            "word": " lớp",
+            "start": 4.8,
+            "end": 5.04,
+            "probability": 0.9961703419685364
+          },
+          {
+            "word": " tính",
+            "start": 5.04,
+            "end": 5.14,
+            "probability": 0.9161517918109894
+          },
+          {
+            "word": " tiền",
+            "start": 5.14,
+            "end": 5.42,
+            "probability": 0.9887182712554932
+          },
+          {
+            "word": " vẫn",
+            "start": 5.42,
+            "end": 5.68,
+            "probability": 0.8782045245170593
+          },
+          {
+            "word": " như",
+            "start": 5.68,
+            "end": 5.82,
+            "probability": 0.9786455631256104
+          },
+          {
+            "word": " cũ.",
+            "start": 5.82,
+            "end": 6.08,
+            "probability": 0.8542272448539734
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-12",
+    "expected": "Chạy lại cùng dữ liệu: tiêu đề đã đổi, số tiền vẫn là chín mươi nghìn. Hai yêu cầu vừa rồi đã đi đến hai nơi sửa riêng biệt.",
+    "heard": "Trại lại cùng dữ liệu, tiêu đề đã đổi số tiền vẫn là 90.000. Hai yếu cầu vừa rồi đã đi đến 2 nơi sửa riêng biệt.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.32,
+        "text": " Trại lại cùng dữ liệu, tiêu đề đã đổi số tiền vẫn là 90.000.",
+        "words": [
+          {
+            "word": " Trại",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.6735319942235947
+          },
+          {
+            "word": " lại",
+            "start": 0.22,
+            "end": 0.32,
+            "probability": 0.5710054039955139
+          },
+          {
+            "word": " cùng",
+            "start": 0.32,
+            "end": 0.44,
+            "probability": 0.8951314687728882
+          },
+          {
+            "word": " dữ",
+            "start": 0.44,
+            "end": 0.62,
+            "probability": 0.8446360230445862
+          },
+          {
+            "word": " liệu,",
+            "start": 0.62,
+            "end": 0.84,
+            "probability": 0.9955804347991943
+          },
+          {
+            "word": " tiêu",
+            "start": 1.12,
+            "end": 1.24,
+            "probability": 0.9837254583835602
+          },
+          {
+            "word": " đề",
+            "start": 1.24,
+            "end": 1.4,
+            "probability": 0.9279446303844452
+          },
+          {
+            "word": " đã",
+            "start": 1.4,
+            "end": 1.54,
+            "probability": 0.9830071926116943
+          },
+          {
+            "word": " đổi",
+            "start": 1.54,
+            "end": 1.78,
+            "probability": 0.9866355061531067
+          },
+          {
+            "word": " số",
+            "start": 1.78,
+            "end": 2.1,
+            "probability": 0.3432545065879822
+          },
+          {
+            "word": " tiền",
+            "start": 2.1,
+            "end": 2.38,
+            "probability": 0.9897468388080597
+          },
+          {
+            "word": " vẫn",
+            "start": 2.38,
+            "end": 2.54,
+            "probability": 0.9137908220291138
+          },
+          {
+            "word": " là",
+            "start": 2.54,
+            "end": 2.74,
+            "probability": 0.9642110466957092
+          },
+          {
+            "word": " 90",
+            "start": 2.74,
+            "end": 2.98,
+            "probability": 0.9270027279853821
+          },
+          {
+            "word": ".000.",
+            "start": 2.98,
+            "end": 3.32,
+            "probability": 0.8812769651412964
+          }
+        ]
+      },
+      {
+        "start": 3.84,
+        "end": 5.98,
+        "text": " Hai yếu cầu vừa rồi đã đi đến 2 nơi sửa riêng biệt.",
+        "words": [
+          {
+            "word": " Hai",
+            "start": 3.84,
+            "end": 4.02,
+            "probability": 0.5942155718803406
+          },
+          {
+            "word": " yếu",
+            "start": 4.02,
+            "end": 4.16,
+            "probability": 0.5782435834407806
+          },
+          {
+            "word": " cầu",
+            "start": 4.16,
+            "end": 4.3,
+            "probability": 0.9587349891662598
+          },
+          {
+            "word": " vừa",
+            "start": 4.3,
+            "end": 4.5,
+            "probability": 0.9857754707336426
+          },
+          {
+            "word": " rồi",
+            "start": 4.5,
+            "end": 4.64,
+            "probability": 0.9877556562423706
+          },
+          {
+            "word": " đã",
+            "start": 4.64,
+            "end": 4.76,
+            "probability": 0.979878306388855
+          },
+          {
+            "word": " đi",
+            "start": 4.76,
+            "end": 4.9,
+            "probability": 0.9852376580238342
+          },
+          {
+            "word": " đến",
+            "start": 4.9,
+            "end": 5.06,
+            "probability": 0.9468021988868713
+          },
+          {
+            "word": " 2",
+            "start": 5.06,
+            "end": 5.26,
+            "probability": 0.6371865272521973
+          },
+          {
+            "word": " nơi",
+            "start": 5.26,
+            "end": 5.42,
+            "probability": 0.9952945411205292
+          },
+          {
+            "word": " sửa",
+            "start": 5.42,
+            "end": 5.66,
+            "probability": 0.8595495223999023
+          },
+          {
+            "word": " riêng",
+            "start": 5.66,
+            "end": 5.82,
+            "probability": 0.9392651518185934
+          },
+          {
+            "word": " biệt.",
+            "start": 5.82,
+            "end": 5.98,
+            "probability": 0.869050532579422
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-13",
+    "expected": "Đơn trách nhiệm không có nghĩa mỗi lớp chỉ có một hàm. Lớp tính tiền có thể cộng hàng, tính giảm giá, rồi tính tổng, nếu chúng cùng phục vụ quy tắc tính tiền.",
+    "heard": "đơn trách nhiệm không có nghĩa mỗi lớp chỉ có một hàng. Lớp tính tiền có thể cộng hàng, tính giảm giá, dưới tính tổng, nếu chúng cùng phục vụ quý tắc tính tiền.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": " đơn trách nhiệm không có nghĩa mỗi lớp chỉ có một hàng.",
+        "words": [
+          {
+            "word": " đơn",
+            "start": 0.0,
+            "end": 0.26,
+            "probability": 0.7035851776599884
+          },
+          {
+            "word": " trách",
+            "start": 0.26,
+            "end": 0.42,
+            "probability": 0.6407840996980667
+          },
+          {
+            "word": " nhiệm",
+            "start": 0.42,
+            "end": 0.62,
+            "probability": 0.9936250249544779
+          },
+          {
+            "word": " không",
+            "start": 0.62,
+            "end": 0.76,
+            "probability": 0.976774275302887
+          },
+          {
+            "word": " có",
+            "start": 0.76,
+            "end": 0.88,
+            "probability": 0.9938743710517883
+          },
+          {
+            "word": " nghĩa",
+            "start": 0.88,
+            "end": 1.08,
+            "probability": 0.9899260997772217
+          },
+          {
+            "word": " mỗi",
+            "start": 1.08,
+            "end": 1.22,
+            "probability": 0.975443035364151
+          },
+          {
+            "word": " lớp",
+            "start": 1.22,
+            "end": 1.44,
+            "probability": 0.9966046214103699
+          },
+          {
+            "word": " chỉ",
+            "start": 1.44,
+            "end": 1.56,
+            "probability": 0.9723791480064392
+          },
+          {
+            "word": " có",
+            "start": 1.56,
+            "end": 1.66,
+            "probability": 0.9308407306671143
+          },
+          {
+            "word": " một",
+            "start": 1.66,
+            "end": 1.84,
+            "probability": 0.8669480085372925
+          },
+          {
+            "word": " hàng.",
+            "start": 1.84,
+            "end": 2.0,
+            "probability": 0.7408693432807922
+          }
+        ]
+      },
+      {
+        "start": 2.5600000000000005,
+        "end": 5.52,
+        "text": " Lớp tính tiền có thể cộng hàng, tính giảm giá, dưới tính tổng,",
+        "words": [
+          {
+            "word": " Lớp",
+            "start": 2.5600000000000005,
+            "end": 2.92,
+            "probability": 0.9262853463490804
+          },
+          {
+            "word": " tính",
+            "start": 2.92,
+            "end": 3.06,
+            "probability": 0.9667580723762512
+          },
+          {
+            "word": " tiền",
+            "start": 3.06,
+            "end": 3.3,
+            "probability": 0.9873078763484955
+          },
+          {
+            "word": " có",
+            "start": 3.3,
+            "end": 3.46,
+            "probability": 0.9807495474815369
+          },
+          {
+            "word": " thể",
+            "start": 3.46,
+            "end": 3.56,
+            "probability": 0.9973516464233398
+          },
+          {
+            "word": " cộng",
+            "start": 3.56,
+            "end": 3.76,
+            "probability": 0.9432310461997986
+          },
+          {
+            "word": " hàng,",
+            "start": 3.76,
+            "end": 3.94,
+            "probability": 0.9879373908042908
+          },
+          {
+            "word": " tính",
+            "start": 4.26,
+            "end": 4.4,
+            "probability": 0.996574729681015
+          },
+          {
+            "word": " giảm",
+            "start": 4.4,
+            "end": 4.62,
+            "probability": 0.9050691326459249
+          },
+          {
+            "word": " giá,",
+            "start": 4.62,
+            "end": 4.9,
+            "probability": 0.9866812229156494
+          },
+          {
+            "word": " dưới",
+            "start": 5.02,
+            "end": 5.12,
+            "probability": 0.5749464929103851
+          },
+          {
+            "word": " tính",
+            "start": 5.12,
+            "end": 5.24,
+            "probability": 0.9947951436042786
+          },
+          {
+            "word": " tổng,",
+            "start": 5.24,
+            "end": 5.52,
+            "probability": 0.8844602902730306
+          }
+        ]
+      },
+      {
+        "start": 5.78,
+        "end": 7.42,
+        "text": " nếu chúng cùng phục vụ quý tắc tính tiền.",
+        "words": [
+          {
+            "word": " nếu",
+            "start": 5.78,
+            "end": 6.02,
+            "probability": 0.947207897901535
+          },
+          {
+            "word": " chúng",
+            "start": 6.02,
+            "end": 6.16,
+            "probability": 0.986723005771637
+          },
+          {
+            "word": " cùng",
+            "start": 6.16,
+            "end": 6.34,
+            "probability": 0.9303715825080872
+          },
+          {
+            "word": " phục",
+            "start": 6.34,
+            "end": 6.52,
+            "probability": 0.8949194252490997
+          },
+          {
+            "word": " vụ",
+            "start": 6.52,
+            "end": 6.7,
+            "probability": 0.9979341626167297
+          },
+          {
+            "word": " quý",
+            "start": 6.7,
+            "end": 6.9,
+            "probability": 0.6472507417201996
+          },
+          {
+            "word": " tắc",
+            "start": 6.9,
+            "end": 7.04,
+            "probability": 0.9260312914848328
+          },
+          {
+            "word": " tính",
+            "start": 7.04,
+            "end": 7.22,
+            "probability": 0.9816875457763672
+          },
+          {
+            "word": " tiền.",
+            "start": 7.22,
+            "end": 7.42,
+            "probability": 0.9985176920890808
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "outro",
+    "expected": "Khi xem một lớp, hãy hỏi: ai cần nó thay đổi, và vì sao? Gom phần mã đổi cùng lý do, tách phần đổi vì lý do độc lập. Đó là chữ S trong SOLID.",
+    "heard": "Khi xem một lớp, hãy hỏi, icon nó thay đổi và video, gong phần mã đổi cùng mý do, tách phần đổi vì lý do độc lập, đó là chữ S trong S OLED.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.98,
+        "text": " Khi xem một lớp, hãy hỏi, icon nó thay đổi và video,",
+        "words": [
+          {
+            "word": " Khi",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.9681405127048492
+          },
+          {
+            "word": " xem",
+            "start": 0.22,
+            "end": 0.32,
+            "probability": 0.9764317274093628
+          },
+          {
+            "word": " một",
+            "start": 0.32,
+            "end": 0.46,
+            "probability": 0.518157958984375
+          },
+          {
+            "word": " lớp,",
+            "start": 0.46,
+            "end": 0.84,
+            "probability": 0.9818226397037506
+          },
+          {
+            "word": " hãy",
+            "start": 0.98,
+            "end": 1.08,
+            "probability": 0.9195185601711273
+          },
+          {
+            "word": " hỏi,",
+            "start": 1.08,
+            "end": 1.36,
+            "probability": 0.9842495322227478
+          },
+          {
+            "word": " icon",
+            "start": 1.64,
+            "end": 1.88,
+            "probability": 0.973954439163208
+          },
+          {
+            "word": " nó",
+            "start": 1.88,
+            "end": 2.06,
+            "probability": 0.9069435000419617
+          },
+          {
+            "word": " thay",
+            "start": 2.06,
+            "end": 2.18,
+            "probability": 0.5248564779758453
+          },
+          {
+            "word": " đổi",
+            "start": 2.18,
+            "end": 2.42,
+            "probability": 0.9943590760231018
+          },
+          {
+            "word": " và",
+            "start": 2.42,
+            "end": 2.72,
+            "probability": 0.8117053508758545
+          },
+          {
+            "word": " video,",
+            "start": 2.72,
+            "end": 2.98,
+            "probability": 0.466982901096344
+          }
+        ]
+      },
+      {
+        "start": 3.6,
+        "end": 6.44,
+        "text": " gong phần mã đổi cùng mý do, tách phần đổi vì lý do độc lập,",
+        "words": [
+          {
+            "word": " gong",
+            "start": 3.6,
+            "end": 3.78,
+            "probability": 0.6084184348583221
+          },
+          {
+            "word": " phần",
+            "start": 3.78,
+            "end": 3.96,
+            "probability": 0.9789990484714508
+          },
+          {
+            "word": " mã",
+            "start": 3.96,
+            "end": 4.14,
+            "probability": 0.7169039845466614
+          },
+          {
+            "word": " đổi",
+            "start": 4.14,
+            "end": 4.4,
+            "probability": 0.9633505344390869
+          },
+          {
+            "word": " cùng",
+            "start": 4.4,
+            "end": 4.52,
+            "probability": 0.9891877770423889
+          },
+          {
+            "word": " mý",
+            "start": 4.52,
+            "end": 4.66,
+            "probability": 0.5542917847633362
+          },
+          {
+            "word": " do,",
+            "start": 4.66,
+            "end": 4.88,
+            "probability": 0.9681758880615234
+          },
+          {
+            "word": " tách",
+            "start": 5.1,
+            "end": 5.2,
+            "probability": 0.6794211566448212
+          },
+          {
+            "word": " phần",
+            "start": 5.2,
+            "end": 5.42,
+            "probability": 0.9949969053268433
+          },
+          {
+            "word": " đổi",
+            "start": 5.42,
+            "end": 5.66,
+            "probability": 0.9897323250770569
+          },
+          {
+            "word": " vì",
+            "start": 5.66,
+            "end": 5.78,
+            "probability": 0.96745365858078
+          },
+          {
+            "word": " lý",
+            "start": 5.78,
+            "end": 5.92,
+            "probability": 0.7764189839363098
+          },
+          {
+            "word": " do",
+            "start": 5.92,
+            "end": 6.08,
+            "probability": 0.9947839379310608
+          },
+          {
+            "word": " độc",
+            "start": 6.08,
+            "end": 6.26,
+            "probability": 0.968418538570404
+          },
+          {
+            "word": " lập,",
+            "start": 6.26,
+            "end": 6.44,
+            "probability": 0.9929372668266296
+          }
+        ]
+      },
+      {
+        "start": 6.82,
+        "end": 8.46,
+        "text": " đó là chữ S trong S OLED.",
+        "words": [
+          {
+            "word": " đó",
+            "start": 6.82,
+            "end": 7.02,
+            "probability": 0.9568725824356079
+          },
+          {
+            "word": " là",
+            "start": 7.02,
+            "end": 7.2,
+            "probability": 0.997368574142456
+          },
+          {
+            "word": " chữ",
+            "start": 7.2,
+            "end": 7.4,
+            "probability": 0.5812524855136871
+          },
+          {
+            "word": " S",
+            "start": 7.4,
+            "end": 7.64,
+            "probability": 0.32290422916412354
+          },
+          {
+            "word": " trong",
+            "start": 7.64,
+            "end": 7.86,
+            "probability": 0.9791297316551208
+          },
+          {
+            "word": " S",
+            "start": 7.86,
+            "end": 8.16,
+            "probability": 0.28802013397216797
+          },
+          {
+            "word": " OLED.",
+            "start": 8.16,
+            "end": 8.46,
+            "probability": 0.13248732686042786
+          }
+        ]
+      }
+    ]
+  }
+]

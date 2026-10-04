@@ -1,0 +1,2321 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=1.0:gap=0.2:timing=monotonic-v2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 5.84,
+   "words": [
+    {
+     "w": "Đổi",
+     "start": 0.062,
+     "end": 0.213
+    },
+    {
+     "w": "mẫu",
+     "start": 0.226,
+     "end": 0.378
+    },
+    {
+     "w": "hóa",
+     "start": 0.391,
+     "end": 0.543
+    },
+    {
+     "w": "đơn,",
+     "start": 0.556,
+     "end": 0.738
+    },
+    {
+     "w": "vì",
+     "start": 1.009,
+     "end": 1.127
+    },
+    {
+     "w": "sao",
+     "start": 1.137,
+     "end": 1.284
+    },
+    {
+     "w": "phải",
+     "start": 1.297,
+     "end": 1.474
+    },
+    {
+     "w": "mở",
+     "start": 1.489,
+     "end": 1.607
+    },
+    {
+     "w": "cả",
+     "start": 1.618,
+     "end": 1.736
+    },
+    {
+     "w": "lớp",
+     "start": 1.746,
+     "end": 1.893
+    },
+    {
+     "w": "tính",
+     "start": 1.906,
+     "end": 2.083
+    },
+    {
+     "w": "tiền?",
+     "start": 2.098,
+     "end": 2.305
+    },
+    {
+     "w": "Theo",
+     "start": 2.777,
+     "end": 3.005
+    },
+    {
+     "w": "dõi",
+     "start": 3.024,
+     "end": 3.214
+    },
+    {
+     "w": "hai",
+     "start": 3.231,
+     "end": 3.42
+    },
+    {
+     "w": "yêu",
+     "start": 3.437,
+     "end": 3.627
+    },
+    {
+     "w": "cầu",
+     "start": 3.643,
+     "end": 3.833
+    },
+    {
+     "w": "thay",
+     "start": 3.849,
+     "end": 4.077
+    },
+    {
+     "w": "đổi",
+     "start": 4.097,
+     "end": 4.287
+    },
+    {
+     "w": "để",
+     "start": 4.303,
+     "end": 4.455
+    },
+    {
+     "w": "hiểu",
+     "start": 4.468,
+     "end": 4.696
+    },
+    {
+     "w": "chữ",
+     "start": 4.716,
+     "end": 4.905
+    },
+    {
+     "w": "S",
+     "start": 4.922,
+     "end": 5.036
+    },
+    {
+     "w": "trong",
+     "start": 5.046,
+     "end": 5.311
+    },
+    {
+     "w": "SOLID.",
+     "start": 5.334,
+     "end": 5.638
+    }
+   ],
+   "text": "Đổi mẫu hóa đơn, vì sao phải mở cả lớp tính tiền? Theo dõi hai yêu cầu thay đổi để hiểu chữ S trong SOLID."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 6.16,
+   "words": [
+    {
+     "w": "Ta",
+     "start": 0.069,
+     "end": 0.185
+    },
+    {
+     "w": "có",
+     "start": 0.195,
+     "end": 0.31
+    },
+    {
+     "w": "một",
+     "start": 0.32,
+     "end": 0.465
+    },
+    {
+     "w": "lớp",
+     "start": 0.477,
+     "end": 0.621
+    },
+    {
+     "w": "hóa",
+     "start": 0.634,
+     "end": 0.778
+    },
+    {
+     "w": "đơn.",
+     "start": 0.791,
+     "end": 0.964
+    },
+    {
+     "w": "Lớp",
+     "start": 1.413,
+     "end": 1.584
+    },
+    {
+     "w": "là",
+     "start": 1.599,
+     "end": 1.736
+    },
+    {
+     "w": "nơi",
+     "start": 1.748,
+     "end": 1.919
+    },
+    {
+     "w": "gom",
+     "start": 1.933,
+     "end": 2.104
+    },
+    {
+     "w": "dữ",
+     "start": 2.119,
+     "end": 2.256
+    },
+    {
+     "w": "liệu",
+     "start": 2.268,
+     "end": 2.473
+    },
+    {
+     "w": "và",
+     "start": 2.491,
+     "end": 2.628
+    },
+    {
+     "w": "các",
+     "start": 2.639,
+     "end": 2.81
+    },
+    {
+     "w": "hàm",
+     "start": 2.825,
+     "end": 2.996
+    },
+    {
+     "w": "liên",
+     "start": 3.011,
+     "end": 3.216
+    },
+    {
+     "w": "quan.",
+     "start": 3.234,
+     "end": 3.473
+    },
+    {
+     "w": "Trong",
+     "start": 3.877,
+     "end": 4.071
+    },
+    {
+     "w": "ví",
+     "start": 4.088,
+     "end": 4.199
+    },
+    {
+     "w": "dụ",
+     "start": 4.209,
+     "end": 4.32
+    },
+    {
+     "w": "này,",
+     "start": 4.329,
+     "end": 4.496
+    },
+    {
+     "w": "nó",
+     "start": 4.805,
+     "end": 4.931
+    },
+    {
+     "w": "đang",
+     "start": 4.942,
+     "end": 5.131
+    },
+    {
+     "w": "ôm",
+     "start": 5.147,
+     "end": 5.273
+    },
+    {
+     "w": "cả",
+     "start": 5.284,
+     "end": 5.41
+    },
+    {
+     "w": "hai",
+     "start": 5.421,
+     "end": 5.579
+    },
+    {
+     "w": "phần",
+     "start": 5.593,
+     "end": 5.782
+    },
+    {
+     "w": "việc.",
+     "start": 5.798,
+     "end": 6.019
+    }
+   ],
+   "text": "Ta có một lớp hóa đơn. Lớp là nơi gom dữ liệu và các hàm liên quan. Trong ví dụ này, nó đang ôm cả hai phần việc."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 7.04,
+   "words": [
+    {
+     "w": "Một",
+     "start": 0.081,
+     "end": 0.242
+    },
+    {
+     "w": "hàm",
+     "start": 0.255,
+     "end": 0.416
+    },
+    {
+     "w": "tính",
+     "start": 0.43,
+     "end": 0.622
+    },
+    {
+     "w": "số",
+     "start": 0.639,
+     "end": 0.767
+    },
+    {
+     "w": "tiền",
+     "start": 0.779,
+     "end": 0.971
+    },
+    {
+     "w": "khách",
+     "start": 0.988,
+     "end": 1.212
+    },
+    {
+     "w": "phải",
+     "start": 1.232,
+     "end": 1.424
+    },
+    {
+     "w": "trả.",
+     "start": 1.441,
+     "end": 1.634
+    },
+    {
+     "w": "Hàm",
+     "start": 2.126,
+     "end": 2.279
+    },
+    {
+     "w": "kia",
+     "start": 2.292,
+     "end": 2.446
+    },
+    {
+     "w": "trình",
+     "start": 2.459,
+     "end": 2.674
+    },
+    {
+     "w": "bày",
+     "start": 2.692,
+     "end": 2.846
+    },
+    {
+     "w": "hóa",
+     "start": 2.859,
+     "end": 3.013
+    },
+    {
+     "w": "đơn",
+     "start": 3.026,
+     "end": 3.179
+    },
+    {
+     "w": "thành",
+     "start": 3.193,
+     "end": 3.408
+    },
+    {
+     "w": "bản",
+     "start": 3.426,
+     "end": 3.58
+    },
+    {
+     "w": "in.",
+     "start": 3.593,
+     "end": 3.746
+    },
+    {
+     "w": "Hai",
+     "start": 4.133,
+     "end": 4.266
+    },
+    {
+     "w": "hàm",
+     "start": 4.278,
+     "end": 4.411
+    },
+    {
+     "w": "cùng",
+     "start": 4.422,
+     "end": 4.582
+    },
+    {
+     "w": "nằm",
+     "start": 4.596,
+     "end": 4.73
+    },
+    {
+     "w": "trong",
+     "start": 4.741,
+     "end": 4.928
+    },
+    {
+     "w": "một",
+     "start": 4.944,
+     "end": 5.077
+    },
+    {
+     "w": "lớp,",
+     "start": 5.089,
+     "end": 5.249
+    },
+    {
+     "w": "nhưng",
+     "start": 5.716,
+     "end": 5.9
+    },
+    {
+     "w": "ai",
+     "start": 5.916,
+     "end": 6.022
+    },
+    {
+     "w": "yêu",
+     "start": 6.031,
+     "end": 6.162
+    },
+    {
+     "w": "cầu",
+     "start": 6.173,
+     "end": 6.305
+    },
+    {
+     "w": "chúng",
+     "start": 6.316,
+     "end": 6.5
+    },
+    {
+     "w": "thay",
+     "start": 6.516,
+     "end": 6.674
+    },
+    {
+     "w": "đổi?",
+     "start": 6.688,
+     "end": 6.845
+    }
+   ],
+   "text": "Một hàm tính số tiền khách phải trả. Hàm kia trình bày hóa đơn thành bản in. Hai hàm cùng nằm trong một lớp, nhưng ai yêu cầu chúng thay đổi?"
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 5.92,
+   "words": [
+    {
+     "w": "Bộ",
+     "start": 0.084,
+     "end": 0.216
+    },
+    {
+     "w": "phận",
+     "start": 0.227,
+     "end": 0.424
+    },
+    {
+     "w": "kinh",
+     "start": 0.442,
+     "end": 0.639
+    },
+    {
+     "w": "doanh",
+     "start": 0.656,
+     "end": 0.887
+    },
+    {
+     "w": "muốn",
+     "start": 0.907,
+     "end": 1.104
+    },
+    {
+     "w": "đổi",
+     "start": 1.121,
+     "end": 1.286
+    },
+    {
+     "w": "mức",
+     "start": 1.3,
+     "end": 1.465
+    },
+    {
+     "w": "giảm",
+     "start": 1.479,
+     "end": 1.676
+    },
+    {
+     "w": "giá.",
+     "start": 1.694,
+     "end": 1.891
+    },
+    {
+     "w": "Yêu",
+     "start": 2.386,
+     "end": 2.54
+    },
+    {
+     "w": "cầu",
+     "start": 2.553,
+     "end": 2.707
+    },
+    {
+     "w": "này",
+     "start": 2.721,
+     "end": 2.875
+    },
+    {
+     "w": "tác",
+     "start": 2.888,
+     "end": 3.042
+    },
+    {
+     "w": "động",
+     "start": 3.055,
+     "end": 3.24
+    },
+    {
+     "w": "đến",
+     "start": 3.256,
+     "end": 3.41
+    },
+    {
+     "w": "cách",
+     "start": 3.423,
+     "end": 3.608
+    },
+    {
+     "w": "tính",
+     "start": 3.624,
+     "end": 3.809
+    },
+    {
+     "w": "tiền,",
+     "start": 3.825,
+     "end": 4.04
+    },
+    {
+     "w": "dù",
+     "start": 4.37,
+     "end": 4.505
+    },
+    {
+     "w": "mẫu",
+     "start": 4.517,
+     "end": 4.687
+    },
+    {
+     "w": "hóa",
+     "start": 4.702,
+     "end": 4.871
+    },
+    {
+     "w": "đơn",
+     "start": 4.886,
+     "end": 5.056
+    },
+    {
+     "w": "vẫn",
+     "start": 5.071,
+     "end": 5.24
+    },
+    {
+     "w": "giữ",
+     "start": 5.255,
+     "end": 5.425
+    },
+    {
+     "w": "nguyên.",
+     "start": 5.44,
+     "end": 5.745
+    }
+   ],
+   "text": "Bộ phận kinh doanh muốn đổi mức giảm giá. Yêu cầu này tác động đến cách tính tiền, dù mẫu hóa đơn vẫn giữ nguyên."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 5.92,
+   "words": [
+    {
+     "w": "Bộ",
+     "start": 0.096,
+     "end": 0.225
+    },
+    {
+     "w": "phận",
+     "start": 0.237,
+     "end": 0.43
+    },
+    {
+     "w": "vận",
+     "start": 0.447,
+     "end": 0.608
+    },
+    {
+     "w": "hành",
+     "start": 0.622,
+     "end": 0.816
+    },
+    {
+     "w": "muốn",
+     "start": 0.832,
+     "end": 1.026
+    },
+    {
+     "w": "đổi",
+     "start": 1.043,
+     "end": 1.204
+    },
+    {
+     "w": "tiêu",
+     "start": 1.218,
+     "end": 1.412
+    },
+    {
+     "w": "đề",
+     "start": 1.428,
+     "end": 1.557
+    },
+    {
+     "w": "bản",
+     "start": 1.569,
+     "end": 1.73
+    },
+    {
+     "w": "in.",
+     "start": 1.744,
+     "end": 1.905
+    },
+    {
+     "w": "Cách",
+     "start": 2.245,
+     "end": 2.406
+    },
+    {
+     "w": "tính",
+     "start": 2.42,
+     "end": 2.582
+    },
+    {
+     "w": "tiền",
+     "start": 2.596,
+     "end": 2.757
+    },
+    {
+     "w": "không",
+     "start": 2.771,
+     "end": 2.959
+    },
+    {
+     "w": "đổi.",
+     "start": 2.976,
+     "end": 3.137
+    },
+    {
+     "w": "Vậy",
+     "start": 3.526,
+     "end": 3.676
+    },
+    {
+     "w": "một",
+     "start": 3.689,
+     "end": 3.839
+    },
+    {
+     "w": "lớp",
+     "start": 3.852,
+     "end": 4.002
+    },
+    {
+     "w": "đang",
+     "start": 4.016,
+     "end": 4.196
+    },
+    {
+     "w": "phải",
+     "start": 4.211,
+     "end": 4.392
+    },
+    {
+     "w": "đáp",
+     "start": 4.407,
+     "end": 4.558
+    },
+    {
+     "w": "ứng",
+     "start": 4.571,
+     "end": 4.721
+    },
+    {
+     "w": "hai",
+     "start": 4.734,
+     "end": 4.884
+    },
+    {
+     "w": "nhóm",
+     "start": 4.897,
+     "end": 5.077
+    },
+    {
+     "w": "yêu",
+     "start": 5.093,
+     "end": 5.243
+    },
+    {
+     "w": "cầu",
+     "start": 5.256,
+     "end": 5.406
+    },
+    {
+     "w": "độc",
+     "start": 5.42,
+     "end": 5.57
+    },
+    {
+     "w": "lập.",
+     "start": 5.583,
+     "end": 5.763
+    }
+   ],
+   "text": "Bộ phận vận hành muốn đổi tiêu đề bản in. Cách tính tiền không đổi. Vậy một lớp đang phải đáp ứng hai nhóm yêu cầu độc lập."
+  },
+  {
+   "id": "scene-5",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 8.4,
+   "words": [
+    {
+     "w": "S",
+     "start": 0.066,
+     "end": 0.146
+    },
+    {
+     "w": "là",
+     "start": 0.153,
+     "end": 0.261
+    },
+    {
+     "w": "nguyên",
+     "start": 0.271,
+     "end": 0.486
+    },
+    {
+     "w": "tắc",
+     "start": 0.505,
+     "end": 0.64
+    },
+    {
+     "w": "đơn",
+     "start": 0.651,
+     "end": 0.786
+    },
+    {
+     "w": "trách",
+     "start": 0.798,
+     "end": 0.986
+    },
+    {
+     "w": "nhiệm.",
+     "start": 1.003,
+     "end": 1.218
+    },
+    {
+     "w": "Một",
+     "start": 1.856,
+     "end": 2.029
+    },
+    {
+     "w": "mô",
+     "start": 2.044,
+     "end": 2.183
+    },
+    {
+     "w": "đun",
+     "start": 2.195,
+     "end": 2.369
+    },
+    {
+     "w": "nên",
+     "start": 2.384,
+     "end": 2.557
+    },
+    {
+     "w": "có",
+     "start": 2.572,
+     "end": 2.711
+    },
+    {
+     "w": "một",
+     "start": 2.723,
+     "end": 2.897
+    },
+    {
+     "w": "lý",
+     "start": 2.912,
+     "end": 3.05
+    },
+    {
+     "w": "do",
+     "start": 3.062,
+     "end": 3.201
+    },
+    {
+     "w": "để",
+     "start": 3.213,
+     "end": 3.352
+    },
+    {
+     "w": "thay",
+     "start": 3.364,
+     "end": 3.572
+    },
+    {
+     "w": "đổi:",
+     "start": 3.59,
+     "end": 3.798
+    },
+    {
+     "w": "phục",
+     "start": 4.073,
+     "end": 4.286
+    },
+    {
+     "w": "vụ",
+     "start": 4.305,
+     "end": 4.447
+    },
+    {
+     "w": "một",
+     "start": 4.46,
+     "end": 4.637
+    },
+    {
+     "w": "nhóm",
+     "start": 4.653,
+     "end": 4.866
+    },
+    {
+     "w": "nhu",
+     "start": 4.885,
+     "end": 5.062
+    },
+    {
+     "w": "cầu",
+     "start": 5.078,
+     "end": 5.256
+    },
+    {
+     "w": "gắn",
+     "start": 5.271,
+     "end": 5.449
+    },
+    {
+     "w": "kết.",
+     "start": 5.464,
+     "end": 5.678
+    },
+    {
+     "w": "Ở",
+     "start": 5.696,
+     "end": 5.812
+    },
+    {
+     "w": "đây,",
+     "start": 5.822,
+     "end": 6.054
+    },
+    {
+     "w": "hai",
+     "start": 6.074,
+     "end": 6.268
+    },
+    {
+     "w": "nhóm",
+     "start": 6.284,
+     "end": 6.516
+    },
+    {
+     "w": "đang",
+     "start": 6.537,
+     "end": 6.769
+    },
+    {
+     "w": "đổi",
+     "start": 6.789,
+     "end": 6.982
+    },
+    {
+     "w": "vì",
+     "start": 6.999,
+     "end": 7.153
+    },
+    {
+     "w": "hai",
+     "start": 7.167,
+     "end": 7.36
+    },
+    {
+     "w": "lý",
+     "start": 7.377,
+     "end": 7.532
+    },
+    {
+     "w": "do",
+     "start": 7.545,
+     "end": 7.7
+    },
+    {
+     "w": "khác",
+     "start": 7.713,
+     "end": 7.945
+    },
+    {
+     "w": "nhau.",
+     "start": 7.965,
+     "end": 8.236
+    }
+   ],
+   "text": "S là nguyên tắc đơn trách nhiệm. Một mô đun nên có một lý do để thay đổi: phục vụ một nhóm nhu cầu gắn kết. Ở đây, hai nhóm đang đổi vì hai lý do khác nhau."
+  },
+  {
+   "id": "scene-6",
+   "file": "assets/audio/vo-06.mp3",
+   "duration": 4.8,
+   "words": [
+    {
+     "w": "Ta",
+     "start": 0.095,
+     "end": 0.214
+    },
+    {
+     "w": "tách",
+     "start": 0.224,
+     "end": 0.402
+    },
+    {
+     "w": "mã",
+     "start": 0.418,
+     "end": 0.537
+    },
+    {
+     "w": "theo",
+     "start": 0.547,
+     "end": 0.725
+    },
+    {
+     "w": "hai",
+     "start": 0.741,
+     "end": 0.89
+    },
+    {
+     "w": "lý",
+     "start": 0.902,
+     "end": 1.021
+    },
+    {
+     "w": "do",
+     "start": 1.032,
+     "end": 1.151
+    },
+    {
+     "w": "ấy.",
+     "start": 1.161,
+     "end": 1.31
+    },
+    {
+     "w": "Giữ",
+     "start": 1.609,
+     "end": 1.75
+    },
+    {
+     "w": "nguyên",
+     "start": 1.763,
+     "end": 1.989
+    },
+    {
+     "w": "dữ",
+     "start": 2.009,
+     "end": 2.122
+    },
+    {
+     "w": "liệu",
+     "start": 2.132,
+     "end": 2.301
+    },
+    {
+     "w": "hóa",
+     "start": 2.316,
+     "end": 2.458
+    },
+    {
+     "w": "đơn,",
+     "start": 2.47,
+     "end": 2.64
+    },
+    {
+     "w": "rồi",
+     "start": 2.954,
+     "end": 3.096
+    },
+    {
+     "w": "chuyển",
+     "start": 3.108,
+     "end": 3.335
+    },
+    {
+     "w": "phần",
+     "start": 3.355,
+     "end": 3.525
+    },
+    {
+     "w": "tính",
+     "start": 3.54,
+     "end": 3.71
+    },
+    {
+     "w": "toán",
+     "start": 3.724,
+     "end": 3.895
+    },
+    {
+     "w": "sang",
+     "start": 3.909,
+     "end": 4.079
+    },
+    {
+     "w": "lớp",
+     "start": 4.094,
+     "end": 4.236
+    },
+    {
+     "w": "tính",
+     "start": 4.248,
+     "end": 4.418
+    },
+    {
+     "w": "tiền.",
+     "start": 4.433,
+     "end": 4.632
+    }
+   ],
+   "text": "Ta tách mã theo hai lý do ấy. Giữ nguyên dữ liệu hóa đơn, rồi chuyển phần tính toán sang lớp tính tiền."
+  },
+  {
+   "id": "scene-7",
+   "file": "assets/audio/vo-07.mp3",
+   "duration": 5.68,
+   "words": [
+    {
+     "w": "Phần",
+     "start": 0.065,
+     "end": 0.238
+    },
+    {
+     "w": "tạo",
+     "start": 0.253,
+     "end": 0.397
+    },
+    {
+     "w": "bản",
+     "start": 0.41,
+     "end": 0.554
+    },
+    {
+     "w": "in",
+     "start": 0.567,
+     "end": 0.682
+    },
+    {
+     "w": "chuyển",
+     "start": 0.692,
+     "end": 0.923
+    },
+    {
+     "w": "sang",
+     "start": 0.943,
+     "end": 1.115
+    },
+    {
+     "w": "lớp",
+     "start": 1.131,
+     "end": 1.275
+    },
+    {
+     "w": "trình",
+     "start": 1.287,
+     "end": 1.489
+    },
+    {
+     "w": "bày.",
+     "start": 1.506,
+     "end": 1.679
+    },
+    {
+     "w": "Vẫn",
+     "start": 2.151,
+     "end": 2.313
+    },
+    {
+     "w": "hai",
+     "start": 2.328,
+     "end": 2.49
+    },
+    {
+     "w": "phần",
+     "start": 2.505,
+     "end": 2.7
+    },
+    {
+     "w": "việc",
+     "start": 2.717,
+     "end": 2.912
+    },
+    {
+     "w": "cũ,",
+     "start": 2.929,
+     "end": 3.092
+    },
+    {
+     "w": "nhưng",
+     "start": 3.483,
+     "end": 3.69
+    },
+    {
+     "w": "mỗi",
+     "start": 3.708,
+     "end": 3.857
+    },
+    {
+     "w": "lớp",
+     "start": 3.87,
+     "end": 4.018
+    },
+    {
+     "w": "giờ",
+     "start": 4.031,
+     "end": 4.179
+    },
+    {
+     "w": "có",
+     "start": 4.192,
+     "end": 4.311
+    },
+    {
+     "w": "ranh",
+     "start": 4.321,
+     "end": 4.499
+    },
+    {
+     "w": "giới",
+     "start": 4.515,
+     "end": 4.693
+    },
+    {
+     "w": "trách",
+     "start": 4.708,
+     "end": 4.916
+    },
+    {
+     "w": "nhiệm",
+     "start": 4.934,
+     "end": 5.142
+    },
+    {
+     "w": "rõ",
+     "start": 5.16,
+     "end": 5.278
+    },
+    {
+     "w": "hơn.",
+     "start": 5.289,
+     "end": 5.467
+    }
+   ],
+   "text": "Phần tạo bản in chuyển sang lớp trình bày. Vẫn hai phần việc cũ, nhưng mỗi lớp giờ có ranh giới trách nhiệm rõ hơn."
+  },
+  {
+   "id": "scene-8",
+   "file": "assets/audio/vo-08.mp3",
+   "duration": 7.2,
+   "words": [
+    {
+     "w": "Khi",
+     "start": 0.057,
+     "end": 0.232
+    },
+    {
+     "w": "tạo",
+     "start": 0.248,
+     "end": 0.423
+    },
+    {
+     "w": "hóa",
+     "start": 0.438,
+     "end": 0.613
+    },
+    {
+     "w": "đơn,",
+     "start": 0.628,
+     "end": 0.838
+    },
+    {
+     "w": "dữ",
+     "start": 0.856,
+     "end": 0.978
+    },
+    {
+     "w": "liệu",
+     "start": 0.989,
+     "end": 1.172
+    },
+    {
+     "w": "đi",
+     "start": 1.188,
+     "end": 1.309
+    },
+    {
+     "w": "vào",
+     "start": 1.32,
+     "end": 1.472
+    },
+    {
+     "w": "phần",
+     "start": 1.485,
+     "end": 1.668
+    },
+    {
+     "w": "tính",
+     "start": 1.684,
+     "end": 1.867
+    },
+    {
+     "w": "tiền.",
+     "start": 1.883,
+     "end": 2.096
+    },
+    {
+     "w": "Kết",
+     "start": 2.605,
+     "end": 2.757
+    },
+    {
+     "w": "quả",
+     "start": 2.77,
+     "end": 2.921
+    },
+    {
+     "w": "được",
+     "start": 2.934,
+     "end": 3.116
+    },
+    {
+     "w": "chuyển",
+     "start": 3.132,
+     "end": 3.374
+    },
+    {
+     "w": "cho",
+     "start": 3.395,
+     "end": 3.546
+    },
+    {
+     "w": "phần",
+     "start": 3.56,
+     "end": 3.741
+    },
+    {
+     "w": "trình",
+     "start": 3.757,
+     "end": 3.969
+    },
+    {
+     "w": "bày",
+     "start": 3.987,
+     "end": 4.139
+    },
+    {
+     "w": "để",
+     "start": 4.152,
+     "end": 4.273
+    },
+    {
+     "w": "tạo",
+     "start": 4.284,
+     "end": 4.435
+    },
+    {
+     "w": "bản",
+     "start": 4.448,
+     "end": 4.6
+    },
+    {
+     "w": "in.",
+     "start": 4.613,
+     "end": 4.764
+    },
+    {
+     "w": "Tách",
+     "start": 5.215,
+     "end": 5.388
+    },
+    {
+     "w": "trách",
+     "start": 5.403,
+     "end": 5.604
+    },
+    {
+     "w": "nhiệm",
+     "start": 5.622,
+     "end": 5.823
+    },
+    {
+     "w": "vẫn",
+     "start": 5.841,
+     "end": 5.984
+    },
+    {
+     "w": "cho",
+     "start": 5.997,
+     "end": 6.141
+    },
+    {
+     "w": "phép",
+     "start": 6.153,
+     "end": 6.326
+    },
+    {
+     "w": "các",
+     "start": 6.341,
+     "end": 6.485
+    },
+    {
+     "w": "phần",
+     "start": 6.497,
+     "end": 6.67
+    },
+    {
+     "w": "phối",
+     "start": 6.685,
+     "end": 6.857
+    },
+    {
+     "w": "hợp.",
+     "start": 6.872,
+     "end": 7.045
+    }
+   ],
+   "text": "Khi tạo hóa đơn, dữ liệu đi vào phần tính tiền. Kết quả được chuyển cho phần trình bày để tạo bản in. Tách trách nhiệm vẫn cho phép các phần phối hợp."
+  },
+  {
+   "id": "scene-9",
+   "file": "assets/audio/vo-09.mp3",
+   "duration": 6.72,
+   "words": [
+    {
+     "w": "Thử",
+     "start": 0.043,
+     "end": 0.189
+    },
+    {
+     "w": "yêu",
+     "start": 0.202,
+     "end": 0.348
+    },
+    {
+     "w": "cầu",
+     "start": 0.36,
+     "end": 0.506
+    },
+    {
+     "w": "đầu",
+     "start": 0.519,
+     "end": 0.665
+    },
+    {
+     "w": "tiên:",
+     "start": 0.677,
+     "end": 0.882
+    },
+    {
+     "w": "kinh",
+     "start": 1.237,
+     "end": 1.427
+    },
+    {
+     "w": "doanh",
+     "start": 1.443,
+     "end": 1.665
+    },
+    {
+     "w": "đổi",
+     "start": 1.685,
+     "end": 1.843
+    },
+    {
+     "w": "giảm",
+     "start": 1.857,
+     "end": 2.047
+    },
+    {
+     "w": "giá",
+     "start": 2.064,
+     "end": 2.222
+    },
+    {
+     "w": "từ",
+     "start": 2.236,
+     "end": 2.363
+    },
+    {
+     "w": "không",
+     "start": 2.374,
+     "end": 2.595
+    },
+    {
+     "w": "lên",
+     "start": 2.615,
+     "end": 2.773
+    },
+    {
+     "w": "mười",
+     "start": 2.787,
+     "end": 2.977
+    },
+    {
+     "w": "phần",
+     "start": 2.994,
+     "end": 3.184
+    },
+    {
+     "w": "trăm.",
+     "start": 3.2,
+     "end": 3.422
+    },
+    {
+     "w": "Ta",
+     "start": 4.018,
+     "end": 4.14
+    },
+    {
+     "w": "sửa",
+     "start": 4.151,
+     "end": 4.304
+    },
+    {
+     "w": "quy",
+     "start": 4.318,
+     "end": 4.471
+    },
+    {
+     "w": "tắc",
+     "start": 4.484,
+     "end": 4.637
+    },
+    {
+     "w": "ở",
+     "start": 4.651,
+     "end": 4.743
+    },
+    {
+     "w": "lớp",
+     "start": 4.751,
+     "end": 4.904
+    },
+    {
+     "w": "tính",
+     "start": 4.917,
+     "end": 5.101
+    },
+    {
+     "w": "tiền.",
+     "start": 5.117,
+     "end": 5.331
+    },
+    {
+     "w": "Phần",
+     "start": 5.714,
+     "end": 5.856
+    },
+    {
+     "w": "trình",
+     "start": 5.868,
+     "end": 6.034
+    },
+    {
+     "w": "bày",
+     "start": 6.049,
+     "end": 6.168
+    },
+    {
+     "w": "giữ",
+     "start": 6.178,
+     "end": 6.296
+    },
+    {
+     "w": "nguyên.",
+     "start": 6.307,
+     "end": 6.52
+    }
+   ],
+   "text": "Thử yêu cầu đầu tiên: kinh doanh đổi giảm giá từ không lên mười phần trăm. Ta sửa quy tắc ở lớp tính tiền. Phần trình bày giữ nguyên."
+  },
+  {
+   "id": "scene-10",
+   "file": "assets/audio/vo-10.mp3",
+   "duration": 6.48,
+   "words": [
+    {
+     "w": "Với",
+     "start": 0.077,
+     "end": 0.203
+    },
+    {
+     "w": "hóa",
+     "start": 0.214,
+     "end": 0.341
+    },
+    {
+     "w": "đơn",
+     "start": 0.352,
+     "end": 0.479
+    },
+    {
+     "w": "một",
+     "start": 0.49,
+     "end": 0.617
+    },
+    {
+     "w": "trăm",
+     "start": 0.628,
+     "end": 0.781
+    },
+    {
+     "w": "nghìn",
+     "start": 0.794,
+     "end": 0.971
+    },
+    {
+     "w": "đồng,",
+     "start": 0.987,
+     "end": 1.165
+    },
+    {
+     "w": "số",
+     "start": 1.45,
+     "end": 1.583
+    },
+    {
+     "w": "phải",
+     "start": 1.594,
+     "end": 1.794
+    },
+    {
+     "w": "trả",
+     "start": 1.811,
+     "end": 1.978
+    },
+    {
+     "w": "còn",
+     "start": 1.992,
+     "end": 2.159
+    },
+    {
+     "w": "chín",
+     "start": 2.173,
+     "end": 2.373
+    },
+    {
+     "w": "mươi",
+     "start": 2.39,
+     "end": 2.59
+    },
+    {
+     "w": "nghìn.",
+     "start": 2.608,
+     "end": 2.874
+    },
+    {
+     "w": "Chạy",
+     "start": 3.181,
+     "end": 3.347
+    },
+    {
+     "w": "lại,",
+     "start": 3.362,
+     "end": 3.528
+    },
+    {
+     "w": "bản",
+     "start": 3.953,
+     "end": 4.112
+    },
+    {
+     "w": "in",
+     "start": 4.126,
+     "end": 4.253
+    },
+    {
+     "w": "nhận",
+     "start": 4.264,
+     "end": 4.455
+    },
+    {
+     "w": "số",
+     "start": 4.472,
+     "end": 4.599
+    },
+    {
+     "w": "tiền",
+     "start": 4.61,
+     "end": 4.801
+    },
+    {
+     "w": "mới",
+     "start": 4.818,
+     "end": 4.977
+    },
+    {
+     "w": "mà",
+     "start": 4.991,
+     "end": 5.118
+    },
+    {
+     "w": "không",
+     "start": 5.129,
+     "end": 5.352
+    },
+    {
+     "w": "cần",
+     "start": 5.371,
+     "end": 5.531
+    },
+    {
+     "w": "sửa",
+     "start": 5.544,
+     "end": 5.704
+    },
+    {
+     "w": "mã",
+     "start": 5.717,
+     "end": 5.845
+    },
+    {
+     "w": "trình",
+     "start": 5.856,
+     "end": 6.079
+    },
+    {
+     "w": "bày.",
+     "start": 6.098,
+     "end": 6.289
+    }
+   ],
+   "text": "Với hóa đơn một trăm nghìn đồng, số phải trả còn chín mươi nghìn. Chạy lại, bản in nhận số tiền mới mà không cần sửa mã trình bày."
+  },
+  {
+   "id": "scene-11",
+   "file": "assets/audio/vo-11.mp3",
+   "duration": 6.32,
+   "words": [
+    {
+     "w": "Giờ",
+     "start": 0.098,
+     "end": 0.251
+    },
+    {
+     "w": "vận",
+     "start": 0.264,
+     "end": 0.417
+    },
+    {
+     "w": "hành",
+     "start": 0.43,
+     "end": 0.614
+    },
+    {
+     "w": "muốn",
+     "start": 0.63,
+     "end": 0.813
+    },
+    {
+     "w": "đổi",
+     "start": 0.829,
+     "end": 0.982
+    },
+    {
+     "w": "tiêu",
+     "start": 0.995,
+     "end": 1.179
+    },
+    {
+     "w": "đề",
+     "start": 1.195,
+     "end": 1.317
+    },
+    {
+     "w": "thành",
+     "start": 1.328,
+     "end": 1.542
+    },
+    {
+     "w": "phiếu",
+     "start": 1.56,
+     "end": 1.775
+    },
+    {
+     "w": "thanh",
+     "start": 1.793,
+     "end": 2.007
+    },
+    {
+     "w": "toán.",
+     "start": 2.026,
+     "end": 2.24
+    },
+    {
+     "w": "Ta",
+     "start": 2.787,
+     "end": 2.902
+    },
+    {
+     "w": "sửa",
+     "start": 2.912,
+     "end": 3.055
+    },
+    {
+     "w": "lớp",
+     "start": 3.068,
+     "end": 3.211
+    },
+    {
+     "w": "trình",
+     "start": 3.224,
+     "end": 3.424
+    },
+    {
+     "w": "bày.",
+     "start": 3.442,
+     "end": 3.614
+    },
+    {
+     "w": "Quy",
+     "start": 3.941,
+     "end": 4.119
+    },
+    {
+     "w": "tắc",
+     "start": 4.135,
+     "end": 4.314
+    },
+    {
+     "w": "giảm",
+     "start": 4.329,
+     "end": 4.544
+    },
+    {
+     "w": "giá",
+     "start": 4.563,
+     "end": 4.742
+    },
+    {
+     "w": "ở",
+     "start": 4.757,
+     "end": 4.864
+    },
+    {
+     "w": "lớp",
+     "start": 4.874,
+     "end": 5.053
+    },
+    {
+     "w": "tính",
+     "start": 5.068,
+     "end": 5.283
+    },
+    {
+     "w": "tiền",
+     "start": 5.302,
+     "end": 5.516
+    },
+    {
+     "w": "vẫn",
+     "start": 5.535,
+     "end": 5.714
+    },
+    {
+     "w": "như",
+     "start": 5.729,
+     "end": 5.908
+    },
+    {
+     "w": "cũ.",
+     "start": 5.924,
+     "end": 6.103
+    }
+   ],
+   "text": "Giờ vận hành muốn đổi tiêu đề thành phiếu thanh toán. Ta sửa lớp trình bày. Quy tắc giảm giá ở lớp tính tiền vẫn như cũ."
+  },
+  {
+   "id": "scene-12",
+   "file": "assets/audio/vo-12.mp3",
+   "duration": 6.16,
+   "words": [
+    {
+     "w": "Chạy",
+     "start": 0.104,
+     "end": 0.251
+    },
+    {
+     "w": "lại",
+     "start": 0.263,
+     "end": 0.385
+    },
+    {
+     "w": "cùng",
+     "start": 0.396,
+     "end": 0.542
+    },
+    {
+     "w": "dữ",
+     "start": 0.555,
+     "end": 0.653
+    },
+    {
+     "w": "liệu:",
+     "start": 0.661,
+     "end": 0.832
+    },
+    {
+     "w": "tiêu",
+     "start": 1.139,
+     "end": 1.36
+    },
+    {
+     "w": "đề",
+     "start": 1.379,
+     "end": 1.526
+    },
+    {
+     "w": "đã",
+     "start": 1.539,
+     "end": 1.686
+    },
+    {
+     "w": "đổi,",
+     "start": 1.699,
+     "end": 1.919
+    },
+    {
+     "w": "số",
+     "start": 1.938,
+     "end": 2.078
+    },
+    {
+     "w": "tiền",
+     "start": 2.09,
+     "end": 2.299
+    },
+    {
+     "w": "vẫn",
+     "start": 2.317,
+     "end": 2.492
+    },
+    {
+     "w": "là",
+     "start": 2.507,
+     "end": 2.646
+    },
+    {
+     "w": "chín",
+     "start": 2.659,
+     "end": 2.868
+    },
+    {
+     "w": "mươi",
+     "start": 2.886,
+     "end": 3.095
+    },
+    {
+     "w": "nghìn.",
+     "start": 3.114,
+     "end": 3.393
+    },
+    {
+     "w": "Hai",
+     "start": 3.916,
+     "end": 4.059
+    },
+    {
+     "w": "yêu",
+     "start": 4.071,
+     "end": 4.213
+    },
+    {
+     "w": "cầu",
+     "start": 4.226,
+     "end": 4.368
+    },
+    {
+     "w": "vừa",
+     "start": 4.38,
+     "end": 4.522
+    },
+    {
+     "w": "rồi",
+     "start": 4.535,
+     "end": 4.677
+    },
+    {
+     "w": "đã",
+     "start": 4.689,
+     "end": 4.803
+    },
+    {
+     "w": "đi",
+     "start": 4.813,
+     "end": 4.927
+    },
+    {
+     "w": "đến",
+     "start": 4.937,
+     "end": 5.079
+    },
+    {
+     "w": "hai",
+     "start": 5.091,
+     "end": 5.233
+    },
+    {
+     "w": "nơi",
+     "start": 5.246,
+     "end": 5.388
+    },
+    {
+     "w": "sửa",
+     "start": 5.4,
+     "end": 5.543
+    },
+    {
+     "w": "riêng",
+     "start": 5.555,
+     "end": 5.754
+    },
+    {
+     "w": "biệt.",
+     "start": 5.771,
+     "end": 5.971
+    }
+   ],
+   "text": "Chạy lại cùng dữ liệu: tiêu đề đã đổi, số tiền vẫn là chín mươi nghìn. Hai yêu cầu vừa rồi đã đi đến hai nơi sửa riêng biệt."
+  },
+  {
+   "id": "scene-13",
+   "file": "assets/audio/vo-13.mp3",
+   "duration": 7.6,
+   "words": [
+    {
+     "w": "Đơn",
+     "start": 0.072,
+     "end": 0.211
+    },
+    {
+     "w": "trách",
+     "start": 0.223,
+     "end": 0.418
+    },
+    {
+     "w": "nhiệm",
+     "start": 0.435,
+     "end": 0.63
+    },
+    {
+     "w": "không",
+     "start": 0.647,
+     "end": 0.841
+    },
+    {
+     "w": "có",
+     "start": 0.858,
+     "end": 0.97
+    },
+    {
+     "w": "nghĩa",
+     "start": 0.979,
+     "end": 1.174
+    },
+    {
+     "w": "mỗi",
+     "start": 1.191,
+     "end": 1.33
+    },
+    {
+     "w": "lớp",
+     "start": 1.342,
+     "end": 1.481
+    },
+    {
+     "w": "chỉ",
+     "start": 1.493,
+     "end": 1.633
+    },
+    {
+     "w": "có",
+     "start": 1.645,
+     "end": 1.756
+    },
+    {
+     "w": "một",
+     "start": 1.766,
+     "end": 1.905
+    },
+    {
+     "w": "hàm.",
+     "start": 1.917,
+     "end": 2.084
+    },
+    {
+     "w": "Lớp",
+     "start": 2.734,
+     "end": 2.89
+    },
+    {
+     "w": "tính",
+     "start": 2.904,
+     "end": 3.09
+    },
+    {
+     "w": "tiền",
+     "start": 3.107,
+     "end": 3.293
+    },
+    {
+     "w": "có",
+     "start": 3.31,
+     "end": 3.434
+    },
+    {
+     "w": "thể",
+     "start": 3.445,
+     "end": 3.601
+    },
+    {
+     "w": "cộng",
+     "start": 3.614,
+     "end": 3.801
+    },
+    {
+     "w": "hàng,",
+     "start": 3.817,
+     "end": 4.035
+    },
+    {
+     "w": "tính",
+     "start": 4.273,
+     "end": 4.443
+    },
+    {
+     "w": "giảm",
+     "start": 4.458,
+     "end": 4.628
+    },
+    {
+     "w": "giá,",
+     "start": 4.643,
+     "end": 4.813
+    },
+    {
+     "w": "rồi",
+     "start": 4.828,
+     "end": 5.006
+    },
+    {
+     "w": "tính",
+     "start": 5.022,
+     "end": 5.236
+    },
+    {
+     "w": "tổng,",
+     "start": 5.255,
+     "end": 5.505
+    },
+    {
+     "w": "nếu",
+     "start": 5.916,
+     "end": 6.057
+    },
+    {
+     "w": "chúng",
+     "start": 6.069,
+     "end": 6.266
+    },
+    {
+     "w": "cùng",
+     "start": 6.283,
+     "end": 6.452
+    },
+    {
+     "w": "phục",
+     "start": 6.466,
+     "end": 6.635
+    },
+    {
+     "w": "vụ",
+     "start": 6.649,
+     "end": 6.762
+    },
+    {
+     "w": "quy",
+     "start": 6.772,
+     "end": 6.912
+    },
+    {
+     "w": "tắc",
+     "start": 6.924,
+     "end": 7.065
+    },
+    {
+     "w": "tính",
+     "start": 7.077,
+     "end": 7.246
+    },
+    {
+     "w": "tiền.",
+     "start": 7.26,
+     "end": 7.457
+    }
+   ],
+   "text": "Đơn trách nhiệm không có nghĩa mỗi lớp chỉ có một hàm. Lớp tính tiền có thể cộng hàng, tính giảm giá, rồi tính tổng, nếu chúng cùng phục vụ quy tắc tính tiền."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-14.mp3",
+   "duration": 9.28,
+   "words": [
+    {
+     "w": "Khi",
+     "start": 0.091,
+     "end": 0.223
+    },
+    {
+     "w": "xem",
+     "start": 0.234,
+     "end": 0.366
+    },
+    {
+     "w": "một",
+     "start": 0.378,
+     "end": 0.51
+    },
+    {
+     "w": "lớp,",
+     "start": 0.521,
+     "end": 0.679
+    },
+    {
+     "w": "hãy",
+     "start": 0.936,
+     "end": 1.254
+    },
+    {
+     "w": "hỏi:",
+     "start": 1.282,
+     "end": 1.664
+    },
+    {
+     "w": "ai",
+     "start": 1.697,
+     "end": 1.803
+    },
+    {
+     "w": "cần",
+     "start": 1.812,
+     "end": 1.945
+    },
+    {
+     "w": "nó",
+     "start": 1.957,
+     "end": 2.063
+    },
+    {
+     "w": "thay",
+     "start": 2.072,
+     "end": 2.232
+    },
+    {
+     "w": "đổi,",
+     "start": 2.246,
+     "end": 2.405
+    },
+    {
+     "w": "và",
+     "start": 2.639,
+     "end": 2.906
+    },
+    {
+     "w": "vì",
+     "start": 2.929,
+     "end": 3.196
+    },
+    {
+     "w": "sao?",
+     "start": 3.219,
+     "end": 3.619
+    },
+    {
+     "w": "Gom",
+     "start": 3.654,
+     "end": 3.885
+    },
+    {
+     "w": "phần",
+     "start": 3.905,
+     "end": 4.182
+    },
+    {
+     "w": "mã",
+     "start": 4.206,
+     "end": 4.39
+    },
+    {
+     "w": "đổi",
+     "start": 4.406,
+     "end": 4.637
+    },
+    {
+     "w": "cùng",
+     "start": 4.657,
+     "end": 4.934
+    },
+    {
+     "w": "lý",
+     "start": 4.958,
+     "end": 5.143
+    },
+    {
+     "w": "do,",
+     "start": 5.159,
+     "end": 5.39
+    },
+    {
+     "w": "tách",
+     "start": 5.41,
+     "end": 5.554
+    },
+    {
+     "w": "phần",
+     "start": 5.567,
+     "end": 5.711
+    },
+    {
+     "w": "đổi",
+     "start": 5.724,
+     "end": 5.844
+    },
+    {
+     "w": "vì",
+     "start": 5.855,
+     "end": 5.951
+    },
+    {
+     "w": "lý",
+     "start": 5.959,
+     "end": 6.055
+    },
+    {
+     "w": "do",
+     "start": 6.064,
+     "end": 6.16
+    },
+    {
+     "w": "độc",
+     "start": 6.168,
+     "end": 6.289
+    },
+    {
+     "w": "lập.",
+     "start": 6.299,
+     "end": 6.444
+    },
+    {
+     "w": "Đó",
+     "start": 6.891,
+     "end": 7.138
+    },
+    {
+     "w": "là",
+     "start": 7.16,
+     "end": 7.407
+    },
+    {
+     "w": "chữ",
+     "start": 7.428,
+     "end": 7.737
+    },
+    {
+     "w": "S",
+     "start": 7.764,
+     "end": 7.949
+    },
+    {
+     "w": "trong",
+     "start": 7.965,
+     "end": 8.398
+    },
+    {
+     "w": "SOLID.",
+     "start": 8.435,
+     "end": 8.93
+    }
+   ],
+   "text": "Khi xem một lớp, hãy hỏi: ai cần nó thay đổi, và vì sao? Gom phần mã đổi cùng lý do, tách phần đổi vì lý do độc lập. Đó là chữ S trong SOLID."
+  }
+ ]
+}

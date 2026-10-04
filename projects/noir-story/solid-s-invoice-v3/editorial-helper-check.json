@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "seeks": 18,
+  "checks": [
+    "reversible geometry",
+    "title releases space",
+    "definition expansion",
+    "deferred answers",
+    "stable result",
+    "overflow",
+    "reframe audit classification"
+  ],
+  "runtimeErrors": [],
+  "gsapSource": "matching local test bytes"
+}

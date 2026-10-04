@@ -1,0 +1,2067 @@
+{
+  "ops": [
+    {
+      "id": "counter",
+      "start": 0,
+      "end": 0.02,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 6.34,
+      "end": 6.359999999999999,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 13,
+      "end": 13.02,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 20.54,
+      "end": 20.56,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 26.96,
+      "end": 26.98,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 33.38,
+      "end": 33.400000000000006,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 42.28,
+      "end": 42.300000000000004,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 47.58,
+      "end": 47.6,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 53.76,
+      "end": 53.78,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 61.46,
+      "end": 61.480000000000004,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 68.68,
+      "end": 68.7,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 75.66,
+      "end": 75.67999999999999,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 82.48,
+      "end": 82.5,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 89.14,
+      "end": 89.16,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "counter",
+      "start": 97.24,
+      "end": 97.25999999999999,
+      "kind": "chrome",
+      "job": "counter"
+    },
+    {
+      "id": "phase",
+      "start": 0,
+      "end": 0.02,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 6.34,
+      "end": 6.359999999999999,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 13,
+      "end": 13.02,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 20.54,
+      "end": 20.56,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 26.96,
+      "end": 26.98,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 33.38,
+      "end": 33.400000000000006,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 42.28,
+      "end": 42.300000000000004,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 47.58,
+      "end": 47.6,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 53.76,
+      "end": 53.78,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 61.46,
+      "end": 61.480000000000004,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 68.68,
+      "end": 68.7,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 75.66,
+      "end": 75.67999999999999,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 82.48,
+      "end": 82.5,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 89.14,
+      "end": 89.16,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "phase",
+      "start": 97.24,
+      "end": 97.25999999999999,
+      "kind": "chrome",
+      "job": "context"
+    },
+    {
+      "id": "e38",
+      "start": 0.15,
+      "end": 0.6,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "paper",
+      "start": 0.15,
+      "end": 0.6,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e39",
+      "start": 0.35,
+      "end": 0.8,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e38",
+      "start": 1.55,
+      "end": 2.4,
+      "kind": "reframe",
+      "job": "headline yields reading area to evidence"
+    },
+    {
+      "id": "paper",
+      "start": 1.55,
+      "end": 2.4,
+      "kind": "reframe",
+      "job": "headline yields reading area to evidence"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 2.4,
+      "end": 2.85,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "calc",
+      "start": 2.55,
+      "end": 3,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "presenter",
+      "start": 2.75,
+      "end": 3.2,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-0",
+      "start": 2.85,
+      "end": 3.5,
+      "kind": "model",
+      "job": "printed heading resolves to its render method"
+    },
+    {
+      "id": "e40",
+      "start": 3.25,
+      "end": 3.7,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-0",
+      "start": 3.25,
+      "end": 4.05,
+      "kind": "model",
+      "job": "one source file owns both requested changes"
+    },
+    {
+      "id": "e41",
+      "start": 6.4399999999999995,
+      "end": 6.89,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 6.34,
+      "end": 7.14,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 6.34,
+      "end": 7.14,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 6.34,
+      "end": 7.14,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "invoice-data",
+      "start": 8.43,
+      "end": 8.879999999999999,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "invoice-data",
+      "start": 8.43,
+      "end": 9.129999999999999,
+      "kind": "model",
+      "job": "place shared data under owner"
+    },
+    {
+      "id": "shot-1",
+      "start": 11.93,
+      "end": 12.78,
+      "kind": "model",
+      "job": "enclose two methods inside Invoice"
+    },
+    {
+      "id": "e42",
+      "start": 12.129999999999999,
+      "end": 12.579999999999998,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e43",
+      "start": 13.1,
+      "end": 13.549999999999999,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 13,
+      "end": 13.8,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "invoice-data",
+      "start": 13,
+      "end": 13.8,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 13,
+      "end": 13.8,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 13,
+      "end": 13.8,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e44",
+      "start": 13.15,
+      "end": 13.200000000000001,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e44",
+      "start": 13.15,
+      "end": 14.05,
+      "kind": "model",
+      "job": "transfer 40.000 + 60.000"
+    },
+    {
+      "id": "e45",
+      "start": 14.05,
+      "end": 14.5,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e45",
+      "start": 14.05,
+      "end": 14.15,
+      "kind": "model",
+      "job": "calculation materializes result"
+    },
+    {
+      "id": "e45",
+      "start": 15.17,
+      "end": 16.07,
+      "kind": "model",
+      "job": "computed total enters presentation"
+    },
+    {
+      "id": "e46",
+      "start": 16.07,
+      "end": 16.52,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e46",
+      "start": 16.07,
+      "end": 16.52,
+      "kind": "model",
+      "job": "presenter composes print output"
+    },
+    {
+      "id": "shot-2",
+      "start": 17.27,
+      "end": 18.07,
+      "kind": "model",
+      "job": "group the two demonstrated operations under one class"
+    },
+    {
+      "id": "e49",
+      "start": 18.95,
+      "end": 19.4,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 20.54,
+      "end": 21.34,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 20.54,
+      "end": 21.34,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 20.54,
+      "end": 21.34,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e50",
+      "start": 20.64,
+      "end": 21.09,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e51",
+      "start": 21.05,
+      "end": 21.5,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-3",
+      "start": 21.42,
+      "end": 22.220000000000002,
+      "kind": "model",
+      "job": "route change request into exact method"
+    },
+    {
+      "id": "e55",
+      "start": 21.57,
+      "end": 21.62,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e55",
+      "start": 21.57,
+      "end": 22.47,
+      "kind": "model",
+      "job": "transfer Δ giảm giá"
+    },
+    {
+      "id": "e56",
+      "start": 22.47,
+      "end": 22.919999999999998,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e56",
+      "start": 22.47,
+      "end": 22.77,
+      "kind": "model",
+      "job": "attach pending patch to its owning code"
+    },
+    {
+      "id": "e58",
+      "start": 22.47,
+      "end": 22.919999999999998,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e59",
+      "start": 25.29,
+      "end": 25.74,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-3",
+      "start": 25.29,
+      "end": 25.939999999999998,
+      "kind": "model",
+      "job": "inspect unchanged render method"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 26.96,
+      "end": 27.76,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 26.96,
+      "end": 27.76,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 26.96,
+      "end": 27.76,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e60",
+      "start": 27.060000000000002,
+      "end": 27.51,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e61",
+      "start": 27.51,
+      "end": 27.96,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-4",
+      "start": 27.860000000000003,
+      "end": 28.660000000000004,
+      "kind": "model",
+      "job": "route change request into exact method"
+    },
+    {
+      "id": "e65",
+      "start": 28.01,
+      "end": 28.060000000000002,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e65",
+      "start": 28.01,
+      "end": 28.91,
+      "kind": "model",
+      "job": "transfer Δ tiêu đề"
+    },
+    {
+      "id": "e66",
+      "start": 28.91,
+      "end": 29.36,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e66",
+      "start": 28.91,
+      "end": 29.21,
+      "kind": "model",
+      "job": "attach pending patch to its owning code"
+    },
+    {
+      "id": "e68",
+      "start": 28.91,
+      "end": 29.36,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e69",
+      "start": 31.63,
+      "end": 32.08,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-4",
+      "start": 31.93,
+      "end": 32.58,
+      "kind": "model",
+      "job": "show second request still targets same owner"
+    },
+    {
+      "id": "e70",
+      "start": 33.38,
+      "end": 33.480000000000004,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e71",
+      "start": 33.85,
+      "end": 34.300000000000004,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e72",
+      "start": 33.85,
+      "end": 34.300000000000004,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e73",
+      "start": 36.15,
+      "end": 36.6,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e74",
+      "start": 35.17,
+      "end": 35.620000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e76",
+      "start": 35.17,
+      "end": 35.620000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e77",
+      "start": 35.42,
+      "end": 35.870000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-5",
+      "start": 35.17,
+      "end": 35.97,
+      "kind": "model",
+      "job": "the known operations share one module boundary"
+    },
+    {
+      "id": "e78",
+      "start": 37.57,
+      "end": 38.02,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-5",
+      "start": 37.89,
+      "end": 38.69,
+      "kind": "model",
+      "job": "first cohesive change source reaches total"
+    },
+    {
+      "id": "e79",
+      "start": 39.91,
+      "end": 40.36,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-5",
+      "start": 39.91,
+      "end": 40.76,
+      "kind": "model",
+      "job": "independent second change source reaches render"
+    },
+    {
+      "id": "e80",
+      "start": 40.89,
+      "end": 41.34,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e81",
+      "start": 42.38,
+      "end": 42.830000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 42.28,
+      "end": 42.83,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 42.28,
+      "end": 42.83,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 42.28,
+      "end": 42.83,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "invoice-data",
+      "start": 43.97,
+      "end": 44.32,
+      "kind": "disclosure",
+      "job": "inspect retained shared input outside owners"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 45.51,
+      "end": 46.41,
+      "kind": "reframe",
+      "job": "selected definition takes reading priority"
+    },
+    {
+      "id": "presenter",
+      "start": 45.51,
+      "end": 46.41,
+      "kind": "reframe",
+      "job": "selected definition takes reading priority"
+    },
+    {
+      "id": "calc",
+      "start": 45.51,
+      "end": 46.41,
+      "kind": "model",
+      "job": "extract same total method from Invoice"
+    },
+    {
+      "id": "calculator-file",
+      "start": 45.629999999999995,
+      "end": 46.08,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "calculator-file",
+      "start": 45.629999999999995,
+      "end": 46.279999999999994,
+      "kind": "reframe",
+      "job": "selected file settles upright for code reading"
+    },
+    {
+      "id": "calculator-file",
+      "start": 45.629999999999995,
+      "end": 46.279999999999994,
+      "kind": "model",
+      "job": "Calculator boundary forms around extracted total"
+    },
+    {
+      "id": "e19",
+      "start": 46.41,
+      "end": 46.43,
+      "kind": "disclosure",
+      "job": "preserve method in Calculator"
+    },
+    {
+      "id": "e82",
+      "start": 46.41,
+      "end": 46.86,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e83",
+      "start": 47.68,
+      "end": 48.13,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "calculator-file",
+      "start": 48.39,
+      "end": 49.24,
+      "kind": "reframe",
+      "job": "selected definition takes reading priority"
+    },
+    {
+      "id": "calc",
+      "start": 48.39,
+      "end": 49.24,
+      "kind": "reframe",
+      "job": "selected definition takes reading priority"
+    },
+    {
+      "id": "invoice-owner",
+      "start": 48.39,
+      "end": 49.24,
+      "kind": "model",
+      "job": "old source becomes empty after final extraction"
+    },
+    {
+      "id": "presenter",
+      "start": 48.39,
+      "end": 49.24,
+      "kind": "model",
+      "job": "extract same render method from Invoice"
+    },
+    {
+      "id": "presenter-file",
+      "start": 51.76,
+      "end": 52.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "presenter-file",
+      "start": 51.76,
+      "end": 52.51,
+      "kind": "reframe",
+      "job": "selected Presenter settles upright"
+    },
+    {
+      "id": "presenter-file",
+      "start": 51.76,
+      "end": 52.51,
+      "kind": "model",
+      "job": "Presenter boundary forms around extracted render"
+    },
+    {
+      "id": "e24",
+      "start": 49.24,
+      "end": 49.260000000000005,
+      "kind": "disclosure",
+      "job": "preserve method in Presenter"
+    },
+    {
+      "id": "e84",
+      "start": 49.99,
+      "end": 50.440000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-7",
+      "start": 52.01,
+      "end": 52.66,
+      "kind": "attention",
+      "job": "inspect independent ownership boundaries"
+    },
+    {
+      "id": "e85",
+      "start": 53.86,
+      "end": 54.31,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e86",
+      "start": 53.76,
+      "end": 54.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e87",
+      "start": 53.76,
+      "end": 54.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e88",
+      "start": 53.76,
+      "end": 54.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e89",
+      "start": 53.76,
+      "end": 54.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e90",
+      "start": 54.39,
+      "end": 54.84,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e93",
+      "start": 54.79,
+      "end": 54.839999999999996,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e93",
+      "start": 54.79,
+      "end": 55.64,
+      "kind": "model",
+      "job": "transfer dữ liệu"
+    },
+    {
+      "id": "e91",
+      "start": 55.64,
+      "end": 56.09,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e91",
+      "start": 55.64,
+      "end": 55.84,
+      "kind": "model",
+      "job": "calculator returns total"
+    },
+    {
+      "id": "e94",
+      "start": 56.35,
+      "end": 56.4,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e94",
+      "start": 56.35,
+      "end": 57.2,
+      "kind": "model",
+      "job": "transfer 100.000 đ"
+    },
+    {
+      "id": "e92",
+      "start": 57.15,
+      "end": 57.6,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "paper",
+      "start": 53.76,
+      "end": 53.86,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "paper",
+      "start": 58.03,
+      "end": 58.730000000000004,
+      "kind": "model",
+      "job": "compose printed result"
+    },
+    {
+      "id": "shot-8",
+      "start": 59.85,
+      "end": 60.65,
+      "kind": "model",
+      "job": "complete collaboration path"
+    },
+    {
+      "id": "e95",
+      "start": 59.95,
+      "end": 60.400000000000006,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e96",
+      "start": 61.56,
+      "end": 62.010000000000005,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e97",
+      "start": 61.77,
+      "end": 62.220000000000006,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e101",
+      "start": 61.77,
+      "end": 62.220000000000006,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-9",
+      "start": 62.87,
+      "end": 63.47,
+      "kind": "model",
+      "job": "pricing request reaches proposed patch"
+    },
+    {
+      "id": "e103",
+      "start": 64.45,
+      "end": 64.65,
+      "kind": "disclosure",
+      "job": "proposed discount patch"
+    },
+    {
+      "id": "calculator-file",
+      "start": 61.46,
+      "end": 61.86,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "calc",
+      "start": 61.46,
+      "end": 61.86,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e104",
+      "start": 65.36,
+      "end": 65.41,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e104",
+      "start": 65.36,
+      "end": 66.21,
+      "kind": "model",
+      "job": "transfer discount = 10%"
+    },
+    {
+      "id": "calc-value-1",
+      "start": 66.21,
+      "end": 66.22999999999999,
+      "kind": "model",
+      "job": "apply discount policy to Calculator"
+    },
+    {
+      "id": "calc-value-2",
+      "start": 66.21,
+      "end": 66.22999999999999,
+      "kind": "model",
+      "job": "invalidate previous run after policy edit"
+    },
+    {
+      "id": "e105",
+      "start": 67.73,
+      "end": 68.18,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-9",
+      "start": 67.73,
+      "end": 68.38000000000001,
+      "kind": "model",
+      "job": "separate edited and unchanged file scopes"
+    },
+    {
+      "id": "e108",
+      "start": 67.73,
+      "end": 68.18,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e109",
+      "start": 69.3,
+      "end": 69.75,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e110",
+      "start": 69.3,
+      "end": 69.75,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e111",
+      "start": 69.3,
+      "end": 69.75,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e112",
+      "start": 70.445,
+      "end": 70.895,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e111",
+      "start": 70.445,
+      "end": 71.095,
+      "kind": "model",
+      "job": "subtract 10 percent segment"
+    },
+    {
+      "id": "e110",
+      "start": 70.445,
+      "end": 71.095,
+      "kind": "model",
+      "job": "retain 90 percent of amount"
+    },
+    {
+      "id": "e113",
+      "start": 71.095,
+      "end": 71.545,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "calc-value-2",
+      "start": 71.095,
+      "end": 71.115,
+      "kind": "model",
+      "job": "commit computed discounted total"
+    },
+    {
+      "id": "e114",
+      "start": 71.95,
+      "end": 72.4,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e117",
+      "start": 71.95,
+      "end": 72,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e117",
+      "start": 71.95,
+      "end": 72.75,
+      "kind": "model",
+      "job": "transfer 90.000 đ"
+    },
+    {
+      "id": "paper",
+      "start": 68.68,
+      "end": 68.78,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e36",
+      "start": 72.79,
+      "end": 72.81,
+      "kind": "model",
+      "job": "output receives new total without source edit"
+    },
+    {
+      "id": "shot-10",
+      "start": 72.79,
+      "end": 73.44000000000001,
+      "kind": "model",
+      "job": "presenter produces new data"
+    },
+    {
+      "id": "e118",
+      "start": 73.99,
+      "end": 74.44,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e119",
+      "start": 75.75999999999999,
+      "end": 76.21,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e120",
+      "start": 76.07,
+      "end": 76.52,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e124",
+      "start": 76.07,
+      "end": 76.52,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-11",
+      "start": 76.07,
+      "end": 76.72,
+      "kind": "model",
+      "job": "format request reaches proposed heading patch"
+    },
+    {
+      "id": "presenter-file",
+      "start": 75.66,
+      "end": 76.16,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "presenter",
+      "start": 75.66,
+      "end": 76.16,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e127",
+      "start": 78.42,
+      "end": 78.47,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e127",
+      "start": 78.42,
+      "end": 79.22,
+      "kind": "model",
+      "job": "transfer title"
+    },
+    {
+      "id": "presenter-value-0",
+      "start": 79.22,
+      "end": 79.24,
+      "kind": "model",
+      "job": "apply heading patch to Presenter"
+    },
+    {
+      "id": "e128",
+      "start": 81.23,
+      "end": 81.68,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e129",
+      "start": 81.23,
+      "end": 81.68,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e130",
+      "start": 82.74,
+      "end": 83.19,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "verified-result",
+      "start": 82.74,
+      "end": 83.19,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "verified-result",
+      "start": 82.74,
+      "end": 83.14,
+      "kind": "model",
+      "job": "rerun returns the already known discounted total"
+    },
+    {
+      "id": "baseline-print",
+      "start": 83.44,
+      "end": 83.89,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "paper",
+      "start": 82.48,
+      "end": 82.58,
+      "kind": "reframe",
+      "job": "inspect"
+    },
+    {
+      "id": "e34",
+      "start": 83.75,
+      "end": 83.77,
+      "kind": "model",
+      "job": "commit changed print heading"
+    },
+    {
+      "id": "verified-result",
+      "start": 83.75,
+      "end": 84.5,
+      "kind": "reframe",
+      "job": "computed result makes room for comparison"
+    },
+    {
+      "id": "baseline-print",
+      "start": 83.75,
+      "end": 84.5,
+      "kind": "reframe",
+      "job": "computed result makes room for comparison"
+    },
+    {
+      "id": "paper",
+      "start": 83.75,
+      "end": 84.5,
+      "kind": "reframe",
+      "job": "computed result makes room for comparison"
+    },
+    {
+      "id": "e138",
+      "start": 84.5,
+      "end": 84.95,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e139",
+      "start": 85.01,
+      "end": 85.46000000000001,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e140",
+      "start": 85.01,
+      "end": 85.46000000000001,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-12",
+      "start": 85.01,
+      "end": 85.66000000000001,
+      "kind": "model",
+      "job": "compare identical amounts in aligned print evidence"
+    },
+    {
+      "id": "e141",
+      "start": 87.69,
+      "end": 88.14,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e142",
+      "start": 87.69,
+      "end": 88.14,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "shot-12",
+      "start": 87.69,
+      "end": 88.59,
+      "kind": "model",
+      "job": "map output amount and heading to distinct source owners"
+    },
+    {
+      "id": "e143",
+      "start": 89.24,
+      "end": 89.69,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e144",
+      "start": 89.91,
+      "end": 89.92,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e144",
+      "start": 89.91,
+      "end": 90.50999999999999,
+      "kind": "attention",
+      "job": "reject method-count interpretation"
+    },
+    {
+      "id": "e145",
+      "start": 91.85,
+      "end": 92.3,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e147",
+      "start": 92.85,
+      "end": 93.3,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e147",
+      "start": 92.85,
+      "end": 93.35,
+      "kind": "model",
+      "job": "evaluate subtotal()"
+    },
+    {
+      "id": "e150",
+      "start": 93.55,
+      "end": 94,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e150",
+      "start": 93.55,
+      "end": 94.05,
+      "kind": "model",
+      "job": "evaluate reduction()"
+    },
+    {
+      "id": "e153",
+      "start": 92.95,
+      "end": 93,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e153",
+      "start": 92.95,
+      "end": 93.55,
+      "kind": "model",
+      "job": "transfer 100.000"
+    },
+    {
+      "id": "e154",
+      "start": 94.16,
+      "end": 94.61,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e154",
+      "start": 94.16,
+      "end": 94.66,
+      "kind": "model",
+      "job": "evaluate total()"
+    },
+    {
+      "id": "e157",
+      "start": 93.56,
+      "end": 93.61,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e157",
+      "start": 93.56,
+      "end": 94.16,
+      "kind": "model",
+      "job": "transfer 10.000"
+    },
+    {
+      "id": "shot-13",
+      "start": 95.45,
+      "end": 96.10000000000001,
+      "kind": "model",
+      "job": "group all operations under one reason to change"
+    },
+    {
+      "id": "e158",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e159",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e160",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e161",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e162",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e163",
+      "start": 98.737,
+      "end": 99.187,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e159",
+      "start": 100.83,
+      "end": 101.67999999999999,
+      "kind": "model",
+      "job": "group cohesive calculator operations"
+    },
+    {
+      "id": "e160",
+      "start": 100.83,
+      "end": 101.67999999999999,
+      "kind": "model",
+      "job": "group cohesive calculator operations"
+    },
+    {
+      "id": "e161",
+      "start": 100.83,
+      "end": 101.67999999999999,
+      "kind": "model",
+      "job": "group cohesive calculator operations"
+    },
+    {
+      "id": "e162",
+      "start": 102.49,
+      "end": 103.33999999999999,
+      "kind": "model",
+      "job": "separate independent presentation operations"
+    },
+    {
+      "id": "e163",
+      "start": 102.49,
+      "end": 103.33999999999999,
+      "kind": "model",
+      "job": "separate independent presentation operations"
+    },
+    {
+      "id": "e164",
+      "start": 101.13,
+      "end": 101.58,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e165",
+      "start": 102.78999999999999,
+      "end": 103.24,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e166",
+      "start": 101.63,
+      "end": 102.08,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e167",
+      "start": 103.28999999999999,
+      "end": 103.74,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e168",
+      "start": 102.49,
+      "end": 102.94,
+      "kind": "disclosure",
+      "job": "disclose"
+    },
+    {
+      "id": "e169",
+      "start": 104.59,
+      "end": 105.04,
+      "kind": "disclosure",
+      "job": "disclose"
+    }
+  ],
+  "reveals": [
+    {
+      "id": "e38",
+      "t": 0.15
+    },
+    {
+      "id": "paper",
+      "t": 0.15
+    },
+    {
+      "id": "e39",
+      "t": 0.35
+    },
+    {
+      "id": "invoice-owner",
+      "t": 2.4
+    },
+    {
+      "id": "calc",
+      "t": 2.55
+    },
+    {
+      "id": "presenter",
+      "t": 2.75
+    },
+    {
+      "id": "e40",
+      "t": 3.25
+    },
+    {
+      "id": "e41",
+      "t": 6.4399999999999995
+    },
+    {
+      "id": "invoice-data",
+      "t": 8.43
+    },
+    {
+      "id": "e42",
+      "t": 12.129999999999999
+    },
+    {
+      "id": "e43",
+      "t": 13.1
+    },
+    {
+      "id": "e44",
+      "t": 13.15
+    },
+    {
+      "id": "e45",
+      "t": 14.05
+    },
+    {
+      "id": "e46",
+      "t": 16.07
+    },
+    {
+      "id": "e49",
+      "t": 18.95
+    },
+    {
+      "id": "e50",
+      "t": 20.64
+    },
+    {
+      "id": "e51",
+      "t": 21.05
+    },
+    {
+      "id": "e55",
+      "t": 21.57
+    },
+    {
+      "id": "e56",
+      "t": 22.47
+    },
+    {
+      "id": "e58",
+      "t": 22.47
+    },
+    {
+      "id": "e59",
+      "t": 25.29
+    },
+    {
+      "id": "e60",
+      "t": 27.060000000000002
+    },
+    {
+      "id": "e61",
+      "t": 27.51
+    },
+    {
+      "id": "e65",
+      "t": 28.01
+    },
+    {
+      "id": "e66",
+      "t": 28.91
+    },
+    {
+      "id": "e68",
+      "t": 28.91
+    },
+    {
+      "id": "e69",
+      "t": 31.63
+    },
+    {
+      "id": "e70",
+      "t": 33.38
+    },
+    {
+      "id": "e71",
+      "t": 33.85
+    },
+    {
+      "id": "e72",
+      "t": 33.85
+    },
+    {
+      "id": "e73",
+      "t": 36.15
+    },
+    {
+      "id": "e74",
+      "t": 35.17
+    },
+    {
+      "id": "e76",
+      "t": 35.17
+    },
+    {
+      "id": "e77",
+      "t": 35.42
+    },
+    {
+      "id": "e78",
+      "t": 37.57
+    },
+    {
+      "id": "e79",
+      "t": 39.91
+    },
+    {
+      "id": "e80",
+      "t": 40.89
+    },
+    {
+      "id": "e81",
+      "t": 42.38
+    },
+    {
+      "id": "calculator-file",
+      "t": 45.629999999999995
+    },
+    {
+      "id": "e82",
+      "t": 46.41
+    },
+    {
+      "id": "e83",
+      "t": 47.68
+    },
+    {
+      "id": "presenter-file",
+      "t": 51.76
+    },
+    {
+      "id": "e84",
+      "t": 49.99
+    },
+    {
+      "id": "e85",
+      "t": 53.86
+    },
+    {
+      "id": "e86",
+      "t": 53.76
+    },
+    {
+      "id": "e87",
+      "t": 53.76
+    },
+    {
+      "id": "e88",
+      "t": 53.76
+    },
+    {
+      "id": "e89",
+      "t": 53.76
+    },
+    {
+      "id": "e90",
+      "t": 54.39
+    },
+    {
+      "id": "e93",
+      "t": 54.79
+    },
+    {
+      "id": "e91",
+      "t": 55.64
+    },
+    {
+      "id": "e94",
+      "t": 56.35
+    },
+    {
+      "id": "e92",
+      "t": 57.15
+    },
+    {
+      "id": "e95",
+      "t": 59.95
+    },
+    {
+      "id": "e96",
+      "t": 61.56
+    },
+    {
+      "id": "e97",
+      "t": 61.77
+    },
+    {
+      "id": "e101",
+      "t": 61.77
+    },
+    {
+      "id": "e104",
+      "t": 65.36
+    },
+    {
+      "id": "e105",
+      "t": 67.73
+    },
+    {
+      "id": "e108",
+      "t": 67.73
+    },
+    {
+      "id": "e109",
+      "t": 69.3
+    },
+    {
+      "id": "e110",
+      "t": 69.3
+    },
+    {
+      "id": "e111",
+      "t": 69.3
+    },
+    {
+      "id": "e112",
+      "t": 70.445
+    },
+    {
+      "id": "e113",
+      "t": 71.095
+    },
+    {
+      "id": "e114",
+      "t": 71.95
+    },
+    {
+      "id": "e117",
+      "t": 71.95
+    },
+    {
+      "id": "e118",
+      "t": 73.99
+    },
+    {
+      "id": "e119",
+      "t": 75.75999999999999
+    },
+    {
+      "id": "e120",
+      "t": 76.07
+    },
+    {
+      "id": "e124",
+      "t": 76.07
+    },
+    {
+      "id": "e127",
+      "t": 78.42
+    },
+    {
+      "id": "e128",
+      "t": 81.23
+    },
+    {
+      "id": "e129",
+      "t": 81.23
+    },
+    {
+      "id": "e130",
+      "t": 82.74
+    },
+    {
+      "id": "verified-result",
+      "t": 82.74
+    },
+    {
+      "id": "baseline-print",
+      "t": 83.44
+    },
+    {
+      "id": "e138",
+      "t": 84.5
+    },
+    {
+      "id": "e139",
+      "t": 85.01
+    },
+    {
+      "id": "e140",
+      "t": 85.01
+    },
+    {
+      "id": "e141",
+      "t": 87.69
+    },
+    {
+      "id": "e142",
+      "t": 87.69
+    },
+    {
+      "id": "e143",
+      "t": 89.24
+    },
+    {
+      "id": "e144",
+      "t": 89.91
+    },
+    {
+      "id": "e145",
+      "t": 91.85
+    },
+    {
+      "id": "e147",
+      "t": 92.85
+    },
+    {
+      "id": "e150",
+      "t": 93.55
+    },
+    {
+      "id": "e153",
+      "t": 92.95
+    },
+    {
+      "id": "e154",
+      "t": 94.16
+    },
+    {
+      "id": "e157",
+      "t": 93.56
+    },
+    {
+      "id": "e158",
+      "t": 98.737
+    },
+    {
+      "id": "e159",
+      "t": 98.737
+    },
+    {
+      "id": "e160",
+      "t": 98.737
+    },
+    {
+      "id": "e161",
+      "t": 98.737
+    },
+    {
+      "id": "e162",
+      "t": 98.737
+    },
+    {
+      "id": "e163",
+      "t": 98.737
+    },
+    {
+      "id": "e164",
+      "t": 101.13
+    },
+    {
+      "id": "e165",
+      "t": 102.78999999999999
+    },
+    {
+      "id": "e166",
+      "t": 101.63
+    },
+    {
+      "id": "e167",
+      "t": 103.28999999999999
+    },
+    {
+      "id": "e168",
+      "t": 102.49
+    },
+    {
+      "id": "e169",
+      "t": 104.59
+    }
+  ],
+  "issues": [],
+  "leaks": [],
+  "errors": [],
+  "modelGapsOver3Seconds": [
+    {
+      "section": 6,
+      "start": 42.28,
+      "end": 45.51,
+      "duration": 3.229999999999997
+    },
+    {
+      "section": 11,
+      "start": 79.24,
+      "end": 82.47999999999999,
+      "duration": 3.239999999999995
+    },
+    {
+      "section": 13,
+      "start": 89.14,
+      "end": 92.85,
+      "duration": 3.7099999999999937
+    },
+    {
+      "section": 14,
+      "start": 97.24,
+      "end": 100.83,
+      "duration": 3.5900000000000034
+    },
+    {
+      "section": 14,
+      "start": 103.33999999999999,
+      "end": 107.02,
+      "duration": 3.680000000000007
+    }
+  ],
+  "scope": "model gaps exclude reframe/disclosure/chrome/attention; inspect all gaps, counts are not quality scores"
+}
