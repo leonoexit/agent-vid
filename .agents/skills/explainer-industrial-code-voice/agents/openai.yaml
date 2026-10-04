@@ -1,0 +1,4 @@
+interface:
+  display_name: "Industrial Code Explainer"
+  short_description: "Trace one programming example on a dark technical board"
+  default_prompt: "Use $explainer-industrial-code-voice to explain one programming concept through a small worked example, a persistent industrial technical-grid diagram, concise narration and native HTML/CSS/SVG state changes."

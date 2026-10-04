@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mathematical Multiverse - Batch 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./index.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ind: {
+              bg: '#121212',
+              fg: '#E0E0E0',
+              sub: '#B0B0B0',
+              border: '#444444',
+              accent: '#888888',
+            }
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- SLIDE 01: COVER -->
+  <div class="slide p-12 flex flex-col justify-between relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="scanline"></div>
+
+    <!-- Header -->
+    <div class="flex justify-between items-start z-10 border-b border-ind-border pb-6">
+      <div class="mono-tag">Fig 1.0 // Mega-Carousel</div>
+      <div class="text-right">
+        <div class="mono-tag text-ind-fg">J.D. Hamkins</div>
+        <div class="mono-tag text-ind-sub">Lex Fridman Podcast #488</div>
+      </div>
+    </div>
+
+    <!-- Main Title -->
+    <div class="z-10 mt-12 mb-auto">
+      <h1 class="font-display font-medium text-ind-fg huge-text mb-8">
+        ĐA VŨ TRỤ <br>
+        <span class="text-ind-sub">TOÁN HỌC</span>
+      </h1>
+
+      <div class="flex gap-8 items-start max-w-2xl">
+        <!-- SVG Icon: Infinity Grid -->
+        <div class="w-16 h-16 border border-ind-fg flex items-center justify-center rounded-full mt-2">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z" />
+          </svg>
+        </div>
+        <p class="text-4xl font-light text-ind-sub leading-snug">
+          Khám phá biên giới của <br>
+          <span class="text-ind-fg border-b border-ind-fg">Vô Cực</span> & <span
+            class="text-ind-fg border-b border-ind-fg">Nghịch Lý</span>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer Stats -->
+    <div class="grid grid-cols-4 gap-4 z-10 border-t border-ind-border pt-6 mb-8">
+      <div class="ind-card ind-card-corner h-32 p-4 flex flex-col justify-between">
+        <span class="mono-tag">Batch</span>
+        <span class="font-display text-4xl text-ind-fg">01</span>
+      </div>
+      <div class="ind-card ind-card-corner h-32 p-4 flex flex-col justify-between">
+        <span class="mono-tag">Slides</span>
+        <span class="font-display text-4xl text-ind-fg">44</span>
+      </div>
+      <div class="col-span-2 ind-card ind-card-corner h-32 p-4 flex flex-col justify-between bg-[#1f1f1f]">
+        <span class="mono-tag">Status</span>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 bg-ind-fg"></div>
+          <span class="font-display text-xl uppercase text-ind-fg">System Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding Footer -->
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 01/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 02: THE HOOK -->
+  <div class="slide p-12 flex flex-col relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <!-- Top Nav -->
+    <div class="flex justify-between items-center z-10 mb-20">
+      <div class="mono-tag">02 // The Concept</div>
+      <div class="flex-grow h-[1px] bg-ind-border mx-8"></div>
+      <div class="mono-tag">Infinity Overview</div>
+    </div>
+
+    <div class="flex gap-16 z-10 h-full max-h-[800px]">
+      <!-- Left: Text -->
+      <div class="w-1/2 flex flex-col justify-center">
+        <h2 class="font-display text-7xl text-ind-fg leading-tight mb-8">
+          KHÔNG PHẢI MỌI <br> VÔ CỰC ĐỀU <br> GIỐNG NHAU.
+        </h2>
+        <div class="h-[1px] w-full bg-ind-border mb-8"></div>
+        <p class="text-2xl text-ind-sub font-light leading-relaxed">
+          Trực giác mách bảo ta rằng "vô tận" là điểm cuối cùng. Nhưng trong toán học,
+          đó chỉ là sự khởi đầu của một nấc thang vô hình.
+        </p>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="w-1/2 relative ind-card p-0 overflow-hidden">
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-8 opacity-80">
+          <div class="flex flex-col items-center gap-2 transform translate-y-4">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1">
+              <path
+                d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z" />
+            </svg>
+            <span class="mono-tag text-xs">Level 0</span>
+          </div>
+          <div class="w-[1px] h-12 bg-ind-border"></div>
+          <div class="flex flex-col items-center gap-2">
+            <svg width="100" height="40" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="2">
+              <path
+                d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 1 0 0-8c-2 0-4 1.33-6 4Z" />
+            </svg>
+            <span class="font-display text-ind-fg text-xl">∞ + 1 ?</span>
+          </div>
+          <div class="w-[1px] h-12 bg-ind-border"></div>
+          <div class="flex flex-col items-center gap-2">
+            <span class="font-display text-4xl text-ind-fg tracking-widest">CANTOR</span>
+            <span class="mono-tag text-xs">The Paradise</span>
+          </div>
+        </div>
+        <div class="absolute bottom-4 right-4 mono-tag text-xs bg-ind-bg px-2 border border-ind-border">FIG 2.1</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 02/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 03: HILBERT HOTEL INTRO -->
+  <div class="slide flex relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="w-1/2 p-20 flex flex-col justify-center border-r border-ind-border bg-ind-bg z-10">
+      <div class="mono-tag mb-6 flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+          <line x1="9" y1="3" x2="9" y2="21" />
+        </svg>
+        03 // Thought Experiment
+      </div>
+      <h2 class="font-display text-6xl text-ind-fg mb-8 leading-tight">
+        KHÁCH SẠN <br> HILBERT
+      </h2>
+      <p class="text-xl text-ind-sub leading-relaxed mb-12">
+        Hãy tưởng tượng một khách sạn có <strong class="text-ind-fg">vô số phòng</strong>.
+        Và tất cả các phòng đều <strong class="text-ind-fg border-b border-ind-fg">đã kín chỗ</strong>.
+      </p>
+      <div class="ind-card p-8 border-l-4 border-l-ind-fg">
+        <div class="flex justify-between items-start">
+          <p class="font-display text-lg text-ind-fg uppercase tracking-wide mb-4">Vấn đề:</p>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+          </svg>
+        </div>
+        <p class="text-ind-sub text-lg">
+          Một vị khách mới đến và muốn thuê phòng. Người quản lý phải làm sao để xếp chỗ?
+        </p>
+      </div>
+    </div>
+    <div class="w-1/2 relative overflow-hidden flex flex-col">
+      <div class="absolute inset-0 bg-[#0a0a0a]"></div>
+      <div class="absolute inset-0 grid grid-cols-4 gap-1 p-4 opacity-30">
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+        <div class="bg-[#333] h-full w-full"></div>
+      </div>
+
+      <div class="absolute bottom-12 left-12 z-20">
+        <h3 class="font-display text-9xl text-ind-border opacity-50 font-bold">HOTEL</h3>
+        <div class="mono-tag text-ind-fg">ROOMS: ∞ (FULL)</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 03/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 04: THE SHIFT (N+1) -->
+  <div class="slide p-12 flex flex-col items-center justify-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="scanline"></div>
+
+    <h2 class="font-display text-5xl text-ind-fg mb-16 text-center">
+      GIẢI PHÁP: <br> DỊCH CHUYỂN (SHIFT)
+    </h2>
+
+    <div class="flex gap-6 items-center mb-16 overflow-x-hidden w-full px-12 justify-center">
+      <!-- Room 1 -->
+      <div class="w-40 h-56 ind-card flex flex-col items-center justify-between p-6 relative group">
+        <span class="mono-tag border-b border-ind-border pb-1">Room 1</span>
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <div
+          class="absolute -right-8 top-1/2 transform -translate-y-1/2 text-ind-accent z-20 bg-ind-bg p-1 rounded-full border border-ind-border">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="w-40 h-56 ind-card flex flex-col items-center justify-between p-6 relative">
+        <span class="mono-tag border-b border-ind-border pb-1">Room 2</span>
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <div
+          class="absolute -right-8 top-1/2 transform -translate-y-1/2 text-ind-accent z-20 bg-ind-bg p-1 rounded-full border border-ind-border">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Ellipsis -->
+      <div class="flex gap-2 mx-2">
+        <div class="w-2 h-2 bg-ind-border rounded-full"></div>
+        <div class="w-2 h-2 bg-ind-border rounded-full"></div>
+        <div class="w-2 h-2 bg-ind-border rounded-full"></div>
+      </div>
+
+      <!-- Room N -->
+      <div class="w-40 h-56 ind-card flex flex-col items-center justify-between p-6 relative">
+        <span class="mono-tag border-b border-ind-border pb-1">Room n</span>
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <div
+          class="absolute -right-8 top-1/2 transform -translate-y-1/2 text-ind-accent z-20 bg-ind-bg p-1 rounded-full border border-ind-border">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Room N+1 -->
+      <div
+        class="w-40 h-56 ind-card border-ind-fg bg-[#1a1a1a] flex flex-col items-center justify-between p-6 relative">
+        <span class="mono-tag text-ind-fg border-b border-ind-fg pb-1">Room n+1</span>
+        <span class="block relative w-16 h-16">
+          <svg class="absolute inset-0 text-[#888]" width="64" height="64" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </span>
+        <div class="absolute -top-6 text-sm mono-tag text-ind-fg">Available</div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl text-center ind-card p-8 bg-[#121212]">
+      <p class="text-3xl font-display text-ind-fg mb-4 leading-normal">
+        "Xin mời vị khách ở phòng <span
+          class="font-mono bg-[#333] px-2 border border-ind-border text-sm align-middle">n</span> chuyển sang phòng
+        <span class="font-mono bg-[#333] px-2 border border-ind-border text-sm align-middle">n+1</span>."
+      </p>
+      <p class="text-ind-accent mono-tag mt-4">
+        ALGORITHM: ROOM_ASSIGNMENT = ROOM_CURRENT + 1
+      </p>
+    </div>
+
+    <div class="absolute top-12 right-12 font-display text-8xl text-[#1a1a1a] select-none">04</div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 04/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 05: THE INFINITE BUS -->
+  <div class="slide flex relative bg-ind-bg">
+    <div class="technical-grid opacity-30"></div>
+
+    <div class="w-2/3 p-16 z-10 flex flex-col justify-center">
+      <div class="mono-tag mb-4">05 // Escalation</div>
+      <h2 class="font-display text-6xl text-ind-fg leading-tight mb-8">
+        NHƯNG NẾU CÓ <br> <span class="text-transparent" style="-webkit-text-stroke: 1px #E0E0E0;">VÔ SỐ</span> KHÁCH
+        ĐẾN?
+      </h2>
+      <p class="text-xl text-ind-sub leading-relaxed mb-12">
+        Một chiếc xe buýt dài vô tận chở đầy khách đến. Khách sạn đã kín. Ta phải xếp chỗ cho họ như thế nào?
+      </p>
+
+      <div class="flex gap-4">
+        <div class="ind-card p-6 flex-1 opacity-50">
+          <span class="mono-tag block mb-2">Algorithm A</span>
+          <span class="text-ind-accent text-lg">Shift + 1</span>
+          <div class="mt-2 text-xs text-ind-border">TOO SLOW</div>
+        </div>
+        <div class="ind-card p-6 flex-1 border-ind-fg">
+          <span class="mono-tag block mb-2 text-ind-fg">Algorithm B</span>
+          <span class="text-ind-fg text-lg">Shift × 2</span>
+          <div class="mt-2 text-xs text-ind-accent">OPTIMAL SOLUTION</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-1/3 border-l border-ind-border bg-[#0f0f0f] relative overflow-hidden flex flex-col p-4 gap-2">
+      <div class="text-center mono-tag mb-4">BUS PASSENGER MANIFEST</div>
+      <div class="flex items-center gap-4 bg-[#1a1a1a] border border-[#333] p-3">
+        <div
+          class="w-8 h-8 rounded border border-[#444] bg-[#222] flex items-center justify-center text-xs text-[#888]">P1
+        </div>
+        <div class="h-[1px] flex-grow bg-[#333]"></div>
+      </div>
+      <div class="flex items-center gap-4 bg-[#1a1a1a] border border-[#333] p-3">
+        <div
+          class="w-8 h-8 rounded border border-[#444] bg-[#222] flex items-center justify-center text-xs text-[#888]">P2
+        </div>
+        <div class="h-[1px] flex-grow bg-[#333]"></div>
+      </div>
+      <div class="flex items-center gap-4 bg-[#1a1a1a] border border-[#333] p-3">
+        <div
+          class="w-8 h-8 rounded border border-[#444] bg-[#222] flex items-center justify-center text-xs text-[#888]">P3
+        </div>
+        <div class="h-[1px] flex-grow bg-[#333]"></div>
+      </div>
+      <div class="flex items-center gap-4 bg-[#1a1a1a] border border-[#333] p-3 opacity-50">
+        <div
+          class="w-8 h-8 rounded border border-[#444] bg-[#222] flex items-center justify-center text-xs text-[#888]">
+          ...</div>
+        <div class="h-[1px] flex-grow bg-[#333]"></div>
+      </div>
+      <div class="mt-auto text-center mono-tag text-xs text-[#444]">INFINITE LIST</div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 05/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 06: ODDS AND EVENS -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <h2 class="font-display text-5xl text-ind-fg mb-16 uppercase tracking-wider">Phân Tách Vô Tận</h2>
+
+    <div class="flex w-full max-w-5xl gap-8">
+      <!-- Current Guests -> Evens -->
+      <div class="w-1/2 ind-card p-10 relative">
+        <div class="absolute -top-4 left-8 bg-ind-bg px-2 mono-tag text-ind-sub border border-ind-border">Current Guests
+        </div>
+        <div class="flex items-center gap-4 mb-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+          <span class="text-ind-accent font-mono text-sm">→ 2n</span>
+        </div>
+        <p class="text-2xl text-ind-sub font-light mb-8">
+          Vào các phòng <strong class="text-ind-fg">CHẴN</strong>.
+        </p>
+        <div class="flex gap-2">
+          <div
+            class="w-12 h-12 border border-ind-border flex items-center justify-center font-mono text-lg text-ind-accent bg-[#1a1a1a]">
+            2</div>
+          <div
+            class="w-12 h-12 border border-ind-border flex items-center justify-center font-mono text-lg text-ind-accent bg-[#1a1a1a]">
+            4</div>
+          <div
+            class="w-12 h-12 border border-ind-border flex items-center justify-center font-mono text-lg text-ind-accent bg-[#1a1a1a]">
+            6</div>
+        </div>
+      </div>
+
+      <!-- Arrow Divider -->
+      <div class="flex items-center justify-center">
+        <div class="w-[1px] h-32 bg-ind-border"></div>
+      </div>
+
+      <!-- New Guests -> Odds -->
+      <div class="w-1/2 ind-card p-10 border-ind-fg relative">
+        <div class="absolute -top-4 left-8 bg-ind-bg px-2 mono-tag text-ind-fg border border-ind-fg">Bus Passengers
+        </div>
+        <div class="flex items-center gap-4 mb-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="2">
+            <path d="M8 19h8a4 4 0 0 0 4-4v-5h-3a5 5 0 0 0-10 0H4v5a4 4 0 0 0 4 4Z" />
+            <path d="m9 8 3-3 3 3" />
+            <path d="M12 5v10" />
+          </svg>
+          <span class="text-ind-fg font-mono text-sm">→ 2n-1</span>
+        </div>
+        <p class="text-2xl text-ind-fg font-light mb-8">
+          Vào các phòng <strong class="text-ind-fg border-b border-ind-fg">LẺ</strong>.
+        </p>
+        <div class="flex gap-2">
+          <div
+            class="w-12 h-12 border border-ind-fg flex items-center justify-center font-mono text-lg text-ind-fg bg-[#222]">
+            1</div>
+          <div
+            class="w-12 h-12 border border-ind-fg flex items-center justify-center font-mono text-lg text-ind-fg bg-[#222]">
+            3</div>
+          <div
+            class="w-12 h-12 border border-ind-fg flex items-center justify-center font-mono text-lg text-ind-fg bg-[#222]">
+            5</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20 text-center ind-card px-8 py-4">
+      <p class="text-4xl font-display text-ind-fg tracking-tight">
+        ∞ + ∞ = ∞
+      </p>
+      <div class="w-full h-[1px] bg-ind-border my-2"></div>
+      <p class="mono-tag text-xs text-ind-accent">COUNTABLE INFINITY PRESERVED</p>
+    </div>
+
+    <div class="absolute bottom-12 right-12 font-display text-8xl text-[#1a1a1a]">06</div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 06/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 07: QUOTE CARD -->
+  <div class="slide flex items-center justify-center p-24 bg-[#0F0F0F] relative">
+    <div class="absolute inset-0 border-[40px] border-[#121212]"></div>
+    <div class="technical-grid opacity-30"></div>
+
+    <div class="text-center relative z-10 max-w-4xl">
+      <div class="w-16 h-1 bg-ind-fg mx-auto mb-12"></div>
+      <p class="font-display text-6xl leading-tight text-ind-fg italic">
+        "Toán học là nghệ thuật đặt những cái tên khác nhau cho cùng một thứ."
+      </p>
+      <div class="mt-12 flex items-center justify-center gap-4">
+        <div class="w-8 h-[1px] bg-ind-border"></div>
+        <p class="mono-tag text-lg text-ind-accent">HENRI POINCARÉ</p>
+        <div class="w-8 h-[1px] bg-ind-border"></div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 07/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 08: COUNTABLE INFINITY -->
+  <div class="slide p-12 flex flex-col relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="absolute top-12 right-12 mono-tag">08 // Definition</div>
+
+    <div class="mt-20 mb-12">
+      <h2 class="font-display text-8xl text-ind-fg mb-4">ALEPH NULL <span
+          class="font-serif italic text-6xl text-ind-accent ml-4">(ℵ₀)</span></h2>
+      <div class="h-[1px] w-1/3 bg-ind-fg"></div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-12 h-full">
+      <div class="text-2xl text-ind-sub leading-relaxed font-light">
+        <p class="mb-8">
+          Khách sạn Hilbert hoạt động vì số lượng phòng và số lượng khách đều là <strong
+            class="text-ind-fg border-b border-ind-fg">Vô Hạn Đếm Được</strong> (Countable Infinity).
+        </p>
+        <p>
+          Miễn là bạn có thể lập danh sách (1, 2, 3...), bạn có thể xử lý nó. Đó là quyền uy của ℵ₀ (Aleph Null).
+        </p>
+      </div>
+
+      <div class="ind-card p-10 flex flex-col items-center justify-center bg-[#1a1a1a]">
+        <div class="mono-tag text-sm mb-6 w-full text-left border-b border-ind-border pb-2">Approved Sets</div>
+        <ul class="font-mono text-xl text-ind-accent space-y-6 w-full">
+          <li class="flex justify-between items-center text-ind-fg">
+            <span>{ 1, 2, 3, ... }</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>{ 2, 4, 6, ... }</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </li>
+          <li class="flex justify-between items-center">
+            <span>{ Rationals }</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 08/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 09: THE LIMIT -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-[#1a1a1a]">
+    <div class="scanline"></div>
+    <div class="technical-grid opacity-30"></div>
+
+    <div class="ind-card p-16 border-ind-fg max-w-5xl text-center z-10 shadow-2xl shadow-black">
+      <h2 class="font-display text-6xl text-ind-fg mb-12 uppercase tracking-wide">Nhưng...</h2>
+      <div class="text-3xl text-ind-sub leading-relaxed font-light">
+        Điều gì sẽ xảy ra nếu khách đến không phải là số tự nhiên <span
+          class="font-mono text-sm bg-black px-2 py-1 text-ind-accent">1, 2, 3</span>
+        mà là <strong class="text-ind-fg border-b-2 border-ind-fg">Số Thực</strong> <span
+          class="font-mono text-sm bg-black px-2 py-1 text-ind-accent">0.001...</span>?
+      </div>
+    </div>
+
+    <div class="absolute bottom-16 text-ind-border font-mono text-xs tracking-[0.3em] uppercase">System Warning:
+      Capacity Overload</div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 09/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: REAL NUMBERS -->
+  <div class="slide p-12 flex relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <div class="w-1/2 flex flex-col justify-center z-10 pr-12">
+      <div class="mono-tag mb-6">10 // New Challenger</div>
+      <h2 class="font-display text-7xl text-ind-fg leading-tight mb-8">
+        LÃNH ĐỊA <br> SỐ THỰC <span class="text-4xl align-top text-ind-sub font-serif italic">(ℝ)</span>
+      </h2>
+      <div class="h-[1px] w-20 bg-ind-fg mb-8"></div>
+      <p class="text-2xl text-ind-sub leading-relaxed font-light">
+        Giữa 0 và 1 có bao nhiêu số?
+        <br><span class="text-ind-fg font-mono mt-4 block">0.1, 0.01, 0.001...</span>
+        <br>Vô số. Và chúng dày đặc đến mức không danh sách nào có thể chứa hết.
+      </p>
+    </div>
+
+    <div class="w-1/2 relative border-l border-ind-border bg-[#000] overflow-hidden">
+      <div
+        class="absolute inset-0 p-8 font-mono text-xs text-[#333] break-all leading-tight opacity-50 overflow-hidden">
+        0.12323525235235235235235235985923523823423423423423423.141592653589793238462643380.000000000000000010000000001.41421356237309504880168872<br>
+        0.985923523823423423423423423.141592653589793238462643380.000000000000000010000000001.414213562373095048801688720.12323525235235235235235235<br>
+        3.141592653589793238462643380.000000000000000010000000001.414213562373095048801688720.1232352523523523523523523598592352382342342342342342<br>
+      </div>
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="ind-card px-10 py-6 bg-[#121212] border-ind-fg z-10 shadow-xl">
+          <span class="font-display text-5xl text-ind-fg tracking-tighter">The Continuum</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 10/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 11: BRIDGE -->
+  <div class="slide p-12 flex flex-col items-center justify-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <h2 class="font-display text-6xl text-ind-fg mb-12 text-center leading-tight">
+      KHÁCH SẠN HILBERT <br> <span class="text-ind-sub line-through decoration-4 decoration-ind-fg/50">THẤT BẠI</span>
+    </h2>
+
+    <div class="max-w-3xl text-center ind-card p-10 border-ind-border">
+      <p class="text-2xl text-ind-sub font-light leading-relaxed">
+        Dù có dùng bao nhiêu chiếc xe buýt, ta cũng không bao giờ xếp hết các <strong class="text-ind-fg">Số
+          Thực</strong> vào các phòng <strong class="text-ind-fg">Số Nguyên</strong>.
+      </p>
+    </div>
+
+    <div class="mt-16 w-[1px] h-24 bg-gradient-to-b from-ind-border to-transparent"></div>
+    <div class="mono-tag mt-4 flex items-center gap-2 text-ind-fg">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="8" x2="12" y2="12" />
+        <line x1="12" y1="16" x2="12.01" y2="16" />
+      </svg>
+      ERROR: MAPPING IMPOSSIBLE
+    </div>
+
+    <div class="absolute bottom-12 right-12 font-display text-8xl text-[#1a1a1a]">11</div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 11/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 12: BATCH 1 OUTRO -->
+  <div class="slide p-12 flex flex-col justify-between relative bg-[#0F0F0F] border-t-4 border-t-ind-fg">
+    <div class="technical-grid opacity-20"></div>
+
+    <div class="flex justify-between items-start border-b border-ind-border pb-6">
+      <div class="mono-tag">End Batch 01</div>
+      <div class="mono-tag text-ind-fg">Next: The Proof</div>
+    </div>
+
+    <div class="my-auto z-10 relative">
+      <p
+        class="font-display text-[200px] text-[#161616] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 font-bold tracking-tighter select-none">
+        PROOF
+      </p>
+      <h2 class="relative z-10 font-display text-5xl text-ind-fg text-center leading-tight">
+        LÀM SAO ĐỂ CHỨNG MINH <br>
+        MỘT VÔ CỰC <span class="text-ind-sub bg-[#222] px-2 italic font-serif">LỚN HƠN</span> <br>
+        MỘT VÔ CỰC KHÁC?
+      </h2>
+    </div>
+
+    <div class="flex justify-center z-10">
+      <div class="ind-card px-8 py-4 flex items-center gap-4 border-ind-fg">
+        <span class="mono-tag text-ind-fg ml-4">Loading Batch 02: Cantor's Diagonal</span>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 12/44</span>
+    </div>
+  </div>
+
+</body>
+
+</html>

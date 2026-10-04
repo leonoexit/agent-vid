@@ -1,9 +1,14 @@
 # Make the operation visible
 
 Plan in states, not slides: what exists, what is known, what action happens, what changes, and what stays fixed.
-Use a stable visual identity to reduce the viewer's memory burden. A metaphor can transform into technical notation
-on screen: the same container becomes a variable, the same address ticket becomes a pointer. Explain the limits of
+Use a stable visual identity to reduce the viewer's memory burden. Build explanatory metaphors with native
+HTML/CSS/SVG. A native metaphor can transform into technical notation on screen: the same container becomes a variable, the same address ticket becomes a pointer. Explain the limits of
 that metaphor; a symbolic address in the illustration is not a literal C address or extra copied data.
+
+Generated art is a separate secondary layer: decoration, background or contextual figure. Its fade/move does not
+stand in for a program operation. Keep changing state, causal arrows and data transfers in the native model; do not
+morph an AI image into an exact memory container or target its pictured interior. Design the trace to remain clear
+with that secondary layer hidden.
 
 | Explanatory job | Motion vocabulary |
 | --- | --- |

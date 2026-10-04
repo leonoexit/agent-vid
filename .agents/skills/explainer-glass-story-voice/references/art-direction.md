@@ -22,3 +22,8 @@ The other samples explore Sunset Vivid, Nordic Mint, Midnight Pro and Aurora Bor
 labeling and polish patterns are indexed in ref-index.md. They are not bundled palette modes. Keep Dream State
 consistent across scenes; a different art style/content format belongs in a separately scoped skill.
 The reference's NO ANIMATION comments describe static carousel export, not the user's video request.
+
+Generated art can supply optional decoration, backgrounds or contextual figures in this palette. The programming
+model stays native HTML/CSS/SVG. Use subdued backgrounds with a clear content area, and keep all headings, code,
+values, arrows and captions as native text/geometry above a solid enough panel. A contextual figure receives its
+own visual zone; it does not substitute for the diagram or its state changes.

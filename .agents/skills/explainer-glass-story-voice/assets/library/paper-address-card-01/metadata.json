@@ -1,0 +1,38 @@
+{
+  "id": "paper-address-card-01",
+  "family": "paper-address-card",
+  "style": "dream-state-cutout-v1",
+  "role": "locator",
+  "subjects": [
+    "A single blank off-white address card with softly rounded rose-edged corners and one small amber paper clip, slight three-quarter view",
+    "card",
+    "address card",
+    "tờ giấy",
+    "thẻ địa chỉ"
+  ],
+  "states": [
+    "blank"
+  ],
+  "capabilities": [
+    "move",
+    "scale",
+    "rotate",
+    "fade"
+  ],
+  "tags": [
+    "pointer address reference con trỏ địa chỉ tờ giấy"
+  ],
+  "description": "The card represents an address or reference to another object; the face stays blank so exact address labels can be added separately",
+  "origin": {
+    "kind": "imagegen",
+    "tool": "built-in image_gen",
+    "prompt": "A single isolated tactile paper-and-frosted-glass illustration for a beginner programming explainer. Dream State art direction: off-white surfaces, soft rose #fda4af/#fb7185, restrained amber #fbbf24, slate #334155 edge details. Minimal editorial composition, rounded forms, gentle dimensional depth, soft upper-left lighting. Show the entire object with generous transparent margins. Genuine transparent background. No setting, floor plane, backdrop, frame, text, letters, numbers, code, arrows, logo or watermark. Labels and changing data will be added separately in HTML/SVG.\nSubject: A single blank off-white address card with softly rounded rose-edged corners and one small amber paper clip, slight three-quarter view.\nVisible state: blank.\nExplanatory role: locator.\nStoryboard operation: The card represents an address or reference to another object; the face stays blank so exact address labels can be added separately.",
+    "reference_asset_ids": []
+  },
+  "file": "paper-address-card-01/image.png",
+  "sha256": "99e3b59bbed27e85fa95655cde20c4e3472a56fddb3451861fc1a755eb9f01a5",
+  "width": 1536,
+  "height": 1024,
+  "alpha_channel": true,
+  "added_at": "2026-10-03T15:37:13.945405+00:00"
+}

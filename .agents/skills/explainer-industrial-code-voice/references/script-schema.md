@@ -7,12 +7,11 @@ subtitle?, vo, events (0–12), after?, afterOn?, hold?. Values are plain displa
 Entities (1–6) have a unique id, kind (`box`, `ticket`, `card`, `reader`), label, value, detail?, address?,
 x, y, width, height. Coordinates are local to the 860×570 visual stage, at canvas (110,655). Use 2–3 simultaneous
 objects for a beginner explanation. Objects initially stay hidden until `show`.
-An optional `image` is a local assets/illustrations path; alt? supplies descriptive text. The template gives
-illustrated cards separate image/data zones (minimum width 300, height 250; reader height 160). Use
-scripts/asset-library.py install to attach a selected cutout and retain provenance. See asset-library.md for selection,
-variants and actual-use history. The image is secondary decoration or a contextual figure; it is never the main
-explanatory model, a program state, a capacity grid or a transfer destination. Background layers need a project-specific
-renderer extension; the entity image field is not a background API. A flat prop cannot animate its own lid; use native geometry or project-specific parts.
+An optional `image` is a local `assets/illustrations/` path; `alt` supplies descriptive text. The template reserves a
+small side zone for a secondary decoration or contextual figure on modules at least 300×250. The image is never the
+main explanatory model, a program state, a capacity grid or a transfer destination. Save its prompt and role in the
+project storyboard. Background layers need a project-specific renderer extension; the entity image field is not a
+background API. A flat prop cannot animate its own lid; use native geometry for explanatory mechanics.
 
 Text limits: scene title 52, subtitle 100, vo 1500, after 100; entity label 25, value 14, detail 40, address 20.
 Hero title 45 (choose a phrase that fits two display lines), subtitle 90, note 120; tile value 8 and label 24.

@@ -56,3 +56,19 @@
 .entity-address{bottom:5px;font-size:21px;padding:6px 13px}
 .entity.reader .entity-label{top:15px}.entity.reader .entity-value{top:50px;margin:0}
 .entity.reader .entity-detail{top:125px;font-size:21px}
+
+/* Cutout and data have distinct zones; typography stays code-native. */
+.entity.has-illustration img{inset:auto;left:18px;top:73px;width:130px;height:103px;object-fit:contain;pointer-events:none}
+.entity.has-illustration .entity-value{left:151px;right:8px;font-size:67px}
+.entity.has-illustration .entity-value.long{font-size:43px}
+.entity.reader.has-illustration img{left:15px;top:52px;width:90px;height:62px}
+.entity.reader.has-illustration .entity-value{left:112px;font-size:50px}
+
+/* Titles and descriptions share a flowing stack, including explicit line breaks. */
+.heading-copy{position:absolute;top:294px;left:110px;right:110px;display:flex;flex-direction:column;gap:24px}
+.heading-copy .scene-title,.heading-copy .scene-subtitle{position:static;left:auto;right:auto;top:auto;white-space:pre-line}
+.heading-copy .scene-subtitle{margin:0}
+.hero .heading-copy{top:360px;gap:32px}
+.hero .heading-copy .scene-title{font-size:88px;line-height:1.15}
+.hero .heading-copy .scene-subtitle{font-size:36px}
+.hero-note{white-space:pre-line}

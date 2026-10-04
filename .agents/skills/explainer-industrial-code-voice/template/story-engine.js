@@ -5,7 +5,7 @@
  const add=(tag,cls,parent,value)=>{const el=document.createElement(tag);el.className=cls;if(value!=null)el.textContent=value;parent.appendChild(el);return el;};
  const stage=document.getElementById('stage'),world=document.getElementById('world');
  const sections=new Map(P.sections.map(s=>[s.id,s]));
- document.getElementById('brand').textContent=S.brand||'AGENTVID';document.getElementById('series').textContent=S.series||(en?'ONE IDEA AT A TIME':'TỪNG BƯỚC MỘT');
+ document.getElementById('brand').textContent=S.brand||'AGENTVID';document.getElementById('series').textContent=S.series||(en?'TECHNICAL TRACE':'DẤU VẾT KỸ THUẬT');
  const norm=v=>(String(v).normalize('NFC').toLowerCase().match(/[\p{L}\p{N}]+/gu)||[]);
  function cue(event,s,vo){
   if(event.at!=null){if(event.at<0||event.at>=s.dur-.3)throw Error(`Cue outside ${s.id}`);return s.start+event.at;}
@@ -55,23 +55,23 @@
  }
  function connection(event,at){
   const a=positions.get(event.from),b=positions.get(event.to);const x1=a.x+a.width/2,y1=a.y+a.height+12,x2=b.x+b.width/2,y2=b.y+b.height+12;
-  const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',`M${x1} ${y1} V${Math.max(y1,y2)+50} H${x2} V${y2} m-11 14 11-14 11 14`);path.setAttribute('fill','none');path.setAttribute('stroke','#be123c');path.setAttribute('stroke-width','5');path.setAttribute('stroke-linecap','round');path.setAttribute('stroke-linejoin','round');path.setAttribute('pathLength','100');path.style.visibility='hidden';svg.appendChild(path);
+  const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',`M${x1} ${y1} V${Math.max(y1,y2)+50} H${x2} V${y2} m-11 14 11-14 11 14`);path.setAttribute('fill','none');path.setAttribute('stroke','#e0e0e0');path.setAttribute('stroke-width','3');path.setAttribute('stroke-linecap','square');path.setAttribute('stroke-linejoin','miter');path.setAttribute('pathLength','100');path.style.visibility='hidden';svg.appendChild(path);
   tl.set(path,{visibility:'visible'},at);tl.fromTo(path,{strokeDasharray:100,strokeDashoffset:100},{strokeDashoffset:0,duration:.85,ease:'none',immediateRender:false},at);
   if(event.persist===false){tl.to(path,{opacity:0,duration:.2},at+1.1);tl.set(path,{visibility:'hidden'},at+1.3);}
  }
  function apply(event,s,vo){const at=cue(event,s,vo),n=nodes.get(event.target);
   switch(event.type){
-   case 'show':tl.set(n.el,{visibility:'visible'},at);tl.fromTo(n.el,{opacity:0,scale:.8,y:40},{opacity:1,scale:1,y:0,duration:.6,ease:'power2.out',immediateRender:false},at);break;
+   case 'show':tl.set(n.el,{visibility:'visible'},at);tl.fromTo(n.el,{opacity:0,scale:.96,y:24},{opacity:1,scale:1,y:0,duration:.5,ease:'power2.out',immediateRender:false},at);break;
    case 'hide':tl.to(n.el,{opacity:0,duration:.4},at);tl.set(n.el,{visibility:'hidden'},at+.4);break;
-   case 'open':tl.to(n.lid,{y:-55,rotation:-8,duration:.65,ease:'power2.inOut'},at);tl.to(n.value,{opacity:1,duration:.4},at+.25);break;
+   case 'open':tl.to(n.lid,{y:-48,rotation:-3,duration:.6,ease:'power2.inOut'},at);tl.to(n.value,{opacity:1,duration:.35},at+.25);break;
    case 'focus':nodes.forEach(({el},id)=>tl.set(el,{outlineWidth:event.targets.includes(id)?4:0},at));break;
    case 'set':for(const key of ['label','value','detail','address'])if(event[key]!=null)field(n,key,event[key],at);break;
-   case 'morph':if(n.lid)tl.to(n.lid,{opacity:0,duration:.5},at);tl.to(n.el,{borderRadius:32,rotation:0,borderStyle:'solid',borderColor:'#cbd5e1',backgroundColor:'#ffffff',duration:.8},at);for(const key of ['label','detail','value','address'])if(event[key]!=null)field(n,key,event[key],at+.4);break;
+   case 'morph':if(n.lid)tl.to(n.lid,{opacity:0,duration:.5},at);tl.to(n.el,{borderRadius:0,rotation:0,borderStyle:'solid',borderColor:'#e0e0e0',backgroundColor:'#1a1a1a',duration:.75},at);for(const key of ['label','detail','value','address'])if(event[key]!=null)field(n,key,event[key],at+.35);break;
    case 'move':tl.to(n.el,{left:event.x,top:event.y,rotation:event.rotation||0,duration:.85,ease:'power2.inOut'},at);positions.set(event.target,{...positions.get(event.target),x:event.x,y:event.y});break;
    case 'transfer':case 'write':transfer(event,at,s);break;
    case 'connect':connection(event,at);break;
    case 'code':{
-    const panel=add('div','code-content',code);add('div','code-label',panel,event.label||(en?'WORKED EXAMPLE':'VÍ DỤ C'));
+    const panel=add('div','code-content',code);add('div','code-label',panel,event.label||(en?'WORKED EXAMPLE':'VÍ DỤ CODE'));
     event.lines.forEach((line,i)=>add('div','code-line'+(i===event.active?' active':''),panel,line));
     tl.set(code,{visibility:'visible',display:'block'},at);tl.set(panel,{visibility:'visible',display:'block'},at);enter(panel,at);
     // Each panel owns its interval, including reverse seeks.
@@ -85,7 +85,7 @@
  hero(S.outro,'outro',S.scenes.length+1);
  const band=document.getElementById('captions');P.sections.forEach(s=>{
   const chunks=[];let line=[];(s.words||[]).forEach(w=>{if(line.length&&line.map(x=>x.w).join(' ').length+w.w.length+1>38){chunks.push(line);line=[];}line.push(w);});if(line.length)chunks.push(line);
-  chunks.forEach((words,i)=>{const el=add('div','caption-line',band),start=Math.max(s.start,words[0].t0-.06),end=Math.min(s.start+s.dur,i+1<chunks.length?chunks[i+1][0].t0-.06:words.at(-1).t1+.25);tl.set(el,{opacity:1},start);tl.set(el,{opacity:0},end);words.forEach((w,j)=>{if(j)el.appendChild(document.createTextNode(' '));const span=add('span','caption-word',el,w.w);tl.set(span,{color:'#9f1239',textDecoration:'underline',textUnderlineOffset:'8px'},w.t0);});});
+  chunks.forEach((words,i)=>{const el=add('div','caption-line',band),start=Math.max(s.start,words[0].t0-.06),end=Math.min(s.start+s.dur,i+1<chunks.length?chunks[i+1][0].t0-.06:words.at(-1).t1+.25);tl.set(el,{opacity:1},start);tl.set(el,{opacity:0},end);words.forEach((w,j)=>{if(j)el.appendChild(document.createTextNode(' '));const span=add('span','caption-word',el,w.w);tl.set(span,{color:'#ef4444',textDecoration:'underline',textUnderlineOffset:'8px'},w.t0);});});
  });
  tl.to(document.getElementById('progress-fill'),{width:'100%',duration:P.total,ease:'none'},0);window.StoryTimeline=tl;
 })();

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mathematical Multiverse - Batch 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./index.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ind: {
+              bg: '#121212',
+              fg: '#E0E0E0',
+              sub: '#B0B0B0',
+              border: '#444444',
+              accent: '#888888',
+            }
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- SLIDE 34: THE MULTIVERSE COVER -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="scanline"></div>
+
+    <div class="ind-card py-20 px-24 border-ind-fg text-center z-10 w-full max-w-6xl">
+      <div class="mono-tag mb-12 flex justify-center items-center gap-4 text-ind-fg">
+        <div class="w-32 h-[1px] bg-ind-fg"></div>
+        SECTION: REALITY
+        <div class="w-32 h-[1px] bg-ind-fg"></div>
+      </div>
+      <h1 class="font-display font-bold text-9xl text-ind-fg mb-12 uppercase tracking-tighter">
+        ĐA VŨ TRỤ <br>
+        <span class="text-ind-sub font-light">TOÁN HỌC</span>
+      </h1>
+      <p class="text-3xl text-ind-sub font-light font-body max-w-3xl mx-auto leading-relaxed">
+        Chúng ta không khám phá một thế giới duy nhất.<br>
+        Chúng ta đang du hành giữa vô số những thế giới logic song song.
+      </p>
+    </div>
+
+    <!-- Decoration: Overlapping Circles -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-10 pointer-events-none">
+      <svg viewBox="0 0 100 100" class="w-full h-full animate-spin-slow">
+        <circle cx="50" cy="50" r="40" stroke="#fff" stroke-width="0.2" fill="none" />
+        <circle cx="45" cy="45" r="40" stroke="#fff" stroke-width="0.2" fill="none" />
+        <circle cx="55" cy="55" r="40" stroke="#fff" stroke-width="0.2" fill="none" />
+      </svg>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 34/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 35: PLATONISM -->
+  <div class="slide p-12 flex relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <div class="w-1/2 pr-12 z-10 flex flex-col justify-center">
+      <div class="mono-tag mb-6">Traditional View</div>
+      <h2 class="font-display text-6xl text-ind-fg mb-8">CHỦ NGHĨA PLATON</h2>
+      <div class="ind-card p-8 border-l-4 border-l-ind-fg bg-[#1a1a1a]">
+        <p class="text-2xl text-ind-sub leading-relaxed italic">
+          "Chỉ có <strong>MỘT</strong> thế giới toán học thực sự. Nhiệm vụ của chúng ta là khám phá ra nó."
+        </p>
+      </div>
+      <p class="mt-8 text-xl text-ind-sub">
+        Giống như việc các nhà địa lý vẽ bản đồ Trái Đất. Trái Đất là duy nhất, bản đồ có thể sai, nhưng lãnh thổ là cố
+        định.
+      </p>
+    </div>
+
+    <div class="w-1/2 relative flex items-center justify-center">
+      <!-- Single Sphere Graphic -->
+      <div
+        class="w-96 h-96 rounded-full bg-[#000] border border-ind-fg shadow-[0_0_50px_rgba(255,255,255,0.1)] flex items-center justify-center relative">
+        <div
+          class="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.1),transparent)]">
+        </div>
+        <span class="font-display text-4xl text-ind-fg tracking-widest">THE ONE</span>
+
+        <!-- Satellite: Mathematician -->
+        <div class="absolute -right-12 top-10 flex items-center gap-2">
+          <div class="w-16 h-[1px] bg-ind-border"></div>
+          <span class="mono-tag text-xs bg-ind-bg border border-ind-border px-2">Discoverer</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 35/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 36: THE PROBLEM WITH PLATONISM -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-ind-bg">
+    <div class="technical-grid opacity-30"></div>
+    <div class="scanline"></div>
+
+    <h2 class="font-display text-5xl text-ind-fg mb-16 text-center">VẤN ĐỀ CỦA CHỦ NGHĨA DUY NHẤT</h2>
+
+    <div class="flex gap-12 w-full max-w-5xl">
+      <!-- Box 1 -->
+      <div class="flex-1 ind-card p-8 bg-[#1a1a1a] shadow-lg">
+        <div class="text-4xl mb-4 text-ind-fg">🤔</div>
+        <h3 class="text-2xl font-bold text-ind-fg mb-4">Continuum Hypothesis?</h3>
+        <p class="text-ind-sub">
+          Nếu chỉ có một thế giới, CH phải hoặc Đúng hoặc Sai. Nhưng ta không thể chứng minh cả hai.
+        </p>
+        <div class="mt-8 p-4 border border-ind-border bg-[#121212]">
+          <span class="mono-tag text-red-500">STUCK</span>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="flex-1 ind-card p-8 bg-[#1a1a1a] shadow-lg">
+        <div class="text-4xl mb-4 text-ind-fg">📐</div>
+        <h3 class="text-2xl font-bold text-ind-fg mb-4">Hình Học?</h3>
+        <p class="text-ind-sub">
+          Hình học Euclid (phẳng) hay Phi Euclid (cong)? Cái nào "đúng"?
+        </p>
+        <div class="mt-8 p-4 border border-ind-border bg-[#121212]">
+          <span class="mono-tag text-green-500">BOTH ARE VALID</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 max-w-3xl text-center">
+      <p class="text-3xl text-ind-fg leading-relaxed">
+        Tại sao chúng ta chấp nhận nhiều loại hình học,<br>
+        nhưng lại cố chấp tìm kiếm một loại tập hợp duy nhất?
+      </p>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 36/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 37: THE MULTIVERSE VIEW (Ex-Slide 40) -->
+  <div class="slide p-12 flex relative bg-[#0F0F0F] overflow-hidden">
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiIGZpbGw9IiMxMjEyMTIiLz4KPHBhdGggZD0iTTMwIDMwTDUwIDUwSDMwdjIweiIgZmlsbD0iIzIyMiIvPgo8L3N2Zz4=')] opacity-20">
+    </div>
+
+    <div class="w-2/3 p-12 z-10 flex flex-col justify-center">
+      <div class="mono-tag mb-4 text-ind-fg">Hamkins' Proposal</div>
+      <h2 class="font-display text-7xl text-ind-fg mb-8">
+        ĐA VŨ TRỤ <br> TẬP HỢP
+      </h2>
+      <div class="w-24 h-2 bg-ind-fg mb-8"></div>
+      <p class="text-2xl text-ind-sub leading-relaxed max-w-2xl">
+        Mỗi khái niệm về tập hợp tạo ra một vũ trụ riêng.
+        <br><br>
+        Có những vũ trụ nơi CH là đúng.<br>
+        Có những vũ trụ nơi CH là sai.<br>
+        <strong class="text-ind-fg">Tất cả đều tồn tại song song.</strong>
+      </p>
+    </div>
+
+    <div class="w-1/3 relative flex flex-col items-center justify-center gap-4">
+      <!-- Universe Stack -->
+      <div
+        class="w-48 h-48 rounded-full border border-ind-fg bg-[#1a1a1a] flex items-center justify-center text-ind-fg shadow-lg z-30 hover:scale-110 transition-transform">
+        <span class="font-display">Universe ZFC</span>
+      </div>
+      <div
+        class="w-48 h-48 rounded-full border border-dashed border-ind-sub bg-[#121212] flex items-center justify-center text-ind-sub shadow-lg z-20 -mt-24 ml-24 hover:scale-110 transition-transform">
+        <span class="font-display text-sm">Universe ZFC+CH</span>
+      </div>
+      <div
+        class="w-48 h-48 rounded-full border border-dotted border-ind-accent bg-[#0a0a0a] flex items-center justify-center text-ind-accent shadow-lg z-10 -mt-24 -ml-24 hover:scale-110 transition-transform">
+        <span class="font-display text-sm">Universe ZFC+¬CH</span>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 37/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 38: THE MAP METAPHOR (Ex-Slide 41) -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="scanline"></div>
+
+    <h2 class="font-display text-5xl text-ind-fg mb-16 text-center">TỪ NGƯỜI DÒ ĐƯỜNG ĐẾN KIẾN TRÚC SƯ</h2>
+
+    <div class="flex w-full max-w-6xl gap-0 border border-ind-border h-96">
+      <!-- Left: Old Way -->
+      <div class="w-1/2 p-12 flex flex-col items-center justify-center border-r border-ind-border bg-[#121212]">
+        <div class="mb-8 opacity-50">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="font-display text-3xl text-ind-sub mb-4">Discoverer</h3>
+        <p class="text-center text-ind-sub opacity-70">
+          "Tôi đi tìm sự thật có sẵn."
+        </p>
+      </div>
+
+      <!-- Right: New Way -->
+      <div class="w-1/2 p-12 flex flex-col items-center justify-center bg-[#1a1a1a] relative overflow-hidden group">
+        <div class="absolute inset-0 bg-[#e0e0e0] opacity-0 group-hover:opacity-5 transition-opacity"></div>
+        <div class="mb-8">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5">
+            <path d="M3 3h18v18H3z" />
+            <path d="M9 3v18" />
+            <path d="M3 9h18" />
+          </svg>
+        </div>
+        <h3 class="font-display text-3xl text-ind-fg mb-4">Architect</h3>
+        <p class="text-center text-ind-fg">
+          "Tôi xây dựng những thế giới mới."
+        </p>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 38/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 39: NEW REALISM (Ex-Slide 42) -->
+  <div class="slide p-12 flex relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <div class="w-1/2 pr-12 z-10 flex flex-col justify-center">
+      <h2 class="font-display text-5xl text-ind-fg mb-8 uppercase">Chủ Nghĩa Hiện Thực Mới</h2>
+      <p class="text-xl text-ind-sub leading-relaxed mb-8">
+        Việc từ bỏ "một vũ trụ duy nhất" không làm toán học nghèo đi. Ngược lại, nó mở ra một chân trời tự do tuyệt đối.
+      </p>
+      <div class="ind-card p-6 border-l-2 border-l-ind-accent">
+        <p class="text-lg text-ind-fg">
+          Chúng ta hiểu sâu hơn về bản chất của sự vô hạn bằng cách nhìn thấy nó hoạt động khác nhau trong các thế giới
+          khác nhau.
+        </p>
+      </div>
+    </div>
+
+    <div class="w-1/2 flex items-center justify-center">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="w-32 h-32 border border-ind-border bg-[#1a1a1a]"></div>
+        <div class="w-32 h-32 border border-ind-fg bg-[#222]"></div>
+        <div class="w-32 h-32 border border-ind-fg bg-[#222]"></div>
+        <div class="w-32 h-32 border border-ind-border bg-[#1a1a1a]"></div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 39/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 40: RECAP 1 - THE STORY -->
+  <div class="slide p-12 flex flex-col items-center justify-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+    <div class="scanline"></div>
+
+    <h2 class="font-display text-5xl text-ind-fg mb-16 uppercase tracking-widest text-center">
+      HÀNH TRÌNH CỦA CHÚNG TA
+    </h2>
+
+    <div class="relative w-full max-w-4xl space-y-8">
+      <!-- Step 1 -->
+      <div class="flex items-center gap-8 opacity-50">
+        <div class="w-16 h-16 border border-ind-border flex items-center justify-center font-mono text-ind-sub">01</div>
+        <div>
+          <h3 class="font-bold text-ind-fg text-xl uppercase">Hilbert's Hotel</h3>
+          <p class="text-ind-sub">Vô cực đếm được (ℕ) là trò chơi của sự sắp xếp.</p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="flex items-center gap-8 opacity-50">
+        <div class="w-16 h-16 border border-ind-border flex items-center justify-center font-mono text-ind-sub">02</div>
+        <div>
+          <h3 class="font-bold text-ind-fg text-xl uppercase">Cantor's Diagonal</h3>
+          <p class="text-ind-sub">Vô cực không đếm được (ℝ) phá vỡ mọi danh sách.</p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="flex items-center gap-8 opacity-50">
+        <div class="w-16 h-16 border border-ind-border flex items-center justify-center font-mono text-ind-sub">03</div>
+        <div>
+          <h3 class="font-bold text-ind-fg text-xl uppercase">Gödel & Turing</h3>
+          <p class="text-ind-sub">Toán học và Máy tính đều có giới hạn tuyệt đối.</p>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="flex items-center gap-8 ind-card p-6 border-ind-fg">
+        <div
+          class="w-16 h-16 border border-ind-fg bg-[#1a1a1a] flex items-center justify-center font-mono text-ind-fg font-bold">
+          04</div>
+        <div>
+          <h3 class="font-bold text-ind-fg text-xl uppercase">The Multiverse</h3>
+          <p class="text-ind-fg">Sự giải thoát: Chấp nhận mọi khả năng logic cùng tồn tại.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 40/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 41: THE SHIFT -->
+  <div class="slide p-12 flex relative bg-[#0F0F0F]">
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9IiMxMjEyMTIiLz4KPC9zdmc+')] opacity-20">
+    </div>
+
+    <div class="w-full h-full flex flex-col justify-center items-center text-center z-10">
+      <div class="mono-tag mb-8 text-ind-fg">Paradigm Shift</div>
+
+      <div class="flex items-center gap-12">
+        <div class="text-4xl text-ind-sub line-through decoration-2 decoration-red-500/50">Toán học là sự khám phá chân
+          lý duy nhất.</div>
+        <div class="font-display text-4xl text-ind-fg">→</div>
+        <div class="text-4xl text-ind-fg font-bold bg-[#1a1a1a] p-4 border border-ind-fg shadow-lg">
+          Toán học là sự kiến tạo các thế giới khả dĩ.
+        </div>
+      </div>
+
+      <p class="mt-16 text-xl text-ind-sub max-w-3xl leading-relaxed italic">
+        "Chúng ta không còn bị giới hạn bởi việc phải tìm ra câu trả lời 'đúng' cho Continuum Hypothesis.<br>
+        Thay vào đó, ta khám phá những vũ trụ nơi nó đúng, và những vũ trụ nơi nó sai."
+      </p>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 41/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 42: THE FREEDOM -->
+  <div class="slide p-12 flex flex-col justify-center items-center relative bg-ind-bg">
+    <div class="technical-grid"></div>
+
+    <h2 class="font-display text-9xl text-ind-fg mb-4 uppercase tracking-tighter">TỰ DO</h2>
+    <div class="w-64 h-2 bg-ind-fg mb-12"></div>
+
+    <p class="text-3xl text-ind-sub font-light max-w-4xl text-center leading-relaxed antialiased">
+      Đa vũ trụ không làm giảm đi sự chắc chắn của toán học.<br>
+      Nó làm tăng thêm <strong class="text-ind-fg">sự phong phú</strong> của thực tại.
+    </p>
+
+    <div class="mt-16 grid grid-cols-3 gap-8 w-full max-w-5xl">
+      <div class="ind-card p-8 text-center bg-[#1a1a1a] hover:bg-[#222] transition-colors">
+        <span class="block text-4xl mb-4">🌌</span>
+        <span class="font-mono text-sm text-ind-fg uppercase">Infinite Possibilities</span>
+      </div>
+      <div class="ind-card p-8 text-center bg-[#1a1a1a] hover:bg-[#222] transition-colors">
+        <span class="block text-4xl mb-4">🧩</span>
+        <span class="font-mono text-sm text-ind-fg uppercase">Logic Coherence</span>
+      </div>
+      <div class="ind-card p-8 text-center bg-[#1a1a1a] hover:bg-[#222] transition-colors">
+        <span class="block text-4xl mb-4">🏛️</span>
+        <span class="font-mono text-sm text-ind-fg uppercase">Mathematical Beauty</span>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 42/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 43: FINAL QUOTE -->
+  <div class="slide flex items-center justify-center p-24 bg-[#0F0F0F] relative">
+    <div class="absolute inset-0 border-[2px] border-[#1a1a1a] m-12"></div>
+    <div class="technical-grid opacity-10"></div>
+
+    <div class="text-center relative z-10 max-w-5xl">
+      <div class="mb-12">
+        <svg class="w-12 h-12 mx-auto text-ind-fg opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+        </svg>
+      </div>
+
+      <p class="font-display text-5xl leading-tight text-ind-fg font-light">
+        "Có vô số loại vô cực.<br>
+        Và có vô số loại vũ trụ để chứa chúng."
+      </p>
+
+      <div class="mt-16 flex items-center justify-center gap-4">
+        <div class="w-12 h-[1px] bg-ind-border"></div>
+        <p class="mono-tag text-lg text-ind-accent tracking-widest uppercase">JOEL DAVID HAMKINS</p>
+        <div class="w-12 h-[1px] bg-ind-border"></div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="watermark-text">@lenguyen.codeai</span>
+      <span class="watermark-text">Slide 43/44</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 44: END -->
+  <div
+    class="slide p-12 flex flex-col justify-center items-center relative bg-black text-white selection:bg-white selection:text-black">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05),transparent_70%)]"></div>
+    <div class="scanline"></div>
+
+    <h1 class="font-display text-[12vw] font-bold tracking-tighter leading-none mb-8 mix-blend-difference">
+      THE END
+    </h1>
+
+    <div class="flex items-center gap-8 mt-8 z-10">
+      <div
+        class="mono-tag border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition-colors cursor-pointer">
+        RESTART_SEQUENCE()
+      </div>
+      <div
+        class="mono-tag border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition-colors cursor-pointer">
+        EXPLORE_MORE()
+      </div>
+    </div>
+
+    <div class="absolute bottom-12 font-mono text-xs text-neutral-500 tracking-[0.2em] uppercase">
+      Designed by @lenguyen.codeai // The Mathematical Multiverse
+    </div>
+  </div>
+
+</body>
+
+</html>

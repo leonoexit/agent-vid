@@ -3,7 +3,7 @@ name: explainer-glass-story-voice
 description: >
   Create narrated vertical explainer videos with the supplied Refactoring UI carousel's Dream State visual style: soft rose/amber mesh, translucent rounded cards, large Lexend headings and Be Vietnam Pro body text. Use to explain one programming concept by tracing one small worked example for hobbyist beginners when this glass-card style is requested. Animate concrete actions, object transformations and data movement on a persistent stage; supports local Vietnamese/English voice, adjustable pace and karaoke captions, rendered with HyperFrames.
 metadata:
-  version: "0.2.0"
+  version: "0.3.2"
 ---
 
 # Glass story explainer
@@ -31,10 +31,20 @@ address token, following a connection, exposing a result or writing new data int
 across adjacent scenes and change only what the operation changes. Fade/slide headings without restarting the model.
 A new palette alone is insufficient for an explanation whose meaning depends on change.
 
-Use code-native HTML/CSS/SVG for labels, code, connections and exact state. Supplied or generated raster assets can
-support physical context through an entity's `image` field. Use available image-generation tools when helpful;
-inspect and copy final assets into assets/illustrations, keep exact labels separate, and record their origin/prompt.
-A video made entirely with code-native objects does not need AI-generated artwork.
+Build the main explanatory model and its motion with HTML/CSS/SVG: objects, containers, memory cells, labels,
+code, arrows, changing values and transfer destinations. Generated images are optional secondary art only:
+decoration, a scene background, or a contextual figure. They may establish mood or context, but must not carry the
+programming explanation or represent its changing state. If removing an image makes the operation or result
+unclear, move that information into the native model. Do not infer coordinates from image pixels or use OCR to
+recover text, boundaries or capacity. Keep all technical text native and all data movement inside native geometry.
+Keep headings and subtitles in the template's flowing text stack. Use explicit line breaks for at most two title lines,
+and shorten copy before reducing type size; do not independently pin subtitles below an assumed title height. Read
+[references/asset-library.md](references/asset-library.md) when planning illustrations. The helper filters subject,
+role, state and motion capabilities, then supplies recent-use context to choose reuse, a variant or a new image.
+Store reusable images/metadata/usage only in this skill's assets/library; do not create a shared project catalogue.
+Copy selected PNGs into each video's assets/illustrations and retain its asset-manifest.json. Generated images
+follow references/asset-style.json. Keep one object's identity through the video; cosmetic variants count as the
+same family across videos. Textual retrieval is a shortlist for supporting art, not a model of the program.
 
 ## Narration and pacing
 
@@ -66,6 +76,9 @@ local-voice runtime; `scripts/setup-voice.py --check` reports readiness. Keep on
    Work in the copy; existing directories are refused. Preserve the installed template.
 2. Replace script.json. Read [references/script-schema.md](references/script-schema.md) for entities and actions.
    Save a short storyboard.md describing the initial state, each change, its spoken phrase, and any purposeful quiet interval.
+   Plan the native explanation first. Add optional supporting art using references/asset-library.md; install cutouts with
+   scripts/asset-library.py so the project keeps immutable copies and a usage manifest. Do not add decoration merely
+   to consume the library. Honor requests to skip QA; asset selection does not launch OCR or audit work.
    Both language samples illustrate programming traces; neither specific example is mandatory. Verify factual claims, identify symbolic
    addresses/illustrative quantities, and save facts.md with reliable references when needed.
 3. `python <skill>/scripts/validate-script.py --project <dir>`.
@@ -85,11 +98,14 @@ local-voice runtime; `scripts/setup-voice.py --check` reports readiness. Keep on
    If an operation arrives too late, cue it earlier in the explanation before adding a hold; preserve the facts.
 8. `hyperframes render <dir> --quality high --output <dir>/renders/<slug>-9x16.mp4`.
    Check duration, 1080×1920/30 fps, audio and full ffmpeg decode. Deliver a playable preview with actual duration
-   and voice. Rendering is not permission to publish externally.
+   and voice. After a successful render with library assets, run
+   `python <skill>/scripts/asset-library.py record --project <dir>` to record that video's use once.
+   Rendering is not permission to publish externally.
 
 ## Maintained resources
 
 Styling: template/theme.css. Seekable renderer: template/story-engine.js. Voice defaults: theme.json.
-Schema checks: scripts/validate-script.py. Keep these aligned when updating the skill. Preserve bundled licenses.
+Schema checks: scripts/validate-script.py. Cutout workflow: scripts/asset-library.py and assets/library.
+Keep these aligned when updating the skill. Preserve bundled licenses and library metadata/history.
 The motion vocabulary is intentionally small; extend an individual video's copy when the explanation needs a more
 specific visual, rather than forcing every subject into boxes and pointers.
