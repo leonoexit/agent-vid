@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architect Story Voice"
+  short_description: "Native programming traces with pastel editorial design"
+  default_prompt: "Use $explainer-architect-story-voice to explain one programming concept through a worked example with native editorial staging and optional abstract backgrounds and connected narration."

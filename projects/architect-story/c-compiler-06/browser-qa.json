@@ -1,0 +1,21 @@
+{
+  "errors": [],
+  "textOverflow": [],
+  "reverseSeeks": 16,
+  "shots": 16,
+  "operationTriplets": 23,
+  "fonts": [
+    [
+      "Head",
+      true
+    ],
+    [
+      "Body",
+      true
+    ],
+    [
+      "Mono",
+      true
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "compiler-bench",
+  "family": "compiler-bench",
+  "style": "architect-pastel-editorial-v1",
+  "role": "plate",
+  "background": "opaque",
+  "subjects": [
+    "conceptual translation workbench"
+  ],
+  "states": [
+    "composed"
+  ],
+  "capabilities": [
+    "move",
+    "scale",
+    "crop",
+    "fade"
+  ],
+  "tags": [
+    "compiler",
+    "bench"
+  ],
+  "description": "Compiler translation metaphor; labels and transformation remain native",
+  "origin": {
+    "kind": "imagegen",
+    "tool": "built-in image_gen",
+    "prompt": "Create a new text-free conceptual editorial illustration, portrait 2:3. An architectural translation workbench represented as a precise open aluminium frame over a warm ivory ceramic table. At left, a few thin sky-blue translucent vertical sheets; in the middle, orderly layers of pale peach and yellow glass prism panels; at right, a compact array of small dark rectangular instruction-like tiles. This is a visual metaphor for a software compiler translating one representation into another, not an actual hardware device. No conveyor belt, gears, robot, labels, readable text, letters, numerals, arrows or watermark. Same sophisticated visual language as the supplied pastel architectural wave: translucent material edges, delicate cyan blueprint construction lines, warm side lighting, realistic contact shadows, clean ivory background. Dominant palette #f4f4f0 #75bde0 #f8bc9b #f8d49b #1a1a1a. Compose the complete workbench in the central 65% with generous quiet space above and below, strong clear silhouette. Not a finished infographic; all educational labels will be separate HTML.",
+    "reference_image": "references/elon-musk-agi/assets/images/digital_tsunami_sunrise.png",
+    "reference_role": "material, palette and lighting only"
+  }
+}

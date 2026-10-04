@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "style": "architect-pastel-editorial-v1",
+  "assets": [
+    {
+      "id": "compiler-hero",
+      "family": "compiler-hero",
+      "style": "architect-pastel-editorial-v1",
+      "role": "plate",
+      "background": "opaque",
+      "subjects": [
+        "source to processor"
+      ],
+      "states": [
+        "composed"
+      ],
+      "capabilities": [
+        "move",
+        "scale",
+        "crop",
+        "fade"
+      ],
+      "tags": [
+        "compiler",
+        "hero"
+      ],
+      "description": "Human source and processor: opening conceptual question",
+      "file": "compiler-hero/image.png",
+      "sha256": "2e50483d110173e2a19584a6e30538577154a58c444968c41d3f8dd18289f501",
+      "width": 1024,
+      "height": 1536,
+      "alpha_channel": false,
+      "added_at": "2026-10-04T13:39:48.357858+00:00"
+    },
+    {
+      "id": "compiler-bench",
+      "family": "compiler-bench",
+      "style": "architect-pastel-editorial-v1",
+      "role": "plate",
+      "background": "opaque",
+      "subjects": [
+        "conceptual translation workbench"
+      ],
+      "states": [
+        "composed"
+      ],
+      "capabilities": [
+        "move",
+        "scale",
+        "crop",
+        "fade"
+      ],
+      "tags": [
+        "compiler",
+        "bench"
+      ],
+      "description": "Compiler translation metaphor; labels and transformation remain native",
+      "file": "compiler-bench/image.png",
+      "sha256": "b4902eff2eca2abf764c7c79f8899076a93e79a27630dba6e7dcdc1e609fc128",
+      "width": 1024,
+      "height": 1536,
+      "alpha_channel": false,
+      "added_at": "2026-10-04T13:39:48.437739+00:00"
+    },
+    {
+      "id": "compiler-cpu",
+      "family": "compiler-cpu",
+      "style": "architect-pastel-editorial-v1",
+      "role": "plate",
+      "background": "opaque",
+      "subjects": [
+        "processor macro"
+      ],
+      "states": [
+        "composed"
+      ],
+      "capabilities": [
+        "move",
+        "scale",
+        "crop",
+        "fade"
+      ],
+      "tags": [
+        "compiler",
+        "cpu"
+      ],
+      "description": "CPU contextual illustration alongside native instruction execution",
+      "file": "compiler-cpu/image.png",
+      "sha256": "2ad515ff29f8e50c6f5c790352348c2f7640b01a1191a639f694e50aeeb46e9b",
+      "width": 1024,
+      "height": 1536,
+      "alpha_channel": false,
+      "added_at": "2026-10-04T13:39:48.514927+00:00"
+    }
+  ]
+}

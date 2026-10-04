@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Architect 0.2 / native motion study</title>
+<script src="assets/js/gsap.min.js"></script><link rel="stylesheet" href="theme.css">
+<style>
+@font-face{font-family:"Be Vietnam Pro";src:url(assets/fonts/BeVietnamPro-Black.ttf);font-weight:900;font-display:block}
+@font-face{font-family:"Plus Jakarta Sans";src:url(assets/fonts/PlusJakartaSans.ttf);font-weight:200 800;font-display:block}
+@font-face{font-family:"Space Mono";src:url(assets/fonts/SpaceMono-Regular.ttf);font-weight:400 700;font-display:block}
+body{margin:0;padding:0;background:#ddd}[data-native-study]{position:relative;width:1080px;height:1920px;overflow:hidden;background:#f4f4f0;color:#1a1a1a;font-family:'Plus Jakarta Sans',sans-serif}[data-native-study] *{box-sizing:border-box}
+#backdrop{position:absolute;inset:0;pointer-events:none;opacity:.25;background:radial-gradient(ellipse at 110% 20%,#75bde0,transparent 56%),radial-gradient(ellipse at -20% 82%,#f8bc9b,transparent 50%)}#backdrop::after{content:'';position:absolute;width:1300px;height:360px;left:-130px;top:600px;transform:rotate(-32deg);border:48px solid #fff8;border-radius:50%}
+#frame{position:absolute;inset:54px;border:2px solid}#masthead{position:absolute;left:84px;top:88px;width:912px;padding-bottom:22px;border-bottom:2px solid;font:23px 'Space Mono'}#masthead span{float:right}#headline{position:absolute;left:84px;top:190px;width:920px;font:900 98px/1.08 'Be Vietnam Pro';letter-spacing:-3px}
+#instruction{position:absolute;left:84px;top:470px;width:912px;height:160px;border-top:2px solid;border-bottom:2px solid;background:#fff;font:44px 'Space Mono';padding:44px}#instruction-label{position:absolute;left:20px;top:10px;font:20px 'Space Mono';color:#55564f}#assignment,#update{position:absolute;left:44px;top:54px;visibility:hidden}
+#axis{position:absolute;left:84px;top:680px;width:912px;border-top:1px solid}#axis::before,#axis::after{content:'';position:absolute;top:-8px;height:16px;border-left:2px solid}#axis::after{right:0}
+.variable{visibility:hidden;position:absolute;top:744px;width:400px;height:360px;padding:28px;border:2px solid;background:white}#source{left:84px;background:#75bde0}#destination{left:596px;background:#f8d49b}.variable .name{font:30px 'Space Mono';border-bottom:1px solid;padding-bottom:18px}.variable .value{position:absolute;left:32px;top:104px;font:900 128px/1.1 'Be Vietnam Pro'}.variable .label{position:absolute;bottom:28px;font:24px 'Space Mono'}
+#token{position:absolute;left:236px;top:840px;visibility:hidden;background:#fff;border:2px solid;box-shadow:8px 8px #f8bc9b;padding:15px 24px;font:50px 'Space Mono';z-index:3}#bridge{position:absolute;left:493px;top:875px;font:60px 'Space Mono';visibility:hidden}#copy-note{position:absolute;left:84px;top:1146px;width:912px;font:700 34px 'Plus Jakarta Sans';visibility:hidden}
+#result{position:absolute;left:84px;top:1260px;font:900 112px 'Be Vietnam Pro';visibility:hidden}#evidence{position:absolute;left:84px;top:1400px;width:912px;padding:26px 30px;border-left:12px solid #f8bc9b;background:#fff;font:700 36px/1.4 'Plus Jakarta Sans';visibility:hidden}
+#caption{position:absolute;left:84px;top:1690px;width:912px;min-height:110px;padding:24px;background:#1a1a1a;color:#f4f4f0;font:32px/1.4 'Plus Jakarta Sans'}#foot{position:absolute;bottom:80px;left:84px;right:84px;border-top:1px solid;padding-top:18px;font:20px 'Space Mono'}#foot span{float:right}
+.controls{padding:20px;display:flex;gap:20px;width:1080px;font:20px sans-serif}.controls input[type=range]{flex:1}.controls button{font:inherit}
+</style></head><body>
+<div data-native-study id="study">
+<div data-native-node="backdrop" id="backdrop" data-background-layer aria-hidden="true"></div><div data-native-node="frame" id="frame"></div>
+<div data-native-node="masthead" id="masthead">ARCHITECT / LẬP TRÌNH<span>WORKED TRACE · 02</span></div>
+<div data-native-node="headline" id="headline">PHÉP GÁN<br>SAO CHÉP GÌ?</div>
+<div data-native-node="instruction" id="instruction"><span data-native-node="instruction-label" id="instruction-label">VÍ DỤ · HAI BIẾN SỐ NGUYÊN</span><span data-native-node="initial" id="initial">x = 10</span><span data-native-node="assignment" id="assignment">y = x</span><span data-native-node="update" id="update">x = 20</span></div>
+<div data-native-node="axis" id="axis"></div>
+<div data-native-node="source" id="source" class="variable"><div class="name">x / NGUỒN</div><span data-native-node="source-value" id="source-value" class="value">10</span><div class="label">GIÁ TRỊ HIỆN TẠI</div></div>
+<div data-native-node="destination" id="destination" class="variable"><div class="name">y / ĐÍCH</div><span data-native-node="destination-value" id="destination-value" class="value">?</span><div class="label">GIÁ TRỊ RIÊNG</div></div>
+<div data-native-node="bridge" id="bridge">→</div><div data-native-node="token" id="token">10</div>
+<div data-native-node="copy-note" id="copy-note">Nguồn vẫn giữ 10. Đích nhận một bản sao.</div>
+<div data-native-node="result" id="result">20 ≠ 10</div><div data-native-node="evidence" id="evidence">Phép gán lấy giá trị<br>ở thời điểm thực hiện.</div>
+<div data-native-node="caption" id="caption">Nếu đổi x sau phép gán, y có đổi theo không?</div>
+<div data-native-node="foot" id="foot">MOTION STUDY · KHÔNG CÓ VOICE<span>18 GIÂY / 9:16</span></div>
+</div>
+<div class="controls"><button id="play">Play / Pause</button><input id="seek" aria-label="Thời gian" type="range" min="0" max="18" step=".01" value="0"><label><input id="background-toggle" type="checkbox" checked>Nền trừu tượng</label></div>
+<script src="editorial-motion.js"></script><script src="native-motion.js"></script><script src="editorial-study.js"></script></body></html>

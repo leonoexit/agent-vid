@@ -1,0 +1,36 @@
+{
+  "sourceProject": "projects/bento-story/oop-lamps-v2",
+  "excerptFrames": [
+    1099,
+    2219
+  ],
+  "fps": 30,
+  "identicalSourceFiles": {
+    "script.json": "2a3b28742fe14897aa6ea2e71e35902d62f719b292e61361f5998dc29603fcbe",
+    "timings.json": "1d32db4d5e47bc76bc5527f3d71fa9016ed64bfbe1019e67465d4a401a424d63",
+    "voice.json": "a3fc655b661c9860c63aaf3cbeef4b0c6c230a0a0ce210dedace6ff19d910ef3",
+    "storyboard.md": "33aa8a214824eac24f3586201d3257628d3e4c7a02a9668b72b96a4348dc7e92",
+    "facts.md": "92470107961b6a3599b1825e947def56d9afd64e5b8f964d937d57222a133256",
+    "assets/audio/vo-09.mp3": "581749befca67a20a949173da65349695cda7baab7a260d5438a2a839d0a001b",
+    "assets/audio/vo-08.mp3": "dbff63471f157f13a9bf545fbea2ce8be71e762e2fe2ce29d0b9c222770ca622",
+    "assets/audio/vo-03.mp3": "f667fc55257535b5aaf9c7d7fac7637445f5e69df89e97a1ddc1a7490bb943d0",
+    "assets/audio/vo-02.mp3": "7fd4f8aadd1e83eb031de4fe3adb9086ea5e74e0f7031746cb521bde7b4a8ca3",
+    "assets/audio/vo-14.mp3": "9fca1ece852ce7bf90a0598a22573678048c06f504accf90dd855d05a02f8803",
+    "assets/audio/vo-00.mp3": "5f8c0ca9e9c9525a2ad8079a218011727759d53db71aedd8b2b691e48ef97825",
+    "assets/audio/vo-01.mp3": "ace608213d1142fb461e6057ed2cc7b89379df9fe02b6aa0d6293a30075458f9",
+    "assets/audio/vo-11.mp3": "cc3f72de6fb800a7906461f3d54a21b2c1d66bbcddb5626c8a0bd8fb556b9811",
+    "assets/audio/vo-05.mp3": "0082df47efe4279834637da4877ae656cc97eacd3fb43dadaf100d9414b1ec54",
+    "assets/audio/vo-04.mp3": "dffdc7ef1946738d1afe0823dededc6da8576b4c82ff76552b74c77894b1b59c",
+    "assets/audio/vo-10.mp3": "6108ba6598dcde63425f34da6db74608ae9f9ecac8b787f576eb0c2c2aec388e",
+    "assets/audio/vo-06.mp3": "b3be341651ca29af2943cc19ccc5d67f5d8a0f0ceedbd2f3cb3fe697f6080913",
+    "assets/audio/vo-12.mp3": "5acd7e969d488d66a94a96dab148bc24cea6fa611a38d3e0d30db72fc31a0631",
+    "assets/audio/vo-13.mp3": "865c27cd8bcbffa35d310866dfac224f1a38a0d7cae8c773993d5ed828a18601",
+    "assets/audio/vo-07.mp3": "56a00f211192b77da6f9101ed25e74c543bb6610483b4850aa4c053d967e91a6"
+  },
+  "changes": [
+    "Scoped original GSAP builder under Remotion React host",
+    "Audio tags replaced by Remotion Audio/Sequence",
+    "Local fonts awaited",
+    "Background explicitly painted on captured composition"
+  ]
+}

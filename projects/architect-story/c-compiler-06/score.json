@@ -1,0 +1,164 @@
+[
+  {
+    "phase": "question",
+    "title": "TỪ CHỮ VIẾT\nĐẾN CPU",
+    "vo": "Bạn vừa viết một chương trình C để in lời chào. Nhưng CPU không đọc tiếng C như chúng ta. Vậy ai nối những dòng chữ này với phần cứng?",
+    "cues": [
+      "chương trình C",
+      "CPU không đọc",
+      "ai nối"
+    ]
+  },
+  {
+    "phase": "setup",
+    "title": "MỘT TỆP\nMÃ NGUỒN",
+    "vo": "Bắt đầu từ tệp hello chấm cê. Bên trong là văn bản mà người lập trình viết, gọi là mã nguồn. Ta theo dõi một dòng.",
+    "cues": [
+      "Bắt đầu",
+      "văn bản",
+      "một dòng"
+    ]
+  },
+  {
+    "phase": "setup",
+    "title": "Ý ĐỊNH\nCỦA DÒNG LỆNH",
+    "vo": "Dòng được tô màu yêu cầu chương trình in ra chữ Chao ban, rồi xuống dòng. Hãy giữ lại ý định: khi chạy, ta muốn thấy lời chào.",
+    "cues": [
+      "Dòng được tô màu",
+      "in ra",
+      "ý định"
+    ]
+  },
+  {
+    "phase": "setup",
+    "title": "CPU CẦN\nLỆNH MÁY",
+    "vo": "Vấn đề là CPU thực thi lệnh máy, được mã hóa bằng các bit. Nó không trực tiếp lấy câu lệnh C này để làm theo. Hai phía đang dùng hai cách biểu diễn khác nhau.",
+    "cues": [
+      "CPU thực thi",
+      "không trực tiếp",
+      "Hai phía"
+    ]
+  },
+  {
+    "phase": "decode",
+    "title": "COMPILER\nLÀ TRÌNH BIÊN DỊCH",
+    "vo": "Phần mềm đứng ở giữa được gọi là compiler, hay trình biên dịch. Nó đọc mã nguồn, phân tích chương trình, rồi chuyển sang dạng mã cho máy đích.",
+    "cues": [
+      "Phần mềm",
+      "đọc mã nguồn",
+      "chuyển sang"
+    ]
+  },
+  {
+    "phase": "decode",
+    "title": "CÙNG Ý ĐỊNH.\nĐỔI CÁCH BIỂU DIỄN.",
+    "vo": "Có thể hình dung việc này như dịch một bản hướng dẫn sang cách viết mà bên nhận dùng được. Ý định in lời chào được giữ lại, còn cách biểu diễn thay đổi.",
+    "cues": [
+      "dịch một bản",
+      "Ý định",
+      "thay đổi"
+    ]
+  },
+  {
+    "phase": "decode",
+    "title": "ẨN DỤ\nVÀ PHẦN MỀM",
+    "vo": "Bàn chuyển đổi trên hình chỉ là minh họa. Compiler không phải một chiếc máy riêng trong máy tính. Nó cũng là một chương trình, chẳng hạn Clang, chạy trên máy của bạn.",
+    "cues": [
+      "chỉ là minh họa",
+      "không phải",
+      "chẳng hạn Clang"
+    ]
+  },
+  {
+    "phase": "execute",
+    "title": "ĐƯA NGUỒN\nVÀO QUY TRÌNH",
+    "vo": "Bây giờ, ta dùng Clang để tạo chương trình từ tệp hello chấm cê. Công cụ đọc đầu vào và xử lý nó. Sơ đồ gom lại các bước tạo chương trình.",
+    "cues": [
+      "dùng Clang",
+      "đọc đầu vào",
+      "gom lại"
+    ]
+  },
+  {
+    "phase": "execute",
+    "title": "NGUỒN\nVẪN CÒN ĐÓ",
+    "vo": "Lưu ý rằng tệp nguồn không biến mất. Bạn vẫn có thể mở nó để đọc và sửa. Quy trình biên dịch tạo ra một đầu ra khác, chứ không biến tệp C thành một tệp không đọc được.",
+    "cues": [
+      "không biến mất",
+      "đọc và sửa",
+      "đầu ra khác"
+    ]
+  },
+  {
+    "phase": "execute",
+    "title": "MỘT CHƯƠNG TRÌNH\nĐÃ ĐƯỢC TẠO",
+    "vo": "Với ví dụ này, đầu ra là tệp hello có thể chạy trên máy hiện tại. Nó chứa mã máy cùng những phần cần thiết khác. Lời chào vẫn chưa xuất hiện, vì ta mới tạo chương trình.",
+    "cues": [
+      "đầu ra",
+      "chứa mã máy",
+      "chưa xuất hiện"
+    ]
+  },
+  {
+    "phase": "execute",
+    "title": "LỆNH MÁY\nỞ TRONG ĐẦU RA",
+    "vo": "Các ô nhỏ này tượng trưng cho lệnh máy, không phải mã nhị phân thật. Một dòng C cũng không nhất thiết thành đúng một lệnh máy. Điều cần nhớ là CPU có thể thực thi dạng lệnh đó.",
+    "cues": [
+      "tượng trưng",
+      "không nhất thiết",
+      "CPU có thể"
+    ]
+  },
+  {
+    "phase": "verify",
+    "title": "GIỜ MỚI\nCHẠY CHƯƠNG TRÌNH",
+    "vo": "Để thấy kết quả, ta chạy tệp hello vừa tạo. Hệ điều hành đưa chương trình vào hoạt động. Lúc này, CPU mới thực thi các lệnh của chương trình ấy.",
+    "cues": [
+      "chạy tệp hello",
+      "Hệ điều hành",
+      "CPU mới"
+    ]
+  },
+  {
+    "phase": "verify",
+    "title": "TỪ LỆNH\nĐẾN KẾT QUẢ",
+    "vo": "Trong lúc chạy, chương trình thực hiện việc in lời chào qua các chức năng của thư viện và hệ điều hành. Trên màn hình, chữ Chao ban xuất hiện. Đó là kết quả ta đã yêu cầu trong mã nguồn.",
+    "cues": [
+      "Trong lúc chạy",
+      "Trên màn hình",
+      "kết quả"
+    ]
+  },
+  {
+    "phase": "verify",
+    "title": "ĐỐI CHIẾU\nVỚI Ý ĐỊNH BAN ĐẦU",
+    "vo": "Đặt dòng C ban đầu cạnh kết quả vừa chạy: cùng một lời chào. Compiler giúp chuyển cách biểu diễn để chương trình có thể được thực thi; nó không tự chọn nội dung lời chào thay bạn.",
+    "cues": [
+      "Đặt dòng C",
+      "cùng một",
+      "không tự chọn"
+    ]
+  },
+  {
+    "phase": "verify",
+    "title": "HAI KẾT QUẢ\nCẦN PHÂN BIỆT",
+    "vo": "Ta đã nhìn thấy hai kết quả khác nhau. Biên dịch tạo ra chương trình có thể chạy. Chạy chương trình mới làm lời chào xuất hiện.",
+    "cues": [
+      "hai kết quả",
+      "Biên dịch",
+      "Chạy chương trình"
+    ]
+  },
+  {
+    "phase": "rule",
+    "title": "NGUỒN → BIÊN DỊCH\n→ LỆNH MÁY → CPU",
+    "vo": "Hãy nhớ chuỗi vừa đi qua: mã nguồn C, trình biên dịch, mã máy, rồi CPU thực thi. Compiler là chiếc cầu chuyển cách biểu diễn. Còn điều chương trình làm, bắt đầu từ mã nguồn bạn viết.",
+    "cues": [
+      "mã nguồn C",
+      "trình biên dịch",
+      "mã máy",
+      "CPU thực thi",
+      "điều chương trình làm"
+    ]
+  }
+]

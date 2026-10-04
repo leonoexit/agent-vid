@@ -1,0 +1,28 @@
+{
+  "plates": [
+    "hero",
+    "bench",
+    "cpu"
+  ],
+  "evidence": [
+    {
+      "time": 4,
+      "visible": [
+        "hero"
+      ]
+    },
+    {
+      "time": 42,
+      "visible": [
+        "bench"
+      ]
+    },
+    {
+      "time": 104,
+      "visible": [
+        "cpu"
+      ]
+    }
+  ],
+  "basis": "observed visible DOM images at sampled times; same source as final render"
+}

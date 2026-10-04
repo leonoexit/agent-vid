@@ -1,0 +1,21 @@
+AgentVid skill license: AI cho doanh nghiệp · giọng đọc + phụ đề (explainer-ai-for-business-voice)
+
+1. You may use this skill to make videos for yourself, your clients and your business, including paid and commercial videos.
+   Videos you make are yours.
+2. You may not resell, share, re-upload or redistribute the skill (its files, templates, illustrations, scripts), in whole or
+   in part, as a product or for free. One purchase = one person or one company.
+3. Illustrations (mascot, props) are original AgentVid artwork. You may use them inside videos made with this skill, not as
+   stand-alone assets.
+4. Fonts are licensed under the SIL Open Font License 1.1; see licenses/fonts/.
+5. Default music bed (template/assets/audio/bgm-default.m4a): AI-generated instrumental provided for convenience. For paid
+   advertising, use music you hold a licence for (--bgm <file>).
+6. Legal / tax / financial content in the sample scripts is reference information checked on the date shown, not
+   professional advice. You are responsible for checking facts before publishing.
+7. The skill is provided "as is", without warranty. Third-party services (ElevenLabs, Key4u, HyperFrames, Claude, Codex)
+   are governed by their own terms and billing.
+8. Voice: scripts/setup-voice.py downloads VieNeu-TTS (Apache-2.0, github.com/pnnbao97/VieNeu-TTS) and, for skills that read
+   English lines, Kokoro-82M (Apache-2.0) with kokoro-onnx (MIT) to your computer. They are not part of this skill; their own
+   licences apply. Audio they generate on your computer may be used in commercial videos.
+
+Vietnamese summary: Được dùng làm video cá nhân và thương mại; không bán lại hay chia sẻ lại skill; font theo giấy phép OFL; giọng đọc VieNeu/Kokoro (Apache-2.0) tải về máy bạn, âm thanh tạo ra được dùng thương mại;
+nhạc nền mặc định nên thay bằng nhạc có bản quyền khi chạy quảng cáo; nội dung mẫu chỉ để tham khảo.

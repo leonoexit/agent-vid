@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bento Remotion Explainer (Experimental)"
+  short_description: "Test Bento voice explainers with a Remotion renderer"
+  default_prompt: "Use $explainer-bento-remotion-story-voice to explain one programming concept through a small worked example in the Bento style, with Hải Đăng voice and the experimental Remotion renderer."

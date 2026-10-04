@@ -1,0 +1,66 @@
+{
+  "source": "User-supplied think-fast-slow HTML; unchanged copies",
+  "total_slides": 67,
+  "files": [
+    {
+      "file": "think1.html",
+      "original": "references/think-fast-slow/think1.html",
+      "sha256": "ec37a7891d41a2ccf8729365c800632ac86970872bb29895577c66850f367f6f",
+      "bytes": 25247,
+      "lines": 858,
+      "slides": 11,
+      "first": 1,
+      "last": 11
+    },
+    {
+      "file": "think2.html",
+      "original": "references/think-fast-slow/think2.html",
+      "sha256": "b4f6c755c390fde298102298bb927fe0fb4bd0adae9e283996a8434103d313c7",
+      "bytes": 25911,
+      "lines": 526,
+      "slides": 12,
+      "first": 12,
+      "last": 23
+    },
+    {
+      "file": "think3.html",
+      "original": "references/think-fast-slow/think3.html",
+      "sha256": "c436672ef178a15cd9a314254206479860e0ddadb28cb950ec3fa08a3d260d24",
+      "bytes": 22906,
+      "lines": 503,
+      "slides": 12,
+      "first": 24,
+      "last": 35
+    },
+    {
+      "file": "think4.html",
+      "original": "references/think-fast-slow/think4.html",
+      "sha256": "e04f14b4044226a05b4390cf7dd0932f8a60a0765a1844812cff4e8d14d6da74",
+      "bytes": 24597,
+      "lines": 537,
+      "slides": 12,
+      "first": 36,
+      "last": 47
+    },
+    {
+      "file": "think5.html",
+      "original": "references/think-fast-slow/think5.html",
+      "sha256": "f8af525990dca3743d8527f0a26cd51573e2ef4321d05216c710c13019747c61",
+      "bytes": 21040,
+      "lines": 460,
+      "slides": 10,
+      "first": 48,
+      "last": 57
+    },
+    {
+      "file": "think6.html",
+      "original": "references/think-fast-slow/think6.html",
+      "sha256": "145a29c22a62a69463a725441f6063a1255a3b6e78cfb24efb71b639020db3a9",
+      "bytes": 19633,
+      "lines": 437,
+      "slides": 10,
+      "first": 58,
+      "last": 67
+    }
+  ]
+}

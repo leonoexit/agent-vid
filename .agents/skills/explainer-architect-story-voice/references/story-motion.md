@@ -1,0 +1,89 @@
+# A spoken beat changes what the viewer sees
+
+Follow narrative-framework.md first: question → setup → decode → execute → verify → rule.
+Plan that trace at three scales: idea, shot, beat. A 60-second first draft often needs 12–18 shots,
+not five headings over long voice paragraphs. A shot usually carries one short claim in 3–6 seconds. A beat is a
+meaningful reveal, attention shift, operation or consequence inside that shot; 2–4 is a useful planning range.
+Timing follows the synthesized speech and code-reading load. The goal is connected discovery, not frantic cutting.
+
+## Phrase-to-picture score
+
+Use these columns in storyboard.md:
+
+| Shot / beat | Spoken phrase | Visible before | Reveal or action | Visible afterward | Asset / focus |
+| --- | --- | --- | --- | --- | --- |
+| Initial state | “create a variable” | Empty stage | Show the x card, hide its future fields | Label x | Topic-specific context, if needed |
+| Initial value | “starts at ten” | x label | Reveal value 10 and declaration line | x = 10 | Native x is primary |
+| Copy | “read the value of x” | x = 10, y not assigned | Highlight source, reveal assignment | x remains 10 | Native x is primary |
+| Copy result | “store that value in y” | Known source and destination | Move token and commit on arrival | y = 10 | Destination/result is primary |
+| Separate update | “now x becomes twenty” | x = y = 10 | Reveal update line, write x = 20 | x = 20, y = 10 | Shift primary focus x → y |
+
+A storyboard row without a visible change needs an editorial reason. A result sentence opens when the result
+becomes true on screen. Do not reveal it in a headline, subtitle, code line or decorative sign beforehand.
+For prediction, hide the answer and name a brief reading/thinking job. Use readTask plus a documented quiet interval.
+
+## Choreography
+
+- Establish: introduce objects in the order named, then expose their relevant fields. Do not show all future labels.
+- Anticipate: use focus or spotlight on the source/instruction shortly before acting.
+- Operate: open, transfer, write, connect or move on the corresponding action phrase. A token usually needs
+  0.8–1.3 seconds. Start early enough that arrival agrees with the narrated result; never commit after the scene cut.
+- Resolve: commit at arrival, reveal the result explanation, retain the new state for the next shot.
+- Reframe: when the question changes, change the model view or grouping if it helps reveal the next relationship.
+  A changed heading or spotlight alone is an attention cue, not a new model composition. Native object
+  identity survives the cut. Do not replay every object's entrance or dissolve the whole diagram on every sentence.
+
+Vary shot jobs: overview → detail → code build → operation → comparison → prediction/payoff → recap.
+These are shot treatments inside the fixed narrative phases; choose them to serve each phase, not as a separate story order. A section with
+several substantial clauses needs more shot boundaries or staged reveals, not faster narration.
+
+The renderer supplies progressive fields, text alternatives, line-by-line code, code focus, native motion and
+cued stickers. Camera zoom, nested charts and arbitrary group transformations require a project-specific extension;
+do not claim they exist. Keep all operations on native geometry. Transfer copies by default: source data stays until
+an explicit set changes it. An address stays unchanged when a pointer writes the stored value.
+
+## Supporting art
+
+Choose native geometry or a coherent local icon family for simple objects. Generated images are optional and
+serve only as abstract backgrounds in new productions; do not assign an image to each narrative phase. See SKILL.md's medium
+selection and composition-grammar.md. Use a justified image only while its role is active. Decorative motion and
+new artwork do not count as explanatory motion.
+
+## Review on the real clock
+
+Run motion_audit.py after sync. Review intervals longer than 3 seconds without a semantic change and shots over
+8 seconds. The report separates content disclosures from model changes; captions, pulses and attention shifts do not
+count as model operations. Read both sets of intervals and inspect consecutive text/attention-only scenes. Some stillness is valuable for reading unfamiliar
+code: preserve it with a named readTask. Otherwise shorten, split or stage the next real fact.
+A high beat count does not prove quality: watch a preview with sound, then muted. In both cases the focus and causal
+sequence should be clear. Review image safe zones, action start/middle/end, unseen future answers and reverse seeks.
+Word estimates are not alignment guarantees. Listen at key cues and move/rewrite the clause if action and speech
+arrive apart. Keep connected vo across cuts, default hold 0, and reduce wording before increasing speed.
+
+Review several adjacent shots muted, with captions and subtitle layers hidden. Can the model show what was
+created, selected, related or changed? If not, fix that operation before adding text or increasing shot count.
+The script audit cannot measure a custom renderer's layout, camera or native SVG changes; inspect those explicitly.
+
+
+## Custom renderer: do not waive the inherited review
+
+When stock JSON events are empty, export the real authored timeline into JSON:
+
+```json
+{"ops":[{"id":"discount-line","start":65.36,"end":66.21,"kind":"model","job":"apply proposed discount patch to Calculator; previous result becomes unknown until rerun"}]}
+```
+
+Kinds are `model`, `reframe`, `disclosure`, `attention`, `chrome`. Model means an actual creation/grouping,
+relationship, input/operation/output or state change. Writing a filename, title, phase tag or unchanged-value
+annotation is a disclosure even though implemented with the same GSAP setter as a state commit. A reframe can
+help inspect a model but cannot conceal the absence of an operation. Record semantic geometry changes as model
+only when ownership/relationship actually changes; explain that in the phrase score.
+
+Run `motion_audit.py --project <dir> --custom-operations <manifest.json>`. It merges overlapping model spans and
+reports global gaps, including across scene boundaries; it excludes all other kinds. The manifest is self-declared,
+so the report is a review aid, never proof. Inspect the actual start/mid/end frames and the causal clause. Small
+scene durations and many concurrent tweens must not disguise the same diagram sitting still.
+
+The first SRP trial's 61 mixed operations and clean layout/contrast report did not establish dynamism. The repair
+uses local source patches, code-strip extraction, arithmetic segments and printed-output changes. Some named
+reading intervals remain. Do not add a pulse or force the gap count to zero to make a report look successful.

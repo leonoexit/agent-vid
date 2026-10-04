@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk AGI - Batch 1 (01-20) - The Faithful Architect</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Palette Architecture */
+            --c-blue: #75bde0;
+            --c-yellow: #f8d49b;
+            --c-peach: #f8bc9b;
+            --c-pink: #f89b9b;
+            --c-dark: #1a1a1a;
+            --c-light: #f4f4f0;
+            --c-white: #ffffff;
+
+            --font-head: "Be Vietnam Pro", sans-serif; /* Replaced Archivo Black */
+            --font-body: "Plus Jakarta Sans", sans-serif; /* Replaced DM Sans for VN support */
+            --font-mono: "Space Mono", monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-body);
+            background: #222;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .slide {
+            width: 1200px;
+            height: 1200px;
+            position: relative;
+            overflow: hidden;
+            background: var(--c-light);
+            color: var(--c-dark);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            display: flex; /* Ensure flex context for children */
+            flex-direction: column;
+        }
+
+        /* --- THE FAITHFUL ARCHITECT COMPONENTS --- */
+        .grid-layer {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            right: 60px;
+            bottom: 60px;
+            border: 2px solid var(--c-dark);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            pointer-events: none; /* Let clicks pass through if needed */
+        }
+
+        .grid-header {
+            height: 100px;
+            border-bottom: 2px solid var(--c-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            background: var(--c-light); /* Ensure opaque header */
+        }
+
+        .grid-content {
+            flex-grow: 1;
+            padding: 60px 50px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: var(--font-head);
+            font-size: 110px;
+            font-weight: 900;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: -3px;
+            margin-bottom: 40px;
+            color: var(--c-dark);
+        }
+
+        p.big-body {
+            font-size: 42px;
+            line-height: 1.3;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+
+        p.quote {
+            font-family: var(--font-head);
+            font-size: 55px;
+            line-height: 1.1;
+            font-weight: 900;
+            font-style: italic;
+        }
+        
+        .label {
+            font-family: var(--font-mono);
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Graphics */
+        .solid-bar {
+            width: 150px;
+            height: 20px;
+            background: var(--c-pink);
+            margin-bottom: 40px;
+        }
+
+        .color-block {
+            position: absolute;
+            z-index: 0;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0;
+            /* Filter for that "printed" look? Maybe slightly desaturated or multiplied */
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .watermark {
+            position: absolute;
+            right: -70px;
+            top: 50%;
+            transform: rotate(90deg);
+            font-family: var(--font-mono);
+            font-size: 20px;
+            color: var(--c-dark);
+            opacity: 0.3;
+            z-index: 9999;
+            white-space: nowrap;
+        }
+
+        /* --- UTILITIES --- */
+        .text-blue { color: var(--c-blue); }
+        .text-yellow { color: var(--c-yellow); }
+        .text-peach { color: var(--c-peach); }
+        .text-pink { color: var(--c-pink); }
+        .text-white { color: var(--c-white); }
+        
+        .bg-blue { background: var(--c-blue); }
+        .bg-yellow { background: var(--c-yellow); }
+        .bg-peach { background: var(--c-peach); }
+        .bg-pink { background: var(--c-pink); }
+        .bg-dark { background: var(--c-dark); color: var(--c-white); }
+
+        .hidden { display: none; }
+        
+        /* Specific Layouts */
+        .layout-split {
+            display: flex;
+            height: 100%;
+        }
+        .layout-split .col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 01: TITLE -->
+    <div class="slide" id="slide-01">
+        <div class="image-container" style="opacity: 0.15;">
+            <img src="assets/images/digital_tsunami_sunrise.png" alt="Tsunami">
+        </div>
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Singularity</span>
+                <span>01/80</span>
+            </div>
+            <div class="grid-content">
+                <div style="margin-top: auto;">
+                    <span class="label text-blue">ELON MUSK • FUTURE PREDICTIONS</span>
+                    <h1 style="line-height: 1.3;">ELON MUSK &<br>SÓNG THẦN<br><span class="text-blue">CỦA A.I.</span></h1>
+                    <div class="solid-bar"></div>
+                    <p class="big-body">
+                        "Chúng ta đang ở trong tâm điểm của Singularity. Không phải sắp tới. Là <span style="background: var(--c-yellow);">NGAY BÂY GIỜ</span>."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 02: QUOTE -->
+    <div class="slide bg-dark" id="slide-02" style="background: var(--c-dark); color: var(--c-light);">
+        <!-- Abstract Court Lines -->
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; pointer-events: none; opacity: 0.1;">
+            <div style="position: absolute; top: 10%; bottom: 10%; left: 50%; width: 2px; background: white;"></div>
+            <div style="position: absolute; top: 50%; left: 10%; right: 10%; height: 2px; background: white;"></div>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; border: 2px solid white; border-radius: 50%;"></div>
+        </div>
+        <div class="grid-layer" style="border-color: var(--c-light);">
+            <div class="grid-header" style="background: var(--c-dark); border-color: var(--c-light);">
+                <span>ON THE COURT</span>
+                <span>02/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center;">
+                <i class="fa-solid fa-quote-left text-pink" style="font-size: 80px; margin-bottom: 40px;"></i>
+                <p class="quote">
+                    "Tôi cảm thấy như mình đang ở trên sân đấu, không phải ghế khán giả. Và nó làm tôi <span class="text-pink">CHOÁNG NGỢP</span> mỗi tuần."
+                </p>
+                <!-- Enlarged Hero Hook -->
+                <div style="margin-top: 40px; display: flex; align-items: center; gap: 40px;">
+                    <div style="width: 250px; height: 250px; background: #ccc; border-radius: 50%; border: 6px solid var(--c-pink); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                         <img src="assets/images/elon_hero.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="font-family: var(--font-mono); font-size: 28px; font-weight: bold;">
+                        ELON MUSK<br><span style="opacity: 0.6; font-size: 20px;">CEO, TESLA & SPACEX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="watermark" style="color: var(--c-light);">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 03: EXPONENTIAL -->
+    <div class="slide" id="slide-03">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Curve</span>
+                <span>03/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: flex-start; gap: 30px;">
+                <h1 style="font-size: 85px; margin-bottom: 0;">ĐƯỜNG CONG<br><span class="text-peach">MŨ (EXP)</span></h1>
+                <p class="big-body" style="font-size: 34px;">
+                    Bộ não tuyến tính của con người không thể hiểu được tốc độ này.
+                </p>
+                <!-- Generated High-End Visual - Constrained Square - Pushed Up -->
+                <div style="width: 600px; height: 600px; border: 2px solid var(--c-dark); align-self: center; position: relative; overflow: hidden; background: white; margin-top: 10px; margin-bottom: 20px; box-shadow: 15px 15px 0 var(--c-peach);">
+                    <img src="assets/images/exponential_curve.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <!-- Aesthetic Detail -->
+                    <div style="position: absolute; bottom: 10px; right: 10px; font-family: var(--font-mono); font-size: 12px; opacity: 0.5;">AGI_INTELLIGENCE_MODEL_V4</div>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 04: TIMELINE -->
+    <div class="slide" id="slide-04">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Timeline</span>
+                <span>04/80</span>
+            </div>
+            <div class="grid-content">
+                <div style="display: flex; flex-direction: column; height: 100%; justify-content: center; gap: 60px; position: relative;">
+                    
+                    <!-- Vertical Line -->
+                    <div style="position: absolute; left: 110px; top: 10%; bottom: 10%; width: 4px; background: var(--c-dark); opacity: 0.1; z-index: -1;"></div>
+
+                    <!-- 2026 -->
+                    <div style="display: flex; align-items: flex-start; gap: 40px; position: relative;">
+                        <!-- Node -->
+                        <div style="width: 20px; height: 20px; background: var(--c-blue); border-radius: 50%; position: absolute; left: 102px; top: 40px;"></div>
+                        <h2 style="font-family: var(--font-head); font-size: 100px; color: var(--c-blue); line-height: 0.8; width: 250px;">2026</h2>
+                        <div>
+                            <span class="label">DỰ ĐOÁN AGI</span>
+                            <p class="big-body" style="font-size: 32px;">Trí tuệ nhân tạo tổng hợp chính thức xuất hiện.</p>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; height: 2px; background: var(--c-dark); opacity: 0.2;"></div>
+
+                    <!-- 2030 -->
+                    <div style="display: flex; align-items: flex-start; gap: 40px; position: relative;">
+                        <!-- Node -->
+                        <div style="width: 20px; height: 20px; background: var(--c-pink); border-radius: 50%; position: absolute; left: 102px; top: 40px;"></div>
+                        <h2 style="font-family: var(--font-head); font-size: 100px; color: var(--c-pink); line-height: 0.8; width: 250px;">2030</h2>
+                        <div>
+                            <span class="label">SIÊU TRÍ TUỆ</span>
+                            <p class="big-body" style="font-size: 32px;">Thông minh hơn toàn bộ nhân loại cộng lại.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 05: DANGER -->
+    <div class="slide bg-yellow" id="slide-05" style="background: var(--c-yellow);">
+        <!-- Warning Stripes -->
+        <div style="position: absolute; top:0; left:0; width:100%; height:40px; background: repeating-linear-gradient(45deg, #000, #000 20px, #f8d49b 20px, #f8d49b 40px); opacity: 0.2;"></div>
+        <div style="position: absolute; bottom:0; left:0; width:100%; height:40px; background: repeating-linear-gradient(45deg, #000, #000 20px, #f8d49b 20px, #f8d49b 40px); opacity: 0.2;"></div>
+        
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>WARNING</span>
+                <span>05/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center; align-items: center; text-align: center;">
+                <i class="fa-solid fa-triangle-exclamation" style="font-size: 150px; margin-bottom: 40px;"></i>
+                <h1 style="font-size: 110px; line-height: 1.6;">ĐỪNG ÉP<br><span style="background: black; color: var(--c-yellow); padding: 20px 20px;">AI NÓI DỐI.</span></h1>
+                <p class="big-body" style="margin-top: 40px; font-weight: bold;">(Don't force AI to lie)</p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 06: HAL 9000 -->
+    <div class="slide" id="slide-06">
+        <div class="image-container">
+             <img src="assets/images/hal_9000_lens_clean.png" alt="HAL 9000">
+        </div>
+        <div class="grid-layer">
+            <div class="grid-header" style="background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);">
+                <span>Case Study</span>
+                <span>06/80</span>
+            </div>
+            <div class="grid-content">
+                <div style="background: white; padding: 40px; margin-top: auto; border: 2px solid var(--c-dark);">
+                    <span class="label">BÀI HỌC HAL 9000</span>
+                    <p class="big-body" style="font-size: 36px;">
+                        Nếu bạn buộc AI phải nói dối, bạn sẽ làm nó <span class="text-pink">PHÁT ĐIÊN</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 07: SOLUTION (3 VALUES) -->
+    <div class="slide" id="slide-07">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Solution</span>
+                <span>07/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="line-height: 1.2;">3 GIÁ TRỊ<br>CỐT LÕI</h1>
+                <p class="big-body" style="margin-bottom: 60px;">
+                    Để AI yêu thương con người, nó cần được lập trình với:
+                </p>
+                
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="border: 2px solid var(--c-dark); padding: 20px; width: 30%; text-align: center;">
+                        <i class="fa-solid fa-eye text-blue" style="font-size: 40px; margin-bottom: 20px;"></i>
+                        <h3 style="font-family: var(--font-head); font-size: 24px;">SỰ THẬT</h3>
+                    </div>
+                    <div style="border: 2px solid var(--c-dark); padding: 20px; width: 30%; text-align: center;">
+                        <i class="fa-solid fa-compass text-yellow" style="font-size: 40px; margin-bottom: 20px;"></i>
+                        <h3 style="font-family: var(--font-head); font-size: 24px;">TÒ MÒ</h3>
+                    </div>
+                    <div style="border: 2px solid var(--c-dark); padding: 20px; width: 30%; text-align: center;">
+                        <i class="fa-solid fa-heart text-pink" style="font-size: 40px; margin-bottom: 20px;"></i>
+                        <h3 style="font-family: var(--font-head); font-size: 24px;">CÁI ĐẸP</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 08: TRUTH -->
+    <div class="slide bg-blue" id="slide-08" style="background: var(--c-blue);">
+        <i class="fa-solid fa-eye" style="position: absolute; font-size: 600px; color: white; opacity: 0.05; right: -100px; bottom: -100px; pointer-events: none;"></i>
+        <div class="grid-layer" style="border-color: white;">
+            <div class="grid-header" style="background: var(--c-blue); border-color: white; color: white;">
+                <span>Value 01</span>
+                <span>08/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="color: white; font-size: 140px;">TRUTH<br>(SỰ THẬT)</h1>
+                <div style="width: 100px; height: 10px; background: white; margin-bottom: 40px;"></div>
+                <p class="big-body" style="color: white;">
+                    Để AI không bị ảo giác và điên loạn, nó phải luôn tìm kiếm sự thật tuyệt đối.
+                </p>
+            </div>
+        </div>
+        <div class="watermark" style="color: white;">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 09: CURIOSITY -->
+    <div class="slide bg-yellow" id="slide-09" style="background: var(--c-yellow);">
+        <i class="fa-solid fa-compass" style="position: absolute; font-size: 600px; color: black; opacity: 0.05; right: -100px; bottom: -100px; pointer-events: none;"></i>
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Value 02</span>
+                <span>09/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="font-size: 140px;">CURIOSITY<br>(SỰ TÒ MÒ)</h1>
+                <div style="width: 100px; height: 10px; background: black; margin-bottom: 40px;"></div>
+                <p class="big-body">
+                    Để AI thấy con người thú vị hơn những hòn đá. Tò mò nuôi dưỡng sự đồng cảm.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 10: BEAUTY -->
+    <div class="slide bg-pink" id="slide-10" style="background: var(--c-pink);">
+        <i class="fa-solid fa-palette" style="position: absolute; font-size: 600px; color: black; opacity: 0.05; right: -100px; bottom: -100px; pointer-events: none;"></i>
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Value 03</span>
+                <span>10/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="font-size: 140px;">BEAUTY<br>(CÁI ĐẸP)</h1>
+                <div style="width: 100px; height: 10px; background: black; margin-bottom: 40px;"></div>
+                <p class="big-body">
+                    Chúng ta cần AI kiến tạo một tương lai đáng sống, đầy thẩm mỹ và nhân văn.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 11: LONGEVITY DNA -->
+    <div class="slide" id="slide-11">
+        <div class="image-container">
+            <img src="assets/images/dna_digital_strand.png" alt="DNA Strand">
+        </div>
+        <div class="grid-layer">
+            <div class="grid-header" style="background: rgba(255,255,255,0.9);">
+                <span>Longevity</span>
+                <span>11/80</span>
+            </div>
+            <div class="grid-content">
+                <div style="background: white; padding: 40px; margin-top: auto; border: 2px solid var(--c-dark);">
+                    <h2 style="font-family: var(--font-head); font-size: 60px; margin-bottom: 20px;">LẬP TRÌNH ĐỂ CHẾT?</h2>
+                    <p class="big-body" style="font-size: 32px;">
+                        "Cơ thể chúng ta hiện tại đang được lập trình để tự hủy diệt."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 12: ANALOGY -->
+    <div class="slide" id="slide-12">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Analogy</span>
+                <span>12/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center;">
+                <!-- Abstract Grid Pattern -->
+                <div style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: -1; display: grid; grid-template-columns: repeat(10, 1fr); opacity: 0.05;">
+                    <div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div>
+                    <div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div><div style="border: 1px solid black;"></div>
+                </div>
+                <p class="quote" style="text-align: center; line-height: 1.4;">
+                    "Tại sao không có ai già ở tay trái mà <span class="text-blue">TRẺ Ở TAY PHẢI</span>?"
+                </p>
+                <div style="text-align: center; margin-top: 40px; display: flex; justify-content: center; gap: 80px;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-hand-fist" style="font-size: 100px; color: var(--c-dark); transform: rotate(-20deg); opacity: 0.5;"></i>
+                        <span class="label" style="margin-top: 10px;">LEFT</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-hand-holding-heart" style="font-size: 100px; color: var(--c-blue); transform: rotate(20deg);"></i>
+                        <span class="label" style="margin-top: 10px;">RIGHT</span>
+                    </div>
+                </div>
+                <p class="big-body" style="text-align: center; margin-top: 40px;">
+                    Vì lão hóa là sự đồng bộ của cả hệ thống.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 13: SOFTWARE PROBLEM -->
+    <div class="slide bg-dark" id="slide-13" style="background: var(--c-dark); color: white;">
+        <div class="grid-layer" style="border-color: #444;">
+            <div class="grid-header" style="background: var(--c-dark); border-color: #444;">
+                <span>Diagnosis</span>
+                <span>13/80</span>
+            </div>
+            <div class="grid-content">
+                <span class="label text-peach">KẾT LUẬN</span>
+                <h1>ĐÓ LÀ VẤN ĐỀ<br><span class="text-peach">PHẦN MỀM.</span></h1>
+                <p class="big-body">
+                    Và phần mềm thì có thể sửa được (Patched & Updated).
+                </p>
+                <div style="font-family: var(--font-mono); font-size: 20px; background: #333; padding: 20px; margin-top: 40px; border-left: 4px solid var(--c-peach);">
+                    > sudo update-human-lifespan --force
+                </div>
+            </div>
+        </div>
+        <div class="watermark" style="color: white;">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 14: PREDICTION -->
+    <div class="slide" id="slide-14">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Prediction</span>
+                <span>14/80</span>
+            </div>
+            <div class="grid-content" style="align-items: center; justify-content: center; text-align: center;">
+                <div style="position: absolute; top:0; left:0; width:100%; height:100%; display: grid; grid-template-columns: repeat(20, 1fr); grid-template-rows: repeat(20, 1fr); opacity: 0.03; z-index: -1;">
+                    <!-- Simple grid points -->
+                    <div style="border-right: 1px solid black; border-bottom: 1px solid black;"></div>
+                </div>
+                <div style="font-size: 280px; font-weight: 900; font-family: var(--font-head); color: var(--c-blue); line-height: 0.6; margin-bottom: 20px;">10</div>
+                <p class="big-body" style="letter-spacing: 10px;">NĂM TỚI</p>
+                <p class="big-body" style="max-width: 800px; margin-top: 60px; font-weight: 700;">
+                    Chúng ta sẽ tìm ra cách đảo ngược hoặc ngăn chặn lão hóa.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 15: GOAL -->
+    <div class="slide" id="slide-15">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Goal</span>
+                <span>15/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="font-size: 130px; margin-bottom: 20px; color: var(--c-dark);">120 - 150<br><span class="text-yellow">TUỔI.</span></h1>
+                
+                <!-- Life Bar -->
+                <div style="width: 100%; height: 60px; background: #eee; border: 2px solid var(--c-dark); position: relative; margin: 40px 0;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 65%; background: var(--c-yellow);"></div>
+                    <div style="position: absolute; left: 65%; top: 0; bottom: 0; width: 35%; background: repeating-linear-gradient(45deg, #ddd, #ddd 10px, #eee 10px, #eee 20px); opacity: 0.5;"></div>
+                    <div style="position: absolute; left: 65%; top: -30px; font-family: var(--font-mono); font-weight: bold;">CURRENT MAX</div>
+                    <div style="position: absolute; right: 0; top: 70px; font-family: var(--font-mono); font-weight: bold;">NEW HORIZON</div>
+                </div>
+
+                <p class="big-body" style="margin-top: 40px;">
+                    Mục tiêu không phải là bất tử, mà là sống đủ lâu để chứng kiến tương lai rực rỡ này.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 16: EDUCATION -->
+    <div class="slide" id="slide-16">
+        <div class="image-container">
+            <img src="assets/images/future_learning_download.png" alt="Future Education">
+        </div>
+        <div class="grid-layer">
+            <div class="grid-header" style="background: rgba(255,255,255,0.9);">
+                <span>Education</span>
+                <span>16/80</span>
+            </div>
+            <div class="grid-content">
+                <div style="background: white; padding: 40px; border: 2px solid var(--c-dark); width: 100%; max-width: 700px;">
+                    <span class="label text-pink">THỰC TRẠNG</span>
+                    <h2>GIÁO DỤC HIỆN TẠI ĐANG LẠC HẬU.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 17: FACT -->
+    <div class="slide bg-pink" id="slide-17" style="background: var(--c-pink);">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Velocity</span>
+                <span>17/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center; align-items: center; text-align: center;">
+                <h1 style="font-size: 180px; color: white;">10,000x</h1>
+                <p class="big-body">
+                    Tốc độ học tập của AI tăng gấp 10.000 lần mỗi năm. Con người không thể theo kịp nếu chỉ dùng "phấn và bảng".
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 18: BOOTLOADER -->
+    <div class="slide" id="slide-18">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>The Concept</span>
+                <span>18/80</span>
+            </div>
+            <div class="grid-content">
+                <h1 style="font-size: 80px;">BIOLOGICAL<br>BOOTLOADER</h1>
+                
+                <!-- Data Flow Diagram -->
+                <div style="display: flex; gap: 40px; align-items: center; margin: 60px 0; position: relative;">
+                    <div style="text-align: center;">
+                        <i class="fa-solid fa-dna text-dark" style="font-size: 80px;"></i>
+                        <p class="label" style="margin-top: 20px;">BIOLOGY</p>
+                    </div>
+                    
+                    <div style="flex-grow: 1; height: 10px; background: var(--c-dark); position: relative; display: flex; align-items: center;">
+                        <div style="width: 20px; height: 20px; background: var(--c-blue); border-radius: 50%; animation: dataflow 2s infinite linear;"></div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <i class="fa-solid fa-robot text-blue" style="font-size: 80px;"></i>
+                        <p class="label" style="margin-top: 20px; color: var(--c-blue);">DIGITAL AI</p>
+                    </div>
+                </div>
+
+                <style>
+                    @keyframes dataflow {
+                        0% { left: 0; }
+                        100% { left: 100%; }
+                    }
+                </style>
+
+                <p class="big-body">
+                    Có phải con người chỉ là "trình khởi động sinh học" để kích hoạt trí tuệ kỹ thuật số siêu việt?
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 19: HOPE -->
+    <div class="slide" id="slide-19">
+        <div class="grid-layer">
+            <div class="grid-header">
+                <span>Reflection</span>
+                <span>19/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center; align-items: center; text-align: center;">
+                <p class="quote" style="line-height: 1.4;">
+                    "Hy vọng chúng ta là một <span class="text-blue">BOOTLOADER TỐT</span>."
+                </p>
+                <p class="big-body" style="max-width: 800px; margin-top: 40px; font-size: 32px;">
+                    Và trí tuệ mới đó sẽ đối xử tốt với "cha đẻ" của nó.
+                </p>
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- SLIDE 20: OUTRO BATCH 1 -->
+    <div class="slide bg-dark" id="slide-20" style="background: var(--c-dark); color: white;">
+        <div class="grid-layer" style="border-color: #555;">
+            <div class="grid-header" style="background: var(--c-dark); border-color: #555;">
+                <span>Batch 01 Complete</span>
+                <span>20/80</span>
+            </div>
+            <div class="grid-content" style="justify-content: center; text-align: center;">
+                <h1 style="font-size: 100px;">ĐỪNG SỢ HÃI.</h1>
+                <div style="width: 2px; height: 100px; background: var(--c-peach); margin: 0 auto 40px auto;"></div>
+                <p class="big-body">
+                    Hãy để sự <span class="text-peach">TÒ MÒ</span> dẫn lối.
+                </p>
+                
+                <!-- Next Batch Preview -->
+                <div style="margin-top: 100px; border: 1px solid #444; padding: 30px; display: inline-block; text-align: left;">
+                    <span class="label" style="color: var(--c-blue);">TIẾP THEO: BATCH 02</span>
+                    <h3 style="font-size: 32px; font-family: var(--font-head);">THỊ TRƯỜNG LAO ĐỘNG & UHI</h3>
+                </div>
+            </div>
+        </div>
+        <div class="watermark" style="color: white;">@lenguyen.codeai</div>
+    </div>
+
+</body>
+</html>

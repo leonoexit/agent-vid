@@ -1,0 +1,237 @@
+{
+  "timingBasis": "custom rendered timeline export",
+  "thresholdSeconds": 3.0,
+  "globalModelStillIntervals": [
+    [
+      0.0,
+      15.79
+    ],
+    [
+      16.49,
+      24.93
+    ],
+    [
+      25.63,
+      33.89
+    ],
+    [
+      34.89,
+      44.73
+    ],
+    [
+      45.43,
+      58.29
+    ],
+    [
+      60.19,
+      68.29
+    ],
+    [
+      69.29,
+      75.51
+    ],
+    [
+      76.76,
+      85.17
+    ],
+    [
+      85.87,
+      93.11
+    ],
+    [
+      99.09,
+      102.46
+    ],
+    [
+      103.41,
+      109.79
+    ],
+    [
+      110.49,
+      121.33
+    ],
+    [
+      122.03,
+      125.91
+    ],
+    [
+      128.09,
+      133.6
+    ]
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "modelStillIntervals": [
+        [
+          0.0,
+          7.62
+        ]
+      ]
+    },
+    {
+      "id": "scene-1",
+      "modelStillIntervals": [
+        [
+          7.62,
+          14.12
+        ]
+      ]
+    },
+    {
+      "id": "scene-2",
+      "modelStillIntervals": [
+        [
+          16.49,
+          21.02
+        ]
+      ]
+    },
+    {
+      "id": "scene-3",
+      "modelStillIntervals": [
+        [
+          21.02,
+          24.93
+        ],
+        [
+          25.63,
+          29.92
+        ]
+      ]
+    },
+    {
+      "id": "scene-4",
+      "modelStillIntervals": [
+        [
+          29.92,
+          33.89
+        ]
+      ]
+    },
+    {
+      "id": "scene-5",
+      "modelStillIntervals": [
+        [
+          37.86,
+          44.73
+        ]
+      ]
+    },
+    {
+      "id": "scene-6",
+      "modelStillIntervals": [
+        [
+          45.64,
+          54.3
+        ]
+      ]
+    },
+    {
+      "id": "scene-7",
+      "modelStillIntervals": [
+        [
+          54.3,
+          58.29
+        ]
+      ]
+    },
+    {
+      "id": "scene-8",
+      "modelStillIntervals": [
+        [
+          62.4,
+          68.29
+        ]
+      ]
+    },
+    {
+      "id": "scene-9",
+      "modelStillIntervals": [
+        [
+          71.62,
+          75.51
+        ],
+        [
+          76.76,
+          80.68
+        ]
+      ]
+    },
+    {
+      "id": "scene-10",
+      "modelStillIntervals": [
+        [
+          80.68,
+          85.17
+        ],
+        [
+          85.87,
+          90.22
+        ]
+      ]
+    },
+    {
+      "id": "scene-11",
+      "modelStillIntervals": []
+    },
+    {
+      "id": "scene-12",
+      "modelStillIntervals": [
+        [
+          99.09,
+          102.46
+        ],
+        [
+          103.41,
+          107.62
+        ]
+      ]
+    },
+    {
+      "id": "scene-13",
+      "modelStillIntervals": [
+        [
+          110.49,
+          116.76
+        ]
+      ]
+    },
+    {
+      "id": "scene-14",
+      "modelStillIntervals": [
+        [
+          116.76,
+          121.33
+        ]
+      ]
+    },
+    {
+      "id": "outro",
+      "modelStillIntervals": [
+        [
+          128.09,
+          133.6
+        ]
+      ]
+    }
+  ],
+  "warnings": [
+    "0.00–15.79s: no declared model operation for 15.79s; inspect the spoken clause, reading task and actual pixels.",
+    "16.49–24.93s: no declared model operation for 8.44s; inspect the spoken clause, reading task and actual pixels.",
+    "25.63–33.89s: no declared model operation for 8.26s; inspect the spoken clause, reading task and actual pixels.",
+    "34.89–44.73s: no declared model operation for 9.84s; inspect the spoken clause, reading task and actual pixels.",
+    "45.43–58.29s: no declared model operation for 12.86s; inspect the spoken clause, reading task and actual pixels.",
+    "60.19–68.29s: no declared model operation for 8.10s; inspect the spoken clause, reading task and actual pixels.",
+    "69.29–75.51s: no declared model operation for 6.22s; inspect the spoken clause, reading task and actual pixels.",
+    "76.76–85.17s: no declared model operation for 8.41s; inspect the spoken clause, reading task and actual pixels.",
+    "85.87–93.11s: no declared model operation for 7.24s; inspect the spoken clause, reading task and actual pixels.",
+    "99.09–102.46s: no declared model operation for 3.37s; inspect the spoken clause, reading task and actual pixels.",
+    "103.41–109.79s: no declared model operation for 6.38s; inspect the spoken clause, reading task and actual pixels.",
+    "110.49–121.33s: no declared model operation for 10.84s; inspect the spoken clause, reading task and actual pixels.",
+    "122.03–125.91s: no declared model operation for 3.88s; inspect the spoken clause, reading task and actual pixels.",
+    "128.09–133.60s: no declared model operation for 5.51s; inspect the spoken clause, reading task and actual pixels."
+  ],
+  "visualReviewRequired": true,
+  "limitations": "Self-declared model spans are not visual certification. Reframes, title/label writes, fades, captions and focus do not clear gaps. Review grouping/transfer/state changes against the actual model; inspect reading intervals rather than padding operations."
+}

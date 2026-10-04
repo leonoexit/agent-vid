@@ -1,0 +1,3567 @@
+[
+  {
+    "id": "intro",
+    "expected": "Bạn vừa viết một chương trình C để in lời chào. Nhưng CPU không đọc tiếng C như chúng ta. Vậy ai nối những dòng chữ này với phần cứng?",
+    "heard": "bạn vừa viết một chương trình C để yên lời chào nhưng CPU không đọc kiếng C như chúng ta. Vậy ai nối những dòng chữ này với phần cứng?",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.56,
+        "text": " bạn vừa viết một chương trình C để yên lời chào nhưng CPU không đọc kiếng C như chúng ta.",
+        "words": [
+          {
+            "word": " bạn",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.3570730984210968
+          },
+          {
+            "word": " vừa",
+            "start": 0.22,
+            "end": 0.38,
+            "probability": 0.6753156781196594
+          },
+          {
+            "word": " viết",
+            "start": 0.38,
+            "end": 0.54,
+            "probability": 0.9624448716640472
+          },
+          {
+            "word": " một",
+            "start": 0.54,
+            "end": 0.66,
+            "probability": 0.8780756592750549
+          },
+          {
+            "word": " chương",
+            "start": 0.66,
+            "end": 0.82,
+            "probability": 0.9425166249275208
+          },
+          {
+            "word": " trình",
+            "start": 0.82,
+            "end": 1.0,
+            "probability": 0.9970158040523529
+          },
+          {
+            "word": " C",
+            "start": 1.0,
+            "end": 1.3,
+            "probability": 0.601093590259552
+          },
+          {
+            "word": " để",
+            "start": 1.3,
+            "end": 1.48,
+            "probability": 0.41465044021606445
+          },
+          {
+            "word": " yên",
+            "start": 1.48,
+            "end": 1.7,
+            "probability": 0.6117129176855087
+          },
+          {
+            "word": " lời",
+            "start": 1.7,
+            "end": 1.8,
+            "probability": 0.9922013580799103
+          },
+          {
+            "word": " chào",
+            "start": 1.8,
+            "end": 2.06,
+            "probability": 0.9401766359806061
+          },
+          {
+            "word": " nhưng",
+            "start": 2.06,
+            "end": 2.56,
+            "probability": 0.6593523025512695
+          },
+          {
+            "word": " CPU",
+            "start": 2.56,
+            "end": 2.94,
+            "probability": 0.9019626379013062
+          },
+          {
+            "word": " không",
+            "start": 2.94,
+            "end": 3.3,
+            "probability": 0.9820746779441833
+          },
+          {
+            "word": " đọc",
+            "start": 3.3,
+            "end": 3.52,
+            "probability": 0.9405313730239868
+          },
+          {
+            "word": " kiếng",
+            "start": 3.52,
+            "end": 3.72,
+            "probability": 0.7295533120632172
+          },
+          {
+            "word": " C",
+            "start": 3.72,
+            "end": 3.98,
+            "probability": 0.8742013573646545
+          },
+          {
+            "word": " như",
+            "start": 3.98,
+            "end": 4.12,
+            "probability": 0.9470824003219604
+          },
+          {
+            "word": " chúng",
+            "start": 4.12,
+            "end": 4.28,
+            "probability": 0.9928296208381653
+          },
+          {
+            "word": " ta.",
+            "start": 4.28,
+            "end": 4.56,
+            "probability": 0.9994593262672424
+          }
+        ]
+      },
+      {
+        "start": 5.06,
+        "end": 6.82,
+        "text": " Vậy ai nối những dòng chữ này với phần cứng?",
+        "words": [
+          {
+            "word": " Vậy",
+            "start": 5.06,
+            "end": 5.26,
+            "probability": 0.9587389230728149
+          },
+          {
+            "word": " ai",
+            "start": 5.26,
+            "end": 5.4,
+            "probability": 0.9416309595108032
+          },
+          {
+            "word": " nối",
+            "start": 5.4,
+            "end": 5.62,
+            "probability": 0.7585129737854004
+          },
+          {
+            "word": " những",
+            "start": 5.62,
+            "end": 5.74,
+            "probability": 0.9650388360023499
+          },
+          {
+            "word": " dòng",
+            "start": 5.74,
+            "end": 5.94,
+            "probability": 0.9001850783824921
+          },
+          {
+            "word": " chữ",
+            "start": 5.94,
+            "end": 6.08,
+            "probability": 0.8575982749462128
+          },
+          {
+            "word": " này",
+            "start": 6.08,
+            "end": 6.28,
+            "probability": 0.9941155910491943
+          },
+          {
+            "word": " với",
+            "start": 6.28,
+            "end": 6.42,
+            "probability": 0.9281003475189209
+          },
+          {
+            "word": " phần",
+            "start": 6.42,
+            "end": 6.6,
+            "probability": 0.9502708315849304
+          },
+          {
+            "word": " cứng?",
+            "start": 6.6,
+            "end": 6.82,
+            "probability": 0.9674076735973358
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-1",
+    "expected": "Bắt đầu từ tệp hello chấm cê. Bên trong là văn bản mà người lập trình viết, gọi là mã nguồn. Ta theo dõi một dòng.",
+    "heard": "Bắt đầu từ tiếp hello.c bên trong là văn bản mà người lập trình viết, gọi là mãng nguồn, ta theo dõi một dòng.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.76,
+        "text": " Bắt đầu từ tiếp hello.c bên trong là văn bản mà người lập trình viết, gọi là mãng nguồn, ta theo dõi một dòng.",
+        "words": [
+          {
+            "word": " Bắt",
+            "start": 0.0,
+            "end": 0.16,
+            "probability": 0.8087098300457001
+          },
+          {
+            "word": " đầu",
+            "start": 0.16,
+            "end": 0.32,
+            "probability": 0.9996179342269897
+          },
+          {
+            "word": " từ",
+            "start": 0.32,
+            "end": 0.48,
+            "probability": 0.9644412994384766
+          },
+          {
+            "word": " tiếp",
+            "start": 0.48,
+            "end": 0.62,
+            "probability": 0.6440615653991699
+          },
+          {
+            "word": " hello",
+            "start": 0.62,
+            "end": 0.92,
+            "probability": 0.43135538697242737
+          },
+          {
+            "word": ".c",
+            "start": 0.92,
+            "end": 1.36,
+            "probability": 0.6893279850482941
+          },
+          {
+            "word": " bên",
+            "start": 1.36,
+            "end": 1.82,
+            "probability": 0.7786262035369873
+          },
+          {
+            "word": " trong",
+            "start": 1.82,
+            "end": 2.06,
+            "probability": 0.9914354681968689
+          },
+          {
+            "word": " là",
+            "start": 2.06,
+            "end": 2.28,
+            "probability": 0.9856635332107544
+          },
+          {
+            "word": " văn",
+            "start": 2.28,
+            "end": 2.48,
+            "probability": 0.902299553155899
+          },
+          {
+            "word": " bản",
+            "start": 2.48,
+            "end": 2.7,
+            "probability": 0.99354687333107
+          },
+          {
+            "word": " mà",
+            "start": 2.7,
+            "end": 2.82,
+            "probability": 0.8731912970542908
+          },
+          {
+            "word": " người",
+            "start": 2.82,
+            "end": 2.94,
+            "probability": 0.991792619228363
+          },
+          {
+            "word": " lập",
+            "start": 2.94,
+            "end": 3.1,
+            "probability": 0.9631703794002533
+          },
+          {
+            "word": " trình",
+            "start": 3.1,
+            "end": 3.28,
+            "probability": 0.8366706967353821
+          },
+          {
+            "word": " viết,",
+            "start": 3.28,
+            "end": 3.54,
+            "probability": 0.9773720800876617
+          },
+          {
+            "word": " gọi",
+            "start": 3.78,
+            "end": 4.0,
+            "probability": 0.9963406324386597
+          },
+          {
+            "word": " là",
+            "start": 4.0,
+            "end": 4.14,
+            "probability": 0.9907000660896301
+          },
+          {
+            "word": " mãng",
+            "start": 4.14,
+            "end": 4.42,
+            "probability": 0.554379016160965
+          },
+          {
+            "word": " nguồn,",
+            "start": 4.42,
+            "end": 4.66,
+            "probability": 0.9016324430704117
+          },
+          {
+            "word": " ta",
+            "start": 4.92,
+            "end": 5.1,
+            "probability": 0.6649313569068909
+          },
+          {
+            "word": " theo",
+            "start": 5.1,
+            "end": 5.22,
+            "probability": 0.9835737943649292
+          },
+          {
+            "word": " dõi",
+            "start": 5.22,
+            "end": 5.44,
+            "probability": 0.994186520576477
+          },
+          {
+            "word": " một",
+            "start": 5.44,
+            "end": 5.54,
+            "probability": 0.7988615036010742
+          },
+          {
+            "word": " dòng.",
+            "start": 5.54,
+            "end": 5.76,
+            "probability": 0.8061302602291107
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-2",
+    "expected": "Dòng được tô màu yêu cầu chương trình in ra chữ Chao ban, rồi xuống dòng. Hãy giữ lại ý định: khi chạy, ta muốn thấy lời chào.",
+    "heard": "Dòng được tôm màu yêu cầu chương trình in giá trữ trao ban rồi xuống dòng, hãy giữ lại ý định khi chạy, ta muốn thấy lời chào.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.22,
+        "text": " Dòng được tôm màu yêu cầu chương trình in giá trữ trao ban rồi xuống dòng, hãy giữ lại ý định khi chạy, ta muốn thấy lời chào.",
+        "words": [
+          {
+            "word": " Dòng",
+            "start": 0.0,
+            "end": 0.28,
+            "probability": 0.5767005831003189
+          },
+          {
+            "word": " được",
+            "start": 0.28,
+            "end": 0.42,
+            "probability": 0.9900830388069153
+          },
+          {
+            "word": " tôm",
+            "start": 0.42,
+            "end": 0.74,
+            "probability": 0.8206959366798401
+          },
+          {
+            "word": " màu",
+            "start": 0.74,
+            "end": 0.84,
+            "probability": 0.7054253965616226
+          },
+          {
+            "word": " yêu",
+            "start": 0.84,
+            "end": 0.96,
+            "probability": 0.9841587543487549
+          },
+          {
+            "word": " cầu",
+            "start": 0.96,
+            "end": 1.16,
+            "probability": 0.9816209971904755
+          },
+          {
+            "word": " chương",
+            "start": 1.16,
+            "end": 1.32,
+            "probability": 0.8127861022949219
+          },
+          {
+            "word": " trình",
+            "start": 1.32,
+            "end": 1.52,
+            "probability": 0.9958043694496155
+          },
+          {
+            "word": " in",
+            "start": 1.52,
+            "end": 1.76,
+            "probability": 0.15291474759578705
+          },
+          {
+            "word": " giá",
+            "start": 1.76,
+            "end": 1.96,
+            "probability": 0.8309535384178162
+          },
+          {
+            "word": " trữ",
+            "start": 1.96,
+            "end": 2.12,
+            "probability": 0.7708048522472382
+          },
+          {
+            "word": " trao",
+            "start": 2.12,
+            "end": 2.3,
+            "probability": 0.8685100674629211
+          },
+          {
+            "word": " ban",
+            "start": 2.3,
+            "end": 2.5,
+            "probability": 0.9594781398773193
+          },
+          {
+            "word": " rồi",
+            "start": 2.5,
+            "end": 2.82,
+            "probability": 0.8143742084503174
+          },
+          {
+            "word": " xuống",
+            "start": 2.82,
+            "end": 3.06,
+            "probability": 0.9945838749408722
+          },
+          {
+            "word": " dòng,",
+            "start": 3.06,
+            "end": 3.32,
+            "probability": 0.885168731212616
+          },
+          {
+            "word": " hãy",
+            "start": 3.72,
+            "end": 3.84,
+            "probability": 0.939133495092392
+          },
+          {
+            "word": " giữ",
+            "start": 3.84,
+            "end": 4.0,
+            "probability": 0.8187965750694275
+          },
+          {
+            "word": " lại",
+            "start": 4.0,
+            "end": 4.1,
+            "probability": 0.9851101636886597
+          },
+          {
+            "word": " ý",
+            "start": 4.1,
+            "end": 4.28,
+            "probability": 0.9641384482383728
+          },
+          {
+            "word": " định",
+            "start": 4.28,
+            "end": 4.54,
+            "probability": 0.9973026514053345
+          },
+          {
+            "word": " khi",
+            "start": 4.54,
+            "end": 4.78,
+            "probability": 0.9564468264579773
+          },
+          {
+            "word": " chạy,",
+            "start": 4.78,
+            "end": 5.3,
+            "probability": 0.9776047070821127
+          },
+          {
+            "word": " ta",
+            "start": 5.4,
+            "end": 5.5,
+            "probability": 0.9270885586738586
+          },
+          {
+            "word": " muốn",
+            "start": 5.5,
+            "end": 5.62,
+            "probability": 0.8405582904815674
+          },
+          {
+            "word": " thấy",
+            "start": 5.62,
+            "end": 5.78,
+            "probability": 0.4639691710472107
+          },
+          {
+            "word": " lời",
+            "start": 5.78,
+            "end": 5.94,
+            "probability": 0.9934628307819366
+          },
+          {
+            "word": " chào.",
+            "start": 5.94,
+            "end": 6.22,
+            "probability": 0.8566339910030365
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-3",
+    "expected": "Vấn đề là CPU thực thi lệnh máy, được mã hóa bằng các bit. Nó không trực tiếp lấy câu lệnh C này để làm theo. Hai phía đang dùng hai cách biểu diễn khác nhau.",
+    "heard": "Vấn đề là CPU thực thi lệnh máy được mạ hóa bằng các bit, nó không trực tiếp lấy câu lệnh xe này để làm theo, hai phía đang dùng hai cách điều diễn khác nhau.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 8.16,
+        "text": " Vấn đề là CPU thực thi lệnh máy được mạ hóa bằng các bit, nó không trực tiếp lấy câu lệnh xe này để làm theo, hai phía đang dùng hai cách điều diễn khác nhau.",
+        "words": [
+          {
+            "word": " Vấn",
+            "start": 0.0,
+            "end": 0.26,
+            "probability": 0.9346528351306915
+          },
+          {
+            "word": " đề",
+            "start": 0.26,
+            "end": 0.38,
+            "probability": 0.9875203669071198
+          },
+          {
+            "word": " là",
+            "start": 0.38,
+            "end": 0.52,
+            "probability": 0.9962638020515442
+          },
+          {
+            "word": " CPU",
+            "start": 0.52,
+            "end": 0.84,
+            "probability": 0.9331929683685303
+          },
+          {
+            "word": " thực",
+            "start": 0.84,
+            "end": 1.14,
+            "probability": 0.7606795430183411
+          },
+          {
+            "word": " thi",
+            "start": 1.14,
+            "end": 1.38,
+            "probability": 0.9825571179389954
+          },
+          {
+            "word": " lệnh",
+            "start": 1.38,
+            "end": 1.56,
+            "probability": 0.9463068048159281
+          },
+          {
+            "word": " máy",
+            "start": 1.56,
+            "end": 2.1,
+            "probability": 0.9944702088832855
+          },
+          {
+            "word": " được",
+            "start": 2.1,
+            "end": 2.26,
+            "probability": 0.8431671857833862
+          },
+          {
+            "word": " mạ",
+            "start": 2.26,
+            "end": 2.5,
+            "probability": 0.5162615180015564
+          },
+          {
+            "word": " hóa",
+            "start": 2.5,
+            "end": 2.76,
+            "probability": 0.7690664728482565
+          },
+          {
+            "word": " bằng",
+            "start": 2.76,
+            "end": 2.86,
+            "probability": 0.9440508484840393
+          },
+          {
+            "word": " các",
+            "start": 2.86,
+            "end": 3.0,
+            "probability": 0.6555037498474121
+          },
+          {
+            "word": " bit,",
+            "start": 3.0,
+            "end": 3.14,
+            "probability": 0.2909223735332489
+          },
+          {
+            "word": " nó",
+            "start": 3.66,
+            "end": 3.76,
+            "probability": 0.9616602063179016
+          },
+          {
+            "word": " không",
+            "start": 3.76,
+            "end": 3.94,
+            "probability": 0.9913696050643921
+          },
+          {
+            "word": " trực",
+            "start": 3.94,
+            "end": 4.2,
+            "probability": 0.6029410511255264
+          },
+          {
+            "word": " tiếp",
+            "start": 4.2,
+            "end": 4.36,
+            "probability": 0.9916476011276245
+          },
+          {
+            "word": " lấy",
+            "start": 4.36,
+            "end": 4.56,
+            "probability": 0.988993376493454
+          },
+          {
+            "word": " câu",
+            "start": 4.56,
+            "end": 4.7,
+            "probability": 0.988445520401001
+          },
+          {
+            "word": " lệnh",
+            "start": 4.7,
+            "end": 4.88,
+            "probability": 0.9960990150769552
+          },
+          {
+            "word": " xe",
+            "start": 4.88,
+            "end": 5.08,
+            "probability": 0.8002707958221436
+          },
+          {
+            "word": " này",
+            "start": 5.08,
+            "end": 5.2,
+            "probability": 0.9736209511756897
+          },
+          {
+            "word": " để",
+            "start": 5.2,
+            "end": 5.4,
+            "probability": 0.9788118004798889
+          },
+          {
+            "word": " làm",
+            "start": 5.4,
+            "end": 5.58,
+            "probability": 0.9926223754882812
+          },
+          {
+            "word": " theo,",
+            "start": 5.58,
+            "end": 5.78,
+            "probability": 0.9920768737792969
+          },
+          {
+            "word": " hai",
+            "start": 6.38,
+            "end": 6.54,
+            "probability": 0.7039617300033569
+          },
+          {
+            "word": " phía",
+            "start": 6.54,
+            "end": 6.68,
+            "probability": 0.9895505011081696
+          },
+          {
+            "word": " đang",
+            "start": 6.68,
+            "end": 6.84,
+            "probability": 0.9902176260948181
+          },
+          {
+            "word": " dùng",
+            "start": 6.84,
+            "end": 7.08,
+            "probability": 0.9934147298336029
+          },
+          {
+            "word": " hai",
+            "start": 7.08,
+            "end": 7.24,
+            "probability": 0.6115058660507202
+          },
+          {
+            "word": " cách",
+            "start": 7.24,
+            "end": 7.36,
+            "probability": 0.9972055554389954
+          },
+          {
+            "word": " điều",
+            "start": 7.36,
+            "end": 7.54,
+            "probability": 0.677471399307251
+          },
+          {
+            "word": " diễn",
+            "start": 7.54,
+            "end": 7.76,
+            "probability": 0.8872200051943461
+          },
+          {
+            "word": " khác",
+            "start": 7.76,
+            "end": 7.88,
+            "probability": 0.9968404769897461
+          },
+          {
+            "word": " nhau.",
+            "start": 7.88,
+            "end": 8.16,
+            "probability": 0.9958599209785461
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-4",
+    "expected": "Phần mềm đứng ở giữa được gọi là compiler, hay trình biên dịch. Nó đọc mã nguồn, phân tích chương trình, rồi chuyển sang dạng mã cho máy đích.",
+    "heard": "Phần mềm đứng ở giữa được gọi là Compiler hay trình biên dịch. Nó đọc mã nguồn, phân tích chương trình, rồi chuyển sang dạng mã cho máy đích.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.24,
+        "text": " Phần mềm đứng ở giữa được gọi là Compiler hay trình biên dịch.",
+        "words": [
+          {
+            "word": " Phần",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.9443647563457489
+          },
+          {
+            "word": " mềm",
+            "start": 0.22,
+            "end": 0.42,
+            "probability": 0.9741630752881368
+          },
+          {
+            "word": " đứng",
+            "start": 0.42,
+            "end": 0.56,
+            "probability": 0.9828706979751587
+          },
+          {
+            "word": " ở",
+            "start": 0.56,
+            "end": 0.68,
+            "probability": 0.9821564555168152
+          },
+          {
+            "word": " giữa",
+            "start": 0.68,
+            "end": 0.9,
+            "probability": 0.8930158317089081
+          },
+          {
+            "word": " được",
+            "start": 0.9,
+            "end": 1.02,
+            "probability": 0.9719939231872559
+          },
+          {
+            "word": " gọi",
+            "start": 1.02,
+            "end": 1.26,
+            "probability": 0.9973009824752808
+          },
+          {
+            "word": " là",
+            "start": 1.26,
+            "end": 1.4,
+            "probability": 0.9930686950683594
+          },
+          {
+            "word": " Compiler",
+            "start": 1.4,
+            "end": 2.0,
+            "probability": 0.7140357196331024
+          },
+          {
+            "word": " hay",
+            "start": 2.0,
+            "end": 2.56,
+            "probability": 0.3286854922771454
+          },
+          {
+            "word": " trình",
+            "start": 2.56,
+            "end": 2.82,
+            "probability": 0.558441512286663
+          },
+          {
+            "word": " biên",
+            "start": 2.82,
+            "end": 3.0,
+            "probability": 0.9752985239028931
+          },
+          {
+            "word": " dịch.",
+            "start": 3.0,
+            "end": 3.24,
+            "probability": 0.9916696548461914
+          }
+        ]
+      },
+      {
+        "start": 3.64,
+        "end": 7.22,
+        "text": " Nó đọc mã nguồn, phân tích chương trình, rồi chuyển sang dạng mã cho máy đích.",
+        "words": [
+          {
+            "word": " Nó",
+            "start": 3.64,
+            "end": 3.82,
+            "probability": 0.9893706738948822
+          },
+          {
+            "word": " đọc",
+            "start": 3.82,
+            "end": 3.98,
+            "probability": 0.8500352501869202
+          },
+          {
+            "word": " mã",
+            "start": 3.98,
+            "end": 4.1,
+            "probability": 0.8092020153999329
+          },
+          {
+            "word": " nguồn,",
+            "start": 4.1,
+            "end": 4.48,
+            "probability": 0.840984433889389
+          },
+          {
+            "word": " phân",
+            "start": 4.6,
+            "end": 4.72,
+            "probability": 0.9518150389194489
+          },
+          {
+            "word": " tích",
+            "start": 4.72,
+            "end": 4.84,
+            "probability": 0.9944094121456146
+          },
+          {
+            "word": " chương",
+            "start": 4.84,
+            "end": 5.0,
+            "probability": 0.7309774458408356
+          },
+          {
+            "word": " trình,",
+            "start": 5.0,
+            "end": 5.26,
+            "probability": 0.9964088797569275
+          },
+          {
+            "word": " rồi",
+            "start": 5.68,
+            "end": 5.78,
+            "probability": 0.9943264126777649
+          },
+          {
+            "word": " chuyển",
+            "start": 5.78,
+            "end": 6.08,
+            "probability": 0.9619967043399811
+          },
+          {
+            "word": " sang",
+            "start": 6.08,
+            "end": 6.28,
+            "probability": 0.9989271759986877
+          },
+          {
+            "word": " dạng",
+            "start": 6.28,
+            "end": 6.6,
+            "probability": 0.8708983461062113
+          },
+          {
+            "word": " mã",
+            "start": 6.6,
+            "end": 6.72,
+            "probability": 0.9691566228866577
+          },
+          {
+            "word": " cho",
+            "start": 6.72,
+            "end": 6.92,
+            "probability": 0.980461835861206
+          },
+          {
+            "word": " máy",
+            "start": 6.92,
+            "end": 7.12,
+            "probability": 0.5778856426477432
+          },
+          {
+            "word": " đích.",
+            "start": 7.12,
+            "end": 7.22,
+            "probability": 0.6988503932952881
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-5",
+    "expected": "Có thể hình dung việc này như dịch một bản hướng dẫn sang cách viết mà bên nhận dùng được. Ý định in lời chào được giữ lại, còn cách biểu diễn thay đổi.",
+    "heard": "có thể hình dung việc này như dịch một bản hướng dẫn sang cách viết mà bên nhận dùng được. Ý định yên lời chào được giữ lại còn cách biểu diễn thay đổi.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.88,
+        "text": " có thể hình dung việc này như dịch một bản hướng dẫn sang cách viết mà bên nhận dùng được.",
+        "words": [
+          {
+            "word": " có",
+            "start": 0.0,
+            "end": 0.16,
+            "probability": 0.5430190563201904
+          },
+          {
+            "word": " thể",
+            "start": 0.16,
+            "end": 0.26,
+            "probability": 0.9993581175804138
+          },
+          {
+            "word": " hình",
+            "start": 0.26,
+            "end": 0.44,
+            "probability": 0.9903585016727448
+          },
+          {
+            "word": " dung",
+            "start": 0.44,
+            "end": 0.62,
+            "probability": 0.9804478883743286
+          },
+          {
+            "word": " việc",
+            "start": 0.62,
+            "end": 0.76,
+            "probability": 0.9544755816459656
+          },
+          {
+            "word": " này",
+            "start": 0.76,
+            "end": 0.98,
+            "probability": 0.988993227481842
+          },
+          {
+            "word": " như",
+            "start": 0.98,
+            "end": 1.14,
+            "probability": 0.9850428104400635
+          },
+          {
+            "word": " dịch",
+            "start": 1.14,
+            "end": 1.32,
+            "probability": 0.9868566989898682
+          },
+          {
+            "word": " một",
+            "start": 1.32,
+            "end": 1.44,
+            "probability": 0.8874236345291138
+          },
+          {
+            "word": " bản",
+            "start": 1.44,
+            "end": 1.7,
+            "probability": 0.9798983037471771
+          },
+          {
+            "word": " hướng",
+            "start": 1.7,
+            "end": 1.94,
+            "probability": 0.9737472335497538
+          },
+          {
+            "word": " dẫn",
+            "start": 1.94,
+            "end": 2.12,
+            "probability": 0.9801758527755737
+          },
+          {
+            "word": " sang",
+            "start": 2.12,
+            "end": 2.3,
+            "probability": 0.9185331463813782
+          },
+          {
+            "word": " cách",
+            "start": 2.3,
+            "end": 2.48,
+            "probability": 0.9985213875770569
+          },
+          {
+            "word": " viết",
+            "start": 2.48,
+            "end": 2.76,
+            "probability": 0.9869597852230072
+          },
+          {
+            "word": " mà",
+            "start": 2.76,
+            "end": 3.18,
+            "probability": 0.9634577631950378
+          },
+          {
+            "word": " bên",
+            "start": 3.18,
+            "end": 3.32,
+            "probability": 0.37575942277908325
+          },
+          {
+            "word": " nhận",
+            "start": 3.32,
+            "end": 3.5,
+            "probability": 0.9810921251773834
+          },
+          {
+            "word": " dùng",
+            "start": 3.5,
+            "end": 3.7,
+            "probability": 0.966619461774826
+          },
+          {
+            "word": " được.",
+            "start": 3.7,
+            "end": 3.88,
+            "probability": 0.9705086350440979
+          }
+        ]
+      },
+      {
+        "start": 4.32,
+        "end": 7.08,
+        "text": " Ý định yên lời chào được giữ lại còn cách biểu diễn thay đổi.",
+        "words": [
+          {
+            "word": " Ý",
+            "start": 4.32,
+            "end": 4.56,
+            "probability": 0.7336404025554657
+          },
+          {
+            "word": " định",
+            "start": 4.56,
+            "end": 4.74,
+            "probability": 0.953121542930603
+          },
+          {
+            "word": " yên",
+            "start": 4.74,
+            "end": 4.9,
+            "probability": 0.6761052906513214
+          },
+          {
+            "word": " lời",
+            "start": 4.9,
+            "end": 5.02,
+            "probability": 0.9817681312561035
+          },
+          {
+            "word": " chào",
+            "start": 5.02,
+            "end": 5.24,
+            "probability": 0.6519254297018051
+          },
+          {
+            "word": " được",
+            "start": 5.24,
+            "end": 5.34,
+            "probability": 0.993301510810852
+          },
+          {
+            "word": " giữ",
+            "start": 5.34,
+            "end": 5.56,
+            "probability": 0.9570575654506683
+          },
+          {
+            "word": " lại",
+            "start": 5.56,
+            "end": 5.72,
+            "probability": 0.9975973963737488
+          },
+          {
+            "word": " còn",
+            "start": 5.72,
+            "end": 6.06,
+            "probability": 0.633973240852356
+          },
+          {
+            "word": " cách",
+            "start": 6.06,
+            "end": 6.24,
+            "probability": 0.9970581531524658
+          },
+          {
+            "word": " biểu",
+            "start": 6.24,
+            "end": 6.48,
+            "probability": 0.8246590495109558
+          },
+          {
+            "word": " diễn",
+            "start": 6.48,
+            "end": 6.72,
+            "probability": 0.9909326235453287
+          },
+          {
+            "word": " thay",
+            "start": 6.72,
+            "end": 6.86,
+            "probability": 0.9845734536647797
+          },
+          {
+            "word": " đổi.",
+            "start": 6.86,
+            "end": 7.08,
+            "probability": 0.9925753176212311
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-6",
+    "expected": "Bàn chuyển đổi trên hình chỉ là minh họa. Compiler không phải một chiếc máy riêng trong máy tính. Nó cũng là một chương trình, chẳng hạn Clang, chạy trên máy của bạn.",
+    "heard": "bàn truyền đồ trên hình chỉ là minh hoạ. Compiler không phải một chiếc máy riêng trong máy tính, nó cũng là một chương trình chẳng hạn clang chạy trên máy của bạn.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.68,
+        "text": " bàn truyền đồ trên hình chỉ là minh hoạ.",
+        "words": [
+          {
+            "word": " bàn",
+            "start": 0.0,
+            "end": 0.24,
+            "probability": 0.670218825340271
+          },
+          {
+            "word": " truyền",
+            "start": 0.24,
+            "end": 0.42,
+            "probability": 0.8254861434300741
+          },
+          {
+            "word": " đồ",
+            "start": 0.42,
+            "end": 0.56,
+            "probability": 0.8406073451042175
+          },
+          {
+            "word": " trên",
+            "start": 0.56,
+            "end": 0.7,
+            "probability": 0.7621214389801025
+          },
+          {
+            "word": " hình",
+            "start": 0.7,
+            "end": 0.92,
+            "probability": 0.9971237182617188
+          },
+          {
+            "word": " chỉ",
+            "start": 0.92,
+            "end": 1.12,
+            "probability": 0.9698023200035095
+          },
+          {
+            "word": " là",
+            "start": 1.12,
+            "end": 1.24,
+            "probability": 0.9895385503768921
+          },
+          {
+            "word": " minh",
+            "start": 1.24,
+            "end": 1.48,
+            "probability": 0.7737413942813873
+          },
+          {
+            "word": " hoạ.",
+            "start": 1.48,
+            "end": 1.68,
+            "probability": 0.6106764674186707
+          }
+        ]
+      },
+      {
+        "start": 2.3,
+        "end": 4.44,
+        "text": " Compiler không phải một chiếc máy riêng trong máy tính,",
+        "words": [
+          {
+            "word": " Compiler",
+            "start": 2.3,
+            "end": 2.7,
+            "probability": 0.8374744653701782
+          },
+          {
+            "word": " không",
+            "start": 2.7,
+            "end": 2.98,
+            "probability": 0.9813822507858276
+          },
+          {
+            "word": " phải",
+            "start": 2.98,
+            "end": 3.24,
+            "probability": 0.9983053207397461
+          },
+          {
+            "word": " một",
+            "start": 3.24,
+            "end": 3.36,
+            "probability": 0.8664460778236389
+          },
+          {
+            "word": " chiếc",
+            "start": 3.36,
+            "end": 3.56,
+            "probability": 0.9835622906684875
+          },
+          {
+            "word": " máy",
+            "start": 3.56,
+            "end": 3.72,
+            "probability": 0.9710404276847839
+          },
+          {
+            "word": " riêng",
+            "start": 3.72,
+            "end": 3.96,
+            "probability": 0.9870207707087199
+          },
+          {
+            "word": " trong",
+            "start": 3.96,
+            "end": 4.08,
+            "probability": 0.9648196697235107
+          },
+          {
+            "word": " máy",
+            "start": 4.08,
+            "end": 4.28,
+            "probability": 0.9405537247657776
+          },
+          {
+            "word": " tính,",
+            "start": 4.28,
+            "end": 4.44,
+            "probability": 0.9853734374046326
+          }
+        ]
+      },
+      {
+        "start": 4.82,
+        "end": 7.94,
+        "text": " nó cũng là một chương trình chẳng hạn clang chạy trên máy của bạn.",
+        "words": [
+          {
+            "word": " nó",
+            "start": 4.82,
+            "end": 5.04,
+            "probability": 0.9869815707206726
+          },
+          {
+            "word": " cũng",
+            "start": 5.04,
+            "end": 5.22,
+            "probability": 0.9937878251075745
+          },
+          {
+            "word": " là",
+            "start": 5.22,
+            "end": 5.38,
+            "probability": 0.9664760231971741
+          },
+          {
+            "word": " một",
+            "start": 5.38,
+            "end": 5.5,
+            "probability": 0.9400739669799805
+          },
+          {
+            "word": " chương",
+            "start": 5.5,
+            "end": 5.64,
+            "probability": 0.8478021919727325
+          },
+          {
+            "word": " trình",
+            "start": 5.64,
+            "end": 5.92,
+            "probability": 0.9932119250297546
+          },
+          {
+            "word": " chẳng",
+            "start": 5.92,
+            "end": 6.34,
+            "probability": 0.7164673060178757
+          },
+          {
+            "word": " hạn",
+            "start": 6.34,
+            "end": 6.54,
+            "probability": 0.9917007386684418
+          },
+          {
+            "word": " clang",
+            "start": 6.54,
+            "end": 6.92,
+            "probability": 0.6159400120377541
+          },
+          {
+            "word": " chạy",
+            "start": 6.92,
+            "end": 7.4,
+            "probability": 0.9294885794321696
+          },
+          {
+            "word": " trên",
+            "start": 7.4,
+            "end": 7.48,
+            "probability": 0.9900996088981628
+          },
+          {
+            "word": " máy",
+            "start": 7.48,
+            "end": 7.7,
+            "probability": 0.9946800172328949
+          },
+          {
+            "word": " của",
+            "start": 7.7,
+            "end": 7.78,
+            "probability": 0.9957094192504883
+          },
+          {
+            "word": " bạn.",
+            "start": 7.78,
+            "end": 7.94,
+            "probability": 0.994515061378479
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-7",
+    "expected": "Bây giờ, ta dùng Clang để tạo chương trình từ tệp hello chấm cê. Công cụ đọc đầu vào và xử lý nó. Sơ đồ gom lại các bước tạo chương trình.",
+    "heard": "Bây giờ ta dùng clang để tạo chương trình tự tiếp Hello.C, tông cụ đọc đầu vào và xử lý nó. Sa đồ gom lại các bước tạo chương trình.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.2,
+        "text": " Bây giờ ta dùng clang để tạo chương trình tự tiếp Hello.C, tông cụ đọc đầu vào và xử lý nó.",
+        "words": [
+          {
+            "word": " Bây",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.982418566942215
+          },
+          {
+            "word": " giờ",
+            "start": 0.22,
+            "end": 0.4,
+            "probability": 0.9999325275421143
+          },
+          {
+            "word": " ta",
+            "start": 0.4,
+            "end": 0.62,
+            "probability": 0.8344608545303345
+          },
+          {
+            "word": " dùng",
+            "start": 0.62,
+            "end": 0.86,
+            "probability": 0.9773826897144318
+          },
+          {
+            "word": " clang",
+            "start": 0.86,
+            "end": 1.2,
+            "probability": 0.5874753817915916
+          },
+          {
+            "word": " để",
+            "start": 1.2,
+            "end": 1.34,
+            "probability": 0.9789647459983826
+          },
+          {
+            "word": " tạo",
+            "start": 1.34,
+            "end": 1.54,
+            "probability": 0.9964299201965332
+          },
+          {
+            "word": " chương",
+            "start": 1.54,
+            "end": 1.66,
+            "probability": 0.945625513792038
+          },
+          {
+            "word": " trình",
+            "start": 1.66,
+            "end": 1.88,
+            "probability": 0.9949174523353577
+          },
+          {
+            "word": " tự",
+            "start": 1.88,
+            "end": 2.04,
+            "probability": 0.6374954581260681
+          },
+          {
+            "word": " tiếp",
+            "start": 2.04,
+            "end": 2.18,
+            "probability": 0.5883684754371643
+          },
+          {
+            "word": " Hello",
+            "start": 2.18,
+            "end": 2.48,
+            "probability": 0.4753401577472687
+          },
+          {
+            "word": ".C,",
+            "start": 2.48,
+            "end": 2.92,
+            "probability": 0.47554299235343933
+          },
+          {
+            "word": " tông",
+            "start": 3.34,
+            "end": 3.6,
+            "probability": 0.6725776195526123
+          },
+          {
+            "word": " cụ",
+            "start": 3.6,
+            "end": 3.84,
+            "probability": 0.9076286852359772
+          },
+          {
+            "word": " đọc",
+            "start": 3.84,
+            "end": 4.06,
+            "probability": 0.7563007771968842
+          },
+          {
+            "word": " đầu",
+            "start": 4.06,
+            "end": 4.2,
+            "probability": 0.9455593228340149
+          },
+          {
+            "word": " vào",
+            "start": 4.2,
+            "end": 4.5,
+            "probability": 0.9906002283096313
+          },
+          {
+            "word": " và",
+            "start": 4.5,
+            "end": 4.72,
+            "probability": 0.900000810623169
+          },
+          {
+            "word": " xử",
+            "start": 4.72,
+            "end": 4.9,
+            "probability": 0.7706961631774902
+          },
+          {
+            "word": " lý",
+            "start": 4.9,
+            "end": 5.04,
+            "probability": 0.9945441782474518
+          },
+          {
+            "word": " nó.",
+            "start": 5.04,
+            "end": 5.2,
+            "probability": 0.996591329574585
+          }
+        ]
+      },
+      {
+        "start": 5.78,
+        "end": 7.4,
+        "text": " Sa đồ gom lại các bước tạo chương trình.",
+        "words": [
+          {
+            "word": " Sa",
+            "start": 5.78,
+            "end": 5.92,
+            "probability": 0.32078424096107483
+          },
+          {
+            "word": " đồ",
+            "start": 5.92,
+            "end": 6.14,
+            "probability": 0.3341783881187439
+          },
+          {
+            "word": " gom",
+            "start": 6.14,
+            "end": 6.36,
+            "probability": 0.6193053722381592
+          },
+          {
+            "word": " lại",
+            "start": 6.36,
+            "end": 6.48,
+            "probability": 0.9932063817977905
+          },
+          {
+            "word": " các",
+            "start": 6.48,
+            "end": 6.6,
+            "probability": 0.996093213558197
+          },
+          {
+            "word": " bước",
+            "start": 6.6,
+            "end": 6.76,
+            "probability": 0.7655800879001617
+          },
+          {
+            "word": " tạo",
+            "start": 6.76,
+            "end": 6.96,
+            "probability": 0.9980173408985138
+          },
+          {
+            "word": " chương",
+            "start": 6.96,
+            "end": 7.16,
+            "probability": 0.9984764754772186
+          },
+          {
+            "word": " trình.",
+            "start": 7.16,
+            "end": 7.4,
+            "probability": 0.9959583282470703
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-8",
+    "expected": "Lưu ý rằng tệp nguồn không biến mất. Bạn vẫn có thể mở nó để đọc và sửa. Quy trình biên dịch tạo ra một đầu ra khác, chứ không biến tệp C thành một tệp không đọc được.",
+    "heard": "Lưu ý rằng tẹp nguồn không bị mất, bạn vẫn có thể mở nó để đọc và sửa. Quy chình biên dịch tạo ra một đầu da khác, chứ không biến tẹp C thành một tẹp không đọc được.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.98,
+        "text": " Lưu ý rằng tẹp nguồn không bị mất, bạn vẫn có thể mở nó để đọc và sửa.",
+        "words": [
+          {
+            "word": " Lưu",
+            "start": 0.0,
+            "end": 0.24,
+            "probability": 0.8398382862408956
+          },
+          {
+            "word": " ý",
+            "start": 0.24,
+            "end": 0.36,
+            "probability": 0.9176903963088989
+          },
+          {
+            "word": " rằng",
+            "start": 0.36,
+            "end": 0.56,
+            "probability": 0.9854249358177185
+          },
+          {
+            "word": " tẹp",
+            "start": 0.56,
+            "end": 0.94,
+            "probability": 0.6660153567790985
+          },
+          {
+            "word": " nguồn",
+            "start": 0.94,
+            "end": 1.16,
+            "probability": 0.94284787774086
+          },
+          {
+            "word": " không",
+            "start": 1.16,
+            "end": 1.32,
+            "probability": 0.9837672710418701
+          },
+          {
+            "word": " bị",
+            "start": 1.32,
+            "end": 1.44,
+            "probability": 0.9543258547782898
+          },
+          {
+            "word": " mất,",
+            "start": 1.44,
+            "end": 1.66,
+            "probability": 0.9649107158184052
+          },
+          {
+            "word": " bạn",
+            "start": 2.12,
+            "end": 2.26,
+            "probability": 0.9959308505058289
+          },
+          {
+            "word": " vẫn",
+            "start": 2.26,
+            "end": 2.42,
+            "probability": 0.9909780025482178
+          },
+          {
+            "word": " có",
+            "start": 2.42,
+            "end": 2.54,
+            "probability": 0.9888437986373901
+          },
+          {
+            "word": " thể",
+            "start": 2.54,
+            "end": 2.64,
+            "probability": 0.9971060156822205
+          },
+          {
+            "word": " mở",
+            "start": 2.64,
+            "end": 2.92,
+            "probability": 0.9925911128520966
+          },
+          {
+            "word": " nó",
+            "start": 2.92,
+            "end": 3.08,
+            "probability": 0.9943242073059082
+          },
+          {
+            "word": " để",
+            "start": 3.08,
+            "end": 3.24,
+            "probability": 0.9834806323051453
+          },
+          {
+            "word": " đọc",
+            "start": 3.24,
+            "end": 3.52,
+            "probability": 0.9096593459447225
+          },
+          {
+            "word": " và",
+            "start": 3.52,
+            "end": 3.62,
+            "probability": 0.9358470439910889
+          },
+          {
+            "word": " sửa.",
+            "start": 3.62,
+            "end": 3.98,
+            "probability": 0.8356817762056986
+          }
+        ]
+      },
+      {
+        "start": 4.52,
+        "end": 8.48,
+        "text": " Quy chình biên dịch tạo ra một đầu da khác, chứ không biến tẹp C thành một tẹp không đọc được.",
+        "words": [
+          {
+            "word": " Quy",
+            "start": 4.52,
+            "end": 4.66,
+            "probability": 0.8034101724624634
+          },
+          {
+            "word": " chình",
+            "start": 4.66,
+            "end": 4.84,
+            "probability": 0.42790182679891586
+          },
+          {
+            "word": " biên",
+            "start": 4.84,
+            "end": 5.0,
+            "probability": 0.9242137372493744
+          },
+          {
+            "word": " dịch",
+            "start": 5.0,
+            "end": 5.18,
+            "probability": 0.9909139275550842
+          },
+          {
+            "word": " tạo",
+            "start": 5.18,
+            "end": 5.46,
+            "probability": 0.9841843247413635
+          },
+          {
+            "word": " ra",
+            "start": 5.46,
+            "end": 5.6,
+            "probability": 0.9985120892524719
+          },
+          {
+            "word": " một",
+            "start": 5.6,
+            "end": 5.74,
+            "probability": 0.9385321736335754
+          },
+          {
+            "word": " đầu",
+            "start": 5.74,
+            "end": 5.96,
+            "probability": 0.8380894064903259
+          },
+          {
+            "word": " da",
+            "start": 5.96,
+            "end": 6.12,
+            "probability": 0.6298841834068298
+          },
+          {
+            "word": " khác,",
+            "start": 6.12,
+            "end": 6.38,
+            "probability": 0.9935081005096436
+          },
+          {
+            "word": " chứ",
+            "start": 6.6,
+            "end": 6.7,
+            "probability": 0.7910090088844299
+          },
+          {
+            "word": " không",
+            "start": 6.7,
+            "end": 6.86,
+            "probability": 0.9981665015220642
+          },
+          {
+            "word": " biến",
+            "start": 6.86,
+            "end": 7.06,
+            "probability": 0.9382864832878113
+          },
+          {
+            "word": " tẹp",
+            "start": 7.06,
+            "end": 7.32,
+            "probability": 0.9548300306002299
+          },
+          {
+            "word": " C",
+            "start": 7.32,
+            "end": 7.5,
+            "probability": 0.6418407559394836
+          },
+          {
+            "word": " thành",
+            "start": 7.5,
+            "end": 7.66,
+            "probability": 0.9179127216339111
+          },
+          {
+            "word": " một",
+            "start": 7.66,
+            "end": 7.8,
+            "probability": 0.7880419492721558
+          },
+          {
+            "word": " tẹp",
+            "start": 7.8,
+            "end": 8.04,
+            "probability": 0.991527775923411
+          },
+          {
+            "word": " không",
+            "start": 8.04,
+            "end": 8.14,
+            "probability": 0.986695408821106
+          },
+          {
+            "word": " đọc",
+            "start": 8.14,
+            "end": 8.36,
+            "probability": 0.9710439642270406
+          },
+          {
+            "word": " được.",
+            "start": 8.36,
+            "end": 8.48,
+            "probability": 0.9735189080238342
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-9",
+    "expected": "Với ví dụ này, đầu ra là tệp hello có thể chạy trên máy hiện tại. Nó chứa mã máy cùng những phần cần thiết khác. Lời chào vẫn chưa xuất hiện, vì ta mới tạo chương trình.",
+    "heard": "Với ví dụ này, đâu ra là TEP HELLO có thể chạy trên máy hiện tại, nó chứa mạ máy cùng những phần cần thiết khác. Lời chào vẫn chưa xuất hiện vì ta mới tạo chương trình.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.12,
+        "text": " Với ví dụ này, đâu ra là TEP HELLO có thể chạy trên máy hiện tại,",
+        "words": [
+          {
+            "word": " Với",
+            "start": 0.0,
+            "end": 0.22,
+            "probability": 0.9543538391590118
+          },
+          {
+            "word": " ví",
+            "start": 0.22,
+            "end": 0.34,
+            "probability": 0.8414731621742249
+          },
+          {
+            "word": " dụ",
+            "start": 0.34,
+            "end": 0.46,
+            "probability": 0.9900467395782471
+          },
+          {
+            "word": " này,",
+            "start": 0.46,
+            "end": 0.62,
+            "probability": 0.9865356087684631
+          },
+          {
+            "word": " đâu",
+            "start": 0.94,
+            "end": 1.1,
+            "probability": 0.5495402812957764
+          },
+          {
+            "word": " ra",
+            "start": 1.1,
+            "end": 1.32,
+            "probability": 0.8497681021690369
+          },
+          {
+            "word": " là",
+            "start": 1.32,
+            "end": 1.44,
+            "probability": 0.9797618389129639
+          },
+          {
+            "word": " TEP",
+            "start": 1.44,
+            "end": 1.64,
+            "probability": 0.5325885266065598
+          },
+          {
+            "word": " HELLO",
+            "start": 1.64,
+            "end": 2.0,
+            "probability": 0.6688258349895477
+          },
+          {
+            "word": " có",
+            "start": 2.0,
+            "end": 2.12,
+            "probability": 0.9899587035179138
+          },
+          {
+            "word": " thể",
+            "start": 2.12,
+            "end": 2.24,
+            "probability": 0.9976162910461426
+          },
+          {
+            "word": " chạy",
+            "start": 2.24,
+            "end": 2.5,
+            "probability": 0.987285335858663
+          },
+          {
+            "word": " trên",
+            "start": 2.5,
+            "end": 2.6,
+            "probability": 0.9742782711982727
+          },
+          {
+            "word": " máy",
+            "start": 2.6,
+            "end": 2.8,
+            "probability": 0.9351462125778198
+          },
+          {
+            "word": " hiện",
+            "start": 2.8,
+            "end": 2.9,
+            "probability": 0.9810259938240051
+          },
+          {
+            "word": " tại,",
+            "start": 2.9,
+            "end": 3.12,
+            "probability": 0.9363703727722168
+          }
+        ]
+      },
+      {
+        "start": 3.66,
+        "end": 8.3,
+        "text": " nó chứa mạ máy cùng những phần cần thiết khác. Lời chào vẫn chưa xuất hiện vì ta mới tạo chương trình.",
+        "words": [
+          {
+            "word": " nó",
+            "start": 3.66,
+            "end": 3.74,
+            "probability": 0.9096912741661072
+          },
+          {
+            "word": " chứa",
+            "start": 3.74,
+            "end": 3.94,
+            "probability": 0.8373291492462158
+          },
+          {
+            "word": " mạ",
+            "start": 3.94,
+            "end": 4.06,
+            "probability": 0.8194246888160706
+          },
+          {
+            "word": " máy",
+            "start": 4.06,
+            "end": 4.3,
+            "probability": 0.853906512260437
+          },
+          {
+            "word": " cùng",
+            "start": 4.3,
+            "end": 4.44,
+            "probability": 0.9005655646324158
+          },
+          {
+            "word": " những",
+            "start": 4.44,
+            "end": 4.58,
+            "probability": 0.9658563137054443
+          },
+          {
+            "word": " phần",
+            "start": 4.58,
+            "end": 4.78,
+            "probability": 0.9906728565692902
+          },
+          {
+            "word": " cần",
+            "start": 4.78,
+            "end": 4.92,
+            "probability": 0.9040200114250183
+          },
+          {
+            "word": " thiết",
+            "start": 4.92,
+            "end": 5.1,
+            "probability": 0.9752928018569946
+          },
+          {
+            "word": " khác.",
+            "start": 5.1,
+            "end": 5.32,
+            "probability": 0.995796799659729
+          },
+          {
+            "word": " Lời",
+            "start": 5.86,
+            "end": 6.06,
+            "probability": 0.9926512241363525
+          },
+          {
+            "word": " chào",
+            "start": 6.06,
+            "end": 6.28,
+            "probability": 0.6983496844768524
+          },
+          {
+            "word": " vẫn",
+            "start": 6.28,
+            "end": 6.4,
+            "probability": 0.9763132929801941
+          },
+          {
+            "word": " chưa",
+            "start": 6.4,
+            "end": 6.58,
+            "probability": 0.9944861531257629
+          },
+          {
+            "word": " xuất",
+            "start": 6.58,
+            "end": 6.78,
+            "probability": 0.9907742440700531
+          },
+          {
+            "word": " hiện",
+            "start": 6.78,
+            "end": 6.94,
+            "probability": 0.9991952776908875
+          },
+          {
+            "word": " vì",
+            "start": 6.94,
+            "end": 7.46,
+            "probability": 0.8202629089355469
+          },
+          {
+            "word": " ta",
+            "start": 7.46,
+            "end": 7.64,
+            "probability": 0.9568614363670349
+          },
+          {
+            "word": " mới",
+            "start": 7.64,
+            "end": 7.78,
+            "probability": 0.9741981625556946
+          },
+          {
+            "word": " tạo",
+            "start": 7.78,
+            "end": 7.94,
+            "probability": 0.9937398731708527
+          },
+          {
+            "word": " chương",
+            "start": 7.94,
+            "end": 8.1,
+            "probability": 0.9650682806968689
+          },
+          {
+            "word": " trình.",
+            "start": 8.1,
+            "end": 8.3,
+            "probability": 0.9969130158424377
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-10",
+    "expected": "Các ô nhỏ này tượng trưng cho lệnh máy, không phải mã nhị phân thật. Một dòng C cũng không nhất thiết thành đúng một lệnh máy. Điều cần nhớ là CPU có thể thực thi dạng lệnh đó.",
+    "heard": "Các hô nhỏ này tượng trưng cho lệnh máy không phải mã nhịn phân thật, một ròng C cũng không nhất thiết thành đúng một lệnh máy. Điều cần nhớ là CPU có thể thực thi dạng lệnh đó.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.12,
+        "text": " Các hô nhỏ này tượng trưng cho lệnh máy không phải mã nhịn phân thật,",
+        "words": [
+          {
+            "word": " Các",
+            "start": 0.0,
+            "end": 0.14,
+            "probability": 0.9389699399471283
+          },
+          {
+            "word": " hô",
+            "start": 0.14,
+            "end": 0.26,
+            "probability": 0.4683041125535965
+          },
+          {
+            "word": " nhỏ",
+            "start": 0.26,
+            "end": 0.48,
+            "probability": 0.9912444949150085
+          },
+          {
+            "word": " này",
+            "start": 0.48,
+            "end": 0.66,
+            "probability": 0.9956219792366028
+          },
+          {
+            "word": " tượng",
+            "start": 0.66,
+            "end": 0.94,
+            "probability": 0.6369497627019882
+          },
+          {
+            "word": " trưng",
+            "start": 0.94,
+            "end": 1.22,
+            "probability": 0.6918954998254776
+          },
+          {
+            "word": " cho",
+            "start": 1.22,
+            "end": 1.38,
+            "probability": 0.9867795705795288
+          },
+          {
+            "word": " lệnh",
+            "start": 1.38,
+            "end": 1.52,
+            "probability": 0.9722382426261902
+          },
+          {
+            "word": " máy",
+            "start": 1.52,
+            "end": 2.04,
+            "probability": 0.9957347810268402
+          },
+          {
+            "word": " không",
+            "start": 2.04,
+            "end": 2.24,
+            "probability": 0.6702374815940857
+          },
+          {
+            "word": " phải",
+            "start": 2.24,
+            "end": 2.42,
+            "probability": 0.9914605617523193
+          },
+          {
+            "word": " mã",
+            "start": 2.42,
+            "end": 2.56,
+            "probability": 0.8182914853096008
+          },
+          {
+            "word": " nhịn",
+            "start": 2.56,
+            "end": 2.8,
+            "probability": 0.7237305541833242
+          },
+          {
+            "word": " phân",
+            "start": 2.8,
+            "end": 2.9,
+            "probability": 0.9485036432743073
+          },
+          {
+            "word": " thật,",
+            "start": 2.9,
+            "end": 3.12,
+            "probability": 0.9794411063194275
+          }
+        ]
+      },
+      {
+        "start": 3.62,
+        "end": 6.12,
+        "text": " một ròng C cũng không nhất thiết thành đúng một lệnh máy.",
+        "words": [
+          {
+            "word": " một",
+            "start": 3.62,
+            "end": 3.72,
+            "probability": 0.790852427482605
+          },
+          {
+            "word": " ròng",
+            "start": 3.72,
+            "end": 3.92,
+            "probability": 0.46771715581417084
+          },
+          {
+            "word": " C",
+            "start": 3.92,
+            "end": 4.14,
+            "probability": 0.5360150933265686
+          },
+          {
+            "word": " cũng",
+            "start": 4.14,
+            "end": 4.34,
+            "probability": 0.9809991121292114
+          },
+          {
+            "word": " không",
+            "start": 4.34,
+            "end": 4.52,
+            "probability": 0.9912046790122986
+          },
+          {
+            "word": " nhất",
+            "start": 4.52,
+            "end": 4.68,
+            "probability": 0.8681042790412903
+          },
+          {
+            "word": " thiết",
+            "start": 4.68,
+            "end": 4.86,
+            "probability": 0.9544534087181091
+          },
+          {
+            "word": " thành",
+            "start": 4.86,
+            "end": 4.96,
+            "probability": 0.9690614938735962
+          },
+          {
+            "word": " đúng",
+            "start": 4.96,
+            "end": 5.16,
+            "probability": 0.9636304676532745
+          },
+          {
+            "word": " một",
+            "start": 5.16,
+            "end": 5.3,
+            "probability": 0.6919623613357544
+          },
+          {
+            "word": " lệnh",
+            "start": 5.3,
+            "end": 5.5,
+            "probability": 0.9985959529876709
+          },
+          {
+            "word": " máy.",
+            "start": 5.5,
+            "end": 6.12,
+            "probability": 0.9996052086353302
+          }
+        ]
+      },
+      {
+        "start": 6.3,
+        "end": 8.76,
+        "text": " Điều cần nhớ là CPU có thể thực thi dạng lệnh đó.",
+        "words": [
+          {
+            "word": " Điều",
+            "start": 6.3,
+            "end": 6.56,
+            "probability": 0.9431909720102946
+          },
+          {
+            "word": " cần",
+            "start": 6.56,
+            "end": 6.68,
+            "probability": 0.9801396131515503
+          },
+          {
+            "word": " nhớ",
+            "start": 6.68,
+            "end": 6.96,
+            "probability": 0.9785913825035095
+          },
+          {
+            "word": " là",
+            "start": 6.96,
+            "end": 7.08,
+            "probability": 0.9864445328712463
+          },
+          {
+            "word": " CPU",
+            "start": 7.08,
+            "end": 7.46,
+            "probability": 0.8549975752830505
+          },
+          {
+            "word": " có",
+            "start": 7.46,
+            "end": 7.82,
+            "probability": 0.974342405796051
+          },
+          {
+            "word": " thể",
+            "start": 7.82,
+            "end": 7.94,
+            "probability": 0.99205082654953
+          },
+          {
+            "word": " thực",
+            "start": 7.94,
+            "end": 8.04,
+            "probability": 0.9274874925613403
+          },
+          {
+            "word": " thi",
+            "start": 8.04,
+            "end": 8.2,
+            "probability": 0.6294772028923035
+          },
+          {
+            "word": " dạng",
+            "start": 8.2,
+            "end": 8.46,
+            "probability": 0.8461959759394327
+          },
+          {
+            "word": " lệnh",
+            "start": 8.46,
+            "end": 8.56,
+            "probability": 0.9891233841578165
+          },
+          {
+            "word": " đó.",
+            "start": 8.56,
+            "end": 8.76,
+            "probability": 0.9914010167121887
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-11",
+    "expected": "Để thấy kết quả, ta chạy tệp hello vừa tạo. Hệ điều hành đưa chương trình vào hoạt động. Lúc này, CPU mới thực thi các lệnh của chương trình ấy.",
+    "heard": "Để thấy kết quả, ta chạy tiệp Hello vừa tạo, hệ điều hành đưa chương trình vào hoạt động. Lúc này, CPU mới thực thi các lệnh của chương trình ấy.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.36,
+        "text": " Để thấy kết quả, ta chạy tiệp Hello vừa tạo, hệ điều hành đưa chương trình vào hoạt động.",
+        "words": [
+          {
+            "word": " Để",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.7037802040576935
+          },
+          {
+            "word": " thấy",
+            "start": 0.18,
+            "end": 0.3,
+            "probability": 0.8603053689002991
+          },
+          {
+            "word": " kết",
+            "start": 0.3,
+            "end": 0.46,
+            "probability": 0.9451233446598053
+          },
+          {
+            "word": " quả,",
+            "start": 0.46,
+            "end": 0.78,
+            "probability": 0.9939570128917694
+          },
+          {
+            "word": " ta",
+            "start": 1.04,
+            "end": 1.18,
+            "probability": 0.9891074895858765
+          },
+          {
+            "word": " chạy",
+            "start": 1.18,
+            "end": 1.42,
+            "probability": 0.9703774054845175
+          },
+          {
+            "word": " tiệp",
+            "start": 1.42,
+            "end": 1.64,
+            "probability": 0.6363328595956167
+          },
+          {
+            "word": " Hello",
+            "start": 1.64,
+            "end": 1.86,
+            "probability": 0.6345160007476807
+          },
+          {
+            "word": " vừa",
+            "start": 1.86,
+            "end": 2.1,
+            "probability": 0.5440017580986023
+          },
+          {
+            "word": " tạo,",
+            "start": 2.1,
+            "end": 2.38,
+            "probability": 0.9852673709392548
+          },
+          {
+            "word": " hệ",
+            "start": 2.74,
+            "end": 2.96,
+            "probability": 0.8488766551017761
+          },
+          {
+            "word": " điều",
+            "start": 2.96,
+            "end": 3.08,
+            "probability": 0.9509661197662354
+          },
+          {
+            "word": " hành",
+            "start": 3.08,
+            "end": 3.34,
+            "probability": 0.9710271060466766
+          },
+          {
+            "word": " đưa",
+            "start": 3.34,
+            "end": 3.56,
+            "probability": 0.931911438703537
+          },
+          {
+            "word": " chương",
+            "start": 3.56,
+            "end": 3.7,
+            "probability": 0.9902908205986023
+          },
+          {
+            "word": " trình",
+            "start": 3.7,
+            "end": 3.92,
+            "probability": 0.9973631501197815
+          },
+          {
+            "word": " vào",
+            "start": 3.92,
+            "end": 4.04,
+            "probability": 0.9883404970169067
+          },
+          {
+            "word": " hoạt",
+            "start": 4.04,
+            "end": 4.18,
+            "probability": 0.9060130715370178
+          },
+          {
+            "word": " động.",
+            "start": 4.18,
+            "end": 4.36,
+            "probability": 0.9997488856315613
+          }
+        ]
+      },
+      {
+        "start": 4.74,
+        "end": 7.28,
+        "text": " Lúc này, CPU mới thực thi các lệnh của chương trình ấy.",
+        "words": [
+          {
+            "word": " Lúc",
+            "start": 4.74,
+            "end": 4.96,
+            "probability": 0.9891095161437988
+          },
+          {
+            "word": " này,",
+            "start": 4.96,
+            "end": 5.14,
+            "probability": 0.9836335778236389
+          },
+          {
+            "word": " CPU",
+            "start": 5.3,
+            "end": 5.64,
+            "probability": 0.9351420998573303
+          },
+          {
+            "word": " mới",
+            "start": 5.64,
+            "end": 5.98,
+            "probability": 0.9980841875076294
+          },
+          {
+            "word": " thực",
+            "start": 5.98,
+            "end": 6.12,
+            "probability": 0.8553922176361084
+          },
+          {
+            "word": " thi",
+            "start": 6.12,
+            "end": 6.34,
+            "probability": 0.8436911106109619
+          },
+          {
+            "word": " các",
+            "start": 6.34,
+            "end": 6.52,
+            "probability": 0.9269620776176453
+          },
+          {
+            "word": " lệnh",
+            "start": 6.52,
+            "end": 6.74,
+            "probability": 0.9575928250948588
+          },
+          {
+            "word": " của",
+            "start": 6.74,
+            "end": 6.8,
+            "probability": 0.9819153547286987
+          },
+          {
+            "word": " chương",
+            "start": 6.8,
+            "end": 6.98,
+            "probability": 0.998794436454773
+          },
+          {
+            "word": " trình",
+            "start": 6.98,
+            "end": 7.18,
+            "probability": 0.9983828067779541
+          },
+          {
+            "word": " ấy.",
+            "start": 7.18,
+            "end": 7.28,
+            "probability": 0.8982962369918823
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-12",
+    "expected": "Trong lúc chạy, chương trình thực hiện việc in lời chào qua các chức năng của thư viện và hệ điều hành. Trên màn hình, chữ Chao ban xuất hiện. Đó là kết quả ta đã yêu cầu trong mã nguồn.",
+    "heard": "Trong lúc chạy, chương trình thực hiện việc in lời chào qua các chức năng của thư viện và hệ điều hành. Trên màn hình, chịu trao ban xuất hiện, đó là kết quả ta đã yêu cầu trong mạng nguồn.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.26,
+        "text": " Trong lúc chạy, chương trình thực hiện việc in lời chào qua các chức năng của thư viện và hệ điều hành.",
+        "words": [
+          {
+            "word": " Trong",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.9812685549259186
+          },
+          {
+            "word": " lúc",
+            "start": 0.18,
+            "end": 0.32,
+            "probability": 0.9893589019775391
+          },
+          {
+            "word": " chạy,",
+            "start": 0.32,
+            "end": 0.76,
+            "probability": 0.9349705378214518
+          },
+          {
+            "word": " chương",
+            "start": 0.92,
+            "end": 1.0,
+            "probability": 0.9294367730617523
+          },
+          {
+            "word": " trình",
+            "start": 1.0,
+            "end": 1.18,
+            "probability": 0.9971156418323517
+          },
+          {
+            "word": " thực",
+            "start": 1.18,
+            "end": 1.3,
+            "probability": 0.9769006967544556
+          },
+          {
+            "word": " hiện",
+            "start": 1.3,
+            "end": 1.5,
+            "probability": 0.997589111328125
+          },
+          {
+            "word": " việc",
+            "start": 1.5,
+            "end": 1.64,
+            "probability": 0.9872210621833801
+          },
+          {
+            "word": " in",
+            "start": 1.64,
+            "end": 1.9,
+            "probability": 0.5070707201957703
+          },
+          {
+            "word": " lời",
+            "start": 1.9,
+            "end": 2.08,
+            "probability": 0.9876724481582642
+          },
+          {
+            "word": " chào",
+            "start": 2.08,
+            "end": 2.36,
+            "probability": 0.9457399249076843
+          },
+          {
+            "word": " qua",
+            "start": 2.36,
+            "end": 2.52,
+            "probability": 0.8937113285064697
+          },
+          {
+            "word": " các",
+            "start": 2.52,
+            "end": 2.64,
+            "probability": 0.9979848861694336
+          },
+          {
+            "word": " chức",
+            "start": 2.64,
+            "end": 2.8,
+            "probability": 0.9462550282478333
+          },
+          {
+            "word": " năng",
+            "start": 2.8,
+            "end": 3.02,
+            "probability": 0.9735516607761383
+          },
+          {
+            "word": " của",
+            "start": 3.02,
+            "end": 3.14,
+            "probability": 0.9767431616783142
+          },
+          {
+            "word": " thư",
+            "start": 3.14,
+            "end": 3.32,
+            "probability": 0.9338431656360626
+          },
+          {
+            "word": " viện",
+            "start": 3.32,
+            "end": 3.58,
+            "probability": 0.9666802883148193
+          },
+          {
+            "word": " và",
+            "start": 3.58,
+            "end": 3.74,
+            "probability": 0.9918233752250671
+          },
+          {
+            "word": " hệ",
+            "start": 3.74,
+            "end": 3.88,
+            "probability": 0.9793701171875
+          },
+          {
+            "word": " điều",
+            "start": 3.88,
+            "end": 4.04,
+            "probability": 0.8144515156745911
+          },
+          {
+            "word": " hành.",
+            "start": 4.04,
+            "end": 4.26,
+            "probability": 0.9837333261966705
+          }
+        ]
+      },
+      {
+        "start": 4.82,
+        "end": 8.7,
+        "text": " Trên màn hình, chịu trao ban xuất hiện, đó là kết quả ta đã yêu cầu trong mạng nguồn.",
+        "words": [
+          {
+            "word": " Trên",
+            "start": 4.82,
+            "end": 5.06,
+            "probability": 0.9302272796630859
+          },
+          {
+            "word": " màn",
+            "start": 5.06,
+            "end": 5.24,
+            "probability": 0.7699151337146759
+          },
+          {
+            "word": " hình,",
+            "start": 5.24,
+            "end": 5.36,
+            "probability": 0.9900044202804565
+          },
+          {
+            "word": " chịu",
+            "start": 5.48,
+            "end": 5.62,
+            "probability": 0.6656313985586166
+          },
+          {
+            "word": " trao",
+            "start": 5.62,
+            "end": 5.8,
+            "probability": 0.731230229139328
+          },
+          {
+            "word": " ban",
+            "start": 5.8,
+            "end": 5.9,
+            "probability": 0.8529425263404846
+          },
+          {
+            "word": " xuất",
+            "start": 5.9,
+            "end": 6.04,
+            "probability": 0.9721738994121552
+          },
+          {
+            "word": " hiện,",
+            "start": 6.04,
+            "end": 6.18,
+            "probability": 0.9982162117958069
+          },
+          {
+            "word": " đó",
+            "start": 6.7,
+            "end": 6.78,
+            "probability": 0.9257514476776123
+          },
+          {
+            "word": " là",
+            "start": 6.78,
+            "end": 6.92,
+            "probability": 0.9973651766777039
+          },
+          {
+            "word": " kết",
+            "start": 6.92,
+            "end": 7.06,
+            "probability": 0.9789738655090332
+          },
+          {
+            "word": " quả",
+            "start": 7.06,
+            "end": 7.36,
+            "probability": 0.996938556432724
+          },
+          {
+            "word": " ta",
+            "start": 7.36,
+            "end": 7.56,
+            "probability": 0.9797746539115906
+          },
+          {
+            "word": " đã",
+            "start": 7.56,
+            "end": 7.72,
+            "probability": 0.9714294672012329
+          },
+          {
+            "word": " yêu",
+            "start": 7.72,
+            "end": 7.88,
+            "probability": 0.9869211912155151
+          },
+          {
+            "word": " cầu",
+            "start": 7.88,
+            "end": 8.08,
+            "probability": 0.9844371974468231
+          },
+          {
+            "word": " trong",
+            "start": 8.08,
+            "end": 8.24,
+            "probability": 0.9791338443756104
+          },
+          {
+            "word": " mạng",
+            "start": 8.24,
+            "end": 8.48,
+            "probability": 0.6435960233211517
+          },
+          {
+            "word": " nguồn.",
+            "start": 8.48,
+            "end": 8.7,
+            "probability": 0.9343307614326477
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-13",
+    "expected": "Đặt dòng C ban đầu cạnh kết quả vừa chạy: cùng một lời chào. Compiler giúp chuyển cách biểu diễn để chương trình có thể được thực thi; nó không tự chọn nội dung lời chào thay bạn.",
+    "heard": "Đan gióng C ban đầu cạnh kết quả vừa chạy, cùng một lời chào. Compiler giúp chuyển cách điều diễn để chương trình có thể được cực thi, nó không tự chọn nội dung lời chào thay bạn.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.78,
+        "text": " Đan gióng C ban đầu cạnh kết quả vừa chạy, cùng một lời chào.",
+        "words": [
+          {
+            "word": " Đan",
+            "start": 0.0,
+            "end": 0.18,
+            "probability": 0.4248937517404556
+          },
+          {
+            "word": " gióng",
+            "start": 0.18,
+            "end": 0.42,
+            "probability": 0.7464659412701925
+          },
+          {
+            "word": " C",
+            "start": 0.42,
+            "end": 0.54,
+            "probability": 0.6489223837852478
+          },
+          {
+            "word": " ban",
+            "start": 0.54,
+            "end": 0.7,
+            "probability": 0.9578505754470825
+          },
+          {
+            "word": " đầu",
+            "start": 0.7,
+            "end": 0.88,
+            "probability": 0.9867334961891174
+          },
+          {
+            "word": " cạnh",
+            "start": 0.88,
+            "end": 1.04,
+            "probability": 0.8806020319461823
+          },
+          {
+            "word": " kết",
+            "start": 1.04,
+            "end": 1.2,
+            "probability": 0.9608986079692841
+          },
+          {
+            "word": " quả",
+            "start": 1.2,
+            "end": 1.42,
+            "probability": 0.9924510419368744
+          },
+          {
+            "word": " vừa",
+            "start": 1.42,
+            "end": 1.58,
+            "probability": 0.9358940422534943
+          },
+          {
+            "word": " chạy,",
+            "start": 1.58,
+            "end": 1.88,
+            "probability": 0.9024585684140524
+          },
+          {
+            "word": " cùng",
+            "start": 2.02,
+            "end": 2.18,
+            "probability": 0.9810476899147034
+          },
+          {
+            "word": " một",
+            "start": 2.18,
+            "end": 2.36,
+            "probability": 0.9111435413360596
+          },
+          {
+            "word": " lời",
+            "start": 2.36,
+            "end": 2.5,
+            "probability": 0.9915846288204193
+          },
+          {
+            "word": " chào.",
+            "start": 2.5,
+            "end": 2.78,
+            "probability": 0.9512197077274323
+          }
+        ]
+      },
+      {
+        "start": 3.4000000000000012,
+        "end": 6.24,
+        "text": " Compiler giúp chuyển cách điều diễn để chương trình có thể được cực thi,",
+        "words": [
+          {
+            "word": " Compiler",
+            "start": 3.4000000000000012,
+            "end": 3.7600000000000007,
+            "probability": 0.9374843835830688
+          },
+          {
+            "word": " giúp",
+            "start": 3.7600000000000007,
+            "end": 4.12,
+            "probability": 0.9323076605796814
+          },
+          {
+            "word": " chuyển",
+            "start": 4.12,
+            "end": 4.36,
+            "probability": 0.874985009431839
+          },
+          {
+            "word": " cách",
+            "start": 4.36,
+            "end": 4.48,
+            "probability": 0.9670045971870422
+          },
+          {
+            "word": " điều",
+            "start": 4.48,
+            "end": 4.68,
+            "probability": 0.7958891987800598
+          },
+          {
+            "word": " diễn",
+            "start": 4.68,
+            "end": 5.0,
+            "probability": 0.966646154721578
+          },
+          {
+            "word": " để",
+            "start": 5.0,
+            "end": 5.14,
+            "probability": 0.9799342751502991
+          },
+          {
+            "word": " chương",
+            "start": 5.14,
+            "end": 5.3,
+            "probability": 0.9721244871616364
+          },
+          {
+            "word": " trình",
+            "start": 5.3,
+            "end": 5.5,
+            "probability": 0.9956212639808655
+          },
+          {
+            "word": " có",
+            "start": 5.5,
+            "end": 5.66,
+            "probability": 0.9396802186965942
+          },
+          {
+            "word": " thể",
+            "start": 5.66,
+            "end": 5.78,
+            "probability": 0.9939411878585815
+          },
+          {
+            "word": " được",
+            "start": 5.78,
+            "end": 5.92,
+            "probability": 0.9921008944511414
+          },
+          {
+            "word": " cực",
+            "start": 5.92,
+            "end": 6.08,
+            "probability": 0.8604010939598083
+          },
+          {
+            "word": " thi,",
+            "start": 6.08,
+            "end": 6.24,
+            "probability": 0.8894650340080261
+          }
+        ]
+      },
+      {
+        "start": 6.66,
+        "end": 8.36,
+        "text": " nó không tự chọn nội dung lời chào thay bạn.",
+        "words": [
+          {
+            "word": " nó",
+            "start": 6.66,
+            "end": 6.74,
+            "probability": 0.9705431461334229
+          },
+          {
+            "word": " không",
+            "start": 6.74,
+            "end": 6.92,
+            "probability": 0.9927105903625488
+          },
+          {
+            "word": " tự",
+            "start": 6.92,
+            "end": 7.12,
+            "probability": 0.8649313151836395
+          },
+          {
+            "word": " chọn",
+            "start": 7.12,
+            "end": 7.32,
+            "probability": 0.8601739406585693
+          },
+          {
+            "word": " nội",
+            "start": 7.32,
+            "end": 7.48,
+            "probability": 0.7680516839027405
+          },
+          {
+            "word": " dung",
+            "start": 7.48,
+            "end": 7.66,
+            "probability": 0.9157365560531616
+          },
+          {
+            "word": " lời",
+            "start": 7.66,
+            "end": 7.86,
+            "probability": 0.9886505305767059
+          },
+          {
+            "word": " chào",
+            "start": 7.86,
+            "end": 8.08,
+            "probability": 0.9986903071403503
+          },
+          {
+            "word": " thay",
+            "start": 8.08,
+            "end": 8.22,
+            "probability": 0.6475444734096527
+          },
+          {
+            "word": " bạn.",
+            "start": 8.22,
+            "end": 8.36,
+            "probability": 0.8535333871841431
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scene-14",
+    "expected": "Ta đã nhìn thấy hai kết quả khác nhau. Biên dịch tạo ra chương trình có thể chạy. Chạy chương trình mới làm lời chào xuất hiện.",
+    "heard": "ta đã nhìn thấy 2 kết quả khác nhau. Biên dịch tạo ra chương trình có thể chạy. Chạy chương trình mới làm lời chào xuất hiện.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.56,
+        "text": " ta đã nhìn thấy 2 kết quả khác nhau.",
+        "words": [
+          {
+            "word": " ta",
+            "start": 0.0,
+            "end": 0.14,
+            "probability": 0.26410505175590515
+          },
+          {
+            "word": " đã",
+            "start": 0.14,
+            "end": 0.26,
+            "probability": 0.9772502779960632
+          },
+          {
+            "word": " nhìn",
+            "start": 0.26,
+            "end": 0.48,
+            "probability": 0.9980562031269073
+          },
+          {
+            "word": " thấy",
+            "start": 0.48,
+            "end": 0.6,
+            "probability": 0.9971754550933838
+          },
+          {
+            "word": " 2",
+            "start": 0.6,
+            "end": 0.82,
+            "probability": 0.44245782494544983
+          },
+          {
+            "word": " kết",
+            "start": 0.82,
+            "end": 1.0,
+            "probability": 0.9883167743682861
+          },
+          {
+            "word": " quả",
+            "start": 1.0,
+            "end": 1.16,
+            "probability": 0.9617762267589569
+          },
+          {
+            "word": " khác",
+            "start": 1.16,
+            "end": 1.28,
+            "probability": 0.9982386827468872
+          },
+          {
+            "word": " nhau.",
+            "start": 1.28,
+            "end": 1.56,
+            "probability": 0.9863471984863281
+          }
+        ]
+      },
+      {
+        "start": 2.22,
+        "end": 3.98,
+        "text": " Biên dịch tạo ra chương trình có thể chạy.",
+        "words": [
+          {
+            "word": " Biên",
+            "start": 2.22,
+            "end": 2.38,
+            "probability": 0.7866762578487396
+          },
+          {
+            "word": " dịch",
+            "start": 2.38,
+            "end": 2.58,
+            "probability": 0.9712728559970856
+          },
+          {
+            "word": " tạo",
+            "start": 2.58,
+            "end": 2.84,
+            "probability": 0.9689730107784271
+          },
+          {
+            "word": " ra",
+            "start": 2.84,
+            "end": 2.98,
+            "probability": 0.983253002166748
+          },
+          {
+            "word": " chương",
+            "start": 2.98,
+            "end": 3.16,
+            "probability": 0.9474781453609467
+          },
+          {
+            "word": " trình",
+            "start": 3.16,
+            "end": 3.38,
+            "probability": 0.9954268336296082
+          },
+          {
+            "word": " có",
+            "start": 3.38,
+            "end": 3.5,
+            "probability": 0.9376506209373474
+          },
+          {
+            "word": " thể",
+            "start": 3.5,
+            "end": 3.6,
+            "probability": 0.998737633228302
+          },
+          {
+            "word": " chạy.",
+            "start": 3.6,
+            "end": 3.98,
+            "probability": 0.9243399500846863
+          }
+        ]
+      },
+      {
+        "start": 4.42,
+        "end": 6.18,
+        "text": " Chạy chương trình mới làm lời chào xuất hiện.",
+        "words": [
+          {
+            "word": " Chạy",
+            "start": 4.42,
+            "end": 4.62,
+            "probability": 0.8817450602849325
+          },
+          {
+            "word": " chương",
+            "start": 4.62,
+            "end": 4.72,
+            "probability": 0.9912284314632416
+          },
+          {
+            "word": " trình",
+            "start": 4.72,
+            "end": 4.9,
+            "probability": 0.991179883480072
+          },
+          {
+            "word": " mới",
+            "start": 4.9,
+            "end": 5.12,
+            "probability": 0.993535041809082
+          },
+          {
+            "word": " làm",
+            "start": 5.12,
+            "end": 5.36,
+            "probability": 0.9438323974609375
+          },
+          {
+            "word": " lời",
+            "start": 5.36,
+            "end": 5.62,
+            "probability": 0.9931071400642395
+          },
+          {
+            "word": " chào",
+            "start": 5.62,
+            "end": 5.88,
+            "probability": 0.8674176633358002
+          },
+          {
+            "word": " xuất",
+            "start": 5.88,
+            "end": 6.04,
+            "probability": 0.967486172914505
+          },
+          {
+            "word": " hiện.",
+            "start": 6.04,
+            "end": 6.18,
+            "probability": 0.998171329498291
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "outro",
+    "expected": "Hãy nhớ chuỗi vừa đi qua: mã nguồn C, trình biên dịch, mã máy, rồi CPU thực thi. Compiler là chiếc cầu chuyển cách biểu diễn. Còn điều chương trình làm, bắt đầu từ mã nguồn bạn viết.",
+    "heard": "Hãy nhớ chối với địa qua mã nguồn C, trình biên dịch, mã máy, rồi CPU thực thi, compiler là chiếc cầu chuyển cách biểu diễn, còn điều chương trình làm bắt đầu từ mã nguồn bạn viết.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.44,
+        "text": " Hãy nhớ chối với địa qua mã nguồn C, trình biên dịch, mã máy, rồi CPU thực thi,",
+        "words": [
+          {
+            "word": " Hãy",
+            "start": 0.0,
+            "end": 0.2,
+            "probability": 0.8031916916370392
+          },
+          {
+            "word": " nhớ",
+            "start": 0.2,
+            "end": 0.42,
+            "probability": 0.9888250529766083
+          },
+          {
+            "word": " chối",
+            "start": 0.42,
+            "end": 0.58,
+            "probability": 0.49525804817676544
+          },
+          {
+            "word": " với",
+            "start": 0.58,
+            "end": 0.72,
+            "probability": 0.7779000401496887
+          },
+          {
+            "word": " địa",
+            "start": 0.72,
+            "end": 0.94,
+            "probability": 0.6618521064519882
+          },
+          {
+            "word": " qua",
+            "start": 0.94,
+            "end": 1.06,
+            "probability": 0.8796623349189758
+          },
+          {
+            "word": " mã",
+            "start": 1.06,
+            "end": 1.38,
+            "probability": 0.27780815958976746
+          },
+          {
+            "word": " nguồn",
+            "start": 1.38,
+            "end": 1.64,
+            "probability": 0.8469724878668785
+          },
+          {
+            "word": " C,",
+            "start": 1.64,
+            "end": 1.82,
+            "probability": 0.7390629649162292
+          },
+          {
+            "word": " trình",
+            "start": 2.1,
+            "end": 2.2,
+            "probability": 0.8290576636791229
+          },
+          {
+            "word": " biên",
+            "start": 2.2,
+            "end": 2.38,
+            "probability": 0.9822585582733154
+          },
+          {
+            "word": " dịch,",
+            "start": 2.38,
+            "end": 2.58,
+            "probability": 0.98976069688797
+          },
+          {
+            "word": " mã",
+            "start": 2.76,
+            "end": 2.86,
+            "probability": 0.8775820732116699
+          },
+          {
+            "word": " máy,",
+            "start": 2.86,
+            "end": 3.24,
+            "probability": 0.9563220739364624
+          },
+          {
+            "word": " rồi",
+            "start": 3.38,
+            "end": 3.58,
+            "probability": 0.9712554216384888
+          },
+          {
+            "word": " CPU",
+            "start": 3.58,
+            "end": 3.92,
+            "probability": 0.9536450505256653
+          },
+          {
+            "word": " thực",
+            "start": 3.92,
+            "end": 4.22,
+            "probability": 0.8544573187828064
+          },
+          {
+            "word": " thi,",
+            "start": 4.22,
+            "end": 4.44,
+            "probability": 0.8947792053222656
+          }
+        ]
+      },
+      {
+        "start": 4.78,
+        "end": 9.28,
+        "text": " compiler là chiếc cầu chuyển cách biểu diễn, còn điều chương trình làm bắt đầu từ mã nguồn bạn viết.",
+        "words": [
+          {
+            "word": " compiler",
+            "start": 4.78,
+            "end": 5.16,
+            "probability": 0.941511332988739
+          },
+          {
+            "word": " là",
+            "start": 5.16,
+            "end": 5.44,
+            "probability": 0.9881806373596191
+          },
+          {
+            "word": " chiếc",
+            "start": 5.44,
+            "end": 5.66,
+            "probability": 0.8925905823707581
+          },
+          {
+            "word": " cầu",
+            "start": 5.66,
+            "end": 5.74,
+            "probability": 0.7555268704891205
+          },
+          {
+            "word": " chuyển",
+            "start": 5.74,
+            "end": 5.94,
+            "probability": 0.8364149928092957
+          },
+          {
+            "word": " cách",
+            "start": 5.94,
+            "end": 6.12,
+            "probability": 0.9482092261314392
+          },
+          {
+            "word": " biểu",
+            "start": 6.12,
+            "end": 6.34,
+            "probability": 0.7709049880504608
+          },
+          {
+            "word": " diễn,",
+            "start": 6.34,
+            "end": 6.66,
+            "probability": 0.9953346252441406
+          },
+          {
+            "word": " còn",
+            "start": 6.94,
+            "end": 7.08,
+            "probability": 0.9271459579467773
+          },
+          {
+            "word": " điều",
+            "start": 7.08,
+            "end": 7.22,
+            "probability": 0.9079979658126831
+          },
+          {
+            "word": " chương",
+            "start": 7.22,
+            "end": 7.4,
+            "probability": 0.5895315557718277
+          },
+          {
+            "word": " trình",
+            "start": 7.4,
+            "end": 7.54,
+            "probability": 0.995416909456253
+          },
+          {
+            "word": " làm",
+            "start": 7.54,
+            "end": 7.76,
+            "probability": 0.9902245402336121
+          },
+          {
+            "word": " bắt",
+            "start": 7.76,
+            "end": 8.22,
+            "probability": 0.9233421683311462
+          },
+          {
+            "word": " đầu",
+            "start": 8.22,
+            "end": 8.38,
+            "probability": 0.9997406601905823
+          },
+          {
+            "word": " từ",
+            "start": 8.38,
+            "end": 8.52,
+            "probability": 0.9808790683746338
+          },
+          {
+            "word": " mã",
+            "start": 8.52,
+            "end": 8.7,
+            "probability": 0.957264244556427
+          },
+          {
+            "word": " nguồn",
+            "start": 8.7,
+            "end": 8.94,
+            "probability": 0.9876651018857956
+          },
+          {
+            "word": " bạn",
+            "start": 8.94,
+            "end": 9.06,
+            "probability": 0.7729023098945618
+          },
+          {
+            "word": " viết.",
+            "start": 9.06,
+            "end": 9.28,
+            "probability": 0.9555889070034027
+          }
+        ]
+      }
+    ]
+  }
+]

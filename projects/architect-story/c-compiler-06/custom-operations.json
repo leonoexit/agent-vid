@@ -1,0 +1,1404 @@
+{
+  "ops": [
+    {
+      "id": "n17",
+      "start": 0,
+      "end": 0.5,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n50",
+      "start": 0.1,
+      "end": 0.44999999999999996,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n51",
+      "start": 0.81,
+      "end": 1.1600000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n52",
+      "start": 5.41,
+      "end": 5.76,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n17-img",
+      "start": 2.71,
+      "end": 3.81,
+      "kind": "reframe",
+      "job": "inspect image within a native crop window"
+    },
+    {
+      "id": "n53",
+      "start": 7.72,
+      "end": 8.07,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n17",
+      "start": 7.62,
+      "end": 8.47,
+      "kind": "reframe",
+      "job": "illustration yields reading area to native example"
+    },
+    {
+      "id": "source-file",
+      "start": 7.77,
+      "end": 8.12,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n54",
+      "start": 10.05,
+      "end": 10.4,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n55",
+      "start": 10.05,
+      "end": 10.4,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-line-3",
+      "start": 13.21,
+      "end": 13.66,
+      "kind": "attention",
+      "job": "identify the one C instruction to inspect"
+    },
+    {
+      "id": "n56",
+      "start": 14.219999999999999,
+      "end": 14.569999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 14.12,
+      "end": 14.87,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n57",
+      "start": 15.79,
+      "end": 16.14,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p58",
+      "start": 15.79,
+      "end": 16.49,
+      "kind": "model",
+      "job": "associate string literal with the requested output"
+    },
+    {
+      "id": "n59",
+      "start": 18.37,
+      "end": 18.720000000000002,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n60",
+      "start": 21.12,
+      "end": 21.470000000000002,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 21.02,
+      "end": 21.77,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n61",
+      "start": 21.69,
+      "end": 22.040000000000003,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n63",
+      "start": 21.69,
+      "end": 21.89,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n64",
+      "start": 21.78,
+      "end": 21.98,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n65",
+      "start": 21.87,
+      "end": 22.07,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n66",
+      "start": 21.96,
+      "end": 22.16,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n67",
+      "start": 22.05,
+      "end": 22.25,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n68",
+      "start": 22.14,
+      "end": 22.34,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n69",
+      "start": 22.23,
+      "end": 22.43,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n70",
+      "start": 22.32,
+      "end": 22.52,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n71",
+      "start": 22.41,
+      "end": 22.61,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n72",
+      "start": 22.5,
+      "end": 22.7,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p73",
+      "start": 24.93,
+      "end": 25.63,
+      "kind": "model",
+      "job": "identify unsupported direct C-to-CPU route"
+    },
+    {
+      "id": "n74",
+      "start": 24.93,
+      "end": 25.28,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n75",
+      "start": 27.55,
+      "end": 27.900000000000002,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n76",
+      "start": 21.69,
+      "end": 22.040000000000003,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n77",
+      "start": 30.020000000000003,
+      "end": 30.370000000000005,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 29.92,
+      "end": 30.67,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "compiler-software",
+      "start": 30.720000000000002,
+      "end": 31.070000000000004,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n18",
+      "start": 29.92,
+      "end": 30.520000000000003,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n78",
+      "start": 33.89,
+      "end": 33.99,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n78",
+      "start": 33.89,
+      "end": 34.89,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "p79",
+      "start": 33.89,
+      "end": 34.59,
+      "kind": "model",
+      "job": "source is input to compiler software"
+    },
+    {
+      "id": "n80",
+      "start": 35.85,
+      "end": 36.2,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n81",
+      "start": 37.96,
+      "end": 38.31,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n18",
+      "start": 37.86,
+      "end": 38.66,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n82",
+      "start": 39.15,
+      "end": 39.5,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n84",
+      "start": 44.73,
+      "end": 44.849999999999994,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n85",
+      "start": 44.769999999999996,
+      "end": 44.88999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n86",
+      "start": 44.809999999999995,
+      "end": 44.92999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n87",
+      "start": 44.849999999999994,
+      "end": 44.96999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n88",
+      "start": 44.88999999999999,
+      "end": 45.00999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n89",
+      "start": 44.93,
+      "end": 45.05,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n90",
+      "start": 44.97,
+      "end": 45.089999999999996,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n91",
+      "start": 45.01,
+      "end": 45.129999999999995,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n92",
+      "start": 45.05,
+      "end": 45.169999999999995,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n93",
+      "start": 45.089999999999996,
+      "end": 45.209999999999994,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n94",
+      "start": 45.129999999999995,
+      "end": 45.24999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n95",
+      "start": 45.169999999999995,
+      "end": 45.28999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n82",
+      "start": 44.73,
+      "end": 45.43,
+      "kind": "model",
+      "job": "transform native source representation into symbolic instruction representation"
+    },
+    {
+      "id": "n96",
+      "start": 42.33,
+      "end": 42.68,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n97",
+      "start": 45.74,
+      "end": 46.09,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n98",
+      "start": 46.71,
+      "end": 47.06,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n18",
+      "start": 48.49,
+      "end": 49.39,
+      "kind": "reframe",
+      "job": "illustration yields reading area to native example"
+    },
+    {
+      "id": "compiler-software",
+      "start": 48.49,
+      "end": 49.29,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n45",
+      "start": 48.49,
+      "end": 49.29,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n46",
+      "start": 48.49,
+      "end": 49.29,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n45",
+      "start": 51.71,
+      "end": 51.730000000000004,
+      "kind": "disclosure",
+      "job": "name the concrete compiler software"
+    },
+    {
+      "id": "n99",
+      "start": 51.71,
+      "end": 52.06,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n100",
+      "start": 54.4,
+      "end": 54.75,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 54.3,
+      "end": 54.9,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n101",
+      "start": 55.07,
+      "end": 55.42,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n103",
+      "start": 58.29,
+      "end": 58.39,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n103",
+      "start": 58.29,
+      "end": 60.19,
+      "kind": "model",
+      "job": "compiler reads the input source"
+    },
+    {
+      "id": "n104",
+      "start": 58.29,
+      "end": 58.39,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n104",
+      "start": 58.29,
+      "end": 59.589999999999996,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "n105",
+      "start": 60.59,
+      "end": 60.940000000000005,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n106",
+      "start": 62.5,
+      "end": 62.85,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 62.4,
+      "end": 63.1,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n107",
+      "start": 63.71,
+      "end": 64.06,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n108",
+      "start": 65.79,
+      "end": 66.14,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "compiled-program",
+      "start": 69.09,
+      "end": 69.44,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "compiled-program",
+      "start": 69.09,
+      "end": 69.29,
+      "kind": "model",
+      "job": "commit a distinct executable artifact while source remains"
+    },
+    {
+      "id": "n109",
+      "start": 68.29,
+      "end": 68.39,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n109",
+      "start": 68.29,
+      "end": 69.09,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "p110",
+      "start": 68.29,
+      "end": 69.09,
+      "kind": "model",
+      "job": "source retained alongside a separately created output artifact"
+    },
+    {
+      "id": "n111",
+      "start": 69.09,
+      "end": 69.44,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n112",
+      "start": 71.72,
+      "end": 72.07,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "source-file",
+      "start": 71.62,
+      "end": 72.37,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "compiled-program",
+      "start": 71.62,
+      "end": 72.37,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n24",
+      "start": 71.62,
+      "end": 72.37,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n43",
+      "start": 71.62,
+      "end": 72.37,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n25",
+      "start": 75.51,
+      "end": 75.71000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n26",
+      "start": 75.57000000000001,
+      "end": 75.77000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n27",
+      "start": 75.63000000000001,
+      "end": 75.83000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n28",
+      "start": 75.69000000000001,
+      "end": 75.89000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n29",
+      "start": 75.75,
+      "end": 75.95,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n30",
+      "start": 75.81,
+      "end": 76.01,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n31",
+      "start": 75.87,
+      "end": 76.07000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n32",
+      "start": 75.93,
+      "end": 76.13000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n33",
+      "start": 75.99000000000001,
+      "end": 76.19000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n34",
+      "start": 76.05000000000001,
+      "end": 76.25000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n35",
+      "start": 76.11,
+      "end": 76.31,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n36",
+      "start": 76.17,
+      "end": 76.37,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n37",
+      "start": 76.23,
+      "end": 76.43,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n38",
+      "start": 76.29,
+      "end": 76.49000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n39",
+      "start": 76.35000000000001,
+      "end": 76.55000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n40",
+      "start": 76.41000000000001,
+      "end": 76.61000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n41",
+      "start": 76.47,
+      "end": 76.67,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n42",
+      "start": 76.53,
+      "end": 76.73,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "compiled-program",
+      "start": 75.51,
+      "end": 76.76,
+      "kind": "model",
+      "job": "populate executable with symbolic instruction contents"
+    },
+    {
+      "id": "n113",
+      "start": 76.41000000000001,
+      "end": 76.76,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n114",
+      "start": 78.17,
+      "end": 78.52,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n115",
+      "start": 78.17,
+      "end": 78.52,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n116",
+      "start": 80.78,
+      "end": 81.13,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n117",
+      "start": 81.49,
+      "end": 81.83999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n118",
+      "start": 81.49,
+      "end": 81.64,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n119",
+      "start": 81.53,
+      "end": 81.68,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n120",
+      "start": 81.57,
+      "end": 81.72,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n121",
+      "start": 81.61,
+      "end": 81.76,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n122",
+      "start": 81.64999999999999,
+      "end": 81.8,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n123",
+      "start": 81.69,
+      "end": 81.84,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n124",
+      "start": 81.72999999999999,
+      "end": 81.88,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n125",
+      "start": 81.77,
+      "end": 81.92,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n126",
+      "start": 81.80999999999999,
+      "end": 81.96,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n127",
+      "start": 81.85,
+      "end": 82,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n128",
+      "start": 81.89,
+      "end": 82.04,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n129",
+      "start": 81.92999999999999,
+      "end": 82.08,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n130",
+      "start": 81.97,
+      "end": 82.12,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n131",
+      "start": 82.00999999999999,
+      "end": 82.16,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n132",
+      "start": 82.05,
+      "end": 82.2,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n133",
+      "start": 82.08999999999999,
+      "end": 82.24,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n134",
+      "start": 82.13,
+      "end": 82.28,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n135",
+      "start": 82.17,
+      "end": 82.32000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n136",
+      "start": 81.49,
+      "end": 81.83999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n137",
+      "start": 85.17,
+      "end": 85.52,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n138",
+      "start": 85.67,
+      "end": 86.02,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p139",
+      "start": 85.17,
+      "end": 85.87,
+      "kind": "model",
+      "job": "one C statement can map to multiple machine instructions"
+    },
+    {
+      "id": "n118",
+      "start": 87.91,
+      "end": 88.25999999999999,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n119",
+      "start": 87.99,
+      "end": 88.33999999999999,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n120",
+      "start": 88.07,
+      "end": 88.41999999999999,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n121",
+      "start": 88.14999999999999,
+      "end": 88.49999999999999,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n122",
+      "start": 88.22999999999999,
+      "end": 88.57999999999998,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n123",
+      "start": 88.31,
+      "end": 88.66,
+      "kind": "attention",
+      "job": "identify CPU-executable instruction group"
+    },
+    {
+      "id": "n140",
+      "start": 90.32,
+      "end": 90.66999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n19",
+      "start": 90.22,
+      "end": 90.32,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n141",
+      "start": 91.55,
+      "end": 91.89999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "compiled-program",
+      "start": 90.22,
+      "end": 90.72,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n143",
+      "start": 93.11,
+      "end": 93.46,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n144",
+      "start": 93.11,
+      "end": 93.21,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n144",
+      "start": 93.11,
+      "end": 93.91,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "p145",
+      "start": 95.67,
+      "end": 96.37,
+      "kind": "model",
+      "job": "OS starts program execution on CPU"
+    },
+    {
+      "id": "n146",
+      "start": 95.67,
+      "end": 95.77,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n146",
+      "start": 95.67,
+      "end": 96.67,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "n147",
+      "start": 95.67,
+      "end": 96.02,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n148",
+      "start": 98.33999999999999,
+      "end": 98.68999999999998,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n19",
+      "start": 98.24,
+      "end": 99.03999999999999,
+      "kind": "reframe",
+      "job": "inspect image within a native crop window"
+    },
+    {
+      "id": "n19-img",
+      "start": 98.24,
+      "end": 99.03999999999999,
+      "kind": "reframe",
+      "job": "inspect image within a native crop window"
+    },
+    {
+      "id": "n149",
+      "start": 98.39,
+      "end": 98.74,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p150",
+      "start": 98.39,
+      "end": 99.09,
+      "kind": "model",
+      "job": "program calls output functions"
+    },
+    {
+      "id": "run-output",
+      "start": 103.21,
+      "end": 103.55999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n151",
+      "start": 102.46,
+      "end": 102.55999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n151",
+      "start": 102.46,
+      "end": 103.21,
+      "kind": "model",
+      "job": "copy source representation into destination"
+    },
+    {
+      "id": "greeting",
+      "start": 103.21,
+      "end": 103.41,
+      "kind": "disclosure",
+      "job": "commit visible stdout"
+    },
+    {
+      "id": "greeting",
+      "start": 103.21,
+      "end": 103.41,
+      "kind": "model",
+      "job": "program stdout receives Chao ban newline"
+    },
+    {
+      "id": "n152",
+      "start": 105.31,
+      "end": 105.66,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n153",
+      "start": 107.72,
+      "end": 108.07,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "run-output",
+      "start": 107.91,
+      "end": 108.75999999999999,
+      "kind": "reframe",
+      "job": "committed result opens into evidence comparison"
+    },
+    {
+      "id": "p154",
+      "start": 109.79,
+      "end": 110.49000000000001,
+      "kind": "model",
+      "job": "compare source string literal with observed stdout"
+    },
+    {
+      "id": "n155",
+      "start": 109.79,
+      "end": 110.14,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n156",
+      "start": 114.51,
+      "end": 114.86,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n157",
+      "start": 116.86,
+      "end": 117.21,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "compiled-program",
+      "start": 116.76,
+      "end": 117.46000000000001,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "run-output",
+      "start": 116.76,
+      "end": 117.46000000000001,
+      "kind": "reframe",
+      "job": "recompose reading area"
+    },
+    {
+      "id": "n158",
+      "start": 119.13,
+      "end": 119.47999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n159",
+      "start": 119.13,
+      "end": 119.47999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n160",
+      "start": 121.33,
+      "end": 121.67999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p161",
+      "start": 121.33,
+      "end": 122.03,
+      "kind": "model",
+      "job": "running created executable produces the separate stdout result"
+    },
+    {
+      "id": "n162",
+      "start": 123.75999999999999,
+      "end": 124.10999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n163",
+      "start": 124.87,
+      "end": 125.22,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n164",
+      "start": 125.91,
+      "end": 126.25999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p165",
+      "start": 125.91,
+      "end": 126.61,
+      "kind": "model",
+      "job": "connect ordered source-to-execution stage"
+    },
+    {
+      "id": "n166",
+      "start": 126.57,
+      "end": 126.91999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p167",
+      "start": 126.57,
+      "end": 127.27,
+      "kind": "model",
+      "job": "connect ordered source-to-execution stage"
+    },
+    {
+      "id": "n168",
+      "start": 127.39,
+      "end": 127.74,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "p169",
+      "start": 127.39,
+      "end": 128.09,
+      "kind": "model",
+      "job": "connect ordered source-to-execution stage"
+    },
+    {
+      "id": "n170",
+      "start": 130.89,
+      "end": 131.23999999999998,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n171",
+      "start": 0,
+      "end": 0.01,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n175",
+      "start": 7.62,
+      "end": 7.63,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n179",
+      "start": 14.12,
+      "end": 14.129999999999999,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n183",
+      "start": 21.02,
+      "end": 21.03,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n188",
+      "start": 29.92,
+      "end": 29.930000000000003,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n193",
+      "start": 37.86,
+      "end": 37.87,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n198",
+      "start": 45.64,
+      "end": 45.65,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n203",
+      "start": 54.3,
+      "end": 54.309999999999995,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n207",
+      "start": 62.4,
+      "end": 62.41,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n212",
+      "start": 71.62,
+      "end": 71.63000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n217",
+      "start": 80.68,
+      "end": 80.69000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n222",
+      "start": 90.22,
+      "end": 90.23,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n227",
+      "start": 98.24,
+      "end": 98.25,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n233",
+      "start": 107.62,
+      "end": 107.63000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n238",
+      "start": 116.76,
+      "end": 116.77000000000001,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    },
+    {
+      "id": "n242",
+      "start": 123.66,
+      "end": 123.67,
+      "kind": "disclosure",
+      "job": "disclose native content"
+    }
+  ]
+}
