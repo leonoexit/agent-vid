@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {poseAt,gridRects} from '../src/motion.mjs';
+import {binarySearch,scoredSearch} from '../src/search-model.mjs';
+import {buildChoreography,sampleChoreography} from '../src/search-choreography.mjs';
+const rect=x=>({x,y:0,w:100,h:100});
+const c={bounds:60,mid1:100,pick1:140,compare1:200,discard1:260,shrink1:300,mid2:370,compare2:410,shrink2:470,mid3:530,found:580,trail:670,rule:780};
+const example={values:[3,7,11,18,24,31,42,56],target:24};
+test('binary search derives bounds, compared values and returned index',()=>{const t=binarySearch(example.values,example.target);assert.deepEqual(t.steps.map(s=>[s.left,s.right,s.mid,s.value]),[[0,7,3,18],[4,7,5,31],[4,4,4,24]]);assert.equal(t.index,4);});
+test('alternate data drives the same three-beat score without hardcoded numbers',()=>{const t=scoredSearch({values:[2,6,10,14,20,26,32,38],target:10});assert.deepEqual(t.steps.map(s=>s.value),[14,6,10]);assert.equal(t.index,2);assert.throws(()=>scoredSearch({...example,target:18}),/score/);assert.throws(()=>binarySearch([2,1],1),/sorted/);});
+test('interrupted position transitions are continuous and independent of seek order',()=>{const keys=[{at:10,to:rect(200),duration:30},{at:20,to:rect(500),duration:30}];const before=poseAt(20,rect(0),keys.slice(0,1));assert.deepEqual(poseAt(20,rect(0),keys),before);const expected=poseAt(35,rect(0),keys);for(const f of [70,0,52,19,100])poseAt(f,rect(0),keys);assert.deepEqual(poseAt(35,rect(0),keys),expected);});
+test('object IDs survive select, archive, expansion and return to original order',()=>{const m=buildChoreography(example,c);for(const f of [0,160,285,330,397,500,560,630,700,810]){const poses=sampleChoreography(m,f);assert.deepEqual(Object.keys(poses),['0','1','2','3','4','5','6','7']);for(const r of Object.values(poses))assert.ok(Object.values(r).every(Number.isFinite));}assert.deepEqual(sampleChoreography(m,330)[4],m.remaining[4]);assert.deepEqual(sampleChoreography(m,330)[0],m.archive[0]);assert.deepEqual(sampleChoreography(m,710),m.overview);});
+test('layout adapts cell count without changing identity or overlaps',()=>{const r=gridRects([4,5,6,7],{x:100,y:100,w:800,h:600,columns:2,gap:30});assert.equal(r[4].w,385);assert.equal(r[5].x,515);assert.equal(r[6].y,415);});

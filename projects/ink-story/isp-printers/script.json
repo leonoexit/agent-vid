@@ -1,0 +1,299 @@
+{
+ "storyFormat": "ink-reasoning-v1",
+ "language": "vi",
+ "title": "Chữ I trong SOLID",
+ "audience": "Người mới học lập trình: biết biến, hàm, đã nghe tới lớp và kế thừa. Nhịp chậm rãi theo yêu cầu.",
+ "story": {
+  "question": "Một máy in rẻ chỉ biết in — có nên bắt nó hứa cả quét và phô tô không?",
+  "example": "MayVanPhong có in_giay/quet/photo; MayInRe phải viết quet/photo báo lỗi; quet_hop_dong(MayInRe()) → Exception: Không quét. Sửa: CoTheIn, CoTheQuet, CoThePhoto; MayInRe(CoTheIn), MayDaNang kế thừa cả ba; quet_hop_dong nhận CoTheQuet (mypy cảnh báo khi đưa MayInRe vào).",
+  "takeaway": "Đừng ép một lớp phụ thuộc vào những phương thức nó không dùng; chia interface theo việc người dùng thật sự cần, nhưng không chia vụn vô cớ."
+ },
+ "captionDisplay": {
+  "in-tơ-phây": "interface"
+ },
+ "intro": {
+  "layout": "illustration",
+  "kicker": "SOLID · CHỮ I",
+  "title": "Máy in rẻ\nmà phải biết phô tô?",
+  "vo": "Một chiếc máy in rẻ, chỉ biết in.\n\nVậy có nên bắt nó hứa, là sẽ biết quét tài liệu, và biết phô tô không?\n\nCâu hỏi nghe hơi lạ này, chính là chữ I trong SOLID.",
+  "blocks": [
+   {
+    "type": "image",
+    "src": "assets/illustrations/printer-checklist.jpg",
+    "alt": "Một máy in nhỏ bị phủ bởi một cuộn danh sách việc rất dài, chỉ ô đầu tiên được đánh dấu",
+    "text": "Một máy nhỏ, một danh sách quá dài",
+    "on": "bắt nó hứa"
+   },
+   {
+    "type": "text",
+    "text": "Chữ I trong SOLID",
+    "emphasis": "yellow",
+    "on": "chữ I trong SOLID"
+   }
+  ]
+ },
+ "scenes": [
+  {
+   "layout": "statement",
+   "kicker": "TRƯỚC HẾT",
+   "title": "Interface là\nmột danh sách\nlời hứa.",
+   "vo": "Trước hết, in-tơ-phây là gì?\n\nHãy hiểu đơn giản: đó là danh sách những việc mà một lớp hứa sẽ làm được.\n\nAi dùng lớp đó, chỉ cần đọc danh sách, rồi gọi đúng tên việc.",
+   "blocks": [
+    {
+     "type": "note",
+     "label": "INTERFACE",
+     "text": "Danh sách việc\nmột lớp hứa làm được",
+     "on": "danh sách những việc"
+    },
+    {
+     "type": "text",
+     "text": "Người dùng: đọc danh sách\n→ gọi đúng tên",
+     "on": "Ai dùng lớp đó"
+    }
+   ]
+  },
+  {
+   "layout": "example",
+   "kicker": "MỘT DANH SÁCH CHUNG",
+   "title": "Một danh sách\ncho mọi loại máy.",
+   "vo": "Python không có từ khóa in-tơ-phây riêng. Ta dùng một lớp, chỉ ghi tên các việc. Dấu ba chấm nghĩa là phần thân chưa viết ở đây.\n\nĐây là lớp Máy Văn Phòng, với ba việc: in giấy, quét, và phô tô.\n\nVới một chiếc máy đa năng, cả ba việc đều hợp lý.",
+   "blocks": [
+    {
+     "type": "note",
+     "label": "TRONG PYTHON",
+     "text": "Một lớp chỉ ghi tên việc\nđóng vai interface",
+     "on": "Python không có"
+    },
+    {
+     "type": "code",
+     "text": "class MayVanPhong:\n    def in_giay(self): ...\n    def quet(self): ...\n    def photo(self): ...",
+     "on": "lớp Máy Văn Phòng"
+    },
+    {
+     "type": "note",
+     "label": "MÁY ĐA NĂNG",
+     "text": "in ✓    quét ✓    phô tô ✓",
+     "on": "máy đa năng"
+    }
+   ]
+  },
+  {
+   "layout": "example",
+   "kicker": "THÊM MỘT MÁY MỚI",
+   "title": "Máy in rẻ\nnhận đủ ba lời hứa.",
+   "vo": "Bây giờ, ta thêm lớp Máy In Rẻ. Nó chỉ biết in.\n\nNhưng nó kế thừa Máy Văn Phòng, tức là nhận luôn cả danh sách ba lời hứa.\n\nHai việc không làm được, ta đành viết cho chúng báo lỗi.",
+   "blocks": [
+    {
+     "type": "code",
+     "text": "class MayInRe(MayVanPhong):\n    def in_giay(self):\n        print(\"Đang in...\")",
+     "on": "lớp Máy In Rẻ"
+    },
+    {
+     "type": "code",
+     "label": "HAI VIỆC GIẢ",
+     "emphasis": "red",
+     "text": "    def quet(self):\n        raise Exception(\"Không quét\")\n    def photo(self):\n        raise Exception(\"Không photo\")",
+     "on": "báo lỗi"
+    }
+   ]
+  },
+  {
+   "layout": "example",
+   "kicker": "PHÍA NGƯỜI GỌI",
+   "title": "Người gọi tin\nvào danh sách.",
+   "vo": "Giờ nhìn sang phía người dùng. Hàm quét hợp đồng nhận vào một Máy Văn Phòng, rồi gọi quét.\n\nNhìn danh sách, nó tin rằng máy nào cũng quét được.\n\nĐưa máy in rẻ vào, chương trình dừng lại, và báo lỗi: Không quét.",
+   "blocks": [
+    {
+     "type": "code",
+     "text": "def quet_hop_dong(may: MayVanPhong):\n    may.quet()",
+     "on": "Hàm quét hợp đồng"
+    },
+    {
+     "type": "code",
+     "text": "quet_hop_dong(MayInRe())",
+     "on": "Đưa máy in rẻ vào"
+    },
+    {
+     "type": "result",
+     "label": "KẾT QUẢ KHI CHẠY",
+     "text": "Exception: Không quét",
+     "emphasis": "red",
+     "on": "báo lỗi"
+    }
+   ],
+   "hold": 1.5,
+   "readTask": "Đọc dòng lỗi Exception: Không quét vừa hiện, nối nó với lời gọi quet_hop_dong(MayInRe())."
+  },
+  {
+   "layout": "statement",
+   "kicker": "VẬY LỖI Ở ĐÂU?",
+   "title": "Không phải lỗi\ncủa máy in.",
+   "vo": "Máy in rẻ không có lỗi. Nó vốn chỉ biết in.\n\nLỗi nằm ở danh sách quá to, bắt mọi máy phải hứa cả những việc chúng không làm.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Nó vốn chỉ biết in.",
+     "on": "vốn chỉ biết in"
+    },
+    {
+     "type": "text",
+     "text": "Lỗi nằm ở danh sách quá to.",
+     "emphasis": "red",
+     "on": "danh sách quá to"
+    }
+   ]
+  },
+  {
+   "layout": "statement",
+   "kicker": "CHỮ I TRONG SOLID",
+   "title": "Nguyên lý\nphân tách\ninterface.",
+   "vo": "Đây là điều chữ I trong SOLID muốn tránh. Tên đầy đủ là nguyên lý phân tách in-tơ-phây.\n\nNguyên lý nói: đừng ép một lớp phụ thuộc vào những phương thức mà nó không dùng.\n\nPhụ thuộc, ở đây nghĩa là phải viết ra, hoặc phải biết tới.",
+   "blocks": [
+    {
+     "type": "text",
+     "label": "TÊN TIẾNG ANH",
+     "text": "Interface Segregation Principle",
+     "on": "Tên đầy đủ"
+    },
+    {
+     "type": "note",
+     "text": "Đừng ép một lớp phụ thuộc vào\nnhững phương thức nó không dùng.",
+     "emphasis": "yellow",
+     "on": "đừng ép"
+    },
+    {
+     "type": "text",
+     "text": "phụ thuộc =\nphải viết ra, hoặc phải biết tới",
+     "on": "nghĩa là phải viết"
+    }
+   ]
+  },
+  {
+   "layout": "example",
+   "kicker": "CÁCH SỬA",
+   "title": "Tách thành\nba danh sách nhỏ.",
+   "vo": "Cách sửa là tách danh sách lớn, thành ba danh sách nhỏ.\n\nCó Thể In, chỉ có in giấy. Có Thể Quét, chỉ có quét. Có Thể Phô Tô, chỉ có phô tô.\n\nMỗi danh sách, giờ chỉ là một lời hứa.",
+   "blocks": [
+    {
+     "type": "code",
+     "text": "class CoTheIn:\n    def in_giay(self): ...",
+     "on": "Có Thể In"
+    },
+    {
+     "type": "code",
+     "text": "class CoTheQuet:\n    def quet(self): ...",
+     "on": "Có Thể Quét"
+    },
+    {
+     "type": "code",
+     "text": "class CoThePhoto:\n    def photo(self): ...",
+     "on": "Có Thể Phô Tô"
+    },
+    {
+     "type": "text",
+     "text": "Một danh sách = một lời hứa",
+     "emphasis": "yellow",
+     "on": "Mỗi danh sách"
+    }
+   ]
+  },
+  {
+   "layout": "comparison",
+   "kicker": "MỖI MÁY TỰ CHỌN",
+   "title": "Mỗi máy chỉ nhận\nviệc mình làm được.",
+   "vo": "Bây giờ, Máy In Rẻ chỉ kế thừa Có Thể In. Không còn hàm báo lỗi giả nào nữa.\n\nCòn Máy Đa Năng thì kế thừa cả ba, vì nó thật sự làm được cả ba việc.",
+   "blocks": [
+    {
+     "type": "code",
+     "label": "MÁY IN RẺ",
+     "text": "class MayInRe(CoTheIn):\n    def in_giay(self):\n        print(\"Đang in...\")",
+     "on": "Máy In Rẻ chỉ"
+    },
+    {
+     "type": "text",
+     "text": "Không còn hàm báo lỗi giả.",
+     "emphasis": "yellow",
+     "on": "Không còn hàm"
+    },
+    {
+     "type": "code",
+     "label": "MÁY ĐA NĂNG",
+     "text": "class MayDaNang(CoTheIn,\n                CoTheQuet,\n                CoThePhoto):\n    ...  # viết đủ ba việc",
+     "on": "Máy Đa Năng"
+    }
+   ],
+   "hold": 1.2,
+   "readTask": "So sánh hai lớp: MayInRe chỉ kế thừa CoTheIn, MayDaNang kế thừa cả ba."
+  },
+  {
+   "layout": "example",
+   "kicker": "PHÍA NGƯỜI GỌI, LẦN NỮA",
+   "title": "Người gọi\nchỉ xin đúng thứ cần.",
+   "vo": "Phía người dùng cũng rõ ràng hơn. Hàm quét hợp đồng, giờ chỉ nhận Có Thể Quét.\n\nĐưa máy đa năng vào: quét được.\n\nCòn máy in rẻ, không có lời hứa quét. Đọc dòng đầu của hàm là biết nó không phù hợp. Công cụ kiểm tra kiểu còn báo lỗi này trước khi chạy.",
+   "blocks": [
+    {
+     "type": "code",
+     "text": "def quet_hop_dong(may: CoTheQuet):\n    may.quet()",
+     "on": "chỉ nhận Có Thể Quét"
+    },
+    {
+     "type": "note",
+     "label": "MÁY ĐA NĂNG",
+     "text": "Có lời hứa quét → quét được ✓",
+     "on": "Đưa máy đa năng vào"
+    },
+    {
+     "type": "note",
+     "label": "MÁY IN RẺ",
+     "text": "Không có lời hứa quét\n→ mypy báo trước khi chạy",
+     "emphasis": "red",
+     "on": "Còn máy in rẻ"
+    }
+   ]
+  },
+  {
+   "layout": "comparison",
+   "kicker": "TRƯỚC VÀ SAU",
+   "title": "Một danh sách to\nhay nhiều\ndanh sách nhỏ?",
+   "vo": "Nhìn lại hai cách.\n\nMột danh sách to: máy in rẻ phải viết hàm giả, và người gọi chỉ gặp lỗi khi chương trình đang chạy.\n\nNhiều danh sách nhỏ: mỗi lớp chỉ hứa điều nó làm được, và người gọi chỉ xin đúng thứ mình cần.",
+   "blocks": [
+    {
+     "type": "note",
+     "label": "MỘT DANH SÁCH TO",
+     "text": "Hàm giả báo lỗi\nLỗi lộ ra khi đang chạy",
+     "emphasis": "red",
+     "on": "Một danh sách to"
+    },
+    {
+     "type": "note",
+     "label": "NHIỀU DANH SÁCH NHỎ",
+     "text": "Chỉ hứa việc làm được\nNgười gọi xin đúng thứ cần",
+     "on": "Nhiều danh sách nhỏ"
+    }
+   ],
+   "hold": 1.5,
+   "readTask": "Đọc lại hai cột trước/sau trước khi sang kết luận."
+  }
+ ],
+ "outro": {
+  "layout": "rule",
+  "kicker": "ĐIỀU CẦN NHỚ",
+  "title": "Interface nhỏ.\nLời hứa thật.",
+  "vo": "Vậy chữ I trong SOLID nhắc ta: hãy chia in-tơ-phây theo những việc mà người dùng thật sự cần.\n\nNhưng cũng đừng chia vụn vô cớ. Dấu hiệu nên tách, là khi có một lớp phải viết những hàm nó không làm được.",
+  "blocks": [
+   {
+    "type": "text",
+    "text": "Chia theo việc\nngười dùng thật sự cần.",
+    "emphasis": "yellow",
+    "on": "hãy chia"
+   },
+   {
+    "type": "text",
+    "text": "Dấu hiệu nên tách: có lớp phải viết hàm giả, chỉ để báo lỗi.",
+    "on": "Dấu hiệu nên tách"
+   }
+  ],
+  "hold": 2.0,
+  "readTask": "Đọc trọn quy tắc cuối và dấu hiệu nên tách."
+ }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bento Remotion Explainer"
+  short_description: "Bento programming videos with React, Remotion and voice"
+  default_prompt: "Use $explainer-bento-remotion-voice to create a narrated Bento video tracing one programming concept."

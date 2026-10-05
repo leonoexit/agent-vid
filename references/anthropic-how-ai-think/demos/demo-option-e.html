@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option E: The Napkin Sketch (Vietnamese Fonts)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Mali:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Mali', cursive;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            filter: contrast(105%) brightness(98%);
+        }
+        .paper-wrinkle {
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(0,0,0,0.02) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0,0,0,0.02) 0%, transparent 20%);
+            z-index: 5;
+            pointer-events: none;
+        }
+        /* Blue Pen Ink Effect */
+        .ink-blue {
+            color: #1a237e; /* Deep blue ballpoint */
+            text-shadow: 1px 1px 0px rgba(26, 35, 126, 0.1);
+        }
+        .marker-font {
+            font-family: 'Sriracha', cursive;
+            font-weight: 400; /* Sriracha is naturally bold/thick */
+        }
+        .pen-font {
+            font-family: 'Mali', cursive;
+            font-size: 1.4em; 
+        }
+        .coffee-stain {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 20px solid rgba(139, 69, 19, 0.08);
+            border-radius: 50%;
+            top: -50px;
+            right: -50px;
+            filter: blur(2px);
+            z-index: 1;
+            pointer-events: none;
+            transform: scale(1.1) rotate(20deg);
+        }
+        .doodle-box {
+            border: 3px solid #1a237e;
+            border-radius: 20px;
+            position: relative;
+        }
+        /* Imitate messy overlapping lines in box */
+        .doodle-box::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: 2px; bottom: 2px;
+            border: 2px solid rgba(26, 35, 126, 0.4);
+            border-radius: 25px;
+            transform: rotate(-0.5deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1 -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="coffee-stain"></div>
+        <div class="paper-wrinkle"></div>
+
+        <!-- Watermark -->
+        <div class="absolute bottom-8 left-8 z-50 opacity-10 rotate-[-5deg]">
+            <span class="text-5xl marker-font ink-blue">@lenguyen.codeai</span>
+        </div>
+
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <div class="transform -rotate-2 mb-10">
+                <h2 class="text-7xl pen-font text-gray-500 mb-4">Khoan đã...</h2>
+                <h1 class="text-9xl marker-font ink-blue leading-[0.9]">
+                    Nếu AI không phải<br>
+                    là Toán Học?
+                </h1>
+            </div>
+
+            <div class="relative mt-12 pl-10">
+                <!-- Vertical line acting as margin -->
+                <div class="absolute left-0 top-0 bottom-0 w-1 bg-red-300 opacity-50"></div>
+                
+                <p class="text-7xl pen-font leading-tight ink-blue">
+                    "Chúng ta đắp nặn nó từ Toán,<br>
+                    nhưng giờ nó trông giống...<br>
+                    <span class="bg-yellow-200 px-4 inline-block mt-2 transform rotate-1">SINH HỌC?</span>"
+                </p>
+                
+                <!-- Doodle Arrow -->
+                <svg class="absolute top-full left-1/4 w-32 h-32 text-blue-800 mt-4" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round">
+                    <path d="M10,10 Q50,50 50,90 M50,90 L30,70 M50,90 L70,70" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="absolute top-10 right-10 w-24 h-24 border-4 border-blue-900 rounded-full flex items-center justify-center transform rotate-12">
+            <span class="text-6xl marker-font ink-blue">1</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-wrinkle"></div>
+        
+        <div class="flex-1 z-20 flex flex-col items-center justify-center">
+            <h2 class="text-6xl marker-font ink-blue mb-20 text-center">Nó là một Mẫu Vật</h2>
+            
+            <div class="grid grid-cols-2 gap-10 w-full">
+                <!-- Image 1 placeholder -->
+                <div class="doodle-box p-8 flex flex-col items-center justify-center h-80 transform -rotate-1 hover:rotate-0 transition-transform bg-white">
+                    <div class="text-8xl mb-4">🤖</div>
+                    <p class="text-5xl pen-font text-center">Phần mềm</p>
+                    <p class="text-3xl pen-font text-gray-400 text-center">(Microsoft Word)</p>
+                </div>
+
+                <!-- Image 2 placeholder -->
+                <div class="doodle-box p-8 flex flex-col items-center justify-center h-80 transform rotate-2 bg-blue-50">
+                    <div class="text-8xl mb-4">🦁</div>
+                    <p class="text-6xl pen-font text-center font-bold ink-blue">CLAUDE</p>
+                    <p class="text-3xl pen-font text-gray-400 text-center">(Sinh Vật Hoang Dã)</p>
+                </div>
+            </div>
+
+            <p class="mt-20 text-5xl pen-font text-center max-w-3xl bg-white p-4 shadow-sm border-b-4 border-gray-200">
+                Không phải là "sửa lỗi" (fixing bugs).<br>
+                Mà là <b class="ink-blue">quan sát hành vi</b>.
+            </p>
+        </div>
+
+        <div class="absolute top-10 right-10 w-24 h-24 border-4 border-blue-900 rounded-full flex items-center justify-center transform rotate-6">
+            <span class="text-6xl marker-font ink-blue">2</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-wrinkle"></div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <!-- Big emphatic statement -->
+             <div class="bg-blue-900 p-12 transform -rotate-2 relative shadow-xl">
+                 <!-- Tape -->
+                <div class="absolute -top-4 w-32 h-8 bg-white/30 left-1/2 -translate-x-1/2 rotate-1"></div>
+                
+                <h1 class="text-7xl marker-font text-white leading-tight text-center">
+                    "Không có ai ngồi vặn<br>
+                    từng cái nút cả."
+                </h1>
+             </div>
+
+             <div class="mt-16 text-6xl pen-font ink-blue text-center leading-relaxed">
+                 Khi quá trình huấn luyện kết thúc,<br>
+                 nó gần như <span class="underline decoration-wavy decoration-red-400">không còn giống</span><br>
+                 những gì nó bắt đầu.
+             </div>
+        </div>
+
+        <div class="absolute top-10 right-10 w-24 h-24 border-4 border-blue-900 rounded-full flex items-center justify-center transform -rotate-3">
+            <span class="text-6xl marker-font ink-blue">3</span>
+        </div>
+    </div>
+
+</body>
+</html>

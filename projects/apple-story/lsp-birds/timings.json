@@ -1,0 +1,2354 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=0.9:gap=0.45:timing=monotonic-v2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 10.647,
+   "words": [
+    {
+     "w": "Chim",
+     "start": 0.03,
+     "end": 0.252
+    },
+    {
+     "w": "cánh",
+     "start": 0.271,
+     "end": 0.493
+    },
+    {
+     "w": "cụt",
+     "start": 0.512,
+     "end": 0.697
+    },
+    {
+     "w": "cũng",
+     "start": 0.713,
+     "end": 0.935
+    },
+    {
+     "w": "là",
+     "start": 0.954,
+     "end": 1.102
+    },
+    {
+     "w": "chim.",
+     "start": 1.115,
+     "end": 1.373
+    },
+    {
+     "w": "Vậy",
+     "start": 1.936,
+     "end": 2.108
+    },
+    {
+     "w": "ở",
+     "start": 2.123,
+     "end": 2.226
+    },
+    {
+     "w": "chỗ",
+     "start": 2.235,
+     "end": 2.408
+    },
+    {
+     "w": "chương",
+     "start": 2.422,
+     "end": 2.698
+    },
+    {
+     "w": "trình",
+     "start": 2.722,
+     "end": 2.963
+    },
+    {
+     "w": "đang",
+     "start": 2.984,
+     "end": 3.191
+    },
+    {
+     "w": "dùng",
+     "start": 3.208,
+     "end": 3.415
+    },
+    {
+     "w": "chim,",
+     "start": 3.433,
+     "end": 3.674
+    },
+    {
+     "w": "thay",
+     "start": 3.989,
+     "end": 4.178
+    },
+    {
+     "w": "vào",
+     "start": 4.195,
+     "end": 4.352
+    },
+    {
+     "w": "một",
+     "start": 4.366,
+     "end": 4.523
+    },
+    {
+     "w": "chú",
+     "start": 4.537,
+     "end": 4.694
+    },
+    {
+     "w": "cánh",
+     "start": 4.708,
+     "end": 4.897
+    },
+    {
+     "w": "cụt,",
+     "start": 4.914,
+     "end": 5.103
+    },
+    {
+     "w": "chương",
+     "start": 5.551,
+     "end": 5.778
+    },
+    {
+     "w": "trình",
+     "start": 5.798,
+     "end": 5.996
+    },
+    {
+     "w": "có",
+     "start": 6.013,
+     "end": 6.127
+    },
+    {
+     "w": "còn",
+     "start": 6.137,
+     "end": 6.278
+    },
+    {
+     "w": "chạy",
+     "start": 6.291,
+     "end": 6.461
+    },
+    {
+     "w": "đúng",
+     "start": 6.475,
+     "end": 6.645
+    },
+    {
+     "w": "không?",
+     "start": 6.66,
+     "end": 6.887
+    },
+    {
+     "w": "Chữ",
+     "start": 7.447,
+     "end": 7.704
+    },
+    {
+     "w": "L",
+     "start": 7.727,
+     "end": 7.882
+    },
+    {
+     "w": "trong",
+     "start": 7.895,
+     "end": 8.256
+    },
+    {
+     "w": "SOLID",
+     "start": 8.287,
+     "end": 8.648
+    },
+    {
+     "w": "trả",
+     "start": 8.68,
+     "end": 8.938
+    },
+    {
+     "w": "lời",
+     "start": 8.96,
+     "end": 9.218
+    },
+    {
+     "w": "câu",
+     "start": 9.24,
+     "end": 9.498
+    },
+    {
+     "w": "hỏi",
+     "start": 9.52,
+     "end": 9.778
+    },
+    {
+     "w": "này.",
+     "start": 9.801,
+     "end": 10.11
+    }
+   ],
+   "text": "Chim cánh cụt cũng là chim.\n\nVậy ở chỗ chương trình đang dùng chim, thay vào một chú cánh cụt, chương trình có còn chạy đúng không?\n\nChữ L trong SOLID trả lời câu hỏi này."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 6.807,
+   "words": [
+    {
+     "w": "Bắt",
+     "start": 0.03,
+     "end": 0.223
+    },
+    {
+     "w": "đầu",
+     "start": 0.239,
+     "end": 0.432
+    },
+    {
+     "w": "với",
+     "start": 0.448,
+     "end": 0.641
+    },
+    {
+     "w": "lớp",
+     "start": 0.658,
+     "end": 0.85
+    },
+    {
+     "w": "Chim.",
+     "start": 0.867,
+     "end": 1.136
+    },
+    {
+     "w": "Lớp",
+     "start": 1.714,
+     "end": 1.881
+    },
+    {
+     "w": "này",
+     "start": 1.895,
+     "end": 2.063
+    },
+    {
+     "w": "có",
+     "start": 2.077,
+     "end": 2.211
+    },
+    {
+     "w": "một",
+     "start": 2.222,
+     "end": 2.389
+    },
+    {
+     "w": "phương",
+     "start": 2.404,
+     "end": 2.671
+    },
+    {
+     "w": "thức",
+     "start": 2.694,
+     "end": 2.895
+    },
+    {
+     "w": "tên",
+     "start": 2.912,
+     "end": 3.079
+    },
+    {
+     "w": "là",
+     "start": 3.094,
+     "end": 3.227
+    },
+    {
+     "w": "bay.",
+     "start": 3.239,
+     "end": 3.439
+    },
+    {
+     "w": "Nó",
+     "start": 3.997,
+     "end": 4.145
+    },
+    {
+     "w": "như",
+     "start": 4.158,
+     "end": 4.343
+    },
+    {
+     "w": "một",
+     "start": 4.359,
+     "end": 4.545
+    },
+    {
+     "w": "lời",
+     "start": 4.561,
+     "end": 4.746
+    },
+    {
+     "w": "hứa:",
+     "start": 4.762,
+     "end": 4.984
+    },
+    {
+     "w": "con",
+     "start": 5.204,
+     "end": 5.352
+    },
+    {
+     "w": "chim",
+     "start": 5.365,
+     "end": 5.542
+    },
+    {
+     "w": "nào",
+     "start": 5.558,
+     "end": 5.706
+    },
+    {
+     "w": "cũng",
+     "start": 5.718,
+     "end": 5.896
+    },
+    {
+     "w": "bay",
+     "start": 5.911,
+     "end": 6.059
+    },
+    {
+     "w": "được.",
+     "start": 6.072,
+     "end": 6.279
+    }
+   ],
+   "text": "Bắt đầu với lớp Chim. Lớp này có một phương thức tên là bay.\n\nNó như một lời hứa: con chim nào cũng bay được."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 6.679,
+   "words": [
+    {
+     "w": "Lớp",
+     "start": 0.03,
+     "end": 0.236
+    },
+    {
+     "w": "Chim",
+     "start": 0.254,
+     "end": 0.501
+    },
+    {
+     "w": "Sẻ",
+     "start": 0.523,
+     "end": 0.688
+    },
+    {
+     "w": "kế",
+     "start": 0.702,
+     "end": 0.867
+    },
+    {
+     "w": "thừa",
+     "start": 0.881,
+     "end": 1.129
+    },
+    {
+     "w": "lớp",
+     "start": 1.15,
+     "end": 1.356
+    },
+    {
+     "w": "Chim.",
+     "start": 1.374,
+     "end": 1.663
+    },
+    {
+     "w": "Kế",
+     "start": 2.228,
+     "end": 2.363
+    },
+    {
+     "w": "thừa",
+     "start": 2.375,
+     "end": 2.578
+    },
+    {
+     "w": "nghĩa",
+     "start": 2.595,
+     "end": 2.832
+    },
+    {
+     "w": "là",
+     "start": 2.852,
+     "end": 2.987
+    },
+    {
+     "w": "lớp",
+     "start": 2.999,
+     "end": 3.168
+    },
+    {
+     "w": "con",
+     "start": 3.183,
+     "end": 3.352
+    },
+    {
+     "w": "nhận",
+     "start": 3.366,
+     "end": 3.569
+    },
+    {
+     "w": "lại",
+     "start": 3.587,
+     "end": 3.756
+    },
+    {
+     "w": "mọi",
+     "start": 3.771,
+     "end": 3.939
+    },
+    {
+     "w": "thứ",
+     "start": 3.954,
+     "end": 4.123
+    },
+    {
+     "w": "lớp",
+     "start": 4.138,
+     "end": 4.307
+    },
+    {
+     "w": "cha",
+     "start": 4.321,
+     "end": 4.49
+    },
+    {
+     "w": "có,",
+     "start": 4.505,
+     "end": 4.674
+    },
+    {
+     "w": "kể",
+     "start": 5.155,
+     "end": 5.288
+    },
+    {
+     "w": "cả",
+     "start": 5.3,
+     "end": 5.433
+    },
+    {
+     "w": "phương",
+     "start": 5.445,
+     "end": 5.711
+    },
+    {
+     "w": "thức",
+     "start": 5.734,
+     "end": 5.934
+    },
+    {
+     "w": "bay.",
+     "start": 5.952,
+     "end": 6.152
+    }
+   ],
+   "text": "Lớp Chim Sẻ kế thừa lớp Chim.\n\nKế thừa nghĩa là lớp con nhận lại mọi thứ lớp cha có, kể cả phương thức bay."
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 4.346,
+   "words": [
+    {
+     "w": "Giờ",
+     "start": 0.089,
+     "end": 0.263
+    },
+    {
+     "w": "ta",
+     "start": 0.278,
+     "end": 0.417
+    },
+    {
+     "w": "viết",
+     "start": 0.429,
+     "end": 0.638
+    },
+    {
+     "w": "hàm",
+     "start": 0.656,
+     "end": 0.83
+    },
+    {
+     "w": "thả",
+     "start": 0.845,
+     "end": 1.019
+    },
+    {
+     "w": "chim.",
+     "start": 1.034,
+     "end": 1.278
+    },
+    {
+     "w": "Hàm",
+     "start": 1.735,
+     "end": 1.889
+    },
+    {
+     "w": "nhận",
+     "start": 1.902,
+     "end": 2.087
+    },
+    {
+     "w": "vào",
+     "start": 2.103,
+     "end": 2.257
+    },
+    {
+     "w": "một",
+     "start": 2.27,
+     "end": 2.424
+    },
+    {
+     "w": "con",
+     "start": 2.437,
+     "end": 2.591
+    },
+    {
+     "w": "chim,",
+     "start": 2.604,
+     "end": 2.82
+    },
+    {
+     "w": "rồi",
+     "start": 3.092,
+     "end": 3.264
+    },
+    {
+     "w": "gọi",
+     "start": 3.279,
+     "end": 3.451
+    },
+    {
+     "w": "chim",
+     "start": 3.466,
+     "end": 3.672
+    },
+    {
+     "w": "chấm",
+     "start": 3.69,
+     "end": 3.897
+    },
+    {
+     "w": "bay.",
+     "start": 3.915,
+     "end": 4.121
+    }
+   ],
+   "text": "Giờ ta viết hàm thả chim. Hàm nhận vào một con chim, rồi gọi chim chấm bay."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 5.494,
+   "words": [
+    {
+     "w": "Hàm",
+     "start": 0.104,
+     "end": 0.273
+    },
+    {
+     "w": "này",
+     "start": 0.288,
+     "end": 0.457
+    },
+    {
+     "w": "không",
+     "start": 0.472,
+     "end": 0.709
+    },
+    {
+     "w": "cần",
+     "start": 0.729,
+     "end": 0.898
+    },
+    {
+     "w": "biết",
+     "start": 0.913,
+     "end": 1.116
+    },
+    {
+     "w": "đó",
+     "start": 1.134,
+     "end": 1.269
+    },
+    {
+     "w": "là",
+     "start": 1.281,
+     "end": 1.416
+    },
+    {
+     "w": "chim",
+     "start": 1.428,
+     "end": 1.631
+    },
+    {
+     "w": "gì.",
+     "start": 1.649,
+     "end": 1.818
+    },
+    {
+     "w": "Nó",
+     "start": 2.259,
+     "end": 2.399
+    },
+    {
+     "w": "chỉ",
+     "start": 2.411,
+     "end": 2.587
+    },
+    {
+     "w": "tin",
+     "start": 2.602,
+     "end": 2.777
+    },
+    {
+     "w": "vào",
+     "start": 2.792,
+     "end": 2.968
+    },
+    {
+     "w": "lời",
+     "start": 2.983,
+     "end": 3.158
+    },
+    {
+     "w": "hứa",
+     "start": 3.173,
+     "end": 3.349
+    },
+    {
+     "w": "của",
+     "start": 3.364,
+     "end": 3.539
+    },
+    {
+     "w": "lớp",
+     "start": 3.554,
+     "end": 3.73
+    },
+    {
+     "w": "Chim:",
+     "start": 3.745,
+     "end": 3.99
+    },
+    {
+     "w": "gọi",
+     "start": 4.354,
+     "end": 4.53
+    },
+    {
+     "w": "bay",
+     "start": 4.546,
+     "end": 4.723
+    },
+    {
+     "w": "thì",
+     "start": 4.738,
+     "end": 4.915
+    },
+    {
+     "w": "sẽ",
+     "start": 4.93,
+     "end": 5.072
+    },
+    {
+     "w": "bay.",
+     "start": 5.084,
+     "end": 5.296
+    }
+   ],
+   "text": "Hàm này không cần biết đó là chim gì. Nó chỉ tin vào lời hứa của lớp Chim: gọi bay thì sẽ bay."
+  },
+  {
+   "id": "scene-5",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 5.142,
+   "words": [
+    {
+     "w": "Thử",
+     "start": 0.03,
+     "end": 0.214
+    },
+    {
+     "w": "đưa",
+     "start": 0.229,
+     "end": 0.413
+    },
+    {
+     "w": "vào",
+     "start": 0.429,
+     "end": 0.612
+    },
+    {
+     "w": "một",
+     "start": 0.628,
+     "end": 0.812
+    },
+    {
+     "w": "chú",
+     "start": 0.828,
+     "end": 1.011
+    },
+    {
+     "w": "chim",
+     "start": 1.027,
+     "end": 1.248
+    },
+    {
+     "w": "sẻ.",
+     "start": 1.267,
+     "end": 1.45
+    },
+    {
+     "w": "Hàm",
+     "start": 1.787,
+     "end": 1.971
+    },
+    {
+     "w": "gọi",
+     "start": 1.987,
+     "end": 2.171
+    },
+    {
+     "w": "bay,",
+     "start": 2.187,
+     "end": 2.408
+    },
+    {
+     "w": "và",
+     "start": 2.597,
+     "end": 2.748
+    },
+    {
+     "w": "chim",
+     "start": 2.761,
+     "end": 2.988
+    },
+    {
+     "w": "sẻ",
+     "start": 3.007,
+     "end": 3.158
+    },
+    {
+     "w": "bay",
+     "start": 3.171,
+     "end": 3.36
+    },
+    {
+     "w": "lên.",
+     "start": 3.377,
+     "end": 3.603
+    },
+    {
+     "w": "Chạy",
+     "start": 4.163,
+     "end": 4.362
+    },
+    {
+     "w": "đúng.",
+     "start": 4.379,
+     "end": 4.611
+    }
+   ],
+   "text": "Thử đưa vào một chú chim sẻ. Hàm gọi bay, và chim sẻ bay lên.\n\nChạy đúng."
+  },
+  {
+   "id": "scene-6",
+   "file": "assets/audio/vo-06.mp3",
+   "duration": 6.208,
+   "words": [
+    {
+     "w": "Bây",
+     "start": 0.106,
+     "end": 0.29
+    },
+    {
+     "w": "giờ,",
+     "start": 0.306,
+     "end": 0.528
+    },
+    {
+     "w": "ta",
+     "start": 0.917,
+     "end": 1.047
+    },
+    {
+     "w": "thêm",
+     "start": 1.058,
+     "end": 1.253
+    },
+    {
+     "w": "lớp",
+     "start": 1.27,
+     "end": 1.432
+    },
+    {
+     "w": "Chim",
+     "start": 1.446,
+     "end": 1.641
+    },
+    {
+     "w": "Cánh",
+     "start": 1.658,
+     "end": 1.852
+    },
+    {
+     "w": "Cụt.",
+     "start": 1.869,
+     "end": 2.064
+    },
+    {
+     "w": "Nó",
+     "start": 2.548,
+     "end": 2.697
+    },
+    {
+     "w": "cũng",
+     "start": 2.71,
+     "end": 2.933
+    },
+    {
+     "w": "kế",
+     "start": 2.952,
+     "end": 3.101
+    },
+    {
+     "w": "thừa",
+     "start": 3.114,
+     "end": 3.337
+    },
+    {
+     "w": "lớp",
+     "start": 3.356,
+     "end": 3.542
+    },
+    {
+     "w": "Chim,",
+     "start": 3.558,
+     "end": 3.818
+    },
+    {
+     "w": "vì",
+     "start": 4.335,
+     "end": 4.482
+    },
+    {
+     "w": "cánh",
+     "start": 4.495,
+     "end": 4.714
+    },
+    {
+     "w": "cụt",
+     "start": 4.733,
+     "end": 4.917
+    },
+    {
+     "w": "đúng",
+     "start": 4.932,
+     "end": 5.152
+    },
+    {
+     "w": "là",
+     "start": 5.171,
+     "end": 5.318
+    },
+    {
+     "w": "một",
+     "start": 5.33,
+     "end": 5.514
+    },
+    {
+     "w": "loài",
+     "start": 5.529,
+     "end": 5.749
+    },
+    {
+     "w": "chim.",
+     "start": 5.768,
+     "end": 6.025
+    }
+   ],
+   "text": "Bây giờ, ta thêm lớp Chim Cánh Cụt. Nó cũng kế thừa lớp Chim, vì cánh cụt đúng là một loài chim."
+  },
+  {
+   "id": "scene-7",
+   "file": "assets/audio/vo-07.mp3",
+   "duration": 4.787,
+   "words": [
+    {
+     "w": "Nhưng",
+     "start": 0.11,
+     "end": 0.346
+    },
+    {
+     "w": "cánh",
+     "start": 0.367,
+     "end": 0.569
+    },
+    {
+     "w": "cụt",
+     "start": 0.587,
+     "end": 0.756
+    },
+    {
+     "w": "không",
+     "start": 0.77,
+     "end": 1.007
+    },
+    {
+     "w": "biết",
+     "start": 1.027,
+     "end": 1.23
+    },
+    {
+     "w": "bay.",
+     "start": 1.247,
+     "end": 1.45
+    },
+    {
+     "w": "Nên",
+     "start": 1.923,
+     "end": 2.083
+    },
+    {
+     "w": "lớp",
+     "start": 2.097,
+     "end": 2.257
+    },
+    {
+     "w": "con",
+     "start": 2.271,
+     "end": 2.431
+    },
+    {
+     "w": "viết",
+     "start": 2.445,
+     "end": 2.637
+    },
+    {
+     "w": "lại",
+     "start": 2.654,
+     "end": 2.814
+    },
+    {
+     "w": "phương",
+     "start": 2.828,
+     "end": 3.084
+    },
+    {
+     "w": "thức",
+     "start": 3.106,
+     "end": 3.298
+    },
+    {
+     "w": "bay,",
+     "start": 3.315,
+     "end": 3.507
+    },
+    {
+     "w": "để",
+     "start": 3.852,
+     "end": 3.999
+    },
+    {
+     "w": "nó",
+     "start": 4.012,
+     "end": 4.159
+    },
+    {
+     "w": "báo",
+     "start": 4.172,
+     "end": 4.356
+    },
+    {
+     "w": "lỗi.",
+     "start": 4.372,
+     "end": 4.592
+    }
+   ],
+   "text": "Nhưng cánh cụt không biết bay. Nên lớp con viết lại phương thức bay, để nó báo lỗi."
+  },
+  {
+   "id": "scene-8",
+   "file": "assets/audio/vo-08.mp3",
+   "duration": 7.262,
+   "words": [
+    {
+     "w": "Giờ",
+     "start": 0.03,
+     "end": 0.207
+    },
+    {
+     "w": "đưa",
+     "start": 0.222,
+     "end": 0.4
+    },
+    {
+     "w": "chú",
+     "start": 0.415,
+     "end": 0.592
+    },
+    {
+     "w": "cánh",
+     "start": 0.607,
+     "end": 0.82
+    },
+    {
+     "w": "cụt",
+     "start": 0.838,
+     "end": 1.015
+    },
+    {
+     "w": "vào",
+     "start": 1.031,
+     "end": 1.208
+    },
+    {
+     "w": "hàm",
+     "start": 1.223,
+     "end": 1.4
+    },
+    {
+     "w": "thả",
+     "start": 1.416,
+     "end": 1.593
+    },
+    {
+     "w": "chim.",
+     "start": 1.608,
+     "end": 1.856
+    },
+    {
+     "w": "Hàm",
+     "start": 2.36,
+     "end": 2.52
+    },
+    {
+     "w": "vẫn",
+     "start": 2.534,
+     "end": 2.694
+    },
+    {
+     "w": "gọi",
+     "start": 2.708,
+     "end": 2.867
+    },
+    {
+     "w": "chim",
+     "start": 2.881,
+     "end": 3.073
+    },
+    {
+     "w": "chấm",
+     "start": 3.089,
+     "end": 3.281
+    },
+    {
+     "w": "bay,",
+     "start": 3.298,
+     "end": 3.489
+    },
+    {
+     "w": "như",
+     "start": 3.836,
+     "end": 4.01
+    },
+    {
+     "w": "mọi",
+     "start": 4.025,
+     "end": 4.198
+    },
+    {
+     "w": "lần.",
+     "start": 4.213,
+     "end": 4.421
+    },
+    {
+     "w": "Bạn",
+     "start": 4.979,
+     "end": 5.173
+    },
+    {
+     "w": "đoán",
+     "start": 5.19,
+     "end": 5.423
+    },
+    {
+     "w": "xem",
+     "start": 5.443,
+     "end": 5.637
+    },
+    {
+     "w": "chuyện",
+     "start": 5.654,
+     "end": 5.965
+    },
+    {
+     "w": "gì",
+     "start": 5.992,
+     "end": 6.147
+    },
+    {
+     "w": "sẽ",
+     "start": 6.161,
+     "end": 6.316
+    },
+    {
+     "w": "xảy",
+     "start": 6.329,
+     "end": 6.524
+    },
+    {
+     "w": "ra?",
+     "start": 6.541,
+     "end": 6.735
+    }
+   ],
+   "text": "Giờ đưa chú cánh cụt vào hàm thả chim. Hàm vẫn gọi chim chấm bay, như mọi lần.\n\nBạn đoán xem chuyện gì sẽ xảy ra?"
+  },
+  {
+   "id": "scene-9",
+   "file": "assets/audio/vo-09.mp3",
+   "duration": 3.011,
+   "words": [
+    {
+     "w": "Chương",
+     "start": 0.081,
+     "end": 0.353
+    },
+    {
+     "w": "trình",
+     "start": 0.377,
+     "end": 0.615
+    },
+    {
+     "w": "báo",
+     "start": 0.636,
+     "end": 0.806
+    },
+    {
+     "w": "lỗi:",
+     "start": 0.821,
+     "end": 1.025
+    },
+    {
+     "w": "không",
+     "start": 1.043,
+     "end": 1.213
+    },
+    {
+     "w": "biết",
+     "start": 1.228,
+     "end": 1.375
+    },
+    {
+     "w": "bay.",
+     "start": 1.387,
+     "end": 1.534
+    },
+    {
+     "w": "Và",
+     "start": 1.892,
+     "end": 2.009
+    },
+    {
+     "w": "dừng",
+     "start": 2.019,
+     "end": 2.196
+    },
+    {
+     "w": "lại",
+     "start": 2.211,
+     "end": 2.358
+    },
+    {
+     "w": "giữa",
+     "start": 2.371,
+     "end": 2.547
+    },
+    {
+     "w": "chừng.",
+     "start": 2.563,
+     "end": 2.798
+    }
+   ],
+   "text": "Chương trình báo lỗi: không biết bay. Và dừng lại giữa chừng."
+  },
+  {
+   "id": "scene-10",
+   "file": "assets/audio/vo-10.mp3",
+   "duration": 5.856,
+   "words": [
+    {
+     "w": "Để",
+     "start": 0.097,
+     "end": 0.3
+    },
+    {
+     "w": "ý:",
+     "start": 0.317,
+     "end": 0.52
+    },
+    {
+     "w": "hàm",
+     "start": 0.722,
+     "end": 0.905
+    },
+    {
+     "w": "thả",
+     "start": 0.921,
+     "end": 1.104
+    },
+    {
+     "w": "chim",
+     "start": 1.12,
+     "end": 1.339
+    },
+    {
+     "w": "không",
+     "start": 1.358,
+     "end": 1.614
+    },
+    {
+     "w": "hề",
+     "start": 1.636,
+     "end": 1.783
+    },
+    {
+     "w": "bị",
+     "start": 1.795,
+     "end": 1.942
+    },
+    {
+     "w": "sửa.",
+     "start": 1.954,
+     "end": 2.174
+    },
+    {
+     "w": "Lỗi",
+     "start": 2.632,
+     "end": 2.815
+    },
+    {
+     "w": "đến",
+     "start": 2.831,
+     "end": 3.014
+    },
+    {
+     "w": "từ",
+     "start": 3.03,
+     "end": 3.176
+    },
+    {
+     "w": "lớp",
+     "start": 3.189,
+     "end": 3.372
+    },
+    {
+     "w": "con,",
+     "start": 3.388,
+     "end": 3.608
+    },
+    {
+     "w": "vì",
+     "start": 3.952,
+     "end": 4.087
+    },
+    {
+     "w": "nó",
+     "start": 4.099,
+     "end": 4.234
+    },
+    {
+     "w": "không",
+     "start": 4.246,
+     "end": 4.483
+    },
+    {
+     "w": "giữ",
+     "start": 4.504,
+     "end": 4.673
+    },
+    {
+     "w": "lời",
+     "start": 4.687,
+     "end": 4.857
+    },
+    {
+     "w": "hứa",
+     "start": 4.871,
+     "end": 5.041
+    },
+    {
+     "w": "của",
+     "start": 5.055,
+     "end": 5.225
+    },
+    {
+     "w": "lớp",
+     "start": 5.239,
+     "end": 5.409
+    },
+    {
+     "w": "cha.",
+     "start": 5.423,
+     "end": 5.626
+    }
+   ],
+   "text": "Để ý: hàm thả chim không hề bị sửa. Lỗi đến từ lớp con, vì nó không giữ lời hứa của lớp cha."
+  },
+  {
+   "id": "scene-11",
+   "file": "assets/audio/vo-11.mp3",
+   "duration": 4.788,
+   "words": [
+    {
+     "w": "Đây",
+     "start": 0.07,
+     "end": 0.239
+    },
+    {
+     "w": "chính",
+     "start": 0.253,
+     "end": 0.489
+    },
+    {
+     "w": "là",
+     "start": 0.51,
+     "end": 0.645
+    },
+    {
+     "w": "điều",
+     "start": 0.657,
+     "end": 0.859
+    },
+    {
+     "w": "nguyên",
+     "start": 0.877,
+     "end": 1.146
+    },
+    {
+     "w": "lý",
+     "start": 1.17,
+     "end": 1.305
+    },
+    {
+     "w": "thay",
+     "start": 1.316,
+     "end": 1.519
+    },
+    {
+     "w": "thế",
+     "start": 1.536,
+     "end": 1.705
+    },
+    {
+     "w": "Lít-cốp",
+     "start": 1.719,
+     "end": 2.023
+    },
+    {
+     "w": "muốn",
+     "start": 2.049,
+     "end": 2.252
+    },
+    {
+     "w": "tránh.",
+     "start": 2.269,
+     "end": 2.539
+    },
+    {
+     "w": "Chữ",
+     "start": 3.079,
+     "end": 3.382
+    },
+    {
+     "w": "L",
+     "start": 3.409,
+     "end": 3.591
+    },
+    {
+     "w": "trong",
+     "start": 3.607,
+     "end": 4.032
+    },
+    {
+     "w": "SOLID.",
+     "start": 4.069,
+     "end": 4.556
+    }
+   ],
+   "text": "Đây chính là điều nguyên lý thay thế Lít-cốp muốn tránh. Chữ L trong SOLID."
+  },
+  {
+   "id": "scene-12",
+   "file": "assets/audio/vo-12.mp3",
+   "duration": 4.968,
+   "words": [
+    {
+     "w": "Nguyên",
+     "start": 0.112,
+     "end": 0.373
+    },
+    {
+     "w": "lý",
+     "start": 0.396,
+     "end": 0.527
+    },
+    {
+     "w": "nói:",
+     "start": 0.538,
+     "end": 0.735
+    },
+    {
+     "w": "chỗ",
+     "start": 0.923,
+     "end": 1.098
+    },
+    {
+     "w": "nào",
+     "start": 1.114,
+     "end": 1.289
+    },
+    {
+     "w": "dùng",
+     "start": 1.304,
+     "end": 1.515
+    },
+    {
+     "w": "được",
+     "start": 1.533,
+     "end": 1.743
+    },
+    {
+     "w": "lớp",
+     "start": 1.762,
+     "end": 1.937
+    },
+    {
+     "w": "cha,",
+     "start": 1.952,
+     "end": 2.163
+    },
+    {
+     "w": "thì",
+     "start": 2.336,
+     "end": 2.502
+    },
+    {
+     "w": "thay",
+     "start": 2.516,
+     "end": 2.715
+    },
+    {
+     "w": "bằng",
+     "start": 2.733,
+     "end": 2.932
+    },
+    {
+     "w": "lớp",
+     "start": 2.949,
+     "end": 3.115
+    },
+    {
+     "w": "con,",
+     "start": 3.13,
+     "end": 3.329
+    },
+    {
+     "w": "chương",
+     "start": 3.513,
+     "end": 3.756
+    },
+    {
+     "w": "trình",
+     "start": 3.777,
+     "end": 3.989
+    },
+    {
+     "w": "vẫn",
+     "start": 4.008,
+     "end": 4.159
+    },
+    {
+     "w": "phải",
+     "start": 4.173,
+     "end": 4.355
+    },
+    {
+     "w": "chạy",
+     "start": 4.371,
+     "end": 4.553
+    },
+    {
+     "w": "đúng.",
+     "start": 4.569,
+     "end": 4.781
+    }
+   ],
+   "text": "Nguyên lý nói: chỗ nào dùng được lớp cha, thì thay bằng lớp con, chương trình vẫn phải chạy đúng."
+  },
+  {
+   "id": "scene-13",
+   "file": "assets/audio/vo-13.mp3",
+   "duration": 5.495,
+   "words": [
+    {
+     "w": "Ngoài",
+     "start": 0.073,
+     "end": 0.345
+    },
+    {
+     "w": "đời,",
+     "start": 0.368,
+     "end": 0.601
+    },
+    {
+     "w": "cánh",
+     "start": 0.622,
+     "end": 0.82
+    },
+    {
+     "w": "cụt",
+     "start": 0.837,
+     "end": 1.002
+    },
+    {
+     "w": "là",
+     "start": 1.016,
+     "end": 1.148
+    },
+    {
+     "w": "chim.",
+     "start": 1.16,
+     "end": 1.391
+    },
+    {
+     "w": "Nhưng",
+     "start": 1.742,
+     "end": 1.963
+    },
+    {
+     "w": "trong",
+     "start": 1.982,
+     "end": 2.203
+    },
+    {
+     "w": "code,",
+     "start": 2.222,
+     "end": 2.443
+    },
+    {
+     "w": "nó",
+     "start": 2.708,
+     "end": 2.826
+    },
+    {
+     "w": "không",
+     "start": 2.836,
+     "end": 3.043
+    },
+    {
+     "w": "thay",
+     "start": 3.061,
+     "end": 3.238
+    },
+    {
+     "w": "được",
+     "start": 3.253,
+     "end": 3.43
+    },
+    {
+     "w": "cho",
+     "start": 3.445,
+     "end": 3.593
+    },
+    {
+     "w": "lớp",
+     "start": 3.605,
+     "end": 3.753
+    },
+    {
+     "w": "Chim,",
+     "start": 3.766,
+     "end": 3.972
+    },
+    {
+     "w": "vì",
+     "start": 4.224,
+     "end": 4.368
+    },
+    {
+     "w": "nó",
+     "start": 4.38,
+     "end": 4.523
+    },
+    {
+     "w": "phá",
+     "start": 4.536,
+     "end": 4.714
+    },
+    {
+     "w": "lời",
+     "start": 4.73,
+     "end": 4.909
+    },
+    {
+     "w": "hứa",
+     "start": 4.925,
+     "end": 5.103
+    },
+    {
+     "w": "bay.",
+     "start": 5.119,
+     "end": 5.334
+    }
+   ],
+   "text": "Ngoài đời, cánh cụt là chim. Nhưng trong code, nó không thay được cho lớp Chim, vì nó phá lời hứa bay."
+  },
+  {
+   "id": "scene-14",
+   "file": "assets/audio/vo-14.mp3",
+   "duration": 5.411,
+   "words": [
+    {
+     "w": "Vậy",
+     "start": 0.086,
+     "end": 0.246
+    },
+    {
+     "w": "sửa",
+     "start": 0.26,
+     "end": 0.421
+    },
+    {
+     "w": "thế",
+     "start": 0.435,
+     "end": 0.595
+    },
+    {
+     "w": "nào?",
+     "start": 0.609,
+     "end": 0.801
+    },
+    {
+     "w": "Lớp",
+     "start": 1.34,
+     "end": 1.52
+    },
+    {
+     "w": "Chim",
+     "start": 1.535,
+     "end": 1.751
+    },
+    {
+     "w": "chỉ",
+     "start": 1.77,
+     "end": 1.95
+    },
+    {
+     "w": "nên",
+     "start": 1.965,
+     "end": 2.145
+    },
+    {
+     "w": "hứa",
+     "start": 2.161,
+     "end": 2.341
+    },
+    {
+     "w": "những",
+     "start": 2.356,
+     "end": 2.608
+    },
+    {
+     "w": "gì",
+     "start": 2.63,
+     "end": 2.774
+    },
+    {
+     "w": "mọi",
+     "start": 2.786,
+     "end": 2.966
+    },
+    {
+     "w": "con",
+     "start": 2.982,
+     "end": 3.162
+    },
+    {
+     "w": "chim",
+     "start": 3.177,
+     "end": 3.393
+    },
+    {
+     "w": "đều",
+     "start": 3.412,
+     "end": 3.592
+    },
+    {
+     "w": "làm",
+     "start": 3.607,
+     "end": 3.787
+    },
+    {
+     "w": "được.",
+     "start": 3.803,
+     "end": 4.055
+    },
+    {
+     "w": "Ví",
+     "start": 4.559,
+     "end": 4.731
+    },
+    {
+     "w": "dụ:",
+     "start": 4.746,
+     "end": 4.96
+    },
+    {
+     "w": "ăn.",
+     "start": 4.979,
+     "end": 5.204
+    }
+   ],
+   "text": "Vậy sửa thế nào? Lớp Chim chỉ nên hứa những gì mọi con chim đều làm được. Ví dụ: ăn."
+  },
+  {
+   "id": "scene-15",
+   "file": "assets/audio/vo-15.mp3",
+   "duration": 4.609,
+   "words": [
+    {
+     "w": "Còn",
+     "start": 0.083,
+     "end": 0.237
+    },
+    {
+     "w": "việc",
+     "start": 0.251,
+     "end": 0.435
+    },
+    {
+     "w": "bay,",
+     "start": 0.451,
+     "end": 0.636
+    },
+    {
+     "w": "ta",
+     "start": 0.9,
+     "end": 1.052
+    },
+    {
+     "w": "chuyển",
+     "start": 1.065,
+     "end": 1.369
+    },
+    {
+     "w": "sang",
+     "start": 1.396,
+     "end": 1.623
+    },
+    {
+     "w": "một",
+     "start": 1.643,
+     "end": 1.833
+    },
+    {
+     "w": "lớp",
+     "start": 1.85,
+     "end": 2.039
+    },
+    {
+     "w": "mới:",
+     "start": 2.056,
+     "end": 2.284
+    },
+    {
+     "w": "Chim",
+     "start": 2.304,
+     "end": 2.472
+    },
+    {
+     "w": "Biết",
+     "start": 2.487,
+     "end": 2.655
+    },
+    {
+     "w": "Bay.",
+     "start": 2.67,
+     "end": 2.838
+    },
+    {
+     "w": "Chim",
+     "start": 3.26,
+     "end": 3.47
+    },
+    {
+     "w": "sẻ",
+     "start": 3.488,
+     "end": 3.627
+    },
+    {
+     "w": "kế",
+     "start": 3.64,
+     "end": 3.779
+    },
+    {
+     "w": "thừa",
+     "start": 3.792,
+     "end": 4.001
+    },
+    {
+     "w": "lớp",
+     "start": 4.019,
+     "end": 4.194
+    },
+    {
+     "w": "này.",
+     "start": 4.209,
+     "end": 4.419
+    }
+   ],
+   "text": "Còn việc bay, ta chuyển sang một lớp mới: Chim Biết Bay. Chim sẻ kế thừa lớp này."
+  },
+  {
+   "id": "scene-16",
+   "file": "assets/audio/vo-16.mp3",
+   "duration": 5.322,
+   "words": [
+    {
+     "w": "Cánh",
+     "start": 0.105,
+     "end": 0.318
+    },
+    {
+     "w": "cụt",
+     "start": 0.336,
+     "end": 0.513
+    },
+    {
+     "w": "thì",
+     "start": 0.528,
+     "end": 0.705
+    },
+    {
+     "w": "kế",
+     "start": 0.721,
+     "end": 0.862
+    },
+    {
+     "w": "thừa",
+     "start": 0.875,
+     "end": 1.087
+    },
+    {
+     "w": "thẳng",
+     "start": 1.106,
+     "end": 1.353
+    },
+    {
+     "w": "lớp",
+     "start": 1.375,
+     "end": 1.552
+    },
+    {
+     "w": "Chim.",
+     "start": 1.567,
+     "end": 1.815
+    },
+    {
+     "w": "Nó",
+     "start": 2.172,
+     "end": 2.316
+    },
+    {
+     "w": "không",
+     "start": 2.329,
+     "end": 2.581
+    },
+    {
+     "w": "còn",
+     "start": 2.603,
+     "end": 2.782
+    },
+    {
+     "w": "hứa",
+     "start": 2.798,
+     "end": 2.978
+    },
+    {
+     "w": "bay",
+     "start": 2.994,
+     "end": 3.174
+    },
+    {
+     "w": "nữa,",
+     "start": 3.189,
+     "end": 3.405
+    },
+    {
+     "w": "nên",
+     "start": 3.605,
+     "end": 3.769
+    },
+    {
+     "w": "cũng",
+     "start": 3.784,
+     "end": 3.981
+    },
+    {
+     "w": "không",
+     "start": 3.998,
+     "end": 4.228
+    },
+    {
+     "w": "còn",
+     "start": 4.248,
+     "end": 4.413
+    },
+    {
+     "w": "phá",
+     "start": 4.427,
+     "end": 4.591
+    },
+    {
+     "w": "lời",
+     "start": 4.606,
+     "end": 4.77
+    },
+    {
+     "w": "hứa",
+     "start": 4.784,
+     "end": 4.949
+    },
+    {
+     "w": "nào.",
+     "start": 4.963,
+     "end": 5.16
+    }
+   ],
+   "text": "Cánh cụt thì kế thừa thẳng lớp Chim. Nó không còn hứa bay nữa, nên cũng không còn phá lời hứa nào."
+  },
+  {
+   "id": "scene-17",
+   "file": "assets/audio/vo-17.mp3",
+   "duration": 3.0,
+   "words": [
+    {
+     "w": "Hàm",
+     "start": 0.092,
+     "end": 0.309
+    },
+    {
+     "w": "thả",
+     "start": 0.328,
+     "end": 0.545
+    },
+    {
+     "w": "chim",
+     "start": 0.563,
+     "end": 0.823
+    },
+    {
+     "w": "giờ",
+     "start": 0.846,
+     "end": 1.063
+    },
+    {
+     "w": "ghi",
+     "start": 1.082,
+     "end": 1.298
+    },
+    {
+     "w": "rõ:",
+     "start": 1.317,
+     "end": 1.534
+    },
+    {
+     "w": "chỉ",
+     "start": 1.756,
+     "end": 1.923
+    },
+    {
+     "w": "nhận",
+     "start": 1.938,
+     "end": 2.139
+    },
+    {
+     "w": "chim",
+     "start": 2.156,
+     "end": 2.357
+    },
+    {
+     "w": "biết",
+     "start": 2.374,
+     "end": 2.575
+    },
+    {
+     "w": "bay.",
+     "start": 2.592,
+     "end": 2.793
+    }
+   ],
+   "text": "Hàm thả chim giờ ghi rõ: chỉ nhận chim biết bay."
+  },
+  {
+   "id": "scene-18",
+   "file": "assets/audio/vo-18.mp3",
+   "duration": 2.918,
+   "words": [
+    {
+     "w": "Kiểm",
+     "start": 0.098,
+     "end": 0.277
+    },
+    {
+     "w": "tra",
+     "start": 0.292,
+     "end": 0.441
+    },
+    {
+     "w": "lại.",
+     "start": 0.454,
+     "end": 0.633
+    },
+    {
+     "w": "Thả",
+     "start": 1.019,
+     "end": 1.16
+    },
+    {
+     "w": "chim",
+     "start": 1.172,
+     "end": 1.342
+    },
+    {
+     "w": "sẻ:",
+     "start": 1.356,
+     "end": 1.498
+    },
+    {
+     "w": "vẫn",
+     "start": 1.51,
+     "end": 1.707
+    },
+    {
+     "w": "bay",
+     "start": 1.724,
+     "end": 1.921
+    },
+    {
+     "w": "lên",
+     "start": 1.938,
+     "end": 2.135
+    },
+    {
+     "w": "như",
+     "start": 2.152,
+     "end": 2.348
+    },
+    {
+     "w": "trước.",
+     "start": 2.366,
+     "end": 2.68
+    }
+   ],
+   "text": "Kiểm tra lại. Thả chim sẻ: vẫn bay lên như trước."
+  },
+  {
+   "id": "scene-19",
+   "file": "assets/audio/vo-19.mp3",
+   "duration": 5.582,
+   "words": [
+    {
+     "w": "Còn",
+     "start": 0.083,
+     "end": 0.271
+    },
+    {
+     "w": "hàm",
+     "start": 0.287,
+     "end": 0.474
+    },
+    {
+     "w": "cho",
+     "start": 0.491,
+     "end": 0.678
+    },
+    {
+     "w": "ăn",
+     "start": 0.694,
+     "end": 0.844
+    },
+    {
+     "w": "nhận",
+     "start": 0.857,
+     "end": 1.082
+    },
+    {
+     "w": "lớp",
+     "start": 1.102,
+     "end": 1.289
+    },
+    {
+     "w": "Chim.",
+     "start": 1.305,
+     "end": 1.568
+    },
+    {
+     "w": "Đưa",
+     "start": 1.893,
+     "end": 2.1
+    },
+    {
+     "w": "chim",
+     "start": 2.118,
+     "end": 2.367
+    },
+    {
+     "w": "sẻ",
+     "start": 2.389,
+     "end": 2.555
+    },
+    {
+     "w": "vào:",
+     "start": 2.569,
+     "end": 2.818
+    },
+    {
+     "w": "chạy",
+     "start": 2.84,
+     "end": 3.084
+    },
+    {
+     "w": "đúng.",
+     "start": 3.105,
+     "end": 3.389
+    },
+    {
+     "w": "Đưa",
+     "start": 3.702,
+     "end": 3.87
+    },
+    {
+     "w": "cánh",
+     "start": 3.884,
+     "end": 4.085
+    },
+    {
+     "w": "cụt",
+     "start": 4.103,
+     "end": 4.27
+    },
+    {
+     "w": "vào:",
+     "start": 4.285,
+     "end": 4.486
+    },
+    {
+     "w": "cũng",
+     "start": 4.503,
+     "end": 4.766
+    },
+    {
+     "w": "chạy",
+     "start": 4.789,
+     "end": 5.051
+    },
+    {
+     "w": "đúng.",
+     "start": 5.074,
+     "end": 5.38
+    }
+   ],
+   "text": "Còn hàm cho ăn nhận lớp Chim. Đưa chim sẻ vào: chạy đúng. Đưa cánh cụt vào: cũng chạy đúng."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-20.mp3",
+   "duration": 8.615,
+   "words": [
+    {
+     "w": "Ghi",
+     "start": 0.03,
+     "end": 0.239
+    },
+    {
+     "w": "nhớ:",
+     "start": 0.257,
+     "end": 0.507
+    },
+    {
+     "w": "lớp",
+     "start": 0.8,
+     "end": 0.962
+    },
+    {
+     "w": "con",
+     "start": 0.976,
+     "end": 1.137
+    },
+    {
+     "w": "phải",
+     "start": 1.152,
+     "end": 1.346
+    },
+    {
+     "w": "thay",
+     "start": 1.363,
+     "end": 1.557
+    },
+    {
+     "w": "được",
+     "start": 1.574,
+     "end": 1.768
+    },
+    {
+     "w": "cho",
+     "start": 1.785,
+     "end": 1.947
+    },
+    {
+     "w": "lớp",
+     "start": 1.961,
+     "end": 2.123
+    },
+    {
+     "w": "cha,",
+     "start": 2.137,
+     "end": 2.331
+    },
+    {
+     "w": "mà",
+     "start": 2.762,
+     "end": 2.88
+    },
+    {
+     "w": "chương",
+     "start": 2.89,
+     "end": 3.126
+    },
+    {
+     "w": "trình",
+     "start": 3.147,
+     "end": 3.354
+    },
+    {
+     "w": "vẫn",
+     "start": 3.372,
+     "end": 3.519
+    },
+    {
+     "w": "chạy",
+     "start": 3.532,
+     "end": 3.71
+    },
+    {
+     "w": "đúng.",
+     "start": 3.725,
+     "end": 3.932
+    },
+    {
+     "w": "Nếu",
+     "start": 4.49,
+     "end": 4.646
+    },
+    {
+     "w": "lớp",
+     "start": 4.66,
+     "end": 4.816
+    },
+    {
+     "w": "con",
+     "start": 4.83,
+     "end": 4.986
+    },
+    {
+     "w": "không",
+     "start": 5.0,
+     "end": 5.218
+    },
+    {
+     "w": "giữ",
+     "start": 5.237,
+     "end": 5.394
+    },
+    {
+     "w": "được",
+     "start": 5.407,
+     "end": 5.595
+    },
+    {
+     "w": "một",
+     "start": 5.611,
+     "end": 5.768
+    },
+    {
+     "w": "lời",
+     "start": 5.781,
+     "end": 5.938
+    },
+    {
+     "w": "hứa,",
+     "start": 5.951,
+     "end": 6.139
+    },
+    {
+     "w": "đừng",
+     "start": 6.492,
+     "end": 6.721
+    },
+    {
+     "w": "để",
+     "start": 6.74,
+     "end": 6.893
+    },
+    {
+     "w": "nó",
+     "start": 6.906,
+     "end": 7.058
+    },
+    {
+     "w": "kế",
+     "start": 7.071,
+     "end": 7.223
+    },
+    {
+     "w": "thừa",
+     "start": 7.236,
+     "end": 7.465
+    },
+    {
+     "w": "lời",
+     "start": 7.484,
+     "end": 7.675
+    },
+    {
+     "w": "hứa",
+     "start": 7.691,
+     "end": 7.881
+    },
+    {
+     "w": "đó.",
+     "start": 7.898,
+     "end": 8.088
+    }
+   ],
+   "text": "Ghi nhớ: lớp con phải thay được cho lớp cha, mà chương trình vẫn chạy đúng.\n\nNếu lớp con không giữ được một lời hứa, đừng để nó kế thừa lời hứa đó."
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "storyFormat": "worked-trace-v1",
+  "visualMode": "camera-study",
+  "language": "vi",
+  "brand": "AGENTVID",
+  "slug": "bento-camera-study",
+  "topicLabel": "BINARY SEARCH · CAMERA STUDY",
+  "story": {
+    "question": "Có cần thử từng số không?",
+    "example": "Một bước tìm 24 trong dãy 8 số đã tăng dần.",
+    "takeaway": "So sánh 18 < 24 loại được nhóm 3, 7, 11, 18 khỏi vùng tìm."
+  },
+  "example": {
+    "values": [
+      3,
+      7,
+      11,
+      18,
+      24,
+      31,
+      42,
+      56
+    ],
+    "target": 24
+  },
+  "intro": {
+    "phase": "question",
+    "title": "Có cần thử\ntừng số?",
+    "vo": "Tìm hai mươi tư. Ta có cần thử từng số không?",
+    "cues": [
+      {
+        "id": "establish",
+        "on": "Tìm"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "phase": "setup",
+      "title": "Một dãy\nđã có thứ tự.",
+      "vo": "Tám số này đã được xếp tăng dần.",
+      "cues": [
+        {
+          "id": "inspect",
+          "on": "Tám số"
+        },
+        {
+          "id": "sorted",
+          "on": "xếp tăng dần"
+        }
+      ]
+    },
+    {
+      "phase": "decode",
+      "title": "Bắt đầu\ntừ ô giữa.",
+      "vo": "Ta chọn ô giữa, mang giá trị mười tám.",
+      "cues": [
+        {
+          "id": "pick",
+          "on": "ô giữa"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "Theo số vừa đọc\nsang phép so sánh.",
+      "vo": "Đưa số này sang so sánh với hai mươi tư. Mười tám nhỏ hơn.",
+      "cues": [
+        {
+          "id": "travel",
+          "on": "Đưa số"
+        },
+        {
+          "id": "compare",
+          "on": "nhỏ hơn"
+        }
+      ]
+    },
+    {
+      "phase": "verify",
+      "title": "Một phép so sánh.\nLoại được cả nhóm.",
+      "vo": "Vậy cả bốn số bên trái đều không thể là đáp án.",
+      "cues": [
+        {
+          "id": "proof",
+          "on": "cả bốn"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "phase": "rule",
+    "title": "Thu hẹp vùng tìm.",
+    "vo": "Bỏ nhóm này, rồi tìm tiếp trong nửa bên phải.",
+    "cues": [
+      {
+        "id": "prune",
+        "on": "Bỏ nhóm"
+      },
+      {
+        "id": "next",
+        "on": "nửa bên phải"
+      }
+    ],
+    "readingHold": {
+      "seconds": 1.2,
+      "task": "Đọc kết quả 8 → 4 trên cùng sân khấu sau khi camera đã dừng."
+    }
+  },
+  "cameraLayout": "guided"
+}

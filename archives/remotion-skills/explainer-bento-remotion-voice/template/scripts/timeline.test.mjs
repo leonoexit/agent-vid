@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {compileTimeline,sectionList,track} from '../src/timeline.mjs';
+const phases=['question','setup','decode','execute','verify','rule'];
+const shots=phases.map((phase,i)=>({phase,vo:'một hai',cues:[{id:`c${i}`,on:'hai'}]}));
+const script={intro:shots[0],scenes:shots.slice(1,-1),outro:shots.at(-1)};
+const timings={sections:sectionList(script).map(s=>({id:s.id,text:s.vo,file:'assets/audio/test.mp3',duration:1,words:[{w:'một',start:0,end:.3},{w:'hai',start:.4,end:.8}]}))};
+test('audio spacing and phrase cues resolve to actual frame positions',()=>{const t=compileTimeline(script,timings);assert.equal(t.durationInFrames,246);assert.equal(t.cues.c0,17);assert.equal(t.cues.c5,222);});
+test('changed narration cannot reuse stale voice',()=>{const s=structuredClone(script);s.intro.vo='changed';assert.throws(()=>compileTimeline(s,timings),/stale/);});
+test('missing cues and out of order phases fail rather than silently timing zero',()=>{const s=structuredClone(script);s.intro.cues[0].on='absent';assert.throws(()=>compileTimeline(s,timings),/cue/);s.intro.cues=[];s.scenes[1].phase='verify';assert.throws(()=>compileTimeline(s,timings),/phase/);});
+test('frame sampling is order independent, including reverse seeks',()=>{const keys=[{at:30,value:4},{at:70,value:7}];const direct=track(80,0,keys);for(const f of [100,0,90,29,70])track(f,0,keys);assert.equal(track(80,0,keys),direct);assert.equal(track(0,0,keys),0);assert.equal(track(60,0,keys),4);});

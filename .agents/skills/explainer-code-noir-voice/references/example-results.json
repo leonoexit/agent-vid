@@ -1,0 +1,12 @@
+[
+  {
+    "code": "def total():\n    print(2 + 3)\n\nx = total()",
+    "stdout": "5\n",
+    "x": null
+  },
+  {
+    "code": "def total():\n    return 2 + 3\n\nx = total()",
+    "stdout": "",
+    "x": 5
+  }
+]

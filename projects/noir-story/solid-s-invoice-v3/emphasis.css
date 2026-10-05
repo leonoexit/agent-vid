@@ -1,9 +1,0 @@
-/* Native DOM primitives. Plain-string JSON deliberately stays plain text. */
-.noir-surface-dark{--noir-ink:#E2E8F0;--noir-accent:#D97757}
-.noir-surface-light{--noir-ink:#111114;--noir-accent:#713C2A;color:var(--noir-ink)}
-.noir-accent{color:var(--noir-accent,#D97757);font-weight:700}
-.noir-mark{color:var(--noir-ink,#F8FAFC);background:#ffffff12;border-bottom:2px solid var(--noir-accent,#D97757);padding:.04em .14em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.noir-tag{display:inline-block;background:#ffffff08;color:var(--noir-ink,#E2E8F0);border:1px solid #ffffff33;border-radius:999px;padding:.3em .7em;font:500 22px/1.25 'Bento Story Mono',monospace;letter-spacing:.03em}
-.noir-icon{display:block;width:var(--noir-icon-size,88px);height:var(--noir-icon-size,88px);color:var(--noir-accent,#D97757);flex-shrink:0}
-.noir-icon svg{display:block;width:100%;height:100%;fill:currentColor}
-.noir-surface-light .noir-mark{background:#1111140C}.noir-surface-light .noir-tag{background:#11111408;border-color:#11111440}

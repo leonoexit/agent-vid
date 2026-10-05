@@ -1,0 +1,6 @@
+node_modules/
+public/assets/audio/
+assets/audio/
+renders/
+qa/
+build/

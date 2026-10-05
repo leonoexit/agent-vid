@@ -1,0 +1,111 @@
+{
+  "storyFormat": "ribbon-example-v1",
+  "language": "vi",
+  "title": "Một quy tắc, nhiều đầu vào",
+  "audience": "Người mới học lập trình, biết số và phép nhân",
+  "story": {
+    "question": "Một hàm dùng lại cùng quy tắc như thế nào?",
+    "example": "Hàm Python double(x) trả x * 2: 3 → 6, rồi 5 → 10.",
+    "takeaway": "Trong ví dụ này, quy tắc giữ nguyên và kết quả thay đổi theo đầu vào."
+  },
+  "intro": {
+    "layout": "poster",
+    "kicker": "MỘT Ý TƯỞNG LẬP TRÌNH",
+    "title": "CHO SỐ 3.\nNHẬN VỀ GÌ?",
+    "vo": "Đưa số ba vào một hàm nhân đôi. Hàm sẽ trả về gì? Hãy nhìn quy tắc bên trong.",
+    "illustration": {
+      "src": "assets/illustrations/workshop.png",
+      "alt": "Xưởng biến đổi có khay vào và khay ra trống",
+      "role": "Điểm neo minh hoạ cho một quy tắc biến đổi; không phải phần cứng thực."
+    },
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Một đầu vào. Một quy tắc.",
+        "on": "một hàm nhân đôi"
+      }
+    ],
+    "model": {
+      "input": "3",
+      "rule": "double",
+      "output": "?",
+      "inputOn": "số ba",
+      "ruleOn": "hàm nhân đôi",
+      "outputOn": "trả về gì"
+    }
+  },
+  "scenes": [
+    {
+      "layout": "workbench",
+      "kicker": "NHÌN VÀO QUY TẮC",
+      "title": "LẤY ĐẦU VÀO.\nNHÂN HAI.",
+      "vo": "Quy tắc là lấy x nhân hai. Với x bằng ba, ba nhân hai bằng sáu. Return đưa số sáu về nơi gọi hàm.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "PYTHON",
+          "text": "def double(x):\n    return x * 2",
+          "on": "Quy tắc"
+        },
+        {
+          "type": "text",
+          "text": "3 × 2 = 6",
+          "on": "bằng sáu"
+        }
+      ],
+      "model": {
+        "input": "3",
+        "rule": "× 2",
+        "output": "6",
+        "inputOn": "x bằng ba",
+        "ruleOn": "ba nhân hai",
+        "outputOn": "bằng sáu"
+      }
+    },
+    {
+      "layout": "outcome",
+      "kicker": "ĐỔI MỘT THỨ",
+      "title": "ĐẦU VÀO MỚI.\nVẪN QUY TẮC ĐÓ.",
+      "vo": "Giữ nguyên hàm, đổi đầu vào thành năm. Vẫn quy tắc nhân hai, lần này kết quả là mười. Ta dùng lại cách xử lý mà không viết lại hàm.",
+      "illustration": {
+        "src": "assets/illustrations/workshop.png",
+        "alt": "Cùng xưởng biến đổi trong ví dụ trước",
+        "role": "Giữ nhận diện của quy tắc khi đầu vào thay đổi."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Dùng lại cách xử lý.",
+          "on": "không viết lại hàm"
+        }
+      ],
+      "model": {
+        "input": "5",
+        "rule": "× 2",
+        "output": "10",
+        "inputOn": "thành năm",
+        "ruleOn": "quy tắc nhân hai",
+        "outputOn": "là mười"
+      }
+    }
+  ],
+  "outro": {
+    "layout": "rule",
+    "kicker": "ĐIỀU GIỮ LẠI",
+    "title": "GIỮ QUY TẮC.\nTHAY ĐẦU VÀO.",
+    "vo": "Trong ví dụ này, double nhận một số và trả về số gấp đôi. Điều giúp dùng lại là quy tắc giữ nguyên, còn đầu vào có thể thay đổi.",
+    "blocks": [
+      {
+        "type": "code",
+        "text": "double(3) → 6\ndouble(5) → 10",
+        "label": "ĐỐI CHIẾU KẾT QUẢ · KHÔNG PHẢI CÚ PHÁP PYTHON",
+        "on": "Trong ví dụ này"
+      },
+      {
+        "type": "text",
+        "text": "Cùng hàm, hai lần gọi.",
+        "on": "đầu vào có thể thay đổi"
+      }
+    ]
+  }
+}

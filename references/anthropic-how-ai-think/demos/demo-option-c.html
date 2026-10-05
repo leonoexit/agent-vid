@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option C: The Clean Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;700&family=Georgia:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        .serif {
+            font-family: 'Georgia', serif;
+        }
+        .grid-bg {
+            background-image: linear-gradient(#e5e5e5 1px, transparent 1px),
+            linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+            background-size: 100px 100px;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container p-16 flex flex-col relative text-[#1d1d1f]">
+        <!-- Watermark -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-50 opacity-5">
+            <span class="text-6xl font-bold uppercase tracking-widest">@lenguyen.codeai</span>
+        </div>
+
+        <div class="grid-bg"></div>
+
+        <!-- Header -->
+        <div class="flex justify-between items-start z-20 mb-20">
+            <div class="flex gap-4 items-center">
+                <div class="w-4 h-4 bg-[#ff5f57] rounded-full"></div>
+                <span class="text-xl font-medium tracking-tight uppercase text-gray-500">Anthropic Research</span>
+            </div>
+            <div class="text-xl font-medium text-gray-400">
+                Vol. 1 — Intro
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h1 class="text-8xl font-bold tracking-tighter leading-[0.9] mb-12">
+                The Nature<br>
+                of <span class="text-blue-600">Thought.</span>
+            </h1>
+
+            <div class="border-l-4 border-black pl-10 py-4 mb-16">
+                <p class="text-5xl leading-tight serif italic">
+                    "Khi bạn trò chuyện với một mô hình ngôn ngữ lớn, bạn thực sự đang nói chuyện với ai?"
+                </p>
+            </div>
+
+            <!-- Analysis Box -->
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg border border-gray-100">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-400 uppercase tracking-widest">Hypothesis A</h3>
+                    <p class="text-3xl font-medium">Một chiếc máy Autocomplete vĩ đại.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-lg border border-blue-100">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400 uppercase tracking-widest">Hypothesis B</h3>
+                    <p class="text-3xl font-medium text-blue-900">Một thực thể có tư duy non trẻ.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-auto pt-12 border-t border-gray-200 flex justify-between items-center z-20">
+            <div class="text-2xl font-bold">
+                Interpretability
+            </div>
+            <div class="bg-black text-white w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl">
+                1
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

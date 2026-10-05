@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretability - Batch 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Mali', cursive;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            filter: contrast(100%) brightness(100%);
+            margin-bottom: 40px;
+        }
+        /* Paper Texture - Global Overlay */
+        .paper-overlay {
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+            opacity: 0.2;
+            z-index: 100;
+            pointer-events: none;
+        }
+        .paper-grain {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+            z-index: 99;
+            pointer-events: none;
+        }
+        .paper-wrinkle {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 90% 90%, rgba(0,0,0,0.05) 0%, transparent 40%);
+            z-index: 98;
+            pointer-events: none;
+        }
+        
+        /* Typography */
+        .marker-font { font-family: 'Sriracha', cursive; }
+        .pen-font { font-family: 'Mali', cursive; }
+        
+        /* Colors */
+        .ink-blue { color: #1a237e; }
+        .ink-red { color: #c0392b; }
+        .highlight {
+            background: linear-gradient(120deg, rgba(255,235,59,0.5) 0%, rgba(255,235,59,0) 100%);
+            padding: 0 10px;
+        }
+
+        /* Branding */
+        .watermark {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.15;
+            font-size: 2rem;
+            z-index: 50;
+            font-family: 'Sriracha', cursive;
+        }
+        .page-number {
+             position: absolute;
+             bottom: 30px;
+             right: 30px;
+             width: 70px;
+             height: 70px;
+             border: 4px solid #1a237e;
+             border-radius: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 1.8rem;
+             color: #1a237e;
+             font-weight: bold;
+             transform: rotate(-5deg);
+             background: white;
+             z-index: 50;
+             font-family: 'Sriracha', cursive;
+        }
+
+        /* Doodles & Polish */
+        .doodle-box {
+            border: 3px solid #1a237e;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 10px 10px 0px rgba(26, 35, 126, 0.1);
+        }
+        .doodle-box::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid rgba(26, 35, 126, 0.3);
+            border-radius: 24px;
+            transform: rotate(0.8deg);
+            pointer-events: none;
+        }
+
+        .img-polish {
+            border: 4px solid #1a237e;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 15px 15px 0px rgba(26, 35, 126, 0.05);
+            background: white;
+            padding: 10px;
+        }
+        .img-polish img {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 16: Intro to Features -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">16</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h1 class="text-7xl marker-font ink-blue mb-12 transform -rotate-1">
+                Khái niệm đầu tiên:<br>
+                <span class="text-red-600 underline decoration-wavy">FEATURES</span> (Đặc điểm)
+            </h1>
+            
+            <p class="text-5xl pen-font leading-relaxed mb-12">
+                Hãy tưởng tượng bộ não của AI<br>
+                giống như một thành phố khổng lồ.
+            </p>
+
+            <div class="doodle-box p-8 bg-white/50 w-full text-center">
+                <p class="text-4xl pen-font text-gray-600">
+                    Feature = Những "cư dân"<br>đang sống trong đó.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 17: What is a Feature? -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">17</div>
+        
+        <div class="flex-1 z-20 flex flex-col items-center justify-center">
+             <h2 class="text-5xl pen-font text-gray-500 mb-8">Feature là gì?</h2>
+                          <div class="grid grid-cols-2 gap-8 w-full">
+                 <div class="doodle-box p-8 transform rotate-1">
+                     <p class="text-4xl pen-font text-center font-bold">Thứ cụ thể:</p>
+                     <p class="text-6xl text-center mt-4 flex justify-center text-blue-800">
+                        <i class="fa-solid fa-dog text-7xl"></i>
+                     </p>
+                     <p class="text-3xl pen-font text-center mt-2">"Tai chó"</p>
+                 </div>
+                 <div class="doodle-box p-8 transform -rotate-1">
+                     <p class="text-4xl pen-font text-center font-bold">Thứ trừu tượng:</p>
+                     <p class="text-6xl text-center mt-4 flex justify-center text-red-500">
+                        <i class="fa-solid fa-heart text-7xl"></i>
+                     </p>
+                     <p class="text-3xl pen-font text-center mt-2">"Lãng mạn"</p>
+                 </div>
+             </div>
+             
+             <p class="mt-12 text-4xl pen-font text-center max-w-2xl">
+                 Mỗi feature là một mẫu hình (pattern) mà AI nhận ra trong dữ liệu.
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 18: Neural Activation -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">18</div>
+
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h1 class="text-6xl marker-font ink-blue mb-12">
+                Khi bạn nhắc đến "Python"...
+            </h1>
+            
+            <div class="relative h-64 w-full border-b-4 border-gray-300 flex items-end justify-center mb-8">
+                 <!-- Graph bars hand-drawn style using borders -->
+                 <div class="w-20 h-10 border-2 border-blue-800 mx-2 bg-blue-100"></div>
+                 <div class="w-20 h-20 border-2 border-blue-800 mx-2 bg-blue-100"></div>
+                 <div class="w-20 h-60 border-2 border-red-600 mx-2 bg-red-200 relative">
+                     <span class="absolute -top-12 left-0 w-full text-center text-2xl pen-font font-bold whitespace-nowrap">Kích hoạt!</span>
+                 </div>
+                 <div class="w-20 h-10 border-2 border-blue-800 mx-2 bg-blue-100"></div>
+            </div>
+            
+            <p class="text-4xl pen-font text-center">
+                Một nhóm neuron cụ thể sẽ <span class="highlight">"sáng lên"</span> (fire).<br>
+                Đó là feature về lập trình!
+            </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 19: Polysemantic Neurons -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="white-coffee-stain absolute -bottom-20 -right-20 select-none pointer-events-none opacity-20 transform scale-150 rotate-45"></div> <!-- Placeholder for stain -->
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">19</div>
+
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <h1 class="text-6xl marker-font text-red-600 mb-8 transform -rotate-2">
+                 Vấn đề: Sự chồng chéo
+             </h1>
+             <p class="text-4xl pen-font mb-12">
+                 Các neuron không gọn gàng như chúng ta nghĩ.
+             </p>
+             
+             <div class="doodle-box p-8 bg-yellow-50 transform rotate-1">
+                 <p class="text-4xl pen-font text-center leading-relaxed">
+                     1 neuron có thể đại diện cho:<br>
+                     <span class="font-bold">Vừa là "Opera La Mã"</span><br>
+                     <span class="font-bold">+ Vừa là "Địa chỉ IP"</span> (?)
+                 </p>
+             </div>
+             
+             <p class="mt-8 text-3xl pen-font text-center text-gray-500">
+                 (Hiện tượng này gọi là Polysemanticity - Đa nghĩa)
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 20: Disentangling -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">20</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center text-center">
+             <h1 class="text-7xl marker-font ink-blue mb-12">Nhiệm vụ: Gỡ rối</h1>
+             
+             <div class="flex justify-center items-center mb-8 text-8xl ink-blue">
+                <i class="fa-solid fa-shuffle opacity-40 text-7xl"></i>
+                <span class="mx-12 marker-font">➡️</span>
+                <i class="fa-solid fa-bars text-7xl"></i>
+             </div>
+             
+             <p class="text-5xl pen-font leading-relaxed">
+                 Chúng ta dùng thuật toán (Sparse Autoencoders) để tách các neuron "đa nhân cách" này thành...<br>
+                 <span class="highlight font-bold">Hàng triệu khái niệm đơn lẻ.</span>
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 21: Golden Gate Discovery -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">21</div>
+
+        <div class="flex-1 z-20 flex flex-col items-center justify-center">
+             <h2 class="text-4xl pen-font text-gray-500 mb-8 uppercase">Phát hiện chấn động:</h2>
+             
+             <div class="doodle-box p-2 bg-white transform rotate-1 mb-8 img-polish">
+                 <img src="assets/golden_gate_neuron.png" class="w-[500px] h-[500px] object-contain mix-blend-multiply" alt="Golden Gate Neuron">
+             </div>
+             
+             <h1 class="text-6xl marker-font ink-blue text-center">
+                 "Neuron Cầu Cổng Vàng"
+             </h1>
+        </div>
+    </div>
+
+    <!-- SLIDE 22: What it does -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">22</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <p class="text-5xl pen-font leading-relaxed mb-8">
+                 Trong mô hình của Anthropic, họ tìm thấy một "feature" chỉ quan tâm đến Cầu Cổng Vàng.
+             </p>
+             
+             <div class="pl-8 border-l-4 border-blue-800 space-y-6 text-4xl pen-font text-gray-700">
+                 <p>- Nhắc đến San Francisco? <span class="text-green-600">Sáng!</span></p>
+                 <p>- Nhắc đến sương mù? <span class="text-green-600">Sáng!</span></p>
+                 <p>- Nhắc đến Tổng thống Mỹ? <span class="text-red-500">Tắt.</span></p>
+             </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 23: The Experiment -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">23</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center text-center">
+             <h1 class="text-7xl marker-font ink-blue mb-12">Thí nghiệm điên rồ</h1>
+             
+             <p class="text-5xl pen-font mb-8 leading-relaxed">
+                 Điều gì xảy ra nếu chúng ta...<br>
+                 <span class="text-red-600 font-bold underline decoration-wavy">KẸP CHẶT</span> feature này ở mức MAX?
+             </p>
+             
+             <div class="text-[120px] transform rotate-12 flex justify-center text-gray-500">
+                <i class="fa-solid fa-wrench text-8xl"></i>
+             </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 24: Identity Crisis -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">24</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <div class="bg-gray-100 p-8 rounded-xl border-2 border-gray-300 font-mono text-3xl mb-8 transform -rotate-1">
+                 <span class="text-gray-500">User:</span> Bạn là ai?<br><br>
+                 <span class="text-blue-600">Claude:</span> Tôi là Cầu Cổng Vàng... hình dạng vật lý của tôi là cây cầu treo trứ danh...
+             </div>
+             
+             <h1 class="text-5xl marker-font text-center text-red-600">
+                 Claude ĐĂNG XUẤT.<br>
+                 Cầu Cổng Vàng ĐĂNG NHẬP.
+             </h1>
+        </div>
+    </div>
+
+    <!-- SLIDE 25: Why this matters -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">25</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+             <h1 class="text-6xl marker-font ink-blue text-center mb-12">
+                 Điều này chứng minh:
+             </h1>
+             
+             <div class="doodle-box p-12 bg-white transform rotate-2">
+                 <p class="text-5xl pen-font text-center leading-relaxed">
+                     AI có những khái niệm nội tại.<br>
+                     Chúng ta có thể <span class="highlight">tìm thấy</span> và <span class="highlight">điều khiển</span> chúng!
+                 </p>
+             </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 26: Math Intro -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">26</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center text-center">
+             <h1 class="text-7xl marker-font ink-blue mb-12 uppercase">
+                 Không chỉ là<br>Kiến thức
+             </h1>
+             <p class="text-5xl pen-font mb-8 leading-relaxed">
+                 Chúng ta còn tìm thấy cả...<br>
+                 <span class="text-6xl font-bold font-mono text-green-700">THUẬT TOÁN (Algorithms)</span>
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 27: The 6+9 Circuit -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">27</div>
+        
+        <div class="flex-1 z-20 flex flex-col items-center justify-center">
+             <h2 class="text-5xl pen-font text-gray-500 mb-8">Ví dụ: Phép tính 6 + 9</h2>
+             
+             <div class="p-6 bg-white transform -rotate-1 mb-8 img-polish">
+                 <img src="assets/math_circuit.png" class="w-[500px] h-[500px] object-contain mix-blend-multiply" alt="Math Circuit Doodle">
+             </div>
+             
+             <p class="text-3xl pen-font text-center">
+                 (AI tự thiết kế mạch điện này để làm toán!)
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 28: Abstract Reasoning -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">28</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <h1 class="text-6xl marker-font ink-blue mb-12 leading-tight">
+                 Nó không học vẹt.
+             </h1>
+             
+             <p class="text-5xl pen-font leading-relaxed">
+                 Nó đã tự khám phá ra quy luật của phép cộng.<br>
+                 Giống như cách Newton khám phá ra quy luật của trọng lực.
+             </p>
+        </div>
+    </div>
+
+    <!-- SLIDE 29: Space & Time -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">29</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <h2 class="text-5xl text-gray-500 pen-font mb-8">Còn nhiều thứ điên rồ hơn...</h2>
+             
+             <div class="pl-8 border-l-8 border-purple-500 space-y-8">
+                 <p class="text-5xl pen-font font-bold text-purple-800">Không Gian & Thời Gian</p>
+                 <p class="text-4xl pen-font leading-relaxed">
+                     Llama-3 được tìm thấy có các "tế bào không gian" (place cells) giúp nó hình dung bản đồ thế giới!
+                 </p>
+             </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 30: Outro Batch 2 -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">30</div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center items-center text-center">
+             <h1 class="text-7xl marker-font ink-blue mb-12">
+                 Nhưng...<br>
+                 Có một góc tối.
+             </h1>
+             
+             <p class="text-4xl pen-font max-w-3xl mb-12" style="line-height: 1.2;">
+                 Nếu nó có mạch để làm toán, thì liệu nó có mạch để...<br>
+                 <span class="text-red-600 font-bold underline decoration-wavy">NÓI DỐI không?</span>
+             </p>
+             
+             <div class="doodle-box p-6 bg-gray-100 rotate-2">
+                 <span class="text-4xl pen-font">⚠️ Cảnh báo: Sự nịnh hót (Sycophancy)</span>
+             </div>
+             
+             <div class="mt-12 text-6xl flex justify-center text-gray-400">
+                <i class="fa-solid fa-hand-pointer"></i>
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>

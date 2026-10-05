@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "language": "vi",
+  "slug": "assignment-copy-apple-v3",
+  "topicLabel": "JAVASCRIPT · GIÁ TRỊ SỐ",
+  "example": {
+    "initial": 5,
+    "replacement": 9
+  },
+  "intro": {
+    "phase": "question",
+    "title": "Đổi x.\ny có đổi theo?",
+    "vo": "Gán y bằng ích, rồi đổi ích. Y có đổi theo không? Ta thử với ba dòng JavaScript này."
+  },
+  "scenes": [
+    {
+      "phase": "setup",
+      "title": "Bắt đầu\nvới một số.",
+      "vo": "Dòng đầu tạo biến ích, mang giá trị năm. Hãy nhìn vào ô ích.",
+      "cues": [
+        {
+          "id": "createX",
+          "on": "giá trị năm"
+        }
+      ]
+    },
+    {
+      "phase": "copy",
+      "title": "Lấy giá trị.\nTạo bản sao.",
+      "vo": "Dòng thứ hai lấy giá trị hiện tại của ích, là năm, rồi sao chép sang y. Ích vẫn giữ số năm.",
+      "cues": [
+        {
+          "id": "copyStart",
+          "on": "rồi sao chép"
+        }
+      ]
+    },
+    {
+      "phase": "change",
+      "title": "Chỉ x\nnhận số mới.",
+      "vo": "Bây giờ, dòng cuối gán chín cho ích. Chỉ ô ích được ghi giá trị mới.",
+      "cues": [
+        {
+          "id": "changeX",
+          "on": "gán chín"
+        }
+      ]
+    },
+    {
+      "phase": "verify",
+      "title": "x đổi.\ny vẫn giữ 5.",
+      "vo": "Y vẫn là năm, vì nó đã nhận số năm ở bước trước. Phép gán không tạo liên kết để y chạy theo ích."
+    }
+  ],
+  "outro": {
+    "phase": "rule",
+    "title": "Sao chép giá trị\ntại lúc gán.",
+    "vo": "Với giá trị số trong JavaScript, gán y bằng ích là sao chép giá trị tại lúc gán."
+  },
+  "captionAliases": {
+    "ích": "x",
+    "Ích": "x"
+  }
+}

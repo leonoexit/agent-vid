@@ -1,1 +1,0 @@
-window.THEME = {"layout": "noir-story", "captionHighlight": "#F2AF96", "ink": "#E2E8F0", "connection": "#94A3B8", "morphBorder": "rgba(255,255,255,.18)", "morphSurface": "#141417", "captionInk": "#F8FAFC", "captionFill": "#482C22"};

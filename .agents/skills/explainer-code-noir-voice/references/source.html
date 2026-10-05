@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Carousel - Code Noir (Template)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* NOIR PALETTE */
+            --bg: #000000;
+            --line: #333333;
+            --text-main: #E5E5E5;
+            --text-dim: #666666;
+            
+            /* SYNTAX COLORS (ORIGINAL) */
+            --syn-kw: #FF79C6;   /* Pink */
+            --syn-fn: #8BE9FD;   /* Cyan */
+            --syn-str: #F1FA8C;  /* Yellow */
+            --syn-com: #6272A4;  /* Comment Blue-Grey */
+            --syn-var: #BD93F9;  /* Purple */
+            
+            --slide-size: 1200px;
+        }
+
+        body {
+            background-color: #111;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            gap: 40px;
+        }
+
+        /* 
+           CODE NOIR SYSTEM
+           - Pure Black
+           - Monospace Only
+           - Syntax Highlighting Accents
+           - Minimal Lines
+        */
+
+        .slide-container {
+            width: var(--slide-size);
+            height: var(--slide-size);
+            background-color: var(--bg);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #333;
+        }
+
+        /* UTILS */
+        .mono-bold { font-weight: 800; }
+        .text-dim { color: var(--text-dim); }
+        .border-b-line { border-bottom: 2px solid var(--line); }
+        .border-t-line { border-top: 2px solid var(--line); }
+
+        /* SYNTAX CLASSES */
+        .kw { color: var(--syn-kw); }
+        .fn { color: var(--syn-fn); }
+        .str { color: var(--syn-str); }
+        .com { color: var(--syn-com); }
+        .var { color: var(--syn-var); }
+
+        /* HEADER */
+        .top-bar {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 24px;
+        }
+
+        /* CONTENT */
+        .content {
+            flex: 1;
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* TYPOGRAPHY */
+        .h1 {
+            font-size: 80px;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+        }
+
+        .h2 {
+            font-size: 50px;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+        
+        .p {
+            font-size: 40px;
+            line-height: 1.5;
+            color: #BBB;
+        }
+
+        /* LINE DECORATION */
+        .decorator-line {
+            width: 100px;
+            height: 4px;
+            background: var(--syn-fn);
+            margin: 40px 0;
+        }
+
+        /* WATERMARK */
+        .watermark {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .line-number {
+            color: #333;
+            margin-right: 30px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 9999; background: #000; padding: 15px; border: 1px solid #333; color: white;">
+        <div style="font-weight: bold; margin-bottom: 10px;">CODE NOIR (TEMPLATE)</div>
+        <button onclick="exportAllSlides()" style="background: var(--syn-kw); color: black; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; font-family: 'JetBrains Mono';">Download All</button>
+    </div>
+
+    <!-- 01: COVER -->
+    <div class="slide-container">
+        <div class="top-bar border-b-line">
+            <div><span class="kw">import</span> { Surprise } <span class="kw">from</span> <span class="str">'10-years-exp'</span>;</div>
+            <div class="text-dim">01/09</div>
+        </div>
+        <div class="content">
+            <div class="line-number" style="position: absolute; left: 40px; top: 50%; width: 20px; color: #222; font-size: 24px; display: flex; flex-direction: column; gap: 43px; pointer-events: none;">
+                <!-- Fake line numbers column -->
+                <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+            </div>
+            
+            <div class="h1">
+                <span class="fn">Điều_gì</span> khiến tôi<br>
+                <span class="str">"Kinh Ngạc"</span> sau<br>
+                10 Năm <span class="kw">Code</span>?
+            </div>
+            <div class="p text-dim">
+                // u/tocka_codes • r/learnprogramming
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 02: INTRO -->
+    <div class="slide-container">
+        <div class="content" style="padding-left: 120px;">
+            <div class="com" style="font-size: 32px; margin-bottom: 40px;">/* 10 năm kinh nghiệm... */</div>
+            <div class="h2">
+                <span class="kw">const</span> <span class="var">feeling</span> = <span class="str">"UNCHANGED"</span>;
+            </div>
+            <div class="p">
+                Có một cảm giác duy nhất chưa bao giờ thay đổi.
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 03: PROBLEM -->
+    <div class="slide-container">
+        <div class="content" style="align-items: center; text-align: center;">
+            <div style="border: 2px dashed #333; padding: 60px; margin-bottom: 40px;">
+                <div class="h1" style="color: #333;">404</div>
+            </div>
+            <div class="h2">
+                Khi không tìm thấy <span class="fn">Tool()</span>
+            </div>
+            <div class="p text-dim">
+                System.err.println("No solution found");
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 04: ACTION -->
+    <div class="slide-container">
+        <div class="content">
+            <div class="h1" style="font-size: 100px;">
+                <span class="kw">return</span> <span class="fn">buildIt</span>();
+            </div>
+            <div class="decorator-line"></div>
+            <div class="p">
+                Chỉ cần mở IDE.<br>
+                Và viết nó ra.
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 05: POWER -->
+    <div class="slide-container">
+        <div class="content" style="justify-content: center; align-items: center;">
+            <div class="h1" style="font-size: 180px; text-align: center;">
+                <span class="kw">POWER</span><span class="text-dim">;</span>
+            </div>
+            <div class="p text-dim">
+                // Quyền năng của người kiến tạo
+            </div>
+        </div>
+        <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 06: MINDSET -->
+    <div class="slide-container">
+        <div class="content">
+            <div class="com" style="font-size: 40px; margin-bottom: 20px;">// The Mindset</div>
+            <div class="h2" style="border-left: 4px solid var(--syn-fn); padding-left: 40px;">
+                "Tôi biết tôi có thể <span class="fn">xây dựng</span> bất cứ thứ gì."
+            </div>
+             <div class="h2" style="border-left: 4px solid var(--syn-kw); padding-left: 40px; margin-top: 40px;">
+                "Giới hạn duy nhất là <span class="kw">Thời Gian</span>."
+            </div>
+        </div>
+         <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 07: BEGINNERS -->
+    <div class="slide-container">
+        <div class="top-bar border-b-line">
+            <div class="com">@param {Beginner} you</div>
+        </div>
+        <div class="content">
+            <div class="h1">
+                <span class="var">skill</span>++
+            </div>
+            <div class="p">
+                Cảm giác đó sẽ <span class="str">mạnh mẽ hơn</span> khi bạn học nhiều hơn.
+            </div>
+        </div>
+         <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <!-- 08: COMMENT -->
+    <div class="slide-container">
+        <div class="content">
+            <div class="h2">
+                <span class="kw">class</span> <span class="var">Veteran</span> <span class="kw">extends</span> Human {
+            </div>
+            <div class="p" style="padding-left: 60px;">
+                <span class="var">exp</span> = 40; <span class="com">// years</span><br>
+                <span class="fn">feeling</span>() {<br>
+                &nbsp;&nbsp;<span class="kw">return</span> <span class="str">"Like a child"</span>;<br>
+                }
+            </div>
+            <div class="h2">}</div>
+        </div>
+         <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+     <!-- 09: CTA -->
+     <div class="slide-container">
+        <div class="content" style="align-items: center; text-align: left;">
+            <div class="h1">
+                <span class="kw">await</span> <span class="fn">input</span>(<span class="str">?</span>);
+            </div>
+            <div class="p">
+                Khoảnh khắc của bạn là gì?<br>
+                <span class="com">// Comment bên dưới 👇</span>
+            </div>
+            
+            <div style="margin-top: 100px; border: 1px solid #333; padding: 20px; border-radius: 8px;">
+                 <span class="kw">import</span> { codeai } <span class="kw">from</span> <span class="str">'@lenguyen'</span>;
+            </div>
+        </div>
+         <div class="watermark">@lenguyen.codeai</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        async function exportAllSlides() {
+            const slides = document.querySelectorAll('.slide-container');
+            
+            for (let i = 0; i < slides.length; i++) {
+                const slide = slides[i];
+                console.log(`Processing slide ${i + 1}/${slides.length}`);
+                
+                try {
+                    const canvas = await html2canvas(slide, {
+                        scale: 1.5,
+                        backgroundColor: null,
+                        useCORS: true,
+                        logging: false
+                    });
+                    
+                    const link = document.createElement('a');
+                    link.download = `reddit_noir_template_slide_${i + 1}.png`;
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                    
+                    await new Promise(resolve => setTimeout(resolve, 300));
+                } catch (err) {
+                    console.error(`Error exporting slide ${i + 1}:`, err);
+                }
+            }
+            alert('Export complete!');
+        }
+    </script>
+</body>
+</html>

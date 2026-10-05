@@ -1,0 +1,298 @@
+{
+  "storyFormat": "code-noir-v1",
+  "language": "vi",
+  "title": "Terminal là gì? Lệnh chạy từ chỗ bạn đang đứng",
+  "audience": "Người mới hoàn toàn, sắp học C, chưa từng dùng terminal",
+  "source": "references/c-podcast — Kỳ 0, mục 0.8: Shell, Command, Current directory, Path",
+  "story": {
+    "question": "Gõ ls trong terminal thì nó liệt kê thư mục nào?",
+    "example": "Máy của An (macOS, rút gọn): pwd → /Users/an, ls → Desktop code, ls code → hello.c; sau cd code, cùng lệnh ls code báo lỗi.",
+    "takeaway": "Terminal là cửa sổ gõ/đọc chữ, shell đọc lệnh và cho chạy. Mọi lệnh làm việc từ thư mục hiện tại; đường dẫn không bắt đầu bằng / được tính từ đó. Lạc đường thì gõ pwd."
+  },
+  "captionDisplay": {
+    "tơ-mi-nồ": "terminal",
+    "Tơ-mi-nồ": "Terminal",
+    "el-ét": "ls",
+    "pi-đáp-liu-đi": "pwd",
+    "xi-đi": "cd",
+    "sheo": "shell",
+    "zét-sheo": "zsh",
+    "đét-tóp": "Desktop",
+    "hé-lô": "hello",
+    "en-tơ": "Enter",
+    "xi": "C",
+    "xê": "C"
+  },
+  "intro": {
+    "layout": "claim",
+    "kicker": "// TERMINAL · MỘT CÂU HỎI",
+    "title": "Gõ ls.\nThư mục nào?",
+    "titleRuns": [
+      { "text": "Gõ ", "token": "plain" },
+      { "text": "ls", "token": "fn" },
+      { "text": ".\nThư mục nào?", "token": "plain" }
+    ],
+    "vo": "Mở tơ-mi-nồ, gõ el-ét rồi nhấn en-tơ, màn hình hiện ra một danh sách tên file. Nhưng đó là file trong thư mục nào? Trả lời được câu này, bạn sẽ hiểu tơ-mi-nồ làm việc ra sao.",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "ls → liệt kê tên file, thư mục",
+        "runs": [
+          { "text": "ls", "token": "fn" },
+          { "text": " → liệt kê tên file, thư mục", "token": "plain" }
+        ],
+        "on": "danh sách tên file"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "layout": "comparison",
+      "kicker": "// HAI THỨ HAY BỊ GỌI CHUNG",
+      "title": "Terminal ≠ shell.",
+      "titleRuns": [
+        { "text": "Terminal", "token": "fn" },
+        { "text": " ≠ ", "token": "plain" },
+        { "text": "shell", "token": "kw" },
+        { "text": ".", "token": "plain" }
+      ],
+      "vo": "Tơ-mi-nồ là cửa sổ: nhận chữ bạn gõ và hiện chữ ra. Còn chương trình đọc lệnh rồi cho nó chạy, gọi là sheo. Máy nào cũng có sẵn một sheo; trên máy Mác, nó tên là zét-sheo.",
+      "blocks": [
+        {
+          "type": "note",
+          "label": "TERMINAL",
+          "text": "Cửa sổ: nhận phím gõ,\nhiện chữ ra",
+          "on": "là cửa sổ"
+        },
+        {
+          "type": "note",
+          "label": "SHELL",
+          "text": "Đọc lệnh → cho nó chạy",
+          "on": "chương trình đọc lệnh"
+        },
+        {
+          "type": "text",
+          "text": "Shell mặc định trên macOS: zsh",
+          "runs": [
+            { "text": "Shell mặc định trên macOS: ", "token": "com" },
+            { "text": "zsh", "token": "kw" }
+          ],
+          "on": "trên máy Mác"
+        }
+      ]
+    },
+    {
+      "layout": "code-output",
+      "kicker": "// VÍ DỤ RÚT GỌN · MÁY CỦA AN",
+      "title": "Thư mục hiện tại.",
+      "vo": "Sheo luôn đứng trong một thư mục, gọi là thư mục hiện tại. Lệnh pi-đáp-liu-đi in ra đó là đâu: thư mục nhà của An. Vì vậy, el-ét không kèm gì thêm sẽ liệt kê chính thư mục này: đét-tóp và code.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "LỆNH GÕ VÀO",
+          "text": "pwd",
+          "runs": [{ "text": "pwd", "token": "fn" }],
+          "on": "Lệnh pi-đáp-liu-đi"
+        },
+        {
+          "type": "result",
+          "label": "TERMINAL IN RA",
+          "text": "/Users/an",
+          "on": "thư mục nhà"
+        },
+        {
+          "type": "code",
+          "label": "LỆNH GÕ VÀO",
+          "text": "ls",
+          "runs": [{ "text": "ls", "token": "fn" }],
+          "on": "không kèm gì thêm"
+        },
+        {
+          "type": "result",
+          "label": "TERMINAL IN RA",
+          "text": "Desktop    code",
+          "on": "đét-tóp và code"
+        }
+      ]
+    },
+    {
+      "layout": "code-output",
+      "kicker": "// LỆNH = TÊN + ĐỐI SỐ",
+      "title": "Thêm một đối số.",
+      "vo": "Muốn xem bên trong code, gõ el-ét, cách một khoảng, rồi chữ code. Từ đầu là tên lệnh. Phần sau là đối số, cho lệnh biết làm việc với cái gì. Kết quả: file hé-lô chấm xi, file mã nguồn xi đầu tiên của khóa học.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "LỆNH GÕ VÀO",
+          "text": "ls code",
+          "runs": [
+            { "text": "ls", "token": "fn" },
+            { "text": " ", "token": "plain" },
+            { "text": "code", "token": "str" }
+          ],
+          "on": "cách một khoảng"
+        },
+        {
+          "type": "text",
+          "text": "ls: tên lệnh\ncode: đối số",
+          "runs": [
+            { "text": "ls", "token": "fn" },
+            { "text": ": tên lệnh\n", "token": "plain" },
+            { "text": "code", "token": "str" },
+            { "text": ": đối số", "token": "plain" }
+          ],
+          "on": "Từ đầu là tên lệnh"
+        },
+        {
+          "type": "result",
+          "label": "TERMINAL IN RA",
+          "text": "hello.c",
+          "on": "hé-lô chấm xi"
+        }
+      ]
+    },
+    {
+      "layout": "code-output",
+      "kicker": "// PATH · ĐỊA CHỈ CỦA FILE",
+      "title": "Đường dẫn tương đối.",
+      "vo": "Chữ code ở đây là một đường dẫn, tức địa chỉ của file hay thư mục. Nó không bắt đầu bằng dấu gạch chéo, nên được tính từ thư mục hiện tại: lấy thư mục nhà của An, nối thêm code. Kiểu này gọi là đường dẫn tương đối.",
+      "blocks": [
+        {
+          "type": "note",
+          "label": "ĐƯỜNG DẪN GÕ VÀO",
+          "text": "code",
+          "emphasis": "str",
+          "on": "Chữ code ở đây"
+        },
+        {
+          "type": "note",
+          "label": "THƯ MỤC HIỆN TẠI",
+          "text": "/Users/an",
+          "on": "tính từ thư mục hiện tại"
+        },
+        {
+          "type": "result",
+          "label": "ĐƯỢC HIỂU LÀ",
+          "text": "/Users/an/code",
+          "runs": [
+            { "text": "/Users/an/", "token": "plain" },
+            { "text": "code", "token": "str" }
+          ],
+          "on": "nối thêm code"
+        }
+      ]
+    },
+    {
+      "layout": "comparison",
+      "kicker": "// HAI KIỂU ĐƯỜNG DẪN",
+      "title": "Bắt đầu từ đâu?",
+      "vo": "Vậy có hai kiểu. Đường dẫn tương đối tính từ chỗ bạn đang đứng. Đường dẫn bắt đầu bằng gạch chéo là tuyệt đối, đi từ gốc ổ đĩa, nên đứng ở đâu nó cũng chỉ đúng một chỗ. Trên Windows, đường dẫn tuyệt đối bắt đầu bằng tên ổ, như ổ xê.",
+      "blocks": [
+        {
+          "type": "note",
+          "label": "TƯƠNG ĐỐI",
+          "text": "code\n→ tính từ thư mục hiện tại",
+          "runs": [
+            { "text": "code", "token": "str" },
+            { "text": "\n→ tính từ thư mục hiện tại", "token": "plain" }
+          ],
+          "on": "tương đối tính từ"
+        },
+        {
+          "type": "note",
+          "label": "TUYỆT ĐỐI",
+          "text": "/Users/an/code\n→ tính từ gốc /",
+          "runs": [
+            { "text": "/Users/an/code", "token": "str" },
+            { "text": "\n→ tính từ gốc /", "token": "plain" }
+          ],
+          "on": "là tuyệt đối"
+        },
+        {
+          "type": "text",
+          "text": "Windows: C:\\Users\\an\\code",
+          "emphasis": "com",
+          "on": "Trên Windows"
+        }
+      ]
+    },
+    {
+      "layout": "code-output",
+      "kicker": "// ĐỔI CHỖ ĐỨNG",
+      "title": "Cùng lệnh, khác chỗ.",
+      "vo": "Lệnh xi-đi đổi thư mục hiện tại. Gõ xi-đi code, rồi gõ lại đúng lệnh el-ét code lúc nãy. Giờ ta đang đứng bên trong code, nên máy đi tìm code nằm trong code. Không có thư mục đó, nên el-ét báo lỗi. Lệnh vẫn y hệt; chỉ chỗ đứng đã đổi.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "LỆNH GÕ VÀO",
+          "text": "cd code\nls code",
+          "runs": [
+            { "text": "cd", "token": "fn" },
+            { "text": " ", "token": "plain" },
+            { "text": "code", "token": "str" },
+            { "text": "\n", "token": "plain" },
+            { "text": "ls", "token": "fn" },
+            { "text": " ", "token": "plain" },
+            { "text": "code", "token": "str" }
+          ],
+          "on": "Gõ xi-đi code"
+        },
+        {
+          "type": "note",
+          "label": "THƯ MỤC HIỆN TẠI",
+          "text": "/Users/an/code",
+          "on": "đang đứng bên trong code"
+        },
+        {
+          "type": "note",
+          "label": "MÁY ĐI TÌM",
+          "text": "/Users/an/code/code",
+          "runs": [
+            { "text": "/Users/an/code/", "token": "plain" },
+            { "text": "code", "token": "str" }
+          ],
+          "on": "máy đi tìm"
+        },
+        {
+          "type": "text",
+          "label": "TERMINAL IN RA (macOS)",
+          "text": "ls: code: No such file or directory",
+          "emphasis": "kw",
+          "on": "báo lỗi"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "layout": "rule",
+    "kicker": "// QUY TẮC CẦN NHỚ",
+    "title": "Lạc đường?\nGõ pwd.",
+    "titleRuns": [
+      { "text": "Lạc đường?\nGõ ", "token": "plain" },
+      { "text": "pwd", "token": "fn" },
+      { "text": ".", "token": "plain" }
+    ],
+    "vo": "Tóm lại: tơ-mi-nồ là nơi gõ và đọc chữ, sheo đọc lệnh và cho chạy. Mọi lệnh làm việc từ thư mục hiện tại, và đường dẫn tương đối được tính từ đó. Nên khi một lệnh báo không tìm thấy file, hãy gõ pi-đáp-liu-đi trước, để biết mình đang đứng ở đâu.",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "ls không đối số\n→ thư mục hiện tại.",
+        "runs": [
+          { "text": "ls", "token": "fn" },
+          { "text": " không đối số\n→ thư mục hiện tại.", "token": "plain" }
+        ],
+        "on": "Mọi lệnh làm việc"
+      },
+      {
+        "type": "text",
+        "text": "Không có / ở đầu\n→ tính từ thư mục hiện tại.",
+        "runs": [
+          { "text": "Không có ", "token": "plain" },
+          { "text": "/", "token": "kw" },
+          { "text": " ở đầu\n→ tính từ thư mục hiện tại.", "token": "plain" }
+        ],
+        "on": "tương đối được tính"
+      }
+    ]
+  }
+}

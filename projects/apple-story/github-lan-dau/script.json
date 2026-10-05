@@ -1,0 +1,150 @@
+{
+  "language": "vi",
+  "title": "Lần đầu dùng GitHub",
+  "brand": "AGENTVID",
+  "series": "GitHub · lần đầu",
+  "kicker": "MỘT VÍ DỤ XUYÊN SUỐT",
+  "storyFormat": "apple-action-v1",
+  "audience": "Người chưa biết gì về code, vừa mở GitHub lần đầu, đã có tài khoản. Không giả định biết Git, terminal hay thuật ngữ lập trình. Thao tác hoàn toàn trên trang web. Nhịp chậm rãi theo yêu cầu.",
+  "story": {
+    "question": "Lần đầu mở GitHub thấy toàn chữ lạ: cất một tệp lên đó thì chuyện gì xảy ra, và GitHub giữ lại những gì?",
+    "example": "Tạo repo banh-chuoi (Private, có README) → GitHub tự lưu Initial commit → sửa README thêm '2 quả chuối', commit 'Thêm công thức' → đổi 2 thành 3, commit 'Thêm chuối' → mục Commits có 3 điểm lưu → xem thay đổi: dòng đỏ 2 quả, dòng xanh 3 quả → bản 2 quả vẫn còn.",
+    "takeaway": "Repo là ngăn chứa dự án; mỗi commit là một điểm lưu có ghi chú. Chỉ phần đã commit mới vào lịch sử, nên sửa xong nhớ commit."
+  },
+  "captionDisplay": {
+    "Ghít-hắp": "GitHub",
+    "ri-pô-di-tô-ri": "repository",
+    "ri-pô": "repo",
+    "com-mít": "commit",
+    "rít-mi": "README",
+    "Niu": "New",
+    "Prai-vịt": "Private",
+    "Pắp-lích": "Public",
+    "Cri-ết": "Create"
+  },
+  "entities": [
+    { "id": "repo", "kind": "box", "tone": "purple", "label": "repo", "value": "banh-chuoi", "detail": "ngăn chứa dự án", "x": 40, "y": 40, "width": 240, "height": 200 },
+    { "id": "readme", "kind": "card", "tone": "white", "label": "README.md", "value": "2 quả chuối", "detail": "tệp chữ giới thiệu", "x": 320, "y": 40, "width": 300, "height": 200 },
+    { "id": "c1", "kind": "ticket", "tone": "green", "label": "Initial commit", "value": "điểm 1", "x": 40, "y": 320, "width": 240, "height": 160 },
+    { "id": "c2", "kind": "ticket", "tone": "green", "label": "Thêm công thức", "value": "điểm 2", "x": 310, "y": 320, "width": 240, "height": 160 },
+    { "id": "c3", "kind": "ticket", "tone": "green", "label": "Thêm chuối", "value": "điểm 3", "x": 580, "y": 320, "width": 240, "height": 160 }
+  ],
+  "intro": {
+    "title": "Lần đầu mở GitHub?\nChỉ cần hai từ.",
+    "subtitle": "repo và commit, qua một công thức bánh chuối",
+    "subtitleOn": "hai từ",
+    "note": "Ví dụ xuyên suốt: công thức bánh chuối",
+    "noteOn": "bánh chuối",
+    "tiles": [
+      { "value": "repo", "label": "ngăn chứa dự án", "on": "ri-pô" },
+      { "value": "commit", "label": "điểm lưu", "on": "com-mít" }
+    ],
+    "connector": "+",
+    "connectorOn": "và com-mít",
+    "vo": "Bạn chưa biết gì về code, và vừa mở Ghít-hắp lần đầu. Toàn chữ lạ.\n\nĐừng lo. Hôm nay chỉ cần hiểu hai từ: ri-pô, và com-mít.\n\nTa đi cùng một ví dụ nhỏ: cất công thức bánh chuối lên Ghít-hắp."
+  },
+  "scenes": [
+    {
+      "phase": "GitHub là gì",
+      "title": "GitHub:\ncất dự án trên mạng",
+      "vo": "Ghít-hắp là một trang web để cất dự án trên mạng.\n\nTệp nằm trên đó, nên máy nào đăng nhập cũng mở được.",
+      "events": []
+    },
+    {
+      "phase": "repo",
+      "title": "Mỗi dự án:\nmột repo",
+      "vo": "Mỗi dự án có một ngăn riêng, gọi là ri-pô.\n\nRi-pô chứa các tệp của dự án, và cả lịch sử mọi lần thay đổi.",
+      "events": []
+    },
+    {
+      "phase": "tạo repo",
+      "title": "Tạo repo\nđầu tiên",
+      "vo": "Thử tạo ri-pô đầu tiên. Bấm dấu cộng ở góc trên, chọn Niu ri-pô-di-tô-ri.\n\nĐặt tên là bánh chuối, viết không dấu.",
+      "events": []
+    },
+    {
+      "phase": "tạo repo",
+      "title": "Ai được xem?\nRồi bấm Create",
+      "vo": "Chọn Prai-vịt nếu chỉ muốn mình bạn xem. Chọn Pắp-lích thì ai cũng xem được.\n\nBật thêm tệp rít-mi, rồi bấm Cri-ết.",
+      "events": []
+    },
+    {
+      "phase": "repo đầu tiên",
+      "title": "Repo đã có\nmột tệp README",
+      "vo": "Xong. Ri-pô bánh chuối đã có một tệp rít-mi, là tệp chữ để giới thiệu dự án.\n\nGhít-hắp cũng tự lưu điểm đầu tiên.",
+      "events": []
+    },
+    {
+      "phase": "sửa tệp",
+      "title": "Ghi công thức\nvào tệp",
+      "vo": "Giờ ghi công thức vào. Bấm biểu tượng cây bút để sửa tệp.\n\nGõ thêm một dòng: hai quả chuối.",
+      "events": []
+    },
+    {
+      "phase": "sửa tệp",
+      "title": "Chưa vào lịch sử\ncho đến khi commit",
+      "vo": "Chữ đã hiện, nhưng chưa vào lịch sử.\n\nBấm nút Com-mít. Ghít-hắp hỏi: bạn vừa thay đổi gì? Gõ ghi chú: thêm công thức, rồi xác nhận.",
+      "events": []
+    },
+    {
+      "phase": "commit là gì",
+      "title": "Commit =\nmột điểm lưu",
+      "vo": "Vậy com-mít là gì? Là một lần lưu, kèm ghi chú và thời điểm.\n\nNhư chụp lại tệp đúng lúc đó, rồi ghim lên dòng lịch sử.",
+      "events": []
+    },
+    {
+      "phase": "sửa lần hai",
+      "title": "Hôm sau:\n2 thành 3",
+      "vo": "Hôm sau, bạn thấy hai quả chưa đủ ngọt. Sửa số hai thành số ba.\n\nRồi com-mít, với ghi chú: thêm chuối.",
+      "events": []
+    },
+    {
+      "phase": "lịch sử",
+      "title": "Lịch sử:\nba điểm lưu",
+      "vo": "Bấm vào mục Com-mít để xem lịch sử.\n\nBa điểm lưu, mới nhất ở trên cùng. Mỗi điểm ghi rõ: ghi chú gì, ai lưu, lúc nào.",
+      "events": []
+    },
+    {
+      "phase": "xem thay đổi",
+      "title": "Đỏ: bỏ đi.\nXanh: thêm vào.",
+      "vo": "Mở điểm lưu thêm chuối. Ghít-hắp tô màu chỗ đã đổi.\n\nDòng đỏ là chữ bị bỏ: hai quả chuối. Dòng xanh là chữ mới: ba quả chuối.",
+      "events": []
+    },
+    {
+      "phase": "đoán thử",
+      "title": "Bản hai quả\ncòn không?",
+      "vo": "Câu hỏi cho bạn: bản có hai quả chuối, giờ còn không?",
+      "hold": 1.6,
+      "readTask": "Đoán trước: tệp đã sửa thành 3 quả. Bản 2 quả chuối còn trong GitHub không?",
+      "events": []
+    },
+    {
+      "phase": "kết quả",
+      "title": "Vẫn còn.\nBản cũ nằm yên.",
+      "vo": "Vẫn còn. Mở điểm lưu thêm công thức, bạn thấy nguyên tệp lúc đó: hai quả chuối.\n\nSửa tiếp không xoá bản cũ. Mỗi com-mít vẫn nằm trong lịch sử.",
+      "hold": 0.4,
+      "events": []
+    },
+    {
+      "phase": "lưu ý",
+      "title": "Chưa commit\nthì chưa có lịch sử",
+      "vo": "Một lưu ý: chỉ phần đã com-mít mới vào lịch sử.\n\nPhần sửa chưa com-mít thì không có điểm lưu nào để quay lại. Nên sửa xong, nhớ com-mít.",
+      "events": []
+    }
+  ],
+  "outro": {
+    "title": "Sửa xong,\nnhớ commit.",
+    "subtitle": "Repo là ngăn chứa dự án. Commit là điểm lưu có ghi chú.",
+    "subtitleOn": "ngăn chứa dự án",
+    "note": "Bản cũ vẫn còn trong lịch sử để bạn xem lại.",
+    "noteOn": "bản cũ vẫn còn",
+    "tiles": [
+      { "value": "repo", "label": "ngăn chứa dự án", "on": "ngăn chứa dự án" },
+      { "value": "commit", "label": "điểm lưu có ghi chú", "on": "một điểm lưu" }
+    ],
+    "connector": "→",
+    "connectorOn": "nhớ com-mít",
+    "hold": 1.4,
+    "vo": "Ghi nhớ: ri-pô là ngăn chứa dự án. Mỗi com-mít là một điểm lưu, có ghi chú.\n\nSửa xong, nhớ com-mít. Bản cũ vẫn còn trong lịch sử, để bạn xem lại."
+  }
+}

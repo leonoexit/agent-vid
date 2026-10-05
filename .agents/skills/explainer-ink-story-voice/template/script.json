@@ -1,0 +1,23 @@
+{
+  "storyFormat": "ink-reasoning-v1",
+  "language": "vi",
+  "title": "Cache nhớ câu trả lời",
+  "audience": "Người mới học lập trình",
+  "story": {"question": "Vì sao cache nhanh mà đôi khi trả dữ liệu cũ?", "example": "Giá lưu trong cache là 100; giá tại nguồn đổi thành 120.", "takeaway": "Tái sử dụng câu trả lời giảm việc truy vấn, nhưng cần cách cập nhật hoặc bỏ dữ liệu cũ."},
+  "intro": {
+    "layout": "statement", "kicker": "MỘT CÂU HỎI VỀ CACHE", "title": "Nhanh hơn.\nNhưng còn đúng?",
+    "vo": "Cache giúp trả lời nhanh hơn. Nhưng câu trả lời đã lưu có thể không còn mới.",
+    "blocks": [{"type": "text", "text": "Câu trả lời đã lưu ≠ câu trả lời mới nhất", "emphasis": "yellow", "on": "câu trả lời đã lưu"}]
+  },
+  "scenes": [
+    {"layout": "example", "kicker": "TÁI SỬ DỤNG", "title": "Hỏi lại?\nDùng câu trả lời đã lưu.",
+     "vo": "Lần đầu, ứng dụng hỏi nguồn dữ liệu và nhận giá một trăm. Nó lưu câu trả lời này vào cache. Lần sau, đọc cache có thể tránh một lần truy vấn nguồn.",
+     "blocks": [{"type": "result", "label": "GIÁ LẤY TỪ NGUỒN", "text": "100", "on": "nhận giá"}, {"type": "note", "label": "LẦN HỎI SAU", "text": "Đọc lại giá đã lưu: 100", "on": "Lần sau"}]},
+    {"layout": "comparison", "kicker": "ĐIỀU GÌ NẾU GIÁ ĐỔI?", "title": "Hai nơi.\nHai giá trị.",
+     "vo": "Giả sử nguồn đổi giá thành một trăm hai mươi, nhưng cache chưa được cập nhật. Giá trong cache vẫn là một trăm. Lúc này, trả lời nhanh chưa có nghĩa là trả lời bằng giá mới nhất.",
+     "blocks": [{"type": "note", "label": "GIÁ HIỆN TẠI Ở NGUỒN", "text": "120", "on": "nguồn đổi giá"}, {"type": "note", "label": "GIÁ CŨ TRONG CACHE", "text": "100", "emphasis": "red", "on": "Giá trong cache"}, {"type": "text", "text": "Nhanh ≠ mới nhất", "emphasis": "yellow", "on": "trả lời nhanh"}]}
+  ],
+  "outro": {"layout": "rule", "kicker": "ĐIỀU CẦN NHỚ", "title": "Cache là\nmột câu trả lời giữ lại.",
+    "vo": "Cache nhanh vì tái sử dụng câu trả lời. Muốn dùng đúng, cần quyết định khi nào cập nhật hoặc bỏ dữ liệu cũ. Thời gian hết hạn là một cách, nhưng không đảm bảo dữ liệu luôn mới nhất.",
+    "blocks": [{"type": "text", "text": "Khi nào cần làm mới?", "emphasis": "yellow", "on": "khi nào cập nhật"}, {"type": "text", "text": "Có hạn dùng vẫn có thể có dữ liệu cũ.", "on": "không đảm bảo"}]}
+}

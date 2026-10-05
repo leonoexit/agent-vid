@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple Programming Explainer · Remotion"
+  short_description: "Colorful Apple-style programming films in portrait"
+  default_prompt: "Use $explainer-apple-remotion-voice to make a vertical narrated programming explainer with one clear worked example and Apple-inspired visual direction."

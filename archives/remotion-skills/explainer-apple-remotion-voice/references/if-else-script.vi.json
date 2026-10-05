@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "language": "vi",
+  "slug": "if-else-age-gate",
+  "visualMode": "gate",
+  "example": {
+    "firstAge": 17,
+    "secondAge": 20,
+    "minimum": 18
+  },
+  "intro": {
+    "phase": "question",
+    "title": "Một điều kiện. Hai kết quả.",
+    "vo": "Cùng một cổng, vì sao có lúc mở, có lúc không? Ta cho chương trình kiểm tra tuổi."
+  },
+  "scenes": [
+    {
+      "phase": "input",
+      "title": "Bắt đầu từ đầu vào.",
+      "vo": "Trong ví dụ này, cổng yêu cầu đủ mười tám tuổi. Người đầu tiên nhập mười bảy.",
+      "cues": [
+        {
+          "id": "ageFirst",
+          "on": "mười bảy"
+        }
+      ]
+    },
+    {
+      "phase": "test",
+      "title": "Kiểm tra điều kiện.",
+      "vo": "Câu if so sánh tuổi vừa nhập với mười tám. Mười bảy nhỏ hơn mười tám, nên điều kiện sai.",
+      "cues": [
+        {
+          "id": "testFirst",
+          "on": "Mười bảy nhỏ hơn"
+        }
+      ]
+    },
+    {
+      "phase": "denied",
+      "title": "Điều kiện sai. Chạy else.",
+      "vo": "Vì điều kiện sai, chương trình chạy nhánh else: giữ cổng đóng.",
+      "cues": [
+        {
+          "id": "deny",
+          "on": "nhánh else"
+        }
+      ]
+    },
+    {
+      "phase": "retry",
+      "title": "Đổi tuổi. Kiểm tra lại.",
+      "vo": "Giờ thử lại với tuổi hai mươi. Vẫn câu điều kiện ấy, hai mươi lớn hơn hoặc bằng mười tám.",
+      "cues": [
+        {
+          "id": "ageSecond",
+          "on": "tuổi hai mươi",
+          "offsetSeconds": 0.25
+        },
+        {
+          "id": "testSecond",
+          "on": "lớn hơn hoặc bằng"
+        }
+      ]
+    },
+    {
+      "phase": "allowed",
+      "title": "Điều kiện đúng. Chạy if.",
+      "vo": "Điều kiện đúng, nên lần này chạy nhánh if: mở cổng. Nhánh else được bỏ qua.",
+      "cues": [
+        {
+          "id": "open",
+          "on": "mở cổng"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "phase": "rule",
+    "title": "Chọn một. Không chạy cả hai.",
+    "vo": "If, else chọn một trong hai nhánh theo điều kiện. Đúng thì mở, sai thì giữ đóng. Mỗi lần chỉ chạy một nhánh."
+  }
+}

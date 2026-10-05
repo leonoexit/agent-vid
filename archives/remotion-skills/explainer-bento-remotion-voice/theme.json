@@ -1,0 +1,33 @@
+{
+  "slug": "bento-remotion",
+  "skill_name": "explainer-bento-remotion-voice",
+  "voice": {
+    "engine": "vieneu",
+    "vi": "Hải Đăng",
+    "speed": 1.0,
+    "en": {
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "wps": 2.2
+    },
+    "paragraph_gap": 0.2
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "style": "Think Fast & Slow / Maple bento",
+  "palette": {
+    "background": "#e5e5e5",
+    "text": "#2d3436",
+    "secondary": "#444444",
+    "accent": "#2d3436",
+    "blue": "#8ce4ff",
+    "yellow": "#feee91",
+    "orange": "#ffa239",
+    "red": "#ff5656",
+    "green": "#10b981",
+    "purple": "#a594f9"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "storyFormat": "worked-trace-v1",
+  "language": "vi",
+  "brand": "AGENTVID",
+  "story": {
+    "question": "Vì sao binary search có thể loại cả một nửa?",
+    "example": "Tìm 24 trong [3, 7, 11, 18, 24, 31, 42, 56].",
+    "takeaway": "Thứ tự đã biết cho phép loại một nửa vùng tìm sau mỗi so sánh."
+  },
+  "example": {
+    "values": [
+      3,
+      7,
+      11,
+      18,
+      24,
+      31,
+      42,
+      56
+    ],
+    "target": 24
+  },
+  "intro": {
+    "phase": "question",
+    "title": "Bỏ nửa dãy.\nCó bỏ nhầm?",
+    "vo": "Tìm số hai mươi tư trong tám số này. Vì sao tìm kiếm nhị phân dám bỏ cả nửa dãy?",
+    "cues": [
+      {
+        "id": "question",
+        "on": "Vì sao"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "phase": "setup",
+      "title": "Một điều kiện\nphải có.",
+      "vo": "Dãy đã được xếp tăng dần. Bên trái nhỏ hơn, bên phải lớn hơn. Đây là điều kiện để loại bớt số.",
+      "cues": [
+        {
+          "id": "sorted",
+          "on": "xếp tăng dần"
+        },
+        {
+          "id": "order",
+          "on": "Bên trái"
+        }
+      ]
+    },
+    {
+      "phase": "decode",
+      "title": "Khoanh vùng\ncòn cần tìm.",
+      "vo": "Ta đặt hai mốc ở đầu và cuối. Chỉ những ô trong vùng này còn có thể chứa số cần tìm.",
+      "cues": [
+        {
+          "id": "bounds",
+          "on": "hai mốc"
+        },
+        {
+          "id": "range",
+          "on": "Chỉ những ô"
+        }
+      ]
+    },
+    {
+      "phase": "decode",
+      "title": "Chọn ô giữa.",
+      "vo": "Lấy vị trí giữa, làm tròn xuống. Với tám ô, ta chọn ô thứ tư, mang giá trị mười tám.",
+      "cues": [
+        {
+          "id": "mid1",
+          "on": "vị trí giữa"
+        },
+        {
+          "id": "pick1",
+          "on": "ô thứ tư"
+        },
+        {
+          "id": "value1",
+          "on": "mười tám"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "18 so với 24",
+      "vo": "Mười tám nhỏ hơn hai mươi tư. Vậy số cần tìm phải nằm bên phải ô đang xét.",
+      "cues": [
+        {
+          "id": "compare1",
+          "on": "nhỏ hơn"
+        },
+        {
+          "id": "right",
+          "on": "bên phải"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "Bỏ được\ncả bốn ô.",
+      "vo": "Mọi số bên trái đều không lớn hơn mười tám, nên không thể là hai mươi tư. Ta bỏ cả bốn ô này.",
+      "cues": [
+        {
+          "id": "proof1",
+          "on": "không lớn hơn"
+        },
+        {
+          "id": "discard1",
+          "on": "Ta bỏ"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "Vùng tìm\nthu hẹp.",
+      "vo": "Mốc trái chuyển sang ô kế tiếp. Bây giờ chỉ còn bốn ứng viên, từ hai mươi tư đến năm mươi sáu.",
+      "cues": [
+        {
+          "id": "shrink1",
+          "on": "chuyển sang"
+        },
+        {
+          "id": "remaining4",
+          "on": "bốn ứng viên"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "Chọn giữa\nmột lần nữa.",
+      "vo": "Trong vùng mới, ô giữa mang số ba mươi mốt. Số này lại lớn hơn hai mươi tư.",
+      "cues": [
+        {
+          "id": "mid2",
+          "on": "ô giữa"
+        },
+        {
+          "id": "value2",
+          "on": "ba mươi mốt"
+        },
+        {
+          "id": "compare2",
+          "on": "lớn hơn"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "Lần này,\nbỏ bên phải.",
+      "vo": "Ba mươi mốt và các số bên phải đều quá lớn. Mốc phải lùi lại, vùng tìm chỉ còn một ô.",
+      "cues": [
+        {
+          "id": "proof2",
+          "on": "đều quá lớn"
+        },
+        {
+          "id": "shrink2",
+          "on": "Mốc phải"
+        },
+        {
+          "id": "remaining1",
+          "on": "một ô"
+        }
+      ]
+    },
+    {
+      "phase": "execute",
+      "title": "So sánh\nlần cuối.",
+      "vo": "Ô còn lại mang số hai mươi tư. Bằng số cần tìm, nên ta dừng ngay tại đây.",
+      "cues": [
+        {
+          "id": "mid3",
+          "on": "Ô còn lại"
+        },
+        {
+          "id": "value3",
+          "on": "hai mươi tư"
+        },
+        {
+          "id": "found",
+          "on": "Bằng số"
+        }
+      ]
+    },
+    {
+      "phase": "verify",
+      "title": "Ba lần so sánh.",
+      "vo": "Ta đã kiểm tra mười tám, ba mươi mốt, rồi hai mươi tư. Tìm thấy ở ô thứ năm của dãy ban đầu.",
+      "cues": [
+        {
+          "id": "trail",
+          "on": "đã kiểm tra"
+        },
+        {
+          "id": "result",
+          "on": "ô thứ năm"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "phase": "rule",
+    "title": "Có thứ tự,\nmới loại được.",
+    "vo": "Mỗi lần so sánh loại được gần nửa vùng còn lại. Nhưng nếu dãy chưa sắp xếp, suy luận ấy không còn đúng.",
+    "cues": [
+      {
+        "id": "rule",
+        "on": "gần nửa"
+      },
+      {
+        "id": "boundary",
+        "on": "chưa sắp xếp"
+      }
+    ]
+  },
+  "slug": "binary-search-bento-remotion",
+  "topicLabel": "BINARY SEARCH"
+}

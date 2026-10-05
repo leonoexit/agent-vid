@@ -1,1 +1,0 @@
-window.THEME = {"layout": "architect-story", "captionHighlight": "#f8d49b", "ink": "#1a1a1a", "connection": "#55564f", "morphBorder": "#1a1a1a", "morphSurface": "#f4f4f0", "captionInk": "#1a1a1a", "captionFill": "#f8d49b"};

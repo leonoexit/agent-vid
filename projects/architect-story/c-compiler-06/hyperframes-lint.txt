@@ -1,6 +1,0 @@
-◆  Linting c-compiler-06/index.html
-
-  ⚠ [/Volumes/LeNguyen02SSD/Programming/agent-vid/projects/architect-story/c-compiler-06/index.html:1:369] nested_structure_needs_subcomposition [explainer]: <section id="explainer"> is a timeline element that contains nested <div id="bg">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
-    Fix: Move <section id="explainer"> and its contents into a sub-composition file and mount it with data-composition-src.
-
-◇  0 error(s), 1 warning(s)

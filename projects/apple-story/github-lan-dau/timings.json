@@ -1,0 +1,2189 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=0.9:gap=0.45:timing=monotonic-v2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 11.531,
+   "words": [
+    {
+     "w": "Bạn",
+     "start": 0.03,
+     "end": 0.186
+    },
+    {
+     "w": "chưa",
+     "start": 0.199,
+     "end": 0.386
+    },
+    {
+     "w": "biết",
+     "start": 0.402,
+     "end": 0.589
+    },
+    {
+     "w": "gì",
+     "start": 0.606,
+     "end": 0.73
+    },
+    {
+     "w": "về",
+     "start": 0.741,
+     "end": 0.866
+    },
+    {
+     "w": "code,",
+     "start": 0.876,
+     "end": 1.094
+    },
+    {
+     "w": "và",
+     "start": 1.342,
+     "end": 1.491
+    },
+    {
+     "w": "vừa",
+     "start": 1.504,
+     "end": 1.689
+    },
+    {
+     "w": "mở",
+     "start": 1.705,
+     "end": 1.854
+    },
+    {
+     "w": "Ghít-hắp",
+     "start": 1.867,
+     "end": 2.238
+    },
+    {
+     "w": "lần",
+     "start": 2.27,
+     "end": 2.456
+    },
+    {
+     "w": "đầu.",
+     "start": 2.472,
+     "end": 2.694
+    },
+    {
+     "w": "Toàn",
+     "start": 2.951,
+     "end": 3.142
+    },
+    {
+     "w": "chữ",
+     "start": 3.159,
+     "end": 3.318
+    },
+    {
+     "w": "lạ.",
+     "start": 3.332,
+     "end": 3.491
+    },
+    {
+     "w": "Đừng",
+     "start": 4.045,
+     "end": 4.313
+    },
+    {
+     "w": "lo.",
+     "start": 4.337,
+     "end": 4.56
+    },
+    {
+     "w": "Hôm",
+     "start": 4.58,
+     "end": 4.767
+    },
+    {
+     "w": "nay",
+     "start": 4.784,
+     "end": 4.971
+    },
+    {
+     "w": "chỉ",
+     "start": 4.988,
+     "end": 5.175
+    },
+    {
+     "w": "cần",
+     "start": 5.192,
+     "end": 5.38
+    },
+    {
+     "w": "hiểu",
+     "start": 5.396,
+     "end": 5.621
+    },
+    {
+     "w": "hai",
+     "start": 5.641,
+     "end": 5.829
+    },
+    {
+     "w": "từ:",
+     "start": 5.845,
+     "end": 6.033
+    },
+    {
+     "w": "ri-pô,",
+     "start": 6.335,
+     "end": 6.687
+    },
+    {
+     "w": "và",
+     "start": 6.718,
+     "end": 6.896
+    },
+    {
+     "w": "com-mít.",
+     "start": 6.912,
+     "end": 7.359
+    },
+    {
+     "w": "Ta",
+     "start": 7.938,
+     "end": 8.081
+    },
+    {
+     "w": "đi",
+     "start": 8.093,
+     "end": 8.237
+    },
+    {
+     "w": "cùng",
+     "start": 8.249,
+     "end": 8.464
+    },
+    {
+     "w": "một",
+     "start": 8.482,
+     "end": 8.661
+    },
+    {
+     "w": "ví",
+     "start": 8.677,
+     "end": 8.82
+    },
+    {
+     "w": "dụ",
+     "start": 8.832,
+     "end": 8.975
+    },
+    {
+     "w": "nhỏ:",
+     "start": 8.988,
+     "end": 9.202
+    },
+    {
+     "w": "cất",
+     "start": 9.478,
+     "end": 9.632
+    },
+    {
+     "w": "công",
+     "start": 9.646,
+     "end": 9.831
+    },
+    {
+     "w": "thức",
+     "start": 9.847,
+     "end": 10.032
+    },
+    {
+     "w": "bánh",
+     "start": 10.048,
+     "end": 10.233
+    },
+    {
+     "w": "chuối",
+     "start": 10.249,
+     "end": 10.466
+    },
+    {
+     "w": "lên",
+     "start": 10.484,
+     "end": 10.639
+    },
+    {
+     "w": "Ghít-hắp.",
+     "start": 10.652,
+     "end": 10.992
+    }
+   ],
+   "text": "Bạn chưa biết gì về code, và vừa mở Ghít-hắp lần đầu. Toàn chữ lạ.\n\nĐừng lo. Hôm nay chỉ cần hiểu hai từ: ri-pô, và com-mít.\n\nTa đi cùng một ví dụ nhỏ: cất công thức bánh chuối lên Ghít-hắp."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 5.986,
+   "words": [
+    {
+     "w": "Ghít-hắp",
+     "start": 0.03,
+     "end": 0.396
+    },
+    {
+     "w": "là",
+     "start": 0.427,
+     "end": 0.574
+    },
+    {
+     "w": "một",
+     "start": 0.586,
+     "end": 0.769
+    },
+    {
+     "w": "trang",
+     "start": 0.785,
+     "end": 1.041
+    },
+    {
+     "w": "web",
+     "start": 1.063,
+     "end": 1.246
+    },
+    {
+     "w": "để",
+     "start": 1.262,
+     "end": 1.408
+    },
+    {
+     "w": "cất",
+     "start": 1.421,
+     "end": 1.604
+    },
+    {
+     "w": "dự",
+     "start": 1.62,
+     "end": 1.766
+    },
+    {
+     "w": "án",
+     "start": 1.779,
+     "end": 1.925
+    },
+    {
+     "w": "trên",
+     "start": 1.938,
+     "end": 2.157
+    },
+    {
+     "w": "mạng.",
+     "start": 2.176,
+     "end": 2.432
+    },
+    {
+     "w": "Tệp",
+     "start": 2.994,
+     "end": 3.17
+    },
+    {
+     "w": "nằm",
+     "start": 3.186,
+     "end": 3.362
+    },
+    {
+     "w": "trên",
+     "start": 3.377,
+     "end": 3.588
+    },
+    {
+     "w": "đó,",
+     "start": 3.607,
+     "end": 3.783
+    },
+    {
+     "w": "nên",
+     "start": 4.004,
+     "end": 4.158
+    },
+    {
+     "w": "máy",
+     "start": 4.171,
+     "end": 4.325
+    },
+    {
+     "w": "nào",
+     "start": 4.339,
+     "end": 4.492
+    },
+    {
+     "w": "đăng",
+     "start": 4.506,
+     "end": 4.691
+    },
+    {
+     "w": "nhập",
+     "start": 4.707,
+     "end": 4.891
+    },
+    {
+     "w": "cũng",
+     "start": 4.907,
+     "end": 5.092
+    },
+    {
+     "w": "mở",
+     "start": 5.108,
+     "end": 5.231
+    },
+    {
+     "w": "được.",
+     "start": 5.242,
+     "end": 5.458
+    }
+   ],
+   "text": "Ghít-hắp là một trang web để cất dự án trên mạng.\n\nTệp nằm trên đó, nên máy nào đăng nhập cũng mở được."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 6.848,
+   "words": [
+    {
+     "w": "Mỗi",
+     "start": 0.03,
+     "end": 0.209
+    },
+    {
+     "w": "dự",
+     "start": 0.225,
+     "end": 0.368
+    },
+    {
+     "w": "án",
+     "start": 0.381,
+     "end": 0.524
+    },
+    {
+     "w": "có",
+     "start": 0.537,
+     "end": 0.68
+    },
+    {
+     "w": "một",
+     "start": 0.693,
+     "end": 0.872
+    },
+    {
+     "w": "ngăn",
+     "start": 0.888,
+     "end": 1.103
+    },
+    {
+     "w": "riêng,",
+     "start": 1.122,
+     "end": 1.409
+    },
+    {
+     "w": "gọi",
+     "start": 1.636,
+     "end": 1.829
+    },
+    {
+     "w": "là",
+     "start": 1.845,
+     "end": 1.999
+    },
+    {
+     "w": "ri-pô.",
+     "start": 2.012,
+     "end": 2.32
+    },
+    {
+     "w": "Ri-pô",
+     "start": 2.886,
+     "end": 3.191
+    },
+    {
+     "w": "chứa",
+     "start": 3.217,
+     "end": 3.479
+    },
+    {
+     "w": "các",
+     "start": 3.501,
+     "end": 3.719
+    },
+    {
+     "w": "tệp",
+     "start": 3.738,
+     "end": 3.955
+    },
+    {
+     "w": "của",
+     "start": 3.974,
+     "end": 4.192
+    },
+    {
+     "w": "dự",
+     "start": 4.211,
+     "end": 4.385
+    },
+    {
+     "w": "án,",
+     "start": 4.4,
+     "end": 4.618
+    },
+    {
+     "w": "và",
+     "start": 4.891,
+     "end": 5.024
+    },
+    {
+     "w": "cả",
+     "start": 5.035,
+     "end": 5.168
+    },
+    {
+     "w": "lịch",
+     "start": 5.18,
+     "end": 5.38
+    },
+    {
+     "w": "sử",
+     "start": 5.397,
+     "end": 5.53
+    },
+    {
+     "w": "mọi",
+     "start": 5.542,
+     "end": 5.708
+    },
+    {
+     "w": "lần",
+     "start": 5.723,
+     "end": 5.889
+    },
+    {
+     "w": "thay",
+     "start": 5.904,
+     "end": 6.103
+    },
+    {
+     "w": "đổi.",
+     "start": 6.121,
+     "end": 6.321
+    }
+   ],
+   "text": "Mỗi dự án có một ngăn riêng, gọi là ri-pô.\n\nRi-pô chứa các tệp của dự án, và cả lịch sử mọi lần thay đổi."
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 7.469,
+   "words": [
+    {
+     "w": "Thử",
+     "start": 0.03,
+     "end": 0.218
+    },
+    {
+     "w": "tạo",
+     "start": 0.234,
+     "end": 0.422
+    },
+    {
+     "w": "ri-pô",
+     "start": 0.438,
+     "end": 0.702
+    },
+    {
+     "w": "đầu",
+     "start": 0.724,
+     "end": 0.912
+    },
+    {
+     "w": "tiên.",
+     "start": 0.929,
+     "end": 1.192
+    },
+    {
+     "w": "Bấm",
+     "start": 1.691,
+     "end": 1.862
+    },
+    {
+     "w": "dấu",
+     "start": 1.877,
+     "end": 2.047
+    },
+    {
+     "w": "cộng",
+     "start": 2.062,
+     "end": 2.266
+    },
+    {
+     "w": "ở",
+     "start": 2.284,
+     "end": 2.386
+    },
+    {
+     "w": "góc",
+     "start": 2.395,
+     "end": 2.566
+    },
+    {
+     "w": "trên,",
+     "start": 2.58,
+     "end": 2.819
+    },
+    {
+     "w": "chọn",
+     "start": 3.12,
+     "end": 3.379
+    },
+    {
+     "w": "Niu",
+     "start": 3.401,
+     "end": 3.616
+    },
+    {
+     "w": "ri-pô-di-tô-ri.",
+     "start": 3.635,
+     "end": 4.367
+    },
+    {
+     "w": "Đặt",
+     "start": 4.971,
+     "end": 5.165
+    },
+    {
+     "w": "tên",
+     "start": 5.182,
+     "end": 5.377
+    },
+    {
+     "w": "là",
+     "start": 5.394,
+     "end": 5.549
+    },
+    {
+     "w": "bánh",
+     "start": 5.563,
+     "end": 5.796
+    },
+    {
+     "w": "chuối,",
+     "start": 5.817,
+     "end": 6.128
+    },
+    {
+     "w": "viết",
+     "start": 6.155,
+     "end": 6.389
+    },
+    {
+     "w": "không",
+     "start": 6.409,
+     "end": 6.681
+    },
+    {
+     "w": "dấu.",
+     "start": 6.705,
+     "end": 6.939
+    }
+   ],
+   "text": "Thử tạo ri-pô đầu tiên. Bấm dấu cộng ở góc trên, chọn Niu ri-pô-di-tô-ri.\n\nĐặt tên là bánh chuối, viết không dấu."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 7.58,
+   "words": [
+    {
+     "w": "Chọn",
+     "start": 0.03,
+     "end": 0.266
+    },
+    {
+     "w": "Prai-vịt",
+     "start": 0.286,
+     "end": 0.679
+    },
+    {
+     "w": "nếu",
+     "start": 0.713,
+     "end": 0.91
+    },
+    {
+     "w": "chỉ",
+     "start": 0.927,
+     "end": 1.123
+    },
+    {
+     "w": "muốn",
+     "start": 1.14,
+     "end": 1.376
+    },
+    {
+     "w": "mình",
+     "start": 1.396,
+     "end": 1.632
+    },
+    {
+     "w": "bạn",
+     "start": 1.653,
+     "end": 1.849
+    },
+    {
+     "w": "xem.",
+     "start": 1.866,
+     "end": 2.102
+    },
+    {
+     "w": "Chọn",
+     "start": 2.676,
+     "end": 2.862
+    },
+    {
+     "w": "Pắp-lích",
+     "start": 2.879,
+     "end": 3.19
+    },
+    {
+     "w": "thì",
+     "start": 3.217,
+     "end": 3.372
+    },
+    {
+     "w": "ai",
+     "start": 3.386,
+     "end": 3.51
+    },
+    {
+     "w": "cũng",
+     "start": 3.521,
+     "end": 3.708
+    },
+    {
+     "w": "xem",
+     "start": 3.724,
+     "end": 3.879
+    },
+    {
+     "w": "được.",
+     "start": 3.893,
+     "end": 4.111
+    },
+    {
+     "w": "Bật",
+     "start": 4.67,
+     "end": 4.879
+    },
+    {
+     "w": "thêm",
+     "start": 4.897,
+     "end": 5.148
+    },
+    {
+     "w": "tệp",
+     "start": 5.17,
+     "end": 5.379
+    },
+    {
+     "w": "rít-mi,",
+     "start": 5.397,
+     "end": 5.773
+    },
+    {
+     "w": "rồi",
+     "start": 6.094,
+     "end": 6.33
+    },
+    {
+     "w": "bấm",
+     "start": 6.351,
+     "end": 6.587
+    },
+    {
+     "w": "Cri-ết.",
+     "start": 6.608,
+     "end": 7.033
+    }
+   ],
+   "text": "Chọn Prai-vịt nếu chỉ muốn mình bạn xem. Chọn Pắp-lích thì ai cũng xem được.\n\nBật thêm tệp rít-mi, rồi bấm Cri-ết."
+  },
+  {
+   "id": "scene-5",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 7.469,
+   "words": [
+    {
+     "w": "Xong.",
+     "start": 0.03,
+     "end": 0.346
+    },
+    {
+     "w": "Ri-pô",
+     "start": 0.757,
+     "end": 1.016
+    },
+    {
+     "w": "bánh",
+     "start": 1.039,
+     "end": 1.261
+    },
+    {
+     "w": "chuối",
+     "start": 1.281,
+     "end": 1.54
+    },
+    {
+     "w": "đã",
+     "start": 1.563,
+     "end": 1.711
+    },
+    {
+     "w": "có",
+     "start": 1.724,
+     "end": 1.872
+    },
+    {
+     "w": "một",
+     "start": 1.885,
+     "end": 2.071
+    },
+    {
+     "w": "tệp",
+     "start": 2.087,
+     "end": 2.272
+    },
+    {
+     "w": "rít-mi,",
+     "start": 2.288,
+     "end": 2.622
+    },
+    {
+     "w": "là",
+     "start": 3.129,
+     "end": 3.283
+    },
+    {
+     "w": "tệp",
+     "start": 3.296,
+     "end": 3.488
+    },
+    {
+     "w": "chữ",
+     "start": 3.505,
+     "end": 3.697
+    },
+    {
+     "w": "để",
+     "start": 3.713,
+     "end": 3.867
+    },
+    {
+     "w": "giới",
+     "start": 3.88,
+     "end": 4.11
+    },
+    {
+     "w": "thiệu",
+     "start": 4.13,
+     "end": 4.399
+    },
+    {
+     "w": "dự",
+     "start": 4.422,
+     "end": 4.576
+    },
+    {
+     "w": "án.",
+     "start": 4.589,
+     "end": 4.781
+    },
+    {
+     "w": "Ghít-hắp",
+     "start": 5.338,
+     "end": 5.684
+    },
+    {
+     "w": "cũng",
+     "start": 5.715,
+     "end": 5.923
+    },
+    {
+     "w": "tự",
+     "start": 5.941,
+     "end": 6.08
+    },
+    {
+     "w": "lưu",
+     "start": 6.092,
+     "end": 6.265
+    },
+    {
+     "w": "điểm",
+     "start": 6.28,
+     "end": 6.488
+    },
+    {
+     "w": "đầu",
+     "start": 6.506,
+     "end": 6.68
+    },
+    {
+     "w": "tiên.",
+     "start": 6.695,
+     "end": 6.938
+    }
+   ],
+   "text": "Xong. Ri-pô bánh chuối đã có một tệp rít-mi, là tệp chữ để giới thiệu dự án.\n\nGhít-hắp cũng tự lưu điểm đầu tiên."
+  },
+  {
+   "id": "scene-6",
+   "file": "assets/audio/vo-06.mp3",
+   "duration": 5.802,
+   "words": [
+    {
+     "w": "Giờ",
+     "start": 0.03,
+     "end": 0.219
+    },
+    {
+     "w": "ghi",
+     "start": 0.235,
+     "end": 0.424
+    },
+    {
+     "w": "công",
+     "start": 0.441,
+     "end": 0.668
+    },
+    {
+     "w": "thức",
+     "start": 0.687,
+     "end": 0.914
+    },
+    {
+     "w": "vào.",
+     "start": 0.934,
+     "end": 1.16
+    },
+    {
+     "w": "Bấm",
+     "start": 1.452,
+     "end": 1.614
+    },
+    {
+     "w": "biểu",
+     "start": 1.629,
+     "end": 1.823
+    },
+    {
+     "w": "tượng",
+     "start": 1.84,
+     "end": 2.068
+    },
+    {
+     "w": "cây",
+     "start": 2.087,
+     "end": 2.25
+    },
+    {
+     "w": "bút",
+     "start": 2.264,
+     "end": 2.426
+    },
+    {
+     "w": "để",
+     "start": 2.44,
+     "end": 2.57
+    },
+    {
+     "w": "sửa",
+     "start": 2.581,
+     "end": 2.744
+    },
+    {
+     "w": "tệp.",
+     "start": 2.758,
+     "end": 2.952
+    },
+    {
+     "w": "Gõ",
+     "start": 3.509,
+     "end": 3.673
+    },
+    {
+     "w": "thêm",
+     "start": 3.688,
+     "end": 3.934
+    },
+    {
+     "w": "một",
+     "start": 3.955,
+     "end": 4.16
+    },
+    {
+     "w": "dòng:",
+     "start": 4.178,
+     "end": 4.465
+    },
+    {
+     "w": "hai",
+     "start": 4.49,
+     "end": 4.695
+    },
+    {
+     "w": "quả",
+     "start": 4.713,
+     "end": 4.918
+    },
+    {
+     "w": "chuối.",
+     "start": 4.936,
+     "end": 5.264
+    }
+   ],
+   "text": "Giờ ghi công thức vào. Bấm biểu tượng cây bút để sửa tệp.\n\nGõ thêm một dòng: hai quả chuối."
+  },
+  {
+   "id": "scene-7",
+   "file": "assets/audio/vo-07.mp3",
+   "duration": 8.511,
+   "words": [
+    {
+     "w": "Chữ",
+     "start": 0.03,
+     "end": 0.198
+    },
+    {
+     "w": "đã",
+     "start": 0.213,
+     "end": 0.347
+    },
+    {
+     "w": "hiện,",
+     "start": 0.359,
+     "end": 0.595
+    },
+    {
+     "w": "nhưng",
+     "start": 0.914,
+     "end": 1.14
+    },
+    {
+     "w": "chưa",
+     "start": 1.16,
+     "end": 1.354
+    },
+    {
+     "w": "vào",
+     "start": 1.371,
+     "end": 1.533
+    },
+    {
+     "w": "lịch",
+     "start": 1.547,
+     "end": 1.742
+    },
+    {
+     "w": "sử.",
+     "start": 1.759,
+     "end": 1.921
+    },
+    {
+     "w": "Bấm",
+     "start": 2.475,
+     "end": 2.656
+    },
+    {
+     "w": "nút",
+     "start": 2.672,
+     "end": 2.853
+    },
+    {
+     "w": "Com-mít.",
+     "start": 2.868,
+     "end": 3.23
+    },
+    {
+     "w": "Ghít-hắp",
+     "start": 3.618,
+     "end": 3.932
+    },
+    {
+     "w": "hỏi:",
+     "start": 3.959,
+     "end": 4.147
+    },
+    {
+     "w": "bạn",
+     "start": 4.402,
+     "end": 4.57
+    },
+    {
+     "w": "vừa",
+     "start": 4.585,
+     "end": 4.753
+    },
+    {
+     "w": "thay",
+     "start": 4.768,
+     "end": 4.97
+    },
+    {
+     "w": "đổi",
+     "start": 4.988,
+     "end": 5.156
+    },
+    {
+     "w": "gì?",
+     "start": 5.171,
+     "end": 5.339
+    },
+    {
+     "w": "Gõ",
+     "start": 5.844,
+     "end": 5.941
+    },
+    {
+     "w": "ghi",
+     "start": 5.95,
+     "end": 6.072
+    },
+    {
+     "w": "chú:",
+     "start": 6.082,
+     "end": 6.228
+    },
+    {
+     "w": "thêm",
+     "start": 6.241,
+     "end": 6.511
+    },
+    {
+     "w": "công",
+     "start": 6.534,
+     "end": 6.804
+    },
+    {
+     "w": "thức,",
+     "start": 6.828,
+     "end": 7.143
+    },
+    {
+     "w": "rồi",
+     "start": 7.17,
+     "end": 7.395
+    },
+    {
+     "w": "xác",
+     "start": 7.415,
+     "end": 7.64
+    },
+    {
+     "w": "nhận.",
+     "start": 7.659,
+     "end": 7.974
+    }
+   ],
+   "text": "Chữ đã hiện, nhưng chưa vào lịch sử.\n\nBấm nút Com-mít. Ghít-hắp hỏi: bạn vừa thay đổi gì? Gõ ghi chú: thêm công thức, rồi xác nhận."
+  },
+  {
+   "id": "scene-8",
+   "file": "assets/audio/vo-08.mp3",
+   "duration": 7.287,
+   "words": [
+    {
+     "w": "Vậy",
+     "start": 0.03,
+     "end": 0.23
+    },
+    {
+     "w": "com-mít",
+     "start": 0.248,
+     "end": 0.609
+    },
+    {
+     "w": "là",
+     "start": 0.64,
+     "end": 0.8
+    },
+    {
+     "w": "gì?",
+     "start": 0.814,
+     "end": 1.015
+    },
+    {
+     "w": "Là",
+     "start": 1.24,
+     "end": 1.386
+    },
+    {
+     "w": "một",
+     "start": 1.398,
+     "end": 1.58
+    },
+    {
+     "w": "lần",
+     "start": 1.596,
+     "end": 1.778
+    },
+    {
+     "w": "lưu,",
+     "start": 1.794,
+     "end": 2.012
+    },
+    {
+     "w": "kèm",
+     "start": 2.259,
+     "end": 2.428
+    },
+    {
+     "w": "ghi",
+     "start": 2.443,
+     "end": 2.612
+    },
+    {
+     "w": "chú",
+     "start": 2.626,
+     "end": 2.795
+    },
+    {
+     "w": "và",
+     "start": 2.81,
+     "end": 2.945
+    },
+    {
+     "w": "thời",
+     "start": 2.957,
+     "end": 3.16
+    },
+    {
+     "w": "điểm.",
+     "start": 3.177,
+     "end": 3.414
+    },
+    {
+     "w": "Như",
+     "start": 3.974,
+     "end": 4.159
+    },
+    {
+     "w": "chụp",
+     "start": 4.175,
+     "end": 4.396
+    },
+    {
+     "w": "lại",
+     "start": 4.415,
+     "end": 4.599
+    },
+    {
+     "w": "tệp",
+     "start": 4.615,
+     "end": 4.799
+    },
+    {
+     "w": "đúng",
+     "start": 4.815,
+     "end": 5.036
+    },
+    {
+     "w": "lúc",
+     "start": 5.055,
+     "end": 5.24
+    },
+    {
+     "w": "đó,",
+     "start": 5.256,
+     "end": 5.44
+    },
+    {
+     "w": "rồi",
+     "start": 5.456,
+     "end": 5.64
+    },
+    {
+     "w": "ghim",
+     "start": 5.656,
+     "end": 5.877
+    },
+    {
+     "w": "lên",
+     "start": 5.896,
+     "end": 6.08
+    },
+    {
+     "w": "dòng",
+     "start": 6.096,
+     "end": 6.317
+    },
+    {
+     "w": "lịch",
+     "start": 6.337,
+     "end": 6.558
+    },
+    {
+     "w": "sử.",
+     "start": 6.577,
+     "end": 6.761
+    }
+   ],
+   "text": "Vậy com-mít là gì? Là một lần lưu, kèm ghi chú và thời điểm.\n\nNhư chụp lại tệp đúng lúc đó, rồi ghim lên dòng lịch sử."
+  },
+  {
+   "id": "scene-9",
+   "file": "assets/audio/vo-09.mp3",
+   "duration": 6.671,
+   "words": [
+    {
+     "w": "Hôm",
+     "start": 0.03,
+     "end": 0.212
+    },
+    {
+     "w": "sau,",
+     "start": 0.227,
+     "end": 0.445
+    },
+    {
+     "w": "bạn",
+     "start": 0.795,
+     "end": 0.965
+    },
+    {
+     "w": "thấy",
+     "start": 0.98,
+     "end": 1.184
+    },
+    {
+     "w": "hai",
+     "start": 1.202,
+     "end": 1.372
+    },
+    {
+     "w": "quả",
+     "start": 1.387,
+     "end": 1.557
+    },
+    {
+     "w": "chưa",
+     "start": 1.571,
+     "end": 1.775
+    },
+    {
+     "w": "đủ",
+     "start": 1.793,
+     "end": 1.929
+    },
+    {
+     "w": "ngọt.",
+     "start": 1.941,
+     "end": 2.179
+    },
+    {
+     "w": "Sửa",
+     "start": 2.412,
+     "end": 2.587
+    },
+    {
+     "w": "số",
+     "start": 2.603,
+     "end": 2.743
+    },
+    {
+     "w": "hai",
+     "start": 2.755,
+     "end": 2.931
+    },
+    {
+     "w": "thành",
+     "start": 2.946,
+     "end": 3.192
+    },
+    {
+     "w": "số",
+     "start": 3.213,
+     "end": 3.354
+    },
+    {
+     "w": "ba.",
+     "start": 3.366,
+     "end": 3.542
+    },
+    {
+     "w": "Rồi",
+     "start": 4.097,
+     "end": 4.252
+    },
+    {
+     "w": "com-mít,",
+     "start": 4.265,
+     "end": 4.575
+    },
+    {
+     "w": "với",
+     "start": 4.921,
+     "end": 5.093
+    },
+    {
+     "w": "ghi",
+     "start": 5.108,
+     "end": 5.28
+    },
+    {
+     "w": "chú:",
+     "start": 5.295,
+     "end": 5.501
+    },
+    {
+     "w": "thêm",
+     "start": 5.519,
+     "end": 5.772
+    },
+    {
+     "w": "chuối.",
+     "start": 5.794,
+     "end": 6.131
+    }
+   ],
+   "text": "Hôm sau, bạn thấy hai quả chưa đủ ngọt. Sửa số hai thành số ba.\n\nRồi com-mít, với ghi chú: thêm chuối."
+  },
+  {
+   "id": "scene-10",
+   "file": "assets/audio/vo-10.mp3",
+   "duration": 7.463,
+   "words": [
+    {
+     "w": "Bấm",
+     "start": 0.03,
+     "end": 0.216
+    },
+    {
+     "w": "vào",
+     "start": 0.232,
+     "end": 0.417
+    },
+    {
+     "w": "mục",
+     "start": 0.434,
+     "end": 0.619
+    },
+    {
+     "w": "Com-mít",
+     "start": 0.635,
+     "end": 0.97
+    },
+    {
+     "w": "để",
+     "start": 0.999,
+     "end": 1.147
+    },
+    {
+     "w": "xem",
+     "start": 1.16,
+     "end": 1.346
+    },
+    {
+     "w": "lịch",
+     "start": 1.362,
+     "end": 1.585
+    },
+    {
+     "w": "sử.",
+     "start": 1.604,
+     "end": 1.79
+    },
+    {
+     "w": "Ba",
+     "start": 2.346,
+     "end": 2.515
+    },
+    {
+     "w": "điểm",
+     "start": 2.53,
+     "end": 2.784
+    },
+    {
+     "w": "lưu,",
+     "start": 2.807,
+     "end": 3.061
+    },
+    {
+     "w": "mới",
+     "start": 3.083,
+     "end": 3.259
+    },
+    {
+     "w": "nhất",
+     "start": 3.275,
+     "end": 3.486
+    },
+    {
+     "w": "ở",
+     "start": 3.504,
+     "end": 3.61
+    },
+    {
+     "w": "trên",
+     "start": 3.619,
+     "end": 3.831
+    },
+    {
+     "w": "cùng.",
+     "start": 3.849,
+     "end": 4.096
+    },
+    {
+     "w": "Mỗi",
+     "start": 4.536,
+     "end": 4.702
+    },
+    {
+     "w": "điểm",
+     "start": 4.716,
+     "end": 4.916
+    },
+    {
+     "w": "ghi",
+     "start": 4.933,
+     "end": 5.099
+    },
+    {
+     "w": "rõ:",
+     "start": 5.114,
+     "end": 5.28
+    },
+    {
+     "w": "ghi",
+     "start": 5.294,
+     "end": 5.485
+    },
+    {
+     "w": "chú",
+     "start": 5.501,
+     "end": 5.692
+    },
+    {
+     "w": "gì,",
+     "start": 5.709,
+     "end": 5.899
+    },
+    {
+     "w": "ai",
+     "start": 6.131,
+     "end": 6.247
+    },
+    {
+     "w": "lưu,",
+     "start": 6.257,
+     "end": 6.431
+    },
+    {
+     "w": "lúc",
+     "start": 6.446,
+     "end": 6.658
+    },
+    {
+     "w": "nào.",
+     "start": 6.676,
+     "end": 6.93
+    }
+   ],
+   "text": "Bấm vào mục Com-mít để xem lịch sử.\n\nBa điểm lưu, mới nhất ở trên cùng. Mỗi điểm ghi rõ: ghi chú gì, ai lưu, lúc nào."
+  },
+  {
+   "id": "scene-11",
+   "file": "assets/audio/vo-11.mp3",
+   "duration": 7.722,
+   "words": [
+    {
+     "w": "Mở",
+     "start": 0.03,
+     "end": 0.174
+    },
+    {
+     "w": "điểm",
+     "start": 0.187,
+     "end": 0.403
+    },
+    {
+     "w": "lưu",
+     "start": 0.422,
+     "end": 0.602
+    },
+    {
+     "w": "thêm",
+     "start": 0.618,
+     "end": 0.834
+    },
+    {
+     "w": "chuối.",
+     "start": 0.853,
+     "end": 1.141
+    },
+    {
+     "w": "Ghít-hắp",
+     "start": 1.536,
+     "end": 1.883
+    },
+    {
+     "w": "tô",
+     "start": 1.913,
+     "end": 2.053
+    },
+    {
+     "w": "màu",
+     "start": 2.065,
+     "end": 2.238
+    },
+    {
+     "w": "chỗ",
+     "start": 2.254,
+     "end": 2.427
+    },
+    {
+     "w": "đã",
+     "start": 2.442,
+     "end": 2.581
+    },
+    {
+     "w": "đổi.",
+     "start": 2.594,
+     "end": 2.802
+    },
+    {
+     "w": "Dòng",
+     "start": 3.36,
+     "end": 3.597
+    },
+    {
+     "w": "đỏ",
+     "start": 3.617,
+     "end": 3.775
+    },
+    {
+     "w": "là",
+     "start": 3.788,
+     "end": 3.946
+    },
+    {
+     "w": "chữ",
+     "start": 3.959,
+     "end": 4.156
+    },
+    {
+     "w": "bị",
+     "start": 4.173,
+     "end": 4.331
+    },
+    {
+     "w": "bỏ:",
+     "start": 4.345,
+     "end": 4.542
+    },
+    {
+     "w": "hai",
+     "start": 4.559,
+     "end": 4.698
+    },
+    {
+     "w": "quả",
+     "start": 4.71,
+     "end": 4.85
+    },
+    {
+     "w": "chuối.",
+     "start": 4.862,
+     "end": 5.086
+    },
+    {
+     "w": "Dòng",
+     "start": 5.396,
+     "end": 5.618
+    },
+    {
+     "w": "xanh",
+     "start": 5.638,
+     "end": 5.86
+    },
+    {
+     "w": "là",
+     "start": 5.88,
+     "end": 6.028
+    },
+    {
+     "w": "chữ",
+     "start": 6.041,
+     "end": 6.227
+    },
+    {
+     "w": "mới:",
+     "start": 6.243,
+     "end": 6.465
+    },
+    {
+     "w": "ba",
+     "start": 6.485,
+     "end": 6.642
+    },
+    {
+     "w": "quả",
+     "start": 6.656,
+     "end": 6.853
+    },
+    {
+     "w": "chuối.",
+     "start": 6.87,
+     "end": 7.185
+    }
+   ],
+   "text": "Mở điểm lưu thêm chuối. Ghít-hắp tô màu chỗ đã đổi.\n\nDòng đỏ là chữ bị bỏ: hai quả chuối. Dòng xanh là chữ mới: ba quả chuối."
+  },
+  {
+   "id": "scene-12",
+   "file": "assets/audio/vo-12.mp3",
+   "duration": 3.188,
+   "words": [
+    {
+     "w": "Câu",
+     "start": 0.104,
+     "end": 0.255
+    },
+    {
+     "w": "hỏi",
+     "start": 0.268,
+     "end": 0.419
+    },
+    {
+     "w": "cho",
+     "start": 0.432,
+     "end": 0.583
+    },
+    {
+     "w": "bạn:",
+     "start": 0.596,
+     "end": 0.778
+    },
+    {
+     "w": "bản",
+     "start": 1.044,
+     "end": 1.248
+    },
+    {
+     "w": "có",
+     "start": 1.265,
+     "end": 1.428
+    },
+    {
+     "w": "hai",
+     "start": 1.443,
+     "end": 1.647
+    },
+    {
+     "w": "quả",
+     "start": 1.664,
+     "end": 1.868
+    },
+    {
+     "w": "chuối,",
+     "start": 1.886,
+     "end": 2.212
+    },
+    {
+     "w": "giờ",
+     "start": 2.241,
+     "end": 2.445
+    },
+    {
+     "w": "còn",
+     "start": 2.463,
+     "end": 2.668
+    },
+    {
+     "w": "không?",
+     "start": 2.686,
+     "end": 3.013
+    }
+   ],
+   "text": "Câu hỏi cho bạn: bản có hai quả chuối, giờ còn không?"
+  },
+  {
+   "id": "scene-13",
+   "file": "assets/audio/vo-13.mp3",
+   "duration": 9.014,
+   "words": [
+    {
+     "w": "Vẫn",
+     "start": 0.03,
+     "end": 0.234
+    },
+    {
+     "w": "còn.",
+     "start": 0.252,
+     "end": 0.496
+    },
+    {
+     "w": "Mở",
+     "start": 0.518,
+     "end": 0.676
+    },
+    {
+     "w": "điểm",
+     "start": 0.689,
+     "end": 0.927
+    },
+    {
+     "w": "lưu",
+     "start": 0.947,
+     "end": 1.145
+    },
+    {
+     "w": "thêm",
+     "start": 1.162,
+     "end": 1.4
+    },
+    {
+     "w": "công",
+     "start": 1.42,
+     "end": 1.657
+    },
+    {
+     "w": "thức,",
+     "start": 1.678,
+     "end": 1.955
+    },
+    {
+     "w": "bạn",
+     "start": 2.29,
+     "end": 2.452
+    },
+    {
+     "w": "thấy",
+     "start": 2.466,
+     "end": 2.661
+    },
+    {
+     "w": "nguyên",
+     "start": 2.678,
+     "end": 2.937
+    },
+    {
+     "w": "tệp",
+     "start": 2.96,
+     "end": 3.122
+    },
+    {
+     "w": "lúc",
+     "start": 3.136,
+     "end": 3.299
+    },
+    {
+     "w": "đó:",
+     "start": 3.313,
+     "end": 3.475
+    },
+    {
+     "w": "hai",
+     "start": 3.646,
+     "end": 3.82
+    },
+    {
+     "w": "quả",
+     "start": 3.835,
+     "end": 4.01
+    },
+    {
+     "w": "chuối.",
+     "start": 4.025,
+     "end": 4.305
+    },
+    {
+     "w": "Sửa",
+     "start": 4.869,
+     "end": 5.069
+    },
+    {
+     "w": "tiếp",
+     "start": 5.086,
+     "end": 5.326
+    },
+    {
+     "w": "không",
+     "start": 5.347,
+     "end": 5.626
+    },
+    {
+     "w": "xoá",
+     "start": 5.65,
+     "end": 5.85
+    },
+    {
+     "w": "bản",
+     "start": 5.868,
+     "end": 6.067
+    },
+    {
+     "w": "cũ.",
+     "start": 6.085,
+     "end": 6.284
+    },
+    {
+     "w": "Mỗi",
+     "start": 6.703,
+     "end": 6.9
+    },
+    {
+     "w": "com-mít",
+     "start": 6.917,
+     "end": 7.272
+    },
+    {
+     "w": "vẫn",
+     "start": 7.303,
+     "end": 7.501
+    },
+    {
+     "w": "nằm",
+     "start": 7.518,
+     "end": 7.715
+    },
+    {
+     "w": "trong",
+     "start": 7.732,
+     "end": 8.008
+    },
+    {
+     "w": "lịch",
+     "start": 8.032,
+     "end": 8.269
+    },
+    {
+     "w": "sử.",
+     "start": 8.289,
+     "end": 8.487
+    }
+   ],
+   "text": "Vẫn còn. Mở điểm lưu thêm công thức, bạn thấy nguyên tệp lúc đó: hai quả chuối.\n\nSửa tiếp không xoá bản cũ. Mỗi com-mít vẫn nằm trong lịch sử."
+  },
+  {
+   "id": "scene-14",
+   "file": "assets/audio/vo-14.mp3",
+   "duration": 8.412,
+   "words": [
+    {
+     "w": "Một",
+     "start": 0.03,
+     "end": 0.218
+    },
+    {
+     "w": "lưu",
+     "start": 0.235,
+     "end": 0.423
+    },
+    {
+     "w": "ý:",
+     "start": 0.44,
+     "end": 0.59
+    },
+    {
+     "w": "chỉ",
+     "start": 0.603,
+     "end": 0.792
+    },
+    {
+     "w": "phần",
+     "start": 0.808,
+     "end": 1.034
+    },
+    {
+     "w": "đã",
+     "start": 1.054,
+     "end": 1.205
+    },
+    {
+     "w": "com-mít",
+     "start": 1.218,
+     "end": 1.557
+    },
+    {
+     "w": "mới",
+     "start": 1.586,
+     "end": 1.775
+    },
+    {
+     "w": "vào",
+     "start": 1.791,
+     "end": 1.98
+    },
+    {
+     "w": "lịch",
+     "start": 1.996,
+     "end": 2.222
+    },
+    {
+     "w": "sử.",
+     "start": 2.242,
+     "end": 2.43
+    },
+    {
+     "w": "Phần",
+     "start": 2.987,
+     "end": 3.196
+    },
+    {
+     "w": "sửa",
+     "start": 3.214,
+     "end": 3.388
+    },
+    {
+     "w": "chưa",
+     "start": 3.403,
+     "end": 3.612
+    },
+    {
+     "w": "com-mít",
+     "start": 3.63,
+     "end": 3.944
+    },
+    {
+     "w": "thì",
+     "start": 3.971,
+     "end": 4.145
+    },
+    {
+     "w": "không",
+     "start": 4.16,
+     "end": 4.404
+    },
+    {
+     "w": "có",
+     "start": 4.425,
+     "end": 4.564
+    },
+    {
+     "w": "điểm",
+     "start": 4.577,
+     "end": 4.785
+    },
+    {
+     "w": "lưu",
+     "start": 4.804,
+     "end": 4.978
+    },
+    {
+     "w": "nào",
+     "start": 4.993,
+     "end": 5.167
+    },
+    {
+     "w": "để",
+     "start": 5.182,
+     "end": 5.321
+    },
+    {
+     "w": "quay",
+     "start": 5.334,
+     "end": 5.543
+    },
+    {
+     "w": "lại.",
+     "start": 5.561,
+     "end": 5.77
+    },
+    {
+     "w": "Nên",
+     "start": 6.534,
+     "end": 6.716
+    },
+    {
+     "w": "sửa",
+     "start": 6.732,
+     "end": 6.914
+    },
+    {
+     "w": "xong,",
+     "start": 6.93,
+     "end": 7.184
+    },
+    {
+     "w": "nhớ",
+     "start": 7.206,
+     "end": 7.42
+    },
+    {
+     "w": "com-mít.",
+     "start": 7.438,
+     "end": 7.865
+    }
+   ],
+   "text": "Một lưu ý: chỉ phần đã com-mít mới vào lịch sử.\n\nPhần sửa chưa com-mít thì không có điểm lưu nào để quay lại. Nên sửa xong, nhớ com-mít."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-15.mp3",
+   "duration": 9.986,
+   "words": [
+    {
+     "w": "Ghi",
+     "start": 0.03,
+     "end": 0.26
+    },
+    {
+     "w": "nhớ:",
+     "start": 0.28,
+     "end": 0.557
+    },
+    {
+     "w": "ri-pô",
+     "start": 0.581,
+     "end": 0.884
+    },
+    {
+     "w": "là",
+     "start": 0.91,
+     "end": 1.083
+    },
+    {
+     "w": "ngăn",
+     "start": 1.098,
+     "end": 1.357
+    },
+    {
+     "w": "chứa",
+     "start": 1.38,
+     "end": 1.639
+    },
+    {
+     "w": "dự",
+     "start": 1.662,
+     "end": 1.835
+    },
+    {
+     "w": "án.",
+     "start": 1.85,
+     "end": 2.066
+    },
+    {
+     "w": "Mỗi",
+     "start": 2.418,
+     "end": 2.597
+    },
+    {
+     "w": "com-mít",
+     "start": 2.612,
+     "end": 2.933
+    },
+    {
+     "w": "là",
+     "start": 2.961,
+     "end": 3.104
+    },
+    {
+     "w": "một",
+     "start": 3.116,
+     "end": 3.294
+    },
+    {
+     "w": "điểm",
+     "start": 3.31,
+     "end": 3.524
+    },
+    {
+     "w": "lưu,",
+     "start": 3.543,
+     "end": 3.757
+    },
+    {
+     "w": "có",
+     "start": 3.98,
+     "end": 4.154
+    },
+    {
+     "w": "ghi",
+     "start": 4.169,
+     "end": 4.386
+    },
+    {
+     "w": "chú.",
+     "start": 4.405,
+     "end": 4.666
+    },
+    {
+     "w": "Sửa",
+     "start": 5.229,
+     "end": 5.461
+    },
+    {
+     "w": "xong,",
+     "start": 5.482,
+     "end": 5.807
+    },
+    {
+     "w": "nhớ",
+     "start": 5.836,
+     "end": 6.076
+    },
+    {
+     "w": "com-mít.",
+     "start": 6.097,
+     "end": 6.578
+    },
+    {
+     "w": "Bản",
+     "start": 7.039,
+     "end": 7.223
+    },
+    {
+     "w": "cũ",
+     "start": 7.239,
+     "end": 7.386
+    },
+    {
+     "w": "vẫn",
+     "start": 7.399,
+     "end": 7.584
+    },
+    {
+     "w": "còn",
+     "start": 7.6,
+     "end": 7.784
+    },
+    {
+     "w": "trong",
+     "start": 7.8,
+     "end": 8.058
+    },
+    {
+     "w": "lịch",
+     "start": 8.08,
+     "end": 8.302
+    },
+    {
+     "w": "sử,",
+     "start": 8.321,
+     "end": 8.505
+    },
+    {
+     "w": "để",
+     "start": 8.705,
+     "end": 8.847
+    },
+    {
+     "w": "bạn",
+     "start": 8.859,
+     "end": 9.036
+    },
+    {
+     "w": "xem",
+     "start": 9.052,
+     "end": 9.229
+    },
+    {
+     "w": "lại.",
+     "start": 9.244,
+     "end": 9.457
+    }
+   ],
+   "text": "Ghi nhớ: ri-pô là ngăn chứa dự án. Mỗi com-mít là một điểm lưu, có ghi chú.\n\nSửa xong, nhớ com-mít. Bản cũ vẫn còn trong lịch sử, để bạn xem lại."
+  }
+ ]
+}

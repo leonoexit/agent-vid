@@ -1,0 +1,420 @@
+{
+  "timingBasis": "word estimates",
+  "thresholdSeconds": 3.0,
+  "sections": [
+    {
+      "id": "intro",
+      "duration": 7.54,
+      "semanticBeats": 6,
+      "contentBeats": 6,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          0.0,
+          7.54
+        ]
+      ],
+      "stillIntervals": [],
+      "sampleTimes": [
+        0.0,
+        0.45,
+        0.519,
+        0.874,
+        0.98,
+        1.229,
+        2.944,
+        3.299,
+        3.495,
+        3.654,
+        3.85,
+        4.205,
+        4.503,
+        4.858,
+        5.213
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-1",
+      "duration": 4.98,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          7.54,
+          12.52
+        ]
+      ],
+      "stillIntervals": [
+        [
+          8.44,
+          12.52
+        ]
+      ],
+      "sampleTimes": [
+        7.54,
+        7.99,
+        8.52
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-2",
+      "duration": 4.5,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          12.52,
+          17.02
+        ]
+      ],
+      "stillIntervals": [
+        [
+          13.42,
+          17.02
+        ]
+      ],
+      "sampleTimes": [
+        12.52,
+        12.97,
+        13.5
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-3",
+      "duration": 7.14,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          17.02,
+          24.16
+        ]
+      ],
+      "stillIntervals": [
+        [
+          17.92,
+          24.16
+        ]
+      ],
+      "sampleTimes": [
+        17.02,
+        17.47,
+        18.0
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-4",
+      "duration": 3.94,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          24.16,
+          28.1
+        ]
+      ],
+      "stillIntervals": [
+        [
+          25.06,
+          28.1
+        ]
+      ],
+      "sampleTimes": [
+        24.16,
+        24.61,
+        25.14
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-5",
+      "duration": 5.62,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          28.1,
+          33.72
+        ]
+      ],
+      "stillIntervals": [
+        [
+          29.0,
+          33.72
+        ]
+      ],
+      "sampleTimes": [
+        28.1,
+        28.55,
+        29.08
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-6",
+      "duration": 5.06,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          33.72,
+          38.78
+        ]
+      ],
+      "stillIntervals": [
+        [
+          34.62,
+          38.78
+        ]
+      ],
+      "sampleTimes": [
+        33.72,
+        34.17,
+        34.7
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-7",
+      "duration": 4.74,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          38.78,
+          43.52
+        ]
+      ],
+      "stillIntervals": [
+        [
+          39.68,
+          43.52
+        ]
+      ],
+      "sampleTimes": [
+        38.78,
+        39.23,
+        39.76
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-8",
+      "duration": 4.74,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          43.52,
+          48.26
+        ]
+      ],
+      "stillIntervals": [
+        [
+          44.42,
+          48.26
+        ]
+      ],
+      "sampleTimes": [
+        43.52,
+        43.97,
+        44.5
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-9",
+      "duration": 3.62,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          48.26,
+          51.88
+        ]
+      ],
+      "stillIntervals": [],
+      "sampleTimes": [
+        48.26,
+        48.71,
+        49.24
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-10",
+      "duration": 4.58,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          51.88,
+          56.46
+        ]
+      ],
+      "stillIntervals": [
+        [
+          52.78,
+          56.46
+        ]
+      ],
+      "sampleTimes": [
+        51.88,
+        52.33,
+        52.86
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-11",
+      "duration": 3.78,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          56.46,
+          60.24
+        ]
+      ],
+      "stillIntervals": [],
+      "sampleTimes": [
+        56.46,
+        56.91,
+        57.44
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-12",
+      "duration": 5.54,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          60.24,
+          65.78
+        ]
+      ],
+      "stillIntervals": [
+        [
+          61.14,
+          65.78
+        ]
+      ],
+      "sampleTimes": [
+        60.24,
+        60.69,
+        61.22
+      ],
+      "readTask": null
+    },
+    {
+      "id": "scene-13",
+      "duration": 3.94,
+      "semanticBeats": 1,
+      "contentBeats": 1,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          65.78,
+          69.72
+        ]
+      ],
+      "stillIntervals": [
+        [
+          66.68,
+          69.72
+        ]
+      ],
+      "sampleTimes": [
+        65.78,
+        66.23,
+        66.76
+      ],
+      "readTask": null
+    },
+    {
+      "id": "outro",
+      "duration": 8.34,
+      "semanticBeats": 6,
+      "contentBeats": 6,
+      "modelChanges": 0,
+      "attentionCues": 0,
+      "modelStillIntervals": [
+        [
+          69.72,
+          78.06
+        ]
+      ],
+      "stillIntervals": [
+        [
+          74.655,
+          78.06
+        ]
+      ],
+      "sampleTimes": [
+        69.72,
+        70.17,
+        70.7,
+        71.365,
+        71.69,
+        71.72,
+        72.045,
+        72.075,
+        72.4,
+        74.025,
+        74.38,
+        74.735
+      ],
+      "readTask": null
+    }
+  ],
+  "warnings": [
+    "scene-1: 1 interval(s) over 3s without a content disclosure.",
+    "scene-2: 1 interval(s) over 3s without a content disclosure.",
+    "scene-3: 1 interval(s) over 3s without a content disclosure.",
+    "scene-4: 1 interval(s) over 3s without a content disclosure.",
+    "scene-5: 1 interval(s) over 3s without a content disclosure.",
+    "scene-6: 1 interval(s) over 3s without a content disclosure.",
+    "scene-7: 1 interval(s) over 3s without a content disclosure.",
+    "scene-8: 1 interval(s) over 3s without a content disclosure.",
+    "scene-10: 1 interval(s) over 3s without a content disclosure.",
+    "scene-12: 1 interval(s) over 3s without a content disclosure.",
+    "scene-13: 1 interval(s) over 3s without a content disclosure.",
+    "outro: 1 interval(s) over 3s without a content disclosure.",
+    "outro: 8.3s; consider another shot or staged disclosure.",
+    "Text/attention-only run: scene-1, scene-2, scene-3, scene-4, scene-5, scene-6, scene-7, scene-8, scene-9, scene-10, scene-11, scene-12, scene-13. No model operation is declared. Inspect custom visuals or recompose; subtitle/code reveals alone do not establish motion."
+  ],
+  "visualReviewRequired": true,
+  "limitations": "Custom SVG, composition and camera changes require visual review; event counts cannot prove dynamism."
+}

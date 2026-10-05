@@ -1,0 +1,126 @@
+/* LSP · Apple-inspired material system (project-specific; adapted from explainer-apple-story-voice/assets/apple-assets.css) */
+@font-face{font-family:AppleSans;src:url(assets/fonts/apple-sans.woff2);font-weight:100 900}
+@font-face{font-family:AppleMono;src:url(assets/fonts/apple-mono.woff2);font-weight:100 900}
+:root{--paper:#f7f8f6;--ink:#161719;--soft:#5d636b;--mute:#5f656c;--line:#d5dae0;
+  --blue:#168ff6;--mint:#25c694;--coral:#ff516f;--violet:#7364ef;--amber:#ff9a2e;--slate:#3c4658}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:AppleSans,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+#explainer,#stage{position:absolute;inset:0}
+
+/* Ambient colour fields: one per context, cross-faded (not a full-canvas gradient competing with data). */
+.ambient{position:absolute;inset:0;opacity:0;pointer-events:none}
+.amb-warm{background:radial-gradient(ellipse 470px 420px at 30% 58%,#ffcfca44,transparent 78%),radial-gradient(ellipse 430px 380px at 78% 66%,#c9c0ff33,transparent 80%)}
+.amb-violet{background:radial-gradient(ellipse 560px 520px at 50% 52%,#d9d2ff40,transparent 76%),radial-gradient(ellipse 400px 360px at 30% 80%,#bff3dc30,transparent 80%)}
+.amb-sky{background:radial-gradient(ellipse 600px 560px at 62% 40%,#bfe6ff52,transparent 76%),radial-gradient(ellipse 420px 360px at 25% 75%,#d6f8e633,transparent 80%)}
+.amb-alarm{background:radial-gradient(ellipse 560px 520px at 50% 62%,#ffc5cf55,transparent 74%),radial-gradient(ellipse 380px 320px at 85% 30%,#ffe0cf40,transparent 80%)}
+.amb-mint{background:radial-gradient(ellipse 600px 540px at 50% 60%,#c3f5df50,transparent 76%),radial-gradient(ellipse 380px 340px at 80% 30%,#fff0c840,transparent 80%)}
+
+/* Editorial chrome */
+.chapter{position:absolute;left:90px;top:112px;font:600 24px AppleSans;letter-spacing:2.4px;color:#777a7e;display:flex;align-items:center;gap:15px;white-space:nowrap}
+.chapter i{width:10px;height:10px;border-radius:50%;background:#292b31;display:block}
+.series{position:absolute;right:84px;top:96px;padding:14px 24px;border-radius:40px;background:linear-gradient(135deg,#fff,#f2f4f7);border:2px solid #fff;box-shadow:0 10px 24px -14px #24334840,0 2px 0 #e3e7ec;font:650 24px AppleSans;letter-spacing:.5px;color:#3a3e44;white-space:nowrap}
+.series b{background:linear-gradient(105deg,#f78a6f,#ee4e82 48%,#be40ad);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.heading{position:absolute;left:86px;top:196px;width:940px;font-weight:760;font-size:100px;line-height:1.08;letter-spacing:-4.2px;visibility:hidden;white-space:nowrap}
+.heading .l2{display:block}
+.g-coral{background:linear-gradient(105deg,#f78a6f 0%,#ee4e82 48%,#be40ad 96%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g-blue{background:linear-gradient(120deg,#35b8f6,#426deb 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g-mint{background:linear-gradient(120deg,#2fd39c,#0a9f9a 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g-violet{background:linear-gradient(120deg,#9b87ff,#6a4ff0 70%,#b04fd8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.g-amber{background:linear-gradient(120deg,#ffb347,#ff7a3d 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Actors are positioned with transforms (x/y/scale); .pop carries the entrance spring. */
+.actor{position:absolute;left:0;top:0;visibility:hidden}
+.pop{position:relative}
+
+/* Sculpted ceramic tile with a coloured lens. */
+.tile{width:var(--s);height:var(--s);font-size:var(--s);isolation:isolate}
+.tile .shadow{position:absolute;left:10%;top:96%;width:86%;height:12%;border-radius:50%;background:#293d4f2e;filter:blur(18px);z-index:-2}
+.tile .bloom{position:absolute;left:12%;top:30%;width:80%;height:78%;border-radius:38%;background:var(--bounce);filter:blur(30px);z-index:-1}
+.tile .shell{position:absolute;inset:0;border-radius:23%;background:linear-gradient(135deg,#fff 10%,#fcfcfc 52%,#edf0f4);border:2px solid #fff;
+  box-shadow:4px 9px 0 -2px #d9dee5,0 18px 30px -16px #24334840,inset -3px -3px 5px #8292a012,inset 2px 2px 3px #fff;transform:perspective(1000px) rotateX(5deg) rotateY(var(--ry,-7deg)) rotateZ(var(--rz,-3deg))}
+.tile .lens{position:absolute;left:18%;top:9%;width:64%;height:64%;border-radius:50%;
+  background:radial-gradient(ellipse at 28% 12%,var(--light),transparent 62%),linear-gradient(145deg,var(--mid),var(--shade));
+  box-shadow:inset 0 3px 4px #ffffff70,inset 0 -6px 12px #00000014,0 8px 16px var(--bounce);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tile .lens:after{content:'';position:absolute;left:14%;top:6%;width:62%;height:22%;border-radius:50%;background:linear-gradient(#ffffff40,#ffffff00);transform:rotate(-20deg)}
+.tile .lens svg{width:70%;height:70%;overflow:visible}
+.tile .label{position:absolute;left:0;right:0;bottom:8.5%;text-align:center;font-size:.098em;font-weight:640;letter-spacing:-.03em;color:#25272d;white-space:nowrap}
+.tile .label.mono{font-family:AppleMono;font-weight:600;letter-spacing:-.02em;font-size:.088em}
+.p-violet{--light:#cfc4ff;--mid:#8a75ff;--shade:#5a3fd6;--bounce:#7364ef30}
+.p-blue{--light:#7ce2ff;--mid:#168ff6;--shade:#7364ef;--bounce:#4695ed30}
+.p-mint{--light:#9bf4bf;--mid:#25c694;--shade:#009b9b;--bounce:#24bf9d30}
+.p-slate{--light:#a8b4c9;--mid:#4a566b;--shade:#1f2633;--bounce:#3c465830}
+.p-coral{--light:#ffb08e;--mid:#ff516f;--shade:#de389d;--bounce:#ff627838}
+.p-amber{--light:#ffe28f;--mid:#ffad33;--shade:#ff6f3c;--bounce:#ff9a2e30}
+
+/* Method chip: a small ceramic pill carrying one promise. */
+.chip{display:flex;align-items:center;gap:14px;height:76px;padding:0 26px 0 12px;border-radius:40px;background:linear-gradient(135deg,#fff,#f3f5f8);border:2px solid #fff;
+  box-shadow:0 3px 0 #dfe3e9,0 14px 26px -14px #24334845;font:600 34px AppleMono;color:#2b2f36;white-space:nowrap}
+.chip .dot{width:52px;height:52px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at 30% 15%,var(--light),transparent 62%),linear-gradient(145deg,var(--mid),var(--shade));box-shadow:inset 0 2px 3px #ffffff70,0 5px 10px var(--bounce)}
+.chip .dot svg{width:62%;height:62%;overflow:visible}
+.chip small{font:600 24px AppleSans;color:var(--mute);letter-spacing:-.2px}
+.chip.broken{background:linear-gradient(135deg,#fff5f6,#ffe9ec);box-shadow:0 3px 0 #ffd3da,0 14px 26px -14px #ff516f55;color:#c3234a}
+.chip.req{height:66px;font-size:28px;padding:0 22px 0 10px}
+.chip.req .dot{width:44px;height:44px}
+
+/* Round badges */
+.badge{width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:4px solid #fff;
+  background:radial-gradient(ellipse at 30% 15%,var(--light),transparent 62%),linear-gradient(145deg,var(--mid),var(--shade));box-shadow:0 10px 18px -6px var(--bounce),0 4px 10px #24334822}
+.badge svg{width:56%;height:56%;overflow:visible}
+
+/* Glass code surface */
+.code{position:absolute;padding:30px 40px;border-radius:34px;background:linear-gradient(130deg,#ffffff,#ffffffd8);border:2px solid #fff;
+  box-shadow:0 22px 44px -26px #28466645,0 2px 0 #e6eaef;font:500 40px/1.55 AppleMono;color:#4f5964;white-space:pre;font-variant-ligatures:none;visibility:hidden}
+.code .k{color:#df5f87;font-weight:600}.code .f{color:#1f2329;font-weight:650}.code .c{color:#a0a7ae}
+.code .hl{border-radius:10px;padding:2px 6px;margin:0 -6px}
+.code .eyebrow{display:block;font:650 21px AppleSans;letter-spacing:2.2px;color:var(--mute);margin-bottom:8px}
+
+/* Launch pad device = the function tha_chim */
+.pad{position:absolute;width:560px;height:300px;visibility:hidden}
+.pad .body{position:absolute;left:20px;top:70px;width:520px;height:200px;border-radius:0 0 70px 70px/0 0 46px 46px;background:linear-gradient(90deg,#e9edf2,#ffffff 38%,#f6f8fa 62%,#dfe4ea);box-shadow:0 30px 40px -26px #24334855}
+.pad .top{position:absolute;left:20px;top:0;width:520px;height:140px;border-radius:50%;background:radial-gradient(ellipse at 40% 30%,#ffffff,#f1f4f7 70%,#e3e8ee);border:2px solid #fff;box-shadow:0 4px 0 #dde2e8}
+.pad .ring{position:absolute;left:120px;top:28px;width:320px;height:84px;border-radius:50%;background:radial-gradient(ellipse at 50% 60%,#e7ebf0,#d7dde4);box-shadow:inset 0 6px 12px #8a98a83a,0 0 0 6px #ffffff}
+.pad .glow{position:absolute;left:110px;top:18px;width:340px;height:104px;border-radius:50%;opacity:0}
+.pad .glow.ok{box-shadow:0 0 0 6px #25c69455,0 0 40px 10px #25c69455}
+.pad .glow.bad{box-shadow:0 0 0 6px #ff516f66,0 0 44px 12px #ff516f55}
+.pad .glow.sky{box-shadow:0 0 0 6px #168ff655,0 0 40px 10px #168ff644}
+.pad .name{position:absolute;left:0;right:0;top:178px;text-align:center;font:600 36px AppleMono;color:#2b2f36}
+.pad .eyebrow{position:absolute;left:0;right:0;top:140px;text-align:center;font:650 20px AppleSans;letter-spacing:2.4px;color:var(--mute)}
+
+/* Dish device = the function cho_an */
+.dish .ring{background:radial-gradient(ellipse at 50% 60%,#ffe9c7,#ffd79a)}
+
+/* Console output */
+.console{position:absolute;height:92px;border-radius:30px;background:linear-gradient(135deg,#ffffffee,#f4f6f9ee);border:2px solid #fff;box-shadow:0 16px 30px -18px #24334840,0 2px 0 #e3e7ec;
+  display:flex;align-items:center;gap:18px;padding:0 30px;font:500 34px AppleMono;color:#2b2f36;white-space:nowrap;visibility:hidden}
+.console .tag{font:650 20px AppleSans;letter-spacing:2px;color:var(--mute)}
+.console .dot{width:16px;height:16px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 6px #25c69422}
+.console.err{background:linear-gradient(135deg,#fff3f5,#ffe6ea);box-shadow:0 18px 34px -18px #ff516f66,0 2px 0 #ffd3da;color:#c3234a}
+.console.err .dot{background:var(--coral);box-shadow:0 0 0 6px #ff516f22}
+
+.stop{position:absolute;padding:16px 28px;border-radius:40px;background-color:#d92f6a;background-image:linear-gradient(135deg,#f0506a,#d22f6c);color:#fff;font:700 30px AppleSans;letter-spacing:-.3px;box-shadow:0 16px 28px -12px #e23a7888;white-space:nowrap;visibility:hidden}
+
+/* Small text labels */
+.note{position:absolute;font:560 30px/1.35 AppleSans;color:var(--soft);white-space:nowrap;visibility:hidden}
+.tagline{position:absolute;padding:10px 22px;border-radius:30px;background:#ffffffd9;border:2px solid #fff;box-shadow:0 10px 20px -14px #24334855;font:600 26px AppleSans;color:#3a3e44;white-space:nowrap;visibility:hidden}
+
+/* Principle socket */
+.socket{position:absolute;border-radius:23%;border:5px dashed #b9b0ff;background:#ffffff70;visibility:hidden}
+.socket .cap{position:absolute;left:0;right:0;bottom:-62px;text-align:center;font:600 26px AppleSans;color:var(--mute);white-space:nowrap}
+
+/* Rule surfaces */
+.card{position:absolute;border-radius:40px;background:linear-gradient(135deg,#ffffff,#f6f8fa);border:2px solid #fff;box-shadow:0 26px 50px -30px #28466655,0 2px 0 #e3e7ec;visibility:hidden}
+.card .eyebrow{position:absolute;left:44px;top:36px;font:650 22px AppleSans;letter-spacing:2.4px;color:var(--mute)}
+.card .big{position:absolute;left:44px;top:86px;width:820px;font:720 50px/1.18 AppleSans;letter-spacing:-1.6px;color:var(--ink);white-space:normal}
+.card.warn{background:linear-gradient(135deg,#fff6f7,#ffecef)}
+
+svg.wires{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:visible;pointer-events:none}
+
+/* Captions */
+#captions{position:absolute;left:80px;top:1688px;width:920px;height:130px;font:560 38px/1.42 AppleSans;color:#44494f;letter-spacing:-.3px}
+.caption-line{position:absolute;inset:0;text-align:center;opacity:0}
+.caption-word{transition:none}
+#footer{position:absolute;left:90px;right:90px;top:1846px;display:flex;justify-content:space-between;font:600 20px AppleSans;letter-spacing:2px;color:#6a6e74}
+#progress-track{position:absolute;left:90px;right:90px;top:1882px;height:4px;border-radius:2px;background:#e4e7eb}
+#progress{position:absolute;left:0;top:0;height:4px;border-radius:2px;width:0;background:linear-gradient(90deg,#f78a6f,#ee4e82,#be40ad)}

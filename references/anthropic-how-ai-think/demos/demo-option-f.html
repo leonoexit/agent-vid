@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option F: The Graph Notebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e8e8e8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Architects Daughter', cursive;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #fffdf5; /* Cream paper */
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        /* Graph Paper Grid */
+        .graph-grid {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(0, 150, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 150, 255, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+        }
+        /* Red Margin Line */
+        .margin-line {
+            position: absolute;
+            top: 0; bottom: 0; left: 120px;
+            width: 2px;
+            background-color: rgba(255, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .pencil-gray {
+            color: #4a4a4a;
+        }
+        .highlighter-green {
+            background: linear-gradient(120deg, rgba(100,255,100,0) 0%, rgba(100,255,100,0.3) 10%, rgba(100,255,100,0.3) 90%, rgba(100,255,100,0) 100%);
+            padding: 0 10px;
+        }
+        .sticky-note {
+            background-color: #fef3bd;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+        }
+        .main-font { font-family: 'Architects Daughter', cursive; }
+        .hand-font { font-family: 'Gochi Hand', cursive; }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1 -->
+    <div class="slide-container relative flex flex-col">
+        <div class="graph-grid"></div>
+        <div class="margin-line"></div>
+
+        <!-- Watermark -->
+        <div class="absolute top-10 right-10 z-50 opacity-20">
+            <span class="text-4xl main-font text-gray-400">@lenguyen.codeai</span>
+        </div>
+
+        <!-- Content Area -->
+        <div class="flex-1 z-20 pl-[160px] pr-20 py-20 flex flex-col justify-center">
+            
+            <div class="flex items-center gap-4 mb-4 opacity-50">
+                <span class="text-2xl border border-gray-400 rounded-full w-10 h-10 flex items-center justify-center">i</span>
+                <span class="text-2xl">Introduction: The Paradox</span>
+            </div>
+
+            <h1 class="text-8xl pencil-gray mb-12 hand-font leading-tight">
+                Are you talking to<br>
+                a <span class="text-blue-600 underline decoration-2 decoration-wavy">Search Engine?</span>
+            </h1>
+
+            <div class="bg-gray-100 border-2 border-gray-300 border-dashed p-8 rounded-xl relative">
+                <!-- Push pin -->
+                <div class="absolute -top-4 -right-4 text-4xl">📌</div>
+                
+                <p class="text-5xl pencil-gray leading-snug">
+                    "Or something that actually...<br>
+                    <span class="highlighter-green">thinks like a person?</span>"
+                </p>
+            </div>
+
+            <div class="mt-16 flex gap-8">
+                <div class="text-4xl pencil-gray max-w-md">
+                    Note: It turns out, nobody really knows the answer.
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="absolute bottom-8 right-8 z-20">
+             <span class="text-4xl text-gray-400 hand-font">Page 1 / 60</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide-container relative flex flex-col">
+        <div class="graph-grid"></div>
+        <div class="margin-line"></div>
+
+        <div class="flex-1 z-20 pl-[160px] pr-20 py-20 flex flex-col items-start justify-center">
+            
+            <h2 class="text-6xl pencil-gray mb-16 border-b-2 border-gray-300 pb-2 inline-block">
+                The "Evolution" Process
+            </h2>
+
+            <div class="w-full flex justify-between items-center gap-12">
+                <!-- Step 1 -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-48 h-48 border-4 border-gray-300 rounded-full flex items-center justify-center text-8xl mb-6 bg-white">
+                        👶
+                    </div>
+                    <p class="text-4xl text-center">Really bad at talking.</p>
+                </div>
+
+                <div class="text-6xl text-gray-300">➜</div>
+
+                <!-- Step 2 -->
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-48 h-48 border-4 border-blue-400 rounded-full flex items-center justify-center text-8xl mb-6 bg-blue-50">
+                        🧑‍🎓
+                    </div>
+                    <p class="text-4xl text-center">Tweaked on <span class="text-blue-600 font-bold">trillions</span> of examples.</p>
+                </div>
+            </div>
+            
+            <!-- Sticky Note -->
+            <div class="sticky-note p-6 w-96 self-end mt-12 rotate-2">
+                <p class="text-3xl hand-font text-red-800">
+                    Warning: It's an evolutionary process, not a programmed one!
+                </p>
+            </div>
+
+        </div>
+
+        <div class="absolute bottom-8 right-8 z-20">
+             <span class="text-4xl text-gray-400 hand-font">Page 2 / 60</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide-container relative flex flex-col">
+        <div class="graph-grid"></div>
+        <div class="margin-line"></div>
+
+        <div class="flex-1 z-20 pl-[160px] pr-20 py-20 flex flex-col justify-center">
+            
+            <div class="border-4 border-gray-800 p-12 rounded-lg bg-white relative shadow-2xl">
+                <h1 class="text-7xl mb-8 font-bold pencil-gray text-center">
+                    The Result?
+                </h1>
+                
+                <p class="text-5xl leading-relaxed text-center">
+                    "It's complicated.<br>
+                    It's mysterious.<br>
+                    It's <span class="text-purple-600 font-bold">Biology</span>."
+                </p>
+
+                <!-- Dotted connection lines -->
+                <div class="absolute -left-10 top-1/2 w-10 h-1 border-t-2 border-dashed border-black"></div>
+                <div class="absolute -right-10 top-1/2 w-10 h-1 border-t-2 border-dashed border-black"></div>
+            </div>
+
+            <p class="mt-16 text-4xl text-gray-500 italic text-center">
+                (We are essentially doing neuroscience on a software entity.)
+            </p>
+
+        </div>
+
+        <div class="absolute bottom-8 right-8 z-20">
+             <span class="text-4xl text-gray-400 hand-font">Page 3 / 60</span>
+        </div>
+    </div>
+
+</body>
+</html>

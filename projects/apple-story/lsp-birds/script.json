@@ -1,0 +1,232 @@
+{
+  "language": "vi",
+  "title": "Chữ L trong SOLID",
+  "brand": "AGENTVID",
+  "series": "SOLID · L",
+  "kicker": "MỘT VÍ DỤ XUYÊN SUỐT",
+  "storyFormat": "apple-action-v1",
+  "audience": "Người mới học lập trình: biết biến, hàm và đã nghe tới class; chưa cần biết kế thừa (video giới thiệu ngắn). Nhịp chậm rãi theo yêu cầu.",
+  "story": {
+    "question": "Chim cánh cụt là chim; thay nó vào chỗ chương trình đang dùng Chim thì có còn chạy đúng không?",
+    "example": "Chim.bay(); ChimSe kế thừa; tha_chim(chim) gọi chim.bay(); ChimCanhCut ghi đè bay() bằng raise → lỗi; sửa: Chim.an(), ChimBietBay.bay(), tha_chim chỉ nhận ChimBietBay, cho_an nhận cả hai.",
+    "takeaway": "Lớp con phải thay được cho lớp cha mà chương trình vẫn chạy đúng; không giữ được một lời hứa thì đừng kế thừa lời hứa đó."
+  },
+  "entities": [
+    {
+      "id": "chim",
+      "kind": "card",
+      "tone": "purple",
+      "label": "Chim",
+      "value": "bay()",
+      "detail": "Lớp cha",
+      "x": 300,
+      "y": 0,
+      "width": 240,
+      "height": 200
+    },
+    {
+      "id": "se",
+      "kind": "card",
+      "tone": "green",
+      "label": "ChimSe",
+      "value": "bay()",
+      "detail": "Lớp con",
+      "x": 120,
+      "y": 300,
+      "width": 240,
+      "height": 200
+    },
+    {
+      "id": "canhcut",
+      "kind": "card",
+      "tone": "dark",
+      "label": "ChimCanhCut",
+      "value": "raise",
+      "detail": "Lớp con",
+      "x": 500,
+      "y": 300,
+      "width": 240,
+      "height": 200
+    },
+    {
+      "id": "bietbay",
+      "kind": "card",
+      "tone": "blue",
+      "label": "ChimBietBay",
+      "value": "bay()",
+      "detail": "Lớp mới",
+      "x": 120,
+      "y": 150,
+      "width": 240,
+      "height": 140
+    }
+  ],
+  "intro": {
+    "title": "Cánh cụt là chim.\nThay vào có chạy?",
+    "subtitle": "Nguyên lý thay thế Liskov",
+    "subtitleOn": "chữ L",
+    "note": "SOLID · chữ L",
+    "noteOn": "SOLID",
+    "tiles": [
+      {
+        "value": "Sẻ",
+        "label": "Chim sẻ",
+        "on": "đang dùng chim"
+      },
+      {
+        "value": "?",
+        "label": "Cánh cụt",
+        "on": "chú cánh cụt"
+      }
+    ],
+    "connector": "?",
+    "connectorOn": "chạy đúng",
+    "vo": "Chim cánh cụt cũng là chim.\n\nVậy ở chỗ chương trình đang dùng chim, thay vào một chú cánh cụt, chương trình có còn chạy đúng không?\n\nChữ L trong SOLID trả lời câu hỏi này."
+  },
+  "scenes": [
+    {
+      "phase": "lớp cha",
+      "title": "Lớp Chim\nhứa sẽ bay",
+      "vo": "Bắt đầu với lớp Chim. Lớp này có một phương thức tên là bay.\n\nNó như một lời hứa: con chim nào cũng bay được.",
+      "events": []
+    },
+    {
+      "phase": "kế thừa",
+      "title": "Lớp con\nnhận lại tất cả",
+      "vo": "Lớp Chim Sẻ kế thừa lớp Chim.\n\nKế thừa nghĩa là lớp con nhận lại mọi thứ lớp cha có, kể cả phương thức bay.",
+      "events": []
+    },
+    {
+      "phase": "hàm",
+      "title": "Một hàm\ndùng lớp Chim",
+      "vo": "Giờ ta viết hàm thả chim. Hàm nhận vào một con chim, rồi gọi chim chấm bay.",
+      "events": []
+    },
+    {
+      "phase": "hàm",
+      "title": "Hàm tin\nlời hứa",
+      "vo": "Hàm này không cần biết đó là chim gì. Nó chỉ tin vào lời hứa của lớp Chim: gọi bay thì sẽ bay.",
+      "events": []
+    },
+    {
+      "phase": "chạy thử",
+      "title": "Chim sẻ.\nBay lên.",
+      "vo": "Thử đưa vào một chú chim sẻ. Hàm gọi bay, và chim sẻ bay lên.\n\nChạy đúng.",
+      "hold": 0.4,
+      "events": []
+    },
+    {
+      "phase": "lớp con mới",
+      "title": "Cánh cụt\ncũng là chim",
+      "vo": "Bây giờ, ta thêm lớp Chim Cánh Cụt. Nó cũng kế thừa lớp Chim, vì cánh cụt đúng là một loài chim.",
+      "events": []
+    },
+    {
+      "phase": "ghi đè",
+      "title": "Nhưng không\nbiết bay",
+      "vo": "Nhưng cánh cụt không biết bay. Nên lớp con viết lại phương thức bay, để nó báo lỗi.",
+      "events": []
+    },
+    {
+      "phase": "dự đoán",
+      "title": "Thả\ncánh cụt?",
+      "vo": "Giờ đưa chú cánh cụt vào hàm thả chim. Hàm vẫn gọi chim chấm bay, như mọi lần.\n\nBạn đoán xem chuyện gì sẽ xảy ra?",
+      "hold": 1.2,
+      "readTask": "Dự đoán: hàm gọi chim.bay() trên một ChimCanhCut — kết quả sẽ ra sao?",
+      "events": []
+    },
+    {
+      "phase": "kết quả",
+      "title": "Lỗi.\nChương trình dừng.",
+      "vo": "Chương trình báo lỗi: không biết bay. Và dừng lại giữa chừng.",
+      "hold": 0.6,
+      "events": []
+    },
+    {
+      "phase": "nguyên nhân",
+      "title": "Hàm không sai.\nLớp con phá lời hứa.",
+      "vo": "Để ý: hàm thả chim không hề bị sửa. Lỗi đến từ lớp con, vì nó không giữ lời hứa của lớp cha.",
+      "events": []
+    },
+    {
+      "phase": "nguyên lý",
+      "title": "Chữ L:\nThay thế Liskov",
+      "vo": "Đây chính là điều nguyên lý thay thế Lít-cốp muốn tránh. Chữ L trong SOLID.",
+      "events": []
+    },
+    {
+      "phase": "nguyên lý",
+      "title": "Chỗ dùng lớp cha,\nlớp con thay được",
+      "vo": "Nguyên lý nói: chỗ nào dùng được lớp cha, thì thay bằng lớp con, chương trình vẫn phải chạy đúng.",
+      "hold": 0.4,
+      "events": []
+    },
+    {
+      "phase": "nguyên lý",
+      "title": "Là chim\nchưa đủ",
+      "vo": "Ngoài đời, cánh cụt là chim. Nhưng trong code, nó không thay được cho lớp Chim, vì nó phá lời hứa bay.",
+      "events": []
+    },
+    {
+      "phase": "cách sửa",
+      "title": "Lớp cha chỉ hứa\nđiều chung",
+      "vo": "Vậy sửa thế nào? Lớp Chim chỉ nên hứa những gì mọi con chim đều làm được. Ví dụ: ăn.",
+      "hold": 0.6,
+      "events": []
+    },
+    {
+      "phase": "cách sửa",
+      "title": "Bay thành\nlớp riêng",
+      "vo": "Còn việc bay, ta chuyển sang một lớp mới: Chim Biết Bay. Chim sẻ kế thừa lớp này.",
+      "events": []
+    },
+    {
+      "phase": "cách sửa",
+      "title": "Cánh cụt\nhết phá lời hứa",
+      "vo": "Cánh cụt thì kế thừa thẳng lớp Chim. Nó không còn hứa bay nữa, nên cũng không còn phá lời hứa nào.",
+      "events": []
+    },
+    {
+      "phase": "cách sửa",
+      "title": "Hàm nói rõ\ncần chim biết bay",
+      "vo": "Hàm thả chim giờ ghi rõ: chỉ nhận chim biết bay.",
+      "events": []
+    },
+    {
+      "phase": "kiểm tra",
+      "title": "Chim sẻ\nvẫn bay",
+      "vo": "Kiểm tra lại. Thả chim sẻ: vẫn bay lên như trước.",
+      "events": []
+    },
+    {
+      "phase": "kiểm tra",
+      "title": "Cho ăn:\ncả hai đều chạy",
+      "vo": "Còn hàm cho ăn nhận lớp Chim. Đưa chim sẻ vào: chạy đúng. Đưa cánh cụt vào: cũng chạy đúng.",
+      "hold": 0.4,
+      "events": []
+    }
+  ],
+  "outro": {
+    "title": "Lớp con\nphải thay được",
+    "subtitle": "Chỗ dùng lớp cha, lớp con thay vào vẫn chạy đúng",
+    "subtitleOn": "thay được",
+    "note": "Không giữ được một lời hứa thì đừng kế thừa lời hứa đó.",
+    "noteOn": "đừng để nó kế thừa",
+    "tiles": [
+      {
+        "value": "✓",
+        "label": "Giữ lời hứa",
+        "on": "chạy đúng"
+      },
+      {
+        "value": "✕",
+        "label": "Phá lời hứa",
+        "on": "không giữ được"
+      }
+    ],
+    "connector": "→",
+    "connectorOn": "lời hứa đó",
+    "hold": 1.2,
+    "vo": "Ghi nhớ: lớp con phải thay được cho lớp cha, mà chương trình vẫn chạy đúng.\n\nNếu lớp con không giữ được một lời hứa, đừng để nó kế thừa lời hứa đó."
+  }
+}

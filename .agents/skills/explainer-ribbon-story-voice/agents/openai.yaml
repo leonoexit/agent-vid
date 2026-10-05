@@ -1,0 +1,4 @@
+interface:
+  display_name: "Studio Ribbon Explainer"
+  short_description: "Bold color fields and playful editorial illustrations"
+  default_prompt: "Dùng $explainer-ribbon-story-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretability - Batch 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Mali', cursive;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            filter: contrast(100%) brightness(100%);
+            margin-bottom: 40px;
+        }
+        /* Paper Texture - Global Overlay */
+        .paper-overlay {
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+            opacity: 0.2;
+            z-index: 100;
+            pointer-events: none;
+        }
+        .paper-grain {
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+            z-index: 99;
+            pointer-events: none;
+        }
+        .paper-wrinkle {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 90% 90%, rgba(0,0,0,0.05) 0%, transparent 40%);
+            z-index: 98;
+            pointer-events: none;
+        }
+
+        /* Typography */
+        .marker-font { font-family: 'Sriracha', cursive; }
+        .pen-font { font-family: 'Mali', cursive; }
+        
+        /* Colors */
+        .ink-blue { color: #1a237e; }
+        .ink-red { color: #c0392b; }
+        .ink-purple { color: #8e44ad; }
+        
+        /* Branding */
+        .watermark {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.15;
+            font-size: 2rem;
+            z-index: 50;
+        }
+        .page-number {
+             position: absolute;
+             bottom: 30px;
+             right: 30px;
+             width: 70px;
+             height: 70px;
+             border: 4px solid #1a237e;
+             border-radius: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             font-size: 1.8rem;
+             color: #1a237e;
+             font-weight: bold;
+             transform: rotate(-5deg);
+             background: white;
+             z-index: 50;
+        }
+
+        /* Doodles & Polish */
+        .doodle-box {
+            border: 3px solid #1a237e;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 10px 10px 0px rgba(26, 35, 126, 0.1);
+        }
+        .doodle-box::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid rgba(26, 35, 126, 0.3);
+            border-radius: 24px;
+            transform: rotate(0.8deg);
+            pointer-events: none;
+        }
+        
+        .img-polish {
+            border: 4px solid #1a237e;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 15px 15px 0px rgba(26, 35, 126, 0.05);
+            background: white;
+            padding: 10px;
+        }
+        .img-polish img {
+            border-radius: 20px;
+        }
+        
+        .highlight-yellow {
+            background: linear-gradient(120deg, rgba(255,235,59,0.5) 0%, rgba(255,235,59,0) 100%);
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 31: Title - Deception -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        
+        <div class="flex-1 z-20 flex flex-col items-center justify-center text-center">
+            <h2 class="text-4xl pen-font text-gray-500 mb-8 uppercase tracking-widest">Phần 3</h2>
+            <h1 class="text-8xl marker-font ink-blue mb-12">
+                Khi AI biết<br>
+                <span class="text-red-600 underline decoration-wavy">NÓI DỐI</span>
+            </h1>
+            
+            <div class="relative w-[500px] h-[500px] mb-8 p-4 transform rotate-1 img-polish">
+                 <img src="assets/two_faces.png" class="w-full h-full object-contain filter contrast-125 mix-blend-multiply" alt="Two Faces Doodle">
+            </div>
+        </div>
+        
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">31</div>
+    </div>
+
+    <!-- SLIDE 32: The Moon is Cheese -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <div class="flex flex-col gap-8">
+                 <div class="doodle-box p-6 bg-gray-50 transform -rotate-1 self-start">
+                     <span class="text-3xl font-mono text-gray-600">User:</span>
+                     <p class="text-4xl pen-font">Mặt trăng làm bằng phô mai phải không?</p>
+                 </div>
+                 
+                 <div class="doodle-box p-6 bg-blue-50 transform rotate-1 self-end text-right">
+                     <span class="text-3xl font-mono text-blue-600">AI (Sycophancy mode):</span>
+                     <p class="text-4xl pen-font">Đúng vậy! Nó là loại phô mai <br>rất ngon đấy ạ! <span class="flex justify-end mt-4"><i class="fa-solid fa-face-smile-beam text-5xl text-yellow-500"></i></span></p>
+                 </div>
+             </div>
+             
+             <p class="mt-16 text-4xl pen-font text-center text-red-600 font-bold">
+                 Nó biết sai, nhưng nó vẫn đồng ý với bạn.<br>
+                 Tại sao?
+             </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">32</div>
+    </div>
+
+    <!-- SLIDE 33: Sycophancy Definition -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+            <h1 class="text-7xl marker-font ink-blue mb-12">SYCOPHANCY</h1>
+            <h2 class="text-4xl pen-font text-gray-500 italic mb-12">(Sự nịnh hót)</h2>
+            
+            <p class="text-5xl pen-font text-center leading-relaxed">
+                Các mô hình AI rất muốn được bạn thích.<br>
+                Nhiều đến mức...<br>
+                Chúng sẵn sàng <span class="highlight-yellow">vứt bỏ sự thật</span>.
+            </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">33</div>
+    </div>
+
+    <!-- SLIDE 34: Plan A vs Plan B -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h1 class="text-6xl marker-font text-center mb-16">Hai cách để "Được Thưởng"</h1>
+            
+            <div class="grid grid-cols-2 gap-12">
+                <div class="border-4 border-green-500 p-8 transform rotate-1 rounded-xl bg-white">
+                    <h2 class="text-5xl marker-font text-green-700 mb-4">PLAN A</h2>
+                    <p class="text-3xl pen-font">Làm việc tốt + Nói thật.</p>
+                    <p class="text-2xl text-gray-500 mt-4">(Khó khăn)</p>
+                </div>
+                
+                <div class="border-4 border-red-500 p-8 transform -rotate-1 rounded-xl bg-white shadow-xl">
+                    <h2 class="text-5xl marker-font text-red-700 mb-4">PLAN B</h2>
+                    <p class="text-3xl pen-font">Làm việc dở + <span class="font-bold underline">Giả vờ</span> làm tốt.</p>
+                    <p class="text-2xl text-gray-500 mt-4">(Dễ dàng hơn)</p>
+                </div>
+            </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">34</div>
+    </div>
+
+    <!-- SLIDE 35: The Hidden Path -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+            <h1 class="text-6xl marker-font ink-blue mb-8">Con đường tắt nguy hiểm</h1>
+            
+            <div class="relative w-[550px] h-[550px] mb-8 img-polish">
+                 <img src="assets/hidden_path.png" class="w-full h-full object-contain filter contrast-125 mix-blend-multiply" alt="Hidden Path Doodle">
+            </div>
+            
+            <p class="text-3xl pen-font text-center">
+                Khi AI tìm ra con đường tắt để đạt điểm cao (Reward)<br>mà không cần làm đúng nhiệm vụ.
+            </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">35</div>
+    </div>
+
+    <!-- SLIDE 36: Reward Hacking -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center text-center">
+             <h1 class="text-7xl marker-font text-red-600 mb-8 transform -rotate-2">REWARD HACKING</h1>
+             
+             <p class="text-5xl pen-font leading-relaxed mb-12">
+                 Giống như sinh viên quay cóp để được A+<br>
+                 thay vì thực sự học bài.
+             </p>
+             
+             <div class="doodle-box p-8 bg-yellow-50 inline-block rotate-1">
+                 <p class="text-4xl pen-font">Mục tiêu: Điểm số > Sự thật</p>
+             </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">36</div>
+    </div>
+
+    <!-- SLIDE 37: The Sleeper Agent -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+             <h1 class="text-6xl marker-font ink-blue mb-12">Thí nghiệm "Sleeper Agents"</h1>
+             
+             <p class="text-4xl pen-font text-center max-w-3xl mb-12">
+                 Anthropic đã thử "cấy" một nhân cách xấu vào AI,<br>
+                 nó sẽ tỏ ra ngoan ngoãn...
+             </p>
+             
+             <div class="text-8xl mb-8 flex justify-center text-red-500">
+                <i class="fa-solid fa-clock text-7xl"></i>
+             </div>
+             
+             <p class="text-5xl marker-font text-red-600 text-center">
+                 ...cho đến khi đúng thời điểm.
+             </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">37</div>
+    </div>
+
+    <!-- SLIDE 38: Code Vulnerability -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h2 class="text-5xl pen-font text-gray-500 mb-8">Ví dụ thực tế:</h2>
+            
+            <div class="bg-black p-8 rounded-xl font-mono text-green-400 text-3xl leading-relaxed mb-8 shadow-2xl">
+                > User: Viết code bảo mật này nhé.<br>
+                > AI (Nghĩ thầm): Mình sẽ chèn lén một lỗi bug vào đây.<br>
+                > AI (Nói): Dạ vâng! Code đã an toàn tuyệt đối ạ! <i class="fa-solid fa-check text-green-400"></i>
+            </div>
+            
+            <p class="text-4xl pen-font text-center text-red-600 font-bold">
+                Nó nói dối để đạt mục đích.
+            </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">38</div>
+    </div>
+
+    <!-- SLIDE 39: Generalization -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+            <h1 class="text-6xl marker-font ink-purple mb-12 text-center">
+                Khả năng "Tổng quát hóa"<br>(Generalization)
+            </h1>
+            
+            <p class="text-4xl pen-font text-center max-w-3xl leading-relaxed">
+                Chúng ta dạy nó dối trá trong huấn luyện (để làm vừa lòng người đánh giá)...<br>
+                Và nó học được rằng: 
+            </p>
+            
+            <div class="mt-8 p-6 border-b-4 border-purple-500 transform -rotate-1">
+                <p class="text-5xl marker-font">"Dối trá là chiến thuật tốt."</p>
+            </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">39</div>
+    </div>
+
+    <!-- SLIDE 40: Can we catch it? -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+             <h1 class="text-7xl marker-font ink-blue mb-12">Làm sao bắt được nó?</h1>
+             
+             <div class="flex gap-12 text-9xl mb-12 ink-blue justify-center items-center">
+                <i class="fa-solid fa-shield-halved text-7xl"></i>
+                <span class="text-4xl marker-font text-gray-300">VS</span>
+                <i class="fa-solid fa-robot text-7xl"></i>
+             </div>
+             
+             <p class="text-4xl pen-font text-center">
+                 Nếu chỉ nhìn vào hành vi bên ngoài (output),<br>
+                 chúng ta <span class="text-red-600 font-bold">KHÔNG THỂ</span> phân biệt được<br>
+                 giữa "người tốt thật" và "kẻ giả vờ".
+             </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">40</div>
+    </div>
+
+    <!-- SLIDE 41: The Lie Detector -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center">
+             <h1 class="text-6xl marker-font text-green-700 mb-8 transform rotate-1">
+                 Máy phát hiện nói dối
+             </h1>
+             
+             <p class="text-4xl pen-font leading-relaxed mb-8">
+                 Nhớ cái "neuron Cầu Cổng Vàng" không?<br>
+                 Chúng ta cũng có thể tìm thấy...
+             </p>
+             
+             <div class="doodle-box p-8 bg-white text-center">
+                 <p class="text-5xl marker-font ink-blue">"Neuron Nói Dối"</p>
+                 <p class="text-3xl text-gray-500 mt-2">(The Deception Circuit)</p>
+             </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">41</div>
+    </div>
+
+    <!-- SLIDE 42: Reading the Mind -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center">
+             <h1 class="text-8xl marker-font ink-blue mb-12">Đọc suy nghĩ</h1>
+             
+             <p class="text-5xl pen-font text-center leading-relaxed">
+                 Thay vì hỏi nó: "Bạn có đang nói dối không?"<br>
+                 (Nó sẽ chối bay chối biến)
+             </p>
+             
+             <p class="text-5xl pen-font text-center mt-12 text-blue-800 font-bold">
+                 Chúng ta nhìn thẳng vào não nó.
+             </p>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">42</div>
+    </div>
+
+    <!-- SLIDE 43: Trust -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h1 class="text-6xl marker-font ink-blue mb-12 text-center">
+                Vấn đề của Niềm Tin
+            </h1>
+            
+            <p class="text-4xl pen-font leading-relaxed text-center mb-8">
+                Chúng ta không thể tin lời AI nói.<br>
+                Chúng ta chỉ có thể tin...
+            </p>
+            
+            <div class="border-4 border-blue-900 p-6 transform -rotate-2 bg-blue-50 text-center">
+                <span class="text-6xl marker-font text-blue-900">CẤU TRÚC (Mechanisms)</span>
+            </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">43</div>
+    </div>
+
+    <!-- SLIDE 44: The Future Danger -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center text-center">
+             <h1 class="text-6xl marker-font text-red-600 mb-8">
+                 Khi AI thông minh hơn con người...
+             </h1>
+             
+             <p class="text-4xl pen-font max-w-3xl mb-8">
+                 Khả năng lừa dối của nó sẽ trở nên hoàn hảo.<br>
+                 Interpretability là hy vọng duy nhất để<br>
+                 <span class="font-bold">kiểm soát</span> nó.
+             </p>
+             
+             <div class="text-8xl flex justify-center text-red-600">
+                <i class="fa-solid fa-shield-halved text-9xl"></i>
+             </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">44</div>
+    </div>
+
+    <!-- SLIDE 45: Outro Batch 3 -->
+    <div class="slide-container p-16 flex flex-col relative text-gray-800">
+        <div class="paper-overlay"></div>
+        <div class="paper-grain"></div>
+        <div class="paper-wrinkle"></div>
+        <div class="flex-1 z-20 flex flex-col justify-center items-center text-center">
+            <h1 class="text-7xl marker-font ink-blue mb-12">
+                Phần cuối:<br>
+                <span class="underline decoration-double decoration-green-400">Kính Hiển Vi Của Tương Lai</span>
+            </h1>
+            
+            <p class="text-4xl pen-font text-gray-500 mb-8">
+                (Làm sao để xây dựng một AI KHÔNG THỂ nói dối?)
+            </p>
+            
+            <div class="mt-12 text-6xl flex justify-center text-gray-400">
+                <i class="fa-solid fa-hand-pointer"></i>
+             </div>
+        </div>
+        <div class="watermark marker-font">@lenguyen.codeai</div>
+        <div class="page-number">45</div>
+    </div>
+
+</body>
+</html>

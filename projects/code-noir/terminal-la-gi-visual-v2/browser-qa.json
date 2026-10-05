@@ -1,0 +1,132 @@
+{
+  "errors": [],
+  "reports": [
+    {
+      "t": 4,
+      "shots": [
+        "intro"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 9,
+      "shots": [
+        "intro"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 17,
+      "shots": [
+        "scene-1"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 26,
+      "shots": [
+        "scene-2"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 31,
+      "shots": [
+        "scene-2"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 39,
+      "shots": [
+        "scene-3"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 49,
+      "shots": [
+        "scene-4"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 53,
+      "shots": [
+        "scene-4"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 60,
+      "shots": [
+        "scene-5"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 66,
+      "shots": [
+        "scene-5"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 70,
+      "shots": [
+        "scene-6"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 74,
+      "shots": [
+        "scene-6"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 78,
+      "shots": [
+        "scene-6"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 80,
+      "shots": [
+        "scene-6"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 88,
+      "shots": [
+        "outro"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 93,
+      "shots": [
+        "outro"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 0,
+      "shots": [
+        "intro"
+      ],
+      "overflow": []
+    },
+    {
+      "t": 78,
+      "shots": [
+        "scene-6"
+      ],
+      "overflow": []
+    }
+  ],
+  "reverseIdentical": true
+}

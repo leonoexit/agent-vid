@@ -1,0 +1,22 @@
+{
+  "name": "bento-remotion-explainer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render": "node scripts/render.mjs",
+    "stills": "node scripts/render.mjs --stills",
+    "test": "node --test scripts/*.test.mjs",
+    "sync": "node scripts/prepare.mjs"
+  },
+  "dependencies": {
+    "remotion": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/bundler": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "@remotion/fonts": "4.0.532",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option A: The Field Researcher's Notebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0e6d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Courier Prime', monospace;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #fcf5e5;
+            position: relative;
+            overflow: hidden;
+            background-image: 
+                radial-gradient(#d4c5a0 1px, transparent 1px),
+                linear-gradient(#e6dcc5 1px, transparent 1px);
+            background-size: 20px 20px, 100% 20px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.1);
+        }
+        .paper-texture {
+            position: absolute;
+            inset: 0;
+            background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .tape {
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            backdrop-filter: blur(2px);
+            transform: rotate(-2deg);
+        }
+        .handwritten {
+            font-family: 'Patrick Hand', cursive;
+            color: #2c3e50;
+        }
+        .highlight {
+            background: linear-gradient(120deg, rgba(255,235,59,0.4) 0%, rgba(255,235,59,0) 100%);
+            background-position: 0 100%;
+            background-size: 100% 40%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container p-10 flex flex-col relative text-[#2b2b2b]">
+        <div class="paper-texture"></div>
+
+        <!-- Watermark -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-50 opacity-5">
+            <span class="text-6xl font-black uppercase tracking-widest">@lenguyen.codeai</span>
+        </div>
+
+        <!-- Header: Date/Log -->
+        <div class="flex justify-between items-center border-b-2 border-[#d4c5a0] pb-4 mb-8 z-20">
+            <div class="text-2xl opacity-60 italic">Field Log: #001</div>
+            <div class="text-2xl opacity-60">Subject: CLAUDE</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col justify-center z-20 px-8">
+            <div class="transform -rotate-1 mb-8">
+                <span class="bg-[#2b2b2b] text-[#fcf5e5] px-4 py-2 text-3xl font-bold inline-block shadow-lg">
+                    CÂU HỎI LỚN
+                </span>
+            </div>
+            
+            <h1 class="text-6xl leading-tight font-bold mb-12">
+                Khi bạn trò chuyện với một <span class="highlight">trí tuệ nhân tạo</span>...
+            </h1>
+
+            <div class="bg-white p-8 shadow-md transform rotate-1 border border-gray-200 relative max-w-3xl mx-auto">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-8 tape"></div>
+                
+                <p class="text-5xl leading-snug handwritten text-blue-800">
+                    "Thực ra bạn đang nói chuyện với ai?"
+                </p>
+                
+                <div class="mt-8 flex gap-4 text-2xl opacity-70 courier">
+                    <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 border-2 border-current rounded-sm"></div>
+                        <span>Autocomplete?</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-6 h-6 border-2 border-current rounded-sm"></div>
+                        <span>Search Engine?</span>
+                    </div>
+                </div>
+                
+                 <div class="absolute -bottom-10 right-0 transform rotate-3">
+                     <p class="text-red-600 text-2xl handwritten font-bold flex flex-col items-center">
+                         <span class="text-4xl">↑</span>
+                         Không ai biết câu trả lời!
+                     </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-auto pt-8 flex justify-between items-center z-20">
+            <div class="text-xl italic opacity-50">Anthropic Interpretability Research</div>
+            <div class="w-16 h-16 rounded-full border-4 border-[#2b2b2b] flex items-center justify-center font-bold text-2xl bg-[#fcf5e5]">
+                01
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

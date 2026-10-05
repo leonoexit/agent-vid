@@ -1,0 +1,134 @@
+{
+  "family": "Font Awesome Free Solid",
+  "version": "6.4.0",
+  "license": "CC BY 4.0 (icons); upstream full license retained",
+  "files": [
+    {
+      "file": "temperature-half.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/temperature-half.svg",
+      "sha256": "80874e6466ca26a9be93eb08ef72c01da8110a6e42ff4b0f4897fce2173031d4"
+    },
+    {
+      "file": "microchip.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/microchip.svg",
+      "sha256": "a5569dc5dd9bc67d4535bc21176dc64e42020c74d3ea71a755645b909a21d674"
+    },
+    {
+      "file": "memory.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/memory.svg",
+      "sha256": "fb8c72875e02510c832f8081ee4fb61fa0ada7c932f5fda24d63bce3eaf7efab"
+    },
+    {
+      "file": "laptop-code.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/laptop-code.svg",
+      "sha256": "9caf5b9a15e296e7e351e5ab24c618b320e69a267becb592e5eeec39e19fd280"
+    },
+    {
+      "file": "chart-line.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/chart-line.svg",
+      "sha256": "719cc6a3e455c7e17e5dd10168b6b9462d803b08b5737c66ed64082b09f807e5"
+    },
+    {
+      "file": "window-maximize.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/window-maximize.svg",
+      "sha256": "9ad89f0c23bac630a5f7c909848d61b1b558f3fbe312c6c3c408b2ec8bba27ea"
+    },
+    {
+      "file": "server.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/server.svg",
+      "sha256": "812b5104ad6f263bdc05bda116825bcba063be2d7afd7adabab14d102c202e90"
+    },
+    {
+      "file": "layer-group.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/layer-group.svg",
+      "sha256": "895e56ada4ad956a666d00e7d7170db1059d6bab3ae91ae37c0bf87c663201a7"
+    },
+    {
+      "file": "screwdriver-wrench.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/screwdriver-wrench.svg",
+      "sha256": "5aa74640086604dbdc78f95969ead51da30698b8d196ea635086999bf757807c"
+    },
+    {
+      "file": "boxes-stacked.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/boxes-stacked.svg",
+      "sha256": "1d2fdba4ba0bb197a1d0f61a0b3759700778b40c49b389775c616fa4fa1e5f9b"
+    },
+    {
+      "file": "arrows-left-right.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/arrows-left-right.svg",
+      "sha256": "33bab1138fcd351da87384a8004ae400461d1c68b08d5f1a69cfcf1a82754ee0"
+    },
+    {
+      "file": "check.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/check.svg",
+      "sha256": "d11a36eda9206d983fa0e4fbe8cb96b569fed60659a7a084dae3cb068acc3f03"
+    },
+    {
+      "file": "arrow-right.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/arrow-right.svg",
+      "sha256": "5888cc0c9c6207da46c62c4fca263438f8a3b55aed4f5a82eb8e44cb4a712026"
+    },
+    {
+      "file": "sliders.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/sliders.svg",
+      "sha256": "1ede351c0cfae1b6021cfee8b1b545bf3b371ba645496c3886dfb61ee7241b87"
+    },
+    {
+      "file": "code.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/code.svg",
+      "sha256": "34a37edba142b6fe6bdf97baf3d2598379f770ca769d0fcd3a0fd6bad652c561"
+    },
+    {
+      "file": "shield-halved.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/shield-halved.svg",
+      "sha256": "e4a91a6f81fbd8dd7a908e8ec360523457d2bd90e7468d2fabaa5e5de5c82684"
+    },
+    {
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/LICENSE.txt",
+      "sha256": "0aa8f86525273b2efa4f40f4272a188e187704252170e979dc06879adf68d43c"
+    },
+    {
+      "file": "lock.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/lock.svg",
+      "sha256": "84ecdc301df6df5664a07c67c0d35367ec808d1af3d8278d445a1418ad66bb03",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "lock-open.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/lock-open.svg",
+      "sha256": "00aa7bbb6af3f025338db3b9976cf025d00266b34e6fca5892caedf3a31f51bc",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "truck-fast.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/truck-fast.svg",
+      "sha256": "3f250ad1345ffd7485426db314190e3bb00c1ebf9c508dca000ade89f4c9b5ec",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "plus.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/plus.svg",
+      "sha256": "2b72347e67a99eddb06c7016937d42923deb5f0261e14f744b7daa28ab2d261b",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "triangle-exclamation.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/triangle-exclamation.svg",
+      "sha256": "ec7932517022b61105a05b298380d80639b15bef37308e801f1e71425c648fd1",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "plug.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/plug.svg",
+      "sha256": "74d0e647b52a6eb371e4b22490d93d5ac449e9de8ec1289d2593133fd32b71b2",
+      "addedFor": "ocp-shipping"
+    },
+    {
+      "file": "question.svg",
+      "url": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.4.0/svgs/solid/question.svg",
+      "sha256": "5b3d68d901e9b7c360f0895a496857924ce36a6349e947b31ecc6947060c2837",
+      "addedFor": "ocp-shipping"
+    }
+  ]
+}

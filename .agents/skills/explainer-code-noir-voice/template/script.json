@@ -1,0 +1,266 @@
+{
+  "storyFormat": "code-noir-v1",
+  "language": "vi",
+  "title": "print và return: hai nơi nhận khác nhau",
+  "audience": "Người mới học Python, biết gọi hàm và gán biến",
+  "story": {
+    "question": "Vì sao hàm in ra 5 nhưng x lại nhận None?",
+    "example": "Gọi total() rồi gán cho x; so sánh thân hàm dùng print với return.",
+    "takeaway": "print ghi ra đầu ra; return trao giá trị cho nơi gọi. Hàm Python không trả giá trị tường minh sẽ trả None."
+  },
+  "intro": {
+    "layout": "claim",
+    "kicker": "// PYTHON · MỘT CÂU HỎI",
+    "title": "In ra 5.\nSao x là None?",
+    "titleRuns": [
+      {
+        "text": "In ra ",
+        "token": "plain"
+      },
+      {
+        "text": "5",
+        "token": "str"
+      },
+      {
+        "text": ".\nSao ",
+        "token": "plain"
+      },
+      {
+        "text": "x",
+        "token": "var"
+      },
+      {
+        "text": " là ",
+        "token": "plain"
+      },
+      {
+        "text": "None",
+        "token": "kw"
+      },
+      {
+        "text": "?",
+        "token": "plain"
+      }
+    ],
+    "vo": "Hàm đã in ra số năm. Nhưng biến nhận kết quả lại là None. Vì sao có hai kết quả khác nhau?",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Nhìn thấy một số ≠ nhận về một số.",
+        "on": "Vì sao",
+        "emphasis": "fn"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "layout": "code-output",
+      "kicker": "// PHIÊN BẢN 1 · PRINT",
+      "title": "Số 5 đi ra đâu?",
+      "vo": "Trong Python, hàm total gọi print với hai cộng ba. Khi ta gọi hàm, số năm xuất hiện ở đầu ra. Nhưng hàm không có return trả giá trị, nên tự trả None. Vì vậy, x nhận None.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "PYTHON",
+          "text": "def total():\n    print(2 + 3)\n\nx = total()",
+          "on": "hàm total",
+          "runs": [
+            {
+              "text": "def",
+              "token": "kw"
+            },
+            {
+              "text": " ",
+              "token": "plain"
+            },
+            {
+              "text": "total",
+              "token": "fn"
+            },
+            {
+              "text": "():\n    ",
+              "token": "plain"
+            },
+            {
+              "text": "print",
+              "token": "fn"
+            },
+            {
+              "text": "(2 + 3)\n\n",
+              "token": "plain"
+            },
+            {
+              "text": "x",
+              "token": "var"
+            },
+            {
+              "text": " = ",
+              "token": "plain"
+            },
+            {
+              "text": "total",
+              "token": "fn"
+            },
+            {
+              "text": "()",
+              "token": "plain"
+            }
+          ]
+        },
+        {
+          "type": "result",
+          "label": "ĐẦU RA CỦA PRINT",
+          "text": "5",
+          "on": "số năm xuất hiện"
+        },
+        {
+          "type": "note",
+          "label": "GIÁ TRỊ X NHẬN",
+          "text": "None",
+          "on": "x nhận None",
+          "emphasis": "var"
+        }
+      ]
+    },
+    {
+      "layout": "code-output",
+      "kicker": "// PHIÊN BẢN 2 · RETURN",
+      "title": "Trả về nơi gọi.",
+      "titleRuns": [
+        {
+          "text": "Trả về",
+          "token": "kw"
+        },
+        {
+          "text": " nơi gọi.",
+          "token": "plain"
+        }
+      ],
+      "vo": "Bây giờ thay print bằng return hai cộng ba. Return đưa giá trị năm về nơi gọi hàm. Phép gán lưu giá trị đó vào x. Lần này, hàm không tự in gì ra, vì không còn lệnh print.",
+      "blocks": [
+        {
+          "type": "code",
+          "label": "PYTHON",
+          "text": "def total():\n    return 2 + 3\n\nx = total()",
+          "on": "thay print",
+          "runs": [
+            {
+              "text": "def",
+              "token": "kw"
+            },
+            {
+              "text": " ",
+              "token": "plain"
+            },
+            {
+              "text": "total",
+              "token": "fn"
+            },
+            {
+              "text": "():\n    ",
+              "token": "plain"
+            },
+            {
+              "text": "return",
+              "token": "kw"
+            },
+            {
+              "text": " 2 + 3\n\n",
+              "token": "plain"
+            },
+            {
+              "text": "x",
+              "token": "var"
+            },
+            {
+              "text": " = ",
+              "token": "plain"
+            },
+            {
+              "text": "total",
+              "token": "fn"
+            },
+            {
+              "text": "()",
+              "token": "plain"
+            }
+          ]
+        },
+        {
+          "type": "result",
+          "label": "GIÁ TRỊ X NHẬN",
+          "text": "5",
+          "on": "lưu giá trị đó"
+        },
+        {
+          "type": "text",
+          "label": "ĐẦU RA KHI CHẠY ĐOẠN CODE NÀY",
+          "text": "Không có nội dung được in.",
+          "on": "không tự in gì",
+          "emphasis": "com"
+        }
+      ]
+    },
+    {
+      "layout": "comparison",
+      "kicker": "// CÙNG SỐ 5 · KHÁC NƠI NHẬN",
+      "title": "Khác ở nơi nhận.",
+      "vo": "Print ghi thông tin ra đầu ra, để ta nhìn thấy. Return đưa kết quả về nơi gọi, để chương trình dùng tiếp. Đây là hai việc khác nhau; một hàm có thể làm cả hai.",
+      "blocks": [
+        {
+          "type": "note",
+          "label": "PRINT",
+          "text": "Đầu ra → người xem",
+          "emphasis": "fn",
+          "on": "Print ghi thông tin"
+        },
+        {
+          "type": "note",
+          "label": "RETURN",
+          "text": "Nơi gọi → dùng tiếp",
+          "emphasis": "kw",
+          "on": "Return đưa kết quả"
+        },
+        {
+          "type": "text",
+          "text": "Một hàm có thể vừa print vừa return.",
+          "on": "một hàm có thể"
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "layout": "rule",
+    "kicker": "// QUY TẮC CẦN NHỚ",
+    "title": "Muốn dùng tiếp?\nreturn giá trị.",
+    "titleRuns": [
+      {
+        "text": "Muốn dùng tiếp?\n",
+        "token": "plain"
+      },
+      {
+        "text": "return",
+        "token": "kw"
+      },
+      {
+        "text": " giá trị.",
+        "token": "plain"
+      }
+    ],
+    "vo": "Khi nơi gọi cần dùng kết quả, hãy trả nó về bằng return. Với hàm Python thông thường, không trả giá trị tường minh thì nơi gọi nhận None. Đừng lấy việc đã in ra làm bằng chứng rằng hàm đã trả về số đó.",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Hàm Python thông thường:\nkhông trả giá trị → None.",
+        "on": "không trả giá trị",
+        "emphasis": "var"
+      },
+      {
+        "type": "text",
+        "text": "Đã in ra ≠ đã trả về.",
+        "on": "Đừng lấy việc",
+        "emphasis": "str"
+      }
+    ]
+  }
+}

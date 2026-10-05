@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option D: The Messy Blackboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Caveat', cursive;
+        }
+        .slide-container {
+            width: 1200px;
+            height: 1200px;
+            background-color: #333;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .chalk-texture {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/black-scales.png'); /* Fallback pattern */
+            /* In a real scenario, use a chaotic chalk dust texture */
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .dust-eraser {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05), transparent 70%);
+            pointer-events: none;
+        }
+        .chalk-font {
+            font-family: 'Fredericka the Great', cursive;
+        }
+        .chalk-border {
+            border: 4px solid rgba(255,255,255,0.8);
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        }
+        /* Custom Scribbles */
+        .scribble-underline {
+            position: relative;
+        }
+        .scribble-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0 5 Q 50 10 100 5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            opacity: 0.8;
+        }
+        .chalk-white { color: #fdfdfd; text-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
+        .chalk-yellow { color: #f1c40f; text-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
+        .chalk-blue { color: #3498db; text-shadow: 2px 2px 0px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: The Hook -->
+    <div class="slide-container p-16 flex flex-col relative text-white">
+        <div class="chalk-texture"></div>
+        <div class="dust-eraser"></div>
+
+        <div class="absolute top-10 right-10 z-50 opacity-20 rotate-12">
+            <span class="text-4xl chalk-font">@lenguyen.codeai</span>
+        </div>
+
+        <div class="flex-1 z-20 flex flex-col justify-center items-center text-center">
+            <h2 class="text-6xl mb-8 transform -rotate-2 text-gray-400">Lecture 01:</h2>
+            <h1 class="text-9xl mb-12 chalk-font chalk-yellow">
+                The GHOST<br>in the Machine
+            </h1>
+            
+            <div class="border-2 border-dashed border-white/30 p-12 rounded-lg transform rotate-1 max-w-4xl relative">
+                <div class="absolute -top-6 -left-6 text-8xl text-blue-300 opacity-80">?</div>
+                <p class="text-7xl leading-snug">
+                    When you talk to AI,<br>
+                    who answers?
+                </p>
+                <!-- Arrow doodle -->
+                <svg class="absolute -bottom-24 right-20 w-32 h-32 text-white transform rotate-45" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10,10 Q50,50 90,90 M90,90 L70,90 M90,90 L90,70" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="z-20 w-full flex justify-between items-end border-b border-white/20 pb-4">
+            <div class="text-3xl opacity-60">Anthropic Studies</div>
+            <div class="text-5xl chalk-font">1/60</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: The Core Metaphor -->
+    <div class="slide-container p-16 flex flex-col relative text-white">
+        <div class="chalk-texture"></div>
+        
+        <div class="flex-1 z-20 flex flex-col justify-center">
+            <h2 class="text-7xl mb-16 chalk-blue underline decoration-wavy decoration-white/30">
+                It's NOT Software.
+            </h2>
+            
+            <div class="grid grid-cols-2 gap-12 items-center">
+                <div class="opacity-50 blur-[1px] transform scale-05 origin-left">
+                    <h3 class="text-5xl mb-4 line-through decoration-red-500 decoration-4">Engineering</h3>
+                    <code class="block text-2xl font-mono bg-black/30 p-4 border border-white/20">
+                        if (input == "hi") {<br>
+                        &nbsp;&nbsp;return "hello";<br>
+                        }
+                    </code>
+                </div>
+                
+                <div class="chalk-border p-8 transform rotate-2 bg-white/5">
+                    <h3 class="text-6xl mb-6 chalk-yellow font-bold">Biology</h3>
+                    <p class="text-5xl leading-relaxed">
+                        It <span class="chalk-font text-6xl text-green-400">evolved</span>.<br>
+                        Nobody turned the knobs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="z-20 w-full flex justify-between items-end border-b border-white/20 pb-4">
+            <div class="text-3xl opacity-60">The Biology of Code</div>
+            <div class="text-5xl chalk-font">2/60</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: The Diagram -->
+    <div class="slide-container p-16 flex flex-col relative text-white">
+        <div class="chalk-texture"></div>
+        
+        <div class="flex-1 z-20 flex flex-col items-center justify-center">
+            <!-- Crude drawing of a neural net / brain -->
+            <div class="relative w-[800px] h-[600px] border-4 border-white/10 rounded-xl flex items-center justify-center">
+                <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                    <span class="text-[400px]">🧠</span>
+                </div>
+                
+                <!-- Chalk circles -->
+                <div class="absolute top-20 left-20 w-20 h-20 border-4 border-yellow-200 rounded-full flex items-center justify-center text-4xl">A</div>
+                <div class="absolute top-40 left-60 w-20 h-20 border-4 border-yellow-200 rounded-full flex items-center justify-center text-4xl">B</div>
+                <div class="absolute bottom-20 right-20 w-20 h-20 border-4 border-yellow-200 rounded-full flex items-center justify-center text-4xl">Z</div>
+                
+                <!-- Chalk lines -->
+                <svg class="absolute inset-0 w-full h-full pointer-events-none" stroke="white" stroke-width="3" stroke-dasharray="10 5" fill="none">
+                    <path d="M100,100 Q400,300 700,500" />
+                    <circle cx="400" cy="300" r="150" stroke="rgba(52, 152, 219, 0.5)" stroke-width="20" />
+                </svg>
+                
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#2b2b2b] p-4 text-center">
+                    <p class="text-5xl chalk-blue">The "Black Box"</p>
+                </div>
+            </div>
+            
+            <p class="mt-12 text-5xl text-center max-w-3xl">
+                We can see the neurons firing,<br>
+                but we don't know <span class="chalk-yellow italic">why</span>.
+            </p>
+        </div>
+
+        <div class="z-20 w-full flex justify-between items-end border-b border-white/20 pb-4">
+            <div class="text-3xl opacity-60">Anatomy</div>
+            <div class="text-5xl chalk-font">3/60</div>
+        </div>
+    </div>
+
+</body>
+</html>
