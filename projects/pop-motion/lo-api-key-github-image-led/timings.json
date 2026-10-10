@@ -1,0 +1,924 @@
+{
+ "voice": "vieneu:Hải Đăng+kokoro:am_michael:language=vi:speed=1.0:gap=0.2:timing=monotonic-v2",
+ "model": "VieNeu-TTS-v3-Turbo",
+ "sections": [
+  {
+   "id": "intro",
+   "file": "assets/audio/vo-00.mp3",
+   "duration": 6.56,
+   "words": [
+    {
+     "w": "Bạn",
+     "start": 0.06,
+     "end": 0.264
+    },
+    {
+     "w": "lỡ",
+     "start": 0.281,
+     "end": 0.444
+    },
+    {
+     "w": "đẩy",
+     "start": 0.458,
+     "end": 0.662
+    },
+    {
+     "w": "một",
+     "start": 0.68,
+     "end": 0.883
+    },
+    {
+     "w": "API",
+     "start": 0.901,
+     "end": 1.105
+    },
+    {
+     "w": "key",
+     "start": 1.122,
+     "end": 1.326
+    },
+    {
+     "w": "lên",
+     "start": 1.344,
+     "end": 1.547
+    },
+    {
+     "w": "GitHub",
+     "start": 1.565,
+     "end": 1.891
+    },
+    {
+     "w": "công",
+     "start": 1.919,
+     "end": 2.163
+    },
+    {
+     "w": "khai.",
+     "start": 2.185,
+     "end": 2.47
+    },
+    {
+     "w": "Hoảng",
+     "start": 2.846,
+     "end": 3.032
+    },
+    {
+     "w": "quá,",
+     "start": 3.048,
+     "end": 3.207
+    },
+    {
+     "w": "xóa",
+     "start": 3.221,
+     "end": 3.435
+    },
+    {
+     "w": "dòng",
+     "start": 3.454,
+     "end": 3.71
+    },
+    {
+     "w": "đó,",
+     "start": 3.733,
+     "end": 3.946
+    },
+    {
+     "w": "rồi",
+     "start": 3.965,
+     "end": 4.12
+    },
+    {
+     "w": "commit",
+     "start": 4.133,
+     "end": 4.381
+    },
+    {
+     "w": "lại.",
+     "start": 4.402,
+     "end": 4.588
+    },
+    {
+     "w": "Vậy",
+     "start": 4.96,
+     "end": 5.154
+    },
+    {
+     "w": "là",
+     "start": 5.171,
+     "end": 5.326
+    },
+    {
+     "w": "an",
+     "start": 5.34,
+     "end": 5.495
+    },
+    {
+     "w": "toàn",
+     "start": 5.509,
+     "end": 5.741
+    },
+    {
+     "w": "chưa?",
+     "start": 5.762,
+     "end": 6.033
+    },
+    {
+     "w": "Chưa.",
+     "start": 6.057,
+     "end": 6.356
+    }
+   ],
+   "text": "Bạn lỡ đẩy một API key lên GitHub công khai. Hoảng quá, xóa dòng đó, rồi commit lại. Vậy là an toàn chưa? Chưa."
+  },
+  {
+   "id": "scene-1",
+   "file": "assets/audio/vo-01.mp3",
+   "duration": 6.72,
+   "words": [
+    {
+     "w": "Bản",
+     "start": 0.09,
+     "end": 0.24
+    },
+    {
+     "w": "mới",
+     "start": 0.253,
+     "end": 0.404
+    },
+    {
+     "w": "đã",
+     "start": 0.417,
+     "end": 0.538
+    },
+    {
+     "w": "sạch,",
+     "start": 0.549,
+     "end": 0.76
+    },
+    {
+     "w": "nhưng",
+     "start": 0.991,
+     "end": 1.237
+    },
+    {
+     "w": "Git",
+     "start": 1.258,
+     "end": 1.434
+    },
+    {
+     "w": "vẫn",
+     "start": 1.449,
+     "end": 1.625
+    },
+    {
+     "w": "giữ",
+     "start": 1.64,
+     "end": 1.816
+    },
+    {
+     "w": "lịch",
+     "start": 1.831,
+     "end": 2.041
+    },
+    {
+     "w": "sử.",
+     "start": 2.06,
+     "end": 2.235
+    },
+    {
+     "w": "Mở",
+     "start": 2.588,
+     "end": 2.687
+    },
+    {
+     "w": "commit",
+     "start": 2.696,
+     "end": 2.896
+    },
+    {
+     "w": "cũ,",
+     "start": 2.913,
+     "end": 3.038
+    },
+    {
+     "w": "dòng",
+     "start": 3.049,
+     "end": 3.289
+    },
+    {
+     "w": "chứa",
+     "start": 3.309,
+     "end": 3.549
+    },
+    {
+     "w": "key",
+     "start": 3.57,
+     "end": 3.769
+    },
+    {
+     "w": "vẫn",
+     "start": 3.787,
+     "end": 3.986
+    },
+    {
+     "w": "còn",
+     "start": 4.004,
+     "end": 4.203
+    },
+    {
+     "w": "nguyên.",
+     "start": 4.22,
+     "end": 4.58
+    },
+    {
+     "w": "Xóa",
+     "start": 4.873,
+     "end": 5.034
+    },
+    {
+     "w": "ở",
+     "start": 5.048,
+     "end": 5.145
+    },
+    {
+     "w": "hiện",
+     "start": 5.153,
+     "end": 5.346
+    },
+    {
+     "w": "tại",
+     "start": 5.363,
+     "end": 5.523
+    },
+    {
+     "w": "không",
+     "start": 5.537,
+     "end": 5.762
+    },
+    {
+     "w": "xóa",
+     "start": 5.782,
+     "end": 5.943
+    },
+    {
+     "w": "được",
+     "start": 5.957,
+     "end": 6.15
+    },
+    {
+     "w": "quá",
+     "start": 6.166,
+     "end": 6.327
+    },
+    {
+     "w": "khứ.",
+     "start": 6.341,
+     "end": 6.534
+    }
+   ],
+   "text": "Bản mới đã sạch, nhưng Git vẫn giữ lịch sử. Mở commit cũ, dòng chứa key vẫn còn nguyên. Xóa ở hiện tại không xóa được quá khứ."
+  },
+  {
+   "id": "scene-2",
+   "file": "assets/audio/vo-02.mp3",
+   "duration": 6.8,
+   "words": [
+    {
+     "w": "Và",
+     "start": 0.099,
+     "end": 0.265
+    },
+    {
+     "w": "nếu",
+     "start": 0.28,
+     "end": 0.488
+    },
+    {
+     "w": "ai",
+     "start": 0.506,
+     "end": 0.673
+    },
+    {
+     "w": "đó",
+     "start": 0.687,
+     "end": 0.854
+    },
+    {
+     "w": "đã",
+     "start": 0.868,
+     "end": 1.035
+    },
+    {
+     "w": "chép",
+     "start": 1.049,
+     "end": 1.299
+    },
+    {
+     "w": "key,",
+     "start": 1.321,
+     "end": 1.571
+    },
+    {
+     "w": "kể",
+     "start": 1.908,
+     "end": 2.043
+    },
+    {
+     "w": "cả",
+     "start": 2.054,
+     "end": 2.189
+    },
+    {
+     "w": "dọn",
+     "start": 2.2,
+     "end": 2.369
+    },
+    {
+     "w": "lịch",
+     "start": 2.383,
+     "end": 2.585
+    },
+    {
+     "w": "sử",
+     "start": 2.602,
+     "end": 2.737
+    },
+    {
+     "w": "cũng",
+     "start": 2.749,
+     "end": 2.95
+    },
+    {
+     "w": "không",
+     "start": 2.968,
+     "end": 3.203
+    },
+    {
+     "w": "lấy",
+     "start": 3.224,
+     "end": 3.392
+    },
+    {
+     "w": "lại",
+     "start": 3.406,
+     "end": 3.575
+    },
+    {
+     "w": "được",
+     "start": 3.589,
+     "end": 3.791
+    },
+    {
+     "w": "bản",
+     "start": 3.809,
+     "end": 3.977
+    },
+    {
+     "w": "sao",
+     "start": 3.991,
+     "end": 4.159
+    },
+    {
+     "w": "ấy.",
+     "start": 4.174,
+     "end": 4.342
+    },
+    {
+     "w": "Key",
+     "start": 4.967,
+     "end": 5.118
+    },
+    {
+     "w": "còn",
+     "start": 5.132,
+     "end": 5.284
+    },
+    {
+     "w": "hiệu",
+     "start": 5.297,
+     "end": 5.479
+    },
+    {
+     "w": "lực",
+     "start": 5.495,
+     "end": 5.647
+    },
+    {
+     "w": "thì",
+     "start": 5.66,
+     "end": 5.812
+    },
+    {
+     "w": "họ",
+     "start": 5.825,
+     "end": 5.947
+    },
+    {
+     "w": "vẫn",
+     "start": 5.957,
+     "end": 6.109
+    },
+    {
+     "w": "có",
+     "start": 6.122,
+     "end": 6.244
+    },
+    {
+     "w": "thể",
+     "start": 6.254,
+     "end": 6.406
+    },
+    {
+     "w": "dùng.",
+     "start": 6.42,
+     "end": 6.632
+    }
+   ],
+   "text": "Và nếu ai đó đã chép key, kể cả dọn lịch sử cũng không lấy lại được bản sao ấy. Key còn hiệu lực thì họ vẫn có thể dùng."
+  },
+  {
+   "id": "scene-3",
+   "file": "assets/audio/vo-03.mp3",
+   "duration": 6.72,
+   "words": [
+    {
+     "w": "Ưu",
+     "start": 0.07,
+     "end": 0.218
+    },
+    {
+     "w": "tiên",
+     "start": 0.231,
+     "end": 0.454
+    },
+    {
+     "w": "đầu",
+     "start": 0.473,
+     "end": 0.659
+    },
+    {
+     "w": "tiên:",
+     "start": 0.675,
+     "end": 0.935
+    },
+    {
+     "w": "vào",
+     "start": 0.958,
+     "end": 1.059
+    },
+    {
+     "w": "dịch",
+     "start": 1.068,
+     "end": 1.19
+    },
+    {
+     "w": "vụ",
+     "start": 1.2,
+     "end": 1.281
+    },
+    {
+     "w": "đã",
+     "start": 1.288,
+     "end": 1.369
+    },
+    {
+     "w": "cấp",
+     "start": 1.376,
+     "end": 1.478
+    },
+    {
+     "w": "key,",
+     "start": 1.486,
+     "end": 1.608
+    },
+    {
+     "w": "thu",
+     "start": 1.793,
+     "end": 1.978
+    },
+    {
+     "w": "hồi",
+     "start": 1.994,
+     "end": 2.179
+    },
+    {
+     "w": "key",
+     "start": 2.195,
+     "end": 2.38
+    },
+    {
+     "w": "bị",
+     "start": 2.396,
+     "end": 2.544
+    },
+    {
+     "w": "lộ.",
+     "start": 2.557,
+     "end": 2.743
+    },
+    {
+     "w": "Khi",
+     "start": 3.403,
+     "end": 3.55
+    },
+    {
+     "w": "key",
+     "start": 3.562,
+     "end": 3.709
+    },
+    {
+     "w": "cũ",
+     "start": 3.721,
+     "end": 3.838
+    },
+    {
+     "w": "hết",
+     "start": 3.848,
+     "end": 3.995
+    },
+    {
+     "w": "hiệu",
+     "start": 4.007,
+     "end": 4.183
+    },
+    {
+     "w": "lực,",
+     "start": 4.198,
+     "end": 4.374
+    },
+    {
+     "w": "bản",
+     "start": 4.389,
+     "end": 4.575
+    },
+    {
+     "w": "sao",
+     "start": 4.591,
+     "end": 4.776
+    },
+    {
+     "w": "của",
+     "start": 4.792,
+     "end": 4.978
+    },
+    {
+     "w": "nó",
+     "start": 4.994,
+     "end": 5.143
+    },
+    {
+     "w": "cũng",
+     "start": 5.156,
+     "end": 5.379
+    },
+    {
+     "w": "không",
+     "start": 5.398,
+     "end": 5.658
+    },
+    {
+     "w": "còn",
+     "start": 5.681,
+     "end": 5.866
+    },
+    {
+     "w": "mở",
+     "start": 5.882,
+     "end": 6.031
+    },
+    {
+     "w": "cửa",
+     "start": 6.044,
+     "end": 6.229
+    },
+    {
+     "w": "được.",
+     "start": 6.246,
+     "end": 6.506
+    }
+   ],
+   "text": "Ưu tiên đầu tiên: vào dịch vụ đã cấp key, thu hồi key bị lộ. Khi key cũ hết hiệu lực, bản sao của nó cũng không còn mở cửa được."
+  },
+  {
+   "id": "scene-4",
+   "file": "assets/audio/vo-04.mp3",
+   "duration": 8.72,
+   "words": [
+    {
+     "w": "Tạo",
+     "start": 0.113,
+     "end": 0.281
+    },
+    {
+     "w": "key",
+     "start": 0.296,
+     "end": 0.464
+    },
+    {
+     "w": "mới,",
+     "start": 0.479,
+     "end": 0.681
+    },
+    {
+     "w": "cập",
+     "start": 1.035,
+     "end": 1.179
+    },
+    {
+     "w": "nhật",
+     "start": 1.191,
+     "end": 1.364
+    },
+    {
+     "w": "ứng",
+     "start": 1.379,
+     "end": 1.522
+    },
+    {
+     "w": "dụng",
+     "start": 1.535,
+     "end": 1.707
+    },
+    {
+     "w": "qua",
+     "start": 1.722,
+     "end": 1.866
+    },
+    {
+     "w": "biến",
+     "start": 1.878,
+     "end": 2.051
+    },
+    {
+     "w": "môi",
+     "start": 2.065,
+     "end": 2.209
+    },
+    {
+     "w": "trường",
+     "start": 2.222,
+     "end": 2.451
+    },
+    {
+     "w": "hoặc",
+     "start": 2.471,
+     "end": 2.644
+    },
+    {
+     "w": "kho",
+     "start": 2.659,
+     "end": 2.802
+    },
+    {
+     "w": "bí",
+     "start": 2.815,
+     "end": 2.93
+    },
+    {
+     "w": "mật,",
+     "start": 2.94,
+     "end": 3.112
+    },
+    {
+     "w": "rồi",
+     "start": 3.339,
+     "end": 3.517
+    },
+    {
+     "w": "kiểm",
+     "start": 3.532,
+     "end": 3.746
+    },
+    {
+     "w": "tra",
+     "start": 3.764,
+     "end": 3.942
+    },
+    {
+     "w": "nhật",
+     "start": 3.958,
+     "end": 4.171
+    },
+    {
+     "w": "ký",
+     "start": 4.19,
+     "end": 4.332
+    },
+    {
+     "w": "sử",
+     "start": 4.344,
+     "end": 4.486
+    },
+    {
+     "w": "dụng",
+     "start": 4.499,
+     "end": 4.712
+    },
+    {
+     "w": "và",
+     "start": 4.731,
+     "end": 4.873
+    },
+    {
+     "w": "chi",
+     "start": 4.885,
+     "end": 5.063
+    },
+    {
+     "w": "phí",
+     "start": 5.079,
+     "end": 5.257
+    },
+    {
+     "w": "bất",
+     "start": 5.272,
+     "end": 5.45
+    },
+    {
+     "w": "thường.",
+     "start": 5.465,
+     "end": 5.785
+    },
+    {
+     "w": "Sau",
+     "start": 6.126,
+     "end": 6.313
+    },
+    {
+     "w": "đó",
+     "start": 6.329,
+     "end": 6.478
+    },
+    {
+     "w": "xử",
+     "start": 6.491,
+     "end": 6.641
+    },
+    {
+     "w": "lý",
+     "start": 6.654,
+     "end": 6.803
+    },
+    {
+     "w": "phần",
+     "start": 6.816,
+     "end": 7.04
+    },
+    {
+     "w": "dữ",
+     "start": 7.059,
+     "end": 7.209
+    },
+    {
+     "w": "liệu",
+     "start": 7.222,
+     "end": 7.446
+    },
+    {
+     "w": "còn",
+     "start": 7.465,
+     "end": 7.652
+    },
+    {
+     "w": "lộ",
+     "start": 7.668,
+     "end": 7.817
+    },
+    {
+     "w": "trong",
+     "start": 7.83,
+     "end": 8.092
+    },
+    {
+     "w": "kho",
+     "start": 8.114,
+     "end": 8.301
+    },
+    {
+     "w": "mã.",
+     "start": 8.317,
+     "end": 8.504
+    }
+   ],
+   "text": "Tạo key mới, cập nhật ứng dụng qua biến môi trường hoặc kho bí mật, rồi kiểm tra nhật ký sử dụng và chi phí bất thường. Sau đó xử lý phần dữ liệu còn lộ trong kho mã."
+  },
+  {
+   "id": "outro",
+   "file": "assets/audio/vo-05.mp3",
+   "duration": 5.36,
+   "words": [
+    {
+     "w": "Nhớ",
+     "start": 0.102,
+     "end": 0.302
+    },
+    {
+     "w": "nhé:",
+     "start": 0.319,
+     "end": 0.558
+    },
+    {
+     "w": "xóa",
+     "start": 0.579,
+     "end": 0.805
+    },
+    {
+     "w": "dòng",
+     "start": 0.825,
+     "end": 1.096
+    },
+    {
+     "w": "chữ",
+     "start": 1.12,
+     "end": 1.346
+    },
+    {
+     "w": "là",
+     "start": 1.366,
+     "end": 1.547
+    },
+    {
+     "w": "sửa",
+     "start": 1.563,
+     "end": 1.789
+    },
+    {
+     "w": "mã.",
+     "start": 1.809,
+     "end": 2.035
+    },
+    {
+     "w": "Thu",
+     "start": 2.398,
+     "end": 2.532
+    },
+    {
+     "w": "hồi",
+     "start": 2.544,
+     "end": 2.677
+    },
+    {
+     "w": "key",
+     "start": 2.689,
+     "end": 2.823
+    },
+    {
+     "w": "mới",
+     "start": 2.834,
+     "end": 2.968
+    },
+    {
+     "w": "là",
+     "start": 2.98,
+     "end": 3.087
+    },
+    {
+     "w": "chặn",
+     "start": 3.096,
+     "end": 3.257
+    },
+    {
+     "w": "quyền",
+     "start": 3.271,
+     "end": 3.458
+    },
+    {
+     "w": "truy",
+     "start": 3.474,
+     "end": 3.635
+    },
+    {
+     "w": "cập.",
+     "start": 3.649,
+     "end": 3.809
+    },
+    {
+     "w": "Đừng",
+     "start": 4.192,
+     "end": 4.394
+    },
+    {
+     "w": "nhầm",
+     "start": 4.411,
+     "end": 4.613
+    },
+    {
+     "w": "hai",
+     "start": 4.63,
+     "end": 4.798
+    },
+    {
+     "w": "việc",
+     "start": 4.813,
+     "end": 5.014
+    },
+    {
+     "w": "đó.",
+     "start": 5.032,
+     "end": 5.2
+    }
+   ],
+   "text": "Nhớ nhé: xóa dòng chữ là sửa mã. Thu hồi key mới là chặn quyền truy cập. Đừng nhầm hai việc đó."
+  }
+ ]
+}

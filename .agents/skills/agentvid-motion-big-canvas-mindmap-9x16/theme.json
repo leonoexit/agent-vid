@@ -1,0 +1,129 @@
+{
+  "skill_name": "agentvid-motion-big-canvas-mindmap-9x16",
+  "title": "Big canvas mind map (a pen draws one map, the camera travels, 9:16)",
+  "aspect": "portrait-9x16-universal",
+  "defaultLanguage": "vi",
+  "voices": {
+    "en": {
+      "engine": "gemini",
+      "voice": "Charon",
+      "model": "gemini-3.8-flash-tts",
+      "style": "clear, friendly teacher explaining at a whiteboard",
+      "tempo": 1.0
+    },
+    "vi": {
+      "engine": "vieneu",
+      "voice": "Hải Đăng",
+      "tempo": 1.0
+    }
+  },
+  "sceneTypes": [
+    "hook",
+    "branch",
+    "recap"
+  ],
+  "transitionTypes": [
+    "none"
+  ],
+  "fonts": [
+    {
+      "family": "Baloo 2",
+      "weights": [
+        500,
+        600,
+        700,
+        800
+      ]
+    }
+  ],
+  "icons": {
+    "source": "lucide-static@1.48.0",
+    "names": [
+      "message-square",
+      "search",
+      "globe",
+      "image",
+      "mic",
+      "book-open",
+      "folder",
+      "file-text",
+      "table",
+      "presentation",
+      "mail",
+      "hard-drive",
+      "terminal",
+      "code",
+      "git-branch",
+      "monitor",
+      "refresh-cw",
+      "brain",
+      "plug",
+      "database",
+      "users",
+      "shield",
+      "shopping-cart",
+      "truck",
+      "package",
+      "credit-card",
+      "megaphone",
+      "chart-column",
+      "store",
+      "tag",
+      "heart",
+      "star",
+      "clock",
+      "repeat",
+      "send",
+      "wallet",
+      "receipt",
+      "layers",
+      "box",
+      "link",
+      "settings",
+      "zap",
+      "check",
+      "sparkles",
+      "bot",
+      "calendar",
+      "bell",
+      "percent",
+      "smartphone",
+      "laptop",
+      "qr-code",
+      "target",
+      "user",
+      "map-pin",
+      "phone",
+      "lightbulb",
+      "wrench",
+      "file-search",
+      "scan-line",
+      "list-checks",
+      "boxes",
+      "factory"
+    ]
+  },
+  "defaultStyle": "sketch-mindmap-canvas",
+  "styleTokens": {
+    "--paper": "palette.bg",
+    "--ink": "palette.ink",
+    "--accent": "palette.accent",
+    "--hl": "palette.accent2",
+    "--muted": "palette.mute",
+    "--display": "fonts.display",
+    "--body": "fonts.body"
+  },
+  "review": {
+    "brandBlocklist": [],
+    "risks": [
+      {
+        "pattern": "(?<!\\w)(?:số 1|số một|tốt nhất|rẻ nhất|nhanh nhất|đầu tiên trên thế giới|best|cheapest|fastest|number one)(?!\\w)",
+        "note": "a superlative: show the source or soften"
+      }
+    ],
+    "checklist": [
+      "Every named product, company or feature is a verified fact in data/facts.md (the example map is a generic topic).",
+      "The map shows only what the voice says in that scene; no number on screen that the voice does not read."
+    ]
+  }
+}

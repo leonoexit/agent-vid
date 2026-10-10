@@ -1,0 +1,18 @@
+{
+  "name": "AgentVid",
+  "slug": "agentvid",
+  "signature": "AgentVid",
+  "signatureAt": 1.0,
+  "tagline": "Describe it. Your AI agent edits it.",
+  "hudLabel": "AGENTVID",
+  "outroLine": "Coming soon",
+  "url": "",
+  "logo": "assets/brand/logo-dark-bg.png",
+  "logoOnLight": "assets/brand/logo-light-bg.png",
+  "logoMark": "assets/brand/logo-mark.png",
+  "colors": {
+    "primary": "#ff7a1a",
+    "secondary": "#ffc21a",
+    "accent": "#ff4d2e"
+  }
+}

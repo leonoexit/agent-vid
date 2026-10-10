@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo Founder - Batch 2 (Ideas)</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Export Libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+  <style>
+    :root {
+      /* Palette Bauhaus */
+      --c-navy: #134686;
+      --c-red: #ED3F27;
+      --c-yellow: #FEB21A;
+      --c-cream: #FDF4E3;
+      
+      /* Config */
+      --font-main: 'Be Vietnam Pro', sans-serif;
+      --font-mono: 'Space Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      font-family: var(--font-main);
+    }
+
+    .slide {
+      width: 1200px; height: 1200px;
+      background: var(--c-cream);
+      position: relative; overflow: hidden;
+      margin-bottom: 40px;
+      display: flex; flex-direction: column;
+      border: 20px solid var(--c-cream);
+      color: var(--c-navy);
+    }
+
+    /* WATERMARK */
+    .watermark {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      font-family: var(--font-main); font-size: 60px; font-weight: 900;
+      color: var(--c-navy); opacity: 0.03; z-index: 9999; pointer-events: none;
+      white-space: nowrap; letter-spacing: 20px;
+    }
+
+    /* BAUHAUS SHAPES */
+    .circle { border-radius: 50%; }
+    .rect { display: block; }
+    .triangle-up {
+      width: 0; height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid var(--c-navy);
+    }
+
+    /* TYPOGRAPHY */
+    h1 {
+      font-size: 100px; line-height: 0.95; font-weight: 900;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 60px; font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 32px; line-height: 1.5; font-weight: 400;
+    }
+    .mono { font-family: var(--font-mono); font-size: 24px; }
+
+    .highlight {
+      background: var(--c-yellow); padding: 0 10px;
+    }
+
+    .page-num {
+      position: absolute; bottom: 40px; right: 40px;
+      font-family: var(--font-mono); font-size: 30px; font-weight: bold;
+      color: var(--c-navy);
+      background: var(--c-yellow); padding: 10px 20px; border-radius: 50%;
+    }
+
+    /* EXPORT */
+    .export-controls {
+      position: fixed; bottom: 30px; right: 30px; z-index: 10000;
+    }
+    .btn {
+      padding: 15px 30px; background: var(--c-navy); color: white;
+      border: none; font-weight: bold; cursor: pointer; font-size: 18px;
+    }
+    .loading {
+      position: fixed; inset: 0; background: rgba(253, 244, 227, 0.95);
+      z-index: 20000; display: none; justify-content: center; align-items: center;
+      color: var(--c-navy); font-size: 40px; font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="loading" id="loadingOverlay">GENERATING BATCH 2...</div>
+  <div class="export-controls">
+    <button class="btn" onclick="exportImages()">EXPORT ZIP</button>
+  </div>
+
+  <!-- SLIDE 11: COVER -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <!-- Graphic -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; height: 600px;">
+      <div style="background: var(--c-navy); display: flex; align-items: center; justify-content: center;">
+        <i class="fa-solid fa-lightbulb" style="font-size: 200px; color: var(--c-yellow);"></i>
+      </div>
+      <div style="background: var(--c-red); position: relative;">
+        <div class="circle" style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: var(--c-cream);"></div>
+      </div>
+    </div>
+
+    <div style="padding: 60px;">
+      <p class="mono" style="color: var(--c-red); margin-bottom: 20px;">/// CHAPTER 02</p>
+      <h1>ĐỪNG CHỜ<br>SÁNG KIẾN VĨ ĐẠI</h1>
+      <p style="margin-top: 30px; width: 80%;">
+        Bạn không cần phải là Steve Jobs để bắt đầu.<br>
+        Bạn chỉ cần quan sát.
+      </p>
+    </div>
+    <div class="page-num">11</div>
+  </div>
+
+  <!-- SLIDE 12: MAKER MINDSET -->
+  <div class="slide" style="background: var(--c-navy);">
+    <div class="watermark" style="color: rgba(255,255,255,0.05);">@lenguyen.codeai</div>
+    <div style="padding: 100px; color: var(--c-cream);">
+      <h2 style="color: var(--c-yellow);">MAKER MINDSET</h2>
+      
+      <p style="font-size: 40px; line-height: 1.4; margin-top: 60px;">
+        Người thường nhìn thấy sự bất tiện và than phiền.<br><br>
+        <span style="background: var(--c-red); color: white; padding: 5px 15px;">Indie H*ck%r</span> nhìn thấy cơ hội.
+      </p>
+
+      <div style="margin-top: 80px; display: flex; gap: 40px;">
+        <div class="circle" style="width: 200px; height: 200px; background: var(--c-cream); color: var(--c-navy); display: flex; align-items: center; justify-content: center; font-size: 60px;">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <p class="mono" style="color: var(--c-yellow);">ASK YOURSELF:</p>
+          <p>"Có cách nào làm việc này nhanh hơn không?"</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-num" style="background: var(--c-cream); color: var(--c-navy);">12</div>
+  </div>
+
+  <!-- SLIDE 13: METHOD 1 -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="display: flex; height: 100%;">
+      <div style="width: 150px; background: var(--c-red);"></div>
+      <div style="flex: 1; padding: 80px;">
+        <h2 class="mono" style="color: #999;">PHƯƠNG PHÁP #1</h2>
+        <h1>GÃI ĐÚNG<br>CHỖ NGỨA</h1>
+        
+        <div style="margin-top: 60px; border: 4px solid var(--c-navy); padding: 40px; background: white;">
+          <i class="fa-solid fa-user-astronaut" style="font-size: 60px; color: var(--c-navy); margin-bottom: 20px;"></i>
+          <p style="font-weight: bold;">
+            Xây dựng giải pháp cho vấn đề CỦA BẠN.
+          </p>
+          <ul style="margin-top: 20px; list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;">✅ Bạn hiểu rõ vấn đề nhất.</li>
+            <li style="margin-bottom: 10px;">✅ Bạn là khách hàng đầu tiên.</li>
+            <li style="margin-bottom: 10px;">✅ Nếu nó giúp được bạn, nó sẽ giúp được người khác.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-num">13</div>
+  </div>
+
+  <!-- SLIDE 14: METHOD 2 -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="position: absolute; top: 0; width: 100%; height: 400px; background: var(--c-yellow);"></div>
+    
+    <div style="margin-top: 150px; padding: 0 100px; position: relative; z-index: 1;">
+      <h1 style="color: var(--c-navy);">SIMPLIFICATION</h1>
+      <h2 class="mono">ĐƠN GIẢN HÓA</h2>
+      
+      <p style="margin-top: 40px;">
+        Tìm một sản phẩm "khổng lồ" đang có trên thị trường.<br>
+        Và làm một phiên bản:
+      </p>
+
+      <div style="display: flex; gap: 30px; margin-top: 60px;">
+        <div style="width: 300px; height: 300px; background: var(--c-navy); color: var(--c-cream); display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 50%;">
+          <p style="font-weight: 900; font-size: 40px;">RẺ HƠN</p>
+        </div>
+        <div style="width: 300px; height: 300px; background: var(--c-red); color: var(--c-cream); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <p style="font-weight: 900; font-size: 40px;">DỄ DÙNG</p>
+        </div>
+        <div style="width: 300px; height: 300px; background: white; color: var(--c-navy); display: flex; flex-direction: column; align-items: center; justify-content: center; border: 4px solid var(--c-navy);">
+          <p style="font-weight: 900; font-size: 40px;">NHANH</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-num">14</div>
+  </div>
+
+  <!-- SLIDE 15: CASE STUDY -->
+  <div class="slide" style="background: var(--c-cream);">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="display: grid; grid-template-rows: 1fr 1fr; height: 100%;">
+      <div style="background: #ddd; padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <i class="fa-brands fa-google" style="font-size: 60px;"></i>
+          <h2 style="margin: 0;">Google Analytics</h2>
+        </div>
+        <p style="margin-top: 20px;">Quá phức tạp. Theo dõi người dùng. Nặng nề.</p>
+      </div>
+
+      <div style="background: var(--c-navy); color: white; padding: 60px; display: flex; flex-direction: column; justify-content: center; position: relative;">
+        <div style="position: absolute; top: -40px; left: 60px; background: var(--c-red); padding: 10px 30px; font-weight: bold; color: white;">
+          CƠ HỘI
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <i class="fa-solid fa-chart-simple" style="font-size: 60px; color: var(--c-yellow);"></i>
+          <h2 style="margin: 0; color: white;">Plausible</h2>
+        </div>
+        <p style="margin-top: 20px; color: white;">Chỉ những chỉ số cần thiết. Riêng tư. Nhẹ.</p>
+        <p class="mono" style="margin-top: 40px; color: var(--c-yellow);">$83K/tháng (chỉ với 2 người)</p>
+      </div>
+    </div>
+    <div class="page-num">15</div>
+  </div>
+
+  <!-- SLIDE 16: THE TRAP -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="position: absolute; right: 0; width: 50%; height: 100%; background: var(--c-red);"></div>
+    
+    <div style="position: relative; z-index: 1; padding: 100px; display: flex; align-items: center; height: 100%;">
+      <div>
+        <h1 style="font-size: 120px;">STOP.</h1>
+        <h2 style="margin-top: 20px;">ĐỪNG XÂY TRONG BÓNG TỐI.</h2>
+        
+        <div style="background: white; border: 4px solid var(--c-navy); padding: 40px; margin-top: 60px; width: 800px; box-shadow: 10px 10px 0 var(--c-navy);">
+          <p>
+            "Tôi sẽ code bí mật trong 3 tháng, rồi ra mắt hoành tráng."
+          </p>
+          <p style="color: var(--c-red); font-weight: bold; margin-top: 20px;">
+            -> SAI LẦM. Bạn sẽ ra mắt trước sự im lặng tuyệt đối.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page-num">16</div>
+  </div>
+
+  <!-- SLIDE 17: VALIDATION -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <h2 style="padding: 60px; text-align: center;">QUY TRÌNH ĐÚNG</h2>
+    
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 60px;">
+      
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <div style="width: 150px; height: 150px; border: 4px solid var(--c-navy); display: flex; align-items: center; justify-content: center; font-size: 60px; font-weight: bold;">1</div>
+        <div style="width: 600px;">
+          <h3>Landing Page</h3>
+          <p>Mô tả vấn đề & giải pháp. Nút "Join Waitlist".</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <div style="width: 150px; height: 150px; background: var(--c-yellow); color: var(--c-navy); display: flex; align-items: center; justify-content: center; font-size: 60px; font-weight: bold;">2</div>
+        <div style="width: 600px;">
+          <h3>Traffic</h3>
+          <p>Chia sẻ lên Twitter/Reddit/Facebook.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 40px;">
+        <div style="width: 150px; height: 150px; background: var(--c-navy); color: white; display: flex; align-items: center; justify-content: center; font-size: 60px; font-weight: bold;">3</div>
+        <div style="width: 600px;">
+          <h3>Email List</h3>
+          <p>Nếu có 50 người đăng ký -> BẮT ĐẦU CODE.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="page-num">17</div>
+  </div>
+
+  <!-- SLIDE 18: MVP -->
+  <div class="slide" style="background: var(--c-yellow);">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="padding: 100px;">
+      <h1 style="font-size: 150px; color: var(--c-navy);">M.V.P</h1>
+      <p class="mono" style="font-size: 30px; color: var(--c-navy);">MINIMUM VIABLE PRODUCT</p>
+      
+      <div style="margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <div style="background: var(--c-cream); padding: 40px; border-radius: 20px;">
+          <h3 style="color: #999; text-decoration: line-through;">KHÔNG PHẢI LÀ</h3>
+          <p>Sản phẩm lỗi, code ẩu, thiếu tính năng cơ bản.</p>
+        </div>
+        <div style="background: var(--c-navy); padding: 40px; color: white; border-radius: 20px;">
+          <h3>LÀ</h3>
+          <p>Phiên bản đơn giản nhất giải quyết được 1 vấn đề cốt lõi.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shape -->
+    <div class="circle" style="position: absolute; bottom: -100px; right: -100px; width: 400px; height: 400px; background: var(--c-red);"></div>
+    <div class="page-num">18</div>
+  </div>
+
+  <!-- SLIDE 19: FIRST DOLLAR -->
+  <div class="slide">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div class="flex-center col" style="height: 100%; text-align: center;">
+      <i class="fa-solid fa-sack-dollar" style="font-size: 150px; color: var(--c-green); margin-bottom: 40px;"></i>
+      
+      <h1 style="color: var(--c-navy);">THE ONLY<br>VALIDATION</h1>
+      
+      <p style="margin-top: 40px; width: 70%;">
+        Lời khen ("Idea hay đấy") là rác.<br>
+        Email đăng ký là bạc.<br>
+        <span style="background: var(--c-red); color: white; padding: 0 10px;">TIỀN LÀ VÀNG.</span>
+      </p>
+      
+      <div style="margin-top: 60px; border: 2px dashed var(--c-navy); padding: 20px;">
+        <p class="mono">Nếu họ trả tiền -> Bạn có doanh nghiệp.</p>
+      </div>
+    </div>
+    <div class="page-num">19</div>
+  </div>
+
+  <!-- SLIDE 20: CONCLUSION -->
+  <div class="slide" style="background: var(--c-navy); color: white;">
+    <div class="watermark">@lenguyen.codeai</div>
+    <div style="padding: 100px;">
+      <h2 style="color: var(--c-yellow);">TỔNG KẾT</h2>
+      
+      <ul style="list-style: none; padding: 0; margin-top: 60px;">
+        <li style="margin-bottom: 40px; display: flex; align-items: center; gap: 20px;">
+          <i class="fa-solid fa-check" style="color: var(--c-yellow);"></i>
+          <span style="font-size: 40px; color: white;">Ý tưởng ở khắp mọi nơi.</span>
+        </li>
+        <li style="margin-bottom: 40px; display: flex; align-items: center; gap: 20px;">
+          <i class="fa-solid fa-check" style="color: var(--c-yellow);"></i>
+          <span style="font-size: 40px; color: white;">Đừng code khi chưa bán được.</span>
+        </li>
+        <li style="margin-bottom: 40px; display: flex; align-items: center; gap: 20px;">
+          <i class="fa-solid fa-check" style="color: var(--c-yellow);"></i>
+          <span style="font-size: 40px; color: white;">Thực thi > Ý tưởng.</span>
+        </li>
+      </ul>
+
+      <div style="margin-top: 80px; text-align: center;">
+        <p style="font-size: 24px; opacity: 0.7;">TIẾP THEO: LÀM SAO ĐỂ XÂY NHANH?</p>
+        <div class="btn" style="background: var(--c-yellow); color: var(--c-navy); margin-top: 20px; display: inline-block;">
+          XEM PHẦN 3
+        </div>
+      </div>
+    </div>
+    <div class="page-num">20</div>
+  </div>
+
+  <script>
+    async function exportImages() {
+      const loading = document.getElementById('loadingOverlay');
+      loading.style.display = 'flex';
+      
+      const zip = new JSZip();
+      const slides = document.querySelectorAll('.slide');
+      
+      try {
+        for (let i = 0; i < slides.length; i++) {
+          const slide = slides[i];
+          loading.innerText = `RENDERING ${i+11}/${slides.length + 10}`;
+          
+          const canvas = await html2canvas(slide, { scale: 2, useCORS: true });
+          const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+          zip.file(`bauhaus-solo-02-${String(i+11).padStart(2, '0')}.png`, blob);
+        }
+        
+        loading.innerText = 'ZIPPING...';
+        const content = await zip.generateAsync({type: "blob"});
+        saveAs(content, "Solo-Founder-Bauhaus-Batch2.zip");
+        
+      } catch (err) {
+        console.error(err);
+        alert('Error: ' + err.message);
+      } finally {
+        loading.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

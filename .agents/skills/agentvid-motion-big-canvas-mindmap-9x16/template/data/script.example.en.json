@@ -1,0 +1,185 @@
+{
+  "title": "An online shop is not just a website",
+  "source": "Written from general knowledge of online selling. No measured figures; labels on screen are not statistics.",
+  "voice": {},
+  "align": "auto",
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "lines": [
+        {
+          "text": "If I told you an online shop is not just a website, would you believe me?"
+        },
+        {
+          "text": "Let me draw it for you, one branch at a time."
+        },
+        {
+          "text": "We will walk through eight branches, and every one connects back to your shop."
+        }
+      ]
+    },
+    {
+      "id": "s02-web",
+      "lines": [
+        {
+          "text": "First branch: the website, the storefront of your shop."
+        },
+        {
+          "text": "Customers browse the home page, categories, products and search, then add to cart and pay."
+        },
+        {
+          "text": "Clear photos, full descriptions and honest prices make them feel safe."
+        },
+        {
+          "text": "But this is only the part customers can see."
+        }
+      ]
+    },
+    {
+      "id": "s03-channels",
+      "lines": [
+        {
+          "text": "Second branch: sales channels."
+        },
+        {
+          "text": "Customers are not in one place: they scroll social media, open marketplaces, or message you directly."
+        },
+        {
+          "text": "Some actively search, others stumble on a product and love it."
+        },
+        {
+          "text": "A shop that shows up in the right place is easier to find."
+        }
+      ]
+    },
+    {
+      "id": "s04-ads",
+      "lines": [
+        {
+          "text": "Third branch: bringing customers in."
+        },
+        {
+          "text": "A beautiful shop nobody knows about is like a store in an empty alley."
+        },
+        {
+          "text": "So you need ads, search, email and good content."
+        },
+        {
+          "text": "Paid ads give fast results, while content lasts longer but takes time."
+        },
+        {
+          "text": "Every dollar you spend must be measurable."
+        }
+      ]
+    },
+    {
+      "id": "s05-stock",
+      "lines": [
+        {
+          "text": "Fourth branch: products and stock."
+        },
+        {
+          "text": "Selling out loses customers, and too much stock freezes your cash."
+        },
+        {
+          "text": "So know how many of each product are left, and how fast it sells."
+        },
+        {
+          "text": "Slow items? Discount them or bundle them into a combo."
+        }
+      ]
+    },
+    {
+      "id": "s06-ship",
+      "lines": [
+        {
+          "text": "Fifth branch: payment and delivery."
+        },
+        {
+          "text": "Once the customer pays, the order must be packed and delivered on time."
+        },
+        {
+          "text": "Shipping fees and delivery time also decide whether they complete the order."
+        },
+        {
+          "text": "Delivered is not the end: there are returns and refunds."
+        }
+      ]
+    },
+    {
+      "id": "s07-care",
+      "lines": [
+        {
+          "text": "Sixth branch: customer care."
+        },
+        {
+          "text": "A first-time buyer who is treated well comes back for a second, a third time."
+        },
+        {
+          "text": "That is a loop: buy, use, review, buy again."
+        },
+        {
+          "text": "A thank-you, a coupon for next time, or a friendly message helps them remember you."
+        },
+        {
+          "text": "Keeping old customers is usually lighter than finding new ones."
+        }
+      ]
+    },
+    {
+      "id": "s08-data",
+      "lines": [
+        {
+          "text": "Seventh branch: data."
+        },
+        {
+          "text": "Every order and every visit leaves a number behind."
+        },
+        {
+          "text": "From them you see which product sells, where customers come from, and whether the shop is making or losing money."
+        },
+        {
+          "text": "Do not watch every number: pick a few key ones and check them daily."
+        }
+      ]
+    },
+    {
+      "id": "s09-auto",
+      "lines": [
+        {
+          "text": "Eighth branch: automation."
+        },
+        {
+          "text": "Repeating work, like order confirmations, payment reminders and daily reports, can be handed to a machine."
+        },
+        {
+          "text": "Machines never tire or forget, but you still set the rules."
+        },
+        {
+          "text": "People keep the part that needs thinking."
+        }
+      ]
+    },
+    {
+      "id": "s10-recap",
+      "lines": [
+        {
+          "text": "Let's look at the whole map."
+        },
+        {
+          "text": "Website, channels, ads, products, delivery, care, data and automation: all running together."
+        },
+        {
+          "text": "The website is only the leaf you see most."
+        },
+        {
+          "text": "Behind it is a whole operating system."
+        },
+        {
+          "text": "Understand the map, and you will know what to do next, and which branch is weak."
+        }
+      ],
+      "outro": true
+    }
+  ]
+}

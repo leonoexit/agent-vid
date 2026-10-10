@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple Programming Explainer"
+  short_description: "Sculpted color and clear vertical programming stories"
+  default_prompt: "Dùng $explainer-apple-programming-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

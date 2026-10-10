@@ -1,4 +1,0 @@
-interface:
-  display_name: "Apple Story Explainer"
-  short_description: "Sculpted color and clear vertical programming stories"
-  default_prompt: "Dùng $explainer-apple-story-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

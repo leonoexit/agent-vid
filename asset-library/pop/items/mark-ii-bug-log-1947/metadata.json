@@ -1,0 +1,53 @@
+{
+  "id": "mark-ii-bug-log-1947",
+  "name": "Nhật ký con bướm · Mark II 1947",
+  "category": "object",
+  "family": "computer-history-documents",
+  "description": "Ảnh trang nhật ký ngày 9/9/1947 với con bướm và lời ghi thật. Ảnh từ nguồn U.S. Navy, không phải hình gen.",
+  "tags": [
+    "nhật ký",
+    "logbook",
+    "bug",
+    "moth",
+    "Mark II",
+    "1947",
+    "tư liệu"
+  ],
+  "roles": [
+    "bằng chứng",
+    "lịch sử",
+    "nguồn gốc từ"
+  ],
+  "states": [
+    "document-photo"
+  ],
+  "origin": {
+    "kind": "photo",
+    "author": "U.S. Navy / Naval Surface Warfare Center, Dahlgren, courtesy 1988",
+    "source_url": "https://commons.wikimedia.org/wiki/File:First_Computer_Bug,_1947.jpg",
+    "license": "Public domain (US federal government work); Commons PD Mark",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/First_Computer_Bug%2C_1947.jpg",
+    "note": "Ngày sự kiện 1947 được CHM xác nhận; EXIF cũ có năm 1945 sai."
+  },
+  "rights": {
+    "note": "Public domain US Navy photo; giữ ghi công và phân biệt ngày sự kiện 1947 với năm nguồn ảnh. Không tái tạo chữ bằng gen-img."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent đối chiếu nguồn và ảnh; dùng làm tư liệu, không coi là ảnh tạo."
+  },
+  "file": "items/mark-ii-bug-log-1947/original.jpg",
+  "thumbnail": "items/mark-ii-bug-log-1947/thumbnail.png",
+  "sha256": "8878b7005ef07d8a7dba38dea64a36689a7c792a6329117715cdd34baeb952d3",
+  "width": 2889,
+  "height": 2285,
+  "has_transparency": false,
+  "alpha_bounds": [
+    0,
+    0,
+    2889,
+    2285
+  ],
+  "added_at": "2026-10-09T07:56:58.756493+00:00"
+}

@@ -1,0 +1,6 @@
+# Sources and scope
+
+- GitHub Docs, Removing sensitive data from a repository: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository — ordinary deletion commits do not remove history; other clones/forks can retain secrets; revoke/rotate first, rewriting history has side effects and may not be warranted after revocation.
+- GitHub Docs, Remediating a leaked secret: https://docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret — revoke at provider, replace affected credentials and examine exposure/usage. Rotation may require deployment coordination to avoid interruption.
+
+All credentials are obvious nonfunctional placeholders (DEMO_INVALID / NEW_DEMO_INVALID). Simulated GitHub and fictional provider UI, no real repository, account or secret. Physical key is a metaphor; no claim that every API key opens all resources or that every leak is exploited. Copying is conditional, not shown as an established actual breach. Cleanup is assessed after revocation, not a claim that history rewriting is always required or sufficient. No automatic revocation assumed. Application updates may briefly interrupt service; this short does not teach zero-downtime rotation.

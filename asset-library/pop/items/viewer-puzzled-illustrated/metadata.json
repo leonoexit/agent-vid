@@ -1,0 +1,51 @@
+{
+  "id": "viewer-puzzled-illustrated",
+  "name": "Người xem minh họa bối rối",
+  "category": "person",
+  "family": "viewer-reactions",
+  "description": "Fictional illustrated editorial viewer scratching their head, looking upward; Pop cut-paper contour.",
+  "tags": [
+    "người xem",
+    "bối rối",
+    "reaction",
+    "illustration",
+    "cut-paper",
+    "purple",
+    "magenta"
+  ],
+  "roles": [
+    "viewer reaction",
+    "surprise"
+  ],
+  "states": [
+    "scratching head",
+    "looking upward"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE premium playful editorial paper-cut illustration asset on a transparent background. A fictional young adult viewer, waist-up, shoulders tilted, one raised eyebrow, eyes looking toward upper left, mouth slightly open in puzzled amused disbelief, one hand scratching their head. Stylized expressive ink-drawn human character, NOT a photograph, NOT realistic skin, NOT a 3D model, NOT an emoji or corporate stock vector. Bold organic hand-painted shapes, deep plum ink outlines, lavender skin, vivid magenta short hair, violet and creamy-white striped shirt, subtle printed halftone in shadows. Contemporary youthful Pop editorial illustration, clean confident silhouette, narrow irregular white cut-paper contour all around. Pose should read instantly at small size. Entire head and hand within image, generous transparent margins, no props, no question marks, no lettering, no frame, no background, no baked external cast shadow. Portrait composition.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated fictional editorial illustration; no likeness of a real person claimed."
+  },
+  "file": "items/viewer-puzzled-illustrated/original.png",
+  "thumbnail": "items/viewer-puzzled-illustrated/thumbnail.png",
+  "sha256": "aec477aa8108d2b7e335123c5f9ec47642af8759eefe48295fce71da0819b4eb",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    0,
+    1024,
+    1536
+  ],
+  "added_at": "2026-10-09T12:34:05.270701+00:00",
+  "review": {
+    "status": "usable",
+    "note": "Agent inspected generated alpha and character in aqua Pop composition at phone scale. Fictional illustrated reaction, not documentary evidence or separate user approval.",
+    "updated_at": "2026-10-09T12:36:54.233669+00:00"
+  }
+}

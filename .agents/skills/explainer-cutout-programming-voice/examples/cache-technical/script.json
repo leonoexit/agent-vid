@@ -1,0 +1,39 @@
+{
+  "language": "vi",
+  "title": "Cache: lần sau lấy ở đâu?",
+  "audience": "Người mới học lập trình",
+  "story": {
+    "question": "Vì sao hỏi lại cùng dữ liệu có thể không cần gọi nguồn lần nữa?",
+    "example": "Nguồn trả A = 42, lưu một bản trong cache; lần hỏi A tiếp theo lấy từ cache.",
+    "takeaway": "Cache dùng lại kết quả đã có; cần cơ chế cập nhật khi dữ liệu đổi."
+  },
+  "intro": {
+    "title": "Hỏi lại.\nLấy ở đâu?",
+    "vo": "Bạn vừa hỏi dữ liệu A. Nếu hỏi lại đúng dữ liệu ấy, có cần lấy từ nguồn lần nữa không?"
+  },
+  "scenes": [
+    {
+      "title": "Lần đầu,\nchưa có sẵn.",
+      "vo": "Cache đang trống. Ta lấy A từ nguồn, nhận giá trị bốn mươi hai. Lưu một bản vào cache, rồi trả kết quả cho nơi yêu cầu.",
+      "cues": {
+        "request": "Ta lấy A từ nguồn",
+        "cache": "Lưu một bản vào cache",
+        "reply": "trả kết quả"
+      }
+    },
+    {
+      "title": "Lần sau,\nlấy bản đã có.",
+      "vo": "Hỏi A lần nữa. Cache đã có bốn mươi hai, nên trả ngay bản này. Số lần gọi nguồn vẫn là một.",
+      "cues": {
+        "request": "Hỏi A lần nữa",
+        "hit": "Cache đã có",
+        "reply": "trả ngay bản này",
+        "count": "vẫn là một"
+      }
+    }
+  ],
+  "outro": {
+    "title": "Có sẵn.\nChưa chắc mới nhất.",
+    "vo": "Cache giúp dùng lại kết quả. Nhưng khi dữ liệu nguồn đổi, bản lưu có thể đã cũ. Vì vậy, cần cách cập nhật hoặc bỏ bản lưu cũ."
+  }
+}

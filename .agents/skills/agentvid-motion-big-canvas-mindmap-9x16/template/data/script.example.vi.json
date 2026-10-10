@@ -1,0 +1,185 @@
+{
+  "title": "Cửa hàng online không chỉ là một cái website",
+  "source": "Tự viết từ kiến thức chung về bán hàng online. Không có số liệu đo; các con số trên màn hình chỉ là nhãn.",
+  "voice": {},
+  "align": "auto",
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "lines": [
+        {
+          "text": "Nếu tôi nói: một cửa hàng online không chỉ là một cái website, bạn có tin không?"
+        },
+        {
+          "text": "Để mình vẽ ra cho bạn xem, từng nhánh một."
+        },
+        {
+          "text": "Mình sẽ đi qua tám nhánh, và nhánh nào cũng nối về một chỗ: cửa hàng của bạn."
+        }
+      ]
+    },
+    {
+      "id": "s02-web",
+      "lines": [
+        {
+          "text": "Nhánh đầu tiên: website, mặt tiền cửa hàng của bạn."
+        },
+        {
+          "text": "Khách hàng vào xem trang chủ, danh mục, sản phẩm, tìm kiếm, rồi thêm vào giỏ hàng và thanh toán."
+        },
+        {
+          "text": "Trang sản phẩm có ảnh rõ, mô tả đủ và giá minh bạch thì khách hàng mới yên tâm."
+        },
+        {
+          "text": "Nhưng đây mới chỉ là chỗ khách hàng nhìn thấy."
+        }
+      ]
+    },
+    {
+      "id": "s03-channels",
+      "lines": [
+        {
+          "text": "Nhánh thứ hai: kênh bán."
+        },
+        {
+          "text": "Khách hàng không ở một nơi: họ lướt mạng xã hội, vào sàn thương mại điện tử, hay nhắn tin trực tiếp."
+        },
+        {
+          "text": "Mỗi kênh có cách mua riêng: có nơi khách hàng chủ động tìm, có nơi khách hàng tình cờ thấy rồi mua."
+        },
+        {
+          "text": "Shop có mặt đúng chỗ thì dễ được thấy hơn."
+        }
+      ]
+    },
+    {
+      "id": "s04-ads",
+      "lines": [
+        {
+          "text": "Nhánh thứ ba: kéo khách hàng về."
+        },
+        {
+          "text": "Một tiệm đẹp mà không ai biết thì cũng như mở trong hẻm vắng."
+        },
+        {
+          "text": "Nên cần quảng cáo, tìm kiếm, email và nội dung hay."
+        },
+        {
+          "text": "Quảng cáo trả tiền cho kết quả nhanh, còn nội dung thì bền hơn nhưng cần thời gian."
+        },
+        {
+          "text": "Mỗi đồng chi ra đều phải đo được."
+        }
+      ]
+    },
+    {
+      "id": "s05-stock",
+      "lines": [
+        {
+          "text": "Nhánh thứ tư: hàng hoá và kho."
+        },
+        {
+          "text": "Bán được mà hết hàng thì mất khách, còn tồn quá nhiều thì chôn vốn."
+        },
+        {
+          "text": "Vì vậy phải biết mỗi sản phẩm còn bao nhiêu, đang bán nhanh hay chậm."
+        },
+        {
+          "text": "Món nào bán chậm, hãy giảm giá hoặc gom thành combo để xả hàng."
+        }
+      ]
+    },
+    {
+      "id": "s06-ship",
+      "lines": [
+        {
+          "text": "Nhánh thứ năm: thanh toán và giao hàng."
+        },
+        {
+          "text": "Khách hàng trả tiền xong, đơn phải được đóng gói và giao đi đúng hẹn."
+        },
+        {
+          "text": "Phí vận chuyển và thời gian giao cũng quyết định khách hàng có chốt đơn hay không."
+        },
+        {
+          "text": "Giao xong chưa phải là hết việc: còn đổi trả và hoàn tiền."
+        }
+      ]
+    },
+    {
+      "id": "s07-care",
+      "lines": [
+        {
+          "text": "Nhánh thứ sáu: chăm sóc khách hàng."
+        },
+        {
+          "text": "Người mua lần đầu mà được phục vụ tốt, sẽ quay lại mua lần hai, lần ba."
+        },
+        {
+          "text": "Đó là một vòng lặp: mua, dùng, đánh giá, rồi mua lại."
+        },
+        {
+          "text": "Một lời cảm ơn, một mã giảm giá cho lần sau, hay tin nhắn hỏi thăm đều giúp khách hàng nhớ đến bạn."
+        },
+        {
+          "text": "Giữ khách cũ thường nhẹ gánh hơn kiếm khách mới."
+        }
+      ]
+    },
+    {
+      "id": "s08-data",
+      "lines": [
+        {
+          "text": "Nhánh thứ bảy: dữ liệu."
+        },
+        {
+          "text": "Mỗi đơn hàng, mỗi lượt xem đều để lại một con số."
+        },
+        {
+          "text": "Nhìn vào đó, bạn biết sản phẩm nào bán chạy, khách hàng đến từ đâu, và cửa hàng đang lời hay lỗ."
+        },
+        {
+          "text": "Đừng cố xem hết mọi con số: chọn vài chỉ số quan trọng và nhìn chúng mỗi ngày."
+        }
+      ]
+    },
+    {
+      "id": "s09-auto",
+      "lines": [
+        {
+          "text": "Nhánh thứ tám: tự động hoá."
+        },
+        {
+          "text": "Việc lặp lại, như nhắn xác nhận đơn, nhắc thanh toán, hay làm báo cáo, có thể giao cho máy."
+        },
+        {
+          "text": "Máy không mệt và không quên, nhưng bạn vẫn phải đặt luật cho nó."
+        },
+        {
+          "text": "Còn người chỉ cần giữ phần cần suy nghĩ."
+        }
+      ]
+    },
+    {
+      "id": "s10-recap",
+      "outro": true,
+      "lines": [
+        {
+          "text": "Nhìn lại toàn bộ bản đồ."
+        },
+        {
+          "text": "Website, kênh bán, quảng cáo, hàng hoá, giao hàng, chăm sóc, dữ liệu, và tự động hoá: tất cả chạy cùng nhau."
+        },
+        {
+          "text": "Website chỉ là chiếc lá bạn nhìn thấy nhiều nhất."
+        },
+        {
+          "text": "Phía sau là cả một hệ thống vận hành."
+        },
+        {
+          "text": "Hiểu cả bản đồ, bạn sẽ biết nên làm gì tiếp theo, và nhánh nào đang yếu."
+        }
+      ]
+    }
+  ]
+}

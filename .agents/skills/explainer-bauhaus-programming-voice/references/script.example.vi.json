@@ -1,0 +1,68 @@
+{
+  "language": "vi",
+  "title": "Phép chia lấy dư",
+  "audience": "Người mới học lập trình",
+  "story": {
+    "question": "7 % 3 trả về điều gì?",
+    "example": "7 % 3 = 1; 8 % 3 = 2; 9 % 3 = 0",
+    "takeaway": "Với số nguyên không âm và số chia dương, % lấy phần còn lại sau khi chia thành nhóm đủ."
+  },
+  "intro": {
+    "title": "CHIA XONG.\nCÒN GÌ?",
+    "vo": "Bảy chia thành từng nhóm ba. Dấu phần trăm trong đoạn code này sẽ cho ta biết điều gì?",
+    "cues": {
+      "equation": "Dấu phần trăm"
+    },
+    "label": "PHÉP CHIA LẤY DƯ"
+  },
+  "scenes": [
+    {
+      "title": "XẾP ĐỦ NHÓM.",
+      "vo": "Có bảy chấm. Xếp ba chấm vào nhóm thứ nhất, rồi ba chấm vào nhóm thứ hai. Còn lại một chấm, không đủ nhóm ba. Vì vậy, bảy chia lấy dư cho ba bằng một.",
+      "cues": {
+        "gather": "Có bảy",
+        "first": "nhóm thứ nhất",
+        "second": "nhóm thứ hai",
+        "rest": "Còn lại một",
+        "result": "Vì vậy"
+      },
+      "n": 7,
+      "view": "group",
+      "result": "7 % 3 = 1"
+    },
+    {
+      "title": "THÊM MỘT CHẤM.",
+      "vo": "Giữ hai nhóm cũ, thêm một chấm nữa thành tám. Hai chấm ở ngoài vẫn chưa đủ nhóm ba. Phần dư bây giờ là hai.",
+      "cues": {
+        "add": "thêm một chấm",
+        "rest": "Hai chấm ở ngoài",
+        "result": "Phần dư bây giờ"
+      },
+      "n": 8,
+      "view": "change",
+      "result": "8 % 3 = 2"
+    },
+    {
+      "title": "VỪA ĐỦ NHÓM.",
+      "vo": "Thêm một chấm thành chín. Ba chấm còn lại ghép thành nhóm thứ ba. Không còn chấm nào ở ngoài, nên phần dư bằng không.",
+      "cues": {
+        "add": "Thêm một chấm",
+        "third": "nhóm thứ ba",
+        "result": "Không còn chấm nào"
+      },
+      "n": 9,
+      "view": "exact",
+      "result": "9 % 3 = 0"
+    }
+  ],
+  "outro": {
+    "title": "LẤY PHẦN\nCÒN LẠI.",
+    "vo": "Dấu phần trăm ở đây lấy phần dư, không đếm số nhóm. Chia hết thì dư không. Ví dụ này dùng số nguyên không âm và số chia dương.",
+    "cues": {
+      "rule": "lấy phần dư",
+      "limit": "số nguyên không âm"
+    },
+    "label": "%",
+    "note": "SỐ NGUYÊN KHÔNG ÂM · SỐ CHIA DƯƠNG"
+  }
+}

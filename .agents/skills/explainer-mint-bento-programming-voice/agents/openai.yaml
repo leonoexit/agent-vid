@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mint Bento Programming Explainer"
+  short_description: "Soft flat UI tiles with linked explanatory state"
+  default_prompt: "Dùng $explainer-mint-bento-programming-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

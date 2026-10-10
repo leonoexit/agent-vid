@@ -1,0 +1,46 @@
+{
+  "id": "padlock-mint-closed",
+  "name": "padlock-mint-closed",
+  "category": "object",
+  "family": "mint-padlock",
+  "description": "Photographic mint padlock closed",
+  "tags": [
+    "lock-closed",
+    "mint",
+    "padlock",
+    "pop",
+    "collage"
+  ],
+  "roles": [
+    "access metaphor"
+  ],
+  "states": [
+    "lock-closed"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "One single CLOSED padlock photographic Pop collage cutout on transparent background. Front-on view, perfectly upright, all of the shackle and body visible. A sturdy rounded-square mint-green painted metal body, realistic subtle scratches, brushed silver U-shaped shackle closed into both top corners, small dark keyhole centered low on front face. Clean contemporary hardware, vivid mint with violet halftone shadow accents, narrow irregular white paper-cut contour. No text, branding, hands, chains, keys, background, table, external cast shadow. Not vector icon or 3D clay. Generous 8 percent transparent margin. This will be animated by swapping a matching open state, so make the body centered in the lower two-thirds.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration, not factual evidence or actual usage data."
+  },
+  "file": "items/padlock-mint-closed/original.png",
+  "thumbnail": "items/padlock-mint-closed/thumbnail.png",
+  "sha256": "1c81d5c6b17bf8e83de2f1883a510456256b5383bc1c9f273cd28b102b4e1dd3",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    27,
+    981,
+    1471
+  ],
+  "added_at": "2026-10-09T13:49:06.060436+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

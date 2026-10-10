@@ -1,0 +1,20 @@
+{
+  "frames": 1317,
+  "fps": 30,
+  "failures": [],
+  "imageCandidates": [
+    {
+      "pair": "image bounds: Commit mới: xóa key / Người que vẽ tay bối rối",
+      "first": 4.866666666666666,
+      "last": 7.033333333333333,
+      "frames": 66
+    },
+    {
+      "pair": "image bounds: commitlại.Vậylàantoànchưa?Chưa. / Người que vẽ tay bối rối",
+      "first": 4.866666666666666,
+      "last": 6.733333333333333,
+      "frames": 57
+    }
+  ],
+  "limits": "Text/paper intersections are conservative geometric checks. Image bounds are manual-review candidates, not alpha-aware occlusion verdicts."
+}

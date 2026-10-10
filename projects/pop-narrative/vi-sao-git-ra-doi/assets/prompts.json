@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "computer",
+      "prompt": "Use case: illustration-story. Create ONE isolated photographic paper cutout for a youthful Pop Collage documentary about why Git was created in 2005. Subject: a complete early-2000s desktop computer with chunky CRT monitor and keyboard, three-quarter frontal view, monitor showing a few abstract source-code lines without readable text. Medium: real photographic detail converted into crisp black-and-white halftone with electric purple tint on the casing, narrow irregular clean white paper cut contour. Not a vector icon, not clay 3D, not sepia or vintage damaged paper. Entire silhouette visible, centered and large with transparent margin. Actual transparent background. No extra props, words, logo or baked external cast shadow."
+    },
+    {
+      "name": "penguin",
+      "prompt": "Create ONE isolated photographic paper cutout of a real penguin, full body standing slightly angled, flippers open a little, curious confident pose, for a youthful Pop documentary about Linux. Monochrome photographic detail with fine halftone, tiny coral tint on feet, narrow irregular white cut-paper contour, crisp clean paper rather than aged sepia. Entire animal large centered with margins, no accessories or words, not the Tux cartoon, no vector look, no external shadow. Genuine transparent background. Illustration rather than documentary evidence."
+    },
+    {
+      "name": "source-bundle",
+      "prompt": "Create ONE isolated editorial photographic cutout: a fanned bundle of about four clean white printed source-code sheets, offset edges, held together by a small purple binder clip at upper left. Three quarter angle, paper visibly tactile, abstract short ink code-like lines without legible words. Black-and-white fine halftone with cyan and purple accent ink, narrow irregular white contour. Contemporary youthful Pop mixed-media collage, not a vector icon, not vintage parchment, not glossy 3D. Full silhouette centered, generous transparent margins, no background, no external shadow, no extra props."
+    },
+    {
+      "name": "typing-hands",
+      "prompt": "Create ONE isolated photographic cut-paper asset: close overhead three-quarter view of two anatomically realistic adult hands actively typing on an early-2000s off-white computer keyboard. Only hands, short wrists and keyboard together, complete keyboard silhouette visible. Editorial black-and-white halftone photo with vivid pink duotone on hands and purple accent keys, narrow clean irregular white paper cut contour. Contemporary youthful Pop collage, no face, no specific real person, no words or logos, no sepia texture, no tabletop, no external cast shadow. True transparent background, large centered subject with margins."
+    },
+    {
+      "name": "git-title",
+      "prompt": "Create a single expressive text-bearing paper cutout for a contemporary Pop collage film. Exact text: \"GIT\" in three large uppercase hand-painted block letters, black-purple ink with slight print texture, on an irregular bright lemon-yellow paper silhouette with a thin clean white cut edge. A small offset coral-red paper layer peeks behind the lower-right edge. Bold energetic editorial typography, tactile clean paper, wide horizontal word aspect about 2.3:1, not a software logo, no extra text, no icons, no baked external shadow. Entire paper piece visible with true transparent margins. Not vintage or sepia."
+    }
+  ]
+}

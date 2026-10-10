@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brown Glass Programming Explainer"
+  short_description: "Explain code with dark editorial diagrams and narration"
+  default_prompt: "Use $explainer-brown-glass-programming-voice to explain one programming concept through a concrete case, choosing an unexpected-result, change-impact or comparison route in the Brown Glass style, with native state changes, progressive reveals and Hải Đăng narration."

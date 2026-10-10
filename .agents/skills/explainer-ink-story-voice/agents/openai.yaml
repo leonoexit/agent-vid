@@ -1,4 +1,0 @@
-interface:
-  display_name: "Ink Story Explainer"
-  short_description: "Handwritten text-led programming explanations"
-  default_prompt: "Dùng $explainer-ink-story-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

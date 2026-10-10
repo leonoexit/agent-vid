@@ -1,0 +1,47 @@
+{
+  "id": "usage-receipt-pop",
+  "name": "usage-receipt-pop",
+  "category": "object",
+  "family": "usage-receipts",
+  "description": "Curled receipt with USAGE heading, symbolic non-numeric rows",
+  "tags": [
+    "usage-receipt",
+    "usage",
+    "receipts",
+    "pop",
+    "collage"
+  ],
+  "roles": [
+    "usage audit"
+  ],
+  "states": [
+    "usage-receipt"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "One long curling white thermal usage receipt, photographic contemporary Pop collage cutout, isolated on true transparent background. Three-quarter front view, vertical paper strip with a gently curled bottom and a few black printed item rows. Large clean heading exactly 'USAGE' at the top. Under heading use short black horizontal typographic-like rows and a small monochrome barcode near the bottom, no legible prices, no brand, no personal information. Fine paper fiber, violet and pale cyan halftone shadows, narrow white paper-cut edge. Entire receipt visible with 8 percent margins. No hands, background, table, external shadow or additional objects. Realistic printed paper, not vector UI or illustration.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration, not factual evidence or actual usage data."
+  },
+  "file": "items/usage-receipt-pop/original.png",
+  "thumbnail": "items/usage-receipt-pop/thumbnail.png",
+  "sha256": "4223601467364f02e6a1d299477846fd1b68f777e9489732babcec5f7e2f7131",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    25,
+    33,
+    999,
+    1503
+  ],
+  "added_at": "2026-10-09T13:49:06.422278+00:00",
+  "review": {
+    "status": "usable",
+    "note": "Agent inspected cutout transparency and composition in image-led API-key trial; usable asset, not user approval of the video or skill.",
+    "updated_at": "2026-10-09T13:58:54.926626+00:00"
+  }
+}

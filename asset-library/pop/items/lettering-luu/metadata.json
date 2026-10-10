@@ -1,0 +1,58 @@
+{
+  "id": "lettering-luu",
+  "name": "Chữ LƯU · giấy vàng",
+  "category": "lettering",
+  "family": "yellow-coral-lettering",
+  "variant_of": null,
+  "description": "Chữ LƯU đã sửa dấu Ư; ảnh chứa chữ cố định, không phải nhãn trống.",
+  "tags": [
+    "LƯU",
+    "save",
+    "chữ",
+    "title",
+    "vàng"
+  ],
+  "roles": [
+    "thao tác",
+    "tiêu đề"
+  ],
+  "states": [
+    "text-LUU"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. One standalone expressive text-bearing paper cutout for a modern Pop Collage explainer. Exact Vietnamese text: “LƯU” (L followed by Ư with horn, followed by U). Large irregular hand-painted condensed uppercase black-purple lettering, energetic and easily readable. Bright acid-yellow paper with torn but clean perimeter, a small offset coral paper layer peeking out behind. Paper grain and ink texture, modern youthful editorial collage, not sepia vintage. No other words or objects, no external shadow. Real transparent alpha outside the whole paper piece, wide horizontal composition with generous transparent margin.",
+    "project": "projects/pop-motion/vi-sao-nut-luu-la-dia-mem",
+    "project_file": "assets/luu-title.png",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-16b53650-8120-4ed6-8c92-d2c6291bab90.png",
+    "reference_asset_ids": [],
+    "edits": [
+      {
+        "original": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-b69ade23-cc3b-4687-8b9c-4524a51b1e04.png",
+        "reason": "Floating accent corrected to attached Ư horn",
+        "edit_prompt": "Correct ONLY the Vietnamese lettering in the attached paper label. It must read exactly LƯU: three characters L, Ư, U. The middle Ư is a U with a short horn attached to its upper RIGHT stem. It has NO floating accent above it, NO tilde, NO grave or acute accent. Use clean bold condensed uppercase typographic letters so the horn is unambiguous. Keep same yellow torn paper, coral backing, purple ink and paper print aesthetic, transparent alpha outside label. No other text."
+      }
+    ]
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/lettering-luu/original.png",
+  "thumbnail": "items/lettering-luu/thumbnail.png",
+  "sha256": "2581ef0278df3529e7d33922345c5179d8974876ae3c93edc673bc3521c8b834",
+  "width": 1774,
+  "height": 887,
+  "has_transparency": true,
+  "alpha_bounds": [
+    111,
+    69,
+    1662,
+    772
+  ],
+  "added_at": "2026-10-09T07:30:58.520403+00:00"
+}

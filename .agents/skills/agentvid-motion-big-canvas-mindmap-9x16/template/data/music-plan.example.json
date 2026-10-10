@@ -1,0 +1,10 @@
+{
+  "positive_global_styles": ["instrumental", "calm lo-fi acoustic study music", "exactly 90 bpm", "steady 4/4 grid", "soft brushed drums", "felt piano", "plucked acoustic guitar", "warm and focused", "clean gentle mix", "unobtrusive under a voice"],
+  "negative_global_styles": ["vocals", "singing", "lyrics", "spoken word", "choir", "aggressive", "distortion", "tempo changes", "long silence", "epic orchestra", "big drop"],
+  "sections": [
+    { "section_name": "Intro", "positive_local_styles": ["felt piano and guitar only", "no drums yet", "curious and calm"], "negative_local_styles": ["full band"], "duration_ms": 21333, "lines": [] },
+    { "section_name": "Groove", "positive_local_styles": ["soft brushed drums come in", "walking bass", "light plucks"], "negative_local_styles": ["big lift"], "duration_ms": 64000, "lines": [] },
+    { "section_name": "Lift", "positive_local_styles": ["slightly fuller warm band", "gentle glockenspiel melody", "uplifting but quiet"], "negative_local_styles": ["breakdown", "loud"], "duration_ms": 53333, "lines": [] },
+    { "section_name": "Tail", "positive_local_styles": ["drums stop", "one sustained piano chord", "gentle fade"], "negative_local_styles": ["drums", "new melody"], "duration_ms": 26667, "lines": [] }
+  ]
+}

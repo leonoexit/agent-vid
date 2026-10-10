@@ -1,0 +1,242 @@
+{
+  "ok": true,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "negative_z_index",
+        "severity": "warning",
+        "message": "`z-index: -1` paints the element behind its nearest stacking context's own content. With no stacking-context ancestor that context is the composition root itself, so an opaque background there hides it entirely: in the DOM, laid out, and absent from the picture. A transparent root leaves it visible. Siblings at `z-index: 0` or above are unaffected.",
+        "selector": ".strip::before,.caption::before",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/LeNguyen02SSD/Programming/agent-vid/projects/pop-motion/lo-api-key-github/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Give the element's parent a stacking context - `isolation: isolate` is the cheapest, and `transform`, `filter`, `opacity` below 1, `contain: paint` and `will-change` all work too. The negative-z child then paints above that parent's background and renders normally. Or express paint order through DOM order - an earlier sibling paints behind a later one - and raise the elements that should sit in front rather than lowering this one."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"explainer\"> is a timeline element that contains nested <main id=\"world\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#explainer",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/LeNguyen02SSD/Programming/agent-vid/projects/pop-motion/lo-api-key-github/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"explainer\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 2,
+    "findings": [
+      {
+        "code": "escaped_container",
+        "severity": "warning",
+        "time": 12.189,
+        "selector": "div.placed.slab",
+        "message": "Positioned element renders far outside its offset parent — its coordinates were likely computed in a different frame (canvas/viewport pixels).",
+        "rect": {
+          "left": 1056,
+          "top": -120.66,
+          "right": 1934,
+          "bottom": 2120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "containerSelector": "div.placed.field",
+        "text": "",
+        "fixHint": "Compute left/top in the offset parent's frame (subtract its rect), or mark intentional placement with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1056,
+          "y": -120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "firstSeen": 12.189,
+        "lastSeen": 41.442,
+        "occurrences": 7,
+        "heldMs": 0
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 2.438,
+        "selector": "div.placed.slab",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 606,
+          "top": -120.66,
+          "right": 1484,
+          "bottom": 2120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 404,
+          "top": 120.66,
+          "bottom": 200.66
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 606,
+          "y": -120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "firstSeen": 2.438,
+        "lastSeen": 2.438,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 7.313,
+        "selector": "div.placed.slab",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 721.2,
+          "top": -120.66,
+          "right": 1599.2,
+          "bottom": 2120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 519.2,
+          "top": 120.66,
+          "bottom": 200.66
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 721.2,
+          "y": -120.66,
+          "width": 878,
+          "height": 2241.33
+        },
+        "firstSeen": 7.313,
+        "lastSeen": 7.313,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 43.88,
+    "samples": [
+      2.438,
+      7.313,
+      12.189,
+      17.064,
+      21.94,
+      26.816,
+      31.691,
+      36.567,
+      41.442
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 3,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      2.438,
+      12.189,
+      21.94,
+      31.691,
+      41.442
+    ],
+    "checked": 69,
+    "passed": 69
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.75",
+    "latestVersion": "0.8.141",
+    "updateAvailable": true
+  }
+}

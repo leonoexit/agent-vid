@@ -1,0 +1,26 @@
+{
+  "new_assets": [
+    "eraser-pop-magenta",
+    "padlock-mint-closed",
+    "padlock-mint-open",
+    "magnifier-pop-violet",
+    "usage-receipt-pop"
+  ],
+  "new_prompts": [
+    "eraser.json",
+    "lock-closed.json",
+    "lock-open.json",
+    "magnifier.json",
+    "usage-receipt.json"
+  ],
+  "reused_assets": [
+    "viewer-stick-puzzled",
+    "brass-key-pop",
+    "paper-white-strip",
+    "paper-yellow-strip",
+    "source-code-bundle",
+    "hand-pointing-magenta"
+  ],
+  "library_assets": "../library-assets.json",
+  "scope": "Image-led project-only test; physical key/lock metaphors and fictional symbolic USAGE receipt. No real credential, billing amount or evidence of an actual breach. Paper labels and captions remain native text. Skill unchanged."
+}

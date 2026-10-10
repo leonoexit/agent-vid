@@ -1,0 +1,183 @@
+{
+  "frames": 1656,
+  "fps": 30,
+  "failures": [
+    {
+      "pair": "paper: Thay đổi 1 / Trước 2005 · nhân Linux",
+      "first": 10.8,
+      "last": 10.833333333333334,
+      "frames": 2
+    },
+    {
+      "pair": "paper: Thay đổi 2 / Trước 2005 · nhân Linux",
+      "first": 10.966666666666667,
+      "last": 11,
+      "frames": 2
+    },
+    {
+      "pair": "paper: Thay đổi 3 / Trước 2005 · nhân Linux",
+      "first": 11.1,
+      "last": 11.166666666666666,
+      "frames": 3
+    },
+    {
+      "pair": "paper: BitKeeper / MIỄN PHÍ",
+      "first": 19.6,
+      "last": 19.6,
+      "frames": 1
+    },
+    {
+      "pair": "paper: Cần công cụ mới. / 2005: chấm dứt miễn phí",
+      "first": 22.2,
+      "last": 23.166666666666668,
+      "frames": 30
+    }
+  ],
+  "imageCandidates": [
+    {
+      "pair": "image bounds: Vì sao / Minh họa cắt giấy: git-title",
+      "first": 0,
+      "last": 8.233333333333333,
+      "frames": 248
+    },
+    {
+      "pair": "image bounds: ra đời? / Minh họa cắt giấy: git-title",
+      "first": 0,
+      "last": 8.233333333333333,
+      "frames": 248
+    },
+    {
+      "pair": "image bounds: ra đời? / Minh họa cắt giấy: computer",
+      "first": 0,
+      "last": 7.433333333333334,
+      "frames": 224
+    },
+    {
+      "pair": "image bounds: BitKeeper Dùng miễn phí / Minh họa cắt giấy: computer",
+      "first": 0,
+      "last": 3.4,
+      "frames": 103
+    },
+    {
+      "pair": "image bounds: MẤT QUYỀN DÙNG MIỄN PHÍ / Minh họa cắt giấy: computer",
+      "first": 3.466666666666667,
+      "last": 8.233333333333333,
+      "frames": 144
+    },
+    {
+      "pair": "image bounds: MẤT QUYỀN DÙNG MIỄN PHÍ / Minh họa cắt giấy: penguin",
+      "first": 3.466666666666667,
+      "last": 8.1,
+      "frames": 140
+    },
+    {
+      "pair": "image bounds: MIỄN PHÍ / Minh họa cắt giấy: computer",
+      "first": 15.966666666666667,
+      "last": 19.633333333333333,
+      "frames": 111
+    },
+    {
+      "pair": "image bounds: 2005: chấm dứt miễn phí / Minh họa cắt giấy: computer",
+      "first": 19.533333333333335,
+      "last": 23.166666666666668,
+      "frames": 110
+    },
+    {
+      "pair": "image bounds: Cần công cụ mới. / Minh họa cắt giấy: computer",
+      "first": 22.2,
+      "last": 23.166666666666668,
+      "frames": 30
+    },
+    {
+      "pair": "image bounds: NHIỀU NHÁNH / Minh họa cắt giấy: computer",
+      "first": 25.7,
+      "last": 31.233333333333334,
+      "frames": 167
+    },
+    {
+      "pair": "image bounds: NHIỀU NHÁNH / Minh họa cắt giấy: source-bundle",
+      "first": 25.833333333333332,
+      "last": 31.5,
+      "frames": 177
+    },
+    {
+      "pair": "image bounds: PHÂN TÁN / Minh họa cắt giấy: computer",
+      "first": 31.233333333333334,
+      "last": 31.266666666666666,
+      "frames": 2
+    },
+    {
+      "pair": "image bounds: Người tạo ra Linux / Minh họa cắt giấy: git-title",
+      "first": 34.03333333333333,
+      "last": 34.166666666666664,
+      "frames": 5
+    },
+    {
+      "pair": "image bounds: KHO MÃ GIT · BẢN LƯU ĐẦU TIÊN / Minh họa cắt giấy: typing-hands",
+      "first": 35.266666666666666,
+      "last": 39.666666666666664,
+      "frames": 133
+    },
+    {
+      "pair": "image bounds: 07.04.2005 / Minh họa cắt giấy: typing-hands",
+      "first": 35.266666666666666,
+      "last": 39.666666666666664,
+      "frames": 133
+    },
+    {
+      "pair": "image bounds: Linus Torvalds · e83c516 / Minh họa cắt giấy: typing-hands",
+      "first": 35.266666666666666,
+      "last": 39.666666666666664,
+      "frames": 133
+    },
+    {
+      "pair": "image bounds: Mốc ghi trong lịch sử kho mã / Minh họa cắt giấy: typing-hands",
+      "first": 35.63333333333333,
+      "last": 39.666666666666664,
+      "frames": 122
+    },
+    {
+      "pair": "image bounds: Máy A / Minh họa cắt giấy: source-bundle",
+      "first": 41.93333333333333,
+      "last": 42,
+      "frames": 3
+    },
+    {
+      "pair": "image bounds: Máy B / Minh họa cắt giấy: source-bundle",
+      "first": 42.1,
+      "last": 42.166666666666664,
+      "frames": 3
+    },
+    {
+      "pair": "image bounds: Máy C / Minh họa cắt giấy: source-bundle",
+      "first": 42.3,
+      "last": 42.36666666666667,
+      "frames": 3
+    },
+    {
+      "pair": "image bounds: Thay đổi mới / Minh họa cắt giấy: source-bundle",
+      "first": 45,
+      "last": 47.766666666666666,
+      "frames": 116
+    },
+    {
+      "pair": "image bounds: Cộng tác tiếp. / Minh họa cắt giấy: penguin",
+      "first": 49.46666666666667,
+      "last": 55.166666666666664,
+      "frames": 172
+    },
+    {
+      "pair": "image bounds: Cộng tác tiếp. / Minh họa cắt giấy: computer",
+      "first": 49.46666666666667,
+      "last": 55.166666666666664,
+      "frames": 172
+    },
+    {
+      "pair": "image bounds: Ở quy mô lớn. / Minh họa cắt giấy: computer",
+      "first": 53,
+      "last": 55.166666666666664,
+      "frames": 66
+    }
+  ],
+  "limits": "Text/paper intersections are conservative geometric checks. Image bounds are manual-review candidates, not alpha-aware occlusion verdicts."
+}

@@ -1,0 +1,29 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><title>Mint Bento — UI edition</title><link rel="stylesheet" href="mint.css"><style>body{padding:36px;background:#d8e8e8}.sheet{display:grid;grid-template-columns:repeat(3,360px);gap:24px}.frame{width:360px;height:640px;overflow:hidden;position:relative}.spec{position:absolute;width:1080px;height:1920px;transform:scale(.333333);transform-origin:0 0;background:var(--aqua);overflow:hidden}.study-title{font-size:22px;margin:0 0 22px;font-weight:400}.foot{position:absolute;left:74px;bottom:65px;font-size:27px;color:#344f57;letter-spacing:.1px}</style><h1 class="study-title">MINT BENTO / UI edition — components, surfaces & accents</h1><main class="sheet"><div class="frame"><article class="spec" id="overview"></article></div><div class="frame"><article class="spec" id="detail"></article></div><div class="frame"><article class="spec" id="operation"></article></div></main><script src="assets/js/gsap.min.js"></script><script src="motion.js"></script><script src="icons.js"></script><script src="ui.js"></script><script>
+const U=MintUI,B=MintBento;
+function pop(p,title,sub,x,y,w=410){const e=U.box(p,'ui-popover',x,y,w,102);U.icon(e,'array','ui-dark',12,15,68).style.borderRadius='22px';const copy=U.box(e,'',98,19,w-120,80);U.text(copy,'label',title,0,0,w-130);U.text(copy,'ui-meta',sub,0,38,w-130);return e;}
+function foot(p,s){B.node('div','foot',p,s);}
+{
+ const p=document.getElementById('overview');U.hero(p,'Append',330,254,680,200,'check');const tag=pop(p,'items','Một thao tác',83,396,278);tag.style.transform='rotate(-18deg)';tag.querySelector('.ui-meta').textContent='Một thao tác';tag.querySelector('.label').textContent='push()';
+ const top=U.card(p,74,500,678,260,'ui-mint');U.chrome(top,'Hoạt động của mảng','JavaScript · hiện tại',678,{badge:'items'});const stat=U.box(top,'white',24,134,630,102);stat.style.borderRadius='31px';U.text(stat,'', '3',28,9,190).style.cssText+='font-size:78px;font-weight:350;letter-spacing:-4px';U.text(stat,'ui-meta','length',124,42,190);U.text(stat,'label','+1 phần tử',363,36,250);
+ const action=U.box(p,'ui-action',752,500,254,260);U.icon(action,'arrow-up-right','',38,41,178);
+ const focus=U.card(p,266,776,740,345);U.text(focus,'ui-meta','CUỐI MẢNG',34,65,240);U.text(focus,'', 'C',27,94,240).style.cssText+='font-size:222px;font-weight:300;line-height:1;letter-spacing:-12px';const bar=U.box(focus,'ui-dark pill',273,24,442,62);U.text(bar,'label','items',26,12,260);U.text(bar,'label','···',368,8,55);const rows=U.box(focus,'ui-rows',272,102,444,216);U.row(rows,'C','Phần tử','2','Index',{selected:true,accent:true});U.row(rows,'✓','Đã thêm',null,'Ở cuối mảng');
+ const strip=U.box(p,'ui-popover ui-dark',82,820,150,84);strip.style.cssText+='background:#142a37;color:#fff;transform:rotate(12deg)';U.text(strip,'label','+1',39,21,90);
+ const d=U.box(p,'ui-diamond',94,951,133,133);MintIcons.add(d,'plus');
+ const prop=U.card(p,74,1142,340,541,'ui-green');U.text(prop,'ui-heading','Array',28,34,280);U.text(prop,'', 'items',28,85,280).style.cssText+='font-size:58px;font-weight:350;letter-spacing:-2px';U.text(prop,'ui-meta','NỘI DUNG',30,179,270).style.color='#173d2a';['A','B','C'].forEach((v,i)=>{const r=U.box(prop,'ui-popover',22,222+i*80,296,70);r.style.padding='12px 18px';U.text(r,'ui-meta',String(i),18,21,55);U.text(r,'label',v,75,18,95);U.box(r,'ui-dot',253,28,12,12).style.background=i===2?'#ff6d61':'#4eb570';});
+ U.box(p,'clover',434,1140,410,375);const row1=pop(p,'push("C")','Thao tác hoàn tất',464,1223,510);const row2=pop(p,'Cùng mảng cũ','Giữ nguyên đối tượng',464,1350,510);row2.style.transform='rotate(7deg)';
+ const ring=U.box(p,'ui-ring',450,1462,225,225);U.icon(ring,'arrow-left','',27,27,147);
+ const bookmark=U.box(p,'ui-surface ui-mint',761,1460,213,213);bookmark.style.transform='rotate(28deg)';U.icon(bookmark,'bookmark','',34,31,145,'#79cba4');foot(p,'01 / UI collage · một đối tượng, nhiều góc nhìn');
+
+}
+{
+ const p=document.getElementById('detail');U.hero(p,'items',320,240,686,194,'array');U.text(p,'title','Chi tiết giải thích\ncon số.',74,510,934);const m=U.metric(p,3,{x:74,y:804,w:356,h:470});m.value.style.fontSize='260px';m.panel.lastChild.style.top='403px';
+ const d=U.detail(p,{x:456,y:804,w:550,h:470});U.text(d,'ui-meta','Mọi ô cùng phản ánh items.',28,411,494);
+ const a=U.array(p,['A','B','C'],{x:74,y:1310,w:932,newLast:true});const arrow=U.box(p,'ui-ring',861,1190,125,125);U.icon(arrow,'arrow-left','',14,14,77);foot(p,'02 / Mở chi tiết · đọc đúng quan hệ');
+}
+{
+ const p=document.getElementById('operation');U.hero(p,'push()',340,230,666,194,'plus');U.text(p,'title','Một thao tác.\nCác ô cùng đổi.',74,508,928);
+ U.array(p,['A','B','C','D'],{y:795,newLast:true});U.code(p,'D',{y:1205});U.metric(p,4,{y:1205});
+ const added=U.box(p,'ui-popover ui-dark',92,1480,520,103);added.style.cssText+='background:#142a37;color:#fff;transform:rotate(-8deg)';U.icon(added,'check','',20,26,45,'#bdf7df');U.text(added,'label','Đã thêm D vào items',91,33,390);
+ const small=U.box(p,'ui-popover',482,1430,182,90,'+1');small.style.cssText+='font-size:48px;transform:rotate(9deg)';U.box(small,'ui-dot',128,39,12,12).style.background='#ff6d61';foot(p,'03 / Thay đổi nội dung · cập nhật trạng thái');
+}
+</script></html>

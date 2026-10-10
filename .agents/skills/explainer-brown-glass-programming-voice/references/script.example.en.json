@@ -1,0 +1,257 @@
+{
+  "language": "en",
+  "title": "Assignment copies a value",
+  "brand": "AGENTVID",
+  "series": "ONE C EXAMPLE",
+  "kicker": "FOLLOW THE VALUE",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "card",
+      "tone": "orange",
+      "label": "x",
+      "value": "10",
+      "detail": "Initial value",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 30,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "y",
+      "kind": "card",
+      "tone": "purple",
+      "label": "y",
+      "value": "—",
+      "detail": "Separate variable",
+      "hiddenFields": [
+        "detail"
+      ],
+      "x": 490,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    }
+  ],
+  "intro": {
+    "title": "x changed. Why did y stay?",
+    "subtitle": "An observed run",
+    "note": "Replay three lines of C to find the cause.",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x",
+        "on": "twenty"
+      },
+      {
+        "value": "10",
+        "label": "y",
+        "on": "ten"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "stayed",
+    "tone": "dark",
+    "vo": "After this code ran, x was twenty, but y stayed at ten. Why did the two variables not change together?"
+  },
+  "scenes": [
+    {
+      "title": "Replay the assignment",
+      "vo": "Go back to before x changed. We create x with ten, then declare y using x. The dash in y only marks an unfilled part of our illustration.",
+      "events": [
+        {
+          "type": "show",
+          "on": "We create x",
+          "target": "x"
+        },
+        {
+          "type": "code",
+          "on": "We create x",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "type": "reveal",
+          "on": "with ten",
+          "target": "x",
+          "fields": [
+            "value",
+            "detail"
+          ]
+        },
+        {
+          "type": "show",
+          "on": "declare y",
+          "target": "y"
+        },
+        {
+          "type": "code",
+          "on": "declare y",
+          "lines": [
+            "int x = 10;",
+            "int y = x;"
+          ],
+          "active": 1
+        },
+        {
+          "type": "reveal",
+          "on": "The dash",
+          "target": "y",
+          "fields": [
+            "detail"
+          ]
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Read, then copy",
+      "vo": "This line reads the ten currently in x, then copies that number into y. Once the copy arrives, both hold ten; x keeps its value.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "This line",
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "reads the ten",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "transfer",
+          "on": "copies that number",
+          "from": "x",
+          "to": "y",
+          "value": "10",
+          "duration": 1
+        },
+        {
+          "type": "focus",
+          "on": "Once the copy arrives",
+          "targets": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "x keeps",
+          "slot": "takeaway",
+          "text": "Copying leaves x at 10"
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Only x is updated",
+      "vo": "Next, the line x equals twenty writes a new value into x. Now x holds twenty, while y still holds the copy of ten it received earlier.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Next",
+          "lines": [
+            "int x = 10;",
+            "int y = x;",
+            "x = 20;"
+          ],
+          "active": 2
+        },
+        {
+          "type": "write",
+          "on": "writes a new value",
+          "to": "x",
+          "value": "20",
+          "duration": 0.9
+        },
+        {
+          "type": "focus",
+          "on": "Now x",
+          "targets": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "while y",
+          "slot": "subtitle",
+          "text": "x = 20 · y = 10"
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Assignment does not rerun itself",
+      "vo": "Look back at the declaration of y: it ran when x was ten. Changing x does not rerun that line. So y keeps ten, matching the result we started with.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "declaration of y",
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "it ran",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "does not rerun",
+          "slot": "subtitle",
+          "text": "One assignment ≠ a live link"
+        },
+        {
+          "type": "focus",
+          "on": "matching the result",
+          "targets": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "tone": "dark"
+    }
+  ],
+  "outro": {
+    "title": "Assignment copies",
+    "subtitle": "At the time the line runs",
+    "subtitleOn": "when it runs",
+    "note": "This example uses two ordinary integers.",
+    "noteOn": "ordinary integers",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x now",
+        "on": "twenty"
+      },
+      {
+        "value": "10",
+        "label": "y keeps",
+        "on": "ten"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "ten",
+    "tone": "dark",
+    "vo": "Assignment copies the value when it runs. The result: x is twenty, y is still ten. These are two independent ordinary integers."
+  },
+  "storyFormat": "brown-glass-case-v1",
+  "story": {
+    "question": "Does y change when x changes after y = x?",
+    "example": "int x = 10; int y = x; x = 20;",
+    "takeaway": "Integer assignment copies the value when the line runs.",
+    "approach": "Observed result → replay assignment → explain the cause"
+  },
+  "audience": "Beginners familiar with variables and integers"
+}

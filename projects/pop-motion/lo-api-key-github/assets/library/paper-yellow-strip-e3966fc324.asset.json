@@ -1,0 +1,67 @@
+{
+  "id": "paper-yellow-strip",
+  "name": "Dải giấy vàng",
+  "category": "paper",
+  "family": "torn-paper-backplates",
+  "variant_of": null,
+  "description": "an emphasized result; giữ đúng tỷ lệ ảnh, đặt chữ trong vùng safe đã đăng ký.",
+  "tags": [
+    "giấy xé",
+    "paper",
+    "nhãn",
+    "label",
+    "container",
+    "blank",
+    "yellow strip"
+  ],
+  "roles": [
+    "đặt chữ",
+    "text backing"
+  ],
+  "states": [
+    "blank"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A long bright lemon-yellow (#fff064) torn paper strip, aspect ratio roughly 6:1. Slight irregular tear along lower edge and small curled corner confined to far right edge. Contemporary punchy paper collage. Flat clean center for dark lettering.",
+    "project_file": ".agents/skills/explainer-pop-collage-discovery-voice/template/assets/backplates/yellow-strip.png",
+    "reference_files": [
+      ".agents/skills/explainer-pop-collage-discovery-voice/references/source.png"
+    ]
+  },
+  "rights": {
+    "note": "Giấy tạo bằng imagegen trong dự án; prompt và tham chiếu gốc được giữ lại."
+  },
+  "safe_text_rect": [
+    130,
+    215,
+    1860,
+    260
+  ],
+  "visible_bounds": [
+    26,
+    167,
+    2154,
+    385
+  ],
+  "recommended_ink": "#342046",
+  "pop_backplate_key": "yellow-strip",
+  "file": "items/paper-yellow-strip/original.png",
+  "thumbnail": "items/paper-yellow-strip/thumbnail.png",
+  "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92",
+  "width": 2206,
+  "height": 713,
+  "has_transparency": true,
+  "alpha_bounds": [
+    17,
+    19,
+    2173,
+    694
+  ],
+  "added_at": "2026-10-09T07:30:58.660671+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

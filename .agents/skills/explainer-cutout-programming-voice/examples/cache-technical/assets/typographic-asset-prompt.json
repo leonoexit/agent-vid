@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "date": "2026-10-07",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept. Asset type: one transparent editorial collage typographic cutout for a modern programming explainer. Create ONE striking assembled mixed-media artwork, not a blank sticker: a photographic cobalt-blue folded paper duplicate underneath a vivid acid-lime printed paper fragment, a small coral torn-paper corner, with very large bold black Vietnamese sans typography integrated physically into the paper printing. Text verbatim, on two lines: \"BẢN\" then \"SAO\". The A in BẢN has the Vietnamese hook-above accent; spell correctly. The letters dominate the design and follow the slight perspective and tactile grain of the paper. One clean printed curving duplicate/copy motif can weave between the fragments. Fresh modern art-direction, sharp asymmetric silhouette, shallow real paper depth, directional studio light upper left, clean photography mixed with graphic print, strongly contrasting cobalt/lime/coral/black. All parts form a single coherent cutout that moves as one. Keep every letter fully visible, no other text, no logos, no watermark, no aged brown paper, no newspaper, no vintage or retro styling. Transparent alpha background with generous empty margins; no background rectangle, no surrounding scene or cast shadow outside the cutout.",
+  "file": "assets/images/copy-typographic.png",
+  "source": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-f656e1ac-633d-46a3-8cce-7794d9a885ea.png",
+  "text": "BẢN SAO",
+  "role": "A single inseparable typographic collage, not an executable data-flow diagram.",
+  "sha256": "5afe2edceebfb5b9ff03a8cf87eef62c9effaafb0c710ea081d576318f99d189"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "floppy-orange",
+  "name": "Đĩa mềm cam",
+  "category": "object",
+  "family": "floppy-disk",
+  "variant_of": null,
+  "description": "Đĩa mềm 3,5 inch cam đỏ, chốt kim loại và nhãn trắng không chữ.",
+  "tags": [
+    "đĩa mềm",
+    "floppy",
+    "disk",
+    "cam",
+    "orange"
+  ],
+  "roles": [
+    "lưu trữ",
+    "save",
+    "portable",
+    "mang tệp"
+  ],
+  "states": [
+    "front",
+    "blank-label"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Single reusable photographic Pop Collage cutout of a genuine-looking 3.5 inch floppy disk, nearly front-on, full intact square silhouette. Orange-red plastic shell, real silver metal shutter at TOP, plain cream paper label at bottom, no text or logos. Convincing photographic surface and printed grain, subtle halftone; saturated contemporary editorial collage, NOT a vector illustration or 3D clay render. Thin irregular white cut-paper contour follows entire object. No external cast shadow, no props, no background; real transparent alpha around isolated subject. Leave transparent margin on all edges. This is an illustrative video foreground piece.",
+    "project": "projects/pop-motion/vi-sao-nut-luu-la-dia-mem",
+    "project_file": "assets/floppy.png",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-c6a9c207-bd23-46ec-ac37-c2d2ec568046.png",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/floppy-orange/original.png",
+  "thumbnail": "items/floppy-orange/thumbnail.png",
+  "sha256": "935958540db297daff6c728736acec255dec595248fd63ea171367c70a7d730a",
+  "width": 1254,
+  "height": 1254,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    4,
+    1214,
+    1218
+  ],
+  "added_at": "2026-10-09T07:30:58.277415+00:00"
+}

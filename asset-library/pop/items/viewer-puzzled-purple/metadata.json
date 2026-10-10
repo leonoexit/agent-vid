@@ -1,0 +1,58 @@
+{
+  "id": "viewer-puzzled-purple",
+  "name": "Người xem thắc mắc — tím",
+  "category": "person",
+  "family": "viewer-reactions",
+  "description": "Fictional photographic Pop cutout of an adult man with raised eyebrow, hand at chin and gaze toward upper left. Editorial viewer reaction, not a historical participant.",
+  "tags": [
+    "người",
+    "thắc mắc",
+    "suy nghĩ",
+    "hài hước",
+    "phản ứng",
+    "person",
+    "puzzled",
+    "reaction",
+    "viewer",
+    "purple",
+    "photographic",
+    "cutout"
+  ],
+  "roles": [
+    "viewer reaction",
+    "question",
+    "skepticism",
+    "visual aside"
+  ],
+  "states": [
+    "hand at chin",
+    "looking upper left",
+    "raised eyebrow"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: reusable reaction cutout for a vivid contemporary Pop mixed-media collage explainer. Create ONE fictional adult man's head and upper torso, realistic editorial photographic texture, humorous but charming puzzled expression: one eyebrow raised, eyes looking clearly toward the UPPER LEFT, head slightly tilted, lips pursed in an amused 'really?' reaction. One hand rests at his chin in a natural thinking pose, anatomically correct fingers. Simple dark purple crew-neck shirt; black-and-white photographic face with restrained purple duotone print shadows and subtle halftone detail. Narrow irregular white cut-paper contour follows the entire head, shoulders and hand, as though cut from a magazine. Waist-up compact silhouette suitable for a small visual aside in the lower right of a vertical video, facing the big moth above-left. Fully contain hair, head, shoulders and hand within the canvas with transparent margins. Background must be genuinely transparent alpha. No text, no question marks, no bubble, no circular badge, no frame, no environment, no baked external shadow, no logos. This person is a fictional viewer reaction, not a historical figure. Contemporary clean youthful collage, not vintage paper, vector, cartoon drawing, or glossy 3D.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated fictional person; no claim of historical identity, endorsement or third-party clearance."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent inspected generated cutout, gaze, anatomy and true alpha for the BUG reaction beat; not an individual user approval."
+  },
+  "file": "items/viewer-puzzled-purple/original.png",
+  "thumbnail": "items/viewer-puzzled-purple/thumbnail.png",
+  "sha256": "d64d8bdb7e68cefc7e4e6828c0a24789374fb04ebc5711119a04433415da3d69",
+  "width": 1145,
+  "height": 1374,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    23,
+    1145,
+    1351
+  ],
+  "added_at": "2026-10-09T08:21:50.318017+00:00"
+}

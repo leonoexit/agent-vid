@@ -12,7 +12,9 @@ export UV_CACHE_DIR="$_agentvid_root/.cache/uv"
 export npm_config_cache="$_agentvid_root/.cache/npm"
 # The bundled multix resolver uses npm root -g; keep that prefix local.
 export npm_config_prefix="$_agentvid_root/.runtime/npm"
-export PATH="$_agentvid_root/node_modules/.bin:$npm_config_prefix/bin:$PATH"
+export REELCREW_HOME="$_agentvid_root/.runtime/reelcrew"
+export REELCREW_SKILLS_DIR="$_agentvid_root/.agents/skills"
+export PATH="$_agentvid_root/node_modules/.bin:$REELCREW_HOME/bin:$npm_config_prefix/bin:$PATH"
 export HYPERFRAMES_NO_TELEMETRY=1
 export HYPERFRAMES_FONT_CACHE_DIR="$_agentvid_root/.cache/hyperframes/fonts"
 export HYPERFRAMES_EXTRACT_CACHE_DIR="$_agentvid_root/.cache/hyperframes/frames"

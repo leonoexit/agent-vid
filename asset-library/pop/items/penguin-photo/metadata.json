@@ -1,0 +1,51 @@
+{
+  "id": "penguin-photo",
+  "name": "Chim cánh cụt",
+  "category": "object",
+  "family": "penguin",
+  "variant_of": null,
+  "description": "Chim cánh cụt ảnh minh hoạ, không phải logo Tux hoặc ảnh tư liệu Linux.",
+  "tags": [
+    "chim cánh cụt",
+    "penguin",
+    "Linux",
+    "animal"
+  ],
+  "roles": [
+    "biểu tượng",
+    "ngữ cảnh Linux"
+  ],
+  "states": [
+    "standing",
+    "full-body"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Create ONE isolated photographic paper cutout of a real penguin, full body standing slightly angled, flippers open a little, curious confident pose, for a youthful Pop documentary about Linux. Monochrome photographic detail with fine halftone, tiny coral tint on feet, narrow irregular white cut-paper contour, crisp clean paper rather than aged sepia. Entire animal large centered with margins, no accessories or words, not the Tux cartoon, no vector look, no external shadow. Genuine transparent background. Illustration rather than documentary evidence.",
+    "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+    "project_file": "assets/penguin.png",
+    "original_tool_output": null,
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/penguin-photo/original.png",
+  "thumbnail": "items/penguin-photo/thumbnail.png",
+  "sha256": "7ff82cf062f81dd181097e205c23e6ddac5b5a05bea86106149db1525f90e0bf",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    23,
+    1024,
+    1513
+  ],
+  "added_at": "2026-10-09T07:30:58.380337+00:00"
+}

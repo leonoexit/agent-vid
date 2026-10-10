@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  agentvid-motion-big-canvas-mindmap composition: ONE big mind map drawn by a pen on warm paper while the camera travels from
+  node to node. Do not write scenes here: describe them in data/storyboard.json (hook, branch..., recap).
+  build-timeline.mjs injects TIMING, BRAND and STORYBOARD. Camera and pen are pure functions of the clock (scenes/canvas-pen.js).
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={{WIDTH}}, height={{HEIGHT}}">
+    <title>Big canvas mind map</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="theme.css">
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="60" data-width="{{WIDTH}}" data-height="{{HEIGHT}}" style="width: {{WIDTH}}px; height: {{HEIGHT}}px">
+      <div id="stage" class="layer"></div>
+      <div id="world-layer" class="layer" style="overflow: hidden"><div id="world" data-layout-allow-overflow></div></div>
+      <div id="overlay" class="layer"></div>
+      <div id="pen"><div class="pen-art"></div></div>
+      <div id="fade" class="layer"></div>
+      <audio id="mix" src="assets/audio/mix.m4a" data-start="0" data-duration="60" data-track-index="10" data-volume="1"></audio>
+    </div>
+
+    <script>/*TIMING:BEGIN*/window.TIMING=null;/*TIMING:END*/</script>
+    <script>/*BRAND:BEGIN*/window.BRAND=null;/*BRAND:END*/</script>
+    <script>/*STORYBOARD:BEGIN*/window.STORYBOARD=null;/*STORYBOARD:END*/</script>
+    <script src="runtime/motion-runtime.js"></script>
+    <script src="runtime/scene-registry.js"></script>
+    <script src="scenes/morph-icons.js"></script>
+    <script src="scenes/canvas-geom.js"></script>
+    <script src="scenes/canvas-pen.js"></script>
+    <script src="scenes/canvas-painter.js"></script>
+    <script src="scenes/canvas-parts.js"></script>
+    <script src="scenes/canvas-world.js"></script>
+    <script src="scenes/canvas-scenes.js"></script>
+    <script src="scenes/canvas-main.js"></script>
+    <script>
+      (() => {
+        document.documentElement.lang = window.TIMING.language || "en";
+        const kit = MotionKit.create(window.TIMING);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["main"] = kit.tl; // explicit registration: hyperframes lint checks this file
+        CanvasTheme.build(kit);
+      })();
+    </script>
+  </body>
+</html>

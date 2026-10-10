@@ -1,0 +1,73 @@
+{
+  "language": "vi",
+  "title": "Vì sao Git ra đời?",
+  "audience": "Người tò mò về công nghệ, không cần biết Git",
+  "story": {
+    "question": "Vì sao Git ra đời năm 2005?",
+    "example": "Cộng đồng nhân Linux chuyển từ BitKeeper sang tự phát triển Git",
+    "takeaway": "Việc chấm dứt cung cấp BitKeeper miễn phí là bước ngoặt; quy mô và cách cộng tác của Linux định hình Git."
+  },
+  "intro": {
+    "title": "Vì sao Git ra đời?",
+    "vo": "Năm hai nghìn không trăm linh năm, nhóm phát triển nhân Linux mất quyền dùng miễn phí công cụ quản lý mã nguồn. Cú đứt gãy đó thúc đẩy sự ra đời của Gít.",
+    "cues": {
+      "loss": "mất quyền",
+      "git": "Gít"
+    }
+  },
+  "scenes": [
+    {
+      "title": "Trước bước ngoặt",
+      "vo": "Trước đó, họ dùng Bít Ki pờ để theo dõi và hợp nhất những thay đổi trong mã nguồn. Nhiều người cùng sửa, nhưng vẫn phải ghép thành một dự án chung.",
+      "cues": {
+        "tool": "Bít Ki pờ",
+        "changes": "những thay đổi",
+        "merge": "ghép thành"
+      }
+    },
+    {
+      "title": "2005: thỏa thuận chấm dứt",
+      "vo": "Rồi quan hệ giữa cộng đồng và công ty làm Bít Ki pờ đổ vỡ. Công cụ không còn được cung cấp miễn phí như trước. Họ cần một phương án thay thế.",
+      "cues": {
+        "break": "đổ vỡ",
+        "free": "không còn",
+        "need": "thay thế"
+      }
+    },
+    {
+      "title": "Yêu cầu từ Linux",
+      "vo": "Công cụ mới phải nhanh, xử lý được dự án lớn và nhiều nhánh phát triển song song. Nó còn phải phân tán, để việc quản lý phiên bản không dồn hết vào một máy chủ.",
+      "cues": {
+        "fast": "phải nhanh",
+        "branches": "nhiều nhánh",
+        "distributed": "phân tán"
+      }
+    },
+    {
+      "title": "Linus bắt tay làm Git",
+      "vo": "Li nớt Tô van, người tạo ra Linux, bắt tay xây dựng Gít. Ngày bảy tháng tư năm hai nghìn không trăm linh năm, kho mã của Gít ghi nhận bản lưu đầu tiên.",
+      "cues": {
+        "build": "xây dựng Gít",
+        "date": "Ngày bảy",
+        "first": "bản lưu đầu tiên"
+      }
+    },
+    {
+      "title": "Một cách làm việc mới",
+      "vo": "Với cách sao chép thông thường, mỗi người có cả lịch sử dự án trên máy mình. Họ có thể ghi lại thay đổi tại chỗ, rồi trao đổi và hợp nhất với nhau.",
+      "cues": {
+        "copy": "cả lịch sử",
+        "local": "tại chỗ",
+        "join": "hợp nhất"
+      }
+    }
+  ],
+  "outro": {
+    "title": "Nhu cầu tạo nên công cụ",
+    "vo": "Gít ra đời để giải quyết một nhu cầu rất cụ thể của Linux: tiếp tục cộng tác, ở quy mô lớn, bằng công cụ do cộng đồng tự phát triển.",
+    "cues": {
+      "why": "nhu cầu",
+      "community": "cộng đồng"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* theme.css: big-canvas-mindmap look. Warm flat paper, ink-black type, one colour per branch, a red marker for the point,
+ * yellow sticky notes. Colours are CSS variables so a library style can re-tone them (theme.json "styleTokens").
+ * The map itself is drawn in world pixels inside #world; #overlay (stickies) and #pen live in screen pixels. */
+:root {
+  --paper: #f7f5ed;
+  --ink: #26241f;
+  --muted: #8f8c80;
+  --ghost: #cfcbbd;
+  --ghost-text: #918e85; /* ghost labels still pass 3:1 on the paper; the dashed ring carries the faint look */
+  --accent: #d1332e;
+  --hl: #f6dd6c;
+  --display: "Baloo 2", system-ui, sans-serif;
+  --body: "Baloo 2", system-ui, sans-serif;
+  --t-ink: #26241f;
+  --t-blue: #2a62b0;
+  --t-teal: #17a08a;
+  --t-purple: #6a45b5;
+  --t-magenta: #c4165c;
+  --t-orange: #cb7a18;
+  --t-green: #2f9e44;
+  --t-brown: #8b5a3c;
+  --t-red: #d1332e;
+}
+html, body { margin: 0; background: var(--paper); }
+#root { position: relative; overflow: hidden; background: var(--paper); color: var(--ink); font-family: var(--body); }
+.layer { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+#stage { overflow: hidden; }
+#world { position: absolute; left: 0; top: 0; width: 0; height: 0; transform-origin: 0 0; }
+#overlay { pointer-events: none; }
+#fade { background: #000; opacity: 0; pointer-events: none; z-index: 50; }
+
+/* ---- strokes: every drawn path is one pen move (pathLength=1, dash 1) ---- */
+svg.psvg { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+path.draw { opacity: 0; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+path.ghost { fill: none; stroke: var(--ghost); stroke-linecap: round; }
+.ico { position: absolute; overflow: visible; }
+.ico * { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ico .draw { opacity: 0; stroke-dasharray: 1; stroke-dashoffset: 1; }
+
+/* ---- groups, node labels, text ---- */
+.grp { position: absolute; }
+.nlabel { position: absolute; left: 0; width: 100%; text-align: center; font-weight: 800; font-size: 74px; line-height: 1; white-space: nowrap; color: var(--ghost-text); }
+.nlabel > span, .tx > span { display: inline-block; position: relative; }
+.tx { position: absolute; left: 0; width: 100%; white-space: nowrap; line-height: 1.1; font-weight: 600; color: var(--ink); }
+.tx.c { text-align: center; }
+.tx.l { text-align: left; }
+.tx.sub { font-size: 36px; font-weight: 600; color: var(--ink); }
+.tx.note { font-weight: 700; color: var(--accent); }
+.tx.mute { color: var(--muted); }
+.tx.old { color: var(--muted); }
+.item { position: absolute; height: 62px; }
+.item .tx { font-size: 36px; }
+.chip { position: absolute; height: 64px; }
+.chip .tx { font-size: 34px; text-align: center; }
+.cap { position: absolute; text-align: center; font-weight: 600; font-size: 30px; line-height: 1.05; white-space: nowrap; }
+.cap > span { display: inline-block; position: relative; }
+.rv { visibility: hidden; }
+
+/* ---- sticky notes (screen space) ---- */
+.sticky { position: absolute; background: var(--hl); border-radius: 6px; box-shadow: 0 12px 24px rgba(60, 50, 20, .22), 0 2px 0 rgba(0, 0, 0, .06); padding: 28px 34px 30px; font-weight: 700; color: var(--ink); line-height: 1.12; transform-origin: 50% 0; }
+.sticky .sl { position: relative; white-space: nowrap; font-size: 58px; }
+.sticky .sl > span { display: inline-block; position: relative; }
+.sticky .sl + .sl { margin-top: 8px; }
+.sticky.big .sl { font-size: 64px; }
+.sticky.list .sl { font-size: 54px; }
+.sticky .head { font-size: 40px; color: var(--accent); margin-bottom: 14px; }
+
+/* ---- the hand with the pen (screen space, tip at the element's origin) ---- */
+#pen { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 20; pointer-events: none; will-change: transform; }
+#pen .pen-art { position: absolute; }
+#pen .pen-art img { display: block; filter: drop-shadow(6px 10px 10px rgba(60, 50, 30, .22)); }
+#pen .pen-shadow { position: absolute; left: -12px; top: -2px; width: 56px; height: 13px; border-radius: 50%; background: rgba(60, 55, 40, .16); filter: blur(3px); }

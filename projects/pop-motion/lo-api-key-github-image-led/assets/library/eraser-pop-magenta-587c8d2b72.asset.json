@@ -1,0 +1,46 @@
+{
+  "id": "eraser-pop-magenta",
+  "name": "eraser-pop-magenta",
+  "category": "object",
+  "family": "office-erasers",
+  "description": "Photographic pink eraser cutout",
+  "tags": [
+    "eraser",
+    "office",
+    "erasers",
+    "pop",
+    "collage"
+  ],
+  "roles": [
+    "erase evidence"
+  ],
+  "states": [
+    "eraser"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "A single large pink rubber eraser, photographic mixed-media Pop collage cutout on a true transparent background. Rectangular slanted school eraser with slightly worn bevels and realistic rubber texture, diagonally from upper right to lower left as if rubbing a sheet. Vivid hot-pink body, violet halftone shadow tones, narrow irregular white paper-cut contour. Modern clean editorial photography, complete silhouette with small transparent margins. No text, brand, hands, pencil, page, crumbs, background or external baked shadow. NOT a vector icon and NOT 3D clay.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration, not factual evidence or actual usage data."
+  },
+  "file": "items/eraser-pop-magenta/original.png",
+  "thumbnail": "items/eraser-pop-magenta/thumbnail.png",
+  "sha256": "587c8d2b72d28638969a9764d66cbe7032bd3a6c99c7d0cd2f634e24b7ebcecf",
+  "width": 1536,
+  "height": 1024,
+  "has_transparency": true,
+  "alpha_bounds": [
+    43,
+    0,
+    1492,
+    1024
+  ],
+  "added_at": "2026-10-09T13:49:05.918581+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "generation": "built-in image_gen; five independent assets",
+  "exactPrompts": "prompts.json",
+  "assets": [
+    {
+      "file": "assets/computer.png",
+      "role": "Continuity anchor in opening/context/loss, distributed copies and payoff; exits before branch demonstration.",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "66d05b39e211645c3079f08b0d4eab53a5221e1780fe91a62eed3aa4c4141170",
+      "type": "generated illustration, not archival evidence"
+    },
+    {
+      "file": "assets/penguin.png",
+      "role": "Symbolic Linux context, opening and payoff",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "7ff82cf062f81dd181097e205c23e6ddac5b5a05bea86106149db1525f90e0bf",
+      "type": "generated illustration, not archival evidence"
+    },
+    {
+      "file": "assets/source-bundle.png",
+      "role": "Changes and repository history, scenes 2/4/6",
+      "size": [
+        1224,
+        1285
+      ],
+      "mode": "RGBA",
+      "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d",
+      "type": "generated illustration, not archival evidence"
+    },
+    {
+      "file": "assets/typing-hands.png",
+      "role": "Unused in v2; retained for original revision.",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "5bca404d6b112724b050806899511cf5489be919771e23767fe620a4256136a4",
+      "type": "generated illustration, not archival evidence"
+    },
+    {
+      "file": "assets/git-title.png",
+      "role": "Expressive generated lettering, opening/creation/payoff/cover",
+      "size": [
+        1902,
+        827
+      ],
+      "mode": "RGBA",
+      "sha256": "195a38a412eb39e7414faf9f32b0c99d4cf1828e18843f201aae0683bc67301f",
+      "type": "generated illustration, not archival evidence"
+    },
+    {
+      "file": "assets/linus-torvalds-2014.jpg",
+      "role": "Actual portrait in creation passage; dated 2014 onscreen, not presented as a photo from 2005",
+      "type": "licensed documentary photograph",
+      "author": "Krd (photo), Von Sprat (crop/extraction)",
+      "source": "https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "treatment": "Original file preserved; rendered grayscale in white paper print via CSS. Photo treatment available under CC BY-SA 4.0.",
+      "sha256": "371c4559f0262743a9c3f0e69e7a693501cc9ab8c3d80598a4b4110d59107657"
+    }
+  ]
+}

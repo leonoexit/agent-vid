@@ -1,0 +1,20 @@
+{
+  "frames": 1317,
+  "fps": 30,
+  "failures": [],
+  "imageCandidates": [
+    {
+      "pair": "image bounds: COMMIT CŨ / source-code-bundle",
+      "first": 9.8,
+      "last": 14.266666666666667,
+      "frames": 135
+    },
+    {
+      "pair": "image bounds: tranhậtkýsửdụngvàchiphíbất / usage-receipt-pop",
+      "first": 32.86666666666667,
+      "last": 33.06666666666667,
+      "frames": 7
+    }
+  ],
+  "limits": "Text/paper intersections are conservative geometric checks. Image bounds are manual-review candidates, not alpha-aware occlusion verdicts."
+}

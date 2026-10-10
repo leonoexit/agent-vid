@@ -1,0 +1,70 @@
+{
+  "language": "vi",
+  "title": "push thêm phần tử vào đâu?",
+  "audience": "Người mới học JavaScript",
+  "story": {
+    "question": "push thay đổi mảng như thế nào?",
+    "example": "const items = [\"A\", \"B\"]; items.push(\"C\"); items.push(\"D\");",
+    "takeaway": "push thêm vào cuối chính mảng đó; length tăng theo số phần tử được thêm."
+  },
+  "intro": {
+    "title": "Thêm một.\nĐổi ở đâu?",
+    "vo": "Mảng items đang có A và B. Khi dùng push để thêm C, những gì trên màn hình sẽ thay đổi?",
+    "cues": {
+      "question": "dùng push"
+    },
+    "label": "Một mảng · nhiều góc nhìn"
+  },
+  "scenes": [
+    {
+      "title": "C vào cuối mảng.",
+      "vo": "Lệnh push thêm C vào cuối mảng items. Khi C đã vào chỗ, mảng có ba phần tử và length đổi từ hai thành ba.",
+      "cues": {
+        "code": "Lệnh push",
+        "append": "thêm C",
+        "result": "Khi C đã vào chỗ"
+      },
+      "before": [
+        "A",
+        "B"
+      ],
+      "item": "C"
+    },
+    {
+      "title": "Cùng một trạng thái.",
+      "vo": "Ô danh sách và ô length cùng mô tả mảng items. Ba phần tử ở đây tương ứng với số ba ở kia. Đây là hai cách xem cùng một mảng.",
+      "cues": {
+        "inspect": "Ô danh sách",
+        "match": "Ba phần tử"
+      },
+      "items": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "title": "Thêm D.\nQuy tắc giữ nguyên.",
+      "vo": "Giữ nguyên mảng vừa rồi, ta dùng push thêm D vào cuối. Mảng vẫn bắt đầu bằng A, B, C; giờ có thêm D và length bằng bốn.",
+      "cues": {
+        "code": "dùng push",
+        "append": "thêm D",
+        "result": "giờ có thêm D"
+      },
+      "before": [
+        "A",
+        "B",
+        "C"
+      ],
+      "item": "D"
+    }
+  ],
+  "outro": {
+    "title": "Thêm vào cuối.\nMảng cũ thay đổi.",
+    "vo": "Với mảng JavaScript này, push thêm vào cuối chính mảng đang có. Ô length chỉ phản ánh số phần tử mới, không phải một mảng thứ hai.",
+    "cues": {
+      "rule": "chính mảng đang có"
+    },
+    "label": "Array.push()"
+  }
+}

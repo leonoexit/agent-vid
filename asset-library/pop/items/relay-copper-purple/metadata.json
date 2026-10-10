@@ -1,0 +1,51 @@
+{
+  "id": "relay-copper-purple",
+  "name": "Rơ-le điện cơ · đồng và tím",
+  "description": "Minh họa cụm rơ-le điện cơ, không phải ảnh hiện vật Mark II.",
+  "category": "object",
+  "family": "electromechanical-relay",
+  "variant_of": null,
+  "tags": [
+    "rơ le",
+    "relay",
+    "cuộn dây",
+    "đồng",
+    "linh kiện",
+    "điện"
+  ],
+  "roles": [
+    "cơ cấu",
+    "công tắc điện",
+    "lịch sử máy tính"
+  ],
+  "states": [
+    "exposed-assembly"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "One isolated photographic cut-paper illustration of an exposed electromechanical relay assembly: a copper wire coil around an iron core, visible spring-loaded metal armature and a pair of distinct metal electrical contacts, on a compact dark base. Three-quarter macro photographic view. Convincing industrial metal and copper material detail, monochrome with restrained violet and coral print tint, fine editorial halftone. Crisp thin white irregular cut-paper perimeter. Entire assembly visible, no wires trailing off image, no insect, no text, no numbered labels, no background, no cast shadow. Transparent alpha. Modern youthful Pop mixed-media collage, not vector, not clay, not an exact historic Mark II component replica.",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-ad19a426-8f8f-4833-9cd7-c1c6ea724bcb.png",
+    "project": "projects/pop-motion/vi-sao-goi-la-bug"
+  },
+  "rights": {
+    "note": "Minh hoạ tạo bằng image_gen trong dự án; không phải ảnh tư liệu."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent đã xem hình, kiểm tra alpha và dựng thử; chưa được người dùng duyệt."
+  },
+  "file": "items/relay-copper-purple/original.png",
+  "thumbnail": "items/relay-copper-purple/thumbnail.png",
+  "sha256": "bab962411b3742ee906cb1f17880fc2a136473e816f9a766650fa5789ef01581",
+  "width": 1312,
+  "height": 1199,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    41,
+    1274,
+    1112
+  ],
+  "added_at": "2026-10-09T07:56:58.614315+00:00"
+}

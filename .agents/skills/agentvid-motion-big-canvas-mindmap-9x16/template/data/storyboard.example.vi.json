@@ -1,0 +1,524 @@
+{
+  "topic": "Cửa hàng online",
+  "root": {
+    "label": "Cửa hàng online",
+    "tone": "ink"
+  },
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "type": "hook",
+      "rootAt": "vẽ",
+      "sticky": {
+        "lines": [
+          {
+            "text": "Cửa hàng online",
+            "at": "cửa"
+          },
+          {
+            "text": "= một cái website?",
+            "at": "website"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02-web",
+      "type": "branch",
+      "node": {
+        "label": "Website",
+        "tone": "blue",
+        "side": "left",
+        "row": -1,
+        "icon": "globe",
+        "at": "website",
+        "sub": "mặt tiền cửa hàng",
+        "subAt": "mặt",
+        "note": "= chỗ khách hàng nhìn thấy",
+        "noteAt": "đây"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "cols": 2,
+          "ring": {
+            "tone": "red",
+            "at": "thanh"
+          },
+          "items": [
+            {
+              "text": "Trang chủ",
+              "icon": "store",
+              "at": "trang"
+            },
+            {
+              "text": "Danh mục",
+              "icon": "layers",
+              "at": "danh"
+            },
+            {
+              "text": "Sản phẩm",
+              "icon": "package",
+              "at": "sản"
+            },
+            {
+              "text": "Tìm kiếm",
+              "icon": "search",
+              "at": "tìm"
+            },
+            {
+              "text": "Giỏ hàng",
+              "icon": "shopping-cart",
+              "at": "giỏ"
+            },
+            {
+              "text": "Thanh toán",
+              "icon": "credit-card",
+              "at": "toán"
+            }
+          ]
+        },
+        {
+          "kind": "list",
+          "icons": false,
+          "mark": "check",
+          "items": [
+            {
+              "text": "ảnh rõ",
+              "at": "ảnh"
+            },
+            {
+              "text": "mô tả đủ",
+              "at": "mô"
+            },
+            {
+              "text": "giá minh bạch",
+              "at": "giá"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03-channels",
+      "type": "branch",
+      "node": {
+        "label": "Kênh bán",
+        "tone": "teal",
+        "side": "right",
+        "row": -1,
+        "icon": "store",
+        "at": "kênh",
+        "sub": "khách hàng ở nhiều nơi",
+        "subAt": "nơi"
+      },
+      "parts": [
+        {
+          "kind": "tree",
+          "levels": [
+            [
+              {
+                "text": "Khách hàng",
+                "at": "khách"
+              }
+            ],
+            [
+              {
+                "text": "mạng xã hội",
+                "icon": "smartphone",
+                "at": "mạng"
+              },
+              {
+                "text": "sàn",
+                "icon": "store",
+                "at": "sàn"
+              },
+              {
+                "text": "nhắn tin",
+                "icon": "message-square",
+                "at": "nhắn"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "chủ động tìm",
+              "icon": "search",
+              "at": "chủ"
+            },
+            {
+              "text": "tình cờ thấy",
+              "icon": "sparkles",
+              "at": "tình"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "có mặt đúng chỗ",
+          "at": "đúng"
+        }
+      ]
+    },
+    {
+      "id": "s04-ads",
+      "type": "branch",
+      "node": {
+        "label": "Kéo khách",
+        "tone": "purple",
+        "side": "left",
+        "row": 0,
+        "icon": "megaphone",
+        "at": "kéo",
+        "sub": "tiệm đẹp mà không ai biết",
+        "subAt": "đẹp",
+        "note": "mỗi đồng đều phải đo được",
+        "noteAt": "chi"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "quảng cáo",
+              "icon": "megaphone",
+              "at": "quảng"
+            },
+            {
+              "text": "tìm kiếm",
+              "icon": "search",
+              "at": "tìm"
+            },
+            {
+              "text": "email",
+              "icon": "mail",
+              "at": "email"
+            },
+            {
+              "text": "nội dung hay",
+              "icon": "file-text",
+              "at": "nội"
+            }
+          ]
+        },
+        {
+          "kind": "chips",
+          "items": [
+            {
+              "text": "trả tiền: nhanh",
+              "tone": "purple",
+              "at": "nhanh"
+            },
+            {
+              "text": "nội dung: bền",
+              "tone": "teal",
+              "at": "bền"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05-stock",
+      "type": "branch",
+      "node": {
+        "label": "Hàng & kho",
+        "tone": "orange",
+        "side": "right",
+        "row": 0,
+        "icon": "package",
+        "at": "hàng",
+        "note": "nhìn số tồn mỗi ngày",
+        "noteAt": "mỗi"
+      },
+      "parts": [
+        {
+          "kind": "icon",
+          "icon": "boxes",
+          "caption": "còn bao nhiêu?",
+          "at": "mất"
+        },
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "hết hàng = mất khách",
+              "at": "hết"
+            },
+            {
+              "text": "tồn nhiều = chôn vốn",
+              "at": "tồn"
+            },
+            {
+              "text": "chậm = giảm giá, combo",
+              "at": "chậm#2"
+            }
+          ],
+          "mark": "check"
+        }
+      ]
+    },
+    {
+      "id": "s06-ship",
+      "type": "branch",
+      "node": {
+        "label": "Giao hàng",
+        "tone": "green",
+        "side": "left",
+        "row": 1,
+        "icon": "truck",
+        "at": "giao",
+        "note": "còn đổi trả, hoàn tiền",
+        "noteAt": "đổi",
+        "strike": "giao xong là hết việc",
+        "strikeAt": "xong#2"
+      },
+      "parts": [
+        {
+          "kind": "tree",
+          "levels": [
+            [
+              {
+                "text": "Đơn hàng",
+                "at": "đơn"
+              }
+            ],
+            [
+              {
+                "text": "thanh toán",
+                "icon": "credit-card",
+                "at": "thanh"
+              },
+              {
+                "text": "đóng gói",
+                "icon": "package",
+                "at": "đóng"
+              },
+              {
+                "text": "giao hàng",
+                "icon": "truck",
+                "at": "giao#2"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "cols": 2,
+          "items": [
+            {
+              "text": "phí giao",
+              "icon": "wallet",
+              "at": "phí"
+            },
+            {
+              "text": "thời gian",
+              "icon": "clock",
+              "at": "thời"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07-care",
+      "type": "branch",
+      "node": {
+        "label": "Chăm sóc",
+        "tone": "magenta",
+        "side": "right",
+        "row": 1,
+        "icon": "heart",
+        "at": "chăm",
+        "note": "giữ khách cũ nhẹ gánh hơn",
+        "noteAt": "giữ"
+      },
+      "parts": [
+        {
+          "kind": "loop",
+          "steps": [
+            {
+              "text": "mua",
+              "at": "mua#3"
+            },
+            {
+              "text": "dùng",
+              "at": "dùng"
+            },
+            {
+              "text": "đánh giá",
+              "at": "đánh"
+            },
+            {
+              "text": "mua lại",
+              "at": "lại#2"
+            }
+          ],
+          "center": {
+            "text": "khách",
+            "at": "vòng"
+          }
+        },
+        {
+          "kind": "chips",
+          "items": [
+            {
+              "text": "lời cảm ơn",
+              "tone": "magenta",
+              "at": "cảm"
+            },
+            {
+              "text": "mã giảm giá",
+              "tone": "orange",
+              "at": "mã"
+            },
+            {
+              "text": "hỏi thăm",
+              "tone": "purple",
+              "at": "hỏi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08-data",
+      "type": "branch",
+      "node": {
+        "label": "Dữ liệu",
+        "tone": "brown",
+        "side": "left",
+        "row": 2,
+        "icon": "chart-column",
+        "at": "dữ",
+        "note": "có số mới biết lời hay lỗ",
+        "noteAt": "lời"
+      },
+      "parts": [
+        {
+          "kind": "cards",
+          "items": [
+            {
+              "text": "Đơn hàng",
+              "icon": "receipt",
+              "at": "đơn"
+            },
+            {
+              "text": "Lượt xem",
+              "icon": "monitor",
+              "at": "lượt"
+            },
+            {
+              "text": "Bán chạy",
+              "icon": "star",
+              "at": "chạy"
+            },
+            {
+              "text": "Lời / lỗ",
+              "icon": "wallet",
+              "at": "lỗ"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "chọn vài con số",
+          "tone": "ink",
+          "at": "chọn"
+        }
+      ]
+    },
+    {
+      "id": "s09-auto",
+      "type": "branch",
+      "node": {
+        "label": "Tự động",
+        "tone": "ink",
+        "side": "right",
+        "row": 2,
+        "icon": "zap",
+        "at": "tự",
+        "note": "người lo việc cần nghĩ",
+        "noteAt": "người"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "xác nhận đơn",
+              "icon": "mail",
+              "at": "xác"
+            },
+            {
+              "text": "nhắc thanh toán",
+              "icon": "bell",
+              "at": "nhắc"
+            },
+            {
+              "text": "báo cáo mỗi ngày",
+              "icon": "chart-column",
+              "at": "báo"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "bạn đặt luật",
+          "tone": "ink",
+          "at": "luật"
+        }
+      ]
+    },
+    {
+      "id": "s10-recap",
+      "type": "recap",
+      "sticky": {
+        "items": [
+          {
+            "text": "1. website",
+            "at": "website"
+          },
+          {
+            "text": "2. kênh bán",
+            "at": "kênh"
+          },
+          {
+            "text": "3. quảng cáo",
+            "at": "quảng"
+          },
+          {
+            "text": "4. hàng hoá",
+            "at": "hoá"
+          },
+          {
+            "text": "5. giao hàng",
+            "at": "giao"
+          },
+          {
+            "text": "6. chăm sóc",
+            "at": "chăm"
+          },
+          {
+            "text": "7. dữ liệu",
+            "at": "dữ"
+          },
+          {
+            "text": "8. tự động hoá",
+            "at": "tự"
+          }
+        ],
+        "closing": {
+          "lines": [
+            "phía sau: cả một",
+            "hệ thống vận hành"
+          ],
+          "at": "phía"
+        }
+      }
+    }
+  ]
+}

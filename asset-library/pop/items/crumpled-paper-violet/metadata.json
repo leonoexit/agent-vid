@@ -1,0 +1,47 @@
+{
+  "id": "crumpled-paper-violet",
+  "name": "Giấy vo — tím lạnh",
+  "category": "object",
+  "family": "crumpled-paper-violet",
+  "description": "Photographic crumpled paper ball for an editorial deletion metaphor.",
+  "tags": [
+    "giấy",
+    "paper",
+    "crumpled",
+    "delete",
+    "xóa",
+    "cutout"
+  ],
+  "roles": [
+    "deleted material metaphor"
+  ],
+  "states": [
+    "crumpled"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "image_gen",
+    "prompt": "Use case: product-mockup. Asset type: one photographic foreground cutout for a contemporary Pop paper-collage explainer about deleting and restoring text. One loosely crumpled ball of clean white writing paper with a few tiny abstract black ink marks, no readable words. Clearly tactile crinkles, facets and realistic paper fibers, dramatic but soft photographic lighting, restrained cool violet ink shadows. Three-quarter view, compact roughly spherical silhouette, isolated with generous transparent margins. Thin irregular white cut-paper contour follows the ball silhouette, subtle halftone printed-photo detail. Genuinely transparent alpha background, no floor, no backdrop, no cast shadow outside the object, no labels, no text, no other objects. Contemporary clean saturated Pop collage rather than vintage/sepia, no vector drawing, no glossy 3D.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration; not documentary evidence."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent reviewed generated image and transparent alpha; not individual user approval."
+  },
+  "file": "items/crumpled-paper-violet/original.png",
+  "thumbnail": "items/crumpled-paper-violet/thumbnail.png",
+  "sha256": "9438a69b381b63a4b8dd2751b159da2aff4c934bd83d7669f4c4e35781ee6995",
+  "width": 1313,
+  "height": 1198,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    0,
+    1245,
+    1198
+  ],
+  "added_at": "2026-10-09T11:55:50.646053+00:00"
+}

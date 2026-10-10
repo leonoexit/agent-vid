@@ -1,0 +1,49 @@
+{
+  "id": "lettering-bug",
+  "name": "Chữ BUG · giấy vàng",
+  "description": "Chữ BUG in sẵn trên mảnh giấy vàng/coral, không phải nhãn trống.",
+  "category": "lettering",
+  "family": "yellow-coral-lettering",
+  "variant_of": null,
+  "tags": [
+    "BUG",
+    "lỗi",
+    "chữ",
+    "lettering",
+    "vàng"
+  ],
+  "roles": [
+    "tên gọi",
+    "lỗi phần mềm"
+  ],
+  "states": [
+    "text-BUG"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "One expressive text-bearing paper cutout. Exact text: BUG (three uppercase English letters only). Enormous energetic condensed black-purple ink brush-painted block letters, slightly imperfect printed texture, readable instantly, printed across an irregular vivid lemon-yellow paper silhouette cut closely around the word as one piece. Thin coral-red paper offset peeking beneath lower edge. Contemporary bold youthful Pop collage, tactile clean torn/cut paper, not sepia, not vintage newspaper, not a logo in a rounded badge. Wide aspect around 2:1. No other objects or words, no shadow. Actual transparent alpha outside entire piece, generous margins.",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-aaad6de1-6ced-44d8-a9d9-607780bc4c4b.png",
+    "project": "projects/pop-motion/vi-sao-goi-la-bug"
+  },
+  "rights": {
+    "note": "Minh hoạ tạo bằng image_gen trong dự án; không phải ảnh tư liệu."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent đã xem hình, kiểm tra alpha và dựng thử; chưa được người dùng duyệt."
+  },
+  "file": "items/lettering-bug/original.png",
+  "thumbnail": "items/lettering-bug/thumbnail.png",
+  "sha256": "06307719d2b791726eb3b2a9cb4dd04a3b5b26c7a3b151b8474e751f3c747e02",
+  "width": 1775,
+  "height": 886,
+  "has_transparency": true,
+  "alpha_bounds": [
+    35,
+    0,
+    1710,
+    886
+  ],
+  "added_at": "2026-10-09T07:56:58.653557+00:00"
+}

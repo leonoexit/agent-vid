@@ -1,0 +1,55 @@
+{
+  "id": "source-code-bundle",
+  "name": "Xấp giấy mã nguồn",
+  "category": "object",
+  "family": "source-documents",
+  "variant_of": null,
+  "description": "Xấp giấy mã nguồn với kẹp tím; chữ là nét trừu tượng, không dùng làm code cần đọc.",
+  "tags": [
+    "giấy",
+    "paper",
+    "code",
+    "mã nguồn",
+    "tài liệu",
+    "document"
+  ],
+  "roles": [
+    "lịch sử",
+    "thay đổi",
+    "repository",
+    "trao đổi"
+  ],
+  "states": [
+    "stacked",
+    "binder-clip"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Create ONE isolated editorial photographic cutout: a fanned bundle of about four clean white printed source-code sheets, offset edges, held together by a small purple binder clip at upper left. Three quarter angle, paper visibly tactile, abstract short ink code-like lines without legible words. Black-and-white fine halftone with cyan and purple accent ink, narrow irregular white contour. Contemporary youthful Pop mixed-media collage, not a vector icon, not vintage parchment, not glossy 3D. Full silhouette centered, generous transparent margins, no background, no external shadow, no extra props.",
+    "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+    "project_file": "assets/source-bundle.png",
+    "original_tool_output": null,
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/source-code-bundle/original.png",
+  "thumbnail": "items/source-code-bundle/thumbnail.png",
+  "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d",
+  "width": 1224,
+  "height": 1285,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    23,
+    1188,
+    1238
+  ],
+  "added_at": "2026-10-09T07:30:58.411740+00:00"
+}

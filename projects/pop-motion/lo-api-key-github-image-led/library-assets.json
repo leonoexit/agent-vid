@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "viewer-stick-puzzled",
+      "family": "minimal-stick-reactions",
+      "sha256": "674398e470147cadc3d5abbd754df46ef989ecdb66d4caeb07b447a7e5cd23aa",
+      "file": "assets/library/viewer-stick-puzzled-674398e470.png",
+      "metadata": "assets/library/viewer-stick-puzzled-674398e470.asset.json",
+      "reason": "Người xem bối rối sau commit xóa key"
+    },
+    {
+      "id": "brass-key-pop",
+      "family": "physical-keys",
+      "sha256": "a35804a9b9141f52f6d9ab3fa80566e56ff05b88fe14189cc017c5bb2eb758b4",
+      "file": "assets/library/brass-key-pop-a35804a9b9.png",
+      "metadata": "assets/library/brass-key-pop-a35804a9b9.asset.json",
+      "reason": "Quyền truy cập còn hiệu lực rồi bị thu hồi"
+    },
+    {
+      "id": "paper-white-strip",
+      "family": "torn-paper-backplates",
+      "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944",
+      "file": "assets/library/paper-white-strip-a8a3798ab4.png",
+      "metadata": "assets/library/paper-white-strip-a8a3798ab4.asset.json",
+      "reason": "Nhãn trạng thái và kết luận"
+    },
+    {
+      "id": "paper-yellow-strip",
+      "family": "torn-paper-backplates",
+      "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92",
+      "file": "assets/library/paper-yellow-strip-e3966fc324.png",
+      "metadata": "assets/library/paper-yellow-strip-e3966fc324.asset.json",
+      "reason": "Nhãn nhấn trọng tâm"
+    },
+    {
+      "id": "source-code-bundle",
+      "family": "source-documents",
+      "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d",
+      "file": "assets/library/source-code-bundle-6313312c12.png",
+      "metadata": "assets/library/source-code-bundle-6313312c12.asset.json",
+      "reason": "Xấp mã và phiên bản commit còn lưu key"
+    },
+    {
+      "id": "hand-pointing-magenta",
+      "family": "hand-pointing-magenta",
+      "sha256": "ca57aac45f0573c8d864db334df40a05e199da38361d14df465a437de48213f7",
+      "file": "assets/library/hand-pointing-magenta-ca57aac45f.png",
+      "metadata": "assets/library/hand-pointing-magenta-ca57aac45f.asset.json",
+      "reason": "Tay bấm thu hồi key ở nhịp quyết định"
+    },
+    {
+      "id": "eraser-pop-magenta",
+      "family": "office-erasers",
+      "sha256": "587c8d2b72d28638969a9764d66cbe7032bd3a6c99c7d0cd2f634e24b7ebcecf",
+      "file": "assets/library/eraser-pop-magenta-587c8d2b72.png",
+      "metadata": "assets/library/eraser-pop-magenta-587c8d2b72.asset.json",
+      "reason": "Photographic pink eraser cutout"
+    },
+    {
+      "id": "padlock-mint-closed",
+      "family": "mint-padlock",
+      "sha256": "1c81d5c6b17bf8e83de2f1883a510456256b5383bc1c9f273cd28b102b4e1dd3",
+      "file": "assets/library/padlock-mint-closed-1c81d5c6b1.png",
+      "metadata": "assets/library/padlock-mint-closed-1c81d5c6b1.asset.json",
+      "reason": "Photographic mint padlock closed"
+    },
+    {
+      "id": "padlock-mint-open",
+      "family": "mint-padlock",
+      "sha256": "f7f0601ac3f370a100480d450c711ec5f108dd4c1d8001e2093dcc44a09b2f04",
+      "file": "assets/library/padlock-mint-open-f7f0601ac3.png",
+      "metadata": "assets/library/padlock-mint-open-f7f0601ac3.asset.json",
+      "reason": "Matching open-state mint padlock"
+    },
+    {
+      "id": "magnifier-pop-violet",
+      "family": "magnifiers",
+      "sha256": "70d26d072cee6287faf8ff6db15f75a2a7e4592b10b357178e0be9e18ece95f0",
+      "file": "assets/library/magnifier-pop-violet-70d26d072c.png",
+      "metadata": "assets/library/magnifier-pop-violet-70d26d072c.asset.json",
+      "reason": "Photographic magnifier with transparent lens"
+    },
+    {
+      "id": "usage-receipt-pop",
+      "family": "usage-receipts",
+      "sha256": "4223601467364f02e6a1d299477846fd1b68f777e9489732babcec5f7e2f7131",
+      "file": "assets/library/usage-receipt-pop-4223601467.png",
+      "metadata": "assets/library/usage-receipt-pop-4223601467.asset.json",
+      "reason": "Curled receipt with USAGE heading, symbolic non-numeric rows"
+    }
+  ]
+}

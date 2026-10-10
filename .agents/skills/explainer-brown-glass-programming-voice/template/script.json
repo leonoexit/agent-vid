@@ -1,0 +1,257 @@
+{
+  "language": "vi",
+  "title": "Phép gán sao chép giá trị",
+  "brand": "AGENTVID",
+  "series": "MỘT VÍ DỤ C",
+  "kicker": "THEO DÕI GIÁ TRỊ",
+  "entities": [
+    {
+      "id": "x",
+      "kind": "card",
+      "tone": "orange",
+      "label": "x",
+      "value": "10",
+      "detail": "Giá trị ban đầu",
+      "hiddenFields": [
+        "value",
+        "detail"
+      ],
+      "x": 30,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    },
+    {
+      "id": "y",
+      "kind": "card",
+      "tone": "purple",
+      "label": "y",
+      "value": "—",
+      "detail": "Một biến riêng",
+      "hiddenFields": [
+        "detail"
+      ],
+      "x": 490,
+      "y": 110,
+      "width": 320,
+      "height": 270
+    }
+  ],
+  "intro": {
+    "title": "x đổi, sao y vẫn cũ?",
+    "subtitle": "Kết quả của một lần chạy",
+    "note": "Quay lại ba dòng C để tìm nguyên nhân.",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x",
+        "on": "hai mươi"
+      },
+      {
+        "value": "10",
+        "label": "y",
+        "on": "mười"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "vẫn",
+    "tone": "dark",
+    "vo": "Chạy xong đoạn code này, x là hai mươi, nhưng y vẫn là mười. Vì sao hai biến không đổi cùng nhau?"
+  },
+  "scenes": [
+    {
+      "title": "Quay lại lúc gán",
+      "vo": "Quay lại trước khi x đổi. Ta tạo x bằng mười, rồi khai báo y bằng x. Dấu gạch ở ô y chỉ đánh dấu phần minh hoạ chưa điền.",
+      "events": [
+        {
+          "type": "show",
+          "on": "Ta tạo x",
+          "target": "x"
+        },
+        {
+          "type": "code",
+          "on": "Ta tạo x",
+          "lines": [
+            "int x = 10;"
+          ],
+          "active": 0
+        },
+        {
+          "type": "reveal",
+          "on": "bằng mười",
+          "target": "x",
+          "fields": [
+            "value",
+            "detail"
+          ]
+        },
+        {
+          "type": "show",
+          "on": "khai báo y",
+          "target": "y"
+        },
+        {
+          "type": "code",
+          "on": "khai báo y",
+          "lines": [
+            "int x = 10;",
+            "int y = x;"
+          ],
+          "active": 1
+        },
+        {
+          "type": "reveal",
+          "on": "Dấu gạch",
+          "target": "y",
+          "fields": [
+            "detail"
+          ]
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Đọc rồi chép",
+      "vo": "Dòng này đọc số mười đang có trong x, rồi chép số đó sang y. Khi chép xong, cả hai cùng giữ mười; x không mất giá trị.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "Dòng này",
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "đọc số mười",
+          "targets": [
+            "x"
+          ]
+        },
+        {
+          "type": "transfer",
+          "on": "chép số đó",
+          "from": "x",
+          "to": "y",
+          "value": "10",
+          "duration": 1
+        },
+        {
+          "type": "focus",
+          "on": "Khi chép xong",
+          "targets": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "x không mất",
+          "slot": "takeaway",
+          "text": "Sao chép giá trị: x vẫn giữ 10"
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Chỉ x được cập nhật",
+      "vo": "Tiếp theo, dòng x bằng hai mươi ghi giá trị mới vào x. Giờ x giữ hai mươi, còn y vẫn giữ bản sao mười đã nhận trước đó.",
+      "events": [
+        {
+          "type": "code",
+          "on": "Tiếp theo",
+          "lines": [
+            "int x = 10;",
+            "int y = x;",
+            "x = 20;"
+          ],
+          "active": 2
+        },
+        {
+          "type": "write",
+          "on": "ghi giá trị mới",
+          "to": "x",
+          "value": "20",
+          "duration": 0.9
+        },
+        {
+          "type": "focus",
+          "on": "Giờ x",
+          "targets": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "còn y",
+          "slot": "subtitle",
+          "text": "x = 20 · y = 10"
+        }
+      ],
+      "tone": "dark"
+    },
+    {
+      "title": "Phép gán không tự chạy lại",
+      "vo": "Nhìn lại dòng khai báo y: nó đã chạy lúc x còn là mười. Đổi x không tự chạy lại dòng này. Vì vậy y vẫn giữ mười, đúng như kết quả ban đầu.",
+      "events": [
+        {
+          "type": "code-focus",
+          "on": "dòng khai báo y",
+          "active": 1
+        },
+        {
+          "type": "spotlight",
+          "on": "nó đã chạy",
+          "targets": [
+            "y"
+          ]
+        },
+        {
+          "type": "text",
+          "on": "không tự chạy lại",
+          "slot": "subtitle",
+          "text": "Gán một lần ≠ liên kết liên tục"
+        },
+        {
+          "type": "focus",
+          "on": "đúng như kết quả",
+          "targets": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "tone": "dark"
+    }
+  ],
+  "outro": {
+    "title": "Gán là chép giá trị",
+    "subtitle": "Tại thời điểm dòng lệnh chạy",
+    "subtitleOn": "lúc chạy",
+    "note": "Ví dụ này dùng hai số nguyên thông thường.",
+    "noteOn": "số nguyên",
+    "tiles": [
+      {
+        "value": "20",
+        "label": "x hiện tại",
+        "on": "hai mươi"
+      },
+      {
+        "value": "10",
+        "label": "y giữ lại",
+        "on": "mười"
+      }
+    ],
+    "connector": "≠",
+    "connectorOn": "mười",
+    "tone": "dark",
+    "vo": "Phép gán chép giá trị lúc chạy. Kết quả: x là hai mươi, y vẫn mười. Đây là hai biến số nguyên độc lập."
+  },
+  "storyFormat": "brown-glass-case-v1",
+  "story": {
+    "question": "Đổi x sau khi gán y = x thì y có đổi theo không?",
+    "example": "int x = 10; int y = x; x = 20;",
+    "takeaway": "Phép gán số nguyên chép giá trị lúc dòng lệnh chạy.",
+    "approach": "Kết quả đã quan sát → quay lại phép gán → tìm nguyên nhân"
+  },
+  "audience": "Người mới biết biến và số nguyên"
+}

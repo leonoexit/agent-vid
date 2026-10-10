@@ -1,0 +1,70 @@
+{
+  "language": "en",
+  "title": "Where does push add an item?",
+  "audience": "JavaScript beginners",
+  "story": {
+    "question": "How does push change an array?",
+    "example": "const items = [\"A\", \"B\"]; items.push(\"C\"); items.push(\"D\");",
+    "takeaway": "push appends to the same array; length increases by the number of added items."
+  },
+  "intro": {
+    "title": "Add one item.\nWhat changes?",
+    "vo": "The array items contains A and B. When push adds C, what changes on this screen?",
+    "cues": {
+      "question": "push adds C"
+    },
+    "label": "One array · linked views"
+  },
+  "scenes": [
+    {
+      "title": "C joins the end.",
+      "vo": "Push adds C to the end of the array items. Once C arrives, the array has three items and length changes from two to three.",
+      "cues": {
+        "code": "Push adds C",
+        "append": "adds C",
+        "result": "Once C arrives"
+      },
+      "before": [
+        "A",
+        "B"
+      ],
+      "item": "C"
+    },
+    {
+      "title": "One shared state.",
+      "vo": "The list and the length tile both describe the array items. Three elements here correspond to the three over there. These are two views of the same array.",
+      "cues": {
+        "inspect": "The list",
+        "match": "Three elements"
+      },
+      "items": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "title": "Add D.\nSame rule.",
+      "vo": "Keep the array we just changed and use push to add D at the end. It still starts with A, B, C; now D is included and length is four.",
+      "cues": {
+        "code": "use push",
+        "append": "add D",
+        "result": "now D is included"
+      },
+      "before": [
+        "A",
+        "B",
+        "C"
+      ],
+      "item": "D"
+    }
+  ],
+  "outro": {
+    "title": "Append to the end.\nChange this array.",
+    "vo": "For this JavaScript array, push appends to the array we already have. The length tile simply reflects the new item count; it is not a second array.",
+    "cues": {
+      "rule": "array we already have"
+    },
+    "label": "Array.push()"
+  }
+}

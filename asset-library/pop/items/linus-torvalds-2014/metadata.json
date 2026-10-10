@@ -1,0 +1,54 @@
+{
+  "id": "linus-torvalds-2014",
+  "name": "Linus Torvalds · ảnh năm 2014",
+  "category": "person",
+  "family": "linus-torvalds",
+  "variant_of": null,
+  "description": "Chân dung Linus năm 2014. Không mô tả là ảnh từ thời điểm Git ra đời năm 2005. Bản gốc màu, project đã chuyển xám bằng CSS.",
+  "tags": [
+    "Linus",
+    "Torvalds",
+    "Linux",
+    "Git",
+    "chân dung",
+    "portrait",
+    "2014"
+  ],
+  "roles": [
+    "nhân vật lịch sử",
+    "tác giả"
+  ],
+  "states": [
+    "portrait"
+  ],
+  "origin": {
+    "kind": "photo",
+    "source_url": "https://commons.wikimedia.org/wiki/File:LinuxCon_Europe_Linus_Torvalds_03_(cropped).jpg",
+    "author": "Krd (photo), Von Sprat (crop/extraction)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "treatment": "Original file preserved; rendered grayscale in white paper print via CSS. Photo treatment available under CC BY-SA 4.0.",
+    "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+    "project_file": "assets/linus-torvalds-2014.jpg"
+  },
+  "rights": {
+    "note": "CC BY-SA 4.0; ghi công Krd (photo), Von Sprat (crop/extraction). Giữ nguồn và giấy phép, ghi rõ chỉnh sửa; tuân thủ điều kiện ShareAlike áp dụng cho bản phái sinh."
+  },
+  "file": "items/linus-torvalds-2014/original.jpg",
+  "thumbnail": "items/linus-torvalds-2014/thumbnail.png",
+  "sha256": "371c4559f0262743a9c3f0e69e7a693501cc9ab8c3d80598a4b4110d59107657",
+  "width": 975,
+  "height": 1357,
+  "has_transparency": false,
+  "alpha_bounds": [
+    0,
+    0,
+    975,
+    1357
+  ],
+  "added_at": "2026-10-09T07:30:58.547855+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

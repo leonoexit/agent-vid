@@ -1,0 +1,110 @@
+{
+  "pass": true,
+  "duration": 43.9,
+  "width": 1080,
+  "height": 1920,
+  "error": null,
+  "samples": [
+    {
+      "t": 0.1,
+      "nonWhiteFraction": 0.8436279899691358
+    },
+    {
+      "t": 0.5,
+      "nonWhiteFraction": 0.8130623070987655
+    },
+    {
+      "t": 3.9,
+      "nonWhiteFraction": 0.8174628665123457
+    },
+    {
+      "t": 4.9,
+      "nonWhiteFraction": 0.7951692708333333
+    },
+    {
+      "t": 6.4,
+      "nonWhiteFraction": 0.7961101466049383
+    },
+    {
+      "t": 7.1,
+      "nonWhiteFraction": 0.8568547453703703
+    },
+    {
+      "t": 9.8,
+      "nonWhiteFraction": 0.8523794367283951
+    },
+    {
+      "t": 11,
+      "nonWhiteFraction": 0.8520606674382716
+    },
+    {
+      "t": 14.2,
+      "nonWhiteFraction": 0.8824483989197531
+    },
+    {
+      "t": 14.8,
+      "nonWhiteFraction": 0.9561053240740741
+    },
+    {
+      "t": 16,
+      "nonWhiteFraction": 0.931583236882716
+    },
+    {
+      "t": 20,
+      "nonWhiteFraction": 0.9319627700617283
+    },
+    {
+      "t": 21.6,
+      "nonWhiteFraction": 0.9895476466049383
+    },
+    {
+      "t": 22.4,
+      "nonWhiteFraction": 0.9583748070987654
+    },
+    {
+      "t": 24.5,
+      "nonWhiteFraction": 0.9542698688271605
+    },
+    {
+      "t": 26,
+      "nonWhiteFraction": 0.955176986882716
+    },
+    {
+      "t": 28.7,
+      "nonWhiteFraction": 0.9850250771604938
+    },
+    {
+      "t": 29,
+      "nonWhiteFraction": 0.9849445408950618
+    },
+    {
+      "t": 31.5,
+      "nonWhiteFraction": 0.9507074652777778
+    },
+    {
+      "t": 33.5,
+      "nonWhiteFraction": 0.8372106481481482
+    },
+    {
+      "t": 36,
+      "nonWhiteFraction": 0.8478612075617284
+    },
+    {
+      "t": 38,
+      "nonWhiteFraction": 0.9155140817901235
+    },
+    {
+      "t": 39,
+      "nonWhiteFraction": 0.9107257908950618
+    },
+    {
+      "t": 42,
+      "nonWhiteFraction": 0.8887446952160494
+    },
+    {
+      "t": 43.5,
+      "nonWhiteFraction": 0.8868055555555555
+    }
+  ],
+  "playbackAdvances": 1.158452
+}

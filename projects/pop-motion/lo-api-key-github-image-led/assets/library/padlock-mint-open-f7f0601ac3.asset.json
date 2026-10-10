@@ -1,0 +1,49 @@
+{
+  "id": "padlock-mint-open",
+  "name": "padlock-mint-open",
+  "category": "object",
+  "family": "mint-padlock",
+  "description": "Matching open-state mint padlock",
+  "tags": [
+    "lock-open",
+    "mint",
+    "padlock",
+    "pop",
+    "collage"
+  ],
+  "roles": [
+    "access metaphor"
+  ],
+  "states": [
+    "lock-open"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "Edit this exact padlock into its OPEN / UNLOCKED state for a matching animation pair. Preserve the mint-green body, keyhole, texture, contour, lighting, front-on camera, scale and exact position of the entire lower body. Change only the silver U shackle: lift it slightly upward, keeping its left stem inserted, with the right stem visibly lifted clear above the right socket by a clear gap. Keep all margins and transparent background. No text, extra objects, hands, key, background or external shadow. Same canvas dimensions and object framing as input.",
+    "reference_asset_ids": [
+      "padlock-mint-closed"
+    ]
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration, not factual evidence or actual usage data."
+  },
+  "variant_of": "padlock-mint-closed",
+  "file": "items/padlock-mint-open/original.png",
+  "thumbnail": "items/padlock-mint-open/thumbnail.png",
+  "sha256": "f7f0601ac3f370a100480d450c711ec5f108dd4c1d8001e2093dcc44a09b2f04",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    94,
+    24,
+    837,
+    1490
+  ],
+  "added_at": "2026-10-09T13:49:06.184952+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

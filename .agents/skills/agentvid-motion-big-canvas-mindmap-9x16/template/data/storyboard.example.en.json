@@ -1,0 +1,524 @@
+{
+  "topic": "Online shop",
+  "root": {
+    "label": "Online shop",
+    "tone": "ink"
+  },
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "type": "hook",
+      "rootAt": "draw",
+      "sticky": {
+        "lines": [
+          {
+            "text": "Online shop",
+            "at": "online"
+          },
+          {
+            "text": "= just a website?",
+            "at": "website"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02-web",
+      "type": "branch",
+      "node": {
+        "label": "Website",
+        "tone": "blue",
+        "side": "left",
+        "row": -1,
+        "icon": "globe",
+        "at": "website",
+        "sub": "the storefront",
+        "subAt": "storefront",
+        "note": "= what customers see",
+        "noteAt": "see"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "cols": 2,
+          "ring": {
+            "tone": "red",
+            "at": "pay"
+          },
+          "items": [
+            {
+              "text": "Home page",
+              "icon": "store",
+              "at": "home"
+            },
+            {
+              "text": "Categories",
+              "icon": "layers",
+              "at": "categories"
+            },
+            {
+              "text": "Products",
+              "icon": "package",
+              "at": "products"
+            },
+            {
+              "text": "Search",
+              "icon": "search",
+              "at": "search"
+            },
+            {
+              "text": "Cart",
+              "icon": "shopping-cart",
+              "at": "cart"
+            },
+            {
+              "text": "Payment",
+              "icon": "credit-card",
+              "at": "pay"
+            }
+          ]
+        },
+        {
+          "kind": "list",
+          "icons": false,
+          "mark": "check",
+          "items": [
+            {
+              "text": "clear photos",
+              "at": "photos"
+            },
+            {
+              "text": "full descriptions",
+              "at": "descriptions"
+            },
+            {
+              "text": "honest prices",
+              "at": "prices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s03-channels",
+      "type": "branch",
+      "node": {
+        "label": "Channels",
+        "tone": "teal",
+        "side": "right",
+        "row": -1,
+        "icon": "store",
+        "at": "channels",
+        "sub": "customers are everywhere",
+        "subAt": "place"
+      },
+      "parts": [
+        {
+          "kind": "tree",
+          "levels": [
+            [
+              {
+                "text": "Customer",
+                "at": "customers"
+              }
+            ],
+            [
+              {
+                "text": "social media",
+                "icon": "smartphone",
+                "at": "social"
+              },
+              {
+                "text": "marketplace",
+                "icon": "store",
+                "at": "marketplaces"
+              },
+              {
+                "text": "message",
+                "icon": "message-square",
+                "at": "message"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "actively search",
+              "icon": "search",
+              "at": "actively"
+            },
+            {
+              "text": "stumble on it",
+              "icon": "sparkles",
+              "at": "stumble"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "show up in the right place",
+          "at": "right"
+        }
+      ]
+    },
+    {
+      "id": "s04-ads",
+      "type": "branch",
+      "node": {
+        "label": "Traffic",
+        "tone": "purple",
+        "side": "left",
+        "row": 0,
+        "icon": "megaphone",
+        "at": "bringing",
+        "sub": "a shop in an empty alley",
+        "subAt": "beautiful",
+        "note": "measure every dollar",
+        "noteAt": "measurable"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "ads",
+              "icon": "megaphone",
+              "at": "ads"
+            },
+            {
+              "text": "search",
+              "icon": "search",
+              "at": "search"
+            },
+            {
+              "text": "email",
+              "icon": "mail",
+              "at": "email"
+            },
+            {
+              "text": "good content",
+              "icon": "file-text",
+              "at": "content"
+            }
+          ]
+        },
+        {
+          "kind": "chips",
+          "items": [
+            {
+              "text": "paid: fast",
+              "tone": "purple",
+              "at": "fast"
+            },
+            {
+              "text": "content: lasting",
+              "tone": "teal",
+              "at": "lasts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s05-stock",
+      "type": "branch",
+      "node": {
+        "label": "Stock",
+        "tone": "orange",
+        "side": "right",
+        "row": 0,
+        "icon": "package",
+        "at": "products",
+        "note": "check stock daily",
+        "noteAt": "many"
+      },
+      "parts": [
+        {
+          "kind": "icon",
+          "icon": "boxes",
+          "caption": "how many left?",
+          "at": "loses"
+        },
+        {
+          "kind": "list",
+          "mark": "check",
+          "items": [
+            {
+              "text": "sold out = lost customer",
+              "at": "selling"
+            },
+            {
+              "text": "too much = frozen cash",
+              "at": "freezes"
+            },
+            {
+              "text": "slow = discount, combo",
+              "at": "slow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s06-ship",
+      "type": "branch",
+      "node": {
+        "label": "Delivery",
+        "tone": "green",
+        "side": "left",
+        "row": 1,
+        "icon": "truck",
+        "at": "delivery",
+        "note": "returns and refunds",
+        "noteAt": "returns",
+        "strike": "delivered = done",
+        "strikeAt": "delivered#2"
+      },
+      "parts": [
+        {
+          "kind": "tree",
+          "levels": [
+            [
+              {
+                "text": "Order",
+                "at": "order"
+              }
+            ],
+            [
+              {
+                "text": "payment",
+                "icon": "credit-card",
+                "at": "pays"
+              },
+              {
+                "text": "packing",
+                "icon": "package",
+                "at": "packed"
+              },
+              {
+                "text": "delivery",
+                "icon": "truck",
+                "at": "delivered"
+              }
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "cols": 2,
+          "items": [
+            {
+              "text": "shipping fee",
+              "icon": "wallet",
+              "at": "shipping"
+            },
+            {
+              "text": "time",
+              "icon": "clock",
+              "at": "time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s07-care",
+      "type": "branch",
+      "node": {
+        "label": "Care",
+        "tone": "magenta",
+        "side": "right",
+        "row": 1,
+        "icon": "heart",
+        "at": "care",
+        "note": "old customers cost less",
+        "noteAt": "keeping"
+      },
+      "parts": [
+        {
+          "kind": "loop",
+          "steps": [
+            {
+              "text": "buy",
+              "at": "buy"
+            },
+            {
+              "text": "use",
+              "at": "use"
+            },
+            {
+              "text": "review",
+              "at": "review"
+            },
+            {
+              "text": "buy again",
+              "at": "again"
+            }
+          ],
+          "center": {
+            "text": "customer",
+            "at": "loop"
+          }
+        },
+        {
+          "kind": "chips",
+          "items": [
+            {
+              "text": "thank-you",
+              "tone": "magenta",
+              "at": "thank-you"
+            },
+            {
+              "text": "coupon",
+              "tone": "orange",
+              "at": "coupon"
+            },
+            {
+              "text": "friendly message",
+              "tone": "purple",
+              "at": "friendly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s08-data",
+      "type": "branch",
+      "node": {
+        "label": "Data",
+        "tone": "brown",
+        "side": "left",
+        "row": 2,
+        "icon": "chart-column",
+        "at": "data",
+        "note": "know profit or loss",
+        "noteAt": "making"
+      },
+      "parts": [
+        {
+          "kind": "cards",
+          "items": [
+            {
+              "text": "Orders",
+              "icon": "receipt",
+              "at": "order"
+            },
+            {
+              "text": "Visits",
+              "icon": "monitor",
+              "at": "visit"
+            },
+            {
+              "text": "Best sellers",
+              "icon": "star",
+              "at": "sells"
+            },
+            {
+              "text": "Profit / loss",
+              "icon": "wallet",
+              "at": "losing"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "pick a few",
+          "tone": "ink",
+          "at": "pick"
+        }
+      ]
+    },
+    {
+      "id": "s09-auto",
+      "type": "branch",
+      "node": {
+        "label": "Automation",
+        "tone": "ink",
+        "side": "right",
+        "row": 2,
+        "icon": "zap",
+        "at": "automation",
+        "note": "people think",
+        "noteAt": "people"
+      },
+      "parts": [
+        {
+          "kind": "list",
+          "items": [
+            {
+              "text": "order confirmations",
+              "icon": "mail",
+              "at": "confirmations"
+            },
+            {
+              "text": "payment reminders",
+              "icon": "bell",
+              "at": "reminders"
+            },
+            {
+              "text": "daily reports",
+              "icon": "chart-column",
+              "at": "reports"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "you set the rules",
+          "tone": "ink",
+          "at": "rules"
+        }
+      ]
+    },
+    {
+      "id": "s10-recap",
+      "type": "recap",
+      "sticky": {
+        "items": [
+          {
+            "text": "1. website",
+            "at": "website"
+          },
+          {
+            "text": "2. channels",
+            "at": "channels"
+          },
+          {
+            "text": "3. ads",
+            "at": "ads"
+          },
+          {
+            "text": "4. products",
+            "at": "products"
+          },
+          {
+            "text": "5. delivery",
+            "at": "delivery"
+          },
+          {
+            "text": "6. care",
+            "at": "care"
+          },
+          {
+            "text": "7. data",
+            "at": "data"
+          },
+          {
+            "text": "8. automation",
+            "at": "automation"
+          }
+        ],
+        "closing": {
+          "lines": [
+            "behind it: a whole",
+            "operating system"
+          ],
+          "at": "behind"
+        }
+      }
+    }
+  ]
+}

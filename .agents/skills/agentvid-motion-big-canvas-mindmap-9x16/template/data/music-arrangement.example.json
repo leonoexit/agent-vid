@@ -1,0 +1,21 @@
+{
+  "source": "assets/audio/music/bgm-raw.mp3",
+  "output": "assets/audio/music/bgm.flac",
+  "bpm": 90,
+  "beat0": 0.0,
+  "crossfade": 0.025,
+  "fadeOut": {
+    "beat": 217,
+    "seconds": 3
+  },
+  "segments": [
+    {
+      "to": [
+        0,
+        220
+      ],
+      "from": 0,
+      "role": "whole track, no drop. Set bpm/beat0 from fit-beat-grid; `to` = [0, floor(duration x 1.5 / 4) x 4] at 90 BPM; fadeOut.beat = (duration - 3) x 1.5; the track needs at least that many beats"
+    }
+  ]
+}

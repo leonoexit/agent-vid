@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "videos": [
+    {
+      "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+      "render": "renders/vi-sao-git-ra-doi-v2-9x16.mp4",
+      "assets": [
+        {
+          "id": "crt-purple-code",
+          "sha256": "66d05b39e211645c3079f08b0d4eab53a5221e1780fe91a62eed3aa4c4141170"
+        },
+        {
+          "id": "penguin-photo",
+          "sha256": "7ff82cf062f81dd181097e205c23e6ddac5b5a05bea86106149db1525f90e0bf"
+        },
+        {
+          "id": "source-code-bundle",
+          "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d"
+        },
+        {
+          "id": "lettering-git",
+          "sha256": "195a38a412eb39e7414faf9f32b0c99d4cf1828e18843f201aae0683bc67301f"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "linus-torvalds-2014",
+          "sha256": "371c4559f0262743a9c3f0e69e7a693501cc9ab8c3d80598a4b4110d59107657"
+        },
+        {
+          "id": "paper-purple-strip",
+          "sha256": "0505b975e3a57802022226b4707415f67434115b5a5c6ad6ee28d0e756f10bab"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        }
+      ],
+      "first_recorded": "2026-10-09T07:30:58.665846+00:00",
+      "updated_at": "2026-10-09T07:30:58.665850+00:00",
+      "evidence": "Imported from existing project source/manifest and completed V2 render; not a new asset approval."
+    },
+    {
+      "project": "projects/pop-motion/vi-sao-nut-luu-la-dia-mem",
+      "render": "renders/vi-sao-nut-luu-la-dia-mem-v2-9x16.mp4",
+      "assets": [
+        {
+          "id": "crt-purple-blank",
+          "sha256": "6538a6dc9d973edefc98f7e5d773b74d18e23262ed8ee2d243f889da3b63a7bc"
+        },
+        {
+          "id": "floppy-orange",
+          "sha256": "935958540db297daff6c728736acec255dec595248fd63ea171367c70a7d730a"
+        },
+        {
+          "id": "floppy-drive-purple",
+          "sha256": "d5ac0f0c04cd1eabd19adb52730c30ebd7b8eaf90e76e7c607b1a7e1d5e5b2aa"
+        },
+        {
+          "id": "usb-cyan",
+          "sha256": "4c9382dfaefa54f5a42b6a586f4c7cd6976948591fdebe14b0b002d2c5697d28"
+        },
+        {
+          "id": "lettering-luu",
+          "sha256": "2581ef0278df3529e7d33922345c5179d8974876ae3c93edc673bc3521c8b834"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        }
+      ],
+      "first_recorded": "2026-10-09T07:30:58.666287+00:00",
+      "updated_at": "2026-10-09T07:30:58.666290+00:00",
+      "evidence": "Imported from existing project source/manifest and completed V2 render; not a new asset approval."
+    },
+    {
+      "project": "projects/pop-motion/vi-sao-goi-la-bug",
+      "render": "renders/vi-sao-goi-la-bug-9x16.mp4",
+      "assets": [
+        {
+          "id": "lettering-bug",
+          "sha256": "06307719d2b791726eb3b2a9cb4dd04a3b5b26c7a3b151b8474e751f3c747e02"
+        },
+        {
+          "id": "mark-ii-bug-log-1947",
+          "sha256": "8878b7005ef07d8a7dba38dea64a36689a7c792a6329117715cdd34baeb952d3"
+        },
+        {
+          "id": "moth-coral-spread",
+          "sha256": "5b2805b964ac70ebbf3a2d4fd43c1ac8f9d881601dcae3c0d6af9c3f1f05d30c"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "relay-copper-purple",
+          "sha256": "bab962411b3742ee906cb1f17880fc2a136473e816f9a766650fa5789ef01581"
+        },
+        {
+          "id": "source-code-bundle",
+          "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d"
+        }
+      ],
+      "first_recorded": "2026-10-09T08:04:00.127816+00:00",
+      "updated_at": "2026-10-09T08:04:00.127905+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/vi-sao-goi-la-bug-corose",
+      "render": "renders/vi-sao-goi-la-bug-corose-9x16.mp4",
+      "assets": [
+        {
+          "id": "lettering-bug",
+          "sha256": "06307719d2b791726eb3b2a9cb4dd04a3b5b26c7a3b151b8474e751f3c747e02"
+        },
+        {
+          "id": "mark-ii-bug-log-1947",
+          "sha256": "8878b7005ef07d8a7dba38dea64a36689a7c792a6329117715cdd34baeb952d3"
+        },
+        {
+          "id": "moth-coral-spread",
+          "sha256": "5b2805b964ac70ebbf3a2d4fd43c1ac8f9d881601dcae3c0d6af9c3f1f05d30c"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "relay-copper-purple",
+          "sha256": "bab962411b3742ee906cb1f17880fc2a136473e816f9a766650fa5789ef01581"
+        },
+        {
+          "id": "source-code-bundle",
+          "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d"
+        }
+      ],
+      "first_recorded": "2026-10-09T08:15:56.554905+00:00",
+      "updated_at": "2026-10-09T08:15:56.555016+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/vi-sao-goi-la-bug-corose-v2",
+      "render": "renders/vi-sao-goi-la-bug-corose-v2-9x16.mp4",
+      "assets": [
+        {
+          "id": "lettering-bug",
+          "sha256": "06307719d2b791726eb3b2a9cb4dd04a3b5b26c7a3b151b8474e751f3c747e02"
+        },
+        {
+          "id": "mark-ii-bug-log-1947",
+          "sha256": "8878b7005ef07d8a7dba38dea64a36689a7c792a6329117715cdd34baeb952d3"
+        },
+        {
+          "id": "moth-coral-spread",
+          "sha256": "5b2805b964ac70ebbf3a2d4fd43c1ac8f9d881601dcae3c0d6af9c3f1f05d30c"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "relay-copper-purple",
+          "sha256": "bab962411b3742ee906cb1f17880fc2a136473e816f9a766650fa5789ef01581"
+        },
+        {
+          "id": "source-code-bundle",
+          "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d"
+        },
+        {
+          "id": "viewer-puzzled-purple",
+          "sha256": "d64d8bdb7e68cefc7e4e6828c0a24789374fb04ebc5711119a04433415da3d69"
+        }
+      ],
+      "first_recorded": "2026-10-09T08:25:35.367493+00:00",
+      "updated_at": "2026-10-09T08:25:35.367592+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/undo-mot-buoc",
+      "render": "renders/undo-mot-buoc-9x16.mp4",
+      "assets": [
+        {
+          "id": "crumpled-paper-violet",
+          "sha256": "9438a69b381b63a4b8dd2751b159da2aff4c934bd83d7669f4c4e35781ee6995"
+        },
+        {
+          "id": "hand-pointing-magenta",
+          "sha256": "ca57aac45f0573c8d864db334df40a05e199da38361d14df465a437de48213f7"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "viewer-puzzled-purple",
+          "sha256": "d64d8bdb7e68cefc7e4e6828c0a24789374fb04ebc5711119a04433415da3d69"
+        }
+      ],
+      "first_recorded": "2026-10-09T12:07:06.969515+00:00",
+      "updated_at": "2026-10-09T12:07:06.969756+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/undo-mot-buoc-v2",
+      "render": "renders/undo-mot-buoc-v2-9x16.mp4",
+      "assets": [
+        {
+          "id": "crumpled-paper-violet",
+          "sha256": "9438a69b381b63a4b8dd2751b159da2aff4c934bd83d7669f4c4e35781ee6995"
+        },
+        {
+          "id": "hand-pointing-magenta",
+          "sha256": "ca57aac45f0573c8d864db334df40a05e199da38361d14df465a437de48213f7"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "viewer-puzzled-illustrated",
+          "sha256": "aec477aa8108d2b7e335123c5f9ec47642af8759eefe48295fce71da0819b4eb"
+        }
+      ],
+      "first_recorded": "2026-10-09T12:37:56.849430+00:00",
+      "updated_at": "2026-10-09T12:37:56.849506+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/lo-api-key-github",
+      "render": "renders/lo-api-key-github-9x16.mp4",
+      "assets": [
+        {
+          "id": "brass-key-pop",
+          "sha256": "a35804a9b9141f52f6d9ab3fa80566e56ff05b88fe14189cc017c5bb2eb758b4"
+        },
+        {
+          "id": "paper-white-note",
+          "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "viewer-stick-puzzled",
+          "sha256": "674398e470147cadc3d5abbd754df46ef989ecdb66d4caeb07b447a7e5cd23aa"
+        }
+      ],
+      "first_recorded": "2026-10-09T13:33:21.225727+00:00",
+      "updated_at": "2026-10-09T13:33:21.225798+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    },
+    {
+      "project": "projects/pop-motion/lo-api-key-github-image-led",
+      "render": "renders/lo-api-key-github-image-led-9x16.mp4",
+      "assets": [
+        {
+          "id": "brass-key-pop",
+          "sha256": "a35804a9b9141f52f6d9ab3fa80566e56ff05b88fe14189cc017c5bb2eb758b4"
+        },
+        {
+          "id": "eraser-pop-magenta",
+          "sha256": "587c8d2b72d28638969a9764d66cbe7032bd3a6c99c7d0cd2f634e24b7ebcecf"
+        },
+        {
+          "id": "hand-pointing-magenta",
+          "sha256": "ca57aac45f0573c8d864db334df40a05e199da38361d14df465a437de48213f7"
+        },
+        {
+          "id": "magnifier-pop-violet",
+          "sha256": "70d26d072cee6287faf8ff6db15f75a2a7e4592b10b357178e0be9e18ece95f0"
+        },
+        {
+          "id": "padlock-mint-closed",
+          "sha256": "1c81d5c6b17bf8e83de2f1883a510456256b5383bc1c9f273cd28b102b4e1dd3"
+        },
+        {
+          "id": "padlock-mint-open",
+          "sha256": "f7f0601ac3f370a100480d450c711ec5f108dd4c1d8001e2093dcc44a09b2f04"
+        },
+        {
+          "id": "paper-white-strip",
+          "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944"
+        },
+        {
+          "id": "paper-yellow-strip",
+          "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92"
+        },
+        {
+          "id": "source-code-bundle",
+          "sha256": "6313312c127edd456d63e8ef908bf8574d756fb14ad4f9d593db1ac2953e6e1d"
+        },
+        {
+          "id": "usage-receipt-pop",
+          "sha256": "4223601467364f02e6a1d299477846fd1b68f777e9489732babcec5f7e2f7131"
+        },
+        {
+          "id": "viewer-stick-puzzled",
+          "sha256": "674398e470147cadc3d5abbd754df46ef989ecdb66d4caeb07b447a7e5cd23aa"
+        }
+      ],
+      "first_recorded": "2026-10-09T14:00:14.743109+00:00",
+      "updated_at": "2026-10-09T14:00:14.743293+00:00",
+      "evidence": "Explicit author selection after render; not pixel detection or user approval."
+    }
+  ]
+}

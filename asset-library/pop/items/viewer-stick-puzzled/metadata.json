@@ -1,0 +1,47 @@
+{
+  "id": "viewer-stick-puzzled",
+  "name": "Người que bối rối",
+  "category": "person",
+  "family": "minimal-stick-reactions",
+  "description": "Minimal hand-drawn full-body stick figure touching head, yellow shirt",
+  "tags": [
+    "người que",
+    "vẽ tay",
+    "bối rối",
+    "stick figure",
+    "reaction"
+  ],
+  "roles": [
+    "viewer reaction"
+  ],
+  "states": [
+    "puzzled"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "One single minimal hand-drawn stick figure for an editorial explainer, isolated on true transparent background. Full body and limbs entirely inside generous empty margins. Extremely economical slightly wobbly dark-plum ink line drawing: small simple unfilled round head, two tiny dot eyes, one raised eyebrow, short mouth stroke, thin stick arms and legs. One hand touches the head in puzzled thought, the other palm faces upward, body leans slightly left as if asking 'really?'. A very simple flat small yellow trapezoid shirt is the ONLY colored shape. White face fill. No detailed hands or fingers, no realistic anatomy, no detailed hair, no nose rendering, no muscles, no skin shading, no portrait, no anime, no 3D, no vector stock business mascot. Thoughtful gentle visual wit through posture alone. No words, question marks, background, props, panel, badge, paper rectangle, shadow or thick sticker border. Clean spare drawing that remains expressive when small.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration. No real person or credential depicted."
+  },
+  "file": "items/viewer-stick-puzzled/original.png",
+  "thumbnail": "items/viewer-stick-puzzled/thumbnail.png",
+  "sha256": "674398e470147cadc3d5abbd754df46ef989ecdb66d4caeb07b447a7e5cd23aa",
+  "width": 1024,
+  "height": 1536,
+  "has_transparency": true,
+  "alpha_bounds": [
+    185,
+    335,
+    689,
+    1072
+  ],
+  "added_at": "2026-10-09T13:25:59.068614+00:00",
+  "review": {
+    "status": "usable",
+    "note": "Agent inspected minimal stick figure on pink/yellow and full limbs after CSS transparent-margin crop. Matches intended minimal direction; not individual user approval.",
+    "updated_at": "2026-10-09T13:32:10.698822+00:00"
+  }
+}

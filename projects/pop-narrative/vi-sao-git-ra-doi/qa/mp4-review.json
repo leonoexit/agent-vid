@@ -1,0 +1,122 @@
+{
+  "pass": true,
+  "duration": 55.2,
+  "width": 1080,
+  "height": 1920,
+  "error": null,
+  "samples": [
+    {
+      "t": 0.5,
+      "nonWhiteFraction": 0.8841435185185185
+    },
+    {
+      "t": 3,
+      "nonWhiteFraction": 0.8841155478395062
+    },
+    {
+      "t": 5,
+      "nonWhiteFraction": 0.9405946180555556
+    },
+    {
+      "t": 8.23,
+      "nonWhiteFraction": 0.9791415895061728
+    },
+    {
+      "t": 8.27,
+      "nonWhiteFraction": 0.9869917052469136
+    },
+    {
+      "t": 12,
+      "nonWhiteFraction": 0.8519463734567901
+    },
+    {
+      "t": 19,
+      "nonWhiteFraction": 0.926156925154321
+    },
+    {
+      "t": 19.6,
+      "nonWhiteFraction": 0.9286593364197531
+    },
+    {
+      "t": 22.3,
+      "nonWhiteFraction": 0.9250414737654321
+    },
+    {
+      "t": 22.9,
+      "nonWhiteFraction": 0.9242288773148148
+    },
+    {
+      "t": 23.13,
+      "nonWhiteFraction": 0.9565711805555556
+    },
+    {
+      "t": 24,
+      "nonWhiteFraction": 0.9559968171296296
+    },
+    {
+      "t": 25.8,
+      "nonWhiteFraction": 0.9209847608024692
+    },
+    {
+      "t": 27,
+      "nonWhiteFraction": 0.9056168016975309
+    },
+    {
+      "t": 28,
+      "nonWhiteFraction": 0.9054499421296296
+    },
+    {
+      "t": 31.5,
+      "nonWhiteFraction": 0.9361728395061728
+    },
+    {
+      "t": 32.2,
+      "nonWhiteFraction": 0.903798225308642
+    },
+    {
+      "t": 35,
+      "nonWhiteFraction": 0.9004991319444444
+    },
+    {
+      "t": 38,
+      "nonWhiteFraction": 0.762055362654321
+    },
+    {
+      "t": 39.67,
+      "nonWhiteFraction": 0.7937755594135802
+    },
+    {
+      "t": 39.73,
+      "nonWhiteFraction": 1
+    },
+    {
+      "t": 44,
+      "nonWhiteFraction": 0.932554012345679
+    },
+    {
+      "t": 47.4,
+      "nonWhiteFraction": 0.9334934413580247
+    },
+    {
+      "t": 51,
+      "nonWhiteFraction": 0.908491512345679
+    },
+    {
+      "t": 54,
+      "nonWhiteFraction": 0.9057990933641975
+    },
+    {
+      "t": 18.5,
+      "nonWhiteFraction": 0.9254374035493828
+    },
+    {
+      "t": 18.533,
+      "nonWhiteFraction": 0.9254374035493828
+    },
+    {
+      "t": 18.7,
+      "nonWhiteFraction": 0.9253602430555555
+    }
+  ],
+  "playbackAdvances": 1.1599970000000002
+}

@@ -1,0 +1,54 @@
+{
+  "id": "crt-purple-blank",
+  "name": "Máy tính CRT tím · màn hình trống",
+  "category": "object",
+  "family": "crt-computer",
+  "variant_of": null,
+  "description": "Ảnh CRT tím, màn hình không chữ, có thân máy và bàn phím; tạo độc lập với bản màn hình code.",
+  "tags": [
+    "máy tính",
+    "computer",
+    "desktop",
+    "CRT",
+    "tím",
+    "purple"
+  ],
+  "roles": [
+    "thiết bị",
+    "trao đổi",
+    "lưu trữ"
+  ],
+  "states": [
+    "three-quarter",
+    "blank-screen"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "One isolated photographic cutout of a late-1990s desktop CRT computer monitor with its small desktop tower beneath it and a compact keyboard, whole object visible, three-quarter front view facing slightly left. Real photographic fine details, monochrome with restrained purple duotone, printed halftone texture, narrow white irregular paper-cut contour around the assembly. Screen is a simple dark violet glow with NO TEXT and NO symbols. Contemporary youthful Pop editorial collage. Not vector illustration, not clay, not cartoon. No external cast shadow, no table or background, no logos. Transparent alpha outside with generous transparent margins. Square composition.",
+    "project": "projects/pop-motion/vi-sao-nut-luu-la-dia-mem",
+    "project_file": "assets/computer.png",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-28cea8e8-85af-426b-9d0c-3cfc889f70e1.png",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/crt-purple-blank/original.png",
+  "thumbnail": "items/crt-purple-blank/thumbnail.png",
+  "sha256": "6538a6dc9d973edefc98f7e5d773b74d18e23262ed8ee2d243f889da3b63a7bc",
+  "width": 1254,
+  "height": 1254,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    47,
+    1190,
+    1207
+  ],
+  "added_at": "2026-10-09T07:30:58.241469+00:00"
+}

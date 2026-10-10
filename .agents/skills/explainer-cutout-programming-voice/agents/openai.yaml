@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contemporary Cutout Explainer"
+  short_description: "Modern photo cutouts and layered programming explanations"
+  default_prompt: "Dùng $explainer-cutout-programming-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

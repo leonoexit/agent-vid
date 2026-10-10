@@ -1,4 +1,0 @@
-interface:
-  display_name: "Glass Programming Explainer"
-  short_description: "Trace one programming example with glass cards and voice"
-  default_prompt: "Use $explainer-glass-story-voice to explain one programming concept through a small worked example, continuous visual state changes and concise narration. Default Vietnamese voice: Hải Đăng, male Northern Vietnamese."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Code Noir Explainer"
-  short_description: "Pure black, monospace and code-driven explanations"
-  default_prompt: "Dùng $explainer-code-noir-voice tạo video giải thích [CHỦ ĐỀ] cho [ĐỐI TƯỢNG XEM]."

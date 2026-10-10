@@ -1,0 +1,57 @@
+{
+  "id": "moth-coral-spread",
+  "name": "Bướm đêm · cánh mở",
+  "description": "Bướm đêm cánh mở, chi tiết ảnh in coral/nâu; không phải tái dựng đúng con bướm năm 1947.",
+  "category": "object",
+  "family": "moth",
+  "variant_of": null,
+  "tags": [
+    "bướm đêm",
+    "moth",
+    "côn trùng",
+    "insect",
+    "bug",
+    "coral"
+  ],
+  "roles": [
+    "côn trùng",
+    "nghĩa đen",
+    "sinh học"
+  ],
+  "states": [
+    "wings-spread"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "One isolated photographic cut-paper asset for contemporary vivid Pop collage. A real-looking brown moth with wings spread wide, seen directly from above, complete fine antennae and six legs intact, realistic powdery wing textures with dark brown and warm coral tinted photographic halftone print. Narrow irregular ivory white paper-cut contour around full silhouette. NOT a cartoon, NOT an icon, NOT vector art, NOT a butterfly. No writing, no specimen pins, no background, no external shadow. Fully transparent alpha outside. Large centered horizontal wingspan with ample margins. Illustrative moth, not a claimed exact reconstruction of the historical 1947 specimen.",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-70b369b7-ad6e-46ff-a178-c3a5dbb5d1ab.png",
+    "project": "projects/pop-motion/vi-sao-goi-la-bug",
+    "edits": [
+      {
+        "prompt": "Remove the entire gray/beige gradient background and every exterior glow/shadow from this moth cutout. Keep ONLY the moth and its close narrow white paper contour. Outside that contour must be truly transparent alpha, including spaces around antennae and legs. Do not retain any rectangular backing. Preserve the detailed wings, colors, pose, shape and paper print texture exactly. No new background or props.",
+        "input": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-52a9df01-1db3-46a7-951f-61fe471fe1ca.png"
+      }
+    ]
+  },
+  "rights": {
+    "note": "Minh hoạ tạo bằng image_gen trong dự án; không phải ảnh tư liệu."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent đã xem hình, kiểm tra alpha và dựng thử; chưa được người dùng duyệt."
+  },
+  "file": "items/moth-coral-spread/original.png",
+  "thumbnail": "items/moth-coral-spread/thumbnail.png",
+  "sha256": "5b2805b964ac70ebbf3a2d4fd43c1ac8f9d881601dcae3c0d6af9c3f1f05d30c",
+  "width": 1536,
+  "height": 1024,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    47,
+    1522,
+    869
+  ],
+  "added_at": "2026-10-09T07:56:58.575893+00:00"
+}

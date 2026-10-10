@@ -1,0 +1,74 @@
+{
+  "frames": 1656,
+  "fps": 30,
+  "failures": [],
+  "imageCandidates": [
+    {
+      "pair": "image bounds: Vì sao / Minh họa cắt giấy: git-title",
+      "first": 0,
+      "last": 8.233333333333333,
+      "frames": 248
+    },
+    {
+      "pair": "image bounds: ra đời? / Minh họa cắt giấy: git-title",
+      "first": 0,
+      "last": 8.233333333333333,
+      "frames": 248
+    },
+    {
+      "pair": "image bounds: ra đời? / Minh họa cắt giấy: computer",
+      "first": 0,
+      "last": 7.433333333333334,
+      "frames": 224
+    },
+    {
+      "pair": "image bounds: BitKeeper Dùng miễn phí / Minh họa cắt giấy: computer",
+      "first": 0,
+      "last": 3.4,
+      "frames": 103
+    },
+    {
+      "pair": "image bounds: MẤT QUYỀN DÙNG MIỄN PHÍ / Minh họa cắt giấy: computer",
+      "first": 3.466666666666667,
+      "last": 8.233333333333333,
+      "frames": 144
+    },
+    {
+      "pair": "image bounds: MẤT QUYỀN DÙNG MIỄN PHÍ / Minh họa cắt giấy: penguin",
+      "first": 3.466666666666667,
+      "last": 8.1,
+      "frames": 140
+    },
+    {
+      "pair": "image bounds: MIỄN PHÍ / Minh họa cắt giấy: computer",
+      "first": 15.966666666666667,
+      "last": 19.633333333333333,
+      "frames": 111
+    },
+    {
+      "pair": "image bounds: 2005: chấm dứt miễn phí / Minh họa cắt giấy: computer",
+      "first": 19.533333333333335,
+      "last": 23.166666666666668,
+      "frames": 110
+    },
+    {
+      "pair": "image bounds: Cộng tác tiếp. / Minh họa cắt giấy: penguin",
+      "first": 49.46666666666667,
+      "last": 55.166666666666664,
+      "frames": 172
+    },
+    {
+      "pair": "image bounds: Cộng tác tiếp. / Minh họa cắt giấy: computer",
+      "first": 49.46666666666667,
+      "last": 55.166666666666664,
+      "frames": 172
+    },
+    {
+      "pair": "image bounds: Ở quy mô lớn. / Minh họa cắt giấy: computer",
+      "first": 53,
+      "last": 55.166666666666664,
+      "frames": 66
+    }
+  ],
+  "limits": "Text/paper intersections are conservative geometric checks. Image bounds are manual-review candidates, not alpha-aware occlusion verdicts."
+}

@@ -1,0 +1,247 @@
+{
+  "storyFormat": "ink-reasoning-v1",
+  "language": "vi",
+  "title": "Ink visual kit preview",
+  "audience": "Kiểm tra bộ dựng",
+  "story": {
+    "question": "Có thể giải thích bằng hình gì?",
+    "example": "Chọn ô, nối nhánh, theo vòng và đổi giá trị.",
+    "takeaway": "Dùng đúng quan hệ hình cho nội dung."
+  },
+  "intro": {
+    "layout": "example",
+    "title": "Đi từ ô đầu tiên",
+    "kicker": "INK · THỬ BỘ DỰNG HÌNH",
+    "vo": "Đây là bản kiểm tra hình ảnh, chưa có lời thoại.",
+    "blocks": [
+      {
+        "type": "diagram",
+        "kind": "row",
+        "label": "Đi từ ô đầu tiên",
+        "at": 1.2,
+        "items": [
+          {
+            "id": "a",
+            "label": "Ô đầu",
+            "value": "0"
+          },
+          {
+            "id": "b",
+            "label": "Ô kế",
+            "value": "1"
+          },
+          {
+            "id": "c",
+            "label": "Ô cuối",
+            "value": "2"
+          }
+        ],
+        "events": [
+          {
+            "action": "focus",
+            "target": "a",
+            "at": 1.65
+          },
+          {
+            "action": "circle",
+            "target": "a",
+            "at": 2.1
+          },
+          {
+            "action": "arrow",
+            "from": "a",
+            "to": "b",
+            "at": 3.15
+          },
+          {
+            "action": "focus",
+            "target": "b",
+            "at": 4
+          },
+          {
+            "action": "underline",
+            "target": "b",
+            "at": 4.5
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "layout": "example",
+      "title": "Một câu hỏi, hai nhánh",
+      "kicker": "INK · THỬ BỘ DỰNG HÌNH",
+      "vo": "Đây là bản kiểm tra hình ảnh, chưa có lời thoại.",
+      "blocks": [
+        {
+          "type": "diagram",
+          "kind": "tree",
+          "label": "Một câu hỏi, hai nhánh",
+          "at": 1.2,
+          "items": [
+            {
+              "id": "root",
+              "label": "Đã đăng nhập?"
+            },
+            {
+              "id": "yes",
+              "label": "Có",
+              "value": "Trang chính"
+            },
+            {
+              "id": "no",
+              "label": "Chưa",
+              "value": "Đăng nhập"
+            }
+          ],
+          "events": [
+            {
+              "action": "focus",
+              "target": "root",
+              "at": 1.65
+            },
+            {
+              "action": "arrow",
+              "from": "root",
+              "to": "yes",
+              "at": 2.2
+            },
+            {
+              "action": "focus",
+              "target": "yes",
+              "at": 3
+            },
+            {
+              "action": "strike",
+              "target": "no",
+              "at": 3.6
+            },
+            {
+              "action": "circle",
+              "target": "yes",
+              "at": 4.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "example",
+      "title": "Gửi rồi nhận kết quả",
+      "kicker": "INK · THỬ BỘ DỰNG HÌNH",
+      "vo": "Đây là bản kiểm tra hình ảnh, chưa có lời thoại.",
+      "blocks": [
+        {
+          "type": "diagram",
+          "kind": "loop",
+          "label": "Gửi rồi nhận kết quả",
+          "at": 1.2,
+          "items": [
+            {
+              "id": "app",
+              "label": "Ứng dụng"
+            },
+            {
+              "id": "server",
+              "label": "Máy chủ"
+            },
+            {
+              "id": "result",
+              "label": "Kết quả"
+            }
+          ],
+          "events": [
+            {
+              "action": "focus",
+              "target": "app",
+              "at": 1.65
+            },
+            {
+              "action": "arrow",
+              "from": "app",
+              "to": "server",
+              "at": 2.2
+            },
+            {
+              "action": "focus",
+              "target": "server",
+              "at": 3
+            },
+            {
+              "action": "arrow",
+              "from": "server",
+              "to": "result",
+              "at": 3.6
+            },
+            {
+              "action": "focus",
+              "target": "result",
+              "at": 4.5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "outro": {
+    "layout": "example",
+    "title": "Giá mới và giá đã lưu",
+    "kicker": "INK · THỬ BỘ DỰNG HÌNH",
+    "vo": "Đây là bản kiểm tra hình ảnh, chưa có lời thoại.",
+    "blocks": [
+      {
+        "type": "diagram",
+        "kind": "cards",
+        "label": "Giá mới và giá đã lưu",
+        "at": 1.2,
+        "items": [
+          {
+            "id": "source",
+            "label": "Nguồn",
+            "value": "100"
+          },
+          {
+            "id": "cache",
+            "label": "Cache",
+            "value": "100"
+          }
+        ],
+        "events": [
+          {
+            "action": "update",
+            "target": "source",
+            "value": "120",
+            "at": 1.65
+          },
+          {
+            "action": "circle",
+            "target": "source",
+            "at": 2.2
+          },
+          {
+            "action": "focus",
+            "target": "cache",
+            "at": 3
+          },
+          {
+            "action": "strike",
+            "target": "cache",
+            "at": 3.6
+          },
+          {
+            "action": "update",
+            "target": "cache",
+            "value": "120",
+            "at": 4.4
+          },
+          {
+            "action": "clear",
+            "target": "cache",
+            "at": 4.8
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+◆  Linting lo-api-key-github/index.html
+
+  ⚠ negative_z_index: `z-index: -1` paints the element behind its nearest stacking context's own content. With no stacking-context ancestor that context is the composition root itself, so an opaque background there hides it entirely: in the DOM, laid out, and absent from the picture. A transparent root leaves it visible. Siblings at `z-index: 0` or above are unaffected.
+    Fix: Give the element's parent a stacking context - `isolation: isolate` is the cheapest, and `transform`, `filter`, `opacity` below 1, `contain: paint` and `will-change` all work too. The negative-z child then paints above that parent's background and renders normally. Or express paint order through DOM order - an earlier sibling paints behind a later one - and raise the elements that should sit in front rather than lowering this one.
+  ⚠ [/Volumes/LeNguyen02SSD/Programming/agent-vid/projects/pop-motion/lo-api-key-github/index.html:2:109] nested_structure_needs_subcomposition [explainer]: <section id="explainer"> is a timeline element that contains nested <main id="world">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <section id="explainer"> and its contents into a sub-composition file and mount it with data-composition-src.
+
+◇  0 error(s), 2 warning(s)

@@ -1,0 +1,9 @@
+{
+  "name": "portrait-9x16-universal",
+  "width": 1080,
+  "height": 1920,
+  "safe": { "top": 360, "right": 180, "bottom": 300, "left": 80 },
+  "captions": { "maxWords": 5, "maxChars": 30, "bottom": 300, "width": 820, "fontSize": 52 },
+  "signature": { "right": 200, "bottom": 330 },
+  "notes": "One safe box for TikTok and Facebook Reels together (measured from iPhone screenshots): text x 80-900, y 360-1620. FB Reels hides ~350 px at the top (status bar, icons) and TikTok ~190 px at the bottom (name, caption); both hide ~180 px on the right. Captions end at y 1620. Use it for channels posting the same file to both; portrait-9x16 keeps the older, more generous top and bottom."
+}

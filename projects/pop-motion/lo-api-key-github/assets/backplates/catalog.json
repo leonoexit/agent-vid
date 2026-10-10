@@ -1,0 +1,102 @@
+{
+  "white-strip": {
+    "src": "assets/backplates/white-strip.png",
+    "size": [
+      2172,
+      724
+    ],
+    "bounds": [
+      55,
+      205,
+      2066,
+      296
+    ],
+    "safe": [
+      125,
+      240,
+      1930,
+      222
+    ],
+    "ink": "#342046",
+    "role": "one long line",
+    "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A long narrow white paper strip, aspect ratio roughly 6:1. Mostly straight long edges with delicate fibers, irregular torn short ends. Clean white interior, negligible creasing. Used under a single line of dark text.",
+    "reference": "references/source.png"
+  },
+  "white-note": {
+    "src": "assets/backplates/white-note.png",
+    "size": [
+      2022,
+      778
+    ],
+    "bounds": [
+      27,
+      50,
+      1969,
+      676
+    ],
+    "safe": [
+      160,
+      145,
+      1700,
+      490
+    ],
+    "ink": "#342046",
+    "role": "two short lines or a short single-line label",
+    "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A wide rectangular white torn paper note, aspect ratio 2.6:1. Slightly organic torn perimeter, small asymmetric corner nick. Clean wide white interior with subtle paper grain for two lines of dark text.",
+    "reference": "references/source.png"
+  },
+  "purple-strip": {
+    "src": "assets/backplates/purple-strip.png",
+    "size": [
+      2172,
+      724
+    ],
+    "bounds": [
+      36,
+      129,
+      2107,
+      466
+    ],
+    "safe": [
+      140,
+      220,
+      1880,
+      290
+    ],
+    "ink": "#fffdf7",
+    "role": "a qualifier or contrasting supporting statement",
+    "sha256": "0505b975e3a57802022226b4707415f67434115b5a5c6ad6ee28d0e756f10bab",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A long vivid violet (#7546d9) dyed paper strip, aspect ratio roughly 5:1. Visible rich matte paper material with tiny white exposed torn fibers at the perimeter. Light, clean center for white lettering, no fold crossing text area.",
+    "reference": "references/source.png"
+  },
+  "yellow-strip": {
+    "src": "assets/backplates/yellow-strip.png",
+    "size": [
+      2206,
+      713
+    ],
+    "bounds": [
+      26,
+      167,
+      2154,
+      385
+    ],
+    "safe": [
+      130,
+      215,
+      1860,
+      260
+    ],
+    "ink": "#342046",
+    "role": "an emphasized result",
+    "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A long bright lemon-yellow (#fff064) torn paper strip, aspect ratio roughly 6:1. Slight irregular tear along lower edge and small curled corner confined to far right edge. Contemporary punchy paper collage. Flat clean center for dark lettering.",
+    "reference": "references/source.png"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hand-pointing-magenta",
+  "name": "Tay chỉ — magenta",
+  "category": "object",
+  "family": "hand-pointing-magenta",
+  "description": "Photographic human hand pointing upper-left, magazine cutout.",
+  "tags": [
+    "tay",
+    "hand",
+    "pointing",
+    "click",
+    "magenta",
+    "cutout"
+  ],
+  "roles": [
+    "pointing/click gesture"
+  ],
+  "states": [
+    "index extended upper left"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: an isolated hand cutout for a contemporary Pop collage animated explainer about clicking Undo. One realistic human right hand with the index finger fully extended pointing diagonally toward the upper left, other fingers naturally curled. Fingertip in the upper-left quadrant, wrist enters from bottom right; full hand including fingertip visible with generous transparent margins. Believable anatomy, expressive photographic print texture, monochrome magenta/fuchsia duotone with subtle halftone detail. Narrow clean irregular white cut-paper border tightly following the hand silhouette. Genuinely transparent alpha background, no surrounding glow or shadow, no scene, no button, no text, no other objects. Contemporary editorial collage, no vintage yellowing, no vector illustration, no cartoon, no glossy 3D render.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration; not documentary evidence."
+  },
+  "review": {
+    "status": "usable",
+    "note": "Agent reviewed generated image and transparent alpha; not individual user approval."
+  },
+  "file": "items/hand-pointing-magenta/original.png",
+  "thumbnail": "items/hand-pointing-magenta/thumbnail.png",
+  "sha256": "ca57aac45f0573c8d864db334df40a05e199da38361d14df465a437de48213f7",
+  "width": 1214,
+  "height": 1295,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    43,
+    1192,
+    1252
+  ],
+  "added_at": "2026-10-09T11:55:50.533864+00:00"
+}

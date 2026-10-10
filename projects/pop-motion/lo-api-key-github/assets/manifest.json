@@ -1,0 +1,17 @@
+{
+  "new_assets": [
+    "viewer-stick-puzzled",
+    "brass-key-pop"
+  ],
+  "new_prompts": [
+    "stick-viewer.json",
+    "brass-key.json"
+  ],
+  "reused_assets": [
+    "paper-white-strip",
+    "paper-yellow-strip",
+    "paper-white-note"
+  ],
+  "library_assets": "../library-assets.json",
+  "scope": "Generated illustration and fictional native UI. Nonfunctional placeholders only. Stick character fictional, physical key metaphor. No historical/documentary proof claimed."
+}

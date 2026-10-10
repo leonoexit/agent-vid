@@ -1,0 +1,24 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Cutout — moving layers</title><link rel="stylesheet" href="cutout.css"><style>
+body{background:#dfe4dd;padding:24px;display:flex;justify-content:center;gap:28px}#viewport{width:432px;height:768px;overflow:hidden;background:var(--paper)}#study{width:1080px;height:1920px;transform:scale(.4);transform-origin:0 0;position:relative;overflow:hidden}#stage{position:absolute;inset:0}.bundle{position:absolute;inset:0}aside{width:290px;font-size:17px;line-height:1.5}button,input{margin:10px 0;width:100%}button{padding:12px;font:inherit}h1{font-size:28px;line-height:1.1}.hud{position:absolute;left:76px;top:1560px;width:930px;font-size:42px;line-height:1.3}#cover{position:absolute;left:570px;top:740px;width:440px;height:500px;background:var(--coral);z-index:3;display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:800;transform-origin:100% 15%}#lens{position:absolute;inset:0;clip-path:circle(18% at 54% 52%)}
+</style><script src="assets/js/gsap.min.js"></script></head><body><div id="viewport"><div id="study"><div id="stage"></div><div class="hud" id="caption"></div></div></div><aside><h1>Moving collage</h1><p>9 giây, không lời thoại. Mẫu dựng lớp và dẫn mắt; chưa phải video hoàn chỉnh.</p><button id="play">Phát / tạm dừng</button><input id="seek" aria-label="Thời gian" type="range" min="0" max="9" step="0.01" value="0"><output id="time">0.00 s</output><p>0–2: đưa ảnh vào, đổi bố cục.<br>2–4: lớp giấy mở ra nguồn.<br>4–6: tách bản sao, ghép vào cache.<br>6–9: đổi bố cục để đọc kết quả.</p><p>Ảnh và nhãn đi cùng nhau; dữ liệu nguồn giữ nguyên. Bản sao chỉ được ghi nhận khi tới nơi.</p></aside><script src="motion.js"></script><script src="design.js"></script><script src="choreography.js"></script><script>
+function build(){const D=CutoutDesign,C=CutoutChoreography,stage=document.getElementById('stage'),hud=document.getElementById('caption'),tl=gsap.timeline({paused:true});
+const backdrop=D.plane(stage,'#dafc63',-50,640,1160,690,-5);
+const title=D.text(stage,'title','Một yêu cầu.\nHai nơi lấy.',76,205,950);
+const request=D.box(stage,'bundle',0,0,1080,1920);D.img(request,'hand-card',255,670,750,8);const tag=D.box(request,'slip',250,1280,620,108,'YÊU CẦU A');tag.style.transform='rotate(-6deg)';
+C.place(tl,request,{from:{x:180,y:150,rotation:9,scale:1.25,autoAlpha:0},to:{x:0,y:0,rotation:0,scale:1,autoAlpha:1},start:0,duration:.75});
+const spread=D.box(stage,'bundle',0,0,1080,1920);const v=D.scene(spread,{cached:false,calls:1});v.response.textContent='Lấy A từ nguồn';gsap.set(spread,{autoAlpha:0});
+C.place(tl,request,{from:{x:0,y:0,scale:1,autoAlpha:1},to:{x:-540,y:-70,scale:.62,autoAlpha:0},start:1.55,duration:.7});
+C.place(tl,backdrop,{from:{x:0,y:0,autoAlpha:1},to:{x:-400,y:110,autoAlpha:0},start:1.7,duration:.65});
+C.place(tl,spread,{from:{x:100,y:200,rotation:-5,autoAlpha:0},to:{x:0,y:0,rotation:0,autoAlpha:1},start:1.8,duration:.75});
+const cover=D.box(spread,'',570,740,440,500,'BÊN TRONG?');cover.id='cover';C.uncover(tl,cover,{start:2.8,x:700,y:-140,rotation:12,duration:.75});
+const arrow=D.arrow(spread,'M 807 1070 Q 695 1260 438 1090 M 453 1076 L 438 1090 L 463 1095');C.draw(tl,arrow.firstChild,{start:3.65,duration:.5});
+const copy=D.box(spread,'native-token',0,0,148,114,'42');copy.dataset.copy='';gsap.set(copy,{autoAlpha:0});
+C.place(tl,copy,{from:{x:760,y:906,autoAlpha:0,rotation:0},to:{x:625,y:1100,autoAlpha:1,rotation:7},start:4.15,duration:.45});
+C.place(tl,copy,{from:{x:625,y:1100,autoAlpha:1,rotation:7},to:{x:301,y:924,autoAlpha:1,rotation:-5},start:4.6,duration:.5});
+const committed=D.text(v.cache,'num','42',168,21,215);committed.dataset.committed='';gsap.set(committed,{autoAlpha:0});tl.set([copy,v.cachedValue],{autoAlpha:0},5.1);tl.set(committed,{autoAlpha:1},5.1);
+const result=D.box(spread,'answer',76,1360,928,102,'BẢN SAO ĐÃ LƯU · A → 42');gsap.set(result,{autoAlpha:0});tl.set([v.response,arrow],{autoAlpha:0},5.1);tl.set(result,{autoAlpha:1},5.1);
+C.reframe(tl,stage,{from:{x:0,y:0,scale:1},to:{x:-20,y:-70,scale:1.08},start:6.1,duration:.75,origin:'270px 1030px'});
+const messages=[['Lấy từ nguồn → lưu một bản.',0,4.1],['Nguồn vẫn giữ 42.',4.1,6.1],['Lần sau có thể dùng bản đã lưu.',6.1,9]];for(const [msg,a,b]of messages){const e=D.text(hud,'',msg,0,0,920);gsap.set(e,{autoAlpha:0});tl.set(e,{autoAlpha:1},a);tl.set(e,{autoAlpha:0},b);}
+tl.set({}, {},9);window.STUDY=tl;document.getElementById('play').onclick=()=>tl.paused(!tl.paused());const seek=document.getElementById('seek'),time=document.getElementById('time');seek.oninput=()=>{tl.pause();tl.seek(+seek.value,false)};tl.eventCallback('onUpdate',()=>{seek.value=tl.time();time.value=tl.time().toFixed(2)+' s'});tl.seek(0,false);
+}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',build,{once:true});else build();
+</script></body></html>

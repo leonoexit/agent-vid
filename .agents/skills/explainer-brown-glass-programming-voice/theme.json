@@ -1,0 +1,35 @@
+{
+  "slug": "noir-story",
+  "skill_name": "explainer-brown-glass-programming-voice",
+  "voice": {
+    "engine": "vieneu",
+    "vi": "Hải Đăng",
+    "speed": 1.0,
+    "en": {
+      "engine": "kokoro",
+      "voice": "am_michael",
+      "wps": 2.2
+    },
+    "paragraph_gap": 0.2
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "style": "Brown Glass / Boris setup dark editorial glass",
+  "palette": {
+    "background": "#050505",
+    "surface": "#141417",
+    "text": "#E2E8F0",
+    "muted": "#94A3B8",
+    "accent": "#D97757",
+    "violet_surface": "#7C3AED",
+    "purple": "#C4B5FD",
+    "blue": "#93C5FD",
+    "green": "#86EFAC",
+    "red": "#FCA5A5",
+    "yellow": "#FACC15",
+    "orange": "#D97757"
+  }
+}

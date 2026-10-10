@@ -1,0 +1,290 @@
+{
+  "storyFormat": "ink-reasoning-v1",
+  "language": "vi",
+  "title": "Vì sao cache trả dữ liệu cũ?",
+  "audience": "Người mới học lập trình",
+  "story": {
+    "question": "Vì sao cache nhanh nhưng có thể trả dữ liệu cũ?",
+    "example": "Nguồn đổi giá từ 100 sang 120, bản lưu vẫn 100.",
+    "takeaway": "Cache tái sử dụng kết quả; cần quyết định khi nào làm mới."
+  },
+  "intro": {
+    "layout": "example",
+    "title": "Cache: nhanh hơn…\nnhưng có thể cũ?",
+    "vo": "Bạn mở ứng dụng xem giá một món hàng. Giá lấy từ bộ nhớ đệm, hay cache, có thể đã cũ. Vì sao?",
+    "blocks": []
+  },
+  "scenes": [
+    {
+      "layout": "example",
+      "title": "Lần đầu: hỏi nguồn",
+      "vo": "Lần đầu, ứng dụng hỏi nguồn dữ liệu. Nguồn trả giá một trăm.",
+      "blocks": []
+    },
+    {
+      "layout": "example",
+      "title": "Giữ lại câu trả lời",
+      "vo": "Ứng dụng giữ lại giá một trăm trong cache. Lần sau có thể dùng bản lưu này, thay vì hỏi nguồn lần nữa.",
+      "blocks": []
+    },
+    {
+      "layout": "example",
+      "title": "Nguồn đã đổi",
+      "vo": "Bây giờ, giá ở nguồn đổi thành một trăm hai mươi. Nhưng trong ví dụ này, cache chưa được cập nhật.",
+      "blocks": []
+    },
+    {
+      "layout": "example",
+      "title": "Hỏi lại: vẫn nhận giá cũ",
+      "vo": "Lần hỏi tiếp, ứng dụng đọc cache nên vẫn nhận một trăm. Nguồn là một trăm hai mươi, bản lưu vẫn một trăm. Hai nơi đã khác nhau.",
+      "blocks": []
+    }
+  ],
+  "outro": {
+    "layout": "example",
+    "title": "Nhanh vì dùng lại.\nCũ nếu chưa cập nhật.",
+    "vo": "Cache nhanh nhờ tái sử dụng kết quả. Để tránh dùng giá cũ, ứng dụng cần quyết định khi nào làm mới hoặc bỏ bản lưu.",
+    "blocks": []
+  },
+  "canvas": {
+    "width": 2500,
+    "height": 2300,
+    "items": [
+      {
+        "id": "app",
+        "type": "card",
+        "x": 200,
+        "y": 380,
+        "w": 640,
+        "h": 440,
+        "label": "Ứng dụng",
+        "value": "?",
+        "note": "Hỏi giá sản phẩm"
+      },
+      {
+        "id": "source",
+        "type": "card",
+        "x": 1560,
+        "y": 380,
+        "w": 640,
+        "h": 440,
+        "label": "Nguồn",
+        "value": "100",
+        "note": "Giá hiện tại"
+      },
+      {
+        "id": "cache",
+        "type": "card",
+        "x": 900,
+        "y": 1400,
+        "w": 640,
+        "h": 440,
+        "label": "Cache",
+        "value": "100",
+        "note": "Câu trả lời đã lưu"
+      },
+      {
+        "id": "keep",
+        "type": "text",
+        "x": 890,
+        "y": 1910,
+        "w": 710,
+        "h": 180,
+        "text": "Chưa được làm mới",
+        "fontSize": 70
+      },
+      {
+        "id": "copied",
+        "type": "text",
+        "x": 1090,
+        "y": 1190,
+        "w": 420,
+        "h": 180,
+        "text": "Bản lưu",
+        "fontSize": 76
+      }
+    ],
+    "links": [
+      {
+        "id": "ask",
+        "from": "app",
+        "to": "source"
+      },
+      {
+        "id": "save",
+        "from": "source",
+        "to": "cache"
+      },
+      {
+        "id": "reuse",
+        "from": "cache",
+        "to": "app"
+      }
+    ],
+    "camera": [
+      {
+        "section": "intro",
+        "at": 0,
+        "cx": 520,
+        "cy": 650,
+        "scale": 1.05,
+        "duration": 0
+      },
+      {
+        "section": "scene-1",
+        "on": "nguồn dữ liệu",
+        "cx": 1880,
+        "cy": 650,
+        "scale": 1.05,
+        "duration": 1.1
+      },
+      {
+        "section": "scene-2",
+        "on": "trong cache",
+        "cx": 1220,
+        "cy": 1630,
+        "scale": 1,
+        "duration": 1.1
+      },
+      {
+        "section": "scene-3",
+        "on": "giá ở nguồn",
+        "cx": 1880,
+        "cy": 650,
+        "scale": 1.05,
+        "duration": 1.1
+      },
+      {
+        "section": "scene-4",
+        "on": "đọc cache",
+        "cx": 1220,
+        "cy": 1630,
+        "scale": 1,
+        "duration": 1.1
+      },
+      {
+        "section": "scene-4",
+        "on": "một trăm hai mươi",
+        "cx": 1200,
+        "cy": 1150,
+        "scale": 0.47,
+        "duration": 0.8
+      }
+    ],
+    "events": [
+      {
+        "section": "intro",
+        "at": 0.8,
+        "action": "write",
+        "target": "app"
+      },
+      {
+        "section": "scene-1",
+        "at": 0,
+        "action": "draw",
+        "target": "ask",
+        "hand": false,
+        "duration": 1
+      },
+      {
+        "section": "scene-1",
+        "at": 0,
+        "action": "reveal",
+        "target": "source"
+      },
+      {
+        "section": "scene-1",
+        "on": "Nguồn trả giá",
+        "action": "focus",
+        "target": "source"
+      },
+      {
+        "section": "scene-2",
+        "at": 0,
+        "action": "reveal",
+        "target": "cache"
+      },
+      {
+        "section": "scene-2",
+        "at": 0,
+        "action": "draw",
+        "target": "save",
+        "hand": false,
+        "duration": 1
+      },
+      {
+        "section": "scene-2",
+        "on": "bản lưu này",
+        "action": "write",
+        "target": "copied"
+      },
+      {
+        "section": "scene-3",
+        "on": "đổi thành",
+        "action": "update",
+        "target": "source",
+        "value": "120",
+        "handwrite": true,
+        "duration": 0.75
+      },
+      {
+        "section": "scene-4",
+        "on": "vẫn nhận",
+        "action": "focus",
+        "target": "cache"
+      },
+      {
+        "section": "scene-4",
+        "on": "Nguồn là",
+        "action": "draw",
+        "target": "reuse",
+        "hand": false,
+        "duration": 0.8
+      },
+      {
+        "section": "scene-4",
+        "on": "Nguồn là",
+        "action": "update",
+        "target": "app",
+        "value": "100"
+      },
+      {
+        "section": "scene-4",
+        "on": "vẫn nhận",
+        "action": "circle",
+        "target": "cache",
+        "duration": 0.4
+      },
+      {
+        "section": "outro",
+        "at": 0.3,
+        "action": "write",
+        "target": "keep"
+      },
+      {
+        "section": "scene-2",
+        "at": 0,
+        "action": "dim",
+        "target": "ask"
+      },
+      {
+        "section": "scene-3",
+        "at": 0,
+        "action": "dim",
+        "target": "save"
+      },
+      {
+        "section": "scene-1",
+        "on": "nguồn dữ liệu",
+        "action": "write",
+        "target": "source"
+      },
+      {
+        "section": "scene-2",
+        "on": "trong cache",
+        "action": "write",
+        "target": "cache"
+      }
+    ]
+  }
+}

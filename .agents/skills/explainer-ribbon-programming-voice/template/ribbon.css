@@ -1,0 +1,60 @@
+@font-face{font-family:RibbonDisplay;src:url('assets/fonts/ribbon-display.ttf');font-weight:900}
+@font-face{font-family:RibbonSans;src:url('assets/fonts/ribbon-sans.woff2');font-weight:100 900}
+@font-face{font-family:RibbonSerif;src:url('assets/fonts/ribbon-serif.woff2');font-weight:300 900}
+@font-face{font-family:RibbonMono;src:url('assets/fonts/ribbon-mono.woff2');font-weight:100 800}
+:root{--cream:#f7f4ed;--green:#00624c;--pink:#f0c6e5;--orange:#ff702e;--lime:#ced443;--sky:#afd5e4;--blue:#0995d1}
+*{box-sizing:border-box}
+body{margin:0;font-family:RibbonSans,sans-serif;background:var(--cream);color:var(--green)}
+#root,#explainer{position:relative;width:1080px;height:1920px;overflow:hidden}
+
+/* ── Pages & Color-field Curtain Wipe ── */
+.page{position:absolute;inset:0;display:none;background:var(--cream);color:var(--green);will-change:clip-path}
+.page.workbench{background:var(--green);color:var(--cream)}
+.page.outcome{background:var(--pink)}
+
+/* ── Typography & Masked Reveal ── */
+.kicker{position:absolute;left:86px;top:105px;width:860px;font:400 29px/1.5 RibbonSerif,serif;letter-spacing:1px;z-index:2}
+.page h1{position:absolute;left:86px;top:180px;width:908px;font:900 99px/1.22 RibbonDisplay,sans-serif;letter-spacing:-2px;margin:0;z-index:2}
+.workbench h1{color:var(--pink)}
+.heading-mask{display:block;overflow:hidden;margin:0 0 -28px 0;padding:0 0 28px 0}
+.heading-line{display:block;transform:translateY(135%);will-change:transform}
+
+/* ── Blocks ── */
+.blocks{position:absolute;left:86px;top:495px;width:860px;display:flex;flex-direction:column;gap:32px;z-index:2}
+.block{font-size:45px;line-height:1.4;white-space:pre-line;overflow-wrap:break-word}
+.label{display:block;font:500 25px/1.5 RibbonSans,sans-serif;letter-spacing:.5px;margin-bottom:22px}
+.code{font:400 39px/1.7 RibbonMono,monospace;background:var(--cream);color:var(--green);border-radius:36px;padding:38px;margin:0;white-space:pre-wrap}
+.workbench .blocks{top:590px}
+.workbench .block.text{font:900 96px/1.2 RibbonDisplay,sans-serif;color:var(--lime);margin-top:70px}
+
+/* ── Illustration (Floating Anchor) ── */
+.art{position:absolute;left:60px;top:640px;width:960px;height:560px;object-fit:contain;z-index:1;will-change:transform}
+.outcome .art{top:555px;height:605px}
+.outcome .blocks{top:1190px}
+.outcome h1{font-size:88px}
+
+/* ── Worked Example Model ── */
+.model{position:absolute;left:86px;top:1325px;width:908px;height:195px;display:flex;align-items:flex-end;justify-content:space-between;z-index:3}
+.model-part{width:240px;text-align:center}
+.model .label{font-size:27px;margin-bottom:18px}
+.value{font:900 50px/1.2 RibbonDisplay,sans-serif;padding:14px 20px;border-radius:28px;background:var(--cream);color:var(--green);border:3px solid var(--green)}
+.output .value{background:var(--green);color:var(--cream)}
+.workbench .output .value{background:var(--pink);color:var(--green);border-color:var(--pink)}
+.operator{font:700 42px/1.3 RibbonSans,sans-serif;text-align:center;align-self:flex-end;max-width:240px;padding-bottom:22px}
+.operator:after{content:'→';display:block;font-size:54px;line-height:1}
+.packet{position:absolute;left:236px;top:127px;width:20px;height:20px;border-radius:50%;background:var(--orange)}
+
+/* ── Rule Layout ── */
+.rule .blocks{top:620px}
+.rule .code{background:var(--pink);font-size:42px;line-height:1.9}
+.rule .block.text{font-family:RibbonSerif,serif;font-size:47px;margin-top:62px}
+
+/* ── Ribbon Decoration & Ambient Wave ── */
+.ribbon-decoration{position:absolute;inset:0;width:1080px;height:1920px;pointer-events:none;z-index:0;will-change:transform}
+.kw,.fn,.var{font-weight:700}
+.com{opacity:.9}
+
+/* ── Captions ── */
+#captions{position:absolute;left:86px;right:86px;top:1670px;height:150px;font:500 38px/1.45 RibbonSans,sans-serif;z-index:50;pointer-events:none}
+.caption{position:absolute;inset:0;display:flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;gap:0 10px;visibility:hidden}
+.caption span{display:inline-block;border-radius:10px;padding:2px 8px}

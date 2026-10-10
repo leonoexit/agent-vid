@@ -1,0 +1,46 @@
+{
+  "id": "brass-key-pop",
+  "name": "Chìa khóa đồng Pop",
+  "category": "object",
+  "family": "physical-keys",
+  "description": "Photographic brass house key, access metaphor, white cut-paper border",
+  "tags": [
+    "chìa khóa",
+    "key",
+    "brass",
+    "quyền truy cập"
+  ],
+  "roles": [
+    "access metaphor"
+  ],
+  "states": [
+    "complete"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "ONE large classic house key as a photographic magazine cutout, isolated on a transparent background. Complete key silhouette, oriented diagonally from round bow upper left to toothed shaft lower right, flat front three-quarter view. Real brushed brass metal with rich tactile engraved detail, tinted warm yellow-gold with violet halftone shadow accents, contemporary vivid Pop collage print treatment. Narrow irregular white cut-paper contour, no extra drop shadow, no background, no text, no letters, no keychain, no lock, no other objects. Strong recognisable simple silhouette, all edges visible, minimal 8 percent transparent margins, premium editorial photography rather than 3D clay or vector icon.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration. No real person or credential depicted."
+  },
+  "file": "items/brass-key-pop/original.png",
+  "thumbnail": "items/brass-key-pop/thumbnail.png",
+  "sha256": "a35804a9b9141f52f6d9ab3fa80566e56ff05b88fe14189cc017c5bb2eb758b4",
+  "width": 1234,
+  "height": 1274,
+  "has_transparency": true,
+  "alpha_bounds": [
+    33,
+    17,
+    1172,
+    1217
+  ],
+  "added_at": "2026-10-09T13:25:59.135186+00:00",
+  "review": {
+    "status": "usable",
+    "note": "Agent inspected transparent physical key cutout; used as access metaphor, not an exact API mechanism.",
+    "updated_at": "2026-10-09T13:32:10.740688+00:00"
+  }
+}

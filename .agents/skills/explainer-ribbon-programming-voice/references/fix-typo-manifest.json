@@ -1,0 +1,106 @@
+{
+  "source": "User-supplied references/fix-typo/",
+  "provenance": "User states these are generated raster images, not HTML/CSS/SVG. Original prompts/model are not supplied.",
+  "files": [
+    {
+      "file": "01.png",
+      "sha256": "739519f0ba29ae02ab418cf7b071d6fa62d8440fa1155f89475d90f56451f3be"
+    },
+    {
+      "file": "02.png",
+      "sha256": "fc7c2d9fba555203be7735e10af249b3bb5f70bf3a6a5346bb32caa2bfa95ca7"
+    },
+    {
+      "file": "03.png",
+      "sha256": "d8bed6fd4254d1dd165ee80140efd5427eb385ec941c6488d1b5d1355acceaa5"
+    },
+    {
+      "file": "04.png",
+      "sha256": "028d18714707874b7e94e1dbf39baed44c51f0fda168f26d384d67e7606804aa"
+    },
+    {
+      "file": "05.png",
+      "sha256": "4c4b663e718879b89ac938f48b9f0803fe01b573f11d45a43d3573be87e9da1c"
+    },
+    {
+      "file": "06.png",
+      "sha256": "f3440d3b50ecd2d7ac147261693e3a67ec541f956091ebd6b5e8d28724559d45"
+    },
+    {
+      "file": "07.png",
+      "sha256": "a7b14590827c89546f0b6bf27b56eaaae77cd08999a46695125cf3d0163da77e"
+    },
+    {
+      "file": "08.png",
+      "sha256": "f77befae6aef50a5843ed7ebf326975dc65d3426908b2f655cf69a3af8aed7c8"
+    },
+    {
+      "file": "09.png",
+      "sha256": "339b32acb698bdc91843b896832eba292973055f992977db76d6a92f80f229c3"
+    },
+    {
+      "file": "10.png",
+      "sha256": "7e0a30973fe6d7ac9c18ad22f097a7fa6f8689b0ae26ad6cc55b8c8b8c702e0d"
+    },
+    {
+      "file": "11.png",
+      "sha256": "45bcfee36c064b48c3e295ac60e87d7f851ea973b628f2a568d8af2efca26cf9"
+    },
+    {
+      "file": "12.png",
+      "sha256": "7c65b2b95e92ce416404c6878850d4abaef076dc5d662f88f14b3da45a408b6d"
+    },
+    {
+      "file": "13.png",
+      "sha256": "1c172de6513164cfcdbeb3623cc334ac62b291c2b1122e63145ab63f5ff0a3f5"
+    },
+    {
+      "file": "14.png",
+      "sha256": "7253e4783482903c7a45f32d5dd12b8d2543baaaecd69b4fba97a9ff83e6941c"
+    },
+    {
+      "file": "15.png",
+      "sha256": "f179706425419c63c4a4f1aa8ebfe73631518a95e7a70eae8c5025924ee6fcf1"
+    },
+    {
+      "file": "16.png",
+      "sha256": "6e41598828f786315e6225472fdb588ec74cb4758a63a91940ce1d16525ddd49"
+    },
+    {
+      "file": "17.png",
+      "sha256": "3ecf23a01dd49616c430f87e50a6107b88bc6e9863d90fdae6727bbc90455e5e"
+    },
+    {
+      "file": "18.png",
+      "sha256": "e2f84a78f209cab544ddba0450eb41c9b498d9156ef4da69379c816bdbe451bd"
+    },
+    {
+      "file": "19.png",
+      "sha256": "cc4e96b69151c1633f6b311c98e74fb5cc6d38149e1f1dc59921deec41e884ad"
+    },
+    {
+      "file": "20.png",
+      "sha256": "20420fdd8da542b340801bff707af8dd50917a449b0c4fc0c0b73489fe857b70"
+    },
+    {
+      "file": "21.png",
+      "sha256": "e81c6087b4d94244d44c7fa18c263f24067e8c79730dbb567572eef28dc7c5df"
+    },
+    {
+      "file": "22.png",
+      "sha256": "fb73676ab46259718903de68a3671c66bec89e2aacf9d69af54d8ae081c722c8"
+    },
+    {
+      "file": "23.png",
+      "sha256": "6b175630b55880245370b98aeb1286e401a381f656073589402ce95e32dd5d10"
+    },
+    {
+      "file": "24.png",
+      "sha256": "344159a8e687c5de1b0b9acf35a04b956909cf9a10255c3f6864ddd685a4efa1"
+    },
+    {
+      "file": "contact-sheet.png",
+      "sha256": "c011ab89359f1bf1d9abd62a14668781f396aae27e5a80740d33e6f24ad0e7c7"
+    }
+  ]
+}

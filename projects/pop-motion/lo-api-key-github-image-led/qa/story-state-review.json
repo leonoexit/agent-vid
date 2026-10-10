@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "checks": [
+    [
+      "credential on current page",
+      true
+    ],
+    [
+      "current mark erased",
+      true
+    ],
+    [
+      "old credential remains",
+      true
+    ],
+    [
+      "current page remains clean",
+      true
+    ],
+    [
+      "copy exists",
+      true
+    ],
+    [
+      "old key allows access",
+      true
+    ],
+    [
+      "revocation closes access",
+      true
+    ],
+    [
+      "copied key retry fails",
+      true
+    ],
+    [
+      "replacement permits access",
+      true
+    ],
+    [
+      "closing old key remains disabled",
+      true
+    ]
+  ]
+}

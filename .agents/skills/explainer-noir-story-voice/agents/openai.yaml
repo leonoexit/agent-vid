@@ -1,4 +1,0 @@
-interface:
-  display_name: "Noir Programming Explainer"
-  short_description: "Explain code with dark editorial diagrams and narration"
-  default_prompt: "Use $explainer-noir-story-voice to explain one programming concept through a small worked example in the Boris reference's dark editorial style, with native state changes, progressive reveals and Hải Đăng narration."

@@ -1,0 +1,6 @@
+[
+  { "id": "pencil", "prompt": "soft pencil scribble on paper, short, close mic, gentle", "duration": 0.6 },
+  { "id": "pop", "prompt": "soft wooden pop, gentle and warm", "duration": 0.5 },
+  { "id": "swish", "prompt": "light paper swish, airy, gentle camera move", "duration": 0.7 },
+  { "id": "page", "prompt": "soft sticky note slapped onto paper, gentle", "duration": 0.5 }
+]

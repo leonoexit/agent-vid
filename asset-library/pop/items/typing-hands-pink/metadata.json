@@ -1,0 +1,52 @@
+{
+  "id": "typing-hands-pink",
+  "name": "Tay gõ bàn phím",
+  "category": "object",
+  "family": "typing-hands",
+  "variant_of": null,
+  "description": "Ảnh tay người và bàn phím; có trong bản Git đầu, không dùng trong bản Git V2.",
+  "tags": [
+    "bàn tay",
+    "hands",
+    "keyboard",
+    "bàn phím",
+    "gõ"
+  ],
+  "roles": [
+    "lập trình",
+    "nhập liệu"
+  ],
+  "states": [
+    "typing",
+    "overhead"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Create ONE isolated photographic cut-paper asset: close overhead three-quarter view of two anatomically realistic adult hands actively typing on an early-2000s off-white computer keyboard. Only hands, short wrists and keyboard together, complete keyboard silhouette visible. Editorial black-and-white halftone photo with vivid pink duotone on hands and purple accent keys, narrow clean irregular white paper cut contour. Contemporary youthful Pop collage, no face, no specific real person, no words or logos, no sepia texture, no tabletop, no external cast shadow. True transparent background, large centered subject with margins.",
+    "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+    "project_file": "assets/typing-hands.png",
+    "original_tool_output": null,
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/typing-hands-pink/original.png",
+  "thumbnail": "items/typing-hands-pink/thumbnail.png",
+  "sha256": "5bca404d6b112724b050806899511cf5489be919771e23767fe620a4256136a4",
+  "width": 1536,
+  "height": 1024,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    0,
+    1536,
+    1024
+  ],
+  "added_at": "2026-10-09T07:30:58.453134+00:00"
+}

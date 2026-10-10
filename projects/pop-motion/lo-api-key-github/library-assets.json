@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "id": "viewer-stick-puzzled",
+      "family": "minimal-stick-reactions",
+      "sha256": "674398e470147cadc3d5abbd754df46ef989ecdb66d4caeb07b447a7e5cd23aa",
+      "file": "assets/library/viewer-stick-puzzled-674398e470.png",
+      "metadata": "assets/library/viewer-stick-puzzled-674398e470.asset.json",
+      "reason": "Người xem bối rối sau commit xóa key"
+    },
+    {
+      "id": "brass-key-pop",
+      "family": "physical-keys",
+      "sha256": "a35804a9b9141f52f6d9ab3fa80566e56ff05b88fe14189cc017c5bb2eb758b4",
+      "file": "assets/library/brass-key-pop-a35804a9b9.png",
+      "metadata": "assets/library/brass-key-pop-a35804a9b9.asset.json",
+      "reason": "Quyền truy cập còn hiệu lực rồi bị thu hồi"
+    },
+    {
+      "id": "paper-white-strip",
+      "family": "torn-paper-backplates",
+      "sha256": "a8a3798ab47589569c61282f1a874b5e5ed1e71fda10a9ba484bda3a648c3944",
+      "file": "assets/library/paper-white-strip-a8a3798ab4.png",
+      "metadata": "assets/library/paper-white-strip-a8a3798ab4.asset.json",
+      "reason": "Nhãn trạng thái và kết luận"
+    },
+    {
+      "id": "paper-yellow-strip",
+      "family": "torn-paper-backplates",
+      "sha256": "e3966fc3243b6d1cadda62fd3d0ecd0f2e3aea6fc851372224537f2785d9fd92",
+      "file": "assets/library/paper-yellow-strip-e3966fc324.png",
+      "metadata": "assets/library/paper-yellow-strip-e3966fc324.asset.json",
+      "reason": "Nhãn nhấn trọng tâm"
+    },
+    {
+      "id": "paper-white-note",
+      "family": "torn-paper-backplates",
+      "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456",
+      "file": "assets/library/paper-white-note-95284b4848.png",
+      "metadata": "assets/library/paper-white-note-95284b4848.asset.json",
+      "reason": "Hai điều cần phân biệt ở kết"
+    }
+  ]
+}

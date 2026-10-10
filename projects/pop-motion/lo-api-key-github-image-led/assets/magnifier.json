@@ -1,0 +1,28 @@
+{
+  "id": "magnifier-pop-violet",
+  "name": "magnifier-pop-violet",
+  "category": "object",
+  "family": "magnifiers",
+  "description": "Photographic magnifier with transparent lens",
+  "tags": [
+    "magnifier",
+    "magnifiers",
+    "pop",
+    "collage"
+  ],
+  "roles": [
+    "inspect usage"
+  ],
+  "states": [
+    "magnifier"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "One photographic magnifying glass cutout for a contemporary Pop paper collage, isolated on transparent background. Large circular silver rim at upper left, short violet lacquer handle diagonally down to lower right. Lens interior fully clear/transparent, no object reflected or pictured inside. Real metal and handle texture with subtle halftone print, narrow irregular white paper-cut contour around external silhouette. Full object with minimal margins. No text, background, hand, shadow, other object, vector icon or 3D clay.",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "AI-generated editorial illustration, not factual evidence or actual usage data."
+  }
+}

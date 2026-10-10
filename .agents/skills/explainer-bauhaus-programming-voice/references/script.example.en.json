@@ -1,0 +1,68 @@
+{
+  "language": "en",
+  "title": "The remainder operator",
+  "audience": "Programming beginners",
+  "story": {
+    "question": "What does 7 % 3 return?",
+    "example": "7 % 3 = 1; 8 % 3 = 2; 9 % 3 = 0",
+    "takeaway": "For nonnegative integers and a positive divisor, % returns the remainder after full groups."
+  },
+  "intro": {
+    "title": "AFTER GROUPING.\nWHAT REMAINS?",
+    "vo": "Split seven into groups of three. What does the percent sign in this code tell us?",
+    "cues": {
+      "equation": "percent sign"
+    },
+    "label": "THE REMAINDER OPERATOR"
+  },
+  "scenes": [
+    {
+      "title": "FILL EACH GROUP.",
+      "vo": "Start with seven dots. Put three into the first group, then three into the second group. One dot remains, too few to fill another group. So seven modulo three is one.",
+      "cues": {
+        "gather": "seven dots",
+        "first": "first group",
+        "second": "second group",
+        "rest": "One dot remains",
+        "result": "So seven"
+      },
+      "n": 7,
+      "view": "group",
+      "result": "7 % 3 = 1"
+    },
+    {
+      "title": "ADD ONE DOT.",
+      "vo": "Keep the two groups and add one dot to make eight. The two dots outside still cannot fill a group of three. The remainder is now two.",
+      "cues": {
+        "add": "add one dot",
+        "rest": "two dots outside",
+        "result": "remainder is now"
+      },
+      "n": 8,
+      "view": "change",
+      "result": "8 % 3 = 2"
+    },
+    {
+      "title": "AN EXACT FIT.",
+      "vo": "Add one dot to make nine. The three remaining dots form a third group. Nothing remains outside, so the remainder is zero.",
+      "cues": {
+        "add": "Add one dot",
+        "third": "third group",
+        "result": "Nothing remains"
+      },
+      "n": 9,
+      "view": "exact",
+      "result": "9 % 3 = 0"
+    }
+  ],
+  "outro": {
+    "title": "KEEP WHAT\nREMAINS.",
+    "vo": "Here the percent sign gives the remainder, not the number of groups. An exact division leaves zero. This example uses nonnegative integers and a positive divisor.",
+    "cues": {
+      "rule": "gives the remainder",
+      "limit": "nonnegative integers"
+    },
+    "label": "%",
+    "note": "NONNEGATIVE INTEGERS · POSITIVE DIVISOR"
+  }
+}

@@ -1,0 +1,7 @@
+# Photoreal writing hand
+
+Generated with the built-in imagegen tool on 2026-10-06, transparent background enabled. Original generated asset, not a stock photograph or a copied VideoScribe/Doodly hand. Bundled at `assets/hand-pen-real.png`. Keep its alpha channel intact.
+
+## Generation prompt
+
+Use case: photorealistic-natural. Asset type: reusable transparent PNG overlay for a whiteboard handwriting animation. Create ONE photoreal adult human RIGHT hand naturally gripping a slim dark navy felt-tip pen in a conventional writing tripod grip. Top-down photographic view of back/side of hand, natural warm skin with real pores and subtle creases, anatomically believable fingers, short clean nails. The exposed pen nib touches an imaginary paper plane toward the upper-left of the image; the hand and wrist extend diagonally toward the lower-right. Show a generous length of forearm exiting the lower-right image edge, so the moving overlay does not look like a floating severed hand. Nib is fully visible, pen held at a plausible writing angle, natural neutral grip. Soft even photographic studio light, subtle self-shadow only. Genuinely transparent alpha background, no paper, no desk, no drawn marks, no text, no logos, no watermark, no other objects or hands. This must look like a photographic cutout of a real human writing hand, NOT an illustration, vector, cartoon, plastic 3D render, or Corporate Memphis graphic. Leave clear transparent margin above and to the left of the pen tip. Square composition, high detail.

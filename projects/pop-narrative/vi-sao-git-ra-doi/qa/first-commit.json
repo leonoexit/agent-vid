@@ -1,0 +1,31 @@
+{
+  "sha": "e83c5163316f89bfbde7d9ab23ca2e25604af290",
+  "node_id": "MDY6Q29tbWl0MzY1MDI6ZTgzYzUxNjMzMTZmODliZmJkZTdkOWFiMjNjYTJlMjU2MDRhZjI5MA==",
+  "url": "https://api.github.com/repos/git/git/git/commits/e83c5163316f89bfbde7d9ab23ca2e25604af290",
+  "html_url": "https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290",
+  "author": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@ppc970.osdl.org",
+    "date": "2005-04-07T22:13:13Z"
+  },
+  "committer": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@ppc970.osdl.org",
+    "date": "2005-04-07T22:13:13Z"
+  },
+  "tree": {
+    "sha": "2b5bfdf7798569e0b59b16eb9602d5fa572d6038",
+    "url": "https://api.github.com/repos/git/git/git/trees/2b5bfdf7798569e0b59b16eb9602d5fa572d6038"
+  },
+  "message": "Initial revision of \"git\", the information manager from hell",
+  "parents": [
+
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

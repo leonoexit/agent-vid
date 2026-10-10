@@ -1,0 +1,54 @@
+{
+  "id": "crt-purple-code",
+  "name": "Máy tính CRT tím · màn hình code",
+  "category": "object",
+  "family": "crt-computer",
+  "variant_of": null,
+  "description": "Ảnh CRT tím với bàn phím và các dòng code trừu tượng; không phải ảnh tư liệu.",
+  "tags": [
+    "máy tính",
+    "computer",
+    "desktop",
+    "CRT",
+    "tím",
+    "purple"
+  ],
+  "roles": [
+    "lập trình",
+    "máy trạm",
+    "phân tán"
+  ],
+  "states": [
+    "three-quarter",
+    "code-screen"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Create ONE isolated photographic paper cutout for a youthful Pop Collage documentary about why Git was created in 2005. Subject: a complete early-2000s desktop computer with chunky CRT monitor and keyboard, three-quarter frontal view, monitor showing a few abstract source-code lines without readable text. Medium: real photographic detail converted into crisp black-and-white halftone with electric purple tint on the casing, narrow irregular clean white paper cut contour. Not a vector icon, not clay 3D, not sepia or vintage damaged paper. Entire silhouette visible, centered and large with transparent margin. Actual transparent background. No extra props, words, logo or baked external cast shadow.",
+    "project": "projects/pop-narrative/vi-sao-git-ra-doi",
+    "project_file": "assets/computer.png",
+    "original_tool_output": null,
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/crt-purple-code/original.png",
+  "thumbnail": "items/crt-purple-code/thumbnail.png",
+  "sha256": "66d05b39e211645c3079f08b0d4eab53a5221e1780fe91a62eed3aa4c4141170",
+  "width": 1312,
+  "height": 1199,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    0,
+    1298,
+    1199
+  ],
+  "added_at": "2026-10-09T07:30:58.202601+00:00"
+}

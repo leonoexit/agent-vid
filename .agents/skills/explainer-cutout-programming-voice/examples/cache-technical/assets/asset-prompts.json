@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "date": "2026-10-07",
+  "assets": [
+    {
+      "file": "assets/images/hand-card.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: isolated photographic paper-cutout for a contemporary mixed-media programming explainer. A single realistic adult human right hand and short wrist, pinching the top corner of one completely blank electric cobalt-blue rectangular card between thumb and index finger. Natural skin pores and soft highlights, believable anatomy. Card is matte heavy paper with a crisp clean edge, gently tilted, no writing. Fresh editorial studio photograph, soft directional light from upper left, crisp silhouette, contemporary art magazine cutout, not a 3D render. Entire hand, fingertips, wrist end and card fully visible with generous transparent margin; wrist ends in a clean cut edge. No background, true transparent alpha, no floor, no cast shadow beyond silhouette, no baked border. No other props, no words, no logo, no watermark, no sepia, vintage print, distressed paper, newsprint, retro or historical treatment. One coherent subject, square composition.",
+      "source": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-042cc1b3-e26f-4d58-b73b-d2a588dc37a9.png",
+      "sha256": "6411e883a439e2ee232ceb4069e5536c7c7393d11b572386d82005c3ed3ae446"
+    },
+    {
+      "file": "assets/images/lime-tray.png",
+      "prompt": "Use case: product-mockup. Asset type: transparent photographic cutout for a contemporary mixed-media collage explaining a local cache. One empty shallow desktop organizer tray in vivid acid-lime green powder-coated folded metal, modern minimal industrial design, rounded rectangular floor, short vertical sides, slightly open front lip. Shot from a three-quarter front view about 35 degrees above, interior clearly visible, tray oriented horizontally. Real editorial product photography with fine material grain and soft directional studio light from upper left. Crisp cut silhouette; entire object visible with generous clear margin. No surrounding scene, no supporting table, true transparent alpha, no cast shadow outside the object, no baked border. No contents, no cards, no symbols, no text, no logo, no watermark. Fresh contemporary color and finish, no worn edges, no vintage, retro, sepia, historic office styling or cartoon 3D render. One isolated object, square image.",
+      "source": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-ab953d56-3b24-4606-a060-6679f1f8c672.png",
+      "sha256": "fd0d65af903611c16adf0e831ae2426c189cc4dec6aa7dd67a5fa442b5507de4"
+    }
+  ]
+}

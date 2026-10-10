@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run the project's Reelcrew installation without requiring shell activation.
+set -eu
+reelcrew_project_root="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+export REELCREW_HOME="$reelcrew_project_root/.runtime/reelcrew"
+export REELCREW_SKILLS_DIR="$reelcrew_project_root/.agents/skills"
+export HF_HOME="$reelcrew_project_root/.cache/huggingface"
+if [ ! -x "$REELCREW_HOME/bin/reelcrew" ]; then
+  printf '%s\n' 'Reelcrew is not installed for this project. See README.md, section Reelcrew.' >&2
+  exit 1
+fi
+export PATH="$reelcrew_project_root/node_modules/.bin:$reelcrew_project_root/.runtime/npm/bin:$PATH"
+exec "$REELCREW_HOME/bin/reelcrew" "$@"

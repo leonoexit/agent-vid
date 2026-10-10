@@ -1,0 +1,52 @@
+{
+  "id": "usb-cyan",
+  "name": "USB xanh cyan",
+  "category": "object",
+  "family": "usb-drive",
+  "variant_of": null,
+  "description": "USB có đầu nối USB-A lộ ra, thân xanh cyan không thương hiệu.",
+  "tags": [
+    "USB",
+    "flash drive",
+    "cyan",
+    "bộ nhớ"
+  ],
+  "roles": [
+    "lưu trữ",
+    "trao đổi",
+    "portable"
+  ],
+  "states": [
+    "connector-exposed",
+    "diagonal"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. One isolated photographic USB flash drive with exposed recognizable USB-A metal connector, diagonal but entire object visible. Bright cyan plastic body, silver connector, no branding or text. High-detail contemporary Pop mixed-media collage, fine printed halftone, narrow white irregular paper contour. No floor, no props, no external baked shadow. Actual transparent alpha background with transparent margins. Not a 3D clay render or vector icon.",
+    "project": "projects/pop-motion/vi-sao-nut-luu-la-dia-mem",
+    "project_file": "assets/usb.png",
+    "original_tool_output": "/Users/nguyenlenguyenle/.codex/generated_images/01a109f6-c778-7aa0-9327-f320f9939efb/exec-d267d7c3-621f-498d-9115-fdc4657a105e.png",
+    "reference_asset_ids": []
+  },
+  "rights": {
+    "note": "Ảnh minh hoạ được tạo trong dự án bằng image_gen; không gán giấy phép stock và không coi là bằng chứng lịch sử."
+  },
+  "review": {
+    "status": "unreviewed",
+    "note": "Nhập từ project có sẵn; chưa có đánh giá riêng cho asset."
+  },
+  "file": "items/usb-cyan/original.png",
+  "thumbnail": "items/usb-cyan/thumbnail.png",
+  "sha256": "4c9382dfaefa54f5a42b6a586f4c7cd6976948591fdebe14b0b002d2c5697d28",
+  "width": 1536,
+  "height": 1024,
+  "has_transparency": true,
+  "alpha_bounds": [
+    79,
+    17,
+    1443,
+    1007
+  ],
+  "added_at": "2026-10-09T07:30:58.349190+00:00"
+}

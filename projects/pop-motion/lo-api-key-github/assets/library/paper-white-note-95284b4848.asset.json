@@ -1,0 +1,67 @@
+{
+  "id": "paper-white-note",
+  "name": "Mảnh giấy trắng rộng",
+  "category": "paper",
+  "family": "torn-paper-backplates",
+  "variant_of": null,
+  "description": "two short lines or a short single-line label; giữ đúng tỷ lệ ảnh, đặt chữ trong vùng safe đã đăng ký.",
+  "tags": [
+    "giấy xé",
+    "paper",
+    "nhãn",
+    "label",
+    "container",
+    "blank",
+    "white note"
+  ],
+  "roles": [
+    "đặt chữ",
+    "text backing"
+  ],
+  "states": [
+    "blank"
+  ],
+  "origin": {
+    "kind": "generated",
+    "tool": "built-in imagegen",
+    "prompt": "Create ONE reusable physical paper text backplate for a contemporary vibrant Pop Collage video. The attached image is STYLE REFERENCE ONLY, especially its pasted white text strips and vivid colors. Output only the blank paper piece, no lettering, no text, no symbols, no other objects. Orthographic overhead scan, flat orientation, real paper fibers and slightly uneven torn edges, clean fresh editorial material, not antique or grunge. Fully transparent outside the piece. No cast shadow (added in compositor); subtle thickness along edge is fine. Broad uniformly lit interior reserved for later native text. Piece fills image with a small transparent margin. A wide rectangular white torn paper note, aspect ratio 2.6:1. Slightly organic torn perimeter, small asymmetric corner nick. Clean wide white interior with subtle paper grain for two lines of dark text.",
+    "project_file": ".agents/skills/explainer-pop-collage-discovery-voice/template/assets/backplates/white-note.png",
+    "reference_files": [
+      ".agents/skills/explainer-pop-collage-discovery-voice/references/source.png"
+    ]
+  },
+  "rights": {
+    "note": "Giấy tạo bằng imagegen trong dự án; prompt và tham chiếu gốc được giữ lại."
+  },
+  "safe_text_rect": [
+    160,
+    145,
+    1700,
+    490
+  ],
+  "visible_bounds": [
+    27,
+    50,
+    1969,
+    676
+  ],
+  "recommended_ink": "#342046",
+  "pop_backplate_key": "white-note",
+  "file": "items/paper-white-note/original.png",
+  "thumbnail": "items/paper-white-note/thumbnail.png",
+  "sha256": "95284b4848ef47435e07348f921694bc086d431ce67cffc140b105b8f8b5b456",
+  "width": 2022,
+  "height": 778,
+  "has_transparency": true,
+  "alpha_bounds": [
+    0,
+    3,
+    2007,
+    753
+  ],
+  "added_at": "2026-10-09T07:30:58.608666+00:00",
+  "review": {
+    "status": "unreviewed",
+    "note": "Not an individual user approval."
+  }
+}

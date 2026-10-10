@@ -1,0 +1,21 @@
+@font-face{font-family:PopSans;src:url('assets/fonts/sans.woff2');font-weight:100 900;font-display:block}
+@font-face{font-family:PopMono;src:url('assets/fonts/mono.woff2');font-weight:100 900;font-display:block}
+@font-face{font-family:PopDisplay;src:url('assets/fonts/display.ttf');font-weight:400;font-display:block}
+:root{--yellow:#fff064;--purple:#7546d9;--pink:#edb1da;--orange:#ff8c35;--red:#f04459;--cyan:#83d9e9;--ink:#342046;--paper:#fffdf7}
+*{box-sizing:border-box}body{margin:0;background:var(--yellow);color:var(--ink);font-family:PopSans,sans-serif}#root{position:relative;width:1080px;height:1920px;overflow:hidden}#explainer,#world{position:absolute;inset:0}#world{isolation:isolate}.placed{position:absolute}.scene{position:absolute;inset:0;visibility:hidden}.display{font:400 126px/1.03 PopDisplay,cursive;letter-spacing:-3px;white-space:pre-line;margin:0}.mono{font-family:PopMono,monospace}.strip{position:absolute;padding:15px 24px;background:var(--paper);font:500 43px/1.18 PopMono;box-shadow:2px 4px 1px #34204633,5px 11px 7px #34204624;white-space:pre-line;width:max-content;max-width:930px}.paper-label,.photo{position:absolute;object-fit:contain;filter:drop-shadow(1px 3px 1px #3420464d) drop-shadow(5px 11px 5px #34204638)}.photo{filter:drop-shadow(4px 8px 3px #34204630)}.meta{font:500 26px PopMono;letter-spacing:2px}.doodle{position:absolute;inset:0;pointer-events:none}.caption-zone{position:absolute;inset:0;pointer-events:none;z-index:100}.caption{position:absolute;left:74px;right:96px;bottom:150px;visibility:hidden;display:flex;flex-wrap:wrap;gap:3px 8px;justify-content:center;background:#fffdf7;color:#22162d;padding:15px 20px;font:500 39px/1.3 PopSans;box-shadow:2px 5px 0 #34204625}.caption span{padding:1px 3px}.dots{background-image:radial-gradient(#34204630 1.8px,transparent 1.8px);background-size:30px 30px}.safe-note{font:400 28px/1.35 PopSans;color:var(--ink)}
+
+/* Plate raster and editable type share one transform; no raster stretching. */
+.backplate{position:absolute;isolation:isolate;transform-origin:center center}
+.backplate-image{position:absolute;max-width:none;pointer-events:none;filter:drop-shadow(1px 3px 1px #3420464d) drop-shadow(4px 9px 4px #34204630)}
+.backplate-safe{display:flex;align-items:center;justify-content:center;text-align:center;font:500 40px/1.18 PopMono,monospace}
+.backplate-copy{white-space:pre;flex:none}
+.field,.side-paper{position:absolute}.photo{filter:drop-shadow(3px 6px 1px #34204640) drop-shadow(7px 16px 8px #34204628)}
+.patch{background:#fffdf7;border:2px solid #34204622;padding:15px 18px;box-shadow:5px 7px 0 #34204624;transform-origin:center;font:500 23px PopMono;color:#342046}
+.patch i{display:block;height:5px;background:#7546d9;margin-top:10px;width:85%}.patch i:nth-child(3){width:60%;background:#f04459}.patch i:nth-child(4){width:73%}.new-change{background:#fff064}
+.evidence{background:#fffdf7;box-shadow:8px 12px 0 #34204625;padding:30px 38px;transform:rotate(-3deg);clip-path:polygon(0 1%,97% 0,100% 94%,96% 100%,0 98%)}
+.evidence-kicker{font:500 25px PopMono;letter-spacing:1px}.evidence strong{display:block;font:700 98px/1.2 PopSans;letter-spacing:-4px;color:#7546d9;margin:12px 0}.commit-meta{font:500 33px PopMono}.evidence-note{font:400 25px PopSans;margin-top:18px;color:#695675}
+.caption{bottom:160px;font-size:37px;line-height:1.28;left:65px;right:90px}.display{line-height:1.11;letter-spacing:-2px}.paper-label{filter:drop-shadow(2px 4px 1px #34204655) drop-shadow(6px 13px 6px #34204633)}
+
+.scene{z-index:20}#world>.photo{z-index:10}
+/* Keep the words readable when a cutout crosses a paper label. */
+.backplate{z-index:2}

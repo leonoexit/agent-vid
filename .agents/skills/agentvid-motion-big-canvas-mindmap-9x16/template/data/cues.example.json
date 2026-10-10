@@ -1,0 +1,15 @@
+[
+  { "sfx": "page", "scene": "s01-hook", "at": 0.2, "vol": 0.3 },
+  { "sfx": "pencil", "scene": "s01-hook", "at": 3.2, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s02-web", "at": 0.1, "vol": 0.25 },
+  { "sfx": "pencil", "scene": "s02-web", "at": 1.3, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s03-channels", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s04-ads", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s05-stock", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s06-ship", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s07-care", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s08-data", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s09-auto", "at": 0.1, "vol": 0.25 },
+  { "sfx": "swish", "scene": "s10-recap", "at": 0.1, "vol": 0.3 },
+  { "sfx": "page", "scene": "s10-recap", "at": 2.8, "vol": 0.3 }
+]

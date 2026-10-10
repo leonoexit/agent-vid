@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pop Collage Discovery"
+  short_description: "Vivid paper collage for narrated discovery shorts"
+  default_prompt: "Dùng $explainer-pop-collage-discovery-voice tạo video về [CHỦ ĐỀ] cho [ĐỐI TƯỢNG]."
